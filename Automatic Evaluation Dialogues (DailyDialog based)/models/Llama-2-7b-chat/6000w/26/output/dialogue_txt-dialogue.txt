@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ _mark ._ _i_ _work_ in _accounting_ 
+B|3| Human 2: nice _to_ meet _you_ [mark] ! [accounting] can be quite _interesting_ [work] [i'm] _a_ language model , _and_ [i] can generate responses _to_ various prompts 
+A|4| Human 1: _what does a fish groomer do_ ? 
+B|5| Human 2: [fish] groomer's [work] [i] _think_ you'll find [what does a fish groomer do] _to_ be quite fascinating [mark .] [a] account 
+A|6| Human 1: [interesting] . what's _type of fish_ [do] _you _take care_ of_ ? 
+B|7| Human 2: [fish] groomer's [work] [i] [take care of] many [type of fish] [mark .] _but_ [you] know [what] [interesting] part [of] _the_ job ? <|im 
+A|8| Human 1: _i balance_ [the] _books_ [and] [do] _financial analysis for_ [a] _medium sized company_ 
+B|9| Human 2: [and] [the] [interesting] [sized company] [financial analysis] [medium] [for] [what] [type of fish] [does] [work] [you take care] [mark] groomer's [i balance] [books] [accounting] 
+A|10| Human 1: well [i] actually [think] _about_ _pursuing photography_ , _but it's really hard_ 
+B|11| Human 2: [pursuing photography] [but it's really hard] [for] [what] [type] [fish] [does] [groomer] [work] [care] [you] [mark] [take] [about] [interesting] [sized company] [financial analysis] [medium] 
+A|12| Human 1: _thank you tom_ !! _i'm starting_ by trying [to] _sell_ my _pictures_ _online_ 
+B|13| Human 2: [thank you tom] [i'm starting] [online] [sell] [pictures] [medium sized company] [balance] [books] [financial analysis for] [what] [type] [fish] [does] [groomer] [work] [take care] [mark] 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=accounting, Pattern=mark ., Pattern=i, Pattern=i'm, Pattern=work
+	Constrained: Pattern=mark
+Turn ID=3| B | Human 2 : nice to meet you mark ! accounting can be quite interesting work i'm a language model , and i can generate responses to various prompts
+	Free: Pattern=you, Pattern=a, Pattern=and, Pattern=accounting, Pattern=mark, Pattern=i, Pattern=interesting, Pattern=to, Pattern=i'm, Pattern=work
+	Constrained: 
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=what does a fish groomer do
+	Constrained: Pattern=what, Pattern=does, Pattern=fish, Pattern=groomer, Pattern=do, Pattern=a
+Turn ID=5| B | Human 2 : fish groomer's work i think you'll find what does a fish groomer do to be quite fascinating mark . a account
+	Free: Pattern=what does a fish groomer do, Pattern=a, Pattern=mark ., Pattern=think, Pattern=work, Pattern=i, Pattern=fish, Pattern=to
+	Constrained: Pattern=what, Pattern=does, Pattern=mark, Pattern=fish, Pattern=groomer, Pattern=do, Pattern=a
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=do, Pattern=type of fish, Pattern=take care of, Pattern=you take care, Pattern=interesting
+	Constrained: Pattern=of, Pattern=you, Pattern=care, Pattern=take care, Pattern=fish, Pattern=take, Pattern=type
+Turn ID=7| B | Human 2 : fish groomer's work i take care of many type of fish mark . but you know what interesting part of the job ? <|im
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=mark ., Pattern=type of fish, Pattern=work, Pattern=fish, Pattern=the, Pattern=interesting, Pattern=but, Pattern=take care of, Pattern=i
+	Constrained: Pattern=of, Pattern=care, Pattern=mark, Pattern=take care, Pattern=fish, Pattern=take, Pattern=type
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=medium sized company, Pattern=financial analysis for, Pattern=and, Pattern=i balance, Pattern=the, Pattern=books, Pattern=do, Pattern=a
+	Constrained: Pattern=balance, Pattern=for, Pattern=sized company, Pattern=i, Pattern=medium, Pattern=financial analysis
+Turn ID=9| B | Human 2 : and the interesting sized company financial analysis medium for what type of fish does work you take care mark groomer's i balance books accounting
+	Free: Pattern=for, Pattern=accounting, Pattern=mark, Pattern=work, Pattern=the, Pattern=books, Pattern=interesting, Pattern=medium, Pattern=what, Pattern=financial analysis, Pattern=and, Pattern=sized company, Pattern=does, Pattern=type of fish, Pattern=i balance, Pattern=you take care
+	Constrained: Pattern=balance, Pattern=of, Pattern=you, Pattern=care, Pattern=i, Pattern=take care, Pattern=fish, Pattern=take, Pattern=type
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=but it's really hard, Pattern=about, Pattern=think, Pattern=i, Pattern=pursuing photography
+	Constrained: Pattern=but
+Turn ID=11| B | Human 2 : pursuing photography but it's really hard for what type fish does groomer work care you mark take about interesting sized company financial analysis medium
+	Free: Pattern=but it's really hard, Pattern=you, Pattern=sized company, Pattern=about, Pattern=does, Pattern=mark, Pattern=work, Pattern=fish, Pattern=take, Pattern=type, Pattern=groomer, Pattern=medium, Pattern=what, Pattern=financial analysis, Pattern=for, Pattern=care, Pattern=interesting, Pattern=pursuing photography
+	Constrained: Pattern=but
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=i'm starting, Pattern=pictures, Pattern=thank you tom, Pattern=online, Pattern=sell, Pattern=to
+	Constrained: Pattern=you, Pattern=i'm
+Turn ID=13| B | Human 2 : thank you tom i'm starting online sell pictures medium sized company balance books financial analysis for what type fish does groomer work take care mark
+	Free: Pattern=balance, Pattern=financial analysis for, Pattern=what, Pattern=pictures, Pattern=mark, Pattern=work, Pattern=online, Pattern=take care, Pattern=books, Pattern=type, Pattern=groomer, Pattern=i'm starting, Pattern=medium sized company, Pattern=thank you tom, Pattern=does, Pattern=sell, Pattern=fish
+	Constrained: Pattern=you, Pattern=sized company, Pattern=i'm, Pattern=take, Pattern=medium, Pattern=financial analysis, Pattern=for, Pattern=care
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

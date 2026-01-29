@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ mark _. i work_ in accounting 
+B|3| Human 2: [i'm] _a_ girl _and_ _a_ student _and_ [i work] as _a_ secretary [. i work] at _the_ public library . 
+A|4| Human 1: what does [a] _fish_ _groomer_ do ? 
+B|5| Human 2: [i'm] just working as [a] [groomer] _for_ _the_ [fish] pond at [work] , _it's really_ [a] fun job _to_ have 
+A|6| Human 1: _interesting_ . what's type _of_ [fish] do [you] _take care_ _of_ ? 
+B|7| Human 2: hello , [i work] [a] lot at home grooming _the_ dog . _the_ [fish] ponds [you] keep ? 
+A|8| Human 1: [i] balance [the] books [and] do financial analysis [for] [a] medium sized company 
+B|9| Human 2: [i] [care] [for] [the] [fish] [and] [take care] _to_ clean up their tanks . 
+A|10| Human 1: _well_ _i actually_ _think about pursuing_ _photography , but [it's_ really] _hard_ 
+B|11| Human 2: [i] love [photography ,] [i actually] [take] _pictures_ [of] [really] [interesting] [fish] [and] [it's] [hard] [for] [the] [groomer] _to_ keep up since [i] always go _to_ 
+A|12| Human 1: thank [you] tom !! _i'm starting_ by trying [to] sell my [pictures] online 
+B|13| Human 2: [i] am glad [you] [really] love [photography , but it's] [hard] [work] ! [i'm starting] [to] [think about pursuing] [the] same thing as [well] , maybe 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=. i work, Pattern=i'm
+	Constrained: Pattern=i work, Pattern=i, Pattern=work
+Turn ID=3| B | Human 2 : i'm a girl and a student and i work as a secretary . i work at the public library .
+	Free: Pattern=i work, Pattern=a, Pattern=and, Pattern=i'm, Pattern=the, Pattern=. i work
+	Constrained: Pattern=i work, Pattern=i, Pattern=work
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=groomer, Pattern=fish, Pattern=a
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just working as a groomer for the fish pond at work , it's really a fun job to have
+	Free: Pattern=a, Pattern=for, Pattern=fish, Pattern=to, Pattern=groomer, Pattern=i'm, Pattern=work, Pattern=it's really, Pattern=the
+	Constrained: Pattern=really, Pattern=it's
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=of, Pattern=you, Pattern=take care, Pattern=fish, Pattern=interesting
+	Constrained: Pattern=take, Pattern=care
+Turn ID=7| B | Human 2 : hello , i work a lot at home grooming the dog . the fish ponds you keep ?
+	Free: Pattern=you, Pattern=i work, Pattern=a, Pattern=fish, Pattern=the
+	Constrained: Pattern=i, Pattern=work
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=a, Pattern=for, Pattern=and, Pattern=i, Pattern=the
+	Constrained: 
+Turn ID=9| B | Human 2 : i care for the fish and take care to clean up their tanks .
+	Free: Pattern=and, Pattern=i, Pattern=take care, Pattern=fish, Pattern=the, Pattern=to, Pattern=for, Pattern=care
+	Constrained: Pattern=take, Pattern=care
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=well, Pattern=think about pursuing, Pattern=i actually, Pattern=it's really, Pattern=hard, Pattern=photography , but it's
+	Constrained: Pattern=it's, Pattern=really, Pattern=i, Pattern=photography ,
+Turn ID=11| B | Human 2 : i love photography , i actually take pictures of really interesting fish and it's hard for the groomer to keep up since i always go to
+	Free: Pattern=of, Pattern=for, Pattern=and, Pattern=pictures, Pattern=i, Pattern=really, Pattern=to, Pattern=photography ,, Pattern=groomer, Pattern=it's, Pattern=i actually, Pattern=fish, Pattern=take, Pattern=the, Pattern=interesting, Pattern=hard
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=i'm starting, Pattern=to, Pattern=you, Pattern=pictures
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : i am glad you really love photography , but it's hard work ! i'm starting to think about pursuing the same thing as well , maybe
+	Free: Pattern=i'm starting, Pattern=well, Pattern=you, Pattern=work, Pattern=really, Pattern=the, Pattern=hard, Pattern=to, Pattern=photography , but it's, Pattern=i, Pattern=think about pursuing
+	Constrained: Pattern=it's, Pattern=i'm, Pattern=photography ,
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

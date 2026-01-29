@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! 
+A|2| Human 1: how has _your_ morning _been_ thus far ? 
+B|3| Human 2: _it's_ [been] _a_ long _day_ . 
+A|4| Human 1: _today_ _is_ _a work day_ ! how _did_ you _have time for that_ ? _i'm going through a_ lot _right _now_ ._ 
+B|5| Human 2: [i'm going through [a] work day] [right now] _and_ _i_ [have time for _that] ._ 
+A|6| Human 1: _what ?_ why _would_ you do [that] ? take _the_ least interesting [day] of _the_ week _off and_ [work] on _the_ most interesting ? 
+B|7| Human 2: _i_ [would] . _i_ [have] [a] job [now] [and] [the] [time for that] [is] [off and] _i don't_ [work] [today] . 
+A|8| Human 1: wow . [the] game [is] brutal like [that _.] i've_ always [been] sceptical of acupuncture . like ... does it even [work] ? why ? how ? where _is the literature_ ? 
+B|9| Human 2: this [is the literature] [. i've] [been] there [for] 3 [and] [now .] 
+A|10| Human 1: lol . bro ... [i don't] buy it unless it has [a] _paper_ [that] was presented at [a] conference [and] peer reviewed by 6 independent parties . _who_ _wrote_ [the literature] ? where _did_ it originate ? 
+B|11| Human 2: yes they [wrote] [that] [paper] 
+A|12| Human 1: [i'm] [a] _comic_ . 
+B|13| Human 2: so [your] [the] author 
+A|14| Human 1: _it's not appropriate to say here but_ [i] assure you [it's] very _funny ._ 
+B|15| Human 2: [is] [that] [a] [funny] [comic] about [a] guy's dad [who] went [and] [did] [what ?] [it's not appropriate to say here but] [it's] [funny .] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how has your morning been thus far ?
+	Free: Pattern=your, Pattern=been
+	Constrained: 
+Turn ID=3| B | Human 2 : it's been a long day .
+	Free: Pattern=a, Pattern=been, Pattern=it's, Pattern=day
+	Constrained: 
+Turn ID=4| A | Human 1 : today is a work day ! how did you have time for that ? i'm going through a lot right now .
+	Free: Pattern=now ., Pattern=is, Pattern=have time for that, Pattern=i'm going through a, Pattern=right now, Pattern=a work day, Pattern=did, Pattern=today
+	Constrained: Pattern=have, Pattern=a, Pattern=for, Pattern=day, Pattern=now, Pattern=that, Pattern=time for that, Pattern=i'm, Pattern=work
+Turn ID=5| B | Human 2 : i'm going through a work day right now and i have time for that .
+	Free: Pattern=that ., Pattern=and, Pattern=i, Pattern=have time for that, Pattern=i'm going through a, Pattern=right now, Pattern=a work day
+	Constrained: Pattern=have, Pattern=a, Pattern=for, Pattern=day, Pattern=now, Pattern=that, Pattern=time for that, Pattern=i'm, Pattern=work
+Turn ID=6| A | Human 1 : what ? why would you do that ? take the least interesting day of the week off and work on the most interesting ?
+	Free: Pattern=what ?, Pattern=off and, Pattern=work, Pattern=day, Pattern=the, Pattern=would, Pattern=that
+	Constrained: Pattern=and
+Turn ID=7| B | Human 2 : i would . i have a job now and the time for that is off and i don't work today .
+	Free: Pattern=and, Pattern=off and, Pattern=work, Pattern=the, Pattern=would, Pattern=now, Pattern=time for that, Pattern=i don't, Pattern=have, Pattern=today, Pattern=a, Pattern=is, Pattern=i
+	Constrained: Pattern=for, Pattern=and, Pattern=i, Pattern=that
+Turn ID=8| A | Human 1 : wow . the game is brutal like that . i've always been sceptical of acupuncture . like ... does it even work ? why ? how ? where is the literature ?
+	Free: Pattern=is the literature, Pattern=that ., Pattern=. i've, Pattern=work, Pattern=is, Pattern=the, Pattern=been
+	Constrained: Pattern=is, Pattern=that, Pattern=the literature, Pattern=the
+Turn ID=9| B | Human 2 : this is the literature . i've been there for 3 and now .
+	Free: Pattern=is the literature, Pattern=. i've, Pattern=now ., Pattern=for, Pattern=and, Pattern=been
+	Constrained: Pattern=is, Pattern=now, Pattern=the literature, Pattern=the
+Turn ID=10| A | Human 1 : lol . bro ... i don't buy it unless it has a paper that was presented at a conference and peer reviewed by 6 independent parties . who wrote the literature ? where did it originate ?
+	Free: Pattern=i don't, Pattern=wrote, Pattern=the literature, Pattern=and, Pattern=paper, Pattern=that, Pattern=who, Pattern=did, Pattern=a
+	Constrained: Pattern=the, Pattern=i
+Turn ID=11| B | Human 2 : yes they wrote that paper
+	Free: Pattern=paper, Pattern=that, Pattern=wrote
+	Constrained: 
+Turn ID=12| A | Human 1 : i'm a comic .
+	Free: Pattern=i'm, Pattern=comic, Pattern=a
+	Constrained: 
+Turn ID=13| B | Human 2 : so your the author
+	Free: Pattern=your, Pattern=the
+	Constrained: 
+Turn ID=14| A | Human 1 : it's not appropriate to say here but i assure you it's very funny .
+	Free: Pattern=it's not appropriate to say here but, Pattern=funny ., Pattern=i, Pattern=it's
+	Constrained: Pattern=funny, Pattern=it's
+Turn ID=15| B | Human 2 : is that a funny comic about a guy's dad who went and did what ? it's not appropriate to say here but it's funny .
+	Free: Pattern=it's not appropriate to say here but, Pattern=what ?, Pattern=funny ., Pattern=and, Pattern=is, Pattern=comic, Pattern=funny, Pattern=who, Pattern=did, Pattern=a, Pattern=that, Pattern=it's
+	Constrained: Pattern=funny, Pattern=it's

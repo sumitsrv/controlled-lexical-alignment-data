@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my friends _are_ gonna visit me _this weekend_ . we _might go_ _hiking_ ! 
+B|3| Human 2: _i_ [might] _get_ [hiking] shoes ! 
+A|4| Human 1: _should be very sunny_ ! _you_ ? 
+B|5| Human 2: _i_ [might go] camping [this _weekend] !_ [should be very sunny] too ! _i_ _hope you_ have _a_ great time , [are] [you] _going_ anywhere _in_ particular ? 
+A|6| Human 1: 😐 _hope you get your_ work done _very soon_ ! [a] bug free [weekend !] 
+B|7| Human 2: _i_ [hope you get your] [hiking] boots [very soon] and _that_ [this weekend] goes well ! 
+A|8| Human 1: [i] am _going to_ _diablo_ ! 
+B|9| Human 2: [diablo] [are] [you] [going to] [get your] [hiking] shoes [this weekend] ?? 
+A|10| Human 1: _hours_ _drive_ _from_ _here_ . _still_ [in] _bay area_ 
+B|11| Human 2: _no_ [hiking] [here] , [going] camping at [a] beach [area] [this weekend] , and [you] [are] [still] [from] [bay area] ? 
+A|12| Human 1: actually [no] idea , _but_ _it_ _will take_ [the] entire day [for] [that] . 
+B|13| Human 2: [that] [will take] [you] [for] [hours] [but] [the] [drive] is [going to] [be] worth [it] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=weekend, Pattern=the, Pattern=for
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=might go, Pattern=this weekend, Pattern=are, Pattern=hiking
+	Constrained: Pattern=weekend, Pattern=might
+Turn ID=3| B | Human 2 : i might get hiking shoes !
+	Free: Pattern=might, Pattern=get, Pattern=i, Pattern=hiking
+	Constrained: 
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=should be very sunny, Pattern=you
+	Constrained: Pattern=be
+Turn ID=5| B | Human 2 : i might go camping this weekend ! should be very sunny too ! i hope you have a great time , are you going anywhere in particular ?
+	Free: Pattern=going, Pattern=a, Pattern=are, Pattern=should be very sunny, Pattern=i, Pattern=might go, Pattern=weekend !, Pattern=this weekend, Pattern=you, Pattern=hope you, Pattern=in
+	Constrained: Pattern=you, Pattern=be, Pattern=weekend, Pattern=might
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=hope you get your, Pattern=weekend !, Pattern=very soon, Pattern=a
+	Constrained: Pattern=get your, Pattern=you, Pattern=weekend, Pattern=hope you, Pattern=get
+Turn ID=7| B | Human 2 : i hope you get your hiking boots very soon and that this weekend goes well !
+	Free: Pattern=hope you get your, Pattern=this weekend, Pattern=very soon, Pattern=i, Pattern=hiking, Pattern=that
+	Constrained: Pattern=get your, Pattern=you, Pattern=weekend, Pattern=hope you, Pattern=get
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=going to, Pattern=i, Pattern=diablo
+	Constrained: Pattern=going
+Turn ID=9| B | Human 2 : diablo are you going to get your hiking shoes this weekend ??
+	Free: Pattern=going to, Pattern=get your, Pattern=diablo, Pattern=are, Pattern=hiking, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=weekend, Pattern=going, Pattern=get
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=bay area, Pattern=here, Pattern=from, Pattern=in, Pattern=still, Pattern=hours, Pattern=drive
+	Constrained: Pattern=area
+Turn ID=11| B | Human 2 : no hiking here , going camping at a beach area this weekend , and you are still from bay area ?
+	Free: Pattern=going, Pattern=a, Pattern=are, Pattern=from, Pattern=hiking, Pattern=area, Pattern=still, Pattern=this weekend, Pattern=you, Pattern=bay area, Pattern=no, Pattern=here
+	Constrained: Pattern=area, Pattern=weekend
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=will take, Pattern=no, Pattern=for, Pattern=it, Pattern=the, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=13| B | Human 2 : that will take you for hours but the drive is going to be worth it
+	Free: Pattern=you, Pattern=for, Pattern=it, Pattern=be, Pattern=the, Pattern=going to, Pattern=will take, Pattern=hours, Pattern=drive, Pattern=that, Pattern=but
+	Constrained: Pattern=going

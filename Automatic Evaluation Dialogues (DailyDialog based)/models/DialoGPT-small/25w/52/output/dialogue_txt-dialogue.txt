@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ doing today ? 
+A|2| Human 1: _i_ heard _they_ [are] giving _out_ some goodies _in_ microkitchen . 
+B|3| Human 2: [i] am going _in the_ micro kitchen . 
+A|4| Human 1: _i guess_ its _a jacket !_ very much needed that _in the cold_ 🙂 
+B|5| Human 2: what [jacket] do _you_ guys wear [the] most ? i'm going [in the cold] . looks like _you_ need [a jacket !] 
+A|6| Human 1: sure hate it ! limits our ability _to_ go _out_ even _for a_ _walk_ ! its good that we don't get _to_ suffer extreme [cold] weather ! 
+B|7| Human 2: [are] _you_ feeling [cold] this _time_ ?!? or is _your_ [jacket] [a] [cold] [jacket] ? 
+A|8| Human 1: oh nice ! where did _you live_ before ? 
+B|9| Human 2: yea _, i_ [live] [out] here [for a] day 
+A|10| Human 1: _new york_ ! nice ! best _place_ _to_ [live] 🙂 .. _right_ , except [for] [the cold] ! 
+B|11| Human 2: y'all ? haha [you live] [in] [new york] [right] ? 
+A|12| Human 1: anyways _, i guess_ we _should_ better hurry up _to_ get [the] goodies . [i] remember last [time] _they ran out_ of it . 
+B|13| Human 2: [you] [should] have seen when [they ran out] 
+A|14| Human 1: [the] one [in] our floor . [i] will get by [your] desk and we _can_ _walk there ._ 
+B|15| Human 2: [i] [can] just take [your] [place] [, i guess] that's enough [to] [walk there .] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you doing today ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : i heard they are giving out some goodies in microkitchen .
+	Free: Pattern=out, Pattern=they, Pattern=are, Pattern=in, Pattern=i
+	Constrained: 
+Turn ID=3| B | Human 2 : i am going in the micro kitchen .
+	Free: Pattern=in the, Pattern=i
+	Constrained: Pattern=the, Pattern=in
+Turn ID=4| A | Human 1 : i guess its a jacket ! very much needed that in the cold 🙂
+	Free: Pattern=in the cold, Pattern=a jacket !, Pattern=i guess
+	Constrained: Pattern=a, Pattern=jacket, Pattern=in the, Pattern=cold, Pattern=in, Pattern=i, Pattern=the, Pattern=the cold
+Turn ID=5| B | Human 2 : what jacket do you guys wear the most ? i'm going in the cold . looks like you need a jacket !
+	Free: Pattern=you, Pattern=a jacket !, Pattern=jacket, Pattern=in the cold, Pattern=the
+	Constrained: Pattern=a, Pattern=jacket, Pattern=in the, Pattern=cold, Pattern=in, Pattern=the, Pattern=the cold
+Turn ID=6| A | Human 1 : sure hate it ! limits our ability to go out even for a walk ! its good that we don't get to suffer extreme cold weather !
+	Free: Pattern=out, Pattern=cold, Pattern=walk, Pattern=to, Pattern=for a
+	Constrained: Pattern=a, Pattern=for
+Turn ID=7| B | Human 2 : are you feeling cold this time ?!? or is your jacket a cold jacket ?
+	Free: Pattern=time, Pattern=you, Pattern=a, Pattern=jacket, Pattern=are, Pattern=cold, Pattern=your
+	Constrained: 
+Turn ID=8| A | Human 1 : oh nice ! where did you live before ?
+	Free: Pattern=you live
+	Constrained: Pattern=you, Pattern=live
+Turn ID=9| B | Human 2 : yea , i live out here for a day
+	Free: Pattern=, i, Pattern=for a, Pattern=out, Pattern=live
+	Constrained: Pattern=i, Pattern=a, Pattern=for
+Turn ID=10| A | Human 1 : new york ! nice ! best place to live 🙂 .. right , except for the cold !
+	Free: Pattern=right, Pattern=new york, Pattern=for, Pattern=live, Pattern=the cold, Pattern=to, Pattern=place
+	Constrained: Pattern=the, Pattern=cold
+Turn ID=11| B | Human 2 : y'all ? haha you live in new york right ?
+	Free: Pattern=you live, Pattern=new york, Pattern=right, Pattern=in
+	Constrained: Pattern=you, Pattern=live
+Turn ID=12| A | Human 1 : anyways , i guess we should better hurry up to get the goodies . i remember last time they ran out of it .
+	Free: Pattern=time, Pattern=should, Pattern=they ran out, Pattern=the, Pattern=to, Pattern=, i guess, Pattern=i
+	Constrained: Pattern=out, Pattern=they, Pattern=i, Pattern=i guess, Pattern=, i
+Turn ID=13| B | Human 2 : you should have seen when they ran out
+	Free: Pattern=they ran out, Pattern=you, Pattern=should
+	Constrained: Pattern=out, Pattern=they
+Turn ID=14| A | Human 1 : the one in our floor . i will get by your desk and we can walk there .
+	Free: Pattern=can, Pattern=in, Pattern=the, Pattern=walk there ., Pattern=your, Pattern=i
+	Constrained: Pattern=walk
+Turn ID=15| B | Human 2 : i can just take your place , i guess that's enough to walk there .
+	Free: Pattern=can, Pattern=to, Pattern=place, Pattern=walk there ., Pattern=i, Pattern=, i guess, Pattern=your
+	Constrained: Pattern=i guess, Pattern=, i, Pattern=walk, Pattern=i

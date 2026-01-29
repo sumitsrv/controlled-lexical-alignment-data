@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ doing today ? 
+A|2| Human 1: i heard _they are giving out some_ _goodies_ _in_ microkitchen . 
+B|3| Human 2: 😍 yes , [they are giving out some] yummy [goodies] ! what would _you_ like _to get_ ? 🤔< 
+A|4| Human 1: i guess _its_ a _jacket !_ very much needed _that_ _in_ _the_ _cold_ 🙂 
+B|5| Human 2: 😊 that's great ! unfortunately , [the] [jacket] is not available _right_ now . but _don't_ worry , [they] have [some] 
+A|6| Human 1: sure hate it ! limits _our_ ability [to] go [out] even _for_ a _walk_ _! its good that_ we [don't] [get] [to] suffer extreme _cold weather_ ! 
+B|7| Human 2: [cold weather] [for] [our] outdoor walkies [! its good that] [the] [jacket] is not available _right_ now , maybe [they] _will_ restock soon ! 
+A|8| Human 1: oh _nice_ _! where did you live_ _before_ ? 
+B|9| Human 2: i'm just an ai , [don't] have [live] [in] any location _! nice_ [jacket [!] where did you] [get] [that] from ? < 
+A|10| Human 1: _new york_ [! nice] ! best _place_ [to] [live] 🙂 .. [right] , except [for] [the] [cold] ! 
+B|11| Human 2: [new york] [cold weather] [are] [you] [right] [! its] [nice] [that] [the] [jacket] is not available [for] now , it's [good] [to] have [some] _time_ 
+A|12| Human 1: anyways , i guess we _should_ _better_ _hurry_ up [to _get] the_ [goodies] . i remember _last time_ _they ran out_ of it . 
+B|13| Human 2: [hurry] [you] [are] [right] ! [better] [get the] [jacket] [before] [they ran out] [! where did you live] [last time] [for] [our] walkies ? <| 
+A|14| Human 1: [the] one [in] _our floor_ . i [will] [get] by _your desk_ _and_ we can _walk_ _there_ . 
+B|15| Human 2: </s>t [should] [get] [there] [before] [they ran out] [you] [are] [right] [hurry] [and] [better] walkies [our floor] [nice] [place] [for] [walk] [your desk] [will] be 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you doing today ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : i heard they are giving out some goodies in microkitchen .
+	Free: Pattern=they are giving out some, Pattern=goodies, Pattern=in
+	Constrained: Pattern=are, Pattern=they, Pattern=out, Pattern=some
+Turn ID=3| B | Human 2 : 😍 yes , they are giving out some yummy goodies ! what would you like to get ? 🤔<
+	Free: Pattern=they are giving out some, Pattern=to get, Pattern=goodies, Pattern=you
+	Constrained: Pattern=out, Pattern=they, Pattern=are, Pattern=some, Pattern=to, Pattern=get
+Turn ID=4| A | Human 1 : i guess its a jacket ! very much needed that in the cold 🙂
+	Free: Pattern=its, Pattern=cold, Pattern=the, Pattern=that, Pattern=jacket !, Pattern=in
+	Constrained: Pattern=jacket
+Turn ID=5| B | Human 2 : 😊 that's great ! unfortunately , the jacket is not available right now . but don't worry , they have some
+	Free: Pattern=right, Pattern=they, Pattern=jacket, Pattern=some, Pattern=the, Pattern=don't
+	Constrained: 
+Turn ID=6| A | Human 1 : sure hate it ! limits our ability to go out even for a walk ! its good that we don't get to suffer extreme cold weather !
+	Free: Pattern=out, Pattern=! its good that, Pattern=walk, Pattern=don't, Pattern=to, Pattern=get, Pattern=cold weather, Pattern=our, Pattern=for
+	Constrained: Pattern=good, Pattern=its, Pattern=cold, Pattern=! its, Pattern=that
+Turn ID=7| B | Human 2 : cold weather for our outdoor walkies ! its good that the jacket is not available right now , maybe they will restock soon !
+	Free: Pattern=right, Pattern=they, Pattern=! its good that, Pattern=will, Pattern=the, Pattern=cold weather, Pattern=our, Pattern=for, Pattern=jacket
+	Constrained: Pattern=good, Pattern=its, Pattern=cold, Pattern=! its, Pattern=that
+Turn ID=8| A | Human 1 : oh nice ! where did you live before ?
+	Free: Pattern=! where did you live, Pattern=before, Pattern=nice
+	Constrained: Pattern=you, Pattern=! where did you, Pattern=live
+Turn ID=9| B | Human 2 : i'm just an ai , don't have live in any location ! nice jacket ! where did you get that from ? <
+	Free: Pattern=live, Pattern=! nice, Pattern=! where did you, Pattern=don't, Pattern=get, Pattern=that, Pattern=jacket !, Pattern=in
+	Constrained: Pattern=nice, Pattern=you, Pattern=jacket
+Turn ID=10| A | Human 1 : new york ! nice ! best place to live 🙂 .. right , except for the cold !
+	Free: Pattern=right, Pattern=new york, Pattern=for, Pattern=live, Pattern=cold, Pattern=! nice, Pattern=the, Pattern=to, Pattern=place
+	Constrained: Pattern=nice
+Turn ID=11| B | Human 2 : new york cold weather are you right ! its nice that the jacket is not available for now , it's good to have some time
+	Free: Pattern=good, Pattern=time, Pattern=right, Pattern=you, Pattern=new york, Pattern=are, Pattern=some, Pattern=the, Pattern=to, Pattern=cold weather, Pattern=nice, Pattern=for, Pattern=jacket, Pattern=! its, Pattern=that
+	Constrained: Pattern=its, Pattern=cold
+Turn ID=12| A | Human 1 : anyways , i guess we should better hurry up to get the goodies . i remember last time they ran out of it .
+	Free: Pattern=goodies, Pattern=last time, Pattern=better, Pattern=get the, Pattern=should, Pattern=hurry, Pattern=they ran out, Pattern=to get
+	Constrained: Pattern=time, Pattern=out, Pattern=they, Pattern=the, Pattern=to, Pattern=get
+Turn ID=13| B | Human 2 : hurry you are right ! better get the jacket before they ran out ! where did you live last time for our walkies ? <|
+	Free: Pattern=! where did you live, Pattern=right, Pattern=you, Pattern=hurry, Pattern=they ran out, Pattern=are, Pattern=last time, Pattern=better, Pattern=before, Pattern=get the, Pattern=our, Pattern=for, Pattern=jacket
+	Constrained: Pattern=time, Pattern=they, Pattern=live, Pattern=! where did you, Pattern=the, Pattern=get, Pattern=you, Pattern=out
+Turn ID=14| A | Human 1 : the one in our floor . i will get by your desk and we can walk there .
+	Free: Pattern=your desk, Pattern=there, Pattern=and, Pattern=will, Pattern=in, Pattern=walk, Pattern=the, Pattern=our floor, Pattern=get
+	Constrained: Pattern=our
+Turn ID=15| B | Human 2 : </s>t should get there before they ran out you are right hurry and better walkies our floor nice place for walk your desk will be
+	Free: Pattern=your desk, Pattern=right, Pattern=you, Pattern=are, Pattern=will, Pattern=walk, Pattern=better, Pattern=our floor, Pattern=before, Pattern=place, Pattern=get, Pattern=should, Pattern=hurry, Pattern=there, Pattern=nice, Pattern=for, Pattern=and, Pattern=they ran out
+	Constrained: Pattern=our, Pattern=out, Pattern=they

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] _anything new ?_ 
+B|3| Human 2: [hey] there [new] friend , how _is_ your evening going ? 
+A|4| Human 1: _any_ _plans_ ? 
+B|5| Human 2: [hey] there . [plans] _are_ to take her out tonight . what about _you_ ? _you_ [any] interested in [anything new ?] 
+A|6| Human 1: _that's_ awesome ! _i_ _never been_ ! 
+B|7| Human 2: nothing [plans] . we [never been] that far but we have [been] thinking for few years . 
+A|8| Human 1: _are you_ _a_ _food_ _person_ , _a sightseeing person_ or _neither_ ? 
+B|9| Human 2: [neither] , [i] really just [never been] out of the city 
+A|10| Human 1: _i'm_ _a_ _food_ _person_ [i] _think_ . [any] _specific_ foods _you're_ _planning on trying_ ? 
+B|11| Human 2: [i'm] [planning on trying] [food] [that's] [specific] to [a] particular city , [i] don't [think] [you're] allowed to _eat_ outside of the country ! [are you] 
+A|12| Human 1: yeah my favorite [is] _taco fish_ 
+B|13| Human 2: [i'm] more of [a sightseeing person] . it's [been] too long since i've [been] to the city . i'd love [taco fish] though 
+A|14| Human 1: no . only [eat] them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=anything new ?, Pattern=hey
+	Constrained: Pattern=new
+Turn ID=3| B | Human 2 : hey there new friend , how is your evening going ?
+	Free: Pattern=hey, Pattern=new, Pattern=is
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=plans, Pattern=any
+	Constrained: 
+Turn ID=5| B | Human 2 : hey there . plans are to take her out tonight . what about you ? you any interested in anything new ?
+	Free: Pattern=plans, Pattern=you, Pattern=any, Pattern=are, Pattern=hey, Pattern=anything new ?
+	Constrained: Pattern=new
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=never been, Pattern=i, Pattern=that's
+	Constrained: Pattern=been
+Turn ID=7| B | Human 2 : nothing plans . we never been that far but we have been thinking for few years .
+	Free: Pattern=never been, Pattern=been, Pattern=plans
+	Constrained: Pattern=been
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=neither, Pattern=a, Pattern=person, Pattern=food, Pattern=are you, Pattern=a sightseeing person
+	Constrained: Pattern=are, Pattern=a, Pattern=you, Pattern=person
+Turn ID=9| B | Human 2 : neither , i really just never been out of the city
+	Free: Pattern=never been, Pattern=i, Pattern=neither
+	Constrained: Pattern=been
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=a, Pattern=any, Pattern=specific, Pattern=person, Pattern=think, Pattern=i'm, Pattern=i, Pattern=food, Pattern=you're, Pattern=planning on trying
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm planning on trying food that's specific to a particular city , i don't think you're allowed to eat outside of the country ! are you
+	Free: Pattern=eat, Pattern=a, Pattern=specific, Pattern=think, Pattern=i'm, Pattern=food, Pattern=that's, Pattern=you're, Pattern=planning on trying, Pattern=are you, Pattern=i
+	Constrained: Pattern=are, Pattern=you
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=taco fish, Pattern=is
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm more of a sightseeing person . it's been too long since i've been to the city . i'd love taco fish though
+	Free: Pattern=a sightseeing person, Pattern=taco fish, Pattern=been, Pattern=i'm
+	Constrained: Pattern=a, Pattern=person
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: Pattern=eat
+	Constrained: 

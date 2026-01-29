@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: great ! _just_ came _back from_ a ski trip 
+B|3| Human 2: awesome ! how's _it_ going ? 
+A|4| Human 1: _i_ slammed onto an _ice_ _wall_ , _but _i_ got_ better _and_ turning after _that_ haha 
+B|5| Human 2: [i got] [ice] [from] [that] [wall] ! 
+A|6| Human 1: oh cool ! _do you know_ any _french_ ? [i] used _to take_ _french_ in high school _but_ basically _forgot_ most of [it] 
+B|7| Human 2: [i got] [ice] [from] [that] [wall] [and] i'm [french] ! 
+A|8| Human 1: did [you] go _anywhere else_ in _montreal_ ? 
+B|9| Human 2: [i] [just] [got] [back from] [montreal] [and] _the_ [ice] _was_ everywhere . [it] wasn't [anywhere else] [but i] [forgot] [to take] [it] 
+A|10| Human 1: oh cool ! i've always wanted [to] attend _the olympics_ as a viewer of course [i] watch a lot of olympic figure skating on youtube 
+B|11| Human 2: [olympics] [and] [i] _think_ [you know] who won [the olympics] 
+A|12| Human 1: barely _i don't think i can ,_ in conscience , call [it] [that] [i] _kind_ of [just] _pull_ myself _along_ [the] _sides_ 
+B|13| Human 2: [do you know] [the] [kind] [that] [can] [pull] themselves [along] [sides] or is [that] [just] curiosity 
+A|14| Human 1: are [you] good at <redacted_term> ? 
+B|15| Human 2: [i don't think i can ,] [you] [just] 
+A|16| Human 1: okay ! [it] [was] nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=back from, Pattern=just
+	Constrained: Pattern=from
+Turn ID=3| B | Human 2 : awesome ! how's it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=ice, Pattern=but i, Pattern=wall, Pattern=and, Pattern=i, Pattern=i got, Pattern=that
+	Constrained: Pattern=got, Pattern=i, Pattern=but
+Turn ID=5| B | Human 2 : i got ice from that wall !
+	Free: Pattern=ice, Pattern=wall, Pattern=from, Pattern=i got, Pattern=that
+	Constrained: Pattern=got, Pattern=i
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=to take, Pattern=it, Pattern=forgot, Pattern=but, Pattern=french, Pattern=i, Pattern=do you know
+	Constrained: Pattern=you know, Pattern=to, Pattern=you
+Turn ID=7| B | Human 2 : i got ice from that wall and i'm french !
+	Free: Pattern=ice, Pattern=wall, Pattern=and, Pattern=from, Pattern=french, Pattern=i got, Pattern=that
+	Constrained: Pattern=got, Pattern=i
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=anywhere else, Pattern=montreal, Pattern=you
+	Constrained: 
+Turn ID=9| B | Human 2 : i just got back from montreal and the ice was everywhere . it wasn't anywhere else but i forgot to take it
+	Free: Pattern=ice, Pattern=just, Pattern=but i, Pattern=to take, Pattern=montreal, Pattern=forgot, Pattern=anywhere else, Pattern=i, Pattern=the, Pattern=got, Pattern=was, Pattern=back from, Pattern=it, Pattern=and
+	Constrained: Pattern=but, Pattern=i, Pattern=to, Pattern=from
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=the olympics, Pattern=i, Pattern=to
+	Constrained: Pattern=the, Pattern=olympics
+Turn ID=11| B | Human 2 : olympics and i think you know who won the olympics
+	Free: Pattern=olympics, Pattern=you know, Pattern=and, Pattern=the olympics, Pattern=think, Pattern=i
+	Constrained: Pattern=you, Pattern=the, Pattern=olympics
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=kind, Pattern=just, Pattern=sides, Pattern=i don't think i can ,, Pattern=it, Pattern=along, Pattern=i, Pattern=pull, Pattern=the, Pattern=that
+	Constrained: Pattern=can, Pattern=i, Pattern=think
+Turn ID=13| B | Human 2 : do you know the kind that can pull themselves along sides or is that just curiosity
+	Free: Pattern=kind, Pattern=just, Pattern=sides, Pattern=do you know, Pattern=pull, Pattern=the, Pattern=that, Pattern=along, Pattern=can
+	Constrained: Pattern=you know, Pattern=you
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : i don't think i can , you just
+	Free: Pattern=i don't think i can ,, Pattern=you, Pattern=just
+	Constrained: Pattern=can, Pattern=i, Pattern=think
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=you, Pattern=to, Pattern=was, Pattern=it
+	Constrained: 

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: not much . _any_ _plans_ _this weekend_ ? 
+B|3| Human 2: that sounds like fun ! 😃 do _you_ _have_ [any] specific [plans] in mind ? 
+A|4| Human 1: _ziplining_ ? 
+B|5| Human 2: that sounds like an exciting adventure ! 🎉 [ziplining] can be _a_ great way _to get_ your adrenaline 
+A|6| Human 1: i _have a_ couple years ago . _it's quite_ [a] unique _experience_ 
+B|7| Human 2: [have] [any] [ziplining] [experience] ? 😁 [it's quite] exhilarating ! 
+A|8| Human 1: i forgot _where it was_ , _it_ wasn't local i don't think though 
+B|9| Human 2: [where it was] ? 🤔 [have] _you_ tried [any] other adventure sports ? 
+A|10| Human 1: that's [a] hard question _and_ _i'm_ tired so _i'm going to_ go . _see you_ 
+B|11| Human 2: [see _you] later_ 🤔 [and] [have a] great _day_ ! 
+A|12| Human 1: no , _i'm going to get a massage_ first 
+B|13| Human 2: [have] [you] tried [any] [massage] in that [ziplining] adventure ? 🤔 [i'm going to get] one [this weekend] 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] 🤔 [i'm going to get a massage] [and] [ziplining] [this] weekend<|im_end| 
+A|16| Human 1: [you] should ! [it's] _relaxing_ _after a long day_ . talk [to] [you later] ! 
+B|17| Human 2: [relaxing] 😴 [after a long day] [it's] nice [to get a massage] [and] ziplining<|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=this weekend, Pattern=plans, Pattern=any
+	Constrained: Pattern=this
+Turn ID=3| B | Human 2 : that sounds like fun ! 😃 do you have any specific plans in mind ?
+	Free: Pattern=plans, Pattern=you, Pattern=any, Pattern=have
+	Constrained: 
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining
+	Constrained: 
+Turn ID=5| B | Human 2 : that sounds like an exciting adventure ! 🎉 ziplining can be a great way to get your adrenaline
+	Free: Pattern=to get, Pattern=a, Pattern=ziplining
+	Constrained: Pattern=to
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=it's quite, Pattern=have a, Pattern=a, Pattern=experience
+	Constrained: Pattern=a, Pattern=it's, Pattern=have
+Turn ID=7| B | Human 2 : have any ziplining experience ? 😁 it's quite exhilarating !
+	Free: Pattern=ziplining, Pattern=have, Pattern=any, Pattern=experience, Pattern=it's quite
+	Constrained: Pattern=it's
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=where it was, Pattern=it
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : where it was ? 🤔 have you tried any other adventure sports ?
+	Free: Pattern=where it was, Pattern=you, Pattern=any, Pattern=have
+	Constrained: Pattern=it
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=see you, Pattern=a, Pattern=and, Pattern=i'm, Pattern=i'm going to
+	Constrained: Pattern=i'm, Pattern=you, Pattern=to
+Turn ID=11| B | Human 2 : see you later 🤔 and have a great day !
+	Free: Pattern=see you, Pattern=have a, Pattern=and, Pattern=day, Pattern=you later
+	Constrained: Pattern=a, Pattern=you, Pattern=have
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=i'm going to get a massage
+	Constrained: Pattern=massage, Pattern=to get a massage, Pattern=i'm going to get, Pattern=a, Pattern=to get, Pattern=i'm, Pattern=to, Pattern=i'm going to
+Turn ID=13| B | Human 2 : have you tried any massage in that ziplining adventure ? 🤔 i'm going to get one this weekend
+	Free: Pattern=massage, Pattern=have, Pattern=any, Pattern=this weekend, Pattern=you, Pattern=ziplining, Pattern=i'm going to get
+	Constrained: Pattern=to get, Pattern=i'm, Pattern=to, Pattern=this, Pattern=i'm going to
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: 
+Turn ID=15| B | Human 2 : traditional kind 🤔 i'm going to get a massage and ziplining this weekend<|im_end|
+	Free: Pattern=and, Pattern=i'm going to get a massage, Pattern=this, Pattern=ziplining, Pattern=traditional kind
+	Constrained: Pattern=massage, Pattern=to get a massage, Pattern=i'm going to get, Pattern=a, Pattern=to get, Pattern=i'm, Pattern=to, Pattern=i'm going to
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=relaxing, Pattern=you later, Pattern=to, Pattern=it's, Pattern=you, Pattern=after a long day
+	Constrained: Pattern=a, Pattern=you, Pattern=day
+Turn ID=17| B | Human 2 : relaxing 😴 after a long day it's nice to get a massage and ziplining<|im_end
+	Free: Pattern=to get a massage, Pattern=after a long day, Pattern=and, Pattern=relaxing, Pattern=it's
+	Constrained: Pattern=massage, Pattern=a, Pattern=to get, Pattern=day, Pattern=to

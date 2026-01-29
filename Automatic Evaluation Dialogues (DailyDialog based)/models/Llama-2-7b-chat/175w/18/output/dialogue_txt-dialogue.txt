@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: heya , _nice to meet you_ , _i'm_ paul 
+A|2| Human 1: [nice to meet you] _too _!_ i'm_ james . _how_ are [you] _doing_ today ? 
+B|3| Human 2: [i'm] [doing] well , thank [you] _for_ asking ! [how] _about_ [you] ? is there _anything_ _i_ can help [you] with ? <|im_end| 
+A|4| Human 1: _same here !_ _i hope_ _the_ weather _will_ _be_ [nice] 
+B|5| Human 2: [i hope] so [too !] is there _anything_ else _you'd_ like [to] chat _about_ or ask ? 
+A|6| Human 1: oh no , which areas _will_ _be affected_ ? 
+B|7| Human 2: [will] [you] [be affected] by [the] snow ? 
+A|8| Human 1: uh oh , i'd _better_ not [to] plan [for] bbq then instead _just_ enjoying playing board games _inside_ 🙂 
+B|9| Human 2: [same here [!] i'm] [just] going [to] relax and enjoy [the] weekend [inside] with _some_ hot chocolate and a good book . <| 
+A|10| Human 1: _yea , you'd better check . where do you live ?_ 
+B|11| Human 2: [yea , you'd better check . where do you live ?] 
+A|12| Human 1: gotcha . _anything you love about where you live ?_ 
+B|13| Human 2: [anything you love about where you live ?] 
+A|14| Human 1: [nice] ! i'd [love] [to] come visit that area [some] times 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : heya , nice to meet you , i'm paul
+	Free: Pattern=nice to meet you, Pattern=i'm
+	Constrained: Pattern=nice, Pattern=to, Pattern=you
+Turn ID=2| A | Human 1 : nice to meet you too ! i'm james . how are you doing today ?
+	Free: Pattern=you, Pattern=nice to meet you, Pattern=! i'm, Pattern=too !, Pattern=how, Pattern=doing
+	Constrained: Pattern=nice, Pattern=i'm, Pattern=to, Pattern=you
+Turn ID=3| B | Human 2 : i'm doing well , thank you for asking ! how about you ? is there anything i can help you with ? <|im_end|
+	Free: Pattern=you, Pattern=for, Pattern=about, Pattern=i'm, Pattern=i, Pattern=anything, Pattern=how, Pattern=doing
+	Constrained: 
+Turn ID=4| A | Human 1 : same here ! i hope the weather will be nice
+	Free: Pattern=same here !, Pattern=nice, Pattern=will, Pattern=be, Pattern=the, Pattern=i hope
+	Constrained: Pattern=i
+Turn ID=5| B | Human 2 : i hope so too ! is there anything else you'd like to chat about or ask ?
+	Free: Pattern=about, Pattern=you'd, Pattern=anything, Pattern=to, Pattern=i hope, Pattern=too !
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : oh no , which areas will be affected ?
+	Free: Pattern=be affected, Pattern=will
+	Constrained: Pattern=be
+Turn ID=7| B | Human 2 : will you be affected by the snow ?
+	Free: Pattern=be affected, Pattern=will, Pattern=you, Pattern=the
+	Constrained: Pattern=be
+Turn ID=8| A | Human 1 : uh oh , i'd better not to plan for bbq then instead just enjoying playing board games inside 🙂
+	Free: Pattern=just, Pattern=for, Pattern=inside, Pattern=better, Pattern=to
+	Constrained: 
+Turn ID=9| B | Human 2 : same here ! i'm just going to relax and enjoy the weekend inside with some hot chocolate and a good book . <|
+	Free: Pattern=same here !, Pattern=just, Pattern=inside, Pattern=some, Pattern=the, Pattern=! i'm, Pattern=to
+	Constrained: Pattern=i'm
+Turn ID=10| A | Human 1 : yea , you'd better check . where do you live ?
+	Free: Pattern=yea , you'd better check . where do you live ?
+	Constrained: Pattern=you, Pattern=you'd, Pattern=better
+Turn ID=11| B | Human 2 : yea , you'd better check . where do you live ?
+	Free: Pattern=yea , you'd better check . where do you live ?
+	Constrained: Pattern=you, Pattern=you'd, Pattern=better
+Turn ID=12| A | Human 1 : gotcha . anything you love about where you live ?
+	Free: Pattern=anything you love about where you live ?
+	Constrained: Pattern=you, Pattern=love, Pattern=anything, Pattern=about
+Turn ID=13| B | Human 2 : anything you love about where you live ?
+	Free: Pattern=anything you love about where you live ?
+	Constrained: Pattern=you, Pattern=love, Pattern=anything, Pattern=about
+Turn ID=14| A | Human 1 : nice ! i'd love to come visit that area some times
+	Free: Pattern=love, Pattern=nice, Pattern=some, Pattern=to
+	Constrained: 

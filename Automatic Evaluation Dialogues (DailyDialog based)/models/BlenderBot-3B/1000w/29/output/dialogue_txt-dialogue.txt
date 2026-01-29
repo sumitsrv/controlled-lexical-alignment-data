@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! how _are you_ doing 🙂 
+A|2| Human 1: _i'm great_ ! how's _your_ _day_ _going_ ? 
+B|3| Human 2: [i'm great] _but_ [going] _to_ have _a_ [day] off tomorrow and _i_ need _to_ do _some_ _work_ before [going] _to_ _a_ restaurant _i_ really don't want _to_ go 
+A|4| Human 1: oh _that_ is _cool_ ! _what class_ ? [are you] _working part time_ ? 
+B|5| Human 2: [i'm] [working part _time] to_ save _for_ _college_ _, but_ [going] _to_ school _full time_ _for_ psychology . [what class] [you] have off tomorrow ? 
+A|6| Human 1: oh _that_ is awesome ! [for] [some] reason [i] assumed it _was_ [a] _college class_ [, but] [a] _sewing_ [class] _sounds_ _way_ _better_ _! i_ [work] [full time] [, but] _i take_ _pottery _classes_ from_ [time to] [time] ! 
+B|7| Human 2: [i'm] [working part time] [but] [full time] [college class] [was] [better] than [classes from] [work] that's why [i take] [some] daytime and after [work] ones [to] relax 
+A|8| Human 1: [i] feel [you] on _that_ _! it's_ important [to] balance _all the_ _different_ parts _of_ _your_ brain . [i] _like pottery_ because [i] _also_ drink [a] lot _of_ _tea_ , _so_ [i] _get_ _to _make_ some_ _tea ware_ . 
+B|9| Human 2: [i take] [the] [classes] [that] [get] me [all the] [way] through [like pottery] [but] [also] [make some] [cool] stuff with woven fabric [like] pillows 
+A|10| Human 1: _i would_ _love_ [to] build _one_ , once [i] acquire [the] _skills_ [to] ! _what kind of_ _tea_ is _your_ _favorite_ ? 
+B|11| Human 2: [what kind of] [pottery classes] do [you] [take] _? i_ [love] [the] arts [but] [sewing] [would] be [great] [also] [! it's] [one] [of] my [favorite] [skills] 
+A|12| Human 1: _ahh_ , _those_ [are] mostly [from] japan , no [? i] [like] white _teas_ , [like] silver needle . 
+B|13| Human 2: [ahh] [that] [sounds] _like a_ lovely [way] [to] [get] [those] [skills] [you] need [to make] [the] [tea ware] [your] own [! [i] would] [also] [like] [one] ! 
+A|14| Human 1: [i] actually found [a] youtube channel called <redacted_term> [that] [i] [like a] lot . [you] should check it _out_ ! [the] host talks about [all] kinds [of] _different_ _teas_ . 
+B|15| Human 2: [i] [love] [that] [tea] [also] , [all] [those] [different] [pottery] and japanes [teas] [are] [so] [cool] [from] [the] [way] [you] [make] them [out] [of] clay 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! how are you doing 🙂
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm great ! how's your day going ?
+	Free: Pattern=i'm great, Pattern=day, Pattern=your, Pattern=going
+	Constrained: Pattern=i'm, Pattern=great
+Turn ID=3| B | Human 2 : i'm great but going to have a day off tomorrow and i need to do some work before going to a restaurant i really don't want to go
+	Free: Pattern=going, Pattern=a, Pattern=work, Pattern=to, Pattern=but, Pattern=some, Pattern=i'm great, Pattern=day, Pattern=i
+	Constrained: Pattern=i'm, Pattern=great
+Turn ID=4| A | Human 1 : oh that is cool ! what class ? are you working part time ?
+	Free: Pattern=working part time, Pattern=cool, Pattern=are you, Pattern=what class, Pattern=that
+	Constrained: Pattern=are, Pattern=you, Pattern=class, Pattern=time
+Turn ID=5| B | Human 2 : i'm working part time to save for college , but going to school full time for psychology . what class you have off tomorrow ?
+	Free: Pattern=full time, Pattern=working part time, Pattern=time to, Pattern=for, Pattern=i'm, Pattern=what class, Pattern=to, Pattern=you, Pattern=, but, Pattern=going, Pattern=college
+	Constrained: Pattern=but, Pattern=to, Pattern=class, Pattern=time
+Turn ID=6| A | Human 1 : oh that is awesome ! for some reason i assumed it was a college class , but a sewing class sounds way better ! i work full time , but i take pottery classes from time to time !
+	Free: Pattern=time, Pattern=full time, Pattern=, but, Pattern=a, Pattern=i take, Pattern=for, Pattern=! i, Pattern=classes from, Pattern=some, Pattern=work, Pattern=sounds, Pattern=better, Pattern=college class, Pattern=time to, Pattern=sewing, Pattern=class, Pattern=i, Pattern=pottery classes, Pattern=was, Pattern=that, Pattern=way
+	Constrained: Pattern=time, Pattern=college, Pattern=from, Pattern=pottery, Pattern=take, Pattern=classes, Pattern=to, Pattern=but, Pattern=class, Pattern=i
+Turn ID=7| B | Human 2 : i'm working part time but full time college class was better than classes from work that's why i take some daytime and after work ones to relax
+	Free: Pattern=full time, Pattern=working part time, Pattern=college class, Pattern=i take, Pattern=classes from, Pattern=some, Pattern=better, Pattern=to, Pattern=was, Pattern=but, Pattern=i'm, Pattern=work
+	Constrained: Pattern=time, Pattern=college, Pattern=from, Pattern=take, Pattern=classes, Pattern=class, Pattern=i
+Turn ID=8| A | Human 1 : i feel you on that ! it's important to balance all the different parts of your brain . i like pottery because i also drink a lot of tea , so i get to make some tea ware .
+	Free: Pattern=different, Pattern=of, Pattern=! it's, Pattern=a, Pattern=tea, Pattern=tea ware, Pattern=also, Pattern=to make, Pattern=all the, Pattern=make some, Pattern=to, Pattern=get, Pattern=that, Pattern=so, Pattern=you, Pattern=like pottery, Pattern=your, Pattern=i
+	Constrained: Pattern=tea, Pattern=some, Pattern=make, Pattern=to, Pattern=pottery, Pattern=like, Pattern=the, Pattern=all
+Turn ID=9| B | Human 2 : i take the classes that get me all the way through like pottery but also make some cool stuff with woven fabric like pillows
+	Free: Pattern=like pottery, Pattern=all the, Pattern=classes, Pattern=get, Pattern=cool, Pattern=i take, Pattern=also, Pattern=like, Pattern=make some, Pattern=the, Pattern=that, Pattern=way, Pattern=but
+	Constrained: Pattern=some, Pattern=make, Pattern=i, Pattern=pottery, Pattern=like, Pattern=take, Pattern=the, Pattern=all
+Turn ID=10| A | Human 1 : i would love to build one , once i acquire the skills to ! what kind of tea is your favorite ?
+	Free: Pattern=tea, Pattern=love, Pattern=skills, Pattern=the, Pattern=i would, Pattern=to, Pattern=favorite, Pattern=one, Pattern=what kind of, Pattern=your, Pattern=i
+	Constrained: Pattern=i, Pattern=of, Pattern=would
+Turn ID=11| B | Human 2 : what kind of pottery classes do you take ? i love the arts but sewing would be great also ! it's one of my favorite skills
+	Free: Pattern=? i, Pattern=of, Pattern=! it's, Pattern=sewing, Pattern=love, Pattern=skills, Pattern=also, Pattern=would, Pattern=pottery classes, Pattern=but, Pattern=you, Pattern=great, Pattern=favorite, Pattern=one, Pattern=what kind of, Pattern=take, Pattern=the
+	Constrained: Pattern=classes, Pattern=i, Pattern=pottery, Pattern=of
+Turn ID=12| A | Human 1 : ahh , those are mostly from japan , no ? i like white teas , like silver needle .
+	Free: Pattern=? i, Pattern=are, Pattern=from, Pattern=like, Pattern=teas, Pattern=those, Pattern=ahh
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : ahh that sounds like a lovely way to get those skills you need to make the tea ware your own ! i would also like one !
+	Free: Pattern=like a, Pattern=you, Pattern=! i, Pattern=one, Pattern=tea ware, Pattern=skills, Pattern=your, Pattern=to make, Pattern=the, Pattern=i would, Pattern=to, Pattern=those, Pattern=get, Pattern=ahh, Pattern=also, Pattern=sounds, Pattern=like, Pattern=that, Pattern=way
+	Constrained: Pattern=a, Pattern=tea, Pattern=like, Pattern=would, Pattern=to, Pattern=make, Pattern=i
+Turn ID=14| A | Human 1 : i actually found a youtube channel called <redacted_term> that i like a lot . you should check it out ! the host talks about all kinds of different teas .
+	Free: Pattern=different, Pattern=a, Pattern=i, Pattern=teas, Pattern=that, Pattern=like a, Pattern=of, Pattern=you, Pattern=out, Pattern=the, Pattern=all
+	Constrained: Pattern=like, Pattern=a
+Turn ID=15| B | Human 2 : i love that tea also , all those different pottery and japanes teas are so cool from the way you make them out of clay
+	Free: Pattern=different, Pattern=of, Pattern=cool, Pattern=tea, Pattern=are, Pattern=from, Pattern=love, Pattern=teas, Pattern=those, Pattern=so, Pattern=you, Pattern=out, Pattern=make, Pattern=i, Pattern=also, Pattern=pottery, Pattern=the, Pattern=all, Pattern=that, Pattern=way
+	Constrained: 

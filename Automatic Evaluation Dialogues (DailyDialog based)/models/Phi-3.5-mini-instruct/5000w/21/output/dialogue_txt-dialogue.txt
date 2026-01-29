@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , how _are you_ _doing_ ! 
+A|2| Human 1: _i'm doing well_ . _what_ [are you] up _to_ ? 
+B|3| Human 2: [i'm doing well] , too ! [i'm] phi , an ai digital assistant here [to] help [you] with your questions or tasks . how 
+A|4| Human 1: _wow_ , that's impressive _. i_ already _gave_ up on _cleaning emails_ long _ago_ 
+B|5| Human 2: [i'm] glad [you] [gave] [cleaning emails] [ago] ! dealing with _that_ can be quite time-consuming . [i'm] here [to] help stream 
+A|6| Human 1: yea , _a_ little bit _, but_ _it's_ okay 🙂 _what_ _do_ _you enjoy_ [doing] _outside work_ ? 
+B|7| Human 2: [i'm] phi [, but] [outside work] enjoyment [you] might ask 😄 [well] _, i_ don't experience _it_ personally [, but] 
+A|8| Human 1: ah _cool_ . _so_ [you] _like_ _action_ _movies_ ? 
+B|9| Human 2: [i] [like] [movies] _that_ [are] enjoyable [but] also intellectually stimulating . [you] know , [action] can't [wow] [you] without [cool] visuals and 
+A|10| Human 1: _what_ happened there ? [i] watched bits _of_ _terminators movies_ [but] never _a_ _full_ one 
+B|11| Human 2: [terminators movies] [are] [full] [of] [action] [but] also [a] deep dive into [what] [it's] [like] being human and _the_ future [. i] [enjoy] _the_ 
+A|12| Human 1: haha sure . by [the] time [, i] _get_ [to] it; [i] will _forget_ [the] _details_ , _only_ knowing [that] [it's] touching at [the] end 
+B|13| Human 2: [it's] interesting [that] [you] [get] [the] depth and [action] [but] [forget] [details] [like] [i] [do] . though [i] don't have feelings , [it's] [cool] 
+A|14| Human 1: oh no _, so_ _it's not_ _happy ending_ ? 
+B|15| Human 2: [not] [the] [happy ending] [i'm] programmed . [it's] [cool] [that] [you enjoy] [movies] [like] [terminators] [, but] [i] don't [forget] 
+A|16| Human 1: then [i] want [to] _watch_ [it] ! [you] didn't spoil much 🙂 
+B|17| Human 2: [i'm] [only] an ai [, so] [i] [watch] [movies] [the] same way [you] would , [like] [it's not] spoilable for me [but] 
+A|18| Human 1: thanks ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you doing !
+	Free: Pattern=are you, Pattern=hi, Pattern=doing
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing well . what are you up to ?
+	Free: Pattern=i'm doing well, Pattern=are you, Pattern=to, Pattern=what
+	Constrained: Pattern=well, Pattern=you, Pattern=doing, Pattern=are, Pattern=i'm
+Turn ID=3| B | Human 2 : i'm doing well , too ! i'm phi , an ai digital assistant here to help you with your questions or tasks . how
+	Free: Pattern=i'm doing well, Pattern=to, Pattern=you, Pattern=i'm
+	Constrained: Pattern=well, Pattern=i'm, Pattern=doing
+Turn ID=4| A | Human 1 : wow , that's impressive . i already gave up on cleaning emails long ago
+	Free: Pattern=gave, Pattern=wow, Pattern=. i, Pattern=cleaning emails, Pattern=ago
+	Constrained: Pattern=i
+Turn ID=5| B | Human 2 : i'm glad you gave cleaning emails ago ! dealing with that can be quite time-consuming . i'm here to help stream
+	Free: Pattern=gave, Pattern=you, Pattern=i'm, Pattern=to, Pattern=cleaning emails, Pattern=that, Pattern=ago
+	Constrained: 
+Turn ID=6| A | Human 1 : yea , a little bit , but it's okay 🙂 what do you enjoy doing outside work ?
+	Free: Pattern=you enjoy, Pattern=, but, Pattern=what, Pattern=doing, Pattern=it's, Pattern=outside work, Pattern=do, Pattern=a
+	Constrained: Pattern=but, Pattern=you, Pattern=enjoy
+Turn ID=7| B | Human 2 : i'm phi , but outside work enjoyment you might ask 😄 well , i don't experience it personally , but
+	Free: Pattern=well, Pattern=it, Pattern=i'm, Pattern=, i, Pattern=outside work, Pattern=you, Pattern=, but
+	Constrained: Pattern=but, Pattern=i
+Turn ID=8| A | Human 1 : ah cool . so you like action movies ?
+	Free: Pattern=you, Pattern=action, Pattern=cool, Pattern=like, Pattern=movies, Pattern=so
+	Constrained: 
+Turn ID=9| B | Human 2 : i like movies that are enjoyable but also intellectually stimulating . you know , action can't wow you without cool visuals and
+	Free: Pattern=you, Pattern=action, Pattern=cool, Pattern=i, Pattern=like, Pattern=movies, Pattern=are, Pattern=wow, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=10| A | Human 1 : what happened there ? i watched bits of terminators movies but never a full one
+	Free: Pattern=full, Pattern=of, Pattern=what, Pattern=a, Pattern=terminators movies, Pattern=i, Pattern=but
+	Constrained: Pattern=terminators, Pattern=movies
+Turn ID=11| B | Human 2 : terminators movies are full of action but also a deep dive into what it's like being human and the future . i enjoy the
+	Free: Pattern=full, Pattern=of, Pattern=a, Pattern=terminators movies, Pattern=are, Pattern=like, Pattern=the, Pattern=action, Pattern=what, Pattern=enjoy, Pattern=. i, Pattern=it's, Pattern=but
+	Constrained: Pattern=i, Pattern=terminators, Pattern=movies
+Turn ID=12| A | Human 1 : haha sure . by the time , i get to it; i will forget the details , only knowing that it's touching at the end
+	Free: Pattern=details, Pattern=i, Pattern=to, Pattern=get, Pattern=only, Pattern=forget, Pattern=the, Pattern=, i, Pattern=that, Pattern=it's
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : it's interesting that you get the depth and action but forget details like i do . though i don't have feelings , it's cool
+	Free: Pattern=details, Pattern=you, Pattern=forget, Pattern=action, Pattern=do, Pattern=cool, Pattern=i, Pattern=like, Pattern=the, Pattern=get, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: 
+Turn ID=14| A | Human 1 : oh no , so it's not happy ending ?
+	Free: Pattern=happy ending, Pattern=it's not, Pattern=, so
+	Constrained: Pattern=it's, Pattern=so, Pattern=not
+Turn ID=15| B | Human 2 : not the happy ending i'm programmed . it's cool that you enjoy movies like terminators , but i don't forget
+	Free: Pattern=you enjoy, Pattern=, but, Pattern=forget, Pattern=terminators, Pattern=cool, Pattern=i'm, Pattern=i, Pattern=the, Pattern=movies, Pattern=not, Pattern=happy ending, Pattern=like, Pattern=that, Pattern=it's
+	Constrained: Pattern=but, Pattern=you, Pattern=enjoy
+Turn ID=16| A | Human 1 : then i want to watch it ! you didn't spoil much 🙂
+	Free: Pattern=you, Pattern=it, Pattern=i, Pattern=to, Pattern=watch
+	Constrained: 
+Turn ID=17| B | Human 2 : i'm only an ai , so i watch movies the same way you would , like it's not spoilable for me but
+	Free: Pattern=you, Pattern=only, Pattern=i'm, Pattern=i, Pattern=like, Pattern=the, Pattern=, so, Pattern=but, Pattern=watch, Pattern=it's not, Pattern=movies
+	Constrained: Pattern=it's, Pattern=so, Pattern=not
+Turn ID=18| A | Human 1 : thanks !
+	Free: 
+	Constrained: 

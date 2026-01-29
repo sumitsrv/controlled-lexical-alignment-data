@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: nice _to_ _meet_ _you_ ! is _this_ _your first_ _time_ doing something _like_ _this_ ? 
+B|3| Human 2: hello ! as an artificial intelligence , _i_ don't [meet] people in _the same_ way [you] _do_ , nor _do_ _i_ carry out [this] interaction [like] [your first] 
+A|4| Human 1: [i] _have been_ _with the_ _company_ _for_ _over_ 3 _years_ . stick _with the same team_ what about [you] ? 
+B|5| Human 2: while i'm not part of [your] [company] [with the same team] [like] [you] [have been] [for] three [years] , [i] am here 24/7 [to] 
+A|6| Human 1: that sounds [like] a perfect plan ! 
+B|7| Human 2: indeed , [i] am designed [for] 24/7 assistance . [i] am here [to] help [with] [your] questions or tasks , no matter [the] [time] of day 
+A|8| Human 1: let's try something different . what about <redacted_term> ? [do] [you] always prefer _lunch sync over regular meeting syncs_ ? 
+B|9| Human 2: i'm phi , and as [for] preferences [like] [lunch sync over regular meeting syncs] , [i] don't [have] personal preferences . 
+A|10| Human 1: we can check [the] _menu_ then decide :) 
+B|11| Human 2: my apologies [for] [the] confusion . as phi , i'm here 24/7 [to] assist [you] [with] [menu] options or any other service 
+A|12| Human 1: sure . see [you] then ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=time, Pattern=you, Pattern=your first, Pattern=meet, Pattern=like, Pattern=to, Pattern=this
+	Constrained: Pattern=your
+Turn ID=3| B | Human 2 : hello ! as an artificial intelligence , i don't meet people in the same way you do , nor do i carry out this interaction like your first
+	Free: Pattern=you, Pattern=meet, Pattern=i, Pattern=like, Pattern=the same, Pattern=this, Pattern=do, Pattern=your first
+	Constrained: Pattern=the, Pattern=your
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=company, Pattern=you, Pattern=with the, Pattern=with the same team, Pattern=years, Pattern=for, Pattern=have been, Pattern=over, Pattern=i
+	Constrained: Pattern=the, Pattern=the same, Pattern=with, Pattern=with the, Pattern=have
+Turn ID=5| B | Human 2 : while i'm not part of your company with the same team like you have been for three years , i am here 24/7 to
+	Free: Pattern=company, Pattern=you, Pattern=with the same team, Pattern=years, Pattern=for, Pattern=have been, Pattern=like, Pattern=to, Pattern=your, Pattern=i
+	Constrained: Pattern=the, Pattern=the same, Pattern=with, Pattern=with the, Pattern=have
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=like
+	Constrained: 
+Turn ID=7| B | Human 2 : indeed , i am designed for 24/7 assistance . i am here to help with your questions or tasks , no matter the time of day
+	Free: Pattern=time, Pattern=for, Pattern=the, Pattern=to, Pattern=with, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=lunch sync over regular meeting syncs, Pattern=do, Pattern=you
+	Constrained: Pattern=over
+Turn ID=9| B | Human 2 : i'm phi , and as for preferences like lunch sync over regular meeting syncs , i don't have personal preferences .
+	Free: Pattern=lunch sync over regular meeting syncs, Pattern=have, Pattern=for, Pattern=i, Pattern=like
+	Constrained: Pattern=over
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=the, Pattern=menu
+	Constrained: 
+Turn ID=11| B | Human 2 : my apologies for the confusion . as phi , i'm here 24/7 to assist you with menu options or any other service
+	Free: Pattern=you, Pattern=for, Pattern=menu, Pattern=the, Pattern=to, Pattern=with
+	Constrained: 
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=you
+	Constrained: 

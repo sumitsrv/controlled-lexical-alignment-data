@@ -1,0 +1,75 @@
+A|0| Human 1: hi 
+B|1| Human 2: _i_ was _talking_ to _robot_ _all_ the time:) 
+A|2| Human 1: _haha_ . what are _you _talking_ about_ ? 
+B|3| Human 2: [about] [you talking] to _me_ _all_ the time . [haha] 🤖 
+A|4| Human 1: ok . who's _your favorite group_ 
+B|5| Human 2: [favorite group] 🤖 _is_ [about] [you talking] to [your favorite] _robot_ [haha] 
+A|6| Human 1: _why not ?_ 
+B|7| Human 2: you're [talking about] [favorite group] [haha] [why not ?] 
+A|8| Human 1: _hahaha_ 
+B|9| Human 2: [hahaha] [why not ?] [your favorite group] ? 
+A|10| Human 1: _john_ mayer:) \ 
+B|11| Human 2: [hahaha] mayer what's up 
+A|12| Human 1: what [is] _mellow style_ 
+B|13| Human 2: mayer [style] [hahaha] what's [mellow] [about] [john] mayer ? 
+A|14| Human 1: _umm_ _yes_ he _has some but not all_ 
+B|15| Human 2: what's [mellow style] [john] mayer [has some but not all] [yes] [hahaha] 
+A|16| Human 1: [yes] [i] do . [you] act _like_ a [robot] _how about_ [me] ? am [i] _like_ a [robot] ? 
+B|17| Human 2: [umm] [about] [you] [like] [robot] [yes] [hahaha] [not all] [but] [some] [how about] [john] mayer [style] [mellow] ? <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : i was talking to robot all the time:)
+	Free: Pattern=talking, Pattern=robot, Pattern=i, Pattern=all
+	Constrained: 
+Turn ID=2| A | Human 1 : haha . what are you talking about ?
+	Free: Pattern=you talking, Pattern=talking about, Pattern=haha
+	Constrained: Pattern=you, Pattern=about, Pattern=talking
+Turn ID=3| B | Human 2 : about you talking to me all the time . haha 🤖
+	Free: Pattern=me, Pattern=you talking, Pattern=about, Pattern=haha, Pattern=all
+	Constrained: Pattern=you, Pattern=talking
+Turn ID=4| A | Human 1 : ok . who's your favorite group
+	Free: Pattern=your favorite group
+	Constrained: Pattern=your favorite, Pattern=favorite group
+Turn ID=5| B | Human 2 : favorite group 🤖 is about you talking to your favorite robot haha
+	Free: Pattern=about, Pattern=favorite group, Pattern=is, Pattern=haha, Pattern=robot, Pattern=your favorite, Pattern=you talking
+	Constrained: Pattern=you, Pattern=talking
+Turn ID=6| A | Human 1 : why not ?
+	Free: Pattern=why not ?
+	Constrained: 
+Turn ID=7| B | Human 2 : you're talking about favorite group haha why not ?
+	Free: Pattern=why not ?, Pattern=favorite group, Pattern=talking about, Pattern=haha
+	Constrained: Pattern=talking, Pattern=about
+Turn ID=8| A | Human 1 : hahaha
+	Free: Pattern=hahaha
+	Constrained: 
+Turn ID=9| B | Human 2 : hahaha why not ? your favorite group ?
+	Free: Pattern=your favorite group, Pattern=why not ?, Pattern=hahaha
+	Constrained: Pattern=favorite group, Pattern=your favorite
+Turn ID=10| A | Human 1 : john mayer:) \
+	Free: Pattern=john
+	Constrained: 
+Turn ID=11| B | Human 2 : hahaha mayer what's up
+	Free: Pattern=hahaha
+	Constrained: 
+Turn ID=12| A | Human 1 : what is mellow style
+	Free: Pattern=mellow style, Pattern=is
+	Constrained: Pattern=mellow, Pattern=style
+Turn ID=13| B | Human 2 : mayer style hahaha what's mellow about john mayer ?
+	Free: Pattern=hahaha, Pattern=john, Pattern=about, Pattern=mellow, Pattern=style
+	Constrained: 
+Turn ID=14| A | Human 1 : umm yes he has some but not all
+	Free: Pattern=has some but not all, Pattern=yes, Pattern=umm
+	Constrained: Pattern=but, Pattern=not all, Pattern=all, Pattern=some
+Turn ID=15| B | Human 2 : what's mellow style john mayer has some but not all yes hahaha
+	Free: Pattern=hahaha, Pattern=john, Pattern=yes, Pattern=has some but not all, Pattern=mellow style
+	Constrained: Pattern=some, Pattern=not all, Pattern=all, Pattern=but, Pattern=mellow, Pattern=style
+Turn ID=16| A | Human 1 : yes i do . you act like a robot how about me ? am i like a robot ?
+	Free: Pattern=me, Pattern=like, Pattern=robot, Pattern=you, Pattern=yes, Pattern=how about, Pattern=i
+	Constrained: Pattern=about
+Turn ID=17| B | Human 2 : umm about you like robot yes hahaha not all but some how about john mayer style mellow ? <|im_end
+	Free: Pattern=hahaha, Pattern=john, Pattern=umm, Pattern=about, Pattern=some, Pattern=not all, Pattern=how about, Pattern=like, Pattern=but, Pattern=you, Pattern=yes, Pattern=mellow, Pattern=style, Pattern=robot
+	Constrained: Pattern=about, Pattern=all

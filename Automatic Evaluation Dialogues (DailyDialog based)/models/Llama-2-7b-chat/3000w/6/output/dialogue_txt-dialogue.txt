@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: not much . _any_ _plans this weekend ?_ 
+B|3| Human 2: sure ! [weekend] [plans] can be found in the calendar app on your phone . would _you_ like me _to_ open _it_ for _you_ ? <|im 
+A|4| Human 1: _ziplining_ ? 
+B|5| Human 2: oh wow , [ziplining] sounds like _a_ lot of fun ! 😃 do _you_ _have_ [any] other [plans this weekend ?] 
+A|6| Human 1: _i_ _have a_ couple years _ago_ . _it's _quite_ a_ _unique experience_ 
+B|7| Human 2: [have] _you_ been [ziplining] before ? [it's quite] [unique experience] 
+A|8| Human 1: _i_ forgot where _it was_ , [it] wasn't local _i_ don't _think_ _though_ 
+B|9| Human 2: [it was] [quite a] while [ago] [though] 😃 [have] _you_ done [any] [ziplining] before ? 
+A|10| Human 1: _that's_ [a] hard question _and_ _i'm_ _tired_ so _i'm going to_ _go_ . _see_ [you] 
+B|11| Human 2: [i] [see] you're [tired] [and] [going to] bed 😴💤 [it was] nice chatting with you<|im 
+A|12| Human 1: no , _i'm going to get a massage_ first 
+B|13| Human 2: [that's] great [i] [think] [massage] is great for _relaxing_ [and] rejuvenating [tired] muscles 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] or [i'm going to get a massage] [and] then [go] [to] sleep 
+A|16| Human 1: [you] should ! [it's] [relaxing] after [a] long day . talk [to] [you] later ! 
+B|17| Human 2: [it was] nice chatting with [you] too ! [have a] good night's sleep [and] [relaxing] [massage] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=plans this weekend ?, Pattern=any
+	Constrained: Pattern=plans, Pattern=weekend
+Turn ID=3| B | Human 2 : sure ! weekend plans can be found in the calendar app on your phone . would you like me to open it for you ? <|im
+	Free: Pattern=plans, Pattern=you, Pattern=it, Pattern=weekend, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining
+	Constrained: 
+Turn ID=5| B | Human 2 : oh wow , ziplining sounds like a lot of fun ! 😃 do you have any other plans this weekend ?
+	Free: Pattern=have, Pattern=a, Pattern=any, Pattern=plans this weekend ?, Pattern=you, Pattern=ziplining
+	Constrained: Pattern=plans, Pattern=weekend
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=quite a, Pattern=have a, Pattern=unique experience, Pattern=i, Pattern=it's quite, Pattern=ago
+	Constrained: Pattern=it's, Pattern=have, Pattern=a
+Turn ID=7| B | Human 2 : have you been ziplining before ? it's quite unique experience
+	Free: Pattern=have, Pattern=unique experience, Pattern=it's quite, Pattern=you, Pattern=ziplining
+	Constrained: Pattern=it's
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=it was, Pattern=though, Pattern=it, Pattern=think, Pattern=i
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : it was quite a while ago though 😃 have you done any ziplining before ?
+	Free: Pattern=it was, Pattern=have, Pattern=quite a, Pattern=though, Pattern=any, Pattern=ago, Pattern=you, Pattern=ziplining
+	Constrained: Pattern=it, Pattern=a
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=you, Pattern=go, Pattern=a, Pattern=tired, Pattern=and, Pattern=i'm, Pattern=that's, Pattern=see, Pattern=i'm going to
+	Constrained: Pattern=going to, Pattern=i'm, Pattern=to
+Turn ID=11| B | Human 2 : i see you're tired and going to bed 😴💤 it was nice chatting with you<|im
+	Free: Pattern=tired, Pattern=and, Pattern=i, Pattern=see, Pattern=going to, Pattern=it was
+	Constrained: Pattern=to, Pattern=it
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=i'm going to get a massage
+	Constrained: Pattern=going to, Pattern=massage, Pattern=a, Pattern=i'm, Pattern=to, Pattern=i'm going to
+Turn ID=13| B | Human 2 : that's great i think massage is great for relaxing and rejuvenating tired muscles
+	Free: Pattern=massage, Pattern=tired, Pattern=and, Pattern=think, Pattern=i, Pattern=that's, Pattern=relaxing
+	Constrained: 
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: 
+Turn ID=15| B | Human 2 : traditional kind or i'm going to get a massage and then go to sleep
+	Free: Pattern=traditional kind, Pattern=go, Pattern=and, Pattern=to, Pattern=i'm going to get a massage
+	Constrained: Pattern=going to, Pattern=massage, Pattern=a, Pattern=i'm, Pattern=to, Pattern=i'm going to
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=you, Pattern=a, Pattern=relaxing, Pattern=to, Pattern=it's
+	Constrained: 
+Turn ID=17| B | Human 2 : it was nice chatting with you too ! have a good night's sleep and relaxing massage !
+	Free: Pattern=it was, Pattern=massage, Pattern=you, Pattern=have a, Pattern=and, Pattern=relaxing
+	Constrained: Pattern=it, Pattern=a, Pattern=have

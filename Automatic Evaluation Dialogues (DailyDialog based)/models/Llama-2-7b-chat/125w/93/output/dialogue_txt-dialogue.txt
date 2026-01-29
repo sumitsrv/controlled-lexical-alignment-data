@@ -1,0 +1,59 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , what's up ! 
+A|2| Human 1: everything is _good_ . there's so much _to_ be thankful _for_ - especially coming out of thanksgiving holidays . _how_ _are_ _you_ ? 
+B|3| Human 2: i'm doing well , thank [you] [for] asking ! 😊 [how] can _i_ help [you] today ? 
+A|4| Human 1: _do you have_ interesting _plans_ ? 
+B|5| Human 2: as an ai assistant , _i don't_ [have] personal [plans] or experiences . however , i'm here [to] help [you] with _any_ questions or tasks 
+A|6| Human 1: _nice !_ what [for] ? _it's a_ _really_ beautiful _place_ . _really cold_ this time of year though . 
+B|7| Human 2: yeah , [it's] [really cold] . but i'm sure [you] [are] enjoying _the_ holiday season nevertheless ? <|im_end| 
+A|8| Human 1: cool . which _conference_ ? [i] saw on twitter [the] _other_ day , some people saying they were denied visas [for] some _conference_ _in_ canada . perhaps [it's] [the] same one . [i] [really] liked this _place_ called _kingyo_ . it has _good japanese food_ if you're into that . 
+B|9| Human 2: [nice !] [kingyo] sounds like [a] great [place] [for] [good japanese food] _. [do you_ have] _any_ [other] recommendations [for] things [to] [do] _in the area ?_ < 
+A|10| Human 1: [i don't] recall . my friend was hosting me _and_ did all [the] leg work [. do you] know [any] people [in the area ?] 
+B|11| Human 2: [i don't] [have] [any] personal connections [to] [the area] . i'm just an ai assistant [and] [don't] [have] personal experiences or connections [to] 
+A|12| Human 1: [you] attend these often ? 
+B|13| Human 2: yeah , [i] [do] ! i'm always up [for] [a] [good] [conference] . [it's a] great way [to] network [and] learn new things . plus , 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , what's up !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : everything is good . there's so much to be thankful for - especially coming out of thanksgiving holidays . how are you ?
+	Free: Pattern=good, Pattern=you, Pattern=how, Pattern=for, Pattern=are, Pattern=to
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm doing well , thank you for asking ! 😊 how can i help you today ?
+	Free: Pattern=you, Pattern=how, Pattern=i, Pattern=for
+	Constrained: 
+Turn ID=4| A | Human 1 : do you have interesting plans ?
+	Free: Pattern=do you have, Pattern=plans
+	Constrained: Pattern=have, Pattern=do, Pattern=you
+Turn ID=5| B | Human 2 : as an ai assistant , i don't have personal plans or experiences . however , i'm here to help you with any questions or tasks
+	Free: Pattern=plans, Pattern=you, Pattern=any, Pattern=to, Pattern=i don't, Pattern=have
+	Constrained: Pattern=don't, Pattern=i
+Turn ID=6| A | Human 1 : nice ! what for ? it's a really beautiful place . really cold this time of year though .
+	Free: Pattern=it's a, Pattern=for, Pattern=really, Pattern=really cold, Pattern=place, Pattern=nice !
+	Constrained: Pattern=a, Pattern=really, Pattern=it's
+Turn ID=7| B | Human 2 : yeah , it's really cold . but i'm sure you are enjoying the holiday season nevertheless ? <|im_end|
+	Free: Pattern=you, Pattern=are, Pattern=the, Pattern=really cold, Pattern=it's
+	Constrained: Pattern=really
+Turn ID=8| A | Human 1 : cool . which conference ? i saw on twitter the other day , some people saying they were denied visas for some conference in canada . perhaps it's the same one . i really liked this place called kingyo . it has good japanese food if you're into that .
+	Free: Pattern=kingyo, Pattern=other, Pattern=in, Pattern=i, Pattern=really, Pattern=the, Pattern=place, Pattern=for, Pattern=conference, Pattern=good japanese food, Pattern=it's
+	Constrained: Pattern=good
+Turn ID=9| B | Human 2 : nice ! kingyo sounds like a great place for good japanese food . do you have any other recommendations for things to do in the area ? <
+	Free: Pattern=kingyo, Pattern=other, Pattern=in the area ?, Pattern=do you have, Pattern=to, Pattern=place, Pattern=nice !, Pattern=good japanese food, Pattern=do, Pattern=a, Pattern=for, Pattern=. do you, Pattern=any
+	Constrained: Pattern=good, Pattern=you, Pattern=have, Pattern=do, Pattern=in, Pattern=the, Pattern=the area
+Turn ID=10| A | Human 1 : i don't recall . my friend was hosting me and did all the leg work . do you know any people in the area ?
+	Free: Pattern=i don't, Pattern=and, Pattern=in the area ?, Pattern=the, Pattern=. do you, Pattern=any
+	Constrained: Pattern=you, Pattern=do, Pattern=in, Pattern=i, Pattern=the, Pattern=don't, Pattern=the area
+Turn ID=11| B | Human 2 : i don't have any personal connections to the area . i'm just an ai assistant and don't have personal experiences or connections to
+	Free: Pattern=any, Pattern=and, Pattern=don't, Pattern=to, Pattern=the area, Pattern=i don't, Pattern=have
+	Constrained: Pattern=the, Pattern=don't, Pattern=i
+Turn ID=12| A | Human 1 : you attend these often ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : yeah , i do ! i'm always up for a good conference . it's a great way to network and learn new things . plus ,
+	Free: Pattern=good, Pattern=it's a, Pattern=and, Pattern=i, Pattern=to, Pattern=do, Pattern=a, Pattern=for, Pattern=conference
+	Constrained: Pattern=a, Pattern=it's

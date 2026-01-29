@@ -1,0 +1,59 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , what's up ! 
+A|2| Human 1: everything is _good_ . there's so much _to_ _be_ thankful _for_ - especially coming _out of_ _thanksgiving holidays_ . _how_ _are_ _you ?_ 
+B|3| Human 2: _do you_ like [thanksgiving holidays] ? 
+A|4| Human 1: [do you] _have_ interesting _plans_ ? 
+B|5| Human 2: _i_ [have] no [plans] [for] [thanksgiving] , but _i_ will [be] [out of] town with _the_ family 
+A|6| Human 1: nice ! what [for] ? _it's_ _a_ _really_ beautiful place . _really_ _cold_ _this time of year_ though . 
+B|7| Human 2: [it's] [cold] [out] [this time of year] [for] sure , but there [are] still [plans] [to] get turkey , dressing , mashed potatoes , 
+A|8| Human 1: cool . which _conference_ ? [i] saw on twitter [the] other day , some people saying they were _denied_ visas [for] some _conference in_ canada . perhaps [it's] [the] same _one_ _. i really liked_ [this] place called kingyo . _it_ _has_ _good_ japanese food if you're into _that_ . 
+B|9| Human 2: yeah [the] [conference] [for] [a] [good] job that's why they're [denied] [it] [. i really] want [to] go [this] [one] , [you ?] 
+A|10| Human 1: _i don't_ recall . my friend _was_ hosting me and did all [the] leg work . [do _you] know_ any people _in_ [the] area ? 
+B|11| Human 2: [it] [was] [for] [the] king taco [conference in] houston [this] [year] [. i] [was] [really] looking forward [to] [it] but [you know] [how] [that] [has] changed 
+A|12| Human 1: [you] attend these often ? 
+B|13| Human 2: [i] [know] [i don't] [have] [the] money [to] go [to] [that] [one] [this] [year] [. i really liked] [the] hostess [for] celebrity wife sw 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , what's up !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : everything is good . there's so much to be thankful for - especially coming out of thanksgiving holidays . how are you ?
+	Free: Pattern=good, Pattern=thanksgiving holidays, Pattern=out of, Pattern=how, Pattern=for, Pattern=are, Pattern=you ?, Pattern=be, Pattern=to
+	Constrained: Pattern=out, Pattern=thanksgiving, Pattern=you
+Turn ID=3| B | Human 2 : do you like thanksgiving holidays ?
+	Free: Pattern=thanksgiving holidays, Pattern=do you
+	Constrained: Pattern=thanksgiving, Pattern=you
+Turn ID=4| A | Human 1 : do you have interesting plans ?
+	Free: Pattern=do you, Pattern=have, Pattern=plans
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i have no plans for thanksgiving , but i will be out of town with the family
+	Free: Pattern=plans, Pattern=have, Pattern=out of, Pattern=for, Pattern=thanksgiving, Pattern=i, Pattern=be, Pattern=the
+	Constrained: Pattern=out
+Turn ID=6| A | Human 1 : nice ! what for ? it's a really beautiful place . really cold this time of year though .
+	Free: Pattern=this time of year, Pattern=a, Pattern=for, Pattern=cold, Pattern=really, Pattern=it's
+	Constrained: Pattern=this, Pattern=year
+Turn ID=7| B | Human 2 : it's cold out this time of year for sure , but there are still plans to get turkey , dressing , mashed potatoes ,
+	Free: Pattern=out, Pattern=for, Pattern=are, Pattern=cold, Pattern=to, Pattern=it's, Pattern=plans, Pattern=this time of year
+	Constrained: Pattern=this, Pattern=year
+Turn ID=8| A | Human 1 : cool . which conference ? i saw on twitter the other day , some people saying they were denied visas for some conference in canada . perhaps it's the same one . i really liked this place called kingyo . it has good japanese food if you're into that .
+	Free: Pattern=good, Pattern=. i really liked, Pattern=one, Pattern=i, Pattern=the, Pattern=conference in, Pattern=for, Pattern=conference, Pattern=it, Pattern=has, Pattern=denied, Pattern=this, Pattern=that, Pattern=it's
+	Constrained: Pattern=. i, Pattern=in, Pattern=i, Pattern=really, Pattern=. i really, Pattern=conference
+Turn ID=9| B | Human 2 : yeah the conference for a good job that's why they're denied it . i really want to go this one , you ?
+	Free: Pattern=good, Pattern=a, Pattern=it, Pattern=one, Pattern=you ?, Pattern=the, Pattern=to, Pattern=. i really, Pattern=for, Pattern=conference, Pattern=denied, Pattern=this
+	Constrained: Pattern=. i, Pattern=i, Pattern=you, Pattern=really
+Turn ID=10| A | Human 1 : i don't recall . my friend was hosting me and did all the leg work . do you know any people in the area ?
+	Free: Pattern=you know, Pattern=i don't, Pattern=do you, Pattern=in, Pattern=the, Pattern=was
+	Constrained: Pattern=i, Pattern=you, Pattern=know
+Turn ID=11| B | Human 2 : it was for the king taco conference in houston this year . i was really looking forward to it but you know how that has changed
+	Free: Pattern=you know, Pattern=how, Pattern=for, Pattern=. i, Pattern=really, Pattern=year, Pattern=the, Pattern=conference in, Pattern=to, Pattern=was, Pattern=this, Pattern=that, Pattern=it, Pattern=has
+	Constrained: Pattern=you, Pattern=conference, Pattern=in, Pattern=know, Pattern=i
+Turn ID=12| A | Human 1 : you attend these often ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : i know i don't have the money to go to that one this year . i really liked the hostess for celebrity wife sw
+	Free: Pattern=. i really liked, Pattern=for, Pattern=one, Pattern=know, Pattern=i, Pattern=year, Pattern=the, Pattern=to, Pattern=this, Pattern=that, Pattern=i don't, Pattern=have
+	Constrained: Pattern=. i, Pattern=i, Pattern=really, Pattern=. i really

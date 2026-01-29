@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ mark _. _i_ work in_ accounting 
+B|3| Human 2: [i work in] corporate marketing . 
+A|4| Human 1: _what_ does _a fish groomer_ _do_ ? 
+B|5| Human 2: [i work] there , _my_ job is not [fish groomer] , _and_ no [i] [do] not [work in] sales 
+A|6| Human 1: interesting . what's type _of_ [fish] [do] [you] take care _of_ ? 
+B|7| Human 2: [i'm] [a fish groomer] , [i] like [what] [i] [do] 
+A|8| Human 1: [i] balance _the_ books _and do_ _financial_ analysis _for_ [a] medium sized company 
+B|9| Human 2: [i] just got _my_ job as an it support guy [in] [the] [financial] district [of] [a] grocery store that's pretty good [for] [the] money hr . 
+A|10| Human 1: well [i] actually think about pursuing _photography_ , but it's really hard 
+B|11| Human 2: [i] wish [i] could get _my_ camera back [and do] more [photography] 
+A|12| Human 1: thank [you] tom !! [i'm] starting by _trying to_ sell [my] pictures online 
+B|13| Human 2: this is [a] good start [. i] am [trying to] find some [photography] blogs [in] [my] area so [i] can start [my] research [and] [work] . 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=i work in, Pattern=. i, Pattern=i'm
+	Constrained: Pattern=i work, Pattern=in, Pattern=work, Pattern=i, Pattern=work in
+Turn ID=3| B | Human 2 : i work in corporate marketing .
+	Free: Pattern=i work in
+	Constrained: Pattern=i work, Pattern=in, Pattern=work, Pattern=i, Pattern=work in
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=a fish groomer, Pattern=do, Pattern=what
+	Constrained: Pattern=fish groomer, Pattern=fish, Pattern=a
+Turn ID=5| B | Human 2 : i work there , my job is not fish groomer , and no i do not work in sales
+	Free: Pattern=fish groomer, Pattern=i work, Pattern=do, Pattern=and, Pattern=i, Pattern=work in, Pattern=my
+	Constrained: Pattern=in, Pattern=fish, Pattern=i, Pattern=work
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=do, Pattern=fish, Pattern=you, Pattern=of
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm a fish groomer , i like what i do
+	Free: Pattern=what, Pattern=do, Pattern=i'm, Pattern=i, Pattern=a fish groomer
+	Constrained: Pattern=fish groomer, Pattern=fish, Pattern=a
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=financial, Pattern=a, Pattern=for, Pattern=i, Pattern=the, Pattern=and do
+	Constrained: Pattern=do, Pattern=and
+Turn ID=9| B | Human 2 : i just got my job as an it support guy in the financial district of a grocery store that's pretty good for the money hr .
+	Free: Pattern=a, Pattern=for, Pattern=in, Pattern=i, Pattern=the, Pattern=my, Pattern=of, Pattern=financial
+	Constrained: 
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=i, Pattern=photography
+	Constrained: 
+Turn ID=11| B | Human 2 : i wish i could get my camera back and do more photography
+	Free: Pattern=and do, Pattern=i, Pattern=photography, Pattern=my
+	Constrained: Pattern=do, Pattern=and
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=trying to, Pattern=i'm, Pattern=you, Pattern=my
+	Constrained: 
+Turn ID=13| B | Human 2 : this is a good start . i am trying to find some photography blogs in my area so i can start my research and work .
+	Free: Pattern=photography, Pattern=a, Pattern=and, Pattern=. i, Pattern=in, Pattern=work, Pattern=i, Pattern=trying to, Pattern=my
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

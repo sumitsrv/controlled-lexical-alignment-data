@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ mark _. _i_ work_ in _accounting_ 
+B|3| Human 2: nice ! [accounting] can be _a_ challenging field . _what_ brings _you_ here today ? 
+A|4| Human 1: [what] does [a] _fish groomer_ do ? 
+B|5| Human 2: [fish groomer] ? oh , _my_ apologies ! as an accountant , [i work] with numbers _and_ _financial_ reports [. i] help _my_ clients manage their 
+A|6| Human 1: interesting . what's type of [fish] do [you] take care of ? 
+B|7| Human 2: [fish groomer] ? oh , _my_ apologies ! as an accountant , [i work] with numbers _and_ _financial_ reports [. i] help _my_ clients manage their< 
+A|8| Human 1: [i] balance _the_ _books_ [and] do [financial] analysis _for_ [a] medium sized company 
+B|9| Human 2: [and] you're good at balanceing [books] ? [i'm] [the] one whos great at balancing [fish] ! <|im_end| 
+A|10| Human 1: well [i] actually _think_ about _pursuing_ _photography_ , _but_ _it's_ _really_ hard 
+B|11| Human 2: oh [i'm] sure it is ! [but] [photography] can be [really] rewarding 
+A|12| Human 1: thank [you] tom !! [i'm] starting by trying to sell [my] pictures online 
+B|13| Human 2: you're welcome ! [i] [think] [it's] great that you're [pursuing] your passion [for] [photography] . if [you] need any help or 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=. i, Pattern=i work, Pattern=accounting, Pattern=i'm
+	Constrained: Pattern=i
+Turn ID=3| B | Human 2 : nice ! accounting can be a challenging field . what brings you here today ?
+	Free: Pattern=accounting, Pattern=a, Pattern=you, Pattern=what
+	Constrained: 
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=fish groomer, Pattern=a, Pattern=what
+	Constrained: Pattern=fish
+Turn ID=5| B | Human 2 : fish groomer ? oh , my apologies ! as an accountant , i work with numbers and financial reports . i help my clients manage their
+	Free: Pattern=financial, Pattern=fish groomer, Pattern=i work, Pattern=and, Pattern=. i, Pattern=my
+	Constrained: Pattern=fish, Pattern=i
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=fish, Pattern=you
+	Constrained: 
+Turn ID=7| B | Human 2 : fish groomer ? oh , my apologies ! as an accountant , i work with numbers and financial reports . i help my clients manage their<
+	Free: Pattern=financial, Pattern=fish groomer, Pattern=i work, Pattern=and, Pattern=. i, Pattern=my
+	Constrained: Pattern=fish, Pattern=i
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=financial, Pattern=a, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=books
+	Constrained: 
+Turn ID=9| B | Human 2 : and you're good at balanceing books ? i'm the one whos great at balancing fish ! <|im_end|
+	Free: Pattern=and, Pattern=i'm, Pattern=fish, Pattern=the, Pattern=books
+	Constrained: 
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=photography, Pattern=pursuing, Pattern=think, Pattern=i, Pattern=really, Pattern=it's, Pattern=but
+	Constrained: 
+Turn ID=11| B | Human 2 : oh i'm sure it is ! but photography can be really rewarding
+	Free: Pattern=but, Pattern=i'm, Pattern=photography, Pattern=really
+	Constrained: 
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=my, Pattern=i'm, Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : you're welcome ! i think it's great that you're pursuing your passion for photography . if you need any help or
+	Free: Pattern=photography, Pattern=you, Pattern=pursuing, Pattern=for, Pattern=think, Pattern=i, Pattern=it's
+	Constrained: 
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

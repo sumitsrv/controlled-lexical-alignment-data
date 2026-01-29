@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: _not_ much . _any_ _plans this weekend_ ? 
+B|3| Human 2: _i'm_ [not] able _to_ make [plans this weekend] . _i'm_ just an ai , _i don't_ _have_ personal life or physical 
+A|4| Human 1: _ziplining_ ? 
+B|5| Human 2: _i'm_ [not] able _to_ [ziplining] or [any] other physical activities . _i'm_ just _a_ computer program designed _to_ assist with tasks _and_ answer 
+A|6| Human 1: [i] [have] [a] couple years ago . _it's_ quite [a] _unique_ experience 
+B|7| Human 2: [it's] nice _to_ [have] [unique] experiences . would _you_ like _to_ chat about [any] other topics ? 
+A|8| Human 1: [i] forgot _where_ _it was_ _, it_ _wasn't local_ _i don't think_ _though_ 
+B|9| Human 2: [it's] [not] [ziplining] [though] [, [it] was] something else . [wasn't local] . [where] [was] [it] again ? 
+A|10| Human 1: _that's_ [a] hard question [and] [i'm] _tired_ so [i'm] _going to_ go . _see you_ 
+B|11| Human 2: you're [tired] [and] [don't] [have] the energy [to] [think] about [it] . [that's] okay [though] . [i] will [see you] soon . [where] 
+A|12| Human 1: no , [i'm] _going to_ _get_ [a] _massage_ first 
+B|13| Human 2: [i] [see] you're [tired] [and] [don't] [have] the energy [to] [think] about [it] . [that's] okay [though] . [i] will [see you] soon< 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] [i don't think] [that's] [going to] help [you] relax< 
+A|16| Human 1: _you should_ ! _it's relaxing after_ [a] _long day_ . _talk_ [to] [you] _later_ ! 
+B|17| Human 2: [you should] [get] that [kind] of [massage] [it's relaxing after] [long day] [talk] [later] [i don't think] [traditional] is [going to] help [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=plans this weekend, Pattern=not, Pattern=any
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm not able to make plans this weekend . i'm just an ai , i don't have personal life or physical
+	Free: Pattern=i'm, Pattern=to, Pattern=plans this weekend, Pattern=not, Pattern=i don't, Pattern=have
+	Constrained: Pattern=i, Pattern=don't
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm not able to ziplining or any other physical activities . i'm just a computer program designed to assist with tasks and answer
+	Free: Pattern=ziplining, Pattern=a, Pattern=any, Pattern=and, Pattern=i'm, Pattern=to, Pattern=not
+	Constrained: 
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=a, Pattern=i, Pattern=it's, Pattern=unique, Pattern=have
+	Constrained: 
+Turn ID=7| B | Human 2 : it's nice to have unique experiences . would you like to chat about any other topics ?
+	Free: Pattern=you, Pattern=any, Pattern=to, Pattern=it's, Pattern=unique, Pattern=have
+	Constrained: 
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=it was, Pattern=, it, Pattern=i don't think, Pattern=though, Pattern=wasn't local, Pattern=where, Pattern=i
+	Constrained: Pattern=i don't, Pattern=it, Pattern=think, Pattern=i, Pattern=don't, Pattern=was
+Turn ID=9| B | Human 2 : it's not ziplining though , it was something else . wasn't local . where was it again ?
+	Free: Pattern=it was, Pattern=, it, Pattern=ziplining, Pattern=though, Pattern=it, Pattern=wasn't local, Pattern=where, Pattern=was, Pattern=it's, Pattern=not
+	Constrained: Pattern=it, Pattern=was
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=going to, Pattern=see you, Pattern=a, Pattern=tired, Pattern=and, Pattern=i'm, Pattern=that's
+	Constrained: Pattern=to, Pattern=see, Pattern=you
+Turn ID=11| B | Human 2 : you're tired and don't have the energy to think about it . that's okay though . i will see you soon . where
+	Free: Pattern=though, Pattern=tired, Pattern=think, Pattern=where, Pattern=i, Pattern=that's, Pattern=don't, Pattern=to, Pattern=see you, Pattern=have, Pattern=it, Pattern=and
+	Constrained: Pattern=see, Pattern=you
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=going to, Pattern=massage, Pattern=a, Pattern=i'm, Pattern=get
+	Constrained: Pattern=to
+Turn ID=13| B | Human 2 : i see you're tired and don't have the energy to think about it . that's okay though . i will see you soon<
+	Free: Pattern=though, Pattern=tired, Pattern=think, Pattern=i, Pattern=that's, Pattern=to, Pattern=see you, Pattern=have, Pattern=it, Pattern=and, Pattern=see, Pattern=don't
+	Constrained: Pattern=see, Pattern=you
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: Pattern=traditional, Pattern=kind
+Turn ID=15| B | Human 2 : traditional kind i don't think that's going to help you relax<
+	Free: Pattern=going to, Pattern=i don't think, Pattern=that's, Pattern=you, Pattern=traditional kind
+	Constrained: Pattern=kind, Pattern=traditional, Pattern=i don't, Pattern=think, Pattern=i, Pattern=don't, Pattern=to
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=long day, Pattern=a, Pattern=you should, Pattern=it's relaxing after, Pattern=to, Pattern=talk, Pattern=you, Pattern=later
+	Constrained: Pattern=it's, Pattern=you
+Turn ID=17| B | Human 2 : you should get that kind of massage it's relaxing after long day talk later i don't think traditional is going to help you
+	Free: Pattern=going to, Pattern=kind, Pattern=massage, Pattern=i don't think, Pattern=you should, Pattern=it's relaxing after, Pattern=get, Pattern=talk, Pattern=long day, Pattern=traditional, Pattern=you, Pattern=later
+	Constrained: Pattern=you, Pattern=i don't, Pattern=think, Pattern=i, Pattern=don't, Pattern=to, Pattern=it's

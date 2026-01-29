@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ _came back from a_ ski _trip_ 
+B|3| Human 2: _i_ [came back from a] [trip] [just] [a] bit ago . i'd say this thread has been [great] so far . 
+A|4| Human 1: [i] slammed onto an ice wall _, but_ [i] got better _and_ _turning_ after _that_ _haha_ 
+B|5| Human 2: how _are you_ [turning] [haha] 
+A|6| Human 1: oh cool ! do [you] know any _french_ ? [i] _used to take french_ in high school _but_ basically forgot _most of_ it 
+B|7| Human 2: i'm [from] france [and] have [a] [french] passport 
+A|8| Human 1: did [you] go anywhere else in _montreal_ ? 
+B|9| Human 2: canadian [, but] [from] [montreal] [and] [used to take french] 
+A|10| Human 1: oh cool ! i've always wanted [to] _attend the olympics_ _as a_ viewer _of_ course _i watch_ [a] lot _of_ olympic figure skating on youtube 
+B|11| Human 2: [as a] canadian [i watch] [the olympics] [but] [most of] my family [and] family [that] [attend the olympics] have all moved [to] [montreal] or [montreal] . [you] ? 
+A|12| Human 1: barely _i don't think i can_ , in conscience , _call_ it [that] [i] kind [of] [just] pull _myself_ along [the] sides 
+B|13| Human 2: [i don't think i can] [call] [myself] [that] ... 
+A|14| Human 1: [are you] good at <redacted_term> ? 
+B|15| Human 2: maby [i can] [you] [call] [that] 
+A|16| Human 1: okay ! it was nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=came back from a, Pattern=great, Pattern=trip, Pattern=just
+	Constrained: Pattern=from, Pattern=a
+Turn ID=3| B | Human 2 : i came back from a trip just a bit ago . i'd say this thread has been great so far .
+	Free: Pattern=great, Pattern=just, Pattern=a, Pattern=came back from a, Pattern=i, Pattern=trip
+	Constrained: Pattern=from, Pattern=a
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=, but, Pattern=and, Pattern=i, Pattern=haha, Pattern=that, Pattern=turning
+	Constrained: Pattern=but
+Turn ID=5| B | Human 2 : how are you turning haha
+	Free: Pattern=are you, Pattern=turning, Pattern=haha
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=you, Pattern=used to take french, Pattern=most of, Pattern=but, Pattern=french, Pattern=i
+	Constrained: Pattern=french, Pattern=to, Pattern=of
+Turn ID=7| B | Human 2 : i'm from france and have a french passport
+	Free: Pattern=french, Pattern=and, Pattern=from, Pattern=a
+	Constrained: 
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=you, Pattern=montreal
+	Constrained: 
+Turn ID=9| B | Human 2 : canadian , but from montreal and used to take french
+	Free: Pattern=, but, Pattern=and, Pattern=from, Pattern=montreal, Pattern=used to take french
+	Constrained: Pattern=french, Pattern=but, Pattern=to
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=as a, Pattern=a, Pattern=i watch, Pattern=to, Pattern=attend the olympics, Pattern=of
+	Constrained: Pattern=i, Pattern=the, Pattern=a, Pattern=the olympics
+Turn ID=11| B | Human 2 : as a canadian i watch the olympics but most of my family and family that attend the olympics have all moved to montreal or montreal . you ?
+	Free: Pattern=attend the olympics, Pattern=you, Pattern=as a, Pattern=montreal, Pattern=and, Pattern=the olympics, Pattern=most of, Pattern=i watch, Pattern=to, Pattern=that, Pattern=but
+	Constrained: Pattern=of, Pattern=a, Pattern=the olympics, Pattern=i, Pattern=the
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=call, Pattern=i, Pattern=the, Pattern=myself, Pattern=that, Pattern=i don't think i can, Pattern=just
+	Constrained: Pattern=i, Pattern=i can
+Turn ID=13| B | Human 2 : i don't think i can call myself that ...
+	Free: Pattern=i don't think i can, Pattern=call, Pattern=myself, Pattern=that
+	Constrained: Pattern=i, Pattern=i can
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=are you
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : maby i can you call that
+	Free: Pattern=i can, Pattern=call, Pattern=you, Pattern=that
+	Constrained: Pattern=i
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=to, Pattern=you
+	Constrained: 

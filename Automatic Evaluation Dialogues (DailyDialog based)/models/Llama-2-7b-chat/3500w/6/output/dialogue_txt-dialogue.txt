@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: _not much ._ _any plans _this weekend_ ?_ 
+B|3| Human 2: [not much .] just the usual [weekend] stuff 
+A|4| Human 1: _ziplining ?_ 
+B|5| Human 2: [ziplining ?] [not] [this weekend] . too expensive . _have_ _you_ tried [any] good new restaurants lately ? <|im_end 
+A|6| Human 1: _i have a_ couple years ago . _it's_ quite _a_ _unique experience_ 
+B|7| Human 2: [unique experience] _it_ is ! [have] [any plans] for [this weekend ?] 
+A|8| Human 1: _i_ _forgot where it was_ , [it] wasn't local _i_ _don't_ think _though_ 
+B|9| Human 2: [forgot where it was] ? oh well . [have] [any plans this weekend] [though] ? 
+A|10| Human 1: _that's_ _a_ hard question _and_ _i'm_ tired so _i'm going to_ go . _see you_ 
+B|11| Human 2: [see you] ! [have a] good [weekend] <|i-m_end|>user [don't] [have] [any] 
+A|12| Human 1: no , _i'm going _to_ get_ [a] _massage_ first 
+B|13| Human 2: [that's] great ! [i have] some work [to] do [this weekend] [and] [it] will be good [to get] away for [a] bit though<|im_ 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] [massage] [i'm going to] [see] if [i] can [get] that for [you] 
+A|16| Human 1: [you] should ! _it's_ _relaxing after_ [a] _long day_ . talk [to] [you] later ! 
+B|17| Human 2: [relaxing after] [long day] [i have a] lot of work [to] do [this] week [and] [it's] [going to] be stressful<|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=any plans this weekend, Pattern=this weekend ?, Pattern=not much .
+	Constrained: Pattern=this weekend, Pattern=any, Pattern=weekend, Pattern=any plans, Pattern=this, Pattern=not
+Turn ID=3| B | Human 2 : not much . just the usual weekend stuff
+	Free: Pattern=not much ., Pattern=weekend
+	Constrained: Pattern=not
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining ?
+	Constrained: 
+Turn ID=5| B | Human 2 : ziplining ? not this weekend . too expensive . have you tried any good new restaurants lately ? <|im_end
+	Free: Pattern=have, Pattern=any, Pattern=ziplining ?, Pattern=not, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=weekend, Pattern=this
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=i have a, Pattern=unique experience, Pattern=it's, Pattern=a
+	Constrained: Pattern=have, Pattern=have a, Pattern=a, Pattern=i, Pattern=i have
+Turn ID=7| B | Human 2 : unique experience it is ! have any plans for this weekend ?
+	Free: Pattern=have, Pattern=unique experience, Pattern=it, Pattern=this weekend ?, Pattern=any plans
+	Constrained: Pattern=any, Pattern=weekend, Pattern=this weekend, Pattern=this
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=though, Pattern=it, Pattern=forgot where it was, Pattern=i, Pattern=don't
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : forgot where it was ? oh well . have any plans this weekend though ?
+	Free: Pattern=forgot where it was, Pattern=any plans this weekend, Pattern=though, Pattern=have
+	Constrained: Pattern=this weekend, Pattern=any, Pattern=it, Pattern=weekend, Pattern=any plans, Pattern=this
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=see you, Pattern=a, Pattern=and, Pattern=i'm, Pattern=that's, Pattern=i'm going to
+	Constrained: Pattern=going to, Pattern=you, Pattern=i'm, Pattern=see, Pattern=to
+Turn ID=11| B | Human 2 : see you ! have a good weekend <|i-m_end|>user don't have any
+	Free: Pattern=have a, Pattern=any, Pattern=weekend, Pattern=don't, Pattern=see you, Pattern=have
+	Constrained: Pattern=you, Pattern=see, Pattern=a, Pattern=have
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=i'm going to, Pattern=to get, Pattern=a, Pattern=massage
+	Constrained: Pattern=going to, Pattern=i'm, Pattern=get, Pattern=to
+Turn ID=13| B | Human 2 : that's great ! i have some work to do this weekend and it will be good to get away for a bit though<|im_
+	Free: Pattern=this weekend, Pattern=a, Pattern=that's, Pattern=to, Pattern=i have, Pattern=it, Pattern=and, Pattern=to get
+	Constrained: Pattern=have, Pattern=weekend, Pattern=i, Pattern=to, Pattern=get, Pattern=this
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: 
+Turn ID=15| B | Human 2 : traditional kind massage i'm going to see if i can get that for you
+	Free: Pattern=massage, Pattern=i, Pattern=see, Pattern=get, Pattern=i'm going to, Pattern=you, Pattern=traditional kind
+	Constrained: Pattern=going to, Pattern=i'm, Pattern=to
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=long day, Pattern=you, Pattern=a, Pattern=to, Pattern=it's, Pattern=relaxing after
+	Constrained: 
+Turn ID=17| B | Human 2 : relaxing after long day i have a lot of work to do this week and it's going to be stressful<|im_end
+	Free: Pattern=going to, Pattern=long day, Pattern=and, Pattern=to, Pattern=this, Pattern=it's, Pattern=relaxing after, Pattern=i have a
+	Constrained: Pattern=have, Pattern=have a, Pattern=a, Pattern=i, Pattern=to, Pattern=i have

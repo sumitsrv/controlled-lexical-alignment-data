@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: not much . any _plans_ this weekend ? 
+B|3| Human 2: oh , uh , [plans] ? let me check . *checks* hmm , nothing really . how about _you_ ? <|im_end| 
+A|4| Human 1: _ziplining_ ? 
+B|5| Human 2: oh , wow ! that sounds like _a_ lot of fun ! *smiling face* do _you_ _have a_ [ziplining] adventure planned ? 
+A|6| Human 1: _i_ [have a] couple years ago . it's quite [a] unique _experience_ 
+B|7| Human 2: actually , my favorite way _to get_ adrenaline rush . what about _you_ ? 
+A|8| Human 1: _i_ forgot where _it was_ , _it_ wasn't local _i_ don't think though 
+B|9| Human 2: [it was] [a] really fun [experience] ! [i] went with my friends _and_ we all screamed like idiots 
+A|10| Human 1: that's [a] hard question [and] _i'm_ tired so _i'm going to go_ . see [you] 
+B|11| Human 2: okay , _no_ worries ! [have a] good rest of your _day_ ! 
+A|12| Human 1: [no] , _i'm going [to_ get] [a] _massage_ first 
+B|13| Human 2: actually [i'm going to go] [get] some sleep 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] like [a] hammock or [a] bed 
+A|16| Human 1: [you] should ! it's relaxing after [a] long [day] . talk [to] [you] later ! 
+B|17| Human 2: [i'm] glad you're taking care of yourself ! enjoy your [massage] or sleep , whichever [you] choose 😊< 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=plans
+	Constrained: 
+Turn ID=3| B | Human 2 : oh , uh , plans ? let me check . *checks* hmm , nothing really . how about you ? <|im_end|
+	Free: Pattern=you, Pattern=plans
+	Constrained: 
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining
+	Constrained: 
+Turn ID=5| B | Human 2 : oh , wow ! that sounds like a lot of fun ! *smiling face* do you have a ziplining adventure planned ?
+	Free: Pattern=have a, Pattern=a, Pattern=you, Pattern=ziplining
+	Constrained: Pattern=a
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=have a, Pattern=experience, Pattern=i, Pattern=a
+	Constrained: Pattern=a
+Turn ID=7| B | Human 2 : actually , my favorite way to get adrenaline rush . what about you ?
+	Free: Pattern=to get, Pattern=you
+	Constrained: Pattern=to, Pattern=get
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=it was, Pattern=i, Pattern=it
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : it was a really fun experience ! i went with my friends and we all screamed like idiots
+	Free: Pattern=it was, Pattern=a, Pattern=and, Pattern=experience, Pattern=i
+	Constrained: Pattern=it
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=a, Pattern=and, Pattern=i'm, Pattern=you, Pattern=i'm going to go
+	Constrained: Pattern=to, Pattern=i'm going to, Pattern=i'm
+Turn ID=11| B | Human 2 : okay , no worries ! have a good rest of your day !
+	Free: Pattern=have a, Pattern=day, Pattern=no
+	Constrained: Pattern=a
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=massage, Pattern=no, Pattern=a, Pattern=to get, Pattern=i'm going to
+	Constrained: Pattern=i'm, Pattern=to, Pattern=get
+Turn ID=13| B | Human 2 : actually i'm going to go get some sleep
+	Free: Pattern=i'm going to go, Pattern=get
+	Constrained: Pattern=to, Pattern=i'm going to, Pattern=i'm
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: 
+Turn ID=15| B | Human 2 : traditional kind like a hammock or a bed
+	Free: Pattern=traditional kind, Pattern=a
+	Constrained: 
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=to, Pattern=a, Pattern=you, Pattern=day
+	Constrained: 
+Turn ID=17| B | Human 2 : i'm glad you're taking care of yourself ! enjoy your massage or sleep , whichever you choose 😊<
+	Free: Pattern=i'm, Pattern=you, Pattern=massage
+	Constrained: 

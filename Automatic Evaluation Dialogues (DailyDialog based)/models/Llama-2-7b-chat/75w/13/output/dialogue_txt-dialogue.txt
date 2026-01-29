@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend i_ saw "the parasite . " ever heard _of it ?_ 
+B|3| Human 2: it's _a_ _great_ film , very thought-provoking . [i] definitely recommend _it ._ _what did you_ _think_ [of it ?] <|im_end 
+A|4| Human 1: _my_ friend wanted to _see_ [it _.] it_ has [great] reviews _on_ imdb _and_ rotten tomatoes _! [what_ did you] do _last weekend_ ? 
+B|5| Human 2: [last weekend i] binge-watched an entire series [on] netflix [. _it] was_ [great] [! what] about [you] ? <|im_end 
+A|6| Human 1: oooo _the_ mandalorian ?!?! 
+B|7| Human 2: yeah , it's _really_ _good_ . [i] love [the] new star wars series . [what did you] _think_ [of] [the] ending ? <|im_end| 
+A|8| Human 1: lol _are_ [you] [a] big _marvel_ fan ? 
+B|9| Human 2: [i] actually prefer dc comics . _i think_ their stories [are] more complex [and] nuanced . marvel's [are] [a] bit _too_ light for [my] taste . but 
+A|10| Human 1: i've only [seen] spiderman . honestly [it was] [a] little [too] scary [and] so [i] don't [think] _i can_ bring myself to watch [the] other _marvel_ [movies] ! _haha_ 
+B|11| Human 2: ah , [i] [see] ! well , [the] [marvel] cinematic universe (mcu) [can] _be_ [a] bit overwhelming at times , especially with 
+A|12| Human 1: _oh_ [really] ? to [be] honest _i think the actor_ _is_ not _that_ [good] looking , so not so surprising ! _haha_ 
+B|13| Human 2: [haha] , yeah , [i can] [see] [that] ! but [i think the actor] _who_ plays iron man , robert downey jr ., [is] [really] talented . 
+A|14| Human 1: [who] [is] _loki_ ? i've never heard [that] name before 
+B|15| Human 2: [oh] , [loki] [is] actually [a] [really] interesting character ! he's [the] adopted brother [of] thor [and] hails from asgard . he [can] [be] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=seen, Pattern=you, Pattern=movies
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=last weekend i, Pattern=of it ?
+	Constrained: Pattern=i, Pattern=of, Pattern=last weekend
+Turn ID=3| B | Human 2 : it's a great film , very thought-provoking . i definitely recommend it . what did you think of it ? <|im_end
+	Free: Pattern=a, Pattern=of it ?, Pattern=think, Pattern=i, Pattern=what did you, Pattern=great, Pattern=it .
+	Constrained: Pattern=you, Pattern=of
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=and, Pattern=! what, Pattern=on, Pattern=see, Pattern=last weekend, Pattern=great, Pattern=it ., Pattern=what did you, Pattern=my, Pattern=. it
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : last weekend i binge-watched an entire series on netflix . it was great ! what about you ? <|im_end
+	Free: Pattern=it was, Pattern=! what, Pattern=last weekend i, Pattern=on, Pattern=. it, Pattern=you, Pattern=great
+	Constrained: Pattern=last weekend, Pattern=i
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the
+	Constrained: 
+Turn ID=7| B | Human 2 : yeah , it's really good . i love the new star wars series . what did you think of the ending ? <|im_end|
+	Free: Pattern=good, Pattern=of, Pattern=think, Pattern=i, Pattern=really, Pattern=the, Pattern=what did you
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=a, Pattern=marvel, Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=9| B | Human 2 : i actually prefer dc comics . i think their stories are more complex and nuanced . marvel's are a bit too light for my taste . but
+	Free: Pattern=a, Pattern=are, Pattern=i, Pattern=my, Pattern=i think, Pattern=and, Pattern=too
+	Constrained: Pattern=i, Pattern=think
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=it was, Pattern=a, Pattern=think, Pattern=marvel, Pattern=i, Pattern=haha, Pattern=the, Pattern=i can, Pattern=and, Pattern=too, Pattern=seen, Pattern=movies
+	Constrained: Pattern=i, Pattern=can
+Turn ID=11| B | Human 2 : ah , i see ! well , the marvel cinematic universe (mcu) can be a bit overwhelming at times , especially with
+	Free: Pattern=a, Pattern=can, Pattern=marvel, Pattern=i, Pattern=be, Pattern=the, Pattern=see
+	Constrained: 
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=good, Pattern=i think the actor, Pattern=oh, Pattern=is, Pattern=be, Pattern=that, Pattern=haha, Pattern=really
+	Constrained: Pattern=i, Pattern=i think, Pattern=think, Pattern=the
+Turn ID=13| B | Human 2 : haha , yeah , i can see that ! but i think the actor who plays iron man , robert downey jr ., is really talented .
+	Free: Pattern=who, Pattern=i think the actor, Pattern=is, Pattern=see, Pattern=i can, Pattern=that, Pattern=haha, Pattern=really
+	Constrained: Pattern=can, Pattern=think, Pattern=i, Pattern=the, Pattern=i think
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=that, Pattern=is, Pattern=loki, Pattern=who
+	Constrained: 
+Turn ID=15| B | Human 2 : oh , loki is actually a really interesting character ! he's the adopted brother of thor and hails from asgard . he can be
+	Free: Pattern=of, Pattern=a, Pattern=can, Pattern=is, Pattern=really, Pattern=be, Pattern=the, Pattern=loki, Pattern=and, Pattern=oh
+	Constrained: 

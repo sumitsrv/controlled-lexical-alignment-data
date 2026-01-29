@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ came _back_ from _a_ ski _trip_ 
+B|3| Human 2: _oh_ wow , _that_ sounds like so much fun ! _did you_ hit _the_ slopes _at_ _any_ _of_ _the_ nearby resorts ? <|im 
+A|4| Human 1: _i_ slammed onto _an_ ice wall _, but i_ got better _and_ turning _after_ [that] _haha_ 
+B|5| Human 2: [haha] [that] sounds like [a] [great] experience _! it_ _can_ be challenging _to_ get [back] into skiing [after] [a] mistake like [that] [, but] it' 
+A|6| Human 1: [oh] cool ! _do_ [you] know [any] _french_ ? _i_ used [to] take _french_ _in_ high school [but] basically forgot most [of] [it] 
+B|7| Human 2: i'm [just] [an] ai [and] [do] not have [any] physical memories or experiences [, but _i] can_ assist [you] [in] [french] language . [do] 
+A|8| Human 1: [did you] go anywhere else [in] _montreal_ ? 
+B|9| Human 2: _i can_ provide [you] with basic [french] phrases [and] sentences [that] [you] _can_ use during your [trip] [to] [montreal] . here _are_ [a] few phrases [to] 
+A|10| Human 1: [oh] cool ! i've always wanted _to attend the olympics_ as [a] viewer [of] course [i] watch [a] lot [of] olympic figure skating on youtube 
+B|11| Human 2: i'm [just] [an] ai [and] [do] not have [the] ability [to attend the olympics] or [any] other physical event . i'm here to< 
+A|12| Human 1: barely _i don't_ think [i can] , [in] conscience , call [it] [that] [i] _kind of_ [just] _pull myself along the sides_ 
+B|13| Human 2: i'm [just] [an] ai [and] [i don't] have [the] ability [to] [pull myself along the sides] or [attend] [any] [kind of] event . [i] 
+A|14| Human 1: [are] [you] good [at] _<redacted_term>_ ? 
+B|15| Human 2: i'm [just] [an] ai [and] [i don't] have [the] ability [to] [<redacted_term>] or [any] other physical activity 
+A|16| Human 1: okay [! it] was nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=great, Pattern=just, Pattern=a, Pattern=back, Pattern=trip
+	Constrained: 
+Turn ID=3| B | Human 2 : oh wow , that sounds like so much fun ! did you hit the slopes at any of the nearby resorts ? <|im
+	Free: Pattern=of, Pattern=did you, Pattern=any, Pattern=oh, Pattern=at, Pattern=the, Pattern=that
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=, but i, Pattern=an, Pattern=and, Pattern=after, Pattern=i, Pattern=haha, Pattern=that
+	Constrained: Pattern=, but, Pattern=but, Pattern=i
+Turn ID=5| B | Human 2 : haha that sounds like a great experience ! it can be challenging to get back into skiing after a mistake like that , but it'
+	Free: Pattern=! it, Pattern=a, Pattern=can, Pattern=after, Pattern=back, Pattern=haha, Pattern=to, Pattern=that, Pattern=great, Pattern=, but
+	Constrained: Pattern=but, Pattern=it
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=of, Pattern=you, Pattern=do, Pattern=any, Pattern=in, Pattern=to, Pattern=but, Pattern=it, Pattern=oh, Pattern=french, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm just an ai and do not have any physical memories or experiences , but i can assist you in french language . do
+	Free: Pattern=, but i, Pattern=you, Pattern=just, Pattern=do, Pattern=an, Pattern=any, Pattern=and, Pattern=in, Pattern=french, Pattern=i can
+	Constrained: Pattern=but, Pattern=i, Pattern=can, Pattern=, but
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you, Pattern=montreal, Pattern=in
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : i can provide you with basic french phrases and sentences that you can use during your trip to montreal . here are a few phrases to
+	Free: Pattern=you, Pattern=a, Pattern=montreal, Pattern=and, Pattern=are, Pattern=can, Pattern=french, Pattern=trip, Pattern=to, Pattern=i can, Pattern=that
+	Constrained: Pattern=i, Pattern=can
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=of, Pattern=to attend the olympics, Pattern=a, Pattern=oh, Pattern=i
+	Constrained: Pattern=to, Pattern=attend, Pattern=the
+Turn ID=11| B | Human 2 : i'm just an ai and do not have the ability to attend the olympics or any other physical event . i'm here to<
+	Free: Pattern=do, Pattern=an, Pattern=any, Pattern=and, Pattern=the, Pattern=to attend the olympics, Pattern=just
+	Constrained: Pattern=to, Pattern=attend, Pattern=the
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=kind of, Pattern=pull myself along the sides, Pattern=it, Pattern=in, Pattern=i, Pattern=i can, Pattern=that, Pattern=just, Pattern=i don't
+	Constrained: Pattern=can, Pattern=of, Pattern=the, Pattern=i
+Turn ID=13| B | Human 2 : i'm just an ai and i don't have the ability to pull myself along the sides or attend any kind of event . i
+	Free: Pattern=kind of, Pattern=attend, Pattern=pull myself along the sides, Pattern=an, Pattern=any, Pattern=and, Pattern=i, Pattern=the, Pattern=to, Pattern=just, Pattern=i don't
+	Constrained: Pattern=of, Pattern=the, Pattern=i
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=<redacted_term>, Pattern=are, Pattern=at, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm just an ai and i don't have the ability to <redacted_term> or any other physical activity
+	Free: Pattern=an, Pattern=any, Pattern=and, Pattern=<redacted_term>, Pattern=the, Pattern=to, Pattern=just, Pattern=i don't
+	Constrained: Pattern=i
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=! it, Pattern=to, Pattern=you
+	Constrained: Pattern=it

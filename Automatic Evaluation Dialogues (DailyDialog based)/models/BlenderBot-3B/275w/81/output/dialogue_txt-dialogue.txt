@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ came _back from_ _a_ _ski_ _trip_ 
+B|3| Human 2: _good_ , [just] _got_ [back from] work , how _was_ your [trip] ? 
+A|4| Human 1: _i_ slammed _onto_ an _ice_ wall , _but i_ [got] _better_ _and_ turning _after_ _that_ haha 
+B|5| Human 2: [i] [just] [got] [back from] skiing too ! it's [great] [that] _you_ have gotten [better] [after] slamming [onto] [ice] . 
+A|6| Human 1: oh cool ! do [you] _know_ _any_ _french_ ? _i used to take_ _french_ _in_ high school _but_ basically _forgot most of it_ 
+B|7| Human 2: yes ! [i] [know] [that] [french] is [used] [in] canada , quebec [and] [most of] north america . 
+A|8| Human 1: _did you go _anywhere_ else in_ _montreal_ ? 
+B|9| Human 2: [i used to take] [it] [but i] [forgot most of it] too ! [i] went [to] [montreal] once [and] [that] _was_ enough for me . [did you go anywhere] 
+A|10| Human 1: oh cool ! _i've_ always _wanted to_ attend _the_ olympics as _a_ viewer [of] course [i] _watch_ _a lot of_ olympic figure skating _on_ youtube 
+B|11| Human 2: [i've] never been [anywhere else in] [the] u . s . [but i] want [to] [go] [to] [ski] [in] europe [and] [watch] their skiing slop 
+A|12| Human 1: barely [i] don't think [i] can , [in] conscience , call [it] [that] [i] kind [of] [just] pull myself along [the] sides 
+B|13| Human 2: [i] [wanted to] [ski] [but] [the] only place [that] had slopes _was_ _at_ one resort so [i] [just] went [on] [a lot of] canal bo 
+A|14| Human 1: _are you_ _good at_ <redacted_term> ? 
+B|15| Human 2: [i] [wanted to] [go] [in] [the] summer [but] _it was_ [just] too expensive for [the] tickets . [are you] [any] [good at] skiing ? 
+A|16| Human 1: okay ! [it was] nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=ski, Pattern=great, Pattern=just, Pattern=a, Pattern=trip, Pattern=back from
+	Constrained: 
+Turn ID=3| B | Human 2 : good , just got back from work , how was your trip ?
+	Free: Pattern=good, Pattern=just, Pattern=trip, Pattern=got, Pattern=was, Pattern=back from
+	Constrained: 
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=ice, Pattern=but i, Pattern=and, Pattern=after, Pattern=i, Pattern=better, Pattern=got, Pattern=that, Pattern=onto
+	Constrained: Pattern=but, Pattern=i
+Turn ID=5| B | Human 2 : i just got back from skiing too ! it's great that you have gotten better after slamming onto ice .
+	Free: Pattern=just, Pattern=after, Pattern=i, Pattern=better, Pattern=got, Pattern=back from, Pattern=that, Pattern=onto, Pattern=you, Pattern=great, Pattern=ice
+	Constrained: 
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=you, Pattern=any, Pattern=in, Pattern=know, Pattern=french, Pattern=but, Pattern=forgot most of it, Pattern=i used to take
+	Constrained: Pattern=of, Pattern=it, Pattern=most of, Pattern=i, Pattern=used, Pattern=to
+Turn ID=7| B | Human 2 : yes ! i know that french is used in canada , quebec and most of north america .
+	Free: Pattern=and, Pattern=most of, Pattern=in, Pattern=know, Pattern=used, Pattern=that, Pattern=french, Pattern=i
+	Constrained: Pattern=of
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you go anywhere, Pattern=anywhere else in, Pattern=montreal
+	Constrained: Pattern=in, Pattern=you, Pattern=go
+Turn ID=9| B | Human 2 : i used to take it but i forgot most of it too ! i went to montreal once and that was enough for me . did you go anywhere
+	Free: Pattern=but i, Pattern=montreal, Pattern=i, Pattern=was, Pattern=that, Pattern=it, Pattern=and, Pattern=forgot most of it, Pattern=i used to take, Pattern=did you go anywhere, Pattern=to
+	Constrained: Pattern=of, Pattern=you, Pattern=go, Pattern=it, Pattern=most of, Pattern=i, Pattern=used, Pattern=to, Pattern=but
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=a, Pattern=i've, Pattern=wanted to, Pattern=i, Pattern=watch, Pattern=a lot of, Pattern=of, Pattern=on, Pattern=the
+	Constrained: Pattern=to, Pattern=of, Pattern=a
+Turn ID=11| B | Human 2 : i've never been anywhere else in the u . s . but i want to go to ski in europe and watch their skiing slop
+	Free: Pattern=ski, Pattern=go, Pattern=and, Pattern=i've, Pattern=in, Pattern=the, Pattern=to, Pattern=watch, Pattern=anywhere else in, Pattern=but i
+	Constrained: Pattern=in, Pattern=but, Pattern=i
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=just, Pattern=it, Pattern=in, Pattern=i, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=13| B | Human 2 : i wanted to ski but the only place that had slopes was at one resort so i just went on a lot of canal bo
+	Free: Pattern=ski, Pattern=a lot of, Pattern=just, Pattern=i, Pattern=was, Pattern=wanted to, Pattern=at, Pattern=on, Pattern=the, Pattern=that, Pattern=but
+	Constrained: Pattern=to, Pattern=of, Pattern=a
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=are you, Pattern=good at
+	Constrained: Pattern=good, Pattern=you, Pattern=at
+Turn ID=15| B | Human 2 : i wanted to go in the summer but it was just too expensive for the tickets . are you any good at skiing ?
+	Free: Pattern=it was, Pattern=good at, Pattern=just, Pattern=go, Pattern=any, Pattern=wanted to, Pattern=in, Pattern=the, Pattern=but, Pattern=are you, Pattern=i
+	Constrained: Pattern=good, Pattern=you, Pattern=it, Pattern=at, Pattern=to, Pattern=was
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=it was, Pattern=you, Pattern=to
+	Constrained: Pattern=it, Pattern=was

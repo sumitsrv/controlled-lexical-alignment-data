@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's week so far ? 
+B|3| Human 2: great ! it's been pretty busy here . _how about you ?_ 
+A|4| Human 1: same . _going to_ catch up on my _reading_ ! do [you] _have a_ feast planned ? 
+B|5| Human 2: haha , actually we're just [going to] [have a] small gathering with close friends and family . _how about you ?_ <|im_end 
+A|6| Human 1: something deeply hidden by sean carroll _<redacted_link>_ 
+B|7| Human 2: haha , i'm actually [reading] [a] lot of different things right now . <redacted_link><|im_end 
+A|8| Human 1: largely _scifi_ [how about you ?] 
+B|9| Human 2: oh , [you] know , _the_ usual [scifi] and fantasy fare . i'm actually rereading [<redacted_link>] 
+A|10| Human 1: i haven't what is it [about] ? 
+B|11| Human 2: it's [a] collection of essays [about] _the_ intersection of physics and philosophy , and [how] our understanding of _the_ universe has changed over time . <re 
+A|12| Human 1: [how] do _the survivors_ _survive_ _such_ [a] thing ? 
+B|13| Human 2: it's [about] [how] [the survivors] of [a] catastrophic event , [such] as [a] global catastrophe , [have] [to] adapt and 
+A|14| Human 1: sounds _like_ [a] tv show i _watched_ 
+B|15| Human 2: i've [watched] [a] few shows [like] that , where [the survivors] [have] [to] 
+A|16| Human 1: can't quite remember . something [about] [survivors] [going _to] live in space_ 
+B|17| Human 2: [space] . that's right ! [the survivors] [in] those shows [have] [to live in space] and figure out [how] [to] [survive] [in] [a] new environment 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! it's been pretty busy here . how about you ?
+	Free: Pattern=how about you ?
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going to, Pattern=have a, Pattern=reading, Pattern=you
+	Constrained: Pattern=to, Pattern=a, Pattern=have
+Turn ID=5| B | Human 2 : haha , actually we're just going to have a small gathering with close friends and family . how about you ? <|im_end
+	Free: Pattern=how about you ?, Pattern=going to, Pattern=have a
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=how, Pattern=about, Pattern=to
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=<redacted_link>
+	Constrained: 
+Turn ID=7| B | Human 2 : haha , i'm actually reading a lot of different things right now . <redacted_link><|im_end
+	Free: Pattern=a, Pattern=reading
+	Constrained: 
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you ?, Pattern=scifi
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : oh , you know , the usual scifi and fantasy fare . i'm actually rereading <redacted_link>
+	Free: Pattern=the, Pattern=<redacted_link>, Pattern=scifi, Pattern=you
+	Constrained: 
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=about
+	Constrained: 
+Turn ID=11| B | Human 2 : it's a collection of essays about the intersection of physics and philosophy , and how our understanding of the universe has changed over time . <re
+	Free: Pattern=about, Pattern=the, Pattern=a, Pattern=how
+	Constrained: 
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=survive, Pattern=a, Pattern=how, Pattern=such, Pattern=the survivors
+	Constrained: Pattern=the, Pattern=survivors
+Turn ID=13| B | Human 2 : it's about how the survivors of a catastrophic event , such as a global catastrophe , have to adapt and
+	Free: Pattern=have, Pattern=a, Pattern=how, Pattern=such, Pattern=about, Pattern=the survivors, Pattern=to
+	Constrained: Pattern=the, Pattern=survivors
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=a, Pattern=watched, Pattern=like
+	Constrained: 
+Turn ID=15| B | Human 2 : i've watched a few shows like that , where the survivors have to
+	Free: Pattern=have, Pattern=a, Pattern=like, Pattern=watched, Pattern=the survivors, Pattern=to
+	Constrained: Pattern=the, Pattern=survivors
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=to live in space, Pattern=going to, Pattern=about, Pattern=survivors
+	Constrained: Pattern=in, Pattern=to, Pattern=space
+Turn ID=17| B | Human 2 : space . that's right ! the survivors in those shows have to live in space and figure out how to survive in a new environment
+	Free: Pattern=survive, Pattern=to live in space, Pattern=have, Pattern=a, Pattern=how, Pattern=space, Pattern=in, Pattern=the survivors, Pattern=to
+	Constrained: Pattern=space, Pattern=in, Pattern=the, Pattern=to, Pattern=survivors

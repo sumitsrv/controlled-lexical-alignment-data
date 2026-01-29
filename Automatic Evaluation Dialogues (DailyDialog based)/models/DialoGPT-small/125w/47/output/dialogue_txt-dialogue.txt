@@ -1,0 +1,67 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: _how's your day going ?_ 
+B|3| Human 2: _i'm_ _going to_ watch that , it's pretty _good _._ how_ _is_ [your day going ?] 
+A|4| Human 1: [i'm] [good] [i'm] [good .] what's getting _you_ down ? 
+B|5| Human 2: hello [i'm] dad [how's your day going ?] 
+A|6| Human 1: [i'm] thinking of [going _to] visit_ _my family_ [. how] _about_ _you_ ? 
+B|7| Human 2: [hi] dad . [i'm] [going to] bed [. how] [you] do ? 
+A|8| Human 1: _they're in new york_ [. how] _about_ yours ? 
+B|9| Human 2: _what_ [you] saying [about] me ? [they're in new york] so [i'm] [going to] stay home . 
+A|10| Human 1: ahh [what] city ? _i've visited india before_ . 
+B|11| Human 2: [i've visited india before] but _i_ would say that [my family] _and_ _i_ are _a_ pretty nice bunch [to visit] at home . 
+A|12| Human 1: hyderabad ! _and bangalore !_ great food [in] both cities ! [is] it still hot this time of year ? 
+B|13| Human 2: [hi] , [india] [and bangalore !] [i'm] from [india] . 
+A|14| Human 1: yes . [i] was actually just [there] [a] few weeks ago for thanksgiving [and] got [to] see the first snow of the season ! ever been [to] [new york] ? 
+B|15| Human 2: [new york] ?? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=how's your day going ?
+	Constrained: Pattern=your day going ?
+Turn ID=3| B | Human 2 : i'm going to watch that , it's pretty good . how is your day going ?
+	Free: Pattern=going to, Pattern=your day going ?, Pattern=. how, Pattern=good ., Pattern=i'm, Pattern=is
+	Constrained: Pattern=good, Pattern=to
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=good ., Pattern=good, Pattern=you, Pattern=i'm
+	Constrained: Pattern=good
+Turn ID=5| B | Human 2 : hello i'm dad how's your day going ?
+	Free: Pattern=how's your day going ?, Pattern=i'm
+	Constrained: Pattern=your day going ?
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=going to, Pattern=you, Pattern=. how, Pattern=about, Pattern=to visit, Pattern=i'm, Pattern=my family
+	Constrained: Pattern=to
+Turn ID=7| B | Human 2 : hi dad . i'm going to bed . how you do ?
+	Free: Pattern=going to, Pattern=you, Pattern=hi, Pattern=. how, Pattern=i'm
+	Constrained: Pattern=to
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=they're in new york, Pattern=. how, Pattern=about
+	Constrained: Pattern=in, Pattern=new york
+Turn ID=9| B | Human 2 : what you saying about me ? they're in new york so i'm going to stay home .
+	Free: Pattern=going to, Pattern=you, Pattern=what, Pattern=about, Pattern=i'm, Pattern=they're in new york
+	Constrained: Pattern=in, Pattern=to, Pattern=new york
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=i've visited india before, Pattern=what
+	Constrained: Pattern=india
+Turn ID=11| B | Human 2 : i've visited india before but i would say that my family and i are a pretty nice bunch to visit at home .
+	Free: Pattern=a, Pattern=and, Pattern=my family, Pattern=i, Pattern=i've visited india before, Pattern=to visit
+	Constrained: Pattern=india, Pattern=to
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=and bangalore !, Pattern=in, Pattern=is
+	Constrained: Pattern=and
+Turn ID=13| B | Human 2 : hi , india and bangalore ! i'm from india .
+	Free: Pattern=and bangalore !, Pattern=hi, Pattern=i'm, Pattern=india
+	Constrained: Pattern=and
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=there, Pattern=a, Pattern=new york, Pattern=and, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=15| B | Human 2 : new york ??
+	Free: Pattern=new york
+	Constrained: 

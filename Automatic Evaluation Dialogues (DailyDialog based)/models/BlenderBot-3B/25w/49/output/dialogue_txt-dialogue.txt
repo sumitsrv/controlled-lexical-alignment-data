@@ -1,0 +1,67 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] _there_ 
+A|2| Human 1: how's your day _going_ ? 
+B|3| Human 2: fantastic , _it's_ about time _to_ go _out_ in _the_ sun again , _it's_ too cold in _the_ house . 
+A|4| Human 1: haha _are you_ _looking forward to_ _the weekend_ ? 
+B|5| Human 2: good morning _, it_ _is_ great _out_ today ! _i'm_ [looking forward to] taking my son swimming ! how [are you] ? 
+A|6| Human 1: oh wow ! [are you] _going to watch it live_ ? or _watch it_ on tv ? 
+B|7| Human 2: [it] _is_ [going to] _be_ hot today ! _i_ am _really_ excited for [the weekend] 
+A|8| Human 1: oh , [the] sharks ??? hokey [is] actually [really] _fun_ _live !_ although [, it] can _be a_ little violent .. haha 
+B|9| Human 2: _i_ am [going to watch it [live] !] _i_ haven't seen [a] shark since _i_ was [a] kid _, i_ can't wait ! 
+A|10| Human 1: [you] _might_ _like_ [the] _ufc_ haha _. i_ actually _have a_ jiu jitsu tournament coming up so _this weekend_ [i] will [be] training ! 
+B|11| Human 2: [i] love [ufc] [. i] can't wait for [this] weekends fight [. i] [like] all [the] fights [really] _but i_ want [to] see jon jones _win_ 
+A|12| Human 1: [it's] just been [a] little over [a] year . [i'm] _still_ pretty amateur , [but i] figured [i] should give competing [a] try _and_ just put myself [out] [there] . 
+B|13| Human 2: [it's] [going to] [be a] good one [this weekend] [. i] [might] [have] [to] go [and] catch [a] couple before they start [to] run [out] of tickets . 
+A|14| Human 1: _yeah_ , as long as [i] do _not_ pass [out] [, i] will consider _that_ [a] [win] ! 
+B|15| Human 2: [yeah] dude [i'm] [not] [that] great at [it] [but] [it's] [still] [a] [fun] time ! [i] hope [you] [have a] good time . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there
+	Free: Pattern=hi, Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : fantastic , it's about time to go out in the sun again , it's too cold in the house .
+	Free: Pattern=to, Pattern=it's, Pattern=the, Pattern=out
+	Constrained: 
+Turn ID=4| A | Human 1 : haha are you looking forward to the weekend ?
+	Free: Pattern=looking forward to, Pattern=are you, Pattern=the weekend
+	Constrained: Pattern=the, Pattern=to, Pattern=you
+Turn ID=5| B | Human 2 : good morning , it is great out today ! i'm looking forward to taking my son swimming ! how are you ?
+	Free: Pattern=, it, Pattern=out, Pattern=i'm, Pattern=looking forward to, Pattern=are you, Pattern=is
+	Constrained: Pattern=to, Pattern=you, Pattern=it
+Turn ID=6| A | Human 1 : oh wow ! are you going to watch it live ? or watch it on tv ?
+	Free: Pattern=going to watch it live, Pattern=are you, Pattern=watch it
+	Constrained: Pattern=going to, Pattern=you, Pattern=going, Pattern=watch it, Pattern=it, Pattern=to
+Turn ID=7| B | Human 2 : it is going to be hot today ! i am really excited for the weekend
+	Free: Pattern=going to, Pattern=it, Pattern=the weekend, Pattern=really, Pattern=be, Pattern=is, Pattern=i
+	Constrained: Pattern=to, Pattern=the, Pattern=going
+Turn ID=8| A | Human 1 : oh , the sharks ??? hokey is actually really fun live ! although , it can be a little violent .. haha
+	Free: Pattern=be a, Pattern=is, Pattern=really, Pattern=live !, Pattern=the, Pattern=fun, Pattern=, it
+	Constrained: Pattern=be, Pattern=a, Pattern=it
+Turn ID=9| B | Human 2 : i am going to watch it live ! i haven't seen a shark since i was a kid , i can't wait !
+	Free: Pattern=a, Pattern=i, Pattern=going to watch it live, Pattern=live !, Pattern=, i
+	Constrained: Pattern=going to, Pattern=going, Pattern=watch it, Pattern=it, Pattern=i, Pattern=to
+Turn ID=10| A | Human 1 : you might like the ufc haha . i actually have a jiu jitsu tournament coming up so this weekend i will be training !
+	Free: Pattern=have a, Pattern=. i, Pattern=ufc, Pattern=i, Pattern=like, Pattern=be, Pattern=the, Pattern=might, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=a, Pattern=i, Pattern=this, Pattern=have
+Turn ID=11| B | Human 2 : i love ufc . i can't wait for this weekends fight . i like all the fights really but i want to see jon jones win
+	Free: Pattern=but i, Pattern=. i, Pattern=ufc, Pattern=i, Pattern=the, Pattern=this, Pattern=really, Pattern=like, Pattern=win, Pattern=to
+	Constrained: Pattern=i, Pattern=but
+Turn ID=12| A | Human 1 : it's just been a little over a year . i'm still pretty amateur , but i figured i should give competing a try and just put myself out there .
+	Free: Pattern=out, Pattern=a, Pattern=and, Pattern=i'm, Pattern=i, Pattern=it's, Pattern=still, Pattern=but i, Pattern=there
+	Constrained: Pattern=i, Pattern=but
+Turn ID=13| B | Human 2 : it's going to be a good one this weekend . i might have to go and catch a couple before they start to run out of tickets .
+	Free: Pattern=going to, Pattern=have, Pattern=a, Pattern=and, Pattern=. i, Pattern=be a, Pattern=to, Pattern=might, Pattern=it's, Pattern=this weekend, Pattern=out
+	Constrained: Pattern=going, Pattern=a, Pattern=i, Pattern=be, Pattern=to, Pattern=this
+Turn ID=14| A | Human 1 : yeah , as long as i do not pass out , i will consider that a win !
+	Free: Pattern=out, Pattern=a, Pattern=yeah, Pattern=i, Pattern=, i, Pattern=win, Pattern=that, Pattern=not
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : yeah dude i'm not that great at it but it's still a fun time ! i hope you have a good time .
+	Free: Pattern=fun, Pattern=you, Pattern=have a, Pattern=a, Pattern=i'm, Pattern=i, Pattern=it, Pattern=yeah, Pattern=that, Pattern=it's, Pattern=but, Pattern=not, Pattern=still
+	Constrained: Pattern=a, Pattern=have

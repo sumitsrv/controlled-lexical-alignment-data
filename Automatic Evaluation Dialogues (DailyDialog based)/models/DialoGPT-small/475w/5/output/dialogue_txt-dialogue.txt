@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey _, how_ _are_ _you_ ? 
+A|2| Human 1: _i'm_ a bit _sad_ . _i miss_ my cat . 
+B|3| Human 2: [i'm] [sad] [i miss] _you_ 
+A|4| Human 1: posters is a great idea . so far _i've_ _just_ _tried_ banging _her_ _catfood dish and_ _shouting_ _her_ name . anyway [, how] is _your_ day going so far ? 
+B|5| Human 2: yeah [i'm] [sad] _to_ [just] [miss] [her] . [i've] [tried] [your] [catfood dish and] [tried] [shouting] _it ._ 
+A|6| Human 1: if _you could go anywhere_ on vacation , _where_ _would_ [you] _go_ ? 
+B|7| Human 2: [you could go anywhere] [and] [you] [would] [just] [miss] [her] _. i'm_ [sad] _to_ say that [i miss] [your] [catfood dish] . 
+A|8| Human 1: _i heard there are_ rainforests in southeast asia _where you can zipline from tree to tree_ . 
+B|9| Human 2: [i heard there are] 
+A|10| Human 1: [i] won't lie , [it] sounds scary [. i'm] scared right now [just] _thinking about_ [it .] 
+B|11| Human 2: [i] [would] [. i'm] [thinking about] doing [it] [just] for laughs [and] for entertainment 
+A|12| Human 1: if [there] isn't _one_ , [you] _should_ invent [it] , _and then make millions_ 
+B|13| Human 2: [there] [should] be [one] [where you can zipline from tree to tree] [and then make millions] 
+A|14| Human 1: ha ! don't _drink and zipline_ , mate ! 
+B|15| Human 2: [there] [should] [just] be [one] [where you can] [drink and [zipline] from tree to tree] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=, how, Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm a bit sad . i miss my cat .
+	Free: Pattern=i miss, Pattern=i'm, Pattern=sad
+	Constrained: Pattern=i, Pattern=miss
+Turn ID=3| B | Human 2 : i'm sad i miss you
+	Free: Pattern=i miss, Pattern=i'm, Pattern=sad, Pattern=you
+	Constrained: Pattern=i, Pattern=miss
+Turn ID=4| A | Human 1 : posters is a great idea . so far i've just tried banging her catfood dish and shouting her name . anyway , how is your day going so far ?
+	Free: Pattern=shouting, Pattern=just, Pattern=i've, Pattern=your, Pattern=her, Pattern=tried, Pattern=catfood dish and, Pattern=, how
+	Constrained: Pattern=catfood dish, Pattern=and
+Turn ID=5| B | Human 2 : yeah i'm sad to just miss her . i've tried your catfood dish and tried shouting it .
+	Free: Pattern=sad, Pattern=shouting, Pattern=it ., Pattern=just, Pattern=i've, Pattern=miss, Pattern=i'm, Pattern=your, Pattern=her, Pattern=tried, Pattern=catfood dish and, Pattern=to
+	Constrained: Pattern=it, Pattern=catfood dish, Pattern=and
+Turn ID=6| A | Human 1 : if you could go anywhere on vacation , where would you go ?
+	Free: Pattern=you, Pattern=go, Pattern=where, Pattern=you could go anywhere, Pattern=would
+	Constrained: Pattern=you, Pattern=go
+Turn ID=7| B | Human 2 : you could go anywhere and you would just miss her . i'm sad to say that i miss your catfood dish .
+	Free: Pattern=sad, Pattern=you, Pattern=just, Pattern=. i'm, Pattern=and, Pattern=i miss, Pattern=miss, Pattern=your, Pattern=her, Pattern=you could go anywhere, Pattern=would, Pattern=to, Pattern=catfood dish
+	Constrained: Pattern=you, Pattern=go, Pattern=miss, Pattern=i'm, Pattern=i
+Turn ID=8| A | Human 1 : i heard there are rainforests in southeast asia where you can zipline from tree to tree .
+	Free: Pattern=where you can zipline from tree to tree, Pattern=i heard there are
+	Constrained: Pattern=you, Pattern=there, Pattern=are, Pattern=i, Pattern=where, Pattern=where you can, Pattern=zipline from tree to tree, Pattern=to
+Turn ID=9| B | Human 2 : i heard there are
+	Free: Pattern=i heard there are
+	Constrained: Pattern=are, Pattern=i, Pattern=there
+Turn ID=10| A | Human 1 : i won't lie , it sounds scary . i'm scared right now just thinking about it .
+	Free: Pattern=it ., Pattern=just, Pattern=. i'm, Pattern=it, Pattern=i, Pattern=thinking about
+	Constrained: Pattern=it, Pattern=i'm
+Turn ID=11| B | Human 2 : i would . i'm thinking about doing it just for laughs and for entertainment
+	Free: Pattern=just, Pattern=. i'm, Pattern=i, Pattern=would, Pattern=thinking about, Pattern=it, Pattern=and
+	Constrained: Pattern=i'm
+Turn ID=12| A | Human 1 : if there isn't one , you should invent it , and then make millions
+	Free: Pattern=you, Pattern=it, Pattern=one, Pattern=and then make millions, Pattern=should, Pattern=there
+	Constrained: Pattern=and
+Turn ID=13| B | Human 2 : there should be one where you can zipline from tree to tree and then make millions
+	Free: Pattern=one, Pattern=and then make millions, Pattern=where you can zipline from tree to tree, Pattern=should, Pattern=there
+	Constrained: Pattern=you, Pattern=and, Pattern=where, Pattern=where you can, Pattern=zipline from tree to tree, Pattern=to
+Turn ID=14| A | Human 1 : ha ! don't drink and zipline , mate !
+	Free: Pattern=drink and zipline
+	Constrained: Pattern=and
+Turn ID=15| B | Human 2 : there should just be one where you can drink and zipline from tree to tree
+	Free: Pattern=just, Pattern=one, Pattern=where you can, Pattern=zipline from tree to tree, Pattern=drink and zipline, Pattern=should, Pattern=there
+	Constrained: Pattern=where, Pattern=and, Pattern=to, Pattern=you

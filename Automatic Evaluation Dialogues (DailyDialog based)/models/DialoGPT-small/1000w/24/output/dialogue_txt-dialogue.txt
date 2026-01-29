@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] _anything_ _new_ ? 
+B|3| Human 2: [hi] [new] , it's me . 
+A|4| Human 1: any _plans_ ? 
+B|5| Human 2: [hi] [new] [plans] , _i'm a_ [new] pool 
+A|6| Human 1: _that's_ _awesome_ ! _i never been !_ 
+B|7| Human 2: [hi] [awesome] [plans] . [i never been !] 
+A|8| Human 1: are _you_ [a] _food person ,_ [a] sightseeing _person_ or neither ? 
+B|9| Human 2: [hi] [food person ,] [i never been] , [anything] [you] want me to do ? 
+A|10| Human 1: [i'm a] [food person] [i] _think_ . any specific _foods_ _you're_ _planning on trying_ ? 
+B|11| Human 2: not [food person] [you're] [trying] [on] [that's] for sure [i'm] [planning on trying] to _eat_ and [think] about [foods] for the day . 
+A|12| Human 1: yeah my _favorite_ is taco fish 
+B|13| Human 2: what's the [food person] [favorite] [food] [you're] [trying] [on] that [i'm] [planning on] doing ? 
+A|14| Human 1: no . only [eat] them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=anything, Pattern=hey, Pattern=new
+	Constrained: 
+Turn ID=3| B | Human 2 : hi new , it's me .
+	Free: Pattern=hi, Pattern=new
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=plans
+	Constrained: 
+Turn ID=5| B | Human 2 : hi new plans , i'm a new pool
+	Free: Pattern=i'm a, Pattern=plans, Pattern=hi, Pattern=new
+	Constrained: Pattern=i'm, Pattern=a
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=i never been !, Pattern=that's, Pattern=awesome
+	Constrained: Pattern=i, Pattern=i never been
+Turn ID=7| B | Human 2 : hi awesome plans . i never been !
+	Free: Pattern=i never been !, Pattern=plans, Pattern=hi, Pattern=awesome
+	Constrained: Pattern=i, Pattern=i never been
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=food person ,, Pattern=a, Pattern=you, Pattern=person
+	Constrained: Pattern=food person, Pattern=person, Pattern=food
+Turn ID=9| B | Human 2 : hi food person , i never been , anything you want me to do ?
+	Free: Pattern=you, Pattern=hi, Pattern=i never been, Pattern=anything, Pattern=food person ,
+	Constrained: Pattern=i, Pattern=food, Pattern=person, Pattern=food person
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=food person, Pattern=think, Pattern=i, Pattern=i'm a, Pattern=foods, Pattern=you're, Pattern=planning on trying
+	Constrained: Pattern=planning on, Pattern=a, Pattern=person, Pattern=i'm, Pattern=food, Pattern=on, Pattern=trying
+Turn ID=11| B | Human 2 : not food person you're trying on that's for sure i'm planning on trying to eat and think about foods for the day .
+	Free: Pattern=eat, Pattern=food person, Pattern=think, Pattern=i'm, Pattern=trying, Pattern=foods, Pattern=you're, Pattern=planning on trying, Pattern=on, Pattern=that's
+	Constrained: Pattern=planning on, Pattern=person, Pattern=food, Pattern=on, Pattern=trying
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=favorite
+	Constrained: 
+Turn ID=13| B | Human 2 : what's the food person favorite food you're trying on that i'm planning on doing ?
+	Free: Pattern=you're, Pattern=planning on, Pattern=favorite, Pattern=food person, Pattern=i'm, Pattern=food, Pattern=on, Pattern=trying
+	Constrained: Pattern=person, Pattern=food, Pattern=on
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: Pattern=eat
+	Constrained: 

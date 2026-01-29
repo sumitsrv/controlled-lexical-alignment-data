@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm_ _doing_ great _. what are you_ up _to_ ? 
+B|3| Human 2: [i'm] just here [to] _help_ [you] with any questions or tasks _you might_ _have_ . _how_ can _i_ assist [you] today ? <|im_end| 
+A|4| Human 1: oh , [i'm] enjoying _a_ sip _of_ _coffee ,_ looking over _the_ ocean _. what_ _book_ [are you] reading ? 
+B|5| Human 2: [i'm] just an ai assistant , _i_ don't _have_ [the] ability [to] _read_ _books_ or enjoy [coffee _,] but_ [i'm] glad [you] [are] 
+A|6| Human 1: _that_ _seems like a good_ _book_ . does _it_ [have] _good_ tips on [how] _to _sleep_ better_ ? 
+B|7| Human 2: [i'm] an ai [that] _is_ trained [to] [have] [a good] [sleep] schedule [. what are you] [doing] [to] improve [the] quality [of] your [sleep] ? < 
+A|8| Human 1: _i read lots_ [of] papers [, but] do poorly on [books] 😞 [a] recent _book that i_ _like_ [is] zero [to] one by peter thiel 
+B|9| Human 2: [that] [book] [seems like a good] [read] . [have] [you] [read] any [books] [that] [are] related [to sleep] or [better] productivity ? 
+A|10| Human 1: _it's_ _about_ startups , _lots_ [of] _useful_ _principles_ _and_ _philosophies_ _for innovation_ , [like] _being a_ _contrarian_ 
+B|11| Human 2: [contrarian] [principles] [are] [good] [for innovation] [and] [sleep better] . [i read lots] [about] [the] book's [philosophies] [and] [it] [seems] [that] [being a] contr 
+A|12| Human 1: [i] [might] in [the] future . [the] _philosophy_ in [the] [book] _also_ [help] _for other things_ as well , e . g ., in _research_ , [you might] _also_ want [to] be [contrarian] 
+B|13| Human 2: [contrarian] [philosophy] [might] [help] [you] [for other things] [like] [research] [and] [innovation] [also] [it's] [useful] [book that i] found [to] [have] [the] [principles] [about] [being] 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=how, Pattern=hi
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=. what are you, Pattern=i'm, Pattern=doing, Pattern=to
+	Constrained: Pattern=are, Pattern=you, Pattern=are you, Pattern=. what
+Turn ID=3| B | Human 2 : i'm just here to help you with any questions or tasks you might have . how can i assist you today ? <|im_end|
+	Free: Pattern=you, Pattern=have, Pattern=how, Pattern=you might, Pattern=i'm, Pattern=i, Pattern=to, Pattern=help
+	Constrained: Pattern=you, Pattern=might
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=i'm, Pattern=are you, Pattern=coffee ,, Pattern=the, Pattern=. what, Pattern=a, Pattern=book
+	Constrained: Pattern=are, Pattern=you
+Turn ID=5| B | Human 2 : i'm just an ai assistant , i don't have the ability to read books or enjoy coffee , but i'm glad you are
+	Free: Pattern=have, Pattern=are, Pattern=i'm, Pattern=i, Pattern=coffee ,, Pattern=the, Pattern=books, Pattern=to, Pattern=read, Pattern=you, Pattern=, but
+	Constrained: 
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=have, Pattern=book, Pattern=how, Pattern=it, Pattern=to sleep, Pattern=sleep better, Pattern=that, Pattern=seems like a good, Pattern=good
+	Constrained: Pattern=good, Pattern=sleep, Pattern=a, Pattern=a good, Pattern=like, Pattern=better, Pattern=to, Pattern=seems
+Turn ID=7| B | Human 2 : i'm an ai that is trained to have a good sleep schedule . what are you doing to improve the quality of your sleep ? <
+	Free: Pattern=have, Pattern=. what are you, Pattern=i'm, Pattern=is, Pattern=the, Pattern=to, Pattern=that, Pattern=sleep, Pattern=of, Pattern=a good, Pattern=doing
+	Constrained: Pattern=good, Pattern=you, Pattern=a, Pattern=are, Pattern=are you, Pattern=. what
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=i read lots, Pattern=of, Pattern=, but, Pattern=a, Pattern=is, Pattern=like, Pattern=books, Pattern=to, Pattern=book that i
+	Constrained: Pattern=i, Pattern=read, Pattern=that, Pattern=lots, Pattern=book
+Turn ID=9| B | Human 2 : that book seems like a good read . have you read any books that are related to sleep or better productivity ?
+	Free: Pattern=seems like a good, Pattern=you, Pattern=have, Pattern=book, Pattern=are, Pattern=better, Pattern=to sleep, Pattern=books, Pattern=read, Pattern=that
+	Constrained: Pattern=good, Pattern=sleep, Pattern=a, Pattern=a good, Pattern=like, Pattern=to, Pattern=seems
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=being a, Pattern=of, Pattern=principles, Pattern=for innovation, Pattern=lots, Pattern=and, Pattern=philosophies, Pattern=about, Pattern=useful, Pattern=it's, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=being, Pattern=innovation, Pattern=a
+Turn ID=11| B | Human 2 : contrarian principles are good for innovation and sleep better . i read lots about the book's philosophies and it seems that being a contr
+	Free: Pattern=being a, Pattern=principles, Pattern=for innovation, Pattern=about, Pattern=contrarian, Pattern=the, Pattern=sleep better, Pattern=i read lots, Pattern=good, Pattern=it, Pattern=and, Pattern=philosophies, Pattern=are, Pattern=seems, Pattern=that
+	Constrained: Pattern=sleep, Pattern=innovation, Pattern=being, Pattern=i, Pattern=better, Pattern=read, Pattern=lots, Pattern=a
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=research, Pattern=philosophy, Pattern=book, Pattern=you might, Pattern=i, Pattern=the, Pattern=to, Pattern=for other things, Pattern=might, Pattern=help, Pattern=also, Pattern=contrarian
+	Constrained: Pattern=you, Pattern=might
+Turn ID=13| B | Human 2 : contrarian philosophy might help you for other things like research and innovation also it's useful book that i found to have the principles about being
+	Free: Pattern=have, Pattern=research, Pattern=and, Pattern=being, Pattern=about, Pattern=the, Pattern=for other things, Pattern=might, Pattern=book that i, Pattern=you, Pattern=principles, Pattern=innovation, Pattern=philosophy, Pattern=also, Pattern=contrarian, Pattern=like, Pattern=to, Pattern=useful, Pattern=help, Pattern=it's
+	Constrained: Pattern=book, Pattern=i, Pattern=that
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

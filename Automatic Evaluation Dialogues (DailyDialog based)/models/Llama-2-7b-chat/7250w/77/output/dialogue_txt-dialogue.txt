@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are_ _you_ ? 
+A|2| Human 1: _pretty good_ . _i_ just drank this new _hint water_ . so _good_ 
+B|3| Human 2: 🤔 [water] with [hint] _of_ goodness ? 
+A|4| Human 1: _watermelon_ 
+B|5| Human 2: 🍉 [watermelon] [water] ? _sounds_ refreshing ! _do you_ have any recommendations for [good] [hint water] ? <| 
+A|6| Human 1: _i_ _see_ . _yeah some are pretty strange_ 
+B|7| Human 2: [yeah some are pretty strange] , but [watermelon] [water] is [good] 
+A|8| Human 1: _lol_ _i_ tried this tangerine _walnut icecream_ _that was super_ _weird_ 
+B|9| Human 2: [weird] [lol] [that was super] [strange] [yeah] , [watermelon] [water] is [pretty good] 
+A|10| Human 1: _that sounds_ [pretty] _tasty actually_ 
+B|11| Human 2: [lol] [yeah] [i] [was] [weird] [tasty actually] [pretty good] [watermelon] [water] [sounds] [super] [strange] [that] [walnut icecream] though [lol] 
+A|12| Human 1: [do you] want to get [some] [of] [that] [icecream] _together _some_ time_ . _show_ me a [good] _place_ 
+B|13| Human 2: [lol] [that sounds] [good] [actually] [yeah] [show] [you] [watermelon] [water] [some time] [weird] [icecream] [place] [together some] [tasty] [pretty] [super] [strange] 
+A|14| Human 1: [lol] 
+B|15| Human 2: [see] [you] around ! [lol] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . i just drank this new hint water . so good
+	Free: Pattern=hint water, Pattern=pretty good, Pattern=good, Pattern=i
+	Constrained: Pattern=hint, Pattern=good, Pattern=pretty, Pattern=water
+Turn ID=3| B | Human 2 : 🤔 water with hint of goodness ?
+	Free: Pattern=of, Pattern=hint, Pattern=water
+	Constrained: 
+Turn ID=4| A | Human 1 : watermelon
+	Free: Pattern=watermelon
+	Constrained: 
+Turn ID=5| B | Human 2 : 🍉 watermelon water ? sounds refreshing ! do you have any recommendations for good hint water ? <|
+	Free: Pattern=good, Pattern=do you, Pattern=watermelon, Pattern=hint water, Pattern=water, Pattern=sounds
+	Constrained: Pattern=hint, Pattern=you, Pattern=water
+Turn ID=6| A | Human 1 : i see . yeah some are pretty strange
+	Free: Pattern=yeah some are pretty strange, Pattern=see, Pattern=i
+	Constrained: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=pretty
+Turn ID=7| B | Human 2 : yeah some are pretty strange , but watermelon water is good
+	Free: Pattern=yeah some are pretty strange, Pattern=good, Pattern=water, Pattern=watermelon
+	Constrained: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=pretty
+Turn ID=8| A | Human 1 : lol i tried this tangerine walnut icecream that was super weird
+	Free: Pattern=lol, Pattern=weird, Pattern=that was super, Pattern=i, Pattern=walnut icecream
+	Constrained: Pattern=super, Pattern=that, Pattern=icecream, Pattern=was
+Turn ID=9| B | Human 2 : weird lol that was super strange yeah , watermelon water is pretty good
+	Free: Pattern=lol, Pattern=strange, Pattern=that was super, Pattern=water, Pattern=watermelon, Pattern=pretty good, Pattern=yeah, Pattern=weird
+	Constrained: Pattern=good, Pattern=pretty, Pattern=was, Pattern=super, Pattern=that
+Turn ID=10| A | Human 1 : that sounds pretty tasty actually
+	Free: Pattern=that sounds, Pattern=tasty actually, Pattern=pretty
+	Constrained: Pattern=sounds, Pattern=tasty, Pattern=that, Pattern=actually
+Turn ID=11| B | Human 2 : lol yeah i was weird tasty actually pretty good watermelon water sounds super strange that walnut icecream though lol
+	Free: Pattern=lol, Pattern=strange, Pattern=i, Pattern=was, Pattern=tasty actually, Pattern=yeah, Pattern=weird, Pattern=water, Pattern=sounds, Pattern=watermelon, Pattern=walnut icecream, Pattern=super, Pattern=pretty good, Pattern=that
+	Constrained: Pattern=good, Pattern=tasty, Pattern=actually, Pattern=icecream, Pattern=pretty
+Turn ID=12| A | Human 1 : do you want to get some of that icecream together some time . show me a good place
+	Free: Pattern=good, Pattern=of, Pattern=some time, Pattern=do you, Pattern=place, Pattern=show, Pattern=icecream, Pattern=some, Pattern=together some, Pattern=that
+	Constrained: Pattern=you, Pattern=some
+Turn ID=13| B | Human 2 : lol that sounds good actually yeah show you watermelon water some time weird icecream place together some tasty pretty super strange
+	Free: Pattern=good, Pattern=that sounds, Pattern=lol, Pattern=you, Pattern=some time, Pattern=actually, Pattern=icecream, Pattern=water, Pattern=pretty, Pattern=watermelon, Pattern=place, Pattern=show, Pattern=tasty, Pattern=strange, Pattern=yeah, Pattern=weird, Pattern=super, Pattern=together some
+	Constrained: Pattern=sounds, Pattern=some, Pattern=that
+Turn ID=14| A | Human 1 : lol
+	Free: Pattern=lol
+	Constrained: 
+Turn ID=15| B | Human 2 : see you around ! lol
+	Free: Pattern=see, Pattern=lol, Pattern=you
+	Constrained: 

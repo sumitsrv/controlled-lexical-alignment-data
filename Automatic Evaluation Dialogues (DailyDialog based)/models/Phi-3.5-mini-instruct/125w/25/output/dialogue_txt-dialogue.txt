@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ good . [how are you] ? ：） 
+B|3| Human 2: hello ! i'm phi , an ai , so [i] don't have feelings , but i'm fully operational and ready _to_ 
+A|4| Human 1: _i am_ _busy_ . _a_ lot of _work_ . what [are you] working _on_ ? 
+B|5| Human 2: i'm here _to_ assist [you] ! [i] don't [work] [on] tasks myself but can help [you] manage _your_ [busy] workload . here [are] some services 
+A|6| Human 1: _i am_ working [on] _a_ new _classifier ._ 
+B|7| Human 2: great ! feel free _to_ ask me any questions while [i] [work] [on] optimizing the [classifier .] if [you] need specifics [on] [how] _to_ manage tasks 
+A|8| Human 1: _a_ new [classifier] _for_ hate speech . which _research_ topic catches [your] eyes most ? 
+B|9| Human 2: i'm here _to_ ensure [your] [classifier] [research] is streamlined . if you're looking [for] insights , methods , _or_ resources , just let 
+A|10| Human 1: nice ! _do_ [you] _refer to work or anything else_ ? 
+B|11| Human 2: [i am] [a] language model ai developed by microsoft . [i] [do] not [refer to work or anything else] . however , i'm here [to] assist [you] 
+A|12| Human 1: [you] [are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=are, Pattern=how, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=i am
+	Constrained: Pattern=you, Pattern=how, Pattern=are, Pattern=are you, Pattern=i
+Turn ID=3| B | Human 2 : hello ! i'm phi , an ai , so i don't have feelings , but i'm fully operational and ready to
+	Free: Pattern=to, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=i am, Pattern=work, Pattern=are you, Pattern=on, Pattern=busy, Pattern=a
+	Constrained: Pattern=i, Pattern=are, Pattern=you
+Turn ID=5| B | Human 2 : i'm here to assist you ! i don't work on tasks myself but can help you manage your busy workload . here are some services
+	Free: Pattern=you, Pattern=busy, Pattern=are, Pattern=work, Pattern=on, Pattern=to, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=classifier ., Pattern=i am, Pattern=on, Pattern=a
+	Constrained: Pattern=classifier, Pattern=i
+Turn ID=7| B | Human 2 : great ! feel free to ask me any questions while i work on optimizing the classifier . if you need specifics on how to manage tasks
+	Free: Pattern=you, Pattern=how, Pattern=classifier ., Pattern=work, Pattern=i, Pattern=on, Pattern=to
+	Constrained: Pattern=classifier
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=research, Pattern=a, Pattern=for, Pattern=your, Pattern=classifier
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm here to ensure your classifier research is streamlined . if you're looking for insights , methods , or resources , just let
+	Free: Pattern=research, Pattern=for, Pattern=your, Pattern=to, Pattern=classifier, Pattern=or
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=refer to work or anything else, Pattern=do, Pattern=you
+	Constrained: Pattern=or, Pattern=work, Pattern=to
+Turn ID=11| B | Human 2 : i am a language model ai developed by microsoft . i do not refer to work or anything else . however , i'm here to assist you
+	Free: Pattern=refer to work or anything else, Pattern=you, Pattern=i am, Pattern=i, Pattern=to, Pattern=do, Pattern=a
+	Constrained: Pattern=or, Pattern=to, Pattern=i, Pattern=work
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=are, Pattern=you
+	Constrained: 

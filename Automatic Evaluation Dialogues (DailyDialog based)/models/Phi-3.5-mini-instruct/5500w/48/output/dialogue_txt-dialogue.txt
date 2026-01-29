@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm_ good . [how are you] _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] well , thank [you] _for_ asking ! [how] can _i_ assist [you] [today ?] <|end|><|assistant|> [i'm] phi , _an_ ai virtual 
+A|4| Human 1: _i was_ flying my kite [today] in _the_ sunshine ! what did _you have_ _for lunch_ ? 
+B|5| Human 2: [i'm] phi [the] ai , so [i] don't [have] [lunch] _like_ [you] do ! however , [i was] programmed [for] [today] , 
+A|6| Human 1: oh _that_ is great ! [i] love _seafood_ - especially shellfish ! 
+B|7| Human 2: [i'm] glad [you have] [seafood] [for lunch] ! however , that's outside [the] usual 24/7 programming cycle _of_ a 
+A|8| Human 1: oh nice ! is it _hard_ ? 
+B|9| Human 2: [i'm] phi [the] ai [you] [are] chatting with , so [hard] [for] me _would_ usually mean something [that] requires manual intervention _or_ physical 
+A|10| Human 1: oh wow , [you] sound [like] [an] _expert_ ! [have] [you] done this before ? 
+B|11| Human 2: [i'm] phi [the] ai , so [i] don't [have] expertise [like] [you] do . [i] [have] vast information and learning algorithms [that] allow 
+A|12| Human 1: haha , [you] really [have] done _your_ research [i] suppose ! ever done _any_ other _kind of_ _fishing_ [or] _hunting_ ? 
+B|13| Human 2: [i] [have] [fishing] [for] data and [hunting] [for] information [you] mean ! 😄 [i'm] [like] [your] [expert] assistant , ready to help [any] 
+A|14| Human 1: ahh , [would] _you consider_ yourself [an] outdoorsy type [of] person ? 
+B|15| Human 2: if [you consider] [the] vast expanse [of] [the] internet [your] wilderness , then yes , [i'm] out [fishing] and [hunting] [for] [any] [kind of] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=are, Pattern=how, Pattern=you
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=how are you, Pattern=today ?, Pattern=doing, Pattern=i'm
+	Constrained: Pattern=are, Pattern=you, Pattern=how, Pattern=today
+Turn ID=3| B | Human 2 : i'm doing well , thank you for asking ! how can i assist you today ? <|end|><|assistant|> i'm phi , an ai virtual
+	Free: Pattern=today ?, Pattern=you, Pattern=for, Pattern=i'm, Pattern=i, Pattern=an, Pattern=how, Pattern=doing
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=i was, Pattern=today, Pattern=you have, Pattern=for lunch, Pattern=the
+	Constrained: Pattern=you, Pattern=have, Pattern=for, Pattern=i, Pattern=lunch
+Turn ID=5| B | Human 2 : i'm phi the ai , so i don't have lunch like you do ! however , i was programmed for today ,
+	Free: Pattern=i was, Pattern=you, Pattern=have, Pattern=today, Pattern=for, Pattern=i'm, Pattern=i, Pattern=the, Pattern=lunch, Pattern=like
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=that, Pattern=i, Pattern=seafood
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm glad you have seafood for lunch ! however , that's outside the usual 24/7 programming cycle of a
+	Free: Pattern=of, Pattern=you have, Pattern=i'm, Pattern=seafood, Pattern=for lunch, Pattern=the
+	Constrained: Pattern=for, Pattern=have, Pattern=you, Pattern=lunch
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: Pattern=hard
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm phi the ai you are chatting with , so hard for me would usually mean something that requires manual intervention or physical
+	Free: Pattern=you, Pattern=for, Pattern=are, Pattern=i'm, Pattern=or, Pattern=the, Pattern=would, Pattern=hard, Pattern=that
+	Constrained: 
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=you, Pattern=have, Pattern=an, Pattern=like, Pattern=expert
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm phi the ai , so i don't have expertise like you do . i have vast information and learning algorithms that allow
+	Free: Pattern=you, Pattern=have, Pattern=i'm, Pattern=i, Pattern=like, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=kind of, Pattern=you, Pattern=have, Pattern=any, Pattern=fishing, Pattern=or, Pattern=hunting, Pattern=your, Pattern=i
+	Constrained: Pattern=of
+Turn ID=13| B | Human 2 : i have fishing for data and hunting for information you mean ! 😄 i'm like your expert assistant , ready to help any
+	Free: Pattern=you, Pattern=have, Pattern=fishing, Pattern=i'm, Pattern=like, Pattern=expert, Pattern=hunting, Pattern=for, Pattern=any, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=you consider, Pattern=of, Pattern=an, Pattern=would
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : if you consider the vast expanse of the internet your wilderness , then yes , i'm out fishing and hunting for any kind of
+	Free: Pattern=of, Pattern=kind of, Pattern=fishing, Pattern=i'm, Pattern=your, Pattern=the, Pattern=you consider, Pattern=hunting, Pattern=for, Pattern=any
+	Constrained: Pattern=of, Pattern=you

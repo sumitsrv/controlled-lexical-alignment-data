@@ -1,0 +1,67 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] _there_ 
+A|2| Human 1: how's _your_ day _going_ ? 
+B|3| Human 2: great , thanks ! how _can_ _i_ help _you_ today ? </s>'' , 
+A|4| Human 1: _haha are you looking forward to the weekend ?_ 
+B|5| Human 2: yes , weekends [are] [the] best ! how about [you] ? 
+A|6| Human 1: oh wow ! _are you going to watch it_ _live_ ? _or_ _watch it_ on _tv_ ? 
+B|7| Human 2: [are you going to watch] [the] [live] stream ? how [are you going to watch it] ? [are] examples of how [the] chatbot's response _is_ generated 
+A|8| Human 1: oh , [the] sharks ??? _hokey_ [is] actually _really_ _fun_ [live] ! although , [it] [can] _be_ a little violent .. _haha_ 
+B|9| Human 2: [haha are you looking forward to the weekend ?] [are you going to watch] [your] favorite [tv] show [live] [or] _just_ record [it] ? how _do_ [you] 
+A|10| Human 1: [you] _might like the ufc _haha ._ i_ actually _have_ a _jiu jitsu tournament coming up_ so _this weekend_ [i] _will be_ training ! 
+B|11| Human 2: [you] mean [hokey] [might like the ufc haha .] 
+A|12| Human 1: it's [just] been a little over a year . _i'm_ still _pretty_ amateur , _but_ [i] figured [i] should give _competing_ a try _and_ _just put myself out there_ . 
+B|13| Human 2: [i'm] [just] [pretty] [out there] in [the] [jiu jitsu tournament coming up] [this weekend] [haha] [but] [really] [looking forward to] [competing] 
+A|14| Human 1: _yeah_ , as long as [i] [do] not pass [out] , [i] _will_ consider that a win ! 
+B|15| Human 2: [yeah] [but] [just put myself out there] [and] [have] [fun] [will be] [the] [competing] , that's [the] most important [haha . i] know [you] [are] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there
+	Free: Pattern=there, Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ? </s>'' ,
+	Free: Pattern=you, Pattern=can, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : haha are you looking forward to the weekend ?
+	Free: Pattern=haha are you looking forward to the weekend ?
+	Constrained: Pattern=you, Pattern=are, Pattern=haha, Pattern=the, Pattern=looking forward to
+Turn ID=5| B | Human 2 : yes , weekends are the best ! how about you ?
+	Free: Pattern=you, Pattern=the, Pattern=are
+	Constrained: 
+Turn ID=6| A | Human 1 : oh wow ! are you going to watch it live ? or watch it on tv ?
+	Free: Pattern=tv, Pattern=watch it, Pattern=live, Pattern=are you going to watch it, Pattern=or
+	Constrained: Pattern=you, Pattern=going, Pattern=watch it, Pattern=it, Pattern=are, Pattern=are you going to watch
+Turn ID=7| B | Human 2 : are you going to watch the live stream ? how are you going to watch it ? are examples of how the chatbot's response is generated
+	Free: Pattern=live, Pattern=are, Pattern=is, Pattern=are you going to watch it, Pattern=are you going to watch, Pattern=the
+	Constrained: Pattern=you, Pattern=going, Pattern=watch it, Pattern=it, Pattern=are, Pattern=are you going to watch
+Turn ID=8| A | Human 1 : oh , the sharks ??? hokey is actually really fun live ! although , it can be a little violent .. haha
+	Free: Pattern=fun, Pattern=it, Pattern=live, Pattern=can, Pattern=is, Pattern=be, Pattern=the, Pattern=hokey, Pattern=haha, Pattern=really
+	Constrained: 
+Turn ID=9| B | Human 2 : haha are you looking forward to the weekend ? are you going to watch your favorite tv show live or just record it ? how do you
+	Free: Pattern=haha are you looking forward to the weekend ?, Pattern=you, Pattern=just, Pattern=tv, Pattern=do, Pattern=it, Pattern=live, Pattern=your, Pattern=or, Pattern=are you going to watch
+	Constrained: Pattern=you, Pattern=going, Pattern=are, Pattern=haha, Pattern=the, Pattern=looking forward to
+Turn ID=10| A | Human 1 : you might like the ufc haha . i actually have a jiu jitsu tournament coming up so this weekend i will be training !
+	Free: Pattern=jiu jitsu tournament coming up, Pattern=have, Pattern=haha . i, Pattern=will be, Pattern=i, Pattern=might like the ufc haha ., Pattern=this weekend, Pattern=you
+	Constrained: Pattern=will, Pattern=i, Pattern=haha, Pattern=be, Pattern=the
+Turn ID=11| B | Human 2 : you mean hokey might like the ufc haha .
+	Free: Pattern=might like the ufc haha ., Pattern=you, Pattern=hokey
+	Constrained: Pattern=haha, Pattern=the
+Turn ID=12| A | Human 1 : it's just been a little over a year . i'm still pretty amateur , but i figured i should give competing a try and just put myself out there .
+	Free: Pattern=just, Pattern=competing, Pattern=and, Pattern=i'm, Pattern=i, Pattern=pretty, Pattern=but, Pattern=just put myself out there
+	Constrained: Pattern=out there, Pattern=just, Pattern=out, Pattern=there
+Turn ID=13| B | Human 2 : i'm just pretty out there in the jiu jitsu tournament coming up this weekend haha but really looking forward to competing
+	Free: Pattern=jiu jitsu tournament coming up, Pattern=this weekend, Pattern=just, Pattern=competing, Pattern=i'm, Pattern=pretty, Pattern=the, Pattern=out there, Pattern=haha, Pattern=really, Pattern=looking forward to, Pattern=but
+	Constrained: Pattern=out, Pattern=there
+Turn ID=14| A | Human 1 : yeah , as long as i do not pass out , i will consider that a win !
+	Free: Pattern=out, Pattern=do, Pattern=yeah, Pattern=will, Pattern=i
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah but just put myself out there and have fun will be the competing , that's the most important haha . i know you are
+	Free: Pattern=fun, Pattern=you, Pattern=have, Pattern=are, Pattern=will be, Pattern=the, Pattern=but, Pattern=just put myself out there, Pattern=competing, Pattern=haha . i, Pattern=yeah, Pattern=and
+	Constrained: Pattern=out, Pattern=just, Pattern=there, Pattern=will, Pattern=i, Pattern=haha, Pattern=be, Pattern=out there

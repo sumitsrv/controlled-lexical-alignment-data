@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted _to_ know if [you] _and_ _the_ _kids_ _would want _to_ join_ us _for disneyland trip around christmas_ ? 
+B|3| Human 2: i'm just _an_ ai [and] _do_ _not_ _have_ [kids] or [the] ability [to join] [you] [for disneyland trip around christmas] . ☹ 
+A|4| Human 1: tentative _plan_ is [to] drive [to] la on _23rd and_ _then_ stay at [the] disney resort [for] _2 nights_ . _i_ heard _christmas eve_ _they_ [have] loads of fun _events ._ 
+B|5| Human 2: [i] [have] [the] [23rd and] 24th off _work_ [for] [christmas eve] [events .] [would] [you] [want] _me_ [to join] [you] [then] ? < 
+A|6| Human 1: _great idea !_ [i] _will_ probably [do] [the] same . surprise surprise .... _traffic might be_ _a_ little _harsh_ . 
+B|7| Human 2: [great] ! [traffic might be] [harsh] [around [christmas] eve] , [you] [would want to] [plan] [for] _that_ [and] [have] [a] backup [plan] in [the] event [you] 
+A|8| Human 1: _good point ._ [i] am [not] _sure_ _about that_ _. _let me_ inquire about that_ . if [not] , [then] we _can_ _look for_ [an] _airbnb_ closeby _. does_ [that] [work] ? 
+B|9| Human 2: [great idea !] [let me inquire about that] [and] [will] get back [to] [you] [. does] [2 nights] [work] [for] [you] ? <|im_end 
+A|10| Human 1: but [i] [would] think everything is closed on [christmas eve] 
+B|11| Human 2: [good point .] [christmas eve] [might] [not] [have] any [airbnb] in [the] area [. let me] [look for] [that] as well [then] [. does] 3 night 
+A|12| Human 1: _sure ,_ [i] _can_ take [a] lead on [that] _. _what_ are_ [you] getting [for] _your_ _<redacted_term> year old_ _this time_ ? 
+B|13| Human 2: [<redacted_term> year old] ? [what are] [your] top picks [for] [that] age group [this time] [around] ? <|im 
+A|14| Human 1: likewise . my son is crazy [about] _legos_ . 
+B|15| Human 2: [sure ,] [that] [can] [work] [. what] [about] [<redacted_term> year old] , [are] [they] into [legos] too ? <|im 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=you, Pattern=and, Pattern=kids, Pattern=to join, Pattern=for disneyland trip around christmas, Pattern=the, Pattern=to, Pattern=would want to
+	Constrained: Pattern=around christmas, Pattern=want, Pattern=would, Pattern=to, Pattern=around, Pattern=for
+Turn ID=3| B | Human 2 : i'm just an ai and do not have kids or the ability to join you for disneyland trip around christmas . ☹
+	Free: Pattern=you, Pattern=have, Pattern=do, Pattern=an, Pattern=and, Pattern=kids, Pattern=to join, Pattern=for disneyland trip around christmas, Pattern=the, Pattern=not
+	Constrained: Pattern=for, Pattern=around christmas, Pattern=to, Pattern=around
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=have, Pattern=they, Pattern=for, Pattern=i, Pattern=to, Pattern=events ., Pattern=plan, Pattern=christmas eve, Pattern=then, Pattern=2 nights, Pattern=23rd and, Pattern=the
+	Constrained: Pattern=and
+Turn ID=5| B | Human 2 : i have the 23rd and 24th off work for christmas eve events . would you want me to join you then ? <
+	Free: Pattern=want, Pattern=have, Pattern=me, Pattern=then, Pattern=for, Pattern=to join, Pattern=work, Pattern=i, Pattern=would, Pattern=events ., Pattern=you, Pattern=christmas eve, Pattern=23rd and, Pattern=the
+	Constrained: Pattern=to, Pattern=and
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=traffic might be, Pattern=will, Pattern=i, Pattern=the, Pattern=harsh, Pattern=do, Pattern=great idea !, Pattern=a
+	Constrained: Pattern=great, Pattern=might
+Turn ID=7| B | Human 2 : great ! traffic might be harsh around christmas eve , you would want to plan for that and have a backup plan in the event you
+	Free: Pattern=around christmas, Pattern=have, Pattern=a, Pattern=and, Pattern=the, Pattern=harsh, Pattern=that, Pattern=would want to, Pattern=you, Pattern=great, Pattern=plan, Pattern=christmas eve, Pattern=for, Pattern=traffic might be
+	Constrained: Pattern=want, Pattern=around, Pattern=would, Pattern=to, Pattern=might
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=let me inquire about that, Pattern=look for, Pattern=. does, Pattern=good point ., Pattern=then, Pattern=can, Pattern=work, Pattern=i, Pattern=about that, Pattern=sure, Pattern=airbnb, Pattern=that, Pattern=not, Pattern=an, Pattern=. let me
+	Constrained: Pattern=me, Pattern=for, Pattern=about, Pattern=about that, Pattern=that
+Turn ID=9| B | Human 2 : great idea ! let me inquire about that and will get back to you . does 2 nights work for you ? <|im_end
+	Free: Pattern=let me inquire about that, Pattern=for, Pattern=and, Pattern=will, Pattern=work, Pattern=to, Pattern=you, Pattern=. does, Pattern=great idea !, Pattern=2 nights
+	Constrained: Pattern=great, Pattern=me, Pattern=about, Pattern=about that, Pattern=that
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=christmas eve, Pattern=i, Pattern=would
+	Constrained: 
+Turn ID=11| B | Human 2 : good point . christmas eve might not have any airbnb in the area . let me look for that as well then . does 3 night
+	Free: Pattern=look for, Pattern=then, Pattern=. let me, Pattern=the, Pattern=airbnb, Pattern=might, Pattern=that, Pattern=not, Pattern=. does, Pattern=christmas eve, Pattern=good point ., Pattern=have
+	Constrained: Pattern=for, Pattern=me
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=this time, Pattern=you, Pattern=a, Pattern=for, Pattern=can, Pattern=what are, Pattern=<redacted_term> year old, Pattern=that, Pattern=your, Pattern=i, Pattern=. what, Pattern=sure ,
+	Constrained: Pattern=are, Pattern=sure
+Turn ID=13| B | Human 2 : <redacted_term> year old ? what are your top picks for that age group this time around ? <|im
+	Free: Pattern=this time, Pattern=your, Pattern=what are, Pattern=<redacted_term> year old, Pattern=that, Pattern=around, Pattern=for
+	Constrained: Pattern=are
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: Pattern=legos, Pattern=about
+	Constrained: 
+Turn ID=15| B | Human 2 : sure , that can work . what about <redacted_term> year old , are they into legos too ? <|im
+	Free: Pattern=legos, Pattern=they, Pattern=are, Pattern=can, Pattern=about, Pattern=work, Pattern=<redacted_term> year old, Pattern=that, Pattern=. what, Pattern=sure ,
+	Constrained: Pattern=sure

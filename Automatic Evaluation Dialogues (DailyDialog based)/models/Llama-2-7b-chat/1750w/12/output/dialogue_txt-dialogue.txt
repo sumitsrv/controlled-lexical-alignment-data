@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey how's _it_ going 
+A|2| Human 1: _it's_ _good_ _it's_ _good_ _. how_ _are_ _you_ ? 
+B|3| Human 2: _i'm_ [good] , thanks for asking ! [how] _can_ _i_ help [you] today ? 
+A|4| Human 1: oh _nice !_ where _do_ [you] _live_ ? 
+B|5| Human 2: _i_ [live] _in_ a virtual world , _so_ _i don't_ have a physical location . _i'm_ here _to_ help [you] with any questions or tasks [you] 
+A|6| Human 1: ahh yes , _japan_ is hot during _the_ summer . last time [i] _was_ [in] _kyoto_ _it was_ 114 degrees .... 
+B|7| Human 2: _can_ [you] teach me [the] [kyoto] dialect ? _i'm_ interested [in] learning [it] for my next trip _to_ [japan] [. how] [do] you<|im_ 
+A|8| Human 1: yes yes . _i've been to tokyo_ as _well_ _. it's_ _so nice !_ 
+B|9| Human 2: _i'm_ just _an_ ai , _i don't_ have personal experiences , but [i] _can_ certainly help [you] learn [the] [kyoto] dialect . it' 
+A|10| Human 1: oh _everything_ ! [i] went [to] [an] onsen _, the_ fish market , _disney_ land _and_ giant _robot_ fighting show haha 
+B|11| Human 2: [i've been to] [japan] before , [and] [it was] amazing ! [the] food [, the] culture , [everything] [was] [so nice !] <|im_end 
+A|12| Human 1: [the] _disney_ lands _are all_ different ! _there's also_ _disney sea_ , _which_ is completely _unique_ ! 
+B|13| Human 2: [i've been to tokyo] [disney sea] [and] [it was] amazing ! [the] theming [and] [the] attractions [are all] [so] [well] done [. it's] 
+A|14| Human 1: [i don't] _really_ remember what part of town [it was] [in] . [it was] pretty cool though - [i'm] sure [you] [can] find [it] if [you] google "giant _robot_ fighting show tokyo" haha 
+B|15| Human 2: [there's also] [the] [robot] restaurant on shinjuku [which] [was] [really] [unique] [and] fun [to] try ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey how's it going
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good it's good . how are you ?
+	Free: Pattern=good, Pattern=you, Pattern=are, Pattern=. how, Pattern=it's
+	Constrained: Pattern=how
+Turn ID=3| B | Human 2 : i'm good , thanks for asking ! how can i help you today ?
+	Free: Pattern=good, Pattern=you, Pattern=how, Pattern=can, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : oh nice ! where do you live ?
+	Free: Pattern=nice !, Pattern=do, Pattern=you, Pattern=live
+	Constrained: 
+Turn ID=5| B | Human 2 : i live in a virtual world , so i don't have a physical location . i'm here to help you with any questions or tasks you
+	Free: Pattern=you, Pattern=i don't, Pattern=live, Pattern=in, Pattern=i'm, Pattern=i, Pattern=to, Pattern=so
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : ahh yes , japan is hot during the summer . last time i was in kyoto it was 114 degrees ....
+	Free: Pattern=it was, Pattern=kyoto, Pattern=in, Pattern=i, Pattern=the, Pattern=was, Pattern=japan
+	Constrained: Pattern=it, Pattern=was
+Turn ID=7| B | Human 2 : can you teach me the kyoto dialect ? i'm interested in learning it for my next trip to japan . how do you<|im_
+	Free: Pattern=you, Pattern=do, Pattern=kyoto, Pattern=it, Pattern=in, Pattern=i'm, Pattern=the, Pattern=to, Pattern=japan, Pattern=can, Pattern=. how
+	Constrained: Pattern=how
+Turn ID=8| A | Human 1 : yes yes . i've been to tokyo as well . it's so nice !
+	Free: Pattern=i've been to tokyo, Pattern=so nice !, Pattern=. it's, Pattern=well
+	Constrained: Pattern=i've been to, Pattern=to, Pattern=nice !, Pattern=it's, Pattern=so
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have personal experiences , but i can certainly help you learn the kyoto dialect . it'
+	Free: Pattern=you, Pattern=i don't, Pattern=can, Pattern=i'm, Pattern=i, Pattern=the, Pattern=an, Pattern=kyoto
+	Constrained: Pattern=i
+Turn ID=10| A | Human 1 : oh everything ! i went to an onsen , the fish market , disney land and giant robot fighting show haha
+	Free: Pattern=an, Pattern=and, Pattern=everything, Pattern=i, Pattern=disney, Pattern=to, Pattern=robot, Pattern=, the
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : i've been to japan before , and it was amazing ! the food , the culture , everything was so nice ! <|im_end
+	Free: Pattern=it was, Pattern=and, Pattern=was, Pattern=everything, Pattern=i've been to, Pattern=the, Pattern=so nice !, Pattern=, the, Pattern=japan
+	Constrained: Pattern=it, Pattern=the, Pattern=to, Pattern=was, Pattern=nice !, Pattern=so
+Turn ID=12| A | Human 1 : the disney lands are all different ! there's also disney sea , which is completely unique !
+	Free: Pattern=unique, Pattern=there's also, Pattern=the, Pattern=which, Pattern=are all, Pattern=disney, Pattern=disney sea
+	Constrained: Pattern=are, Pattern=disney
+Turn ID=13| B | Human 2 : i've been to tokyo disney sea and it was amazing ! the theming and the attractions are all so well done . it's
+	Free: Pattern=it was, Pattern=well, Pattern=. it's, Pattern=and, Pattern=the, Pattern=i've been to tokyo, Pattern=disney sea, Pattern=so, Pattern=are all
+	Constrained: Pattern=it, Pattern=are, Pattern=i've been to, Pattern=disney, Pattern=to, Pattern=was, Pattern=it's
+Turn ID=14| A | Human 1 : i don't really remember what part of town it was in . it was pretty cool though - i'm sure you can find it if you google "giant robot fighting show tokyo" haha
+	Free: Pattern=it was, Pattern=you, Pattern=i don't, Pattern=it, Pattern=can, Pattern=in, Pattern=i'm, Pattern=really, Pattern=robot
+	Constrained: Pattern=i, Pattern=it, Pattern=was
+Turn ID=15| B | Human 2 : there's also the robot restaurant on shinjuku which was really unique and fun to try !
+	Free: Pattern=unique, Pattern=there's also, Pattern=and, Pattern=really, Pattern=the, Pattern=to, Pattern=which, Pattern=was, Pattern=robot
+	Constrained: 

@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how's your day going_ ? 
+B|3| Human 2: great , thanks ! how can _i_ assist _you_ _today ?_ 
+A|4| Human 1: ehhh so-so . my _moped_ broke down on _the way_ _to_ _work_ _this_ morning _and_ [i] am in _the_ shop getting it fixed ... 
+B|5| Human 2: oh no ! sorry [to] hear _that_ [how's your day going] so _far_ ? 
+A|6| Human 1: _the_ mechanic is trying [to] figure [that] out now . apparently [i] wasn't supposed [to] be using _diesel_ _lol_ . 
+B|7| Human 2: [lol] that's funny- [diesel] [and] [moped] ... hilarious how are [your day going] so _far_ ? <| 
+A|8| Human 1: _okay sounds_ _good_ . _would you_ be able [to] _pick_ me up by _the way_ , if _they don't finish_ up _here_ in _time_ ? _did you_ _drive_ [to] _work [today_ ?] 
+B|9| Human 2: [okay sounds] good- [diesel] [and] [moped] [lol] [would you] [pick] [here] [the way] [they don't finish] [work] [time] [today] [did] [drive] [that] [this] 
+A|10| Human 1: [that] _should_ be fine [i] think . _did you catch the warriors game last night btw ?_ 
+B|11| Human 2: that's [good] [to] know- [sounds] like [they] [should] [finish] [work today] [did you catch the warriors game last night btw ?] how are [your] 
+A|12| Human 1: _haha_ [i] _appreciate your faith_ , but _their record thus far_ is _hard_ [to] _refute_ ! 
+B|13| Human 2: [haha] you're [the] boss [that] [sounds] good- [appreciate your faith] [hard] [refute] [their record thus far] [did] [catch] [warriors game last night] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=how's your day going
+	Constrained: Pattern=your day going, Pattern=your
+Turn ID=3| B | Human 2 : great , thanks ! how can i assist you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=i
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : ehhh so-so . my moped broke down on the way to work this morning and i am in the shop getting it fixed ...
+	Free: Pattern=moped, Pattern=and, Pattern=work, Pattern=the, Pattern=to, Pattern=this, Pattern=the way, Pattern=i
+	Constrained: Pattern=the
+Turn ID=5| B | Human 2 : oh no ! sorry to hear that how's your day going so far ?
+	Free: Pattern=how's your day going, Pattern=to, Pattern=far, Pattern=that
+	Constrained: Pattern=your day going, Pattern=your
+Turn ID=6| A | Human 1 : the mechanic is trying to figure that out now . apparently i wasn't supposed to be using diesel lol .
+	Free: Pattern=lol, Pattern=diesel, Pattern=i, Pattern=the, Pattern=to, Pattern=that
+	Constrained: 
+Turn ID=7| B | Human 2 : lol that's funny- diesel and moped ... hilarious how are your day going so far ? <|
+	Free: Pattern=moped, Pattern=diesel, Pattern=and, Pattern=your day going, Pattern=far, Pattern=lol
+	Constrained: Pattern=your
+Turn ID=8| A | Human 1 : okay sounds good . would you be able to pick me up by the way , if they don't finish up here in time ? did you drive to work today ?
+	Free: Pattern=did you, Pattern=here, Pattern=would you, Pattern=okay sounds, Pattern=the way, Pattern=they don't finish, Pattern=today ?, Pattern=good, Pattern=time, Pattern=drive, Pattern=work today, Pattern=to, Pattern=pick
+	Constrained: Pattern=finish, Pattern=you, Pattern=they, Pattern=work, Pattern=sounds, Pattern=the, Pattern=did, Pattern=today
+Turn ID=9| B | Human 2 : okay sounds good- diesel and moped lol would you pick here the way they don't finish work time today did drive that this
+	Free: Pattern=moped, Pattern=lol, Pattern=diesel, Pattern=here, Pattern=and, Pattern=would you, Pattern=okay sounds, Pattern=work, Pattern=the way, Pattern=pick, Pattern=this, Pattern=that, Pattern=they don't finish, Pattern=time, Pattern=drive, Pattern=did, Pattern=today
+	Constrained: Pattern=finish, Pattern=you, Pattern=they, Pattern=sounds, Pattern=the
+Turn ID=10| A | Human 1 : that should be fine i think . did you catch the warriors game last night btw ?
+	Free: Pattern=did you catch the warriors game last night btw ?, Pattern=i, Pattern=should, Pattern=that
+	Constrained: Pattern=warriors game last night, Pattern=you, Pattern=did you, Pattern=did, Pattern=the, Pattern=catch
+Turn ID=11| B | Human 2 : that's good to know- sounds like they should finish work today did you catch the warriors game last night btw ? how are your
+	Free: Pattern=your, Pattern=sounds, Pattern=did you catch the warriors game last night btw ?, Pattern=finish, Pattern=good, Pattern=should, Pattern=they, Pattern=work today, Pattern=to
+	Constrained: Pattern=warriors game last night, Pattern=you, Pattern=did you, Pattern=work, Pattern=the, Pattern=catch, Pattern=did, Pattern=today
+Turn ID=12| A | Human 1 : haha i appreciate your faith , but their record thus far is hard to refute !
+	Free: Pattern=refute, Pattern=their record thus far, Pattern=i, Pattern=haha, Pattern=hard, Pattern=to, Pattern=appreciate your faith
+	Constrained: Pattern=your, Pattern=far
+Turn ID=13| B | Human 2 : haha you're the boss that sounds good- appreciate your faith hard refute their record thus far did catch warriors game last night
+	Free: Pattern=warriors game last night, Pattern=their record thus far, Pattern=the, Pattern=catch, Pattern=hard, Pattern=did, Pattern=refute, Pattern=haha, Pattern=sounds, Pattern=appreciate your faith, Pattern=that
+	Constrained: Pattern=your, Pattern=far

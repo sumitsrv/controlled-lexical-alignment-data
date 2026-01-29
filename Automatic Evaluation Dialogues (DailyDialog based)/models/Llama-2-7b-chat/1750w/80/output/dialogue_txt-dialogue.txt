@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how was_ _the_ trip _last _weekend_ ?_ 
+B|3| Human 2: not too bad ! [how] about _you_ ? 
+A|4| Human 1: _nice_ , _what all places did you cover_ ? 
+B|5| Human 2: _i_ [was] mostly busy _with_ work _and_ didn't _have_ _a_ chance _to_ [cover] much [last weekend] . _i_ [did] however , visit [the] new museum _in_ 
+A|6| Human 1: [i] am actually _attending_ _cooking classes_ over [the] weekends . 
+B|7| Human 2: _nice !_ [what all places did you cover] _in_ [the] [cooking classes] ? [how was] it ? 
+A|8| Human 1: true ! _they_ started [with] _some_ basic _zucchini_ based _dish_ . _we_ may _try_ [cooking] _some_ italian _dish_ later _this_ week . 
+B|9| Human 2: sounds great ! [how] about [you] ? are [you] [attending] _any_ [cooking classes] [this] [weekend ?] 
+A|10| Human 1: [nice !] [i] hope [to] volunteer [to] cook _for_ [the] team [in] our next team offsite :) 
+B|11| Human 2: [nice !] [how] [did you] find [the] [cooking classes] ? [did you] [try] _any_ new [dish] ? 
+A|12| Human 1: _sure_ , [i] _will love_ [to] invite [you] [and] your family _for_ [a] _meal_ over [the] holidays . [have] _you guys_ _made_ [any] other plans ? 
+B|13| Human 2: [sure] ! [the] [cooking classes] were great [and] [we] [made] [some] [dish] [with] [zucchini] , [they] [will love] [you guys] [for] [any] [meal] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=weekend ?, Pattern=how was, Pattern=last weekend, Pattern=the
+	Constrained: Pattern=how, Pattern=was
+Turn ID=3| B | Human 2 : not too bad ! how about you ?
+	Free: Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=what all places did you cover, Pattern=nice
+	Constrained: Pattern=cover, Pattern=did you, Pattern=you, Pattern=did
+Turn ID=5| B | Human 2 : i was mostly busy with work and didn't have a chance to cover much last weekend . i did however , visit the new museum in
+	Free: Pattern=have, Pattern=cover, Pattern=and, Pattern=in, Pattern=i, Pattern=the, Pattern=was, Pattern=with, Pattern=did, Pattern=a, Pattern=last weekend, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=cooking classes, Pattern=the, Pattern=i, Pattern=attending
+	Constrained: Pattern=cooking
+Turn ID=7| B | Human 2 : nice ! what all places did you cover in the cooking classes ? how was it ?
+	Free: Pattern=how was, Pattern=what all places did you cover, Pattern=the, Pattern=nice !, Pattern=cooking classes, Pattern=in
+	Constrained: Pattern=you, Pattern=did you, Pattern=did, Pattern=nice, Pattern=cooking, Pattern=was, Pattern=how, Pattern=cover
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=they, Pattern=try, Pattern=cooking, Pattern=we, Pattern=zucchini, Pattern=this, Pattern=with, Pattern=dish, Pattern=some
+	Constrained: 
+Turn ID=9| B | Human 2 : sounds great ! how about you ? are you attending any cooking classes this weekend ?
+	Free: Pattern=you, Pattern=how, Pattern=any, Pattern=attending, Pattern=cooking classes, Pattern=weekend ?, Pattern=this
+	Constrained: Pattern=cooking
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=for, Pattern=in, Pattern=i, Pattern=the, Pattern=to, Pattern=nice !
+	Constrained: Pattern=nice
+Turn ID=11| B | Human 2 : nice ! how did you find the cooking classes ? did you try any new dish ?
+	Free: Pattern=did you, Pattern=any, Pattern=dish, Pattern=cooking classes, Pattern=the, Pattern=nice !, Pattern=how, Pattern=try
+	Constrained: Pattern=nice, Pattern=cooking, Pattern=you, Pattern=did
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=you, Pattern=have, Pattern=made, Pattern=a, Pattern=and, Pattern=i, Pattern=the, Pattern=to, Pattern=you guys, Pattern=for, Pattern=meal, Pattern=any, Pattern=sure, Pattern=will love
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : sure ! the cooking classes were great and we made some dish with zucchini , they will love you guys for any meal
+	Free: Pattern=made, Pattern=they, Pattern=and, Pattern=cooking classes, Pattern=we, Pattern=zucchini, Pattern=the, Pattern=you guys, Pattern=with, Pattern=for, Pattern=meal, Pattern=any, Pattern=dish, Pattern=some, Pattern=sure, Pattern=will love
+	Constrained: Pattern=you, Pattern=cooking

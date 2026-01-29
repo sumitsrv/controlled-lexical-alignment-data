@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _week_ so far ? 
+B|3| Human 2: good _how_ are _you ?_ i'm feeling pretty good today 
+A|4| Human 1: same . _going to_ catch up on _my_ _reading_ ! do [you] _have a feast planned_ ? 
+B|5| Human 2: _i_ [have a feast planned] with [my] family for _the_ [week] end ! [going to] [have] italian food , _you ?_ 
+A|6| Human 1: _something_ deeply hidden by _sean carroll_ <redacted_link> 
+B|7| Human 2: [sean carroll] _is_ an australian author who's books [have] been translated and published _in_ many countries 
+A|8| Human 1: largely _scifi_ _how about [you_ ?] 
+B|9| Human 2: [sean carroll] _is_ [a] great [scifi] author . _i_ [have] read [about] him . 
+A|10| Human 1: _i haven't_ _what_ [is] _it_ [about] ? 
+B|11| Human 2: [i haven't] but [i] will [have] [to] check him out . [i] [have] been [reading] [about] [scifi] lately and [i] am noticing [how] old [it] [is] 
+A|12| Human 1: [how] do [the] _survivors_ survive such [a] thing ? 
+B|13| Human 2: [it] takes [a] lot of inspiration from [the] past . most sci-fis [have a] [survivors] [how about you] [what] [have] [you] read 
+A|14| Human 1: sounds _like_ [a] tv _show_ _i watched_ 
+B|15| Human 2: [i haven't] [watched] [the] [show] [about] [sean] carrol , but [i] [like] [reading] [about] [how] people survived [a] collapse . [a] lot of [it] 
+A|16| Human 1: can't quite remember . _something_ [about] [survivors] [going to] live [in] space 
+B|17| Human 2: [i watched] [about] five minutes of that [show] once , [something] [like] [survivors] an thrive or [the] one that was [like] that . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: Pattern=week
+	Constrained: 
+Turn ID=3| B | Human 2 : good how are you ? i'm feeling pretty good today
+	Free: Pattern=you ?, Pattern=how
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going to, Pattern=you, Pattern=reading, Pattern=have a feast planned, Pattern=my
+	Constrained: Pattern=have, Pattern=a, Pattern=to, Pattern=have a
+Turn ID=5| B | Human 2 : i have a feast planned with my family for the week end ! going to have italian food , you ?
+	Free: Pattern=going to, Pattern=have, Pattern=week, Pattern=i, Pattern=you ?, Pattern=the, Pattern=have a feast planned, Pattern=my
+	Constrained: Pattern=you, Pattern=have, Pattern=have a, Pattern=a, Pattern=to
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=sean carroll, Pattern=something
+	Constrained: Pattern=sean
+Turn ID=7| B | Human 2 : sean carroll is an australian author who's books have been translated and published in many countries
+	Free: Pattern=sean carroll, Pattern=have, Pattern=is, Pattern=in
+	Constrained: Pattern=sean
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you, Pattern=you ?, Pattern=scifi
+	Constrained: Pattern=you, Pattern=how, Pattern=about
+Turn ID=9| B | Human 2 : sean carroll is a great scifi author . i have read about him .
+	Free: Pattern=have, Pattern=a, Pattern=about, Pattern=scifi, Pattern=sean carroll, Pattern=is, Pattern=i
+	Constrained: Pattern=sean
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=what, Pattern=it, Pattern=about, Pattern=is, Pattern=i haven't
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i haven't but i will have to check him out . i have been reading about scifi lately and i am noticing how old it is
+	Free: Pattern=have, Pattern=how, Pattern=it, Pattern=about, Pattern=reading, Pattern=scifi, Pattern=to, Pattern=i haven't, Pattern=is, Pattern=i
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=the, Pattern=a, Pattern=how, Pattern=survivors
+	Constrained: 
+Turn ID=13| B | Human 2 : it takes a lot of inspiration from the past . most sci-fis have a survivors how about you what have you read
+	Free: Pattern=you, Pattern=a, Pattern=it, Pattern=the, Pattern=survivors, Pattern=have, Pattern=how about you, Pattern=what, Pattern=have a
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=how, Pattern=about
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=i watched, Pattern=like, Pattern=a, Pattern=show
+	Constrained: Pattern=i, Pattern=watched
+Turn ID=15| B | Human 2 : i haven't watched the show about sean carrol , but i like reading about how people survived a collapse . a lot of it
+	Free: Pattern=a, Pattern=how, Pattern=it, Pattern=about, Pattern=reading, Pattern=i, Pattern=like, Pattern=sean, Pattern=watched, Pattern=the, Pattern=show, Pattern=i haven't
+	Constrained: Pattern=i
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=going to, Pattern=about, Pattern=in, Pattern=survivors, Pattern=something
+	Constrained: Pattern=to
+Turn ID=17| B | Human 2 : i watched about five minutes of that show once , something like survivors an thrive or the one that was like that .
+	Free: Pattern=i watched, Pattern=about, Pattern=like, Pattern=the, Pattern=show, Pattern=survivors, Pattern=something
+	Constrained: Pattern=i, Pattern=watched

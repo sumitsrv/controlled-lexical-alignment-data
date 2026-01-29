@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey ,_ _how_ are _you_ doing ? 
+A|2| Human 1: _i'm_ great , thanks _. i'm getting ready for a_ _skydiving lesson_ . 
+B|3| Human 2: well [i'm getting ready for] [skydiving lesson] _so_ [i'm] going _to_ _go_ watch . 
+A|4| Human 1: right near my home town: seville , _spain ._ 
+B|5| Human 2: _it's_ [spain [.] i'm getting ready for a] [lesson] in russian [skydiving] tomorrow . 
+A|6| Human 1: yes [. _i'm] feeling a little trepidatious . have_ [you] _done it before_ ? 
+B|7| Human 2: [i'm feeling] [you] , i've [done it before] . 
+A|8| Human 1: _haha_ thanks ! _have_ [you] _tried_ _any_ extreme sports ? 
+B|9| Human 2: [i'm feeling] [you] ! _i tried_ running in [a] marathon _once ,_ now [i'm feeling a little trepidatious . have] [any] fun ? 
+A|10| Human 1: white water rafting , definitely ! as [for] _skiing_ , that depends on [how] fast [you] [go] . do [you] _ski_ [a] lot ? 
+B|11| Human 2: whats [you] favorite [ski] ? [haha] . 
+A|12| Human 1: [i tried] _skiing_ [once ,] and by the end of the beginner class [i] was able [to] make [it] down [a] baby-sized slope . [i] was very proud of myself . 
+B|13| Human 2: snow [skiing] . [haha] 
+A|14| Human 1: [hey ,] [so] long as [you] get [to] the bottom , [it's] all good ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you doing ?
+	Free: Pattern=hey ,, Pattern=you, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i'm getting ready for a skydiving lesson .
+	Free: Pattern=. i'm getting ready for a, Pattern=skydiving lesson, Pattern=i'm
+	Constrained: Pattern=a, Pattern=i'm getting ready for, Pattern=i'm, Pattern=lesson, Pattern=skydiving, Pattern=. i'm, Pattern=for
+Turn ID=3| B | Human 2 : well i'm getting ready for skydiving lesson so i'm going to go watch .
+	Free: Pattern=go, Pattern=i'm getting ready for, Pattern=skydiving lesson, Pattern=i'm, Pattern=to, Pattern=so
+	Constrained: Pattern=for, Pattern=skydiving, Pattern=lesson, Pattern=i'm
+Turn ID=4| A | Human 1 : right near my home town: seville , spain .
+	Free: Pattern=spain .
+	Constrained: 
+Turn ID=5| B | Human 2 : it's spain . i'm getting ready for a lesson in russian skydiving tomorrow .
+	Free: Pattern=lesson, Pattern=spain ., Pattern=it's, Pattern=skydiving, Pattern=. i'm getting ready for a
+	Constrained: Pattern=a, Pattern=i'm getting ready for, Pattern=i'm, Pattern=. i'm, Pattern=for
+Turn ID=6| A | Human 1 : yes . i'm feeling a little trepidatious . have you done it before ?
+	Free: Pattern=i'm feeling a little trepidatious . have, Pattern=done it before, Pattern=. i'm, Pattern=you
+	Constrained: Pattern=i'm feeling, Pattern=have, Pattern=a, Pattern=it, Pattern=i'm
+Turn ID=7| B | Human 2 : i'm feeling you , i've done it before .
+	Free: Pattern=done it before, Pattern=i'm feeling, Pattern=you
+	Constrained: Pattern=i'm, Pattern=it
+Turn ID=8| A | Human 1 : haha thanks ! have you tried any extreme sports ?
+	Free: Pattern=you, Pattern=have, Pattern=any, Pattern=haha, Pattern=tried
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm feeling you ! i tried running in a marathon once , now i'm feeling a little trepidatious . have any fun ?
+	Free: Pattern=i'm feeling, Pattern=you, Pattern=once ,, Pattern=a, Pattern=any, Pattern=i'm feeling a little trepidatious . have, Pattern=i tried
+	Constrained: Pattern=i'm feeling, Pattern=have, Pattern=a, Pattern=i'm, Pattern=i, Pattern=tried
+Turn ID=10| A | Human 1 : white water rafting , definitely ! as for skiing , that depends on how fast you go . do you ski a lot ?
+	Free: Pattern=ski, Pattern=you, Pattern=go, Pattern=a, Pattern=how, Pattern=for, Pattern=skiing
+	Constrained: 
+Turn ID=11| B | Human 2 : whats you favorite ski ? haha .
+	Free: Pattern=you, Pattern=ski, Pattern=haha
+	Constrained: 
+Turn ID=12| A | Human 1 : i tried skiing once , and by the end of the beginner class i was able to make it down a baby-sized slope . i was very proud of myself .
+	Free: Pattern=once ,, Pattern=a, Pattern=it, Pattern=i, Pattern=skiing, Pattern=to, Pattern=i tried
+	Constrained: Pattern=tried, Pattern=i
+Turn ID=13| B | Human 2 : snow skiing . haha
+	Free: Pattern=haha, Pattern=skiing
+	Constrained: 
+Turn ID=14| A | Human 1 : hey , so long as you get to the bottom , it's all good !
+	Free: Pattern=you, Pattern=to, Pattern=it's, Pattern=so, Pattern=hey ,
+	Constrained: 

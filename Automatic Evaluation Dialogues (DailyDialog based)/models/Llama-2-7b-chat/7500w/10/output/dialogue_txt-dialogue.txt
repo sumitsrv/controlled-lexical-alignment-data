@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: great , thanks ! how about _you_ ? 
+A|4| Human 1: _ehh it's fine . i didn't do so well on that history test , actually .._ 
+B|5| Human 2: _oh_ no ! sorry to hear [that] . _do you_ want to talk about _it_ ? maybe [i] can help _you_ study for _the_ _next_ [test] ? <| 
+A|6| Human 1: apparently christopher _columbus didn't fight in the civil war_ :') 
+B|7| Human 2: :') actuallys [it's] [columbus didn't fight in the civil war] , that's correct . my apologies for [the] 
+A|8| Human 1: [i] _know_ _right_ ! _are you_ taking _history_ [next] semester ? 
+B|9| Human 2: [ehh it's fine . i didn't do so well on that history test , actually ..] 
+A|10| Human 1: [oh] [i] see . what [do you] [do] ? 
+B|11| Human 2: what's [that] ? :') 
+A|12| Human 1: [oh] _wow_ . were [you] born a _horse_ , or were [you] turned _into_ _one ?_ 
+B|13| Human 2: [wow] you's [one] funny [horse] :') 
+A|14| Human 1: _just kidding . that sounds pretty cool_ _! is_ [it] _your_ _job_ ? 
+B|15| Human 2: [well] [you] [know] [the] [one] [horse] that's [cool] [right] ? [just kidding . that sounds pretty cool] [job] [! is] [your] [wow] [into] [history] 
+A|16| Human 1: [wow] , [sounds] _very_ busy ! [do you] win money at those [horse] _vaulting_ competitions ? 
+B|17| Human 2: [wow] [vaulting] [sounds] like [very] [cool] [horse] trick . [are you] competing [your] [wow] [in the] [next] [one ?] <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how about you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : ehh it's fine . i didn't do so well on that history test , actually ..
+	Free: Pattern=ehh it's fine . i didn't do so well on that history test , actually ..
+	Constrained: Pattern=well, Pattern=history, Pattern=do, Pattern=i, Pattern=test, Pattern=that, Pattern=it's
+Turn ID=5| B | Human 2 : oh no ! sorry to hear that . do you want to talk about it ? maybe i can help you study for the next test ? <|
+	Free: Pattern=next, Pattern=you, Pattern=i, Pattern=the, Pattern=test, Pattern=that, Pattern=it, Pattern=oh, Pattern=do you
+	Constrained: Pattern=you, Pattern=do
+Turn ID=6| A | Human 1 : apparently christopher columbus didn't fight in the civil war :')
+	Free: Pattern=columbus didn't fight in the civil war
+	Constrained: Pattern=in the, Pattern=the
+Turn ID=7| B | Human 2 : :') actuallys it's columbus didn't fight in the civil war , that's correct . my apologies for the
+	Free: Pattern=columbus didn't fight in the civil war, Pattern=the, Pattern=it's
+	Constrained: Pattern=in the, Pattern=the
+Turn ID=8| A | Human 1 : i know right ! are you taking history next semester ?
+	Free: Pattern=history, Pattern=know, Pattern=right, Pattern=next, Pattern=are you, Pattern=i
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : ehh it's fine . i didn't do so well on that history test , actually ..
+	Free: Pattern=ehh it's fine . i didn't do so well on that history test , actually ..
+	Constrained: Pattern=well, Pattern=history, Pattern=do, Pattern=i, Pattern=test, Pattern=that, Pattern=it's
+Turn ID=10| A | Human 1 : oh i see . what do you do ?
+	Free: Pattern=do you, Pattern=oh, Pattern=do, Pattern=i
+	Constrained: Pattern=you, Pattern=do
+Turn ID=11| B | Human 2 : what's that ? :')
+	Free: Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow . were you born a horse , or were you turned into one ?
+	Free: Pattern=horse, Pattern=you, Pattern=into, Pattern=oh, Pattern=wow, Pattern=one ?
+	Constrained: Pattern=one
+Turn ID=13| B | Human 2 : wow you's one funny horse :')
+	Free: Pattern=horse, Pattern=one, Pattern=wow
+	Constrained: 
+Turn ID=14| A | Human 1 : just kidding . that sounds pretty cool ! is it your job ?
+	Free: Pattern=job, Pattern=just kidding . that sounds pretty cool, Pattern=it, Pattern=! is, Pattern=your
+	Constrained: Pattern=sounds, Pattern=that, Pattern=cool
+Turn ID=15| B | Human 2 : well you know the one horse that's cool right ? just kidding . that sounds pretty cool job ! is your wow into history
+	Free: Pattern=job, Pattern=just kidding . that sounds pretty cool, Pattern=right, Pattern=you, Pattern=history, Pattern=into, Pattern=cool, Pattern=know, Pattern=your, Pattern=the, Pattern=well, Pattern=horse, Pattern=one, Pattern=! is, Pattern=wow
+	Constrained: Pattern=sounds, Pattern=that, Pattern=cool
+Turn ID=16| A | Human 1 : wow , sounds very busy ! do you win money at those horse vaulting competitions ?
+	Free: Pattern=horse, Pattern=do you, Pattern=wow, Pattern=very, Pattern=sounds, Pattern=vaulting
+	Constrained: Pattern=you, Pattern=do
+Turn ID=17| B | Human 2 : wow vaulting sounds like very cool horse trick . are you competing your wow in the next one ? <|im_end
+	Free: Pattern=next, Pattern=horse, Pattern=cool, Pattern=sounds, Pattern=one ?, Pattern=vaulting, Pattern=in the, Pattern=wow, Pattern=very, Pattern=are you, Pattern=your
+	Constrained: Pattern=you, Pattern=the, Pattern=one

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm_ good . [how are you] _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] well , thank [you] _for_ asking ! [how] can _i_ assist [you] [today ?] <|end|><|assistant|> [i'm] phi , _an_ ai language 
+A|4| Human 1: [i] was _flying_ my _kite_ [today] _in_ _the_ sunshine ! what did [you] _have_ [for] _lunch_ ? 
+B|5| Human 2: [i'm] phi , and as _an_ ai , [i] don't [have] [lunch] _or_ [the] ability to [kite] fly , but [flying] a 
+A|6| Human 1: oh _that_ is _great_ _! i_ love seafood - especially shellfish ! 
+B|7| Human 2: [i'm] phi , [the] phi [in] [you] seems quite lively [today] ! 
+A|8| Human 1: oh nice ! is _it_ _hard_ ? 
+B|9| Human 2: no [hard] , [i'm] phi , a phi [that] enjoys [the] sea's bounty . 
+A|10| Human 1: oh wow , [you] sound _like_ [an] expert ! [have] [you] done _this_ before ? 
+B|11| Human 2: it's [great] you're so enthusiastic [! i] am phi , [an] artificial intelligence , so [i] don't [have] experience [like] humans 
+A|12| Human 1: haha , [you] really [have] done your research _i suppose_ ! ever done _any_ other _kind of fishing or_ hunting ? 
+B|13| Human 2: as phi , [i] [have] [the] capability to analyze data , process information , and provide insightful responses . however , [any] [kind of fishing or] 
+A|14| Human 1: ahh , would [you] consider yourself [an] _outdoorsy_ type [of] person ? 
+B|15| Human 2: even though [i'm] [an] artificial intelligence , [i suppose] [you] could see [it] [this] way . [i] [have] [the] ability to simulate [outdoorsy] expertise 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=how, Pattern=you
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=how are you, Pattern=today ?, Pattern=doing, Pattern=i'm
+	Constrained: Pattern=how, Pattern=you, Pattern=today
+Turn ID=3| B | Human 2 : i'm doing well , thank you for asking ! how can i assist you today ? <|end|><|assistant|> i'm phi , an ai language
+	Free: Pattern=today ?, Pattern=you, Pattern=for, Pattern=i'm, Pattern=i, Pattern=an, Pattern=how, Pattern=doing
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=you, Pattern=have, Pattern=today, Pattern=for, Pattern=flying, Pattern=in, Pattern=i, Pattern=lunch, Pattern=kite, Pattern=the
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm phi , and as an ai , i don't have lunch or the ability to kite fly , but flying a
+	Free: Pattern=have, Pattern=an, Pattern=flying, Pattern=i'm, Pattern=i, Pattern=lunch, Pattern=or, Pattern=kite, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=! i, Pattern=that, Pattern=great
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : i'm phi , the phi in you seems quite lively today !
+	Free: Pattern=you, Pattern=today, Pattern=in, Pattern=i'm, Pattern=the
+	Constrained: 
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: Pattern=it, Pattern=hard
+	Constrained: 
+Turn ID=9| B | Human 2 : no hard , i'm phi , a phi that enjoys the sea's bounty .
+	Free: Pattern=that, Pattern=the, Pattern=i'm, Pattern=hard
+	Constrained: 
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=you, Pattern=have, Pattern=an, Pattern=like, Pattern=this
+	Constrained: 
+Turn ID=11| B | Human 2 : it's great you're so enthusiastic ! i am phi , an artificial intelligence , so i don't have experience like humans
+	Free: Pattern=great, Pattern=have, Pattern=an, Pattern=! i, Pattern=i, Pattern=like
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=you, Pattern=have, Pattern=any, Pattern=kind of fishing or, Pattern=i suppose
+	Constrained: Pattern=or, Pattern=i, Pattern=of
+Turn ID=13| B | Human 2 : as phi , i have the capability to analyze data , process information , and provide insightful responses . however , any kind of fishing or
+	Free: Pattern=have, Pattern=any, Pattern=i, Pattern=the, Pattern=kind of fishing or
+	Constrained: Pattern=of, Pattern=or
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=of, Pattern=outdoorsy, Pattern=you, Pattern=an
+	Constrained: 
+Turn ID=15| B | Human 2 : even though i'm an artificial intelligence , i suppose you could see it this way . i have the ability to simulate outdoorsy expertise
+	Free: Pattern=you, Pattern=have, Pattern=an, Pattern=outdoorsy, Pattern=it, Pattern=i'm, Pattern=i, Pattern=the, Pattern=i suppose, Pattern=this
+	Constrained: Pattern=i

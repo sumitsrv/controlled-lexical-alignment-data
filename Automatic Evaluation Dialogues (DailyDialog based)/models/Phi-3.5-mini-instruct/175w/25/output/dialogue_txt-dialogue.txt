@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ good . [how are you] ? ：） 
+B|3| Human 2: hello there ! i'm phi , an ai , so [i] don't have feelings , but i'm fully operational and ready 
+A|4| Human 1: _i am_ busy . _a_ lot of _work_ . what [are you] _working on_ ? 
+B|5| Human 2: [i] don't [work] [on] tasks the way [you] _do_ , but i'm here _to_ assist with any information , questions , _or_ help [you] need with 
+A|6| Human 1: _i am working on_ _a_ new _classifier_ . 
+B|7| Human 2: that's fantastic ! if _you are_ [working on] improving [classifier] performance _or_ have specific concerns , feel free _to_ share , and i'll 
+A|8| Human 1: _a_ new [classifier] _for_ hate speech _. which_ _research_ _topic_ catches your eyes _most_ ? 
+B|9| Human 2: [i am working on] enhancing ai [for] natural language understanding [. which] [topic] [are you] [most] interested in ? 
+A|10| Human 1: nice ! [do] [you] refer [to] [work] [or] anything else ? 
+B|11| Human 2: i'm phi , based [on] microsoft's language model . my [work] is not traditional [research] , but [i am] here [to] assist [you] with [a] 
+A|12| Human 1: [you are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=i am
+	Constrained: Pattern=i, Pattern=you, Pattern=are you
+Turn ID=3| B | Human 2 : hello there ! i'm phi , an ai , so i don't have feelings , but i'm fully operational and ready
+	Free: Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=a, Pattern=working on, Pattern=i am, Pattern=work, Pattern=are you
+	Constrained: Pattern=i, Pattern=you, Pattern=on
+Turn ID=5| B | Human 2 : i don't work on tasks the way you do , but i'm here to assist with any information , questions , or help you need with
+	Free: Pattern=you, Pattern=do, Pattern=work, Pattern=i, Pattern=or, Pattern=on, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=i am working on, Pattern=classifier, Pattern=a
+	Constrained: Pattern=i am, Pattern=i, Pattern=on, Pattern=working on
+Turn ID=7| B | Human 2 : that's fantastic ! if you are working on improving classifier performance or have specific concerns , feel free to share , and i'll
+	Free: Pattern=working on, Pattern=you are, Pattern=to, Pattern=classifier, Pattern=or
+	Constrained: Pattern=on, Pattern=you
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=research, Pattern=a, Pattern=for, Pattern=. which, Pattern=classifier, Pattern=most, Pattern=topic
+	Constrained: 
+Turn ID=9| B | Human 2 : i am working on enhancing ai for natural language understanding . which topic are you most interested in ?
+	Free: Pattern=for, Pattern=. which, Pattern=are you, Pattern=most, Pattern=i am working on, Pattern=topic
+	Constrained: Pattern=you, Pattern=working on, Pattern=i am, Pattern=i, Pattern=on
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=you, Pattern=do, Pattern=work, Pattern=or, Pattern=to
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm phi , based on microsoft's language model . my work is not traditional research , but i am here to assist you with a
+	Free: Pattern=you, Pattern=research, Pattern=a, Pattern=i am, Pattern=work, Pattern=on, Pattern=to
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=you are
+	Constrained: Pattern=you

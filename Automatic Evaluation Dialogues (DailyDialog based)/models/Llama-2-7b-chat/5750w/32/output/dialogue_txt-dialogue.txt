@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _nice_ _to_ meet _you_ ! _is_ this _your_ _first_ _time_ _doing_ _something_ _like_ this ? 
+B|3| Human 2: _sure_ , i'm here [to] help [you] _with_ any questions or concerns [you] may _have_ _. what_ would [you] [like] [to] talk _about_ [first] ? <| 
+A|4| Human 1: i _have been_ _with the_ company _for_ _over_ _3 years_ . stick _with the same _team_ what about_ [you] ? 
+B|5| Human 2: [nice] , [3 years] [is] _a_ good amount of [time] [to] [have] [with the same team] _. what about_ [your] work [you] [doing] [over] there ? <|im 
+A|6| Human 1: _that sounds like_ [a] _perfect_ _plan_ ! 
+B|7| Human 2: [that sounds like] [you] [have] [your] [plan] [for] [the] [team what about] [something] else ? 
+A|8| Human 1: let's try [something] different [. _what about] <redacted_term> ?_ do [you] always prefer lunch sync [over] regular meeting syncs ? 
+B|9| Human 2: that's [something] [you] [have been] considering lately [what about <redacted_term> ?] 
+A|10| Human 1: we _can_ _check_ _the menu_ then decide :) 
+B|11| Human 2: what's [the menu] [like] [over] there ? [<redacted_term>] [sounds] interesting [can] [you] [check] [for] me ? [that sounds] [perfect] ! 
+A|12| Human 1: [sure] . see [you] then ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=time, Pattern=you, Pattern=doing, Pattern=nice, Pattern=like, Pattern=to, Pattern=first, Pattern=something, Pattern=is, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : sure , i'm here to help you with any questions or concerns you may have . what would you like to talk about first ? <|
+	Free: Pattern=you, Pattern=have, Pattern=about, Pattern=like, Pattern=sure, Pattern=to, Pattern=. what, Pattern=with, Pattern=first
+	Constrained: 
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=you, Pattern=with the same team, Pattern=for, Pattern=have been, Pattern=over, Pattern=3 years, Pattern=with the, Pattern=team what about
+	Constrained: Pattern=about, Pattern=the, Pattern=with, Pattern=with the, Pattern=have
+Turn ID=5| B | Human 2 : nice , 3 years is a good amount of time to have with the same team . what about your work you doing over there ? <|im
+	Free: Pattern=time, Pattern=you, Pattern=have, Pattern=with the same team, Pattern=a, Pattern=doing, Pattern=nice, Pattern=over, Pattern=3 years, Pattern=. what about, Pattern=to, Pattern=is, Pattern=your
+	Constrained: Pattern=with the, Pattern=about, Pattern=the, Pattern=. what, Pattern=with
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=that sounds like, Pattern=perfect, Pattern=plan, Pattern=a
+	Constrained: Pattern=that sounds, Pattern=like, Pattern=sounds
+Turn ID=7| B | Human 2 : that sounds like you have your plan for the team what about something else ?
+	Free: Pattern=for, Pattern=the, Pattern=something, Pattern=you, Pattern=plan, Pattern=team what about, Pattern=have, Pattern=your, Pattern=that sounds like
+	Constrained: Pattern=sounds, Pattern=that sounds, Pattern=like, Pattern=about
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=you, Pattern=what about <redacted_term> ?, Pattern=over, Pattern=. what about, Pattern=something
+	Constrained: Pattern=<redacted_term>, Pattern=. what, Pattern=about
+Turn ID=9| B | Human 2 : that's something you have been considering lately what about <redacted_term> ?
+	Free: Pattern=what about <redacted_term> ?, Pattern=have been, Pattern=you, Pattern=something
+	Constrained: Pattern=have, Pattern=<redacted_term>, Pattern=about
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=the menu, Pattern=check, Pattern=can
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : what's the menu like over there ? <redacted_term> sounds interesting can you check for me ? that sounds perfect !
+	Free: Pattern=check, Pattern=that sounds, Pattern=you, Pattern=for, Pattern=over, Pattern=perfect, Pattern=the menu, Pattern=<redacted_term>, Pattern=can, Pattern=sounds, Pattern=like
+	Constrained: Pattern=the, Pattern=sounds
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=you, Pattern=sure
+	Constrained: 

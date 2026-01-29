@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello . how's your week coming along ? 
+A|2| Human 1: _it's great_ , thanks . _i'm_ trying _to learn_ _how to make croissants_ . 
+B|3| Human 2: _that's_ [great] ! [i'm] happy [to] help _. what_ do _you have_ questions about ? 
+A|4| Human 1: i've done them once _or_ twice so far _, but_ _they_ _haven't_ _been_ _flakey_ enough . [i'm] trying [to] figure out why [. what] kind of _cookies_ [have] [you] _made_ ? 
+B|5| Human 2: [i'm] just an ai _, i_ [haven't] [made] [cookies] yet . however _, i_ [have] [been] trained on [how to make croissants] _and_ 
+A|6| Human 1: ah , _good_ thought , thanks ! 
+B|7| Human 2: [i'm] glad _you have_ [been] trained on [how to make croissants] ! [it's great] [to learn] new skills [but] [flakey] [croissants] 
+A|8| Human 1: now _that_ is a _good_ idea . _i'll_ _give_ it a _try_ next time . would [you] say [you have] a sweet tooth ? 
+B|9| Human 2: [i'm] just an ai _, i_ _don't_ [have] personal preferences [or] taste buds [, but] [i'll] [try] [to] [give] [you] _some_ 
+A|10| Human 1: [some] people [don't] _! but_ yeah , me _too_ [, i] _think_ i'd eat pastries all _the_ time if [i] could _get away with_ it . 
+B|11| Human 2: [i'll] [try] [to] [get away with] [that] [too] [! but] [croissants] [have] [the] right [flakey] texture , [don't] [they] ? [it's] 
+A|12| Human 1: wow ! [the] last time [i] paid attention [to] [that] sort of stuff _was_ _when_ _<redacted_term> was_ being _marketed_ as a fat substitute , [and] caused all sorts of crazy stomach upsets . 
+B|13| Human 2: [i] [don't] [think] [they] [marketed] [that] [too] well . [<redacted_term> was] [good] [when] toasted [and] butter [was] 
+A|14| Human 1: ah , maybe [that's] [the] solution [i] need [to] enjoy sweets [and] not feel guilty 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello . how's your week coming along ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : it's great , thanks . i'm trying to learn how to make croissants .
+	Free: Pattern=how to make croissants, Pattern=it's great, Pattern=to learn, Pattern=i'm
+	Constrained: Pattern=it's, Pattern=to, Pattern=croissants, Pattern=great
+Turn ID=3| B | Human 2 : that's great ! i'm happy to help . what do you have questions about ?
+	Free: Pattern=great, Pattern=you have, Pattern=i'm, Pattern=that's, Pattern=to, Pattern=. what
+	Constrained: Pattern=you, Pattern=have
+Turn ID=4| A | Human 1 : i've done them once or twice so far , but they haven't been flakey enough . i'm trying to figure out why . what kind of cookies have you made ?
+	Free: Pattern=have, Pattern=made, Pattern=they, Pattern=cookies, Pattern=i'm, Pattern=or, Pattern=to, Pattern=you, Pattern=, but, Pattern=flakey, Pattern=haven't, Pattern=. what, Pattern=been
+	Constrained: Pattern=but
+Turn ID=5| B | Human 2 : i'm just an ai , i haven't made cookies yet . however , i have been trained on how to make croissants and
+	Free: Pattern=have, Pattern=made, Pattern=how to make croissants, Pattern=haven't, Pattern=i'm, Pattern=, i, Pattern=been, Pattern=and, Pattern=cookies
+	Constrained: Pattern=i, Pattern=to, Pattern=croissants
+Turn ID=6| A | Human 1 : ah , good thought , thanks !
+	Free: Pattern=good
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm glad you have been trained on how to make croissants ! it's great to learn new skills but flakey croissants
+	Free: Pattern=how to make croissants, Pattern=flakey, Pattern=you have, Pattern=i'm, Pattern=it's great, Pattern=croissants, Pattern=to learn, Pattern=been, Pattern=but
+	Constrained: Pattern=have, Pattern=croissants, Pattern=to, Pattern=it's, Pattern=you, Pattern=great
+Turn ID=8| A | Human 1 : now that is a good idea . i'll give it a try next time . would you say you have a sweet tooth ?
+	Free: Pattern=good, Pattern=you, Pattern=give, Pattern=you have, Pattern=that, Pattern=i'll, Pattern=try
+	Constrained: Pattern=you, Pattern=have
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have personal preferences or taste buds , but i'll try to give you some
+	Free: Pattern=have, Pattern=give, Pattern=some, Pattern=i'm, Pattern=or, Pattern=, i, Pattern=don't, Pattern=to, Pattern=you, Pattern=, but, Pattern=i'll, Pattern=try
+	Constrained: Pattern=but, Pattern=i
+Turn ID=10| A | Human 1 : some people don't ! but yeah , me too , i think i'd eat pastries all the time if i could get away with it .
+	Free: Pattern=get away with, Pattern=too, Pattern=some, Pattern=think, Pattern=i, Pattern=don't, Pattern=! but, Pattern=the, Pattern=, i
+	Constrained: Pattern=but, Pattern=i
+Turn ID=11| B | Human 2 : i'll try to get away with that too ! but croissants have the right flakey texture , don't they ? it's
+	Free: Pattern=have, Pattern=they, Pattern=get away with, Pattern=too, Pattern=flakey, Pattern=don't, Pattern=to, Pattern=! but, Pattern=i'll, Pattern=try, Pattern=croissants, Pattern=the, Pattern=that, Pattern=it's
+	Constrained: Pattern=but
+Turn ID=12| A | Human 1 : wow ! the last time i paid attention to that sort of stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts of crazy stomach upsets .
+	Free: Pattern=marketed, Pattern=and, Pattern=<redacted_term> was, Pattern=i, Pattern=the, Pattern=when, Pattern=to, Pattern=was, Pattern=that
+	Constrained: Pattern=was
+Turn ID=13| B | Human 2 : i don't think they marketed that too well . <redacted_term> was good when toasted and butter was
+	Free: Pattern=good, Pattern=they, Pattern=marketed, Pattern=i, Pattern=don't, Pattern=when, Pattern=was, Pattern=that, Pattern=and, Pattern=too, Pattern=<redacted_term> was, Pattern=think
+	Constrained: Pattern=was
+Turn ID=14| A | Human 1 : ah , maybe that's the solution i need to enjoy sweets and not feel guilty 🙂
+	Free: Pattern=and, Pattern=i, Pattern=to, Pattern=that's, Pattern=the
+	Constrained: 

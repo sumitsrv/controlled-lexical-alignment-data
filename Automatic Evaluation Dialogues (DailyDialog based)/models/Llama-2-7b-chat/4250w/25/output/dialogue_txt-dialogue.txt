@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ _good ._ [how are you] ? ：） 
+B|3| Human 2: 😊 great ! [how] can [i] help [you] today ? 🤖 
+A|4| Human 1: _i am_ busy . a lot _of_ _work_ _. what are you working on ?_ 
+B|5| Human 2: 😊 i'm just an ai , [working on] being helpful and answering questions like [you] ! what's [on] _your_ mind ? 
+A|6| Human 1: _i am_ [working on] a _new classifier_ . 
+B|7| Human 2: the [classifier] is _for_ facial recognition , and [i am] testing it [on] different faces [. what] _do you_ think [of] the [new classifier] ? ： 
+A|8| Human 1: a [new classifier] [for] hate speech . which _research_ topic catches [your] eyes _most_ ? 
+B|9| Human 2: 🤖i [am] [most] interested in [research] related _to_ natural language processing [for] social [good [.] what are you working on ?] ��� 
+A|10| Human 1: nice ! [do you] _refer to work_ or anything else ? 
+B|11| Human 2: 🤔 [i] [refer to work] [for] [research] related [to] natural language processing [for] social [good [.] what are] [your] [most] proud [of] [working on ?] < 
+A|12| Human 1: [you] [are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=how, Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=i am, Pattern=good .
+	Constrained: Pattern=you, Pattern=how, Pattern=are, Pattern=i, Pattern=am
+Turn ID=3| B | Human 2 : 😊 great ! how can i help you today ? 🤖
+	Free: Pattern=i, Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=. what are you working on ?, Pattern=i am, Pattern=of, Pattern=work
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=i, Pattern=. what are, Pattern=on, Pattern=. what, Pattern=working on ?, Pattern=am
+Turn ID=5| B | Human 2 : 😊 i'm just an ai , working on being helpful and answering questions like you ! what's on your mind ?
+	Free: Pattern=working on, Pattern=on, Pattern=you, Pattern=your
+	Constrained: Pattern=on
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=i am, Pattern=new classifier, Pattern=working on
+	Constrained: Pattern=i, Pattern=on, Pattern=classifier, Pattern=am
+Turn ID=7| B | Human 2 : the classifier is for facial recognition , and i am testing it on different faces . what do you think of the new classifier ? ：
+	Free: Pattern=of, Pattern=for, Pattern=do you, Pattern=i am, Pattern=classifier, Pattern=new classifier, Pattern=on, Pattern=. what
+	Constrained: Pattern=am, Pattern=i, Pattern=you, Pattern=classifier
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=research, Pattern=for, Pattern=your, Pattern=most, Pattern=new classifier
+	Constrained: Pattern=classifier
+Turn ID=9| B | Human 2 : 🤖i am most interested in research related to natural language processing for social good . what are you working on ? ���
+	Free: Pattern=research, Pattern=for, Pattern=good ., Pattern=most, Pattern=to, Pattern=. what are you working on ?, Pattern=am
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=. what are, Pattern=on, Pattern=. what, Pattern=working on ?
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=refer to work, Pattern=do you
+	Constrained: Pattern=you, Pattern=to, Pattern=work
+Turn ID=11| B | Human 2 : 🤔 i refer to work for research related to natural language processing for social good . what are your most proud of working on ? <
+	Free: Pattern=of, Pattern=for, Pattern=good ., Pattern=to, Pattern=working on ?, Pattern=research, Pattern=refer to work, Pattern=your, Pattern=i, Pattern=most, Pattern=. what are
+	Constrained: Pattern=working on, Pattern=are, Pattern=work, Pattern=on, Pattern=to, Pattern=. what
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=are, Pattern=you
+	Constrained: 

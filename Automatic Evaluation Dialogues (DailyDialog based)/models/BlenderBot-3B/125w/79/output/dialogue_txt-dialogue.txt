@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! what's up 
+A|2| Human 1: _just_ chilling _at_ home 
+B|3| Human 2: not much [just] looking for some good movies _to_ watch tonight _to_ wind down 
+A|4| Human 1: where _do you_ _work_ ? 
+B|5| Human 2: _i_ [work] on _the_ weekends [at] _the_ local movie theater , [you] ? 
+A|6| Human 1: _i live _in_ sapporo , japan ._ where _is_ mountain view 
+B|7| Human 2: [i live in] _the_ usa but i'm thinking about moving _to_ [japan] , it's _a_ beautiful place . are [you] _in japan ?_ 
+A|8| Human 1: how's _living [in japan_ ?] 
+B|9| Human 2: no i'm not [living in [japan] _.] [i_ live in] california , _and_ _the_ theater [is] [in sapporo , japan .] 
+A|10| Human 1: _i wish_ ! ramen [is] _my_ favorite dish [and] [sapporo] [is] [a] special beer 
+B|11| Human 2: [i wish] [i] was but [i] am [in sapporo] . _the_ movie theater [is] _the_ largest [and] best [in [japan] .] it's also 
+A|12| Human 1: _oh wow_ , didn't know _that_ . _have you been_ [to] [the] us ? 
+B|13| Human 2: [oh wow] that's _awesome_ [you] [live in] california , [have you been] there before ? 
+A|14| Human 1: [awesome] ! where [have you been] ? 
+B|15| Human 2: no [i] haven't but [my] grandpa had [been] there for [the] first time when he was stationed [in] okinawa as part of [the] army 
+A|16| Human 1: [you] _like it_ ? 
+B|17| Human 2: [i] [have] [been] there [and] really [like it] . i've [been] working on building [that] up for years but haven't [been] able [to] go yet . [do you] 
+A|18| Human 1: yea , same here [. i] love broadway shows [in] new york city . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! what's up
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : just chilling at home
+	Free: Pattern=at, Pattern=just
+	Constrained: 
+Turn ID=3| B | Human 2 : not much just looking for some good movies to watch tonight to wind down
+	Free: Pattern=just, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : where do you work ?
+	Free: Pattern=do you, Pattern=work
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i work on the weekends at the local movie theater , you ?
+	Free: Pattern=you, Pattern=at, Pattern=work, Pattern=i, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : i live in sapporo , japan . where is mountain view
+	Free: Pattern=in sapporo , japan ., Pattern=i live in, Pattern=is
+	Constrained: Pattern=japan ., Pattern=in, Pattern=i, Pattern=live in, Pattern=japan, Pattern=sapporo, Pattern=in sapporo
+Turn ID=7| B | Human 2 : i live in the usa but i'm thinking about moving to japan , it's a beautiful place . are you in japan ?
+	Free: Pattern=you, Pattern=a, Pattern=the, Pattern=to, Pattern=japan, Pattern=i live in, Pattern=in japan ?
+	Constrained: Pattern=in, Pattern=i, Pattern=in japan, Pattern=live in, Pattern=japan
+Turn ID=8| A | Human 1 : how's living in japan ?
+	Free: Pattern=living in japan, Pattern=in japan ?
+	Constrained: Pattern=in japan, Pattern=in, Pattern=japan
+Turn ID=9| B | Human 2 : no i'm not living in japan . i live in california , and the theater is in sapporo , japan .
+	Free: Pattern=in sapporo , japan ., Pattern=japan ., Pattern=and, Pattern=. i, Pattern=is, Pattern=the, Pattern=living in japan, Pattern=i live in
+	Constrained: Pattern=japan ., Pattern=in, Pattern=i, Pattern=in japan, Pattern=live in, Pattern=japan, Pattern=sapporo, Pattern=in sapporo
+Turn ID=10| A | Human 1 : i wish ! ramen is my favorite dish and sapporo is a special beer
+	Free: Pattern=a, Pattern=sapporo, Pattern=is, Pattern=my, Pattern=and, Pattern=i wish
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i wish i was but i am in sapporo . the movie theater is the largest and best in japan . it's also
+	Free: Pattern=japan ., Pattern=in sapporo, Pattern=the, Pattern=in japan, Pattern=and, Pattern=i wish, Pattern=is, Pattern=i
+	Constrained: Pattern=in, Pattern=i, Pattern=sapporo, Pattern=japan
+Turn ID=12| A | Human 1 : oh wow , didn't know that . have you been to the us ?
+	Free: Pattern=have you been, Pattern=oh wow, Pattern=the, Pattern=to, Pattern=that
+	Constrained: Pattern=have, Pattern=you, Pattern=been
+Turn ID=13| B | Human 2 : oh wow that's awesome you live in california , have you been there before ?
+	Free: Pattern=you, Pattern=have you been, Pattern=oh wow, Pattern=awesome, Pattern=live in
+	Constrained: Pattern=you, Pattern=been, Pattern=in, Pattern=have
+Turn ID=14| A | Human 1 : awesome ! where have you been ?
+	Free: Pattern=have you been, Pattern=awesome
+	Constrained: Pattern=have, Pattern=you, Pattern=been
+Turn ID=15| B | Human 2 : no i haven't but my grandpa had been there for the first time when he was stationed in okinawa as part of the army
+	Free: Pattern=in, Pattern=i, Pattern=the, Pattern=been, Pattern=my
+	Constrained: 
+Turn ID=16| A | Human 1 : you like it ?
+	Free: Pattern=like it, Pattern=you
+	Constrained: 
+Turn ID=17| B | Human 2 : i have been there and really like it . i've been working on building that up for years but haven't been able to go yet . do you
+	Free: Pattern=have, Pattern=i, Pattern=to, Pattern=been, Pattern=that, Pattern=and, Pattern=like it, Pattern=do you
+	Constrained: Pattern=you
+Turn ID=18| A | Human 1 : yea , same here . i love broadway shows in new york city .
+	Free: Pattern=. i, Pattern=in
+	Constrained: Pattern=i

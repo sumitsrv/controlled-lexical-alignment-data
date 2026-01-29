@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm_ _doing great ._ _what_ [are you] up to ? 
+B|3| Human 2: [you] [are] [doing great .] [i'm] happy [you] [are] [doing great] 
+A|4| Human 1: oh , [i'm] _enjoying_ _a_ sip of _coffee_ , looking _over_ _the_ ocean . _what book are you reading ?_ 
+B|5| Human 2: he waves _and_ _the book_ comes back [over] _and_ [you] [are] [enjoying] some [coffee] 
+A|6| Human 1: _that_ seems _like_ _a good book_ . _does it_ _have_ _good_ tips on [how] to _sleep_ _better_ ? 
+B|7| Human 2: _it's_ [like] [sleep] paralysis [you] [have] [a good _book] that_ [does it] _but_ [how] _it's_ [better] than _the book_ _in_ question . 
+A|8| Human 1: i read lots of papers , [but] do poorly on books 😞 [a] recent [book that] i [like] is zero to one by peter thiel 
+B|9| Human 2: [what book are you reading ?] 
+A|10| Human 1: [it's] _about_ _startups_ , lots of useful principles [and] philosophies _for_ innovation , [like] being [a] contrarian 
+B|11| Human 2: [how] [about] _the book_ ? [it's] [like] [sleep] paralysis [but] [for] [startups] 
+A|12| Human 1: i might [in] [the] future . [the] philosophy [in] [the book] also help [for] other things as well , e . g ., [in] research , [you] might also want to be contrarian 
+B|13| Human 2:  
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=hi, Pattern=how
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=doing great ., Pattern=are you, Pattern=what, Pattern=i'm
+	Constrained: Pattern=are, Pattern=you, Pattern=doing great
+Turn ID=3| B | Human 2 : you are doing great . i'm happy you are doing great
+	Free: Pattern=doing great ., Pattern=are, Pattern=i'm, Pattern=you, Pattern=doing great
+	Constrained: Pattern=doing great
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=what book are you reading ?, Pattern=a, Pattern=coffee, Pattern=over, Pattern=the, Pattern=enjoying, Pattern=i'm
+	Constrained: Pattern=are, Pattern=what, Pattern=you, Pattern=are you
+Turn ID=5| B | Human 2 : he waves and the book comes back over and you are enjoying some coffee
+	Free: Pattern=the book, Pattern=you, Pattern=coffee, Pattern=and, Pattern=are, Pattern=over, Pattern=enjoying
+	Constrained: Pattern=the
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=good, Pattern=sleep, Pattern=have, Pattern=how, Pattern=does it, Pattern=like, Pattern=better, Pattern=a good book, Pattern=that
+	Constrained: Pattern=good, Pattern=a
+Turn ID=7| B | Human 2 : it's like sleep paralysis you have a good book that does it but how it's better than the book in question .
+	Free: Pattern=sleep, Pattern=the book, Pattern=you, Pattern=have, Pattern=how, Pattern=book that, Pattern=does it, Pattern=in, Pattern=like, Pattern=better, Pattern=a good book, Pattern=it's, Pattern=but
+	Constrained: Pattern=good, Pattern=a, Pattern=that, Pattern=the
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=book that, Pattern=like, Pattern=but, Pattern=a
+	Constrained: Pattern=that
+Turn ID=9| B | Human 2 : what book are you reading ?
+	Free: Pattern=what book are you reading ?
+	Constrained: Pattern=are, Pattern=what, Pattern=you, Pattern=are you
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=a, Pattern=for, Pattern=and, Pattern=about, Pattern=startups, Pattern=like, Pattern=it's
+	Constrained: 
+Turn ID=11| B | Human 2 : how about the book ? it's like sleep paralysis but for startups
+	Free: Pattern=sleep, Pattern=the book, Pattern=how, Pattern=for, Pattern=about, Pattern=startups, Pattern=like, Pattern=it's, Pattern=but
+	Constrained: Pattern=the
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=the book, Pattern=you, Pattern=for, Pattern=in, Pattern=the
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : 
+	Free: 
+	Constrained: 
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

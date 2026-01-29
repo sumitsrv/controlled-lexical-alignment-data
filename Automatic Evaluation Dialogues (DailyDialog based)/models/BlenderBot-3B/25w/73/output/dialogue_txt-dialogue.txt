@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's your _day_ _going_ ? 
+B|3| Human 2: its [going] _good_ , _just_ playing _the_ drums for _a_ concert . how _about_ you ? did you get out _to_ _the_ range today ? 
+A|4| Human 1: _i'm_ [good] ! [just] _getting ready to_ watch _a basketball_ _game_ . hope your headache goes away ! 
+B|5| Human 2: [just] finishing _up_ [a] [good] [day] at work actually and [getting ready to] head [to] _the_ range _in a_ bit - _i_ think i'll hit _the_ range hard 
+A|6| Human 1: hmm , try taking some <redacted_term> _! i'm going to_ see [the] warriors vs . [the] grizzlies . ever see them play ? 
+B|7| Human 2: [i'm going to] [the] [game] after work ! 
+A|8| Human 1: haha , all [the] animal names confuse me as well ! _who_ came [up] with these naming conventions ? i'd _name_ my _team_ something _more_ original: [the] _new york chairs_ ! 
+B|9| Human 2: i've never , [i'm] hoping [to] start [going to] [more] games _this_ year though , [the] one [game] _i_ got [to] go [to] _this_ year we got sw 
+A|10| Human 1: oh cool ! what _is_ "neurips" ? 
+B|11| Human 2: [new york chairs] are [a basketball] [team] _in_ [new york] city . 
+A|12| Human 1: oh wow ! _sounds_ fancy ! what _is_ _that_ [about] ? 
+B|13| Human 2: that's neat [! i'm going to] get [the] [team] [name] [that] [is] from [the] most popular american soap opera on [the] air _this_ year and [the] 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: yeah , [that] [sounds] [good] . _i_ [just] found out they moved [to] times square . 
+A|16| Human 1: ahh ! [i] saw [a] scary movie [about] [that] once _. it was_ [about] [this] sentient ai [in a] dystopian future - very very creepy _. it was_ called _wall-e_ , ever _heard of_ _it_ ? 
+B|17| Human 2: yes , [i] have [heard of] [wall-e] [. it was] directed by phil lord and chris miller , [who] also worked on [the] original star 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=day, Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : its going good , just playing the drums for a concert . how about you ? did you get out to the range today ?
+	Free: Pattern=good, Pattern=a, Pattern=about, Pattern=the, Pattern=to, Pattern=going, Pattern=just
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=good, Pattern=just, Pattern=game, Pattern=i'm, Pattern=getting ready to, Pattern=a basketball
+	Constrained: Pattern=a, Pattern=to
+Turn ID=5| B | Human 2 : just finishing up a good day at work actually and getting ready to head to the range in a bit - i think i'll hit the range hard
+	Free: Pattern=good, Pattern=just, Pattern=a, Pattern=in a, Pattern=getting ready to, Pattern=the, Pattern=day, Pattern=i, Pattern=up, Pattern=to
+	Constrained: Pattern=a, Pattern=to, Pattern=in
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=! i'm going to, Pattern=the
+	Constrained: Pattern=going to, Pattern=going, Pattern=i'm, Pattern=to, Pattern=i'm going to
+Turn ID=7| B | Human 2 : i'm going to the game after work !
+	Free: Pattern=i'm going to, Pattern=the, Pattern=game
+	Constrained: Pattern=going to, Pattern=going, Pattern=to, Pattern=i'm
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=more, Pattern=who, Pattern=name, Pattern=the, Pattern=up, Pattern=new york chairs, Pattern=team
+	Constrained: Pattern=new york
+Turn ID=9| B | Human 2 : i've never , i'm hoping to start going to more games this year though , the one game i got to go to this year we got sw
+	Free: Pattern=going to, Pattern=more, Pattern=game, Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=this
+	Constrained: Pattern=going, Pattern=to
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : new york chairs are a basketball team in new york city .
+	Free: Pattern=new york, Pattern=in, Pattern=team, Pattern=new york chairs, Pattern=a basketball
+	Constrained: Pattern=a, Pattern=new york
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=that, Pattern=about, Pattern=is, Pattern=sounds
+	Constrained: 
+Turn ID=13| B | Human 2 : that's neat ! i'm going to get the team name that is from the most popular american soap opera on the air this year and the
+	Free: Pattern=name, Pattern=is, Pattern=the, Pattern=team, Pattern=this, Pattern=! i'm going to, Pattern=that
+	Constrained: Pattern=going to, Pattern=going, Pattern=i'm, Pattern=to, Pattern=i'm going to
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah , that sounds good . i just found out they moved to times square .
+	Free: Pattern=good, Pattern=just, Pattern=i, Pattern=sounds, Pattern=to, Pattern=that
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=a, Pattern=in a, Pattern=. it was, Pattern=it, Pattern=about, Pattern=that, Pattern=heard of, Pattern=i, Pattern=wall-e, Pattern=this
+	Constrained: Pattern=in, Pattern=it, Pattern=a
+Turn ID=17| B | Human 2 : yes , i have heard of wall-e . it was directed by phil lord and chris miller , who also worked on the original star
+	Free: Pattern=who, Pattern=. it was, Pattern=the, Pattern=wall-e, Pattern=heard of, Pattern=i
+	Constrained: Pattern=it

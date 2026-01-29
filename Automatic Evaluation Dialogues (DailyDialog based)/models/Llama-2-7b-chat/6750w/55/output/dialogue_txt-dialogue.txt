@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what_ _are_ _you_ up _to_ ? 
+B|3| Human 2: [what] would _you like to_ chat about ? 
+A|4| Human 1: me ? _just_ _chilling out at work_ . [what] _is_ _code refactoring_ ? 
+B|5| Human 2: [code refactoring] [is] the process of improving the structure and organization of existing [code] without changing its external behavior . _it_ involves renaming variables , moving [code] 
+A|6| Human 1: _haha_ , forget [it] . _what else_ _do_ [you like to] _do_ beside _work_ ? 
+B|7| Human 2: [like] [you] _i_ enjoy [chilling out at work] [haha] [just] kidding ! _in_ all seriousness [code refactoring] [is] an _important_ part of software 
+A|8| Human 1: _these are important things to_ _do_ [in] _life 😉_ 
+B|9| Human 2:  
+A|10| Human 1: [what] _food_ _do_ [you like to] _eat ?_ 
+B|11| Human 2: [food] [you like] [eat ?] [what] [code refactoring] [important things] [haha] [just] kidding ! [these are important things to] [life 😉] 
+A|12| Human 1: [like] _szechuan_ or hunan ? 🙂 
+B|13| Human 2: [you like] [eat] [szechuan] [food] [what else] [important things] [haha] [just] kidding [life] [these are] 😉<|im_ 
+A|14| Human 1: [i] [like] _noodle soup_ _like pho_ or ramen . [i] _also_ [like] _beijing duck_ a lot ! 
+B|15| Human 2: [like pho] [noodle soup] [beijing duck] [you] [also] 🙂 [what] [important] [code] [things] [haha] [just] refecting [life] [these] 
+A|16| Human 1: [i] _love <redacted_term>_ [in] _san mateo_ 
+B|17| Human 2: [what] [do] [like] [san mateo] [love <redacted_term>] [you] [also] [haha] [life] [important things] [just] refecting these< 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=to, Pattern=you, Pattern=what, Pattern=are
+	Constrained: 
+Turn ID=3| B | Human 2 : what would you like to chat about ?
+	Free: Pattern=you like to, Pattern=what
+	Constrained: Pattern=you like, Pattern=like, Pattern=to, Pattern=you
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=just, Pattern=what, Pattern=is, Pattern=code refactoring, Pattern=chilling out at work
+	Constrained: Pattern=work, Pattern=code
+Turn ID=5| B | Human 2 : code refactoring is the process of improving the structure and organization of existing code without changing its external behavior . it involves renaming variables , moving code
+	Free: Pattern=code refactoring, Pattern=is, Pattern=code, Pattern=it
+	Constrained: Pattern=code
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=you like to, Pattern=do, Pattern=it, Pattern=work, Pattern=haha, Pattern=what else
+	Constrained: Pattern=you, Pattern=what, Pattern=like, Pattern=you like, Pattern=to
+Turn ID=7| B | Human 2 : like you i enjoy chilling out at work haha just kidding ! in all seriousness code refactoring is an important part of software
+	Free: Pattern=you, Pattern=just, Pattern=in, Pattern=important, Pattern=code refactoring, Pattern=chilling out at work, Pattern=is, Pattern=i, Pattern=haha, Pattern=like
+	Constrained: Pattern=work, Pattern=code
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=these are important things to, Pattern=life 😉, Pattern=do, Pattern=in
+	Constrained: Pattern=are, Pattern=these, Pattern=things, Pattern=to, Pattern=these are, Pattern=life, Pattern=important, Pattern=important things
+Turn ID=9| B | Human 2 : 
+	Free: 
+	Constrained: 
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=you like to, Pattern=what, Pattern=do, Pattern=food, Pattern=eat ?
+	Constrained: Pattern=you, Pattern=eat, Pattern=like, Pattern=you like, Pattern=to
+Turn ID=11| B | Human 2 : food you like eat ? what code refactoring important things haha just kidding ! these are important things to life 😉
+	Free: Pattern=just, Pattern=what, Pattern=important things, Pattern=you like, Pattern=eat ?, Pattern=these are important things to, Pattern=haha, Pattern=food, Pattern=life 😉, Pattern=code refactoring
+	Constrained: Pattern=you, Pattern=code, Pattern=eat, Pattern=are, Pattern=these, Pattern=things, Pattern=like, Pattern=to, Pattern=these are, Pattern=life, Pattern=important, Pattern=important things
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=szechuan, Pattern=like
+	Constrained: 
+Turn ID=13| B | Human 2 : you like eat szechuan food what else important things haha just kidding life these are 😉<|im_
+	Free: Pattern=just, Pattern=eat, Pattern=important things, Pattern=you like, Pattern=these are, Pattern=what else, Pattern=haha, Pattern=food, Pattern=szechuan, Pattern=life
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=these, Pattern=things, Pattern=important, Pattern=like
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=like pho, Pattern=noodle soup, Pattern=beijing duck, Pattern=i, Pattern=also, Pattern=like
+	Constrained: Pattern=like
+Turn ID=15| B | Human 2 : like pho noodle soup beijing duck you also 🙂 what important code things haha just refecting life these
+	Free: Pattern=like pho, Pattern=you, Pattern=noodle soup, Pattern=what, Pattern=beijing duck, Pattern=these, Pattern=things, Pattern=important, Pattern=life, Pattern=code, Pattern=just, Pattern=also, Pattern=haha
+	Constrained: Pattern=like
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=san mateo, Pattern=love <redacted_term>, Pattern=i, Pattern=in
+	Constrained: 
+Turn ID=17| B | Human 2 : what do like san mateo love <redacted_term> you also haha life important things just refecting these<
+	Free: Pattern=san mateo, Pattern=you, Pattern=just, Pattern=what, Pattern=do, Pattern=important things, Pattern=love <redacted_term>, Pattern=life, Pattern=like, Pattern=also, Pattern=haha
+	Constrained: Pattern=things, Pattern=important
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

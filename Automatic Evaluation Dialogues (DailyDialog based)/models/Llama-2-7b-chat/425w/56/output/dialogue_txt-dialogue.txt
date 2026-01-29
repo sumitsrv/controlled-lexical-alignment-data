@@ -1,0 +1,63 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] 
+A|2| Human 1: _nice meeting you_ . what _are_ _you_ _up to_ ? 
+B|3| Human 2: hello ! [nice meeting you] too ! i'm [up to] helping users _like_ [you] with their questions . how can _i_ assist [you] today ? <|im 
+A|4| Human 1: yea , same here . _any_ _food_ you're craving _for_ ? 
+B|5| Human 2: i'm just an ai , _i_ don't _have_ personal preferences or cravings , but _i_ can certainly help [you] find a [nice] 
+A|6| Human 1: arghhh hard question ... [i] only know _ramen_ places _for_ japanese _food_ 🙂 
+B|7| Human 2: [ramen] is a great choice ! 🍜 _do _you_ have_ [any] other [food] preferences or dietary restrictions [i] can help [you] with 
+A|8| Human 1: san mateo [to] me has _the_ best [ramen] restaurants: parlor and dojo ? oh no question mark 🙂 
+B|9| Human 2: haha , thanks [for] [the] recommendation ! 😊 _do _you_ have_ [any] specific [ramen] preferences or restrictions , _like_ spicy/m 
+A|10| Human 1: my pleasure 🙂 [do you] _live near_ san mateo ? 
+B|11| Human 2: i'm just an ai , [i] don't _have_ personal experiences or [live near] [any] location 🙂<|im_end 
+A|12| Human 1: excellent . let me know when [you have] tried those . [i] [like] parlor better because it has _soft-shell crabs_ 
+B|13| Human 2: ah , [i] see ! [soft-shell crabs] [are] definitely a great addition [to] [ramen] 😋 [do [you] have] [any] other 
+A|14| Human 1: yup it's delicious ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : nice meeting you . what are you up to ?
+	Free: Pattern=nice meeting you, Pattern=up to, Pattern=you, Pattern=are
+	Constrained: Pattern=to, Pattern=nice, Pattern=you
+Turn ID=3| B | Human 2 : hello ! nice meeting you too ! i'm up to helping users like you with their questions . how can i assist you today ? <|im
+	Free: Pattern=up to, Pattern=i, Pattern=like, Pattern=you, Pattern=nice meeting you
+	Constrained: Pattern=to, Pattern=nice, Pattern=you
+Turn ID=4| A | Human 1 : yea , same here . any food you're craving for ?
+	Free: Pattern=food, Pattern=any, Pattern=for
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal preferences or cravings , but i can certainly help you find a nice
+	Free: Pattern=nice, Pattern=i, Pattern=have, Pattern=you
+	Constrained: 
+Turn ID=6| A | Human 1 : arghhh hard question ... i only know ramen places for japanese food 🙂
+	Free: Pattern=food, Pattern=i, Pattern=ramen, Pattern=for
+	Constrained: 
+Turn ID=7| B | Human 2 : ramen is a great choice ! 🍜 do you have any other food preferences or dietary restrictions i can help you with
+	Free: Pattern=you, Pattern=any, Pattern=do you, Pattern=ramen, Pattern=you have, Pattern=i, Pattern=food
+	Constrained: Pattern=have, Pattern=you
+Turn ID=8| A | Human 1 : san mateo to me has the best ramen restaurants: parlor and dojo ? oh no question mark 🙂
+	Free: Pattern=to, Pattern=the, Pattern=ramen
+	Constrained: 
+Turn ID=9| B | Human 2 : haha , thanks for the recommendation ! 😊 do you have any specific ramen preferences or restrictions , like spicy/m
+	Free: Pattern=do you, Pattern=ramen, Pattern=you have, Pattern=like, Pattern=the, Pattern=for, Pattern=any
+	Constrained: Pattern=have, Pattern=you
+Turn ID=10| A | Human 1 : my pleasure 🙂 do you live near san mateo ?
+	Free: Pattern=do you, Pattern=live near
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : i'm just an ai , i don't have personal experiences or live near any location 🙂<|im_end
+	Free: Pattern=live near, Pattern=i, Pattern=have, Pattern=any
+	Constrained: 
+Turn ID=12| A | Human 1 : excellent . let me know when you have tried those . i like parlor better because it has soft-shell crabs
+	Free: Pattern=soft-shell crabs, Pattern=you have, Pattern=i, Pattern=like
+	Constrained: Pattern=have, Pattern=you
+Turn ID=13| B | Human 2 : ah , i see ! soft-shell crabs are definitely a great addition to ramen 😋 do you have any other
+	Free: Pattern=any, Pattern=do you, Pattern=are, Pattern=ramen, Pattern=you have, Pattern=i, Pattern=soft-shell crabs, Pattern=to
+	Constrained: Pattern=have, Pattern=you
+Turn ID=14| A | Human 1 : yup it's delicious !
+	Free: 
+	Constrained: 

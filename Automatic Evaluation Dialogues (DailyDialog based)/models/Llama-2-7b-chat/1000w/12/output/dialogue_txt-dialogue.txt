@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey how's _it_ going 
+A|2| Human 1: _it's_ _good_ _it's_ _good_ . _how_ _are_ _you_ ? 
+B|3| Human 2: _i'm_ [good] thank [you] ! [how] _can_ _i_ assist [you] today ? 
+A|4| Human 1: oh nice ! where do [you] _live_ ? 
+B|5| Human 2: _i'm_ just _an_ ai , _i don't_ have personal experiences or [live] _in_ a specific location . _i'm_ here _to_ help [you] with 
+A|6| Human 1: ahh yes , _japan is_ _hot_ during _the summer_ . last time [i] _was_ [in] kyoto [it] _was_ 114 degrees .... 
+B|7| Human 2: ah , _so_ you're from [japan] ? [how] [was] [the summer] there ? 
+A|8| Human 1: yes yes . _i've been to_ tokyo as well . _it's_ [so] nice ! 
+B|9| Human 2: [i've been to] [japan] a few times , [it's] a beautiful country with a rich culture . _what_ brings [you] here today ? <|im 
+A|10| Human 1: oh everything ! [i] went [to] [an] _onsen_ , [the] fish market , _disney land_ _and_ giant robot fighting show haha 
+B|11| Human 2: ah , [i] see . [japan is] known for its [hot] springs [and] [the] [onsen] [is] definitely a must-visit experience . [and] [disney land] 
+A|12| Human 1: [the] [disney] lands _are_ all different ! there's also _disney sea_ , which [is] completely _unique_ ! 
+B|13| Human 2: ah , [i've] heard [good] things about [disney sea] . _what_ [was] your favorite _part of_ your trip ? <|im<|im_end| 
+A|14| Human 1: [i don't] really remember [what] [part of] town [it] [was] [in] . [it] [was] pretty cool though - _i'm sure you can find_ [it] if [you] google "giant robot fighting show tokyo" haha 
+B|15| Human 2: [i'm sure you can find] [what] you're looking for on [the] internet ! there [are] plenty [of] [unique] [and] interesting experiences [to] be had [in] [japan] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey how's it going
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good it's good . how are you ?
+	Free: Pattern=good, Pattern=you, Pattern=how, Pattern=are, Pattern=it's
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm good thank you ! how can i assist you today ?
+	Free: Pattern=good, Pattern=you, Pattern=how, Pattern=can, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : oh nice ! where do you live ?
+	Free: Pattern=you, Pattern=live
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal experiences or live in a specific location . i'm here to help you with
+	Free: Pattern=you, Pattern=i don't, Pattern=an, Pattern=live, Pattern=in, Pattern=i'm, Pattern=to
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : ahh yes , japan is hot during the summer . last time i was in kyoto it was 114 degrees ....
+	Free: Pattern=japan is, Pattern=it, Pattern=the summer, Pattern=hot, Pattern=in, Pattern=i, Pattern=was
+	Constrained: Pattern=the, Pattern=is, Pattern=japan
+Turn ID=7| B | Human 2 : ah , so you're from japan ? how was the summer there ?
+	Free: Pattern=how, Pattern=the summer, Pattern=was, Pattern=japan, Pattern=so
+	Constrained: Pattern=the
+Turn ID=8| A | Human 1 : yes yes . i've been to tokyo as well . it's so nice !
+	Free: Pattern=i've been to, Pattern=it's, Pattern=so
+	Constrained: Pattern=to, Pattern=i've
+Turn ID=9| B | Human 2 : i've been to japan a few times , it's a beautiful country with a rich culture . what brings you here today ? <|im
+	Free: Pattern=you, Pattern=what, Pattern=i've been to, Pattern=japan, Pattern=it's
+	Constrained: Pattern=to, Pattern=i've
+Turn ID=10| A | Human 1 : oh everything ! i went to an onsen , the fish market , disney land and giant robot fighting show haha
+	Free: Pattern=an, Pattern=i, Pattern=the, Pattern=to, Pattern=onsen, Pattern=and, Pattern=disney land
+	Constrained: Pattern=disney
+Turn ID=11| B | Human 2 : ah , i see . japan is known for its hot springs and the onsen is definitely a must-visit experience . and disney land
+	Free: Pattern=japan is, Pattern=hot, Pattern=the, Pattern=onsen, Pattern=and, Pattern=disney land, Pattern=is, Pattern=i
+	Constrained: Pattern=is, Pattern=disney, Pattern=japan
+Turn ID=12| A | Human 1 : the disney lands are all different ! there's also disney sea , which is completely unique !
+	Free: Pattern=unique, Pattern=are, Pattern=is, Pattern=the, Pattern=disney, Pattern=disney sea
+	Constrained: Pattern=disney
+Turn ID=13| B | Human 2 : ah , i've heard good things about disney sea . what was your favorite part of your trip ? <|im<|im_end|
+	Free: Pattern=good, Pattern=what, Pattern=i've, Pattern=disney sea, Pattern=part of, Pattern=was
+	Constrained: Pattern=disney, Pattern=of
+Turn ID=14| A | Human 1 : i don't really remember what part of town it was in . it was pretty cool though - i'm sure you can find it if you google "giant robot fighting show tokyo" haha
+	Free: Pattern=you, Pattern=i don't, Pattern=what, Pattern=i'm sure you can find, Pattern=it, Pattern=in, Pattern=part of, Pattern=was
+	Constrained: Pattern=of, Pattern=you, Pattern=can, Pattern=i'm, Pattern=i
+Turn ID=15| B | Human 2 : i'm sure you can find what you're looking for on the internet ! there are plenty of unique and interesting experiences to be had in japan
+	Free: Pattern=of, Pattern=unique, Pattern=what, Pattern=i'm sure you can find, Pattern=and, Pattern=are, Pattern=in, Pattern=the, Pattern=to, Pattern=japan
+	Constrained: Pattern=you, Pattern=can, Pattern=i'm

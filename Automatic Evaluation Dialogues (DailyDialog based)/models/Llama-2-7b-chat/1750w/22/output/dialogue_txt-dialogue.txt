@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: doing _great !_ _what _are_ you looking forward to_ ? 
+B|3| Human 2: [great !] 🤖 [are you looking forward to] trying out any new features _in_ whatsapp this year ? <|im_end| 
+A|4| Human 1: yay ! _turkey_ _and_ _shopping_ ! 
+B|5| Human 2: 🛍️ [shopping] is always [great !] have [you] found any exciting deals or discounts recently ? <|im_ 
+A|6| Human 1: _yea_ me _too_ . i sometimes eat _noodle soups_ [in] _thanksgiving_ instead haha 
+B|7| Human 2: 😂 [noodle soups] [are] [great !] have [you] tried any new restaurants or dishes recently ? <|im_end 
+A|8| Human 1: me neither . someone told me that it depends on _the stuffing inside_ _the_ _turkey_ . _some_ people make very _good_ _stuffing_ 
+B|9| Human 2: that's true ! [stuffing] is an important part of [the] [thanksgiving] meal _. [what_ are] [some] of your favorite side dishes ? < 
+A|10| Human 1: _yea_ [. what] do [you] plan [to] buy ? 
+B|11| Human 2: 🛍️ [shopping] is always [great !] have [you] found any exciting deals or discounts recently ? <|im_ 
+A|12| Human 1: ah cool . so _you can run more frequently_ ? :) 
+B|13| Human 2: [yea] that's [good] . [you can run more frequently] [and] get [the stuffing inside] [turkey] cooked [too] ! <|im_end| 
+A|14| Human 1: yay , all [the] best with keeping calories [in] check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=are you looking forward to, Pattern=great !, Pattern=what are
+	Constrained: Pattern=are, Pattern=are you, Pattern=to, Pattern=you
+Turn ID=3| B | Human 2 : great ! 🤖 are you looking forward to trying out any new features in whatsapp this year ? <|im_end|
+	Free: Pattern=are you looking forward to, Pattern=great !, Pattern=in
+	Constrained: Pattern=are, Pattern=are you, Pattern=to, Pattern=you
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=turkey, Pattern=and, Pattern=shopping
+	Constrained: 
+Turn ID=5| B | Human 2 : 🛍️ shopping is always great ! have you found any exciting deals or discounts recently ? <|im_
+	Free: Pattern=great !, Pattern=you, Pattern=shopping
+	Constrained: 
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=too, Pattern=yea, Pattern=thanksgiving, Pattern=in, Pattern=noodle soups
+	Constrained: 
+Turn ID=7| B | Human 2 : 😂 noodle soups are great ! have you tried any new restaurants or dishes recently ? <|im_end
+	Free: Pattern=great !, Pattern=noodle soups, Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=good, Pattern=stuffing, Pattern=turkey, Pattern=some, Pattern=the, Pattern=the stuffing inside
+	Constrained: Pattern=the, Pattern=stuffing
+Turn ID=9| B | Human 2 : that's true ! stuffing is an important part of the thanksgiving meal . what are some of your favorite side dishes ? <
+	Free: Pattern=stuffing, Pattern=thanksgiving, Pattern=some, Pattern=what are, Pattern=the, Pattern=. what
+	Constrained: Pattern=are
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=. what, Pattern=you, Pattern=yea, Pattern=to
+	Constrained: 
+Turn ID=11| B | Human 2 : 🛍️ shopping is always great ! have you found any exciting deals or discounts recently ? <|im_
+	Free: Pattern=great !, Pattern=you, Pattern=shopping
+	Constrained: 
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=you can run more frequently
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : yea that's good . you can run more frequently and get the stuffing inside turkey cooked too ! <|im_end|
+	Free: Pattern=good, Pattern=yea, Pattern=you can run more frequently, Pattern=turkey, Pattern=the stuffing inside, Pattern=and, Pattern=too
+	Constrained: Pattern=stuffing, Pattern=the, Pattern=you
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=the, Pattern=in
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i saw_ "the _parasite_ . " ever _heard_ of _it_ ? 
+B|3| Human 2: why _are_ they doing _so_ evil ? like they [saw] _the_ [parasite] _and_ said _it was_ just an evil person . 
+A|4| Human 1: my friend wanted _to see it ._ [it] has _great_ reviews on imdb [and] rotten tomatoes ! _what did you do _last_ weekend_ ? 
+B|5| Human 2: i'm actually considering _the_ [parasite] [and] [last weekend] [to see it .] [what did you do last] night ? 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: [it] _is_ !!! [i saw] [last] night [and] [the mandalorian] [did] _a_ [great] job . rooting [the] rott 
+A|8| Human 1: _lol_ [are] [you] [a] big _marvel_ fan ? 
+B|9| Human 2: yeah [you] _can_ ! rooting [the mandalorian] [and] [marvel] [are] [great] _movies_ [lol] 
+A|10| Human 1: _i've_ _only_ [seen] _spiderman_ . honestly [it was] [a] little _too_ scary [and] [so] [i] don't _think_ [i] [can] bring myself [to] watch _the other_ [marvel] [movies] ! _haha_ 
+B|11| Human 2: yeah _i think_ [it was] [the other] [spiderman] [movies] [too] [haha] 
+A|12| Human 1: oh _really_ ? [to] be honest _i think the_ _actor_ [is] not _that_ _good looking_ , [so] not [so] surprising ! [haha] 
+B|13| Human 2: [it was] [good looking] [the] [only] [actor] [that] [really] impressed me [too] 
+A|14| Human 1: who [is] _loki_ ? _i've never heard_ [that] _name before_ 
+B|15| Human 2: [i think the] [only] [actor] [that] [i've never heard] [good] [name before] [was] [loki] . [haha] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=you, Pattern=movies, Pattern=seen, Pattern=good
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=heard, Pattern=parasite, Pattern=it, Pattern=i saw, Pattern=last weekend
+	Constrained: Pattern=saw, Pattern=i, Pattern=last
+Turn ID=3| B | Human 2 : why are they doing so evil ? like they saw the parasite and said it was just an evil person .
+	Free: Pattern=parasite, Pattern=and, Pattern=are, Pattern=the, Pattern=so, Pattern=saw, Pattern=it was
+	Constrained: Pattern=it, Pattern=was
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=great, Pattern=to see it ., Pattern=last weekend, Pattern=what did you do last, Pattern=it, Pattern=and
+	Constrained: Pattern=you, Pattern=did, Pattern=it, Pattern=last, Pattern=to
+Turn ID=5| B | Human 2 : i'm actually considering the parasite and last weekend to see it . what did you do last night ?
+	Free: Pattern=parasite, Pattern=and, Pattern=to see it ., Pattern=the, Pattern=last weekend, Pattern=what did you do last
+	Constrained: Pattern=you, Pattern=did, Pattern=it, Pattern=last, Pattern=to
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : it is !!! i saw last night and the mandalorian did a great job . rooting the rott
+	Free: Pattern=great, Pattern=the mandalorian, Pattern=is, Pattern=last, Pattern=did, Pattern=a, Pattern=it, Pattern=and, Pattern=i saw, Pattern=the
+	Constrained: Pattern=the, Pattern=saw, Pattern=i
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=lol, Pattern=you, Pattern=a, Pattern=are, Pattern=marvel
+	Constrained: 
+Turn ID=9| B | Human 2 : yeah you can ! rooting the mandalorian and marvel are great movies lol
+	Free: Pattern=lol, Pattern=and, Pattern=are, Pattern=can, Pattern=the mandalorian, Pattern=marvel, Pattern=movies, Pattern=you, Pattern=great
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=it was, Pattern=only, Pattern=a, Pattern=i've, Pattern=can, Pattern=marvel, Pattern=i, Pattern=haha, Pattern=spiderman, Pattern=to, Pattern=so, Pattern=and, Pattern=too, Pattern=the other, Pattern=think, Pattern=seen, Pattern=movies
+	Constrained: Pattern=the, Pattern=it, Pattern=was
+Turn ID=11| B | Human 2 : yeah i think it was the other spiderman movies too haha
+	Free: Pattern=it was, Pattern=too, Pattern=the other, Pattern=haha, Pattern=spiderman, Pattern=movies, Pattern=i think
+	Constrained: Pattern=it, Pattern=think, Pattern=i, Pattern=the, Pattern=was
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=good looking, Pattern=is, Pattern=i think the, Pattern=to, Pattern=that, Pattern=haha, Pattern=really, Pattern=so, Pattern=actor
+	Constrained: Pattern=good, Pattern=think, Pattern=i, Pattern=the, Pattern=i think
+Turn ID=13| B | Human 2 : it was good looking the only actor that really impressed me too
+	Free: Pattern=it was, Pattern=only, Pattern=really, Pattern=the, Pattern=that, Pattern=actor, Pattern=good looking, Pattern=too
+	Constrained: Pattern=it, Pattern=was, Pattern=good
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=is, Pattern=name before, Pattern=that, Pattern=loki, Pattern=i've never heard
+	Constrained: Pattern=i've, Pattern=heard
+Turn ID=15| B | Human 2 : i think the only actor that i've never heard good name before was loki . haha
+	Free: Pattern=good, Pattern=only, Pattern=haha, Pattern=i think the, Pattern=was, Pattern=name before, Pattern=that, Pattern=actor, Pattern=loki, Pattern=i've never heard
+	Constrained: Pattern=heard, Pattern=i've, Pattern=think, Pattern=i, Pattern=the, Pattern=i think

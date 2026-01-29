@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: _not_ much . any plans this weekend ? 
+B|3| Human 2: yeah _, i'm_ planning on _going to_ the beach _. it's_ supposed _to_ be sunny _and_ warm . 
+A|4| Human 1: _ziplining ?_ 
+B|5| Human 2: _no ,_ [not] [ziplining] . just chilling _and_ soaking up the sun . _you_ know , the usual beach stuff . <|im_end 
+A|6| Human 1: _i_ _have a_ couple years ago [. _it's] quite_ _a_ unique experience 
+B|7| Human 2: [it's quite] adventurous ! _i'm_ [not] sure if [i] could do _it_ _though_ . [i] _get a_ bit claustrophobic sometimes 
+A|8| Human 1: [i] forgot where [it] _was_ , [it] wasn't local [i] _don't_ _think_ [though] 
+B|9| Human 2: [was] [it] [ziplining ?] 
+A|10| Human 1: _that's_ [a] hard question [and] [i'm] tired _so_ [i'm] [going to] go . _see you_ 
+B|11| Human 2: [i] [see you] too ! [have a] great _day_ [and] [don't] do anything too crazy 😂 
+A|12| Human 1: [no [,] i'm] [going to] [get a] _massage_ first 
+B|13| Human 2: [that's] great ! massages are great for relaxation [and] releasing tension . _you should_ [get] one every week ! �� 
+A|14| Human 1: _traditional_ kind 
+B|15| Human 2: you're right 🙏 [traditional] [massage] is amazing . [i] [get] one every 2 weeks [and] [it] always leaves me feeling [so] 
+A|16| Human 1: [you should] ! [it's] relaxing after [a] long [day] . talk [to] [you] later ! 
+B|17| Human 2: [i'm] glad [you] [think] [so] 😊 [have a] great [day] [and] [don't] forget [to] relax ! 😴< 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=not
+	Constrained: 
+Turn ID=3| B | Human 2 : yeah , i'm planning on going to the beach . it's supposed to be sunny and warm .
+	Free: Pattern=going to, Pattern=. it's, Pattern=and, Pattern=to, Pattern=, i'm
+	Constrained: Pattern=to, Pattern=i'm, Pattern=it's
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining ?
+	Constrained: Pattern=ziplining
+Turn ID=5| B | Human 2 : no , not ziplining . just chilling and soaking up the sun . you know , the usual beach stuff . <|im_end
+	Free: Pattern=no ,, Pattern=and, Pattern=not, Pattern=you, Pattern=ziplining
+	Constrained: 
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=a, Pattern=i, Pattern=it's quite, Pattern=have a, Pattern=. it's
+	Constrained: Pattern=a, Pattern=it's
+Turn ID=7| B | Human 2 : it's quite adventurous ! i'm not sure if i could do it though . i get a bit claustrophobic sometimes
+	Free: Pattern=it, Pattern=i'm, Pattern=i, Pattern=it's quite, Pattern=not, Pattern=though, Pattern=get a
+	Constrained: Pattern=a, Pattern=get, Pattern=it's
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=though, Pattern=it, Pattern=think, Pattern=i, Pattern=don't, Pattern=was
+	Constrained: 
+Turn ID=9| B | Human 2 : was it ziplining ?
+	Free: Pattern=ziplining ?, Pattern=it, Pattern=was
+	Constrained: Pattern=ziplining
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=going to, Pattern=see you, Pattern=a, Pattern=and, Pattern=i'm, Pattern=that's, Pattern=so
+	Constrained: Pattern=to, Pattern=you
+Turn ID=11| B | Human 2 : i see you too ! have a great day and don't do anything too crazy 😂
+	Free: Pattern=see you, Pattern=have a, Pattern=and, Pattern=don't, Pattern=day, Pattern=i
+	Constrained: Pattern=a, Pattern=you
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=going to, Pattern=massage, Pattern=no ,, Pattern=get a, Pattern=, i'm
+	Constrained: Pattern=to, Pattern=a, Pattern=get, Pattern=i'm
+Turn ID=13| B | Human 2 : that's great ! massages are great for relaxation and releasing tension . you should get one every week ! ��
+	Free: Pattern=you should, Pattern=that's, Pattern=and, Pattern=get
+	Constrained: Pattern=you
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional
+	Constrained: 
+Turn ID=15| B | Human 2 : you're right 🙏 traditional massage is amazing . i get one every 2 weeks and it always leaves me feeling so
+	Free: Pattern=massage, Pattern=traditional, Pattern=i, Pattern=get, Pattern=so, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=you, Pattern=a, Pattern=you should, Pattern=day, Pattern=to, Pattern=it's
+	Constrained: Pattern=you
+Turn ID=17| B | Human 2 : i'm glad you think so 😊 have a great day and don't forget to relax ! 😴<
+	Free: Pattern=you, Pattern=have a, Pattern=and, Pattern=think, Pattern=i'm, Pattern=day, Pattern=don't, Pattern=to, Pattern=so
+	Constrained: Pattern=a

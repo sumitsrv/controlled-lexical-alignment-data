@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ mark _. i_ work in _accounting_ 
+B|3| Human 2: this is _the_ real [accounting] [i'm] an actor playing _a_ high school student . 
+A|4| Human 1: _what_ does [a] _fish_ groomer do ? 
+B|5| Human 2: they also _sell_ [fish] groomers , [what] are _the_ real [accounting] jobs ? 
+A|6| Human 1: interesting . what's type _of fish_ do [you] _take care of_ ? 
+B|7| Human 2: [i] [take care [of] fish] _and_ [i'm] [a] professional chef 
+A|8| Human 1: [i] balance [the] books [and] do financial analysis for [a] medium sized company 
+B|9| Human 2: [i] [take care [of] fish] [and] [i'm] [a] professional athlete . 
+A|10| Human 1: well [i] actually think about pursuing photography , but it's really hard 
+B|11| Human 2: [i] [take care [of] fish] [and] [i'm] [a] professional photographer 
+A|12| Human 1: thank [you] tom !! [i'm] starting by trying to [sell] my _pictures_ online 
+B|13| Human 2: aye [. i] [sell] [the] [pictures] on amazon . they've got [a] lot [of] cool stuff too . 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=. i, Pattern=accounting, Pattern=i'm
+	Constrained: Pattern=i
+Turn ID=3| B | Human 2 : this is the real accounting i'm an actor playing a high school student .
+	Free: Pattern=a, Pattern=accounting, Pattern=the, Pattern=i'm
+	Constrained: 
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=a, Pattern=fish, Pattern=what
+	Constrained: 
+Turn ID=5| B | Human 2 : they also sell fish groomers , what are the real accounting jobs ?
+	Free: Pattern=what, Pattern=accounting, Pattern=the, Pattern=sell, Pattern=fish
+	Constrained: 
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=take care of, Pattern=of fish, Pattern=you
+	Constrained: Pattern=fish, Pattern=of
+Turn ID=7| B | Human 2 : i take care of fish and i'm a professional chef
+	Free: Pattern=a, Pattern=and, Pattern=of fish, Pattern=i'm, Pattern=take care of, Pattern=i
+	Constrained: Pattern=fish, Pattern=of
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=and, Pattern=a, Pattern=the, Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : i take care of fish and i'm a professional athlete .
+	Free: Pattern=a, Pattern=and, Pattern=of fish, Pattern=i'm, Pattern=take care of, Pattern=i
+	Constrained: Pattern=fish, Pattern=of
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : i take care of fish and i'm a professional photographer
+	Free: Pattern=a, Pattern=and, Pattern=of fish, Pattern=i'm, Pattern=take care of, Pattern=i
+	Constrained: Pattern=fish, Pattern=of
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=sell, Pattern=i'm, Pattern=pictures, Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : aye . i sell the pictures on amazon . they've got a lot of cool stuff too .
+	Free: Pattern=of, Pattern=a, Pattern=pictures, Pattern=. i, Pattern=sell, Pattern=the
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

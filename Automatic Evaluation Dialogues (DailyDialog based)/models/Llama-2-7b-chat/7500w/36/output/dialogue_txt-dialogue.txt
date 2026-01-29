@@ -1,0 +1,55 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] . this _is_ a pleasant surprise . 
+A|2| Human 1: haha ... _thanks !_ how _did_ _you_ _like_ _the gift_ ? 
+B|3| Human 2: _i_ [did] not receive [the gift] as [you] are in a text-based chat with me and _i_ am an ai assistant . however , i' 
+A|4| Human 1: _hope you_ _like_ it ! _morning_ [is] _good_ . _busy finishing_ up _stuff before the_ _holidays_ . 
+B|5| Human 2: it's [good] _to_ [you] [the gift] [before] [holidays] [like] [thanks] . [hope you] enjoy your day . </|im_end|> </s> 
+A|6| Human 1: _yes_ 
+B|7| Human 2: [yes] , you're right ! 🙂 [morning] [good] , [thanks !] [busy finishing] [holidays] [stuff before the] day ends . 
+A|8| Human 1: _hawaii_ ... looking forward [to] _warm_ _beaches_ . 
+B|9| Human 2: [yes] ! [hawaii] [beaches] [warm] and sunny [like] [holidays] [gift] ! [hope you] [good] luck [finishing] [the] [stuff before] sun goes down ! 
+A|10| Human 1: mauii ... [hope] [i] [like] it _too_ . _never been_ _there_ [before] . 
+B|11| Human 2: [hope you] enjoy maui ! [yes] [there] [beaches] [like] [before] hawai [too] ! [never been] [before] [holidays] [gift] . <|im_end| 
+A|12| Human 1: awesome ! [thanks] for [the] tip . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi . this is a pleasant surprise .
+	Free: Pattern=hi, Pattern=is
+	Constrained: 
+Turn ID=2| A | Human 1 : haha ... thanks ! how did you like the gift ?
+	Free: Pattern=the gift, Pattern=you, Pattern=did, Pattern=thanks !, Pattern=like
+	Constrained: Pattern=gift, Pattern=thanks, Pattern=the
+Turn ID=3| B | Human 2 : i did not receive the gift as you are in a text-based chat with me and i am an ai assistant . however , i'
+	Free: Pattern=the gift, Pattern=i, Pattern=you, Pattern=did
+	Constrained: Pattern=gift, Pattern=the
+Turn ID=4| A | Human 1 : hope you like it ! morning is good . busy finishing up stuff before the holidays .
+	Free: Pattern=good, Pattern=holidays, Pattern=stuff before the, Pattern=morning, Pattern=hope you, Pattern=like, Pattern=is, Pattern=busy finishing
+	Constrained: Pattern=finishing, Pattern=hope, Pattern=you, Pattern=the, Pattern=before, Pattern=stuff before
+Turn ID=5| B | Human 2 : it's good to you the gift before holidays like thanks . hope you enjoy your day . </|im_end|> </s>
+	Free: Pattern=good, Pattern=thanks, Pattern=holidays, Pattern=the gift, Pattern=you, Pattern=hope you, Pattern=like, Pattern=before, Pattern=to
+	Constrained: Pattern=hope, Pattern=you, Pattern=gift, Pattern=the
+Turn ID=6| A | Human 1 : yes
+	Free: Pattern=yes
+	Constrained: 
+Turn ID=7| B | Human 2 : yes , you're right ! 🙂 morning good , thanks ! busy finishing holidays stuff before the day ends .
+	Free: Pattern=good, Pattern=holidays, Pattern=yes, Pattern=stuff before the, Pattern=morning, Pattern=thanks !, Pattern=busy finishing
+	Constrained: Pattern=finishing, Pattern=thanks, Pattern=the, Pattern=before, Pattern=stuff before
+Turn ID=8| A | Human 1 : hawaii ... looking forward to warm beaches .
+	Free: Pattern=hawaii, Pattern=beaches, Pattern=warm, Pattern=to
+	Constrained: 
+Turn ID=9| B | Human 2 : yes ! hawaii beaches warm and sunny like holidays gift ! hope you good luck finishing the stuff before sun goes down !
+	Free: Pattern=holidays, Pattern=yes, Pattern=hawaii, Pattern=gift, Pattern=hope you, Pattern=like, Pattern=the, Pattern=warm, Pattern=stuff before, Pattern=beaches, Pattern=finishing, Pattern=good
+	Constrained: Pattern=hope, Pattern=you, Pattern=before
+Turn ID=10| A | Human 1 : mauii ... hope i like it too . never been there before .
+	Free: Pattern=never been, Pattern=hope, Pattern=there, Pattern=too, Pattern=i, Pattern=like, Pattern=before
+	Constrained: 
+Turn ID=11| B | Human 2 : hope you enjoy maui ! yes there beaches like before hawai too ! never been before holidays gift . <|im_end|
+	Free: Pattern=never been, Pattern=holidays, Pattern=yes, Pattern=there, Pattern=too, Pattern=gift, Pattern=hope you, Pattern=like, Pattern=before, Pattern=beaches
+	Constrained: Pattern=hope, Pattern=you
+Turn ID=12| A | Human 1 : awesome ! thanks for the tip .
+	Free: Pattern=thanks, Pattern=the
+	Constrained: 

@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ came back from _a_ _ski_ trip 
+B|3| Human 2: awesome ! _did you_ have [a] _good_ time ? 
+A|4| Human 1: _i_ slammed onto _an_ _ice_ wall _, but_ _i_ _got_ better _and_ turning after that _haha_ 
+B|5| Human 2: [haha] _nice_ ! [ice] walls _can_ be challenging [, but] _it_ sounds like _you_ [got] some [great] experiences . _do you_ [ski] often ? <|im_ 
+A|6| Human 1: oh _cool_ ! [do you] _know any_ french ? _i_ used _to_ take french _in_ high school [but] basically forgot most _of_ [it] 
+B|7| Human 2: i'm [just] [an] ai , _i don't_ [know any] languages [, but] i'm happy [to] help [you] practice ! what _else_ _did you_ 
+A|8| Human 1: [did you] go anywhere [else] _in_ montreal ? 
+B|9| Human 2: there _are_ so many [cool] things [to] see [and] [do] there ! [did you] have [a] favorite place or activity ? 
+A|10| Human 1: oh [cool] ! i've always wanted [to] attend _the_ olympics as [a] viewer _of_ course [i] _watch_ [a] lot _of_ olympic _figure skating_ on youtube 
+B|11| Human 2: wow , that's amazing ! [i] bet _it was_ so [cool] [to] [watch] [the] [figure skating] [in] person . [did you] try [any] [of] [the] 
+A|12| Human 1: barely [i don't] think [i] [can] , [in] conscience , call [it] that [i] kind [of] [just] pull myself along [the] sides 
+B|13| Human 2: hahaha , that's _okay ! it_ [can] be challenging [to] try new things , especially if they're outside [of] our comfort zone . 
+A|14| Human 1: [are] [you] [good] at <redacted_term> ? 
+B|15| Human 2: i'm [just] [an] ai , [i don't] have personal experiences or opinions , so [i] can't <redacted_ter 
+A|16| Human 1: [okay ! [it] was] [nice] talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=a, Pattern=ski, Pattern=great, Pattern=just
+	Constrained: 
+Turn ID=3| B | Human 2 : awesome ! did you have a good time ?
+	Free: Pattern=did you, Pattern=good, Pattern=a
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=an, Pattern=and, Pattern=i, Pattern=haha, Pattern=got, Pattern=ice, Pattern=, but
+	Constrained: Pattern=but
+Turn ID=5| B | Human 2 : haha nice ! ice walls can be challenging , but it sounds like you got some great experiences . do you ski often ? <|im_
+	Free: Pattern=ski, Pattern=nice, Pattern=can, Pattern=haha, Pattern=got, Pattern=you, Pattern=great, Pattern=ice, Pattern=, but, Pattern=it, Pattern=do you
+	Constrained: Pattern=do, Pattern=but, Pattern=you
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=of, Pattern=cool, Pattern=know any, Pattern=in, Pattern=i, Pattern=to, Pattern=but, Pattern=it, Pattern=do you
+	Constrained: Pattern=do, Pattern=you, Pattern=any
+Turn ID=7| B | Human 2 : i'm just an ai , i don't know any languages , but i'm happy to help you practice ! what else did you
+	Free: Pattern=an, Pattern=know any, Pattern=else, Pattern=to, Pattern=you, Pattern=, but, Pattern=did you, Pattern=just, Pattern=i don't
+	Constrained: Pattern=any, Pattern=but, Pattern=you, Pattern=i
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you, Pattern=in, Pattern=else
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : there are so many cool things to see and do there ! did you have a favorite place or activity ?
+	Free: Pattern=did you, Pattern=cool, Pattern=and, Pattern=are, Pattern=to, Pattern=do, Pattern=a
+	Constrained: Pattern=you
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=of, Pattern=a, Pattern=cool, Pattern=figure skating, Pattern=i, Pattern=the, Pattern=to, Pattern=watch
+	Constrained: 
+Turn ID=11| B | Human 2 : wow , that's amazing ! i bet it was so cool to watch the figure skating in person . did you try any of the
+	Free: Pattern=it was, Pattern=of, Pattern=did you, Pattern=cool, Pattern=any, Pattern=figure skating, Pattern=in, Pattern=i, Pattern=the, Pattern=to, Pattern=watch
+	Constrained: Pattern=it, Pattern=you
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=it, Pattern=can, Pattern=in, Pattern=i, Pattern=the, Pattern=just, Pattern=i don't
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : hahaha , that's okay ! it can be challenging to try new things , especially if they're outside of our comfort zone .
+	Free: Pattern=okay ! it, Pattern=to, Pattern=of, Pattern=can
+	Constrained: Pattern=it
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=good, Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm just an ai , i don't have personal experiences or opinions , so i can't <redacted_ter
+	Free: Pattern=i don't, Pattern=i, Pattern=an, Pattern=just
+	Constrained: Pattern=i
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=it was, Pattern=you, Pattern=nice, Pattern=okay ! it, Pattern=to
+	Constrained: Pattern=it

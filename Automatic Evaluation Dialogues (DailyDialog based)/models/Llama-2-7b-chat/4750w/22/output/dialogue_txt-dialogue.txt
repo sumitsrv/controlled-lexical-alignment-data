@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: doing _great !_ what _are you looking forward to_ ? 
+B|3| Human 2: that's [great] [to] hear ! 😊 i'm [looking forward to] helping [you] _with_ any questions or tasks [you] have . 
+A|4| Human 1: yay _! turkey and shopping_ ! 
+B|5| Human 2: 🎃 [turkey and shopping] [are] [great !] [are you looking forward to] any specific activities or items during your [shopping] trip ? <| 
+A|6| Human 1: yea me _too_ . _i_ sometimes eat noodle soups in _thanksgiving_ instead haha 
+B|7| Human 2: 😂 that's [great [!] turkey and shopping] _can_ be a lot of fun , especially during _the_ holiday season . is there 
+A|8| Human 1: me neither . someone told me _that it_ depends on [the] _stuffing inside the turkey_ . _some_ people _make_ very _good_ _stuffing_ 
+B|9| Human 2: [stuffing inside the turkey] 😂 that's [great] [too] ! [thanksgiving] is a [good] time [to] [make] [some] new recipes [and] 
+A|10| Human 1: yea . what do [you] _plan to buy_ ? 
+B|11| Human 2: 🤔 [i] [plan to buy] [some] new clothes [and] shoes for [the] holiday season , but [i] also want [to] [make] sure [that] [i] 
+A|12| Human 1: ah cool . so [you] _can run_ more frequently ? :) 
+B|13| Human 2: 😂 nope , [i] [can run] , but [i] just want [to] [make] sure thati [buy] [the] right stuff [and] [that it] will last 
+A|14| Human 1: yay , all [the] best [with] keeping calories in check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=are you looking forward to, Pattern=great !
+	Constrained: Pattern=are, Pattern=are you, Pattern=to, Pattern=looking forward to, Pattern=you, Pattern=great
+Turn ID=3| B | Human 2 : that's great to hear ! 😊 i'm looking forward to helping you with any questions or tasks you have .
+	Free: Pattern=to, Pattern=you, Pattern=great, Pattern=with, Pattern=looking forward to
+	Constrained: Pattern=to
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=! turkey and shopping
+	Constrained: Pattern=shopping, Pattern=and, Pattern=turkey and shopping
+Turn ID=5| B | Human 2 : 🎃 turkey and shopping are great ! are you looking forward to any specific activities or items during your shopping trip ? <|
+	Free: Pattern=are, Pattern=great !, Pattern=are you looking forward to, Pattern=turkey and shopping, Pattern=shopping
+	Constrained: Pattern=and, Pattern=are, Pattern=are you, Pattern=to, Pattern=looking forward to, Pattern=shopping, Pattern=you, Pattern=great
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=thanksgiving, Pattern=too, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : 😂 that's great ! turkey and shopping can be a lot of fun , especially during the holiday season . is there
+	Free: Pattern=! turkey and shopping, Pattern=great !, Pattern=the, Pattern=can
+	Constrained: Pattern=shopping, Pattern=and, Pattern=great, Pattern=turkey and shopping
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=good, Pattern=stuffing inside the turkey, Pattern=that it, Pattern=stuffing, Pattern=some, Pattern=make, Pattern=the
+	Constrained: Pattern=that, Pattern=stuffing, Pattern=the
+Turn ID=9| B | Human 2 : stuffing inside the turkey 😂 that's great too ! thanksgiving is a good time to make some new recipes and
+	Free: Pattern=good, Pattern=stuffing inside the turkey, Pattern=great, Pattern=thanksgiving, Pattern=some, Pattern=make, Pattern=to, Pattern=and, Pattern=too
+	Constrained: Pattern=stuffing, Pattern=the
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=plan to buy, Pattern=you
+	Constrained: Pattern=to, Pattern=buy
+Turn ID=11| B | Human 2 : 🤔 i plan to buy some new clothes and shoes for the holiday season , but i also want to make sure that i
+	Free: Pattern=and, Pattern=some, Pattern=the, Pattern=to, Pattern=that, Pattern=make, Pattern=plan to buy, Pattern=i
+	Constrained: Pattern=to, Pattern=buy
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=can run, Pattern=you
+	Constrained: Pattern=can
+Turn ID=13| B | Human 2 : 😂 nope , i can run , but i just want to make sure thati buy the right stuff and that it will last
+	Free: Pattern=can run, Pattern=that it, Pattern=buy, Pattern=and, Pattern=the, Pattern=to, Pattern=make, Pattern=i
+	Constrained: Pattern=that, Pattern=can
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=with, Pattern=the
+	Constrained: 

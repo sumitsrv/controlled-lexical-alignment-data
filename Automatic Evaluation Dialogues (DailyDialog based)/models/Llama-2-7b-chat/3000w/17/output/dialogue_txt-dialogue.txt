@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how was _your_ weekend ? 
+A|2| Human 1: pretty _good_ . _just_ _went_ _to_ _church and_ hangout _with friends_ 
+B|3| Human 2: that sounds great ! [church and] [friends] are always [good] for the soul . _did _you_ have_ _any_ fun plans [with] _your_ [friends] ? <|im_end| 
+A|4| Human 1: [did you] do anything ? 
+B|5| Human 2: i [just] [did] some work [and] [went] for _a_ walk [with] my dog . it was nice [to] get some fresh _air_ [and] relax . how about [you] ? < 
+A|6| Human 1: yum yum yum no only _good old oily frier_ 
+B|7| Human 2: 😅 sorry , i think [you] lost me there for _a_ second . [did you] [just] say [good old oily frier] ? � 
+A|8| Human 1: do [you have] one _at_ [your] home or _were_ [you] _at_ [a] [friends] place ? 
+B|9| Human 2: [you] [were] [just] [with friends] [and] [did] nothing ? 
+A|10| Human 1: _i'm going to impersonate_ [a] _pumpkin_ 
+B|11| Human 2: [i'm going to impersonate] [your] dog [and] bark [at] [you] 
+A|12| Human 1: [i'm] pretty _unique_ person 
+B|13| Human 2: [i'm going to impersonate] [you] [and] say [your] [pumpkin] is [unique] 
+A|14| Human 1: [any] other hobbies besides [air] frying _everything_ ? 🙂 
+B|15| Human 2: [i'm going] [impersonate] [your] [air] fryer [and] say [everything] [you] make is [unique] 🙂<|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how was your weekend ?
+	Free: Pattern=hi !, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . just went to church and hangout with friends
+	Free: Pattern=good, Pattern=with friends, Pattern=just, Pattern=went, Pattern=church and, Pattern=to
+	Constrained: Pattern=friends, Pattern=with, Pattern=and
+Turn ID=3| B | Human 2 : that sounds great ! church and friends are always good for the soul . did you have any fun plans with your friends ? <|im_end|
+	Free: Pattern=good, Pattern=did you, Pattern=any, Pattern=church and, Pattern=you have, Pattern=your, Pattern=friends, Pattern=with
+	Constrained: Pattern=did, Pattern=and, Pattern=you
+Turn ID=4| A | Human 1 : did you do anything ?
+	Free: Pattern=did you
+	Constrained: Pattern=did, Pattern=you
+Turn ID=5| B | Human 2 : i just did some work and went for a walk with my dog . it was nice to get some fresh air and relax . how about you ? <
+	Free: Pattern=air, Pattern=you, Pattern=just, Pattern=went, Pattern=and, Pattern=to, Pattern=with, Pattern=did, Pattern=a
+	Constrained: 
+Turn ID=6| A | Human 1 : yum yum yum no only good old oily frier
+	Free: Pattern=good old oily frier
+	Constrained: Pattern=good
+Turn ID=7| B | Human 2 : 😅 sorry , i think you lost me there for a second . did you just say good old oily frier ? �
+	Free: Pattern=you, Pattern=a, Pattern=good old oily frier, Pattern=just, Pattern=did you
+	Constrained: Pattern=good, Pattern=you, Pattern=did
+Turn ID=8| A | Human 1 : do you have one at your home or were you at a friends place ?
+	Free: Pattern=you, Pattern=a, Pattern=at, Pattern=you have, Pattern=your, Pattern=friends, Pattern=were
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : you were just with friends and did nothing ?
+	Free: Pattern=with friends, Pattern=you, Pattern=just, Pattern=did, Pattern=and, Pattern=were
+	Constrained: Pattern=friends, Pattern=with
+Turn ID=10| A | Human 1 : i'm going to impersonate a pumpkin
+	Free: Pattern=i'm going to impersonate, Pattern=a, Pattern=pumpkin
+	Constrained: Pattern=i'm going, Pattern=impersonate, Pattern=to, Pattern=i'm
+Turn ID=11| B | Human 2 : i'm going to impersonate your dog and bark at you
+	Free: Pattern=you, Pattern=i'm going to impersonate, Pattern=and, Pattern=at, Pattern=your
+	Constrained: Pattern=i'm going, Pattern=impersonate, Pattern=to, Pattern=i'm
+Turn ID=12| A | Human 1 : i'm pretty unique person
+	Free: Pattern=unique, Pattern=i'm
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm going to impersonate you and say your pumpkin is unique
+	Free: Pattern=you, Pattern=unique, Pattern=i'm going to impersonate, Pattern=and, Pattern=your, Pattern=pumpkin
+	Constrained: Pattern=i'm going, Pattern=impersonate, Pattern=to, Pattern=i'm
+Turn ID=14| A | Human 1 : any other hobbies besides air frying everything ? 🙂
+	Free: Pattern=everything, Pattern=any, Pattern=air
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm going impersonate your air fryer and say everything you make is unique 🙂<|im_end
+	Free: Pattern=air, Pattern=you, Pattern=unique, Pattern=and, Pattern=everything, Pattern=your, Pattern=i'm going, Pattern=impersonate
+	Constrained: Pattern=i'm

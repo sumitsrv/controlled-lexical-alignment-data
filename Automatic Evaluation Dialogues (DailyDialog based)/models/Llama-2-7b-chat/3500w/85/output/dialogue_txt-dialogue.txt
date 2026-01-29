@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! 
+A|2| Human 1: how's life ? 
+B|3| Human 2: great ! how can _i_ help _you_ today ? 
+A|4| Human 1: lol which _cafe_ ? let me guess . _<redacted_term>_ ? 
+B|5| Human 2: i'm just an ai , _i_ don't _have_ access _to_ personal information _or_ [cafe] recommendations . 
+A|6| Human 1: _what_ is _your_ favoriate _cuisine ?_ my _favorite_ _food_ is _chinese_ _. _what_ about you ?_ 
+B|7| Human 2: i'm just an ai , _i_ don't _have_ personal preferences _or_ taste buds . 
+A|8| Human 1: hmm [you] _like_ _spicy_ _food_ . nice 
+B|9| Human 2: [what about you ?] how are [your] [favorite] [chinese] [food] [spicy] [like] <redacted_term>'s [cuisine ?] < 
+A|10| Human 1: [i] _would_ _recommend_ _hunan impression_ which has _very good_ _hunan_ cruisine . not sure if [you] [have] tried it [or] not 
+B|11| Human 2: [hunan impression] sounds [good] [. what] [would] [you] [recommend] from their menu 
+A|12| Human 1: yeah of course the fun fact is that the owner of _<redacted_term> used to run_ _<redacted_term>_ 
+B|13| Human 2: that's [very good] [<redacted_term> used to run] [hunan impression] 
+A|14| Human 1: same former owner ?? 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's life ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how can i help you today ?
+	Free: Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : lol which cafe ? let me guess . <redacted_term> ?
+	Free: Pattern=<redacted_term>, Pattern=cafe
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have access to personal information or cafe recommendations .
+	Free: Pattern=cafe, Pattern=have, Pattern=i, Pattern=or, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : what is your favoriate cuisine ? my favorite food is chinese . what about you ?
+	Free: Pattern=cuisine ?, Pattern=what, Pattern=favorite, Pattern=chinese, Pattern=your, Pattern=food, Pattern=. what, Pattern=what about you ?
+	Constrained: Pattern=you, Pattern=what
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or taste buds .
+	Free: Pattern=or, Pattern=have, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : hmm you like spicy food . nice
+	Free: Pattern=food, Pattern=you, Pattern=spicy, Pattern=like
+	Constrained: 
+Turn ID=9| B | Human 2 : what about you ? how are your favorite chinese food spicy like <redacted_term>'s cuisine ? <
+	Free: Pattern=spicy, Pattern=cuisine ?, Pattern=favorite, Pattern=chinese, Pattern=your, Pattern=what about you ?, Pattern=food, Pattern=like
+	Constrained: Pattern=you, Pattern=what
+Turn ID=10| A | Human 1 : i would recommend hunan impression which has very good hunan cruisine . not sure if you have tried it or not
+	Free: Pattern=you, Pattern=have, Pattern=recommend, Pattern=i, Pattern=hunan, Pattern=or, Pattern=would, Pattern=very good, Pattern=hunan impression
+	Constrained: Pattern=hunan, Pattern=good
+Turn ID=11| B | Human 2 : hunan impression sounds good . what would you recommend from their menu
+	Free: Pattern=good, Pattern=you, Pattern=recommend, Pattern=would, Pattern=hunan impression, Pattern=. what
+	Constrained: Pattern=hunan, Pattern=what
+Turn ID=12| A | Human 1 : yeah of course the fun fact is that the owner of <redacted_term> used to run <redacted_term>
+	Free: Pattern=<redacted_term> used to run, Pattern=<redacted_term>
+	Constrained: Pattern=<redacted_term>, Pattern=to
+Turn ID=13| B | Human 2 : that's very good <redacted_term> used to run hunan impression
+	Free: Pattern=<redacted_term> used to run, Pattern=very good, Pattern=hunan impression
+	Constrained: Pattern=<redacted_term>, Pattern=to, Pattern=hunan, Pattern=good
+Turn ID=14| A | Human 1 : same former owner ?? 🙂
+	Free: 
+	Constrained: 

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello . how's your week coming along ? 
+A|2| Human 1: _it's_ _great_ , _thanks_ _. _i'm trying_ to_ learn how _to_ make _croissants_ . 
+B|3| Human 2: _i_ am [great] [thanks] for asking ! _i_ am just about [to] leave work _and_ go [to] _the_ store , [i'm] ready [to] _get_ _a_ croissant 
+A|4| Human 1: _i've_ done _them_ once or twice so far , _but_ _they_ _haven't_ _been_ flakey enough _. _i'm trying_ to_ figure _out_ why _. what_ kind _of_ _cookies_ _have_ _you_ _made_ ? 
+B|5| Human 2: _i_ [haven't] [made] [croissants] yet [but] _i_ [have] [been] making [cookies] [. i'm trying] [out] _a_ new recipe _and_ [they] are amazing ! 
+A|6| Human 1: ah , good thought , [thanks] ! 
+B|7| Human 2: [i've] [been] busy ! [i'm trying to] _get_ [out] [of] _the_ habit [of] eating junkfood [but] [it's] hard [to] resist , especially _if_ [they] [have] 
+A|8| Human 1: now that _is_ [a] good idea _. i'll_ give _it_ [a] try next _time_ . would _you_ say _you_ [have] [a] sweet tooth ? 
+B|9| Human 2: _i_ [have] _some_ chocolate chip [cookies] in _the_ fridge . _i_ [have] [been] making [them] for years [to] take home [to] share at work . [it] [is] such 
+A|10| Human 1: [some] people _don't_ ! [but] yeah , me too , [i] think i'd _eat_ pastries _all the time_ [if] [i] could [get] away with [it] . 
+B|11| Human 2: [i'm] [the] same way [. i'll] [eat] [cookies] [all the time] _and_ then [get] upset [i] didn't [eat] [them] earlier . [but] [don't] 
+A|12| Human 1: wow ! [the] last [time] [i] paid attention [to] that sort [of] stuff was when <redacted_term> was being marketed as [a] fat substitute , [and] caused [all] sorts [of] crazy stomach upsets . 
+B|13| Human 2: [i] know [what] [you] mean [and] _that's_ [a] tough one [. what] do [you] know about [the] health implications [of] processed food ? 
+A|14| Human 1: ah , maybe [that's] [the] solution [i] need [to] enjoy sweets [and] not feel guilty 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello . how's your week coming along ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : it's great , thanks . i'm trying to learn how to make croissants .
+	Free: Pattern=thanks, Pattern=great, Pattern=. i'm trying, Pattern=i'm trying to, Pattern=croissants, Pattern=to, Pattern=it's
+	Constrained: Pattern=to, Pattern=i'm
+Turn ID=3| B | Human 2 : i am great thanks for asking ! i am just about to leave work and go to the store , i'm ready to get a croissant
+	Free: Pattern=thanks, Pattern=great, Pattern=a, Pattern=and, Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=get
+	Constrained: 
+Turn ID=4| A | Human 1 : i've done them once or twice so far , but they haven't been flakey enough . i'm trying to figure out why . what kind of cookies have you made ?
+	Free: Pattern=of, Pattern=have, Pattern=made, Pattern=they, Pattern=. i'm trying, Pattern=cookies, Pattern=i'm trying to, Pattern=you, Pattern=out, Pattern=i've, Pattern=haven't, Pattern=. what, Pattern=been, Pattern=them, Pattern=but
+	Constrained: Pattern=what, Pattern=to, Pattern=i'm
+Turn ID=5| B | Human 2 : i haven't made croissants yet but i have been making cookies . i'm trying out a new recipe and they are amazing !
+	Free: Pattern=out, Pattern=have, Pattern=made, Pattern=they, Pattern=a, Pattern=. i'm trying, Pattern=haven't, Pattern=i, Pattern=croissants, Pattern=been, Pattern=but, Pattern=and, Pattern=cookies
+	Constrained: Pattern=i'm
+Turn ID=6| A | Human 1 : ah , good thought , thanks !
+	Free: Pattern=thanks
+	Constrained: 
+Turn ID=7| B | Human 2 : i've been busy ! i'm trying to get out of the habit of eating junkfood but it's hard to resist , especially if they have
+	Free: Pattern=of, Pattern=out, Pattern=have, Pattern=they, Pattern=i'm trying to, Pattern=the, Pattern=to, Pattern=been, Pattern=get, Pattern=i've, Pattern=if, Pattern=it's, Pattern=but
+	Constrained: Pattern=to, Pattern=i'm
+Turn ID=8| A | Human 1 : now that is a good idea . i'll give it a try next time . would you say you have a sweet tooth ?
+	Free: Pattern=time, Pattern=you, Pattern=have, Pattern=it, Pattern=is, Pattern=. i'll, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : i have some chocolate chip cookies in the fridge . i have been making them for years to take home to share at work . it is such
+	Free: Pattern=have, Pattern=some, Pattern=the, Pattern=to, Pattern=been, Pattern=them, Pattern=it, Pattern=cookies, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=10| A | Human 1 : some people don't ! but yeah , me too , i think i'd eat pastries all the time if i could get away with it .
+	Free: Pattern=eat, Pattern=all the time, Pattern=it, Pattern=if, Pattern=some, Pattern=i, Pattern=don't, Pattern=get, Pattern=but
+	Constrained: Pattern=all, Pattern=the, Pattern=time
+Turn ID=11| B | Human 2 : i'm the same way . i'll eat cookies all the time and then get upset i didn't eat them earlier . but don't
+	Free: Pattern=eat, Pattern=i'm, Pattern=i, Pattern=the, Pattern=don't, Pattern=get, Pattern=all the time, Pattern=. i'll, Pattern=and, Pattern=cookies, Pattern=them, Pattern=but
+	Constrained: Pattern=all, Pattern=time, Pattern=the
+Turn ID=12| A | Human 1 : wow ! the last time i paid attention to that sort of stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts of crazy stomach upsets .
+	Free: Pattern=time, Pattern=of, Pattern=a, Pattern=and, Pattern=i, Pattern=to, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=13| B | Human 2 : i know what you mean and that's a tough one . what do you know about the health implications of processed food ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=a, Pattern=and, Pattern=i, Pattern=. what, Pattern=that's, Pattern=the
+	Constrained: Pattern=what
+Turn ID=14| A | Human 1 : ah , maybe that's the solution i need to enjoy sweets and not feel guilty 🙂
+	Free: Pattern=and, Pattern=i, Pattern=to, Pattern=that's, Pattern=the
+	Constrained: 

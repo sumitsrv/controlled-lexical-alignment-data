@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: last weekend _i_ _saw_ "the parasite . " ever _heard_ _of_ _it ?_ 
+B|3| Human 2: _oh_ , yes ! it's _a_ very popular movie . _the_ critics _are_ raving about _it ._ have _you_ _seen_ [it ?] <|im_end 
+A|4| Human 1: _my_ friend wanted _to_ see [it .] [it] has _great_ reviews on imdb _and_ rotten tomatoes _! what_ _did you_ _do_ last weekend ? 
+B|5| Human 2: [i] went [to] _a_ concert [and] [saw] [my] favorite band play . they were amazing ! have [you] [heard] their new album ? <|im_end| 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: yeah ! [the mandalorian] _is_ [the] best . i'm also watching [the] new star trek series . it's _really_ _good_ [! what] 
+A|8| Human 1: lol [are] [you] [a] big _marvel_ fan ? 
+B|9| Human 2: [marvel] _is_ [great] ! [i] liked [the] avengers [and] black panther . [what] [do] [you] _think_ [of] [the] fantastic four movie ? <|im_end 
+A|10| Human 1: _i've_ only [seen] _spiderman_ . honestly [it] was [a] little _too scary_ [and] so [i] don't [think] [i] can bring myself [to] _watch the_ other [marvel] [movies] ! haha 
+B|11| Human 2: [too scary] ?! 😱 [did you] [watch the] same [spiderman] movie as me ? ������� 
+A|12| Human 1: [oh] [really] ? [to] be honest _i think the actor_ [is] not that _good looking_ , so not so surprising ! haha 
+B|13| Human 2: [i think the actor] _who_ played [spiderman] in [the] new [movies] [is] [really] [good looking] ! 😍 [i've] [seen] him in 
+A|14| Human 1: [who] [is] _loki_ ? [i've] never [heard] that name before 
+B|15| Human 2: [loki] [is] actually one [of] [the] most iconic villains in [marvel] ! [i] recommend checking out [the] thor [movies] , they [are] [really] [good] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=seen, Pattern=you, Pattern=movies
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=saw, Pattern=it ?, Pattern=i, Pattern=of, Pattern=heard
+	Constrained: Pattern=it
+Turn ID=3| B | Human 2 : oh , yes ! it's a very popular movie . the critics are raving about it . have you seen it ? <|im_end
+	Free: Pattern=it ?, Pattern=a, Pattern=oh, Pattern=are, Pattern=the, Pattern=seen, Pattern=you, Pattern=it .
+	Constrained: Pattern=it
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=did you, Pattern=do, Pattern=! what, Pattern=to, Pattern=my, Pattern=great, Pattern=it ., Pattern=it, Pattern=and
+	Constrained: Pattern=you, Pattern=it, Pattern=what
+Turn ID=5| B | Human 2 : i went to a concert and saw my favorite band play . they were amazing ! have you heard their new album ? <|im_end|
+	Free: Pattern=saw, Pattern=heard, Pattern=you, Pattern=a, Pattern=and, Pattern=i, Pattern=to, Pattern=my
+	Constrained: 
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : yeah ! the mandalorian is the best . i'm also watching the new star trek series . it's really good ! what
+	Free: Pattern=good, Pattern=the mandalorian, Pattern=! what, Pattern=is, Pattern=really, Pattern=the
+	Constrained: Pattern=the, Pattern=what
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=a, Pattern=are, Pattern=you, Pattern=marvel
+	Constrained: 
+Turn ID=9| B | Human 2 : marvel is great ! i liked the avengers and black panther . what do you think of the fantastic four movie ? <|im_end
+	Free: Pattern=of, Pattern=what, Pattern=do, Pattern=and, Pattern=think, Pattern=marvel, Pattern=the, Pattern=you, Pattern=great, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=too scary, Pattern=a, Pattern=i've, Pattern=think, Pattern=marvel, Pattern=i, Pattern=spiderman, Pattern=to, Pattern=watch the, Pattern=it, Pattern=and, Pattern=seen, Pattern=movies
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : too scary ?! 😱 did you watch the same spiderman movie as me ? �������
+	Free: Pattern=watch the, Pattern=did you, Pattern=too scary, Pattern=spiderman
+	Constrained: Pattern=the, Pattern=you
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=i think the actor, Pattern=is, Pattern=really, Pattern=to, Pattern=oh, Pattern=good looking
+	Constrained: Pattern=good, Pattern=i, Pattern=think, Pattern=the
+Turn ID=13| B | Human 2 : i think the actor who played spiderman in the new movies is really good looking ! 😍 i've seen him in
+	Free: Pattern=who, Pattern=i think the actor, Pattern=good looking, Pattern=i've, Pattern=is, Pattern=really, Pattern=the, Pattern=spiderman, Pattern=seen, Pattern=movies
+	Constrained: Pattern=good, Pattern=i, Pattern=think, Pattern=the
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=heard, Pattern=who, Pattern=i've, Pattern=is, Pattern=loki
+	Constrained: 
+Turn ID=15| B | Human 2 : loki is actually one of the most iconic villains in marvel ! i recommend checking out the thor movies , they are really good !
+	Free: Pattern=good, Pattern=of, Pattern=are, Pattern=marvel, Pattern=really, Pattern=the, Pattern=movies, Pattern=loki, Pattern=is, Pattern=i
+	Constrained: 

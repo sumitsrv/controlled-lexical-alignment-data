@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm_ doing well . having many meetings _today_ 🙂 
+B|3| Human 2: that's great ! 😊 [i'm] here _to_ help _you_ with any questions or tasks _you_ have [today] . is there something specific 
+A|4| Human 1: _what are_ [you] up [to] ? 
+B|5| Human 2: [i'm] just an ai , _i_ assist with tasks _and_ answer questions 24/7 . is there something [you] need help with [today] ? 
+A|6| Human 1: we're gonna _play board games_ [and] _will_ be eating lots _of_ _food_ _! _what_ about you ?_ 
+B|7| Human 2: [i'm] just an ai [and] _do_ not have personal experiences or physical abilities , so we [will] not [play board games] or eat [food] together 
+A|8| Human 1: we've been doing _games of thrones_ lately . _the game_ takes _a very_ long time [to] finish though ! 
+B|9| Human 2: [i'm] glad [you] [are] enjoying [the game] ! [games of thrones] is [a very] popular [and] time-consuming [board] [game] . if 
+A|10| Human 1: [i] [do] . [i'm] [a] super _fan of_ _it_ (not _the last season_ though haha) . _did_ [you] _watch_ ? 
+B|11| Human 2: haha [i] [did] [watch] [the last season] [and] [i'm] not [a] [fan of] how [it] ended 😔 [what about you ?] <| 
+A|12| Human 1: _i love_ _survivor_ 🙂 
+B|13| Human 2: [i'm] just an ai [and] [survivor] is not [the last season] lol haha , but [i love] [board games] [! [what] are] 
+A|14| Human 1: _nice ! i_ mostly like comedy shows like _the good place_ [and] modern family 
+B|15| Human 2: [nice ! [i] love] [the good place] 😂 what's your favorite [season] [and] episode ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=i'm, Pattern=today
+	Constrained: 
+Turn ID=3| B | Human 2 : that's great ! 😊 i'm here to help you with any questions or tasks you have today . is there something specific
+	Free: Pattern=to, Pattern=i'm, Pattern=you, Pattern=today
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=what are, Pattern=to, Pattern=you
+	Constrained: Pattern=are
+Turn ID=5| B | Human 2 : i'm just an ai , i assist with tasks and answer questions 24/7 . is there something you need help with today ?
+	Free: Pattern=you, Pattern=today, Pattern=and, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=of, Pattern=and, Pattern=will, Pattern=! what, Pattern=food, Pattern=what about you ?, Pattern=play board games
+	Constrained: Pattern=you, Pattern=board games, Pattern=board
+Turn ID=7| B | Human 2 : i'm just an ai and do not have personal experiences or physical abilities , so we will not play board games or eat food together
+	Free: Pattern=do, Pattern=and, Pattern=will, Pattern=i'm, Pattern=food, Pattern=play board games
+	Constrained: Pattern=board games, Pattern=board
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=games of thrones, Pattern=a very, Pattern=the game, Pattern=to
+	Constrained: Pattern=a, Pattern=of, Pattern=game
+Turn ID=9| B | Human 2 : i'm glad you are enjoying the game ! games of thrones is a very popular and time-consuming board game . if
+	Free: Pattern=game, Pattern=and, Pattern=are, Pattern=i'm, Pattern=a very, Pattern=the game, Pattern=games of thrones, Pattern=you, Pattern=board
+	Constrained: Pattern=a, Pattern=of, Pattern=game
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=you, Pattern=the last season, Pattern=it, Pattern=i'm, Pattern=i, Pattern=fan of, Pattern=watch, Pattern=do, Pattern=did, Pattern=a
+	Constrained: Pattern=of, Pattern=season
+Turn ID=11| B | Human 2 : haha i did watch the last season and i'm not a fan of how it ended 😔 what about you ? <|
+	Free: Pattern=the last season, Pattern=i'm, Pattern=i, Pattern=fan of, Pattern=what about you ?, Pattern=watch, Pattern=did, Pattern=a, Pattern=it, Pattern=and
+	Constrained: Pattern=you, Pattern=of, Pattern=season
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=i love, Pattern=survivor
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : i'm just an ai and survivor is not the last season lol haha , but i love board games ! what are
+	Free: Pattern=the last season, Pattern=board games, Pattern=and, Pattern=what are, Pattern=survivor, Pattern=i love, Pattern=i'm, Pattern=! what
+	Constrained: Pattern=are, Pattern=i, Pattern=board, Pattern=season
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=nice ! i, Pattern=the good place, Pattern=and
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : nice ! i love the good place 😂 what's your favorite season and episode ?
+	Free: Pattern=the good place, Pattern=and, Pattern=season, Pattern=nice ! i, Pattern=i love
+	Constrained: Pattern=i

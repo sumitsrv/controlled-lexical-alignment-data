@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm doing_ _great_ . what [are you] up to ? 
+B|3| Human 2: [i'm doing] _well_ . just helping users with their queries . _how_ can _i_ _help_ [you] ? 
+A|4| Human 1: oh , [i'm] enjoying _a_ sip of coffee , looking over _the_ ocean . what _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm] just an ai , _i_ don't _have_ [a] physical body or [a] location , so _i_ can't _read_ [a] [book] _in the_ 
+A|6| Human 1: _that_ seems _like_ [a] good [book] . does _it_ [have] good tips _on_ [how] to sleep better ? 
+B|7| Human 2: [i'm] [reading] [a] [book] [on] mindfulness _and_ meditation . _it's_ [great] _for_ relaxation _and_ reducing stress . would [you] [like] some 
+A|8| Human 1: [i] [read] lots of papers _, but_ _do_ poorly [on] _books_ 😞 [a] recent [book] _that_ [i] [like] _is_ zero to one by peter thiel 
+B|9| Human 2: [i'm] just an ai , [i] don't [have] personal preferences or opinions [like] humans [do] [, but] [i] can certainly _help_ [you] find [books] 
+A|10| Human 1: [it's] _about startups_ , lots of useful principles [and] philosophies _for innovation_ , [like] _being_ [a] _contrarian_ 
+B|11| Human 2: [it's] [like] [you] [are] [reading] [a] [book] [but] [the] words [are] [being] [read] [and] interpreted [for] [you] . [it] [is] [about startups] [that] have<| 
+A|12| Human 1: [i] might [in the] future . [the] philosophy [in _the] book_ _also_ [help] [for] other things as [well] , e . g ., [in] research , [you] might _also_ want to be _contrarian_ 
+B|13| Human 2: [i'm] glad [you] [like] [the book] ! [it] sounds [like] [it] has some valuable insights [for innovation] [and] [startups] . [being] [contrarian] can [also] 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=how, Pattern=hi
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=are you, Pattern=i'm doing, Pattern=great
+	Constrained: Pattern=are, Pattern=i'm, Pattern=you
+Turn ID=3| B | Human 2 : i'm doing well . just helping users with their queries . how can i help you ?
+	Free: Pattern=well, Pattern=you, Pattern=how, Pattern=i, Pattern=i'm doing, Pattern=help
+	Constrained: Pattern=i'm
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=reading, Pattern=i'm, Pattern=are you, Pattern=the, Pattern=a, Pattern=book
+	Constrained: Pattern=are, Pattern=you
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have a physical body or a location , so i can't read a book in the
+	Free: Pattern=have, Pattern=in the, Pattern=i'm, Pattern=i, Pattern=read, Pattern=a, Pattern=book
+	Constrained: Pattern=the, Pattern=in
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=have, Pattern=how, Pattern=it, Pattern=like, Pattern=on, Pattern=that, Pattern=a, Pattern=book
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm reading a book on mindfulness and meditation . it's great for relaxation and reducing stress . would you like some
+	Free: Pattern=for, Pattern=and, Pattern=reading, Pattern=i'm, Pattern=like, Pattern=on, Pattern=it's, Pattern=you, Pattern=great, Pattern=a, Pattern=book
+	Constrained: 
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=, but, Pattern=like, Pattern=on, Pattern=books, Pattern=read, Pattern=that, Pattern=do, Pattern=a, Pattern=book, Pattern=is, Pattern=i
+	Constrained: Pattern=but
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have personal preferences or opinions like humans do , but i can certainly help you find books
+	Free: Pattern=have, Pattern=do, Pattern=i'm, Pattern=i, Pattern=like, Pattern=books, Pattern=help, Pattern=you, Pattern=, but
+	Constrained: Pattern=but
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=for innovation, Pattern=a, Pattern=and, Pattern=being, Pattern=about startups, Pattern=it's, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=for, Pattern=startups
+Turn ID=11| B | Human 2 : it's like you are reading a book but the words are being read and interpreted for you . it is about startups that have<|
+	Free: Pattern=you, Pattern=for, Pattern=are, Pattern=being, Pattern=reading, Pattern=like, Pattern=the, Pattern=read, Pattern=a, Pattern=book, Pattern=it, Pattern=and, Pattern=about startups, Pattern=is, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=startups
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=you, Pattern=for, Pattern=in the, Pattern=in, Pattern=i, Pattern=the, Pattern=help, Pattern=well, Pattern=the book, Pattern=also, Pattern=contrarian
+	Constrained: Pattern=book, Pattern=the, Pattern=in
+Turn ID=13| B | Human 2 : i'm glad you like the book ! it sounds like it has some valuable insights for innovation and startups . being contrarian can also
+	Free: Pattern=the book, Pattern=you, Pattern=for innovation, Pattern=being, Pattern=it, Pattern=and, Pattern=startups, Pattern=i'm, Pattern=also, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=for, Pattern=book, Pattern=the
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ good _. [how_ are you] ? ：） 
+B|3| Human 2: hello there ! i'm phi , an ai so [i] don't have feelings , but i'm fully operational and ready _to_ 
+A|4| Human 1: _i am_ busy . a lot of _work_ . what [are you] _working on_ ? 
+B|5| Human 2: hello ! i'm phi , an artificial intelligence . [i] don't [work] [on] tasks in the traditional sense , but [i am] 
+A|6| Human 1: [i am] _working on_ a _new classifier_ . 
+B|7| Human 2: great _to_ hear _you are_ [working on] [new classifier] improvements [. how] can [i] assist [you] today with _your_ ai-related tasks ? <|end|><|assistant|> hello ph 
+A|8| Human 1: a [new classifier] _for hate speech_ . which research topic catches [your] eyes most ? 
+B|9| Human 2: [i am] phi , [your] ai assistant here _to_ help . if you're [working on] [classifier] improvements [for hate speech] , [i] can assist with 
+A|10| Human 1: nice ! do [you] refer [to] [work] or anything else ? 
+B|11| Human 2: [i] appreciate [your] clarification . as an ai language model developed by microsoft , [i] don't [work] [on] tasks myself . however , [i] can provide 
+A|12| Human 1: [you are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=. how, Pattern=i am
+	Constrained: Pattern=i, Pattern=you, Pattern=are you
+Turn ID=3| B | Human 2 : hello there ! i'm phi , an ai so i don't have feelings , but i'm fully operational and ready to
+	Free: Pattern=to, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=working on, Pattern=are you, Pattern=i am, Pattern=work
+	Constrained: Pattern=i, Pattern=you, Pattern=on
+Turn ID=5| B | Human 2 : hello ! i'm phi , an artificial intelligence . i don't work on tasks in the traditional sense , but i am
+	Free: Pattern=i am, Pattern=work, Pattern=on, Pattern=i
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=working on, Pattern=new classifier, Pattern=i am
+	Constrained: Pattern=classifier, Pattern=on, Pattern=i
+Turn ID=7| B | Human 2 : great to hear you are working on new classifier improvements . how can i assist you today with your ai-related tasks ? <|end|><|assistant|> hello ph
+	Free: Pattern=you, Pattern=working on, Pattern=. how, Pattern=you are, Pattern=new classifier, Pattern=to, Pattern=your, Pattern=i
+	Constrained: Pattern=you, Pattern=classifier, Pattern=on
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=for hate speech, Pattern=new classifier, Pattern=your
+	Constrained: Pattern=classifier
+Turn ID=9| B | Human 2 : i am phi , your ai assistant here to help . if you're working on classifier improvements for hate speech , i can assist with
+	Free: Pattern=for hate speech, Pattern=working on, Pattern=i am, Pattern=classifier, Pattern=to, Pattern=your, Pattern=i
+	Constrained: Pattern=i, Pattern=on
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=work, Pattern=to, Pattern=you
+	Constrained: 
+Turn ID=11| B | Human 2 : i appreciate your clarification . as an ai language model developed by microsoft , i don't work on tasks myself . however , i can provide
+	Free: Pattern=work, Pattern=on, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=you are
+	Constrained: Pattern=you

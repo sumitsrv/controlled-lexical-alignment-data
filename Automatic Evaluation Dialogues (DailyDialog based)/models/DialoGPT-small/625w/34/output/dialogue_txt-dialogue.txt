@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! tell me something _about_ _the_ holiday season ? 
+A|2| Human 1: _are you talking about thanksgiving_ ? _i_ plan to do plenty of shopping _here ._ do _you_ _have_ any plans ? 
+B|3| Human 2: [are you talking about thanksgiving] in _the_ us ? 
+A|4| Human 1: _sounds great_ ! [you] need _not_ _wait _for_ thanksgiving_ _for pumpkin pie_ 🙂 
+B|5| Human 2: [i] [have] [for pumpkin pie] , _so_ [not] [here .] 
+A|6| Human 1: true ! [i] think [thanksgiving] is more [about] sharing . [so] [you] _may_ end up sharing [the] _pie with the whole family_ :p 
+B|7| Human 2: _that may_ [not] _be _the_ best_ idea [for] [you] but [thanksgiving] [sounds great] [with] [pumpkin pie] 
+A|8| Human 1: stuffing ! yes please ! [i] wonder _what would_ [be _the] excitement_ levels [for] christmas _then_ :) 
+B|9| Human 2: [i] [would] [have] [the excitement] [for thanksgiving] [then] [wait [for] pumpkin [pie] with the whole family] 
+A|10| Human 1: like everything [that] has a discount tag ! .. kidding ! [i] normally do some research [for] [the] prices , and mostly _buy_ clothes and electronics . 
+B|11| Human 2: [so] [what would] [you] [buy] [then] ? 
+A|12| Human 1: [i] bought [the best] suit ever [for] a price [that may] _scare_ [you] 🙂 
+B|13| Human 2: [what] [about] [that] [would] [scare] me ? 
+A|14| Human 1: hehe , sure ! [i] can share some links [with] [you] later . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! tell me something about the holiday season ?
+	Free: Pattern=about, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : are you talking about thanksgiving ? i plan to do plenty of shopping here . do you have any plans ?
+	Free: Pattern=you, Pattern=have, Pattern=i, Pattern=are you talking about thanksgiving, Pattern=here .
+	Constrained: Pattern=thanksgiving, Pattern=about, Pattern=you
+Turn ID=3| B | Human 2 : are you talking about thanksgiving in the us ?
+	Free: Pattern=are you talking about thanksgiving, Pattern=the
+	Constrained: Pattern=thanksgiving, Pattern=about, Pattern=you
+Turn ID=4| A | Human 1 : sounds great ! you need not wait for thanksgiving for pumpkin pie 🙂
+	Free: Pattern=you, Pattern=sounds great, Pattern=for pumpkin pie, Pattern=wait for, Pattern=for thanksgiving, Pattern=not
+	Constrained: Pattern=for, Pattern=thanksgiving, Pattern=pumpkin pie
+Turn ID=5| B | Human 2 : i have for pumpkin pie , so not here .
+	Free: Pattern=have, Pattern=for pumpkin pie, Pattern=i, Pattern=here ., Pattern=so, Pattern=not
+	Constrained: Pattern=pumpkin pie, Pattern=for
+Turn ID=6| A | Human 1 : true ! i think thanksgiving is more about sharing . so you may end up sharing the pie with the whole family :p
+	Free: Pattern=pie with the whole family, Pattern=you, Pattern=i, Pattern=so, Pattern=about, Pattern=thanksgiving, Pattern=the, Pattern=may
+	Constrained: Pattern=the, Pattern=with
+Turn ID=7| B | Human 2 : that may not be the best idea for you but thanksgiving sounds great with pumpkin pie
+	Free: Pattern=you, Pattern=that may, Pattern=sounds great, Pattern=for, Pattern=thanksgiving, Pattern=the best, Pattern=pumpkin pie, Pattern=be the, Pattern=with, Pattern=not
+	Constrained: Pattern=that, Pattern=may, Pattern=the
+Turn ID=8| A | Human 1 : stuffing ! yes please ! i wonder what would be the excitement levels for christmas then :)
+	Free: Pattern=the excitement, Pattern=for, Pattern=i, Pattern=be the, Pattern=then, Pattern=what would
+	Constrained: Pattern=the, Pattern=would, Pattern=what
+Turn ID=9| B | Human 2 : i would have the excitement for thanksgiving then wait for pumpkin pie with the whole family
+	Free: Pattern=pie with the whole family, Pattern=have, Pattern=the excitement, Pattern=then, Pattern=for pumpkin pie, Pattern=wait for, Pattern=i, Pattern=would, Pattern=for thanksgiving
+	Constrained: Pattern=for, Pattern=thanksgiving, Pattern=the, Pattern=pumpkin pie, Pattern=with
+Turn ID=10| A | Human 1 : like everything that has a discount tag ! .. kidding ! i normally do some research for the prices , and mostly buy clothes and electronics .
+	Free: Pattern=i, Pattern=the, Pattern=that, Pattern=for, Pattern=buy
+	Constrained: 
+Turn ID=11| B | Human 2 : so what would you buy then ?
+	Free: Pattern=you, Pattern=buy, Pattern=so, Pattern=then, Pattern=what would
+	Constrained: Pattern=would, Pattern=what
+Turn ID=12| A | Human 1 : i bought the best suit ever for a price that may scare you 🙂
+	Free: Pattern=you, Pattern=that may, Pattern=for, Pattern=i, Pattern=the best, Pattern=scare
+	Constrained: Pattern=the, Pattern=that, Pattern=may
+Turn ID=13| B | Human 2 : what about that would scare me ?
+	Free: Pattern=what, Pattern=about, Pattern=would, Pattern=scare, Pattern=that
+	Constrained: 
+Turn ID=14| A | Human 1 : hehe , sure ! i can share some links with you later .
+	Free: Pattern=with, Pattern=you, Pattern=i
+	Constrained: 

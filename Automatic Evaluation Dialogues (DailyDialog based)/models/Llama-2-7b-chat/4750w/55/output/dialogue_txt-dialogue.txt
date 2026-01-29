@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what_ _are you_ up _to_ ? 
+B|3| Human 2: [are you] feeling bored ? 
+A|4| Human 1: me ? _just_ chilling out at _work_ _. what_ _is_ _code refactoring_ ? 
+B|5| Human 2: [code refactoring] [is] when [you] take an existing piece of [code] and modify _it_ [to] make _it_ more efficient , maintainable , and readable . [just] _like_ organ 
+A|6| Human 1: _haha_ , forget [it] _. _what_ else_ _do _you like to_ do_ beside _work_ ? 
+B|7| Human 2: _i [like_ to] [code] and [work] on various projects _in_ my free time [. what] about [you] ? 
+A|8| Human 1: these [are] important things _to do_ [in] life 😉 
+B|9| Human 2: 😃 [what else] [you like to do] ? 
+A|10| Human 1: _what food do you like to eat ?_ 
+B|11| Human 2: [are you] ready [to] [work] on some [refactoring] [haha] 😃 [what food do you like to eat ?] <|im_end| 
+A|12| Human 1: _like szechuan_ or hunan ? 🙂 
+B|13| Human 2: [you [like] szechuan] [food] [haha] [what else] [you like] ? 
+A|14| Human 1: [i like] noodle soup [like] pho or ramen . [i] also [like] _beijing duck_ a lot ! 
+B|15| Human 2: [beijing duck] 😍 [what else] [you like] ? 
+A|16| Human 1: [i] love <redacted_term> [in] _san mateo_ 
+B|17| Human 2: [san mateo] 😃 [what else] [you like] ? 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=are you, Pattern=to, Pattern=what
+	Constrained: Pattern=are, Pattern=you
+Turn ID=3| B | Human 2 : are you feeling bored ?
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=just, Pattern=work, Pattern=is, Pattern=code refactoring, Pattern=. what
+	Constrained: Pattern=refactoring, Pattern=what, Pattern=code
+Turn ID=5| B | Human 2 : code refactoring is when you take an existing piece of code and modify it to make it more efficient , maintainable , and readable . just like organ
+	Free: Pattern=you, Pattern=it, Pattern=is, Pattern=like, Pattern=code refactoring, Pattern=to, Pattern=code, Pattern=just
+	Constrained: Pattern=refactoring, Pattern=code
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=you like to do, Pattern=it, Pattern=work, Pattern=do you like to, Pattern=haha, Pattern=. what, Pattern=what else
+	Constrained: Pattern=you, Pattern=to do, Pattern=what, Pattern=like, Pattern=you like, Pattern=like to, Pattern=to
+Turn ID=7| B | Human 2 : i like to code and work on various projects in my free time . what about you ?
+	Free: Pattern=you, Pattern=code, Pattern=in, Pattern=work, Pattern=like to, Pattern=. what, Pattern=i like
+	Constrained: Pattern=to, Pattern=what, Pattern=like, Pattern=i
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=to do, Pattern=are, Pattern=in
+	Constrained: Pattern=to
+Turn ID=9| B | Human 2 : 😃 what else you like to do ?
+	Free: Pattern=you like to do, Pattern=what else
+	Constrained: Pattern=you, Pattern=to do, Pattern=what, Pattern=like, Pattern=you like, Pattern=like to, Pattern=to
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=what food do you like to eat ?
+	Constrained: Pattern=you, Pattern=what, Pattern=do you like to, Pattern=you like, Pattern=like to, Pattern=to, Pattern=food, Pattern=like
+Turn ID=11| B | Human 2 : are you ready to work on some refactoring haha 😃 what food do you like to eat ? <|im_end|
+	Free: Pattern=what food do you like to eat ?, Pattern=work, Pattern=are you, Pattern=haha, Pattern=to, Pattern=refactoring
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=do you like to, Pattern=you like, Pattern=like to, Pattern=to, Pattern=food, Pattern=like
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like szechuan
+	Constrained: Pattern=like
+Turn ID=13| B | Human 2 : you like szechuan food haha what else you like ?
+	Free: Pattern=like szechuan, Pattern=you like, Pattern=what else, Pattern=haha, Pattern=food
+	Constrained: Pattern=what, Pattern=you, Pattern=like
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=i like, Pattern=beijing duck, Pattern=like, Pattern=i
+	Constrained: Pattern=like, Pattern=i
+Turn ID=15| B | Human 2 : beijing duck 😍 what else you like ?
+	Free: Pattern=beijing duck, Pattern=what else, Pattern=you like
+	Constrained: Pattern=what, Pattern=you, Pattern=like
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=san mateo, Pattern=i, Pattern=in
+	Constrained: 
+Turn ID=17| B | Human 2 : san mateo 😃 what else you like ?
+	Free: Pattern=what else, Pattern=san mateo, Pattern=you like
+	Constrained: Pattern=what, Pattern=you, Pattern=like
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

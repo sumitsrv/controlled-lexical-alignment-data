@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's good_ ! _i spent most of_ _it_ _watching_ _horse racing_ . how _about_ yourself ? 
+B|3| Human 2: [it's good] too _. [i_ spent most of] today [watching] hockey ! 
+A|4| Human 1: [i] actually _like_ to _put_ _down_ _some_ _money_ , _but_ [i] wouldn't call _it_ _my_ favorite part , _since i_ usually lose _it_ ... _haha_ . catching up _with friends_ _is_ great ! how _long_ _had_ _it_ [been ?] 
+B|5| Human 2: [it's] _going_ [good] so _far_ _. [i_ spent most _of] my_ day [with] [my] [friends] [but] [had] [some] [down] _time_ so [i] [put] [money] on [horse racing] too 
+A|6| Human 1: _i'm thinking_ [of] _going deep sea fishing_ . ever tried _that_ _before_ ? 
+B|7| Human 2: [it's] [been] [that] [long] [since [i] spent] _time_ [with friends] too [but] [going deep sea fishing] [with] [some] [of] them sounds [like] _fun_ 
+A|8| Human 1: just _once_ ! [i] _got_ super [sea] sick .. _haha_ _have_ any [fun] _weekend_ plans yourself ? 
+B|9| Human 2: [i'm] [going] [fishing] [with friends] [once] [before] thanksgiving . [it] will be [fun] [but] stressful [haha] 
+A|10| Human 1: oh _very_ cool [. i] hear _its_ nice _over_ _there_ . do _you_ go often ? 
+B|11| Human 2: [i'm thinking] [about] [going deep sea fishing] [with] [some] [friends] [that] [weekend] [but] [its] [got] me [very] nervous . [have] [you] [been] [before] ?? 
+A|12| Human 1: _new york_ _is_ _the_ top [of my] list _because_ [my] _family_ lives _there_ ! _as_ _far as_ _the city itself_ though ... [i] think i'd _prefer_ someplace outside [of] _the_ us , [like] _tokyo_ _. what about you ?_ 
+B|13| Human 2: _i have_ [been] [there] [before] [but] [the city itself] [because] [that] [is] [far] from [family] and [its] [very] busy [. what about you ?] 
+A|14| Human 1: oh i've never [been] ! [it] [is] such an iconic place , [i have] to _make_ [the] [time] to _get_ [there] soon . 
+B|15| Human 2: [i have] [been] [there] [the city itself] [because] that's [far as] well [but] [you] [get] [over] [time] [. what about] [new york] [make] [you] [prefer] [tokyo] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=watching, Pattern=it, Pattern=about, Pattern=horse racing, Pattern=i spent most of, Pattern=it's good
+	Constrained: Pattern=good, Pattern=of, Pattern=i, Pattern=it's, Pattern=i spent
+Turn ID=3| B | Human 2 : it's good too . i spent most of today watching hockey !
+	Free: Pattern=i spent most of, Pattern=. i, Pattern=it's good, Pattern=watching
+	Constrained: Pattern=good, Pattern=of, Pattern=i, Pattern=it's, Pattern=i spent
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=with friends, Pattern=money, Pattern=long, Pattern=down, Pattern=it, Pattern=had, Pattern=put, Pattern=my, Pattern=but, Pattern=been ?, Pattern=some, Pattern=is, Pattern=i, Pattern=haha, Pattern=like, Pattern=since i
+	Constrained: Pattern=i, Pattern=been, Pattern=with, Pattern=friends
+Turn ID=5| B | Human 2 : it's going good so far . i spent most of my day with my friends but had some down time so i put money on horse racing too
+	Free: Pattern=good, Pattern=time, Pattern=going, Pattern=down, Pattern=of my, Pattern=. i, Pattern=some, Pattern=i, Pattern=friends, Pattern=had, Pattern=horse racing, Pattern=i spent most of, Pattern=put, Pattern=my, Pattern=far, Pattern=money, Pattern=with, Pattern=it's, Pattern=but
+	Constrained: Pattern=i spent, Pattern=i, Pattern=my, Pattern=of
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=of, Pattern=going deep sea fishing, Pattern=i'm thinking, Pattern=before, Pattern=that
+	Constrained: Pattern=sea, Pattern=going, Pattern=fishing, Pattern=i'm
+Turn ID=7| B | Human 2 : it's been that long since i spent time with friends too but going deep sea fishing with some of them sounds like fun
+	Free: Pattern=of, Pattern=long, Pattern=going deep sea fishing, Pattern=some, Pattern=been, Pattern=fun, Pattern=with friends, Pattern=time, Pattern=like, Pattern=since i, Pattern=with, Pattern=that, Pattern=it's, Pattern=but, Pattern=i spent
+	Constrained: Pattern=going, Pattern=fishing, Pattern=sea, Pattern=i, Pattern=friends, Pattern=with
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=fun, Pattern=have, Pattern=once, Pattern=weekend, Pattern=sea, Pattern=i, Pattern=haha, Pattern=got
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm going fishing with friends once before thanksgiving . it will be fun but stressful haha
+	Free: Pattern=going, Pattern=once, Pattern=i'm, Pattern=haha, Pattern=before, Pattern=but, Pattern=fun, Pattern=with friends, Pattern=it, Pattern=fishing
+	Constrained: Pattern=with, Pattern=friends
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=its, Pattern=you, Pattern=there, Pattern=. i, Pattern=over, Pattern=very
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i'm thinking about going deep sea fishing with some friends that weekend but its got me very nervous . have you been before ??
+	Free: Pattern=its, Pattern=you, Pattern=have, Pattern=about, Pattern=some, Pattern=very, Pattern=friends, Pattern=i'm thinking, Pattern=got, Pattern=before, Pattern=been, Pattern=weekend, Pattern=going deep sea fishing, Pattern=with, Pattern=that, Pattern=but
+	Constrained: Pattern=sea, Pattern=going, Pattern=fishing, Pattern=i'm
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=of, Pattern=as, Pattern=there, Pattern=because, Pattern=new york, Pattern=the city itself, Pattern=of my, Pattern=family, Pattern=the, Pattern=my, Pattern=. what about you ?, Pattern=far as, Pattern=is, Pattern=prefer, Pattern=i, Pattern=tokyo, Pattern=like
+	Constrained: Pattern=you, Pattern=as, Pattern=about, Pattern=. what about, Pattern=the, Pattern=my, Pattern=far, Pattern=of
+Turn ID=13| B | Human 2 : i have been there before but the city itself because that is far from family and its very busy . what about you ?
+	Free: Pattern=its, Pattern=far, Pattern=there, Pattern=because, Pattern=the city itself, Pattern=family, Pattern=before, Pattern=been, Pattern=very, Pattern=is, Pattern=that, Pattern=but, Pattern=. what about you ?, Pattern=i have
+	Constrained: Pattern=you, Pattern=have, Pattern=about, Pattern=i, Pattern=. what about, Pattern=the
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=time, Pattern=there, Pattern=it, Pattern=the, Pattern=been, Pattern=get, Pattern=i have, Pattern=is, Pattern=make
+	Constrained: Pattern=i, Pattern=have
+Turn ID=15| B | Human 2 : i have been there the city itself because that's far as well but you get over time . what about new york make you prefer tokyo ?
+	Free: Pattern=time, Pattern=you, Pattern=there, Pattern=because, Pattern=new york, Pattern=the city itself, Pattern=over, Pattern=tokyo, Pattern=. what about, Pattern=been, Pattern=get, Pattern=but, Pattern=i have, Pattern=far as, Pattern=make, Pattern=prefer
+	Constrained: Pattern=far, Pattern=about, Pattern=i, Pattern=the, Pattern=as, Pattern=have

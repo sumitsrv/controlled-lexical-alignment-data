@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: great , thanks ! how can _i_ help _you_ _today ?_ 
+A|4| Human 1: ehhh so-so . my _moped_ broke down _on_ _the_ _way_ _to_ _work_ this morning _and_ [i] am _in the_ shop getting _it_ fixed ... 
+B|5| Human 2: oh no , that's frustrating ! what kind of [moped] do _you_ have ? maybe [i] can help _you_ find a solution . <| 
+A|6| Human 1: _the mechanic_ _is_ trying _to_ figure _that_ out now . apparently [i] wasn't supposed _to_ be using diesel lol . 
+B|7| Human 2: _haha_ , that's funny ! well , hopefully [the mechanic] can fix [it] quickly [and] _you_ can get [on] [your] [way] . [in the] meant 
+A|8| Human 1: okay sounds _good_ . would [you] be able _to_ pick me up _by_ [the] [way] , if _they_ _don't_ finish up here [in] _time_ ? _did_ [you] _drive_ _to_ _work_ [today ?] 
+B|9| Human 2: no [don't] worry about [it] ! [i] live close [by] [and] [work] [is] just a 10-15 minutes [drive] so i'll just 
+A|10| Human 1: _that_ should be fine [i] think . _did_ [you] catch [the] _warriors game_ _last night_ btw ? 
+B|11| Human 2: [warriors game] ? oh [you] mean [the] ones [that] lost [to] philly [last night] ? 😔 [did] [they] have a [good] season though ? 
+A|12| Human 1: [haha] [i] appreciate [your] faith , _but_ _their_ record thus far [is] hard [to] refute ! 
+B|13| Human 2: [haha] you're right 😂 [but] [they] still have [time] [to] turn [their] season around , right ? <|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ?
+	Free: Pattern=today ?, Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : ehhh so-so . my moped broke down on the way to work this morning and i am in the shop getting it fixed ...
+	Free: Pattern=moped, Pattern=in the, Pattern=work, Pattern=i, Pattern=to, Pattern=way, Pattern=it, Pattern=and, Pattern=on, Pattern=the
+	Constrained: Pattern=the, Pattern=in
+Turn ID=5| B | Human 2 : oh no , that's frustrating ! what kind of moped do you have ? maybe i can help you find a solution . <|
+	Free: Pattern=moped, Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=6| A | Human 1 : the mechanic is trying to figure that out now . apparently i wasn't supposed to be using diesel lol .
+	Free: Pattern=the mechanic, Pattern=to, Pattern=that, Pattern=is, Pattern=i
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : haha , that's funny ! well , hopefully the mechanic can fix it quickly and you can get on your way . in the meant
+	Free: Pattern=you, Pattern=in the, Pattern=your, Pattern=haha, Pattern=the mechanic, Pattern=on, Pattern=way, Pattern=it, Pattern=and
+	Constrained: Pattern=the, Pattern=in
+Turn ID=8| A | Human 1 : okay sounds good . would you be able to pick me up by the way , if they don't finish up here in time ? did you drive to work today ?
+	Free: Pattern=you, Pattern=they, Pattern=did, Pattern=in, Pattern=work, Pattern=the, Pattern=don't, Pattern=to, Pattern=by, Pattern=way, Pattern=today ?, Pattern=good, Pattern=time, Pattern=drive
+	Constrained: 
+Turn ID=9| B | Human 2 : no don't worry about it ! i live close by and work is just a 10-15 minutes drive so i'll just
+	Free: Pattern=drive, Pattern=work, Pattern=don't, Pattern=by, Pattern=it, Pattern=and, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=10| A | Human 1 : that should be fine i think . did you catch the warriors game last night btw ?
+	Free: Pattern=last night, Pattern=you, Pattern=warriors game, Pattern=did, Pattern=i, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=11| B | Human 2 : warriors game ? oh you mean the ones that lost to philly last night ? 😔 did they have a good season though ?
+	Free: Pattern=good, Pattern=last night, Pattern=you, Pattern=warriors game, Pattern=they, Pattern=did, Pattern=the, Pattern=to, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : haha i appreciate your faith , but their record thus far is hard to refute !
+	Free: Pattern=their, Pattern=haha, Pattern=to, Pattern=but, Pattern=is, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : haha you're right 😂 but they still have time to turn their season around , right ? <|im_end|
+	Free: Pattern=their, Pattern=time, Pattern=they, Pattern=haha, Pattern=to, Pattern=but
+	Constrained: 

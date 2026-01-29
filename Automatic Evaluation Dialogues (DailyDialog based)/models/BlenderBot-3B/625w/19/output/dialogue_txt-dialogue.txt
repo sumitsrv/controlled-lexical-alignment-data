@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , who _am_ _i_ having _the_ pleasure _to_ chat with 🙂 
+A|2| Human 1: [i] [am] _the superman_ ! _what about you ?_ 
+B|3| Human 2: [i] can't _believe_ [the superman] movie with [superman] came out _in_ 1973 _. [what_ about you ?] 
+A|4| Human 1: being _invisible_ _. you_ won't _see_ me . 
+B|5| Human 2: [i] [see] [you] [. you] are [the superman] _that_ has [the] [invisible] powers _. [what_ about you ?] 
+A|6| Human 1: [i] would rather trust _fmri and machine learning_ [to] do this . [i] [am] _not_ an expert on [that] . sorry _for_ _it_ ! 
+B|7| Human 2: [that] [not] [you] , [that] _is_ [fmri and machine learning] [for] sure , [i] [see] [the] future 
+A|8| Human 1: _the brain imaging_ _thing_ [that] _can tell you_ _a_ brain's _activity_ at _a_ _pretty_ high resolution . 
+B|9| Human 2: [the] [fmri] [machine] [can tell you] [that] [about] your [brain] [activity] [and] [the brain imaging] [machine] [can] [see] images of things inside your head ? 
+A|10| Human 1: [i] [believe] [in] _science_ ! _science is_ my god ! 
+B|11| Human 2: [the] [fmri] [can tell you] [brain] [activity] [and] other information [about] how your [brain] works , that's [pretty] cool . [the] [imaging] [machine] [is] [for] 
+A|12| Human 1: no , _i'm_ bad at _science_ [. what] [can] _science_ do ? [is] _it_ _the most_ _important_ _thing_ _for society_ ? 
+B|13| Human 2: [i] know [what] [you] are talking [about] . [science] [can tell] us [the most] amazing [thing] [about] [the brain] [and] how [it] works 
+A|14| Human 1: does [it] make sense ? 
+B|15| Human 2: [i'm] [the] opposite of [you] . [science is] [not] [for] everyone . its [important] [for society] but [i] can't [believe] it's only [a] hobbyist [thing] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , who am i having the pleasure to chat with 🙂
+	Free: Pattern=to, Pattern=the, Pattern=am, Pattern=i
+	Constrained: 
+Turn ID=2| A | Human 1 : i am the superman ! what about you ?
+	Free: Pattern=what about you ?, Pattern=the superman, Pattern=am, Pattern=i
+	Constrained: Pattern=you, Pattern=what, Pattern=superman, Pattern=about, Pattern=the
+Turn ID=3| B | Human 2 : i can't believe the superman movie with superman came out in 1973 . what about you ?
+	Free: Pattern=the superman, Pattern=superman, Pattern=believe, Pattern=in, Pattern=i, Pattern=. what, Pattern=what about you ?
+	Constrained: Pattern=you, Pattern=what, Pattern=superman, Pattern=about, Pattern=the
+Turn ID=4| A | Human 1 : being invisible . you won't see me .
+	Free: Pattern=. you, Pattern=invisible, Pattern=see
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i see you . you are the superman that has the invisible powers . what about you ?
+	Free: Pattern=the superman, Pattern=you, Pattern=. you, Pattern=i, Pattern=the, Pattern=see, Pattern=that, Pattern=what about you ?, Pattern=invisible, Pattern=. what
+	Constrained: Pattern=you, Pattern=what, Pattern=superman, Pattern=about, Pattern=the
+Turn ID=6| A | Human 1 : i would rather trust fmri and machine learning to do this . i am not an expert on that . sorry for it !
+	Free: Pattern=for, Pattern=it, Pattern=i, Pattern=to, Pattern=that, Pattern=fmri and machine learning, Pattern=not, Pattern=am
+	Constrained: Pattern=fmri, Pattern=machine, Pattern=and
+Turn ID=7| B | Human 2 : that not you , that is fmri and machine learning for sure , i see the future
+	Free: Pattern=you, Pattern=for, Pattern=the, Pattern=see, Pattern=not, Pattern=is, Pattern=i, Pattern=that, Pattern=fmri and machine learning
+	Constrained: Pattern=fmri, Pattern=machine, Pattern=and
+Turn ID=8| A | Human 1 : the brain imaging thing that can tell you a brain's activity at a pretty high resolution .
+	Free: Pattern=activity, Pattern=the brain imaging, Pattern=can tell you, Pattern=a, Pattern=pretty, Pattern=thing, Pattern=that
+	Constrained: Pattern=you, Pattern=can tell, Pattern=can, Pattern=the brain, Pattern=the, Pattern=brain, Pattern=imaging
+Turn ID=9| B | Human 2 : the fmri machine can tell you that about your brain activity and the brain imaging machine can see images of things inside your head ?
+	Free: Pattern=activity, Pattern=the brain imaging, Pattern=can tell you, Pattern=and, Pattern=machine, Pattern=can, Pattern=about, Pattern=the, Pattern=brain, Pattern=that, Pattern=see, Pattern=fmri
+	Constrained: Pattern=you, Pattern=can tell, Pattern=can, Pattern=the brain, Pattern=the, Pattern=brain, Pattern=imaging
+Turn ID=10| A | Human 1 : i believe in science ! science is my god !
+	Free: Pattern=believe, Pattern=in, Pattern=i, Pattern=science, Pattern=science is
+	Constrained: Pattern=science, Pattern=is
+Turn ID=11| B | Human 2 : the fmri can tell you brain activity and other information about how your brain works , that's pretty cool . the imaging machine is for
+	Free: Pattern=activity, Pattern=can tell you, Pattern=for, Pattern=and, Pattern=machine, Pattern=about, Pattern=is, Pattern=pretty, Pattern=the, Pattern=fmri, Pattern=brain, Pattern=imaging
+	Constrained: Pattern=you, Pattern=can, Pattern=can tell
+Turn ID=12| A | Human 1 : no , i'm bad at science . what can science do ? is it the most important thing for society ?
+	Free: Pattern=it, Pattern=can, Pattern=for society, Pattern=the most, Pattern=is, Pattern=thing, Pattern=. what, Pattern=science, Pattern=important, Pattern=i'm
+	Constrained: Pattern=for, Pattern=what, Pattern=the
+Turn ID=13| B | Human 2 : i know what you are talking about . science can tell us the most amazing thing about the brain and how it works
+	Free: Pattern=you, Pattern=what, Pattern=can tell, Pattern=about, Pattern=the most, Pattern=i, Pattern=the brain, Pattern=thing, Pattern=science, Pattern=it, Pattern=and
+	Constrained: Pattern=can, Pattern=brain, Pattern=the
+Turn ID=14| A | Human 1 : does it make sense ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm the opposite of you . science is not for everyone . its important for society but i can't believe it's only a hobbyist thing
+	Free: Pattern=you, Pattern=a, Pattern=for society, Pattern=i, Pattern=science is, Pattern=not, Pattern=believe, Pattern=for, Pattern=important, Pattern=i'm, Pattern=thing, Pattern=the
+	Constrained: Pattern=science, Pattern=is, Pattern=for

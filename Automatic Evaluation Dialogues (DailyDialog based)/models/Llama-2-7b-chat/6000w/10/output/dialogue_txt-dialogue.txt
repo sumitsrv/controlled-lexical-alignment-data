@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey 
+A|2| Human 1: _how's your_ day _going ?_ 
+B|3| Human 2: great , thanks ! how can _i_ help _you_ today ? </s>05-19 19:42:26 . 65 
+A|4| Human 1: _ehh it's fine . i didn't do so well on that history test , actually_ .. 
+B|5| Human 2: sorry to hear [that] ! _what_ happened ? did _you_ study enough ? [how's your] [history] class [going ?] </s>t [test] _it_ [didn't] 
+A|6| Human 1: apparently _christopher _columbus didn't fight_ in the civil war :')_ 
+B|7| Human 2: [ehh it's fine . i didn't do so well on that history test , actually] :') [christopher columbus didn't fight] 
+A|8| Human 1: [i] know right ! _are you taking history_ _next semester_ ? 
+B|9| Human 2: [columbus didn't fight in the civil war :')] [history test] ? how did _you do ?_ 
+A|10| Human 1: oh [i] see . [what] [do] [you do ?] 
+B|11| Human 2: what's [next semester] :') [are you taking history] again ? 
+A|12| Human 1: oh _wow_ . were [you] born a horse , or were [you] turned into one ? 
+B|13| Human 2: what's [the] [history test] you're referring to ? :') 
+A|14| Human 1: just kidding . _that sounds pretty cool_ ! is [it] _your job_ ? 
+B|15| Human 2: [wow] [cool] [job] 👍 [that sounds pretty cool] :') what's [your] [next semester] [going] to be like ? [are you taking] 
+A|16| Human 1: [wow] , _sounds very_ busy ! [do] [you] win money at those horse vaulting competitions ? 
+B|17| Human 2: [that [sounds] very] [cool] 😃 what's [your job] like ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=how's your, Pattern=going ?
+	Constrained: Pattern=going, Pattern=your
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ? </s>05-19 19:42:26 . 65
+	Free: Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : ehh it's fine . i didn't do so well on that history test , actually ..
+	Free: Pattern=ehh it's fine . i didn't do so well on that history test , actually
+	Constrained: Pattern=history, Pattern=do, Pattern=didn't, Pattern=history test, Pattern=i, Pattern=test, Pattern=that
+Turn ID=5| B | Human 2 : sorry to hear that ! what happened ? did you study enough ? how's your history class going ? </s>t test it didn't
+	Free: Pattern=how's your, Pattern=you, Pattern=history, Pattern=what, Pattern=it, Pattern=going ?, Pattern=didn't, Pattern=test, Pattern=that
+	Constrained: Pattern=going, Pattern=your
+Turn ID=6| A | Human 1 : apparently christopher columbus didn't fight in the civil war :')
+	Free: Pattern=columbus didn't fight in the civil war :'), Pattern=christopher columbus didn't fight
+	Constrained: Pattern=didn't, Pattern=the
+Turn ID=7| B | Human 2 : ehh it's fine . i didn't do so well on that history test , actually :') christopher columbus didn't fight
+	Free: Pattern=ehh it's fine . i didn't do so well on that history test , actually, Pattern=christopher columbus didn't fight
+	Constrained: Pattern=history, Pattern=do, Pattern=didn't, Pattern=history test, Pattern=i, Pattern=test, Pattern=that
+Turn ID=8| A | Human 1 : i know right ! are you taking history next semester ?
+	Free: Pattern=are you taking history, Pattern=next semester, Pattern=i
+	Constrained: Pattern=are you taking, Pattern=you, Pattern=history
+Turn ID=9| B | Human 2 : columbus didn't fight in the civil war :') history test ? how did you do ?
+	Free: Pattern=columbus didn't fight in the civil war :'), Pattern=you do ?, Pattern=history test
+	Constrained: Pattern=you, Pattern=history, Pattern=do, Pattern=didn't, Pattern=the, Pattern=test
+Turn ID=10| A | Human 1 : oh i see . what do you do ?
+	Free: Pattern=you do ?, Pattern=what, Pattern=i, Pattern=do
+	Constrained: Pattern=do, Pattern=you
+Turn ID=11| B | Human 2 : what's next semester :') are you taking history again ?
+	Free: Pattern=are you taking history, Pattern=next semester
+	Constrained: Pattern=are you taking, Pattern=you, Pattern=history
+Turn ID=12| A | Human 1 : oh wow . were you born a horse , or were you turned into one ?
+	Free: Pattern=you, Pattern=wow
+	Constrained: 
+Turn ID=13| B | Human 2 : what's the history test you're referring to ? :')
+	Free: Pattern=history test, Pattern=the
+	Constrained: Pattern=history, Pattern=test
+Turn ID=14| A | Human 1 : just kidding . that sounds pretty cool ! is it your job ?
+	Free: Pattern=that sounds pretty cool, Pattern=your job, Pattern=it
+	Constrained: Pattern=job, Pattern=that sounds, Pattern=cool, Pattern=your, Pattern=that
+Turn ID=15| B | Human 2 : wow cool job 👍 that sounds pretty cool :') what's your next semester going to be like ? are you taking
+	Free: Pattern=job, Pattern=going, Pattern=cool, Pattern=are you taking, Pattern=wow, Pattern=that sounds pretty cool, Pattern=your, Pattern=next semester
+	Constrained: Pattern=that, Pattern=you, Pattern=that sounds, Pattern=cool
+Turn ID=16| A | Human 1 : wow , sounds very busy ! do you win money at those horse vaulting competitions ?
+	Free: Pattern=sounds very, Pattern=do, Pattern=you, Pattern=wow
+	Constrained: 
+Turn ID=17| B | Human 2 : that sounds very cool 😃 what's your job like ?
+	Free: Pattern=your job, Pattern=sounds very, Pattern=that sounds, Pattern=cool
+	Constrained: Pattern=job, Pattern=that, Pattern=your

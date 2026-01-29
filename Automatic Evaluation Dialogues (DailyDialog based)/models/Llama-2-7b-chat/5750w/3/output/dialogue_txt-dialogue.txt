@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey 
+A|2| Human 1: _is_ it raining pretty _bad_ _today_ ? 
+B|3| Human 2: _i_ apologize , i'm _just_ an _ai_ assistant and _i don't_ _have_ access _to_ real-time _weather_ information . however , _i_ 
+A|4| Human 1: surprising _that the_ _rain_ started early _this_ year ... [i don't] _like_ _them_ _too_ _much_ . they _make days gloomy_ 
+B|5| Human 2: i'm _just_ an _ai_ , [i don't] _have_ personal preferences or feelings [like] humans do . [rain] [days] _can_ be [gloomy] , _but_ 
+A|6| Human 1: where [i] grew up , we had lots of _water trouble_ _too ..._ 
+B|7| Human 2: that's [too] [bad] , [water trouble] _can_ [make days gloomy] [rain] _can_ be [much] needed [too ...] [like] [today] 
+A|8| Human 1: haha ... _i don't think_ [i] [can] survive in _that_ [weather] ever . [just] _the_ _rains_ at 50 degrees [make] me want [to] sit in _heated_ _rroms_ 
+B|9| Human 2: [heated] rooms [can] be _nice_ [too] [rain] [days] [don't] always _have_ [to] [gloomy] [weather] [that the] [make] [them] [rains] [today] will help [water] [the] 
+A|10| Human 1: people say there _is_ drought here ... [but] we [have] 24 hours _water supply_ here ... _lol_ ... never seen [that] in a drought ridden area 
+B|11| Human 2: that's great ! [water supply] [is] important no matter [the] [weather] [lol] [but] [rains] [can] [make days gloomy] [i don't think] 
+A|12| Human 1: _hmm_ .... _okay_ . _climate change talk_ _this_ morning was pretty darn _interesting_ . _did you see_ it ? 
+B|13| Human 2: [climate change talk] [hmm] [interesting] [did you see] [the] [weather] [rroms] [lol] [but] that's [okay] [this] [rain] [make] everything washed clean 
+A|14| Human 1: they were talking about how [ai] [is] helping [climate change] . [nice] use of upcoming tech . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : is it raining pretty bad today ?
+	Free: Pattern=bad, Pattern=is, Pattern=today
+	Constrained: 
+Turn ID=3| B | Human 2 : i apologize , i'm just an ai assistant and i don't have access to real-time weather information . however , i
+	Free: Pattern=ai, Pattern=i, Pattern=to, Pattern=weather, Pattern=have, Pattern=just, Pattern=i don't
+	Constrained: Pattern=i, Pattern=don't
+Turn ID=4| A | Human 1 : surprising that the rain started early this year ... i don't like them too much . they make days gloomy
+	Free: Pattern=too, Pattern=like, Pattern=much, Pattern=this, Pattern=them, Pattern=rain, Pattern=i don't, Pattern=make days gloomy, Pattern=that the
+	Constrained: Pattern=gloomy, Pattern=the, Pattern=don't, Pattern=days, Pattern=that, Pattern=make, Pattern=i
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal preferences or feelings like humans do . rain days can be gloomy , but
+	Free: Pattern=gloomy, Pattern=can, Pattern=ai, Pattern=like, Pattern=days, Pattern=but, Pattern=rain, Pattern=have, Pattern=just, Pattern=i don't
+	Constrained: Pattern=i, Pattern=don't
+Turn ID=6| A | Human 1 : where i grew up , we had lots of water trouble too ...
+	Free: Pattern=too ..., Pattern=water trouble, Pattern=i
+	Constrained: Pattern=too, Pattern=water
+Turn ID=7| B | Human 2 : that's too bad , water trouble can make days gloomy rain can be much needed too ... like today
+	Free: Pattern=bad, Pattern=water trouble, Pattern=rain, Pattern=too, Pattern=can, Pattern=like, Pattern=much, Pattern=make days gloomy, Pattern=too ..., Pattern=today
+	Constrained: Pattern=gloomy, Pattern=too, Pattern=make, Pattern=water, Pattern=days
+Turn ID=8| A | Human 1 : haha ... i don't think i can survive in that weather ever . just the rains at 50 degrees make me want to sit in heated rroms
+	Free: Pattern=rains, Pattern=just, Pattern=i don't think, Pattern=heated, Pattern=rroms, Pattern=can, Pattern=the, Pattern=to, Pattern=that, Pattern=weather, Pattern=make, Pattern=i
+	Constrained: Pattern=i don't, Pattern=don't, Pattern=i
+Turn ID=9| B | Human 2 : heated rooms can be nice too rain days don't always have to gloomy weather that the make them rains today will help water the
+	Free: Pattern=rains, Pattern=today, Pattern=heated, Pattern=too, Pattern=can, Pattern=make, Pattern=water, Pattern=the, Pattern=don't, Pattern=days, Pattern=to, Pattern=them, Pattern=rain, Pattern=have, Pattern=nice, Pattern=gloomy, Pattern=that the, Pattern=weather
+	Constrained: Pattern=that, Pattern=the
+Turn ID=10| A | Human 1 : people say there is drought here ... but we have 24 hours water supply here ... lol ... never seen that in a drought ridden area
+	Free: Pattern=lol, Pattern=have, Pattern=water supply, Pattern=is, Pattern=that, Pattern=but
+	Constrained: Pattern=water
+Turn ID=11| B | Human 2 : that's great ! water supply is important no matter the weather lol but rains can make days gloomy i don't think
+	Free: Pattern=rains, Pattern=lol, Pattern=i don't think, Pattern=can, Pattern=water supply, Pattern=is, Pattern=the, Pattern=but, Pattern=make days gloomy, Pattern=weather
+	Constrained: Pattern=i don't, Pattern=gloomy, Pattern=water, Pattern=don't, Pattern=days, Pattern=make, Pattern=i
+Turn ID=12| A | Human 1 : hmm .... okay . climate change talk this morning was pretty darn interesting . did you see it ?
+	Free: Pattern=did you see, Pattern=climate change talk, Pattern=hmm, Pattern=interesting, Pattern=this, Pattern=okay
+	Constrained: Pattern=climate change
+Turn ID=13| B | Human 2 : climate change talk hmm interesting did you see the weather rroms lol but that's okay this rain make everything washed clean
+	Free: Pattern=lol, Pattern=rain, Pattern=did you see, Pattern=rroms, Pattern=climate change talk, Pattern=make, Pattern=hmm, Pattern=the, Pattern=interesting, Pattern=this, Pattern=but, Pattern=weather, Pattern=okay
+	Constrained: Pattern=climate change
+Turn ID=14| A | Human 1 : they were talking about how ai is helping climate change . nice use of upcoming tech .
+	Free: Pattern=climate change, Pattern=nice, Pattern=ai, Pattern=is
+	Constrained: 

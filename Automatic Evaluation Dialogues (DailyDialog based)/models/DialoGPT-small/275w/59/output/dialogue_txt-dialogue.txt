@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _how_ _is_ _your_ day ? 
+A|2| Human 1: it's _good_ . it's raining a bit , _but_ _i_ am enjoying a _good_ _book . how about you ?_ 
+B|3| Human 2: she's in class [but] she's [about] _to_ finish her [book . how] _is_ [you ?] 
+A|4| Human 1: _i'm _reading the_ three body problem_ . ever heard of it ? 
+B|5| Human 2: she's [reading the three body problem] [i'm] _on_ class [but] she's [about] _to_ finish her [book . how about you ?] 
+A|6| Human 1: it's a sci-fi _book about aliens and_ a type of virtual reality . pique [your] interest at _all_ ? 
+B|7| Human 2: [i'm reading the] [book about aliens and] [i'm] [all] [good] 
+A|8| Human 1: _cool ._ this virtual reality [is] a based [on] life [on] an alien planet . there [is] a twist though . do [you] _want_ _me_ [to] spoil it _for_ [you ?] 
+B|9| Human 2: [cool .] 
+A|10| Human 1: [the] virtual reality [is] actually based [on] a real alien civilization ! [and] _that_ civilization [is] coming [to] attack earth ! dun dun dun dunnnnnnn 
+B|11| Human 2: [cool .] 
+A|12| Human 1: there _are_ _other twists_ as _well_ , _so_ _i haven't_ spoiled [the] whole thing ! [to] _be_ honest _i_ am _not_ a fan of spoilers 
+B|13| Human 2: yeah that's [cool] [i'm] [not] [the] op just [want] [to] see what [other twists] [are] revealed in [that] video 
+A|14| Human 1: [the] audi [book] [is] _also_ _very_ [good] ! ever give those a try ? 
+B|15| Human 2: [i haven't] read [the] [book] [so] [that] would [be] [good] [for] [me] . its [also] [not] my fav [book] [but] its [very] [well] done ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how is your day ?
+	Free: Pattern=is, Pattern=your, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good . it's raining a bit , but i am enjoying a good book . how about you ?
+	Free: Pattern=book . how about you ?, Pattern=but, Pattern=i, Pattern=good
+	Constrained: Pattern=you, Pattern=book, Pattern=how, Pattern=about, Pattern=book . how, Pattern=you ?
+Turn ID=3| B | Human 2 : she's in class but she's about to finish her book . how is you ?
+	Free: Pattern=about, Pattern=you ?, Pattern=to, Pattern=but, Pattern=book . how, Pattern=is
+	Constrained: Pattern=book, Pattern=how, Pattern=you
+Turn ID=4| A | Human 1 : i'm reading the three body problem . ever heard of it ?
+	Free: Pattern=reading the three body problem, Pattern=i'm reading the
+	Constrained: Pattern=the, Pattern=i'm
+Turn ID=5| B | Human 2 : she's reading the three body problem i'm on class but she's about to finish her book . how about you ?
+	Free: Pattern=about, Pattern=i'm, Pattern=reading the three body problem, Pattern=on, Pattern=to, Pattern=book . how about you ?, Pattern=but
+	Constrained: Pattern=you, Pattern=book, Pattern=how, Pattern=about, Pattern=book . how, Pattern=you ?, Pattern=the
+Turn ID=6| A | Human 1 : it's a sci-fi book about aliens and a type of virtual reality . pique your interest at all ?
+	Free: Pattern=book about aliens and, Pattern=your, Pattern=all
+	Constrained: Pattern=book, Pattern=and, Pattern=about
+Turn ID=7| B | Human 2 : i'm reading the book about aliens and i'm all good
+	Free: Pattern=good, Pattern=i'm, Pattern=all, Pattern=book about aliens and, Pattern=i'm reading the
+	Constrained: Pattern=book, Pattern=and, Pattern=about, Pattern=i'm, Pattern=the
+Turn ID=8| A | Human 1 : cool . this virtual reality is a based on life on an alien planet . there is a twist though . do you want me to spoil it for you ?
+	Free: Pattern=want, Pattern=you, Pattern=me, Pattern=for, Pattern=is, Pattern=you ?, Pattern=to, Pattern=on, Pattern=cool .
+	Constrained: Pattern=cool, Pattern=you
+Turn ID=9| B | Human 2 : cool .
+	Free: Pattern=cool .
+	Constrained: Pattern=cool
+Turn ID=10| A | Human 1 : the virtual reality is actually based on a real alien civilization ! and that civilization is coming to attack earth ! dun dun dun dunnnnnnn
+	Free: Pattern=and, Pattern=is, Pattern=to, Pattern=that, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=11| B | Human 2 : cool .
+	Free: Pattern=cool .
+	Constrained: Pattern=cool
+Turn ID=12| A | Human 1 : there are other twists as well , so i haven't spoiled the whole thing ! to be honest i am not a fan of spoilers
+	Free: Pattern=other twists, Pattern=well, Pattern=are, Pattern=i, Pattern=be, Pattern=the, Pattern=to, Pattern=not, Pattern=i haven't, Pattern=so
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : yeah that's cool i'm not the op just want to see what other twists are revealed in that video
+	Free: Pattern=other twists, Pattern=want, Pattern=cool, Pattern=are, Pattern=i'm, Pattern=the, Pattern=to, Pattern=that, Pattern=not
+	Constrained: 
+Turn ID=14| A | Human 1 : the audi book is also very good ! ever give those a try ?
+	Free: Pattern=good, Pattern=book, Pattern=also, Pattern=the, Pattern=very, Pattern=is
+	Constrained: 
+Turn ID=15| B | Human 2 : i haven't read the book so that would be good for me . its also not my fav book but its very well done !
+	Free: Pattern=good, Pattern=well, Pattern=me, Pattern=book, Pattern=for, Pattern=very, Pattern=also, Pattern=be, Pattern=the, Pattern=not, Pattern=that, Pattern=but, Pattern=i haven't, Pattern=so
+	Constrained: Pattern=i

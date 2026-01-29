@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , who _am_ _i_ having _the_ pleasure _to_ chat with 🙂 
+A|2| Human 1: [i] [am] [the] superman _! what about you ?_ 
+B|3| Human 2: hey [you] [! what about you ?] 
+A|4| Human 1: being invisible _. _you won't see_ me_ . 
+B|5| Human 2: [what about you ?] [you won't see me] either . 
+A|6| Human 1: [i] _would_ rather trust _fmri and machine learning_ [to] do _this ._ [i] [am] _not_ an expert on _that_ . sorry _for_ _it_ ! 
+B|7| Human 2: [it] [would] [not] [. you won't see] [this .] [it] might be [fmri and machine learning] or [the] other 
+A|8| Human 1: _the brain_ imaging _thing_ _that_ _can_ _tell_ [you] a brain's activity at a pretty high resolution . 
+B|9| Human 2: [what] [would] [you] [tell] [the brain] [that] [this] [thing] can't [and] doesn't [see] fmri's [for] ? 
+A|10| Human 1: _i believe_ in science ! science is my god ! 
+B|11| Human 2: [the brain] [can] [see] [that] [you] [believe] [this] [and] that's how [the] mind works ! 
+A|12| Human 1: _no_ , i'm bad at science . [what] [can] science do ? is [it] _the most important thing for society_ ? 
+B|13| Human 2: [no] [i believe] [the most important thing for society] can't [you] [tell] us [that] 
+A|14| Human 1: _does it make sense ?_ 
+B|15| Human 2: [this] [brain] can't [see] [this] [for] [the] rest of you's life [does it make sense ?] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , who am i having the pleasure to chat with 🙂
+	Free: Pattern=the, Pattern=i, Pattern=am, Pattern=to
+	Constrained: 
+Turn ID=2| A | Human 1 : i am the superman ! what about you ?
+	Free: Pattern=! what about you ?, Pattern=the, Pattern=i, Pattern=am
+	Constrained: Pattern=what, Pattern=you, Pattern=what about you ?
+Turn ID=3| B | Human 2 : hey you ! what about you ?
+	Free: Pattern=! what about you ?, Pattern=you
+	Constrained: Pattern=what, Pattern=you, Pattern=what about you ?
+Turn ID=4| A | Human 1 : being invisible . you won't see me .
+	Free: Pattern=you won't see me, Pattern=. you won't see
+	Constrained: Pattern=you, Pattern=see
+Turn ID=5| B | Human 2 : what about you ? you won't see me either .
+	Free: Pattern=you won't see me, Pattern=what about you ?
+	Constrained: Pattern=what, Pattern=you, Pattern=see
+Turn ID=6| A | Human 1 : i would rather trust fmri and machine learning to do this . i am not an expert on that . sorry for it !
+	Free: Pattern=for, Pattern=it, Pattern=this ., Pattern=i, Pattern=would, Pattern=to, Pattern=that, Pattern=fmri and machine learning, Pattern=not, Pattern=am
+	Constrained: Pattern=this, Pattern=and
+Turn ID=7| B | Human 2 : it would not . you won't see this . it might be fmri and machine learning or the other
+	Free: Pattern=. you won't see, Pattern=it, Pattern=this ., Pattern=the, Pattern=would, Pattern=fmri and machine learning, Pattern=not
+	Constrained: Pattern=this, Pattern=you, Pattern=see, Pattern=and
+Turn ID=8| A | Human 1 : the brain imaging thing that can tell you a brain's activity at a pretty high resolution .
+	Free: Pattern=you, Pattern=can, Pattern=tell, Pattern=the brain, Pattern=thing, Pattern=that
+	Constrained: Pattern=the, Pattern=brain
+Turn ID=9| B | Human 2 : what would you tell the brain that this thing can't and doesn't see fmri's for ?
+	Free: Pattern=you, Pattern=what, Pattern=for, Pattern=and, Pattern=tell, Pattern=the brain, Pattern=thing, Pattern=this, Pattern=that, Pattern=would, Pattern=see
+	Constrained: Pattern=the, Pattern=brain
+Turn ID=10| A | Human 1 : i believe in science ! science is my god !
+	Free: Pattern=i believe
+	Constrained: Pattern=i, Pattern=believe
+Turn ID=11| B | Human 2 : the brain can see that you believe this and that's how the mind works !
+	Free: Pattern=you, Pattern=believe, Pattern=and, Pattern=can, Pattern=the brain, Pattern=the, Pattern=see, Pattern=this, Pattern=that
+	Constrained: Pattern=the, Pattern=brain
+Turn ID=12| A | Human 1 : no , i'm bad at science . what can science do ? is it the most important thing for society ?
+	Free: Pattern=the most important thing for society, Pattern=it, Pattern=can, Pattern=no, Pattern=what
+	Constrained: Pattern=for, Pattern=thing, Pattern=the
+Turn ID=13| B | Human 2 : no i believe the most important thing for society can't you tell us that
+	Free: Pattern=i believe, Pattern=you, Pattern=the most important thing for society, Pattern=no, Pattern=tell, Pattern=that
+	Constrained: Pattern=i, Pattern=believe, Pattern=for, Pattern=thing, Pattern=the
+Turn ID=14| A | Human 1 : does it make sense ?
+	Free: Pattern=does it make sense ?
+	Constrained: Pattern=it
+Turn ID=15| B | Human 2 : this brain can't see this for the rest of you's life does it make sense ?
+	Free: Pattern=for, Pattern=the, Pattern=see, Pattern=this, Pattern=brain, Pattern=does it make sense ?
+	Constrained: Pattern=it

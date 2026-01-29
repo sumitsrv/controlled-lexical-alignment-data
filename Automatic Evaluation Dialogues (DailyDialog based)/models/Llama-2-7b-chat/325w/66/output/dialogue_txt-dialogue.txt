@@ -1,0 +1,67 @@
+A|0| Human 1: hi 
+B|1| Human 2: hello ! 
+A|2| Human 1: _any_ improvements _in_ _your marathon _time_ ?_ 
+B|3| Human 2: our algorithms _can_ analyze [your] running style _and_ provide personalized feedback on how _to_ improve [your marathon time] . _we can_ also recommend _training_ plans tailored 
+A|4| Human 1: i see _. _are_ you_ planning [to] do _any sporting events_ _in_ _the_ _coming_ months ? 
+B|5| Human 2: _we can_ help [you] prepare _for_ [any sporting events] [you] have [coming] _up_ [. are] _there_ [any] other areas [you] would _like_ [to] work on ? <| 
+A|6| Human 1: i [like] _doing_ _spartan race ._ _it's_ an _obstacle_ _race_ which is _challenging but_ not overtly so [like] marathons [and] triathlons 
+B|7| Human 2: _we can_ definitely help [you] prepare _for_ _a_ [spartan race .] our algorithms _can_ analyze [your] running style [and] provide personalized feedback on how [to] improve [your] speed 
+A|8| Human 1: it has abt 20 obstacles [like] crossing high walls , monkey bars , etc . its _fun_ 
+B|9| Human 2: [it's] great that [you] have _a_ variety _of_ [events] [to] choose from . [doing] [obstacle] races _can_ be [challenging but] also very rewarding . 
+A|10| Human 1: wanna sign _up for_ _next_ one ? its _in february_ _in_ monterey 
+B|11| Human 2: that sounds [like] _a_ great challenge ! [are you] thinking _of_ signing [up for] [the] [spartan race] [in february] ? 
+A|12| Human 1: 1-2 months is [a] _good_ amount [of] [time] , if [you] _workout_ regularly . _it's a lot_ about [the] _technique_ , which [we can] practice [in] [training] sessions . 
+B|13| Human 2: [it's] [good] [to] work on [technique] [and] have _a training_ plan [in] place , [but] [you] also need [to] make sure you're [in] [good] physical shape 
+A|14| Human 1: awesome ! [there] is [a training] ground [in] san jose . _will_ coordinate _with_ [you] _next time_ [we] go [for] practice . 
+B|15| Human 2: [will] [you] want [to] [workout] [with] us [next [time] ?] [it's a lot] [of] [fun] [and] [good] [for] [technique] [and] physically challenging<| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : any improvements in your marathon time ?
+	Free: Pattern=your marathon time, Pattern=time ?, Pattern=in, Pattern=any
+	Constrained: Pattern=your, Pattern=time
+Turn ID=3| B | Human 2 : our algorithms can analyze your running style and provide personalized feedback on how to improve your marathon time . we can also recommend training plans tailored
+	Free: Pattern=training, Pattern=and, Pattern=can, Pattern=your, Pattern=we can, Pattern=to, Pattern=your marathon time
+	Constrained: Pattern=your, Pattern=can, Pattern=time, Pattern=we
+Turn ID=4| A | Human 1 : i see . are you planning to do any sporting events in the coming months ?
+	Free: Pattern=coming, Pattern=any sporting events, Pattern=in, Pattern=are you, Pattern=the, Pattern=to, Pattern=. are
+	Constrained: Pattern=any, Pattern=you, Pattern=events
+Turn ID=5| B | Human 2 : we can help you prepare for any sporting events you have coming up . are there any other areas you would like to work on ? <|
+	Free: Pattern=you, Pattern=any sporting events, Pattern=like, Pattern=we can, Pattern=. are, Pattern=coming, Pattern=there, Pattern=for, Pattern=any, Pattern=up, Pattern=to
+	Constrained: Pattern=any, Pattern=can, Pattern=we, Pattern=events
+Turn ID=6| A | Human 1 : i like doing spartan race . it's an obstacle race which is challenging but not overtly so like marathons and triathlons
+	Free: Pattern=doing, Pattern=and, Pattern=like, Pattern=challenging but, Pattern=spartan race ., Pattern=it's, Pattern=race, Pattern=obstacle
+	Constrained: Pattern=spartan race, Pattern=race, Pattern=but
+Turn ID=7| B | Human 2 : we can definitely help you prepare for a spartan race . our algorithms can analyze your running style and provide personalized feedback on how to improve your speed
+	Free: Pattern=you, Pattern=a, Pattern=for, Pattern=and, Pattern=can, Pattern=your, Pattern=we can, Pattern=to, Pattern=spartan race .
+	Constrained: Pattern=spartan race, Pattern=can, Pattern=race, Pattern=we
+Turn ID=8| A | Human 1 : it has abt 20 obstacles like crossing high walls , monkey bars , etc . its fun
+	Free: Pattern=like, Pattern=fun
+	Constrained: 
+Turn ID=9| B | Human 2 : it's great that you have a variety of events to choose from . doing obstacle races can be challenging but also very rewarding .
+	Free: Pattern=of, Pattern=you, Pattern=a, Pattern=doing, Pattern=events, Pattern=can, Pattern=obstacle, Pattern=challenging but, Pattern=to, Pattern=it's
+	Constrained: Pattern=but
+Turn ID=10| A | Human 1 : wanna sign up for next one ? its in february in monterey
+	Free: Pattern=up for, Pattern=in february, Pattern=next, Pattern=in
+	Constrained: Pattern=for, Pattern=in, Pattern=up
+Turn ID=11| B | Human 2 : that sounds like a great challenge ! are you thinking of signing up for the spartan race in february ?
+	Free: Pattern=of, Pattern=up for, Pattern=a, Pattern=are you, Pattern=like, Pattern=the, Pattern=in february, Pattern=spartan race
+	Constrained: Pattern=you, Pattern=for, Pattern=in, Pattern=race, Pattern=up
+Turn ID=12| A | Human 1 : 1-2 months is a good amount of time , if you workout regularly . it's a lot about the technique , which we can practice in training sessions .
+	Free: Pattern=good, Pattern=time, Pattern=of, Pattern=you, Pattern=training, Pattern=a, Pattern=it's a lot, Pattern=in, Pattern=the, Pattern=we can, Pattern=workout, Pattern=technique
+	Constrained: Pattern=it's, Pattern=a, Pattern=can, Pattern=we
+Turn ID=13| B | Human 2 : it's good to work on technique and have a training plan in place , but you also need to make sure you're in good physical shape
+	Free: Pattern=you, Pattern=and, Pattern=in, Pattern=to, Pattern=technique, Pattern=good, Pattern=a training, Pattern=it's, Pattern=but
+	Constrained: Pattern=a, Pattern=training
+Turn ID=14| A | Human 1 : awesome ! there is a training ground in san jose . will coordinate with you next time we go for practice .
+	Free: Pattern=a training, Pattern=there, Pattern=for, Pattern=will, Pattern=in, Pattern=we, Pattern=with, Pattern=you, Pattern=next time
+	Constrained: Pattern=next, Pattern=a, Pattern=time, Pattern=training
+Turn ID=15| B | Human 2 : will you want to workout with us next time ? it's a lot of fun and good for technique and physically challenging<|
+	Free: Pattern=good, Pattern=fun, Pattern=of, Pattern=for, Pattern=and, Pattern=with, Pattern=technique, Pattern=you, Pattern=next time, Pattern=time ?, Pattern=will, Pattern=it's a lot, Pattern=workout, Pattern=to
+	Constrained: Pattern=it's, Pattern=a, Pattern=next, Pattern=time

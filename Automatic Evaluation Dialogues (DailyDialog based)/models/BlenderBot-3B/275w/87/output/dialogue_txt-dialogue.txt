@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm doing great_ _. what are you_ up _to_ ? 
+B|3| Human 2: [i'm doing great] today ! _i_ was thinking _of_ [what] [to] make _for_ lunch ! [you] ? 
+A|4| Human 1: oh , _i'm enjoying_ _a_ sip [of] coffee , _looking over the ocean_ _. what_ _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm] [reading] [the] suttas [of] laozi [. what are you] [looking over the ocean] ? 
+A|6| Human 1: _that_ seems _like_ _a good_ _book_ . does _it_ _have_ _good_ tips on _how to sleep better_ ? 
+B|7| Human 2: _i_ [have] _the _book_ that_ [i'm] [reading] now , _and_ [i'm enjoying] [it] so far . _it's about_ [how] [the ocean] has [over] 2 billion years 
+A|8| Human 1: _i read_ lots [of] papers , _but_ do poorly on books 😞 _a_ recent _book that _i_ like_ _is_ _zero to_ one by _peter_ thiel 
+B|9| Human 2: [i'm] [reading] _the [book_ that [i] read] _for_ school last week , [zero to] one: [how to sleep better] _in the_ deep end ! 
+A|10| Human 1: [it's about] startups , lots [of] useful principles [and] philosophies [for] innovation , _like_ being _a_ contrarian 
+B|11| Human 2: [i like] [peter] thiel's [book] [but] [it] [is] [about] [how] technology [and] [the] internet has changed society [for] [the] [better] . [it] [is] [a good] [read] 
+A|12| Human 1: [i] might _in the future ._ [the] philosophy [in [the] book] also _help_ [for] other things as well , e . g ., [in] research , [you] might also _want to_ be contrarian 
+B|13| Human 2: that's cool ! [i'm] sure [you] [want to] [have] [the book] [for] [future] reference [and] [to] [help] yourself study [in the future .] [are] [it] [about] [how] start 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=hi, Pattern=how
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=. what are you, Pattern=i'm doing great, Pattern=to
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=i'm, Pattern=are you, Pattern=. what
+Turn ID=3| B | Human 2 : i'm doing great today ! i was thinking of what to make for lunch ! you ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=for, Pattern=i, Pattern=to, Pattern=i'm doing great
+	Constrained: Pattern=i'm
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=looking over the ocean, Pattern=reading, Pattern=are you, Pattern=. what, Pattern=i'm enjoying, Pattern=a, Pattern=book
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=over, Pattern=i'm, Pattern=the, Pattern=the ocean
+Turn ID=5| B | Human 2 : i'm reading the suttas of laozi . what are you looking over the ocean ?
+	Free: Pattern=of, Pattern=reading, Pattern=i'm, Pattern=the, Pattern=. what are you, Pattern=looking over the ocean
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=over, Pattern=are you, Pattern=the, Pattern=the ocean, Pattern=. what
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=good, Pattern=have, Pattern=book, Pattern=a good, Pattern=how to sleep better, Pattern=it, Pattern=like, Pattern=that
+	Constrained: Pattern=good, Pattern=a, Pattern=how, Pattern=better, Pattern=to
+Turn ID=7| B | Human 2 : i have the book that i'm reading now , and i'm enjoying it so far . it's about how the ocean has over 2 billion years
+	Free: Pattern=the book, Pattern=have, Pattern=it's about, Pattern=i'm enjoying, Pattern=how, Pattern=book that, Pattern=reading, Pattern=over, Pattern=i'm, Pattern=i, Pattern=the ocean, Pattern=it, Pattern=and
+	Constrained: Pattern=book, Pattern=about, Pattern=i'm, Pattern=the, Pattern=that
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=of, Pattern=peter, Pattern=a, Pattern=i read, Pattern=is, Pattern=zero to, Pattern=book that i, Pattern=but, Pattern=i like
+	Constrained: Pattern=book, Pattern=book that, Pattern=i, Pattern=like, Pattern=to, Pattern=read, Pattern=that
+Turn ID=9| B | Human 2 : i'm reading the book that i read for school last week , zero to one: how to sleep better in the deep end !
+	Free: Pattern=the book, Pattern=i read, Pattern=in the, Pattern=reading, Pattern=i'm, Pattern=zero to, Pattern=book that i, Pattern=for, Pattern=how to sleep better
+	Constrained: Pattern=book, Pattern=how, Pattern=book that, Pattern=in, Pattern=i, Pattern=better, Pattern=the, Pattern=to, Pattern=read, Pattern=that
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=of, Pattern=it's about, Pattern=a, Pattern=for, Pattern=and, Pattern=like
+	Constrained: Pattern=about
+Turn ID=11| B | Human 2 : i like peter thiel's book but it is about how technology and the internet has changed society for the better . it is a good read
+	Free: Pattern=peter, Pattern=book, Pattern=for, Pattern=about, Pattern=is, Pattern=better, Pattern=the, Pattern=read, Pattern=but, Pattern=i like, Pattern=how, Pattern=a good, Pattern=it, Pattern=and
+	Constrained: Pattern=good, Pattern=like, Pattern=a, Pattern=i
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=the book, Pattern=you, Pattern=in the future ., Pattern=for, Pattern=in the, Pattern=want to, Pattern=in, Pattern=i, Pattern=the, Pattern=help
+	Constrained: Pattern=book, Pattern=in the, Pattern=in, Pattern=future, Pattern=the, Pattern=to
+Turn ID=13| B | Human 2 : that's cool ! i'm sure you want to have the book for future reference and to help yourself study in the future . are it about how start
+	Free: Pattern=the book, Pattern=you, Pattern=how, Pattern=for, Pattern=are, Pattern=i'm, Pattern=future, Pattern=to, Pattern=help, Pattern=in the future ., Pattern=have, Pattern=it, Pattern=and, Pattern=about, Pattern=want to
+	Constrained: Pattern=book, Pattern=in the, Pattern=in, Pattern=future, Pattern=the, Pattern=to
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

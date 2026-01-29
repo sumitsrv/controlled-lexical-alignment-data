@@ -1,0 +1,63 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] 
+A|2| Human 1: _how is _your_ day_ _going ?_ 
+B|3| Human 2: _it's_ [going] well , thank you ! [how] _can_ _i_ help you today ? </|im_end|> </s>{:: im_start 
+A|4| Human 1: _how is _your_ day_ ? 
+B|5| Human 2: _it's_ [going] well , thank you ! [how] _can_ _i_ help you today ? </|im_end|> this [is] _a_ text conversation between 
+A|6| Human 1: [i] _went_ to _gym and_ _worked_ on _weight lifting_ . 
+B|7| Human 2: [how] _can_ [i] help you today ? you [worked] out at [gym and] [your day] [went] well . 
+A|8| Human 1: no , [i] am _just_ [a] _starter_ . 
+B|9| Human 2: [how] do you [weight lifting] [and] [gym] [going] [i] [just] [starter] for [your day] [went] well . </|im_end|> here [is] 
+A|10| Human 1: [i] go everyday . in fact , _i'm_ in [a] _running challenge_ . 
+B|11| Human 2: [i'm] [just] an ai [and] every [day] [is] [a] [challenge] for me . [how is your] [running] [and] [weight lifting] [going ?] <|im 
+A|12| Human 1: [it's] actually not that impressive . [i] _can only run ._ [i] _cannot lift weight ._ 
+B|13| Human 2: [i'm] [just] an ai [and] [cannot lift weight .] </|im_end|> it [can only run .] [how is your] [running challenge] [going] 
+A|14| Human 1: oh that's [a] really interesting idea . [i] like to be coa 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : how is your day going ?
+	Free: Pattern=how is your, Pattern=your day, Pattern=going ?
+	Constrained: Pattern=is, Pattern=going, Pattern=how, Pattern=day
+Turn ID=3| B | Human 2 : it's going well , thank you ! how can i help you today ? </|im_end|> </s>{:: im_start
+	Free: Pattern=going, Pattern=how, Pattern=can, Pattern=i, Pattern=it's
+	Constrained: 
+Turn ID=4| A | Human 1 : how is your day ?
+	Free: Pattern=how is your, Pattern=your day
+	Constrained: Pattern=is, Pattern=how, Pattern=day
+Turn ID=5| B | Human 2 : it's going well , thank you ! how can i help you today ? </|im_end|> this is a text conversation between
+	Free: Pattern=going, Pattern=a, Pattern=how, Pattern=can, Pattern=it's, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i went to gym and worked on weight lifting .
+	Free: Pattern=weight lifting, Pattern=went, Pattern=worked, Pattern=i, Pattern=gym and
+	Constrained: Pattern=gym, Pattern=and
+Turn ID=7| B | Human 2 : how can i help you today ? you worked out at gym and your day went well .
+	Free: Pattern=your day, Pattern=went, Pattern=how, Pattern=worked, Pattern=can, Pattern=i, Pattern=gym and
+	Constrained: Pattern=gym, Pattern=day, Pattern=and
+Turn ID=8| A | Human 1 : no , i am just a starter .
+	Free: Pattern=starter, Pattern=i, Pattern=just, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : how do you weight lifting and gym going i just starter for your day went well . </|im_end|> here is
+	Free: Pattern=weight lifting, Pattern=went, Pattern=how, Pattern=and, Pattern=gym, Pattern=starter, Pattern=going, Pattern=just, Pattern=your day, Pattern=is, Pattern=i
+	Constrained: Pattern=day
+Turn ID=10| A | Human 1 : i go everyday . in fact , i'm in a running challenge .
+	Free: Pattern=running challenge, Pattern=i'm, Pattern=i, Pattern=a
+	Constrained: Pattern=running, Pattern=challenge
+Turn ID=11| B | Human 2 : i'm just an ai and every day is a challenge for me . how is your running and weight lifting going ? <|im
+	Free: Pattern=weight lifting, Pattern=just, Pattern=a, Pattern=challenge, Pattern=and, Pattern=going ?, Pattern=how is your, Pattern=i'm, Pattern=running, Pattern=day, Pattern=is
+	Constrained: Pattern=is, Pattern=going, Pattern=how
+Turn ID=12| A | Human 1 : it's actually not that impressive . i can only run . i cannot lift weight .
+	Free: Pattern=can only run ., Pattern=cannot lift weight ., Pattern=i, Pattern=it's
+	Constrained: Pattern=can
+Turn ID=13| B | Human 2 : i'm just an ai and cannot lift weight . </|im_end|> it can only run . how is your running challenge going
+	Free: Pattern=running challenge, Pattern=and, Pattern=how is your, Pattern=i'm, Pattern=cannot lift weight ., Pattern=can only run ., Pattern=going, Pattern=just
+	Constrained: Pattern=how, Pattern=challenge, Pattern=can, Pattern=running, Pattern=is
+Turn ID=14| A | Human 1 : oh that's a really interesting idea . i like to be coa
+	Free: Pattern=i, Pattern=a
+	Constrained: 

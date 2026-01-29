@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ _came_ _back_ from a _ski trip_ 
+B|3| Human 2: _oh_ wow ! [ski trip] 😍 _that_ sounds like so much fun ! where _did you go_ ? 
+A|4| Human 1: i _slammed onto_ an _ice wall_ , _but_ i _got better_ _and_ turning _after_ [that] _haha_ 
+B|5| Human 2: 😅 [ice wall] ? [haha] that's gotta be tough ! [but] [great] [that] you're [back] [and] [better] [after] sl 
+A|6| Human 1: [oh] _cool !_ do _you know _any_ french_ ? i used _to_ take _french in_ _high school_ [but] _basically_ _forgot most_ of it 
+B|7| Human 2: 📚 [french] ! [cool !] [you know any] [great] [french] words [that] could [came] [in] ha 
+A|8| Human 1: [did you go] anywhere else [in] _montreal_ ? 
+B|9| Human 2: [did [you] know] [that] [ice wall] [slammed onto] [montreal] [ski trip] [but] [got better] [after] [haha] ? [any [french] in] [forgot most] [high school] [basically] 
+A|10| Human 1: [oh] [cool !] _i've always wanted to attend_ _the_ _olympics_ as a _viewer_ of _course_ i watch a _lot_ of olympic _figure skating_ on youtube 
+B|11| Human 2: [montreal] [skating] [the] [trip] [ice wall] [slammed] [haha] [cool] [i've always wanted to attend] [figure skating] [viewer] [olympics] [course] [lot] y 
+A|12| Human 1: _barely_ i don't _think_ i _can_ , [in] _conscience_ , _call_ it [that] i _kind_ of _just_ _pull myself along the sides_ 
+B|13| Human 2: [i've always wanted to] [pull myself along the sides] [figure skating] [viewer] [olympics] [course] [conscience] [call] [kind] [just] [barely] [think] [can] don' 
+A|14| Human 1: _are you_ _good_ at _<redacted_term>_ ? 
+B|15| Human 2: i'm [good] [but] [figure skating] [viewer] [olympics] [course] [barely] [think] [can] [<redacted_term>] [are you] ? 
+A|16| Human 1: okay ! it was nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=came, Pattern=great, Pattern=just, Pattern=ski trip, Pattern=back
+	Constrained: Pattern=trip
+Turn ID=3| B | Human 2 : oh wow ! ski trip 😍 that sounds like so much fun ! where did you go ?
+	Free: Pattern=did you go, Pattern=ski trip, Pattern=oh, Pattern=that
+	Constrained: Pattern=trip, Pattern=did you, Pattern=you
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=got better, Pattern=ice wall, Pattern=after, Pattern=haha, Pattern=and, Pattern=slammed onto, Pattern=that, Pattern=but
+	Constrained: Pattern=slammed, Pattern=better
+Turn ID=5| B | Human 2 : 😅 ice wall ? haha that's gotta be tough ! but great that you're back and better after sl
+	Free: Pattern=ice wall, Pattern=great, Pattern=and, Pattern=after, Pattern=back, Pattern=haha, Pattern=better, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=any french, Pattern=you know any, Pattern=oh, Pattern=high school, Pattern=basically, Pattern=forgot most, Pattern=to, Pattern=cool !, Pattern=french in, Pattern=but
+	Constrained: Pattern=cool, Pattern=in, Pattern=french, Pattern=you, Pattern=you know
+Turn ID=7| B | Human 2 : 📚 french ! cool ! you know any great french words that could came in ha
+	Free: Pattern=came, Pattern=great, Pattern=you know any, Pattern=in, Pattern=french, Pattern=cool !, Pattern=that
+	Constrained: Pattern=you know, Pattern=cool, Pattern=you
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you go, Pattern=montreal, Pattern=in
+	Constrained: Pattern=did you, Pattern=you
+Turn ID=9| B | Human 2 : did you know that ice wall slammed onto montreal ski trip but got better after haha ? any french in forgot most high school basically
+	Free: Pattern=got better, Pattern=ice wall, Pattern=did you, Pattern=montreal, Pattern=slammed onto, Pattern=after, Pattern=haha, Pattern=basically, Pattern=forgot most, Pattern=you know, Pattern=any french, Pattern=high school, Pattern=ski trip, Pattern=that, Pattern=french in, Pattern=but
+	Constrained: Pattern=you, Pattern=in, Pattern=french, Pattern=trip, Pattern=better, Pattern=slammed
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=oh, Pattern=figure skating, Pattern=course, Pattern=cool !, Pattern=i've always wanted to attend, Pattern=olympics, Pattern=viewer, Pattern=lot, Pattern=the
+	Constrained: Pattern=i've always wanted to, Pattern=to, Pattern=cool, Pattern=skating
+Turn ID=11| B | Human 2 : montreal skating the trip ice wall slammed haha cool i've always wanted to attend figure skating viewer olympics course lot y
+	Free: Pattern=skating, Pattern=figure skating, Pattern=course, Pattern=haha, Pattern=trip, Pattern=slammed, Pattern=i've always wanted to attend, Pattern=olympics, Pattern=ice wall, Pattern=viewer, Pattern=cool, Pattern=montreal, Pattern=lot, Pattern=the
+	Constrained: Pattern=i've always wanted to, Pattern=to, Pattern=skating
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=conscience, Pattern=kind, Pattern=just, Pattern=pull myself along the sides, Pattern=can, Pattern=call, Pattern=that, Pattern=barely, Pattern=think, Pattern=in
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : i've always wanted to pull myself along the sides figure skating viewer olympics course conscience call kind just barely think can don'
+	Free: Pattern=conscience, Pattern=kind, Pattern=just, Pattern=pull myself along the sides, Pattern=call, Pattern=think, Pattern=course, Pattern=i've always wanted to, Pattern=barely, Pattern=olympics, Pattern=viewer, Pattern=can, Pattern=figure skating
+	Constrained: Pattern=to, Pattern=skating, Pattern=the
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=are you, Pattern=<redacted_term>, Pattern=good
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : i'm good but figure skating viewer olympics course barely think can <redacted_term> are you ?
+	Free: Pattern=good, Pattern=think, Pattern=but, Pattern=barely, Pattern=olympics, Pattern=viewer, Pattern=<redacted_term>, Pattern=can, Pattern=figure skating, Pattern=are you, Pattern=course
+	Constrained: Pattern=skating, Pattern=you
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=you, Pattern=to
+	Constrained: 

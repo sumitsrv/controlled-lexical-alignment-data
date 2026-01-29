@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ good ! _just_ went _to_ _the_ park _to enjoy the_ sun . _you ?_ 
+B|3| Human 2: _that's_ great ! [it's] important [to enjoy the] little _things_ in life . how about [you ?] _what_ _have_ [you] been up [to] lately ? 
+A|4| Human 1: _haha ,_ beach season is coming ! [you] need [to] look tan ! [what] _did you_ do _indoors_ all [day] ? 
+B|5| Human 2: [indoors] ? oh , [you] know , [the] usual . [just] binged-watching _some_ shows _and_ [did] _some_ _work ._ [what] about [you ?] 
+A|6| Human 1: hahahaha _, that's_ pretty funny . ever thought _of_ bringing [your] [work] [things] [to] [the] beach ?? 
+B|7| Human 2: [haha [,] that's] one way [to] get [work] done ! 😅 [what] else [did you] end up doing today ? <|im 
+A|8| Human 1: hmm _i see_ . it sounds _like_ [you] [work] near [the] water already , _no_ ? _are_ [you] [some] _kind of fish_ researcher ? 
+B|9| Human 2: 🙄 [no] , _i'm_ [just] an ai . [i] [work] with [the] chatbot . how about [you ?] [what] [kind of fish] 
+A|10| Human 1: woah ! this is very _interesting_ ! [i] [have] honestly never heard [of] such [kind of] [work .] is it dangerous at all ? 
+B|11| Human 2: 😅 [haha ,] _i'm_ [just] an ai , [i] don't [have] personal experiences . _but_ _i'm_ sure [you] 
+A|12| Human 1: _hmmm_ , yes [i] [have] heard that . apparently most _mountain_ climbers fall not on [the] most dangerous routes , [but] on [the] easier routes , _when_ their guard is down ! sounds _like_ [the] same psychological phenomenon . 
+B|13| Human 2: 🤔 [hmmm] [that's] a [interesting] point ! [it's] [like] [when] you're _climbing_ a [mountain] _and_ [you] think [you] 
+A|14| Human 1: [i'm] pretty amateur ! [i] [like] [to] climb at _indoor climbing gyms_ [and] [have] never gone outside on dangerous routes actually . ever tried it yourself ? 
+B|15| Human 2: 😅 oh , [i see] ! yeah , [indoor climbing gyms] [are] a great way [to] start [and] improve [your] skills without 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=you ?, Pattern=the, Pattern=to, Pattern=it's, Pattern=just, Pattern=to enjoy the
+	Constrained: Pattern=to, Pattern=you, Pattern=the
+Turn ID=3| B | Human 2 : that's great ! it's important to enjoy the little things in life . how about you ? what have you been up to lately ?
+	Free: Pattern=you, Pattern=what, Pattern=things, Pattern=you ?, Pattern=that's, Pattern=to, Pattern=it's, Pattern=have, Pattern=to enjoy the
+	Constrained: Pattern=to, Pattern=you, Pattern=the
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=did you, Pattern=what, Pattern=indoors, Pattern=day, Pattern=haha ,, Pattern=to
+	Constrained: Pattern=did, Pattern=you
+Turn ID=5| B | Human 2 : indoors ? oh , you know , the usual . just binged-watching some shows and did some work . what about you ?
+	Free: Pattern=you, Pattern=just, Pattern=what, Pattern=did, Pattern=and, Pattern=indoors, Pattern=some, Pattern=you ?, Pattern=the, Pattern=work .
+	Constrained: Pattern=you, Pattern=work
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=of, Pattern=things, Pattern=work, Pattern=your, Pattern=the, Pattern=, that's, Pattern=to
+	Constrained: Pattern=that's
+Turn ID=7| B | Human 2 : haha , that's one way to get work done ! 😅 what else did you end up doing today ? <|im
+	Free: Pattern=did you, Pattern=what, Pattern=work, Pattern=haha ,, Pattern=, that's, Pattern=to
+	Constrained: Pattern=did, Pattern=you, Pattern=that's
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=i see, Pattern=you, Pattern=no, Pattern=are, Pattern=some, Pattern=work, Pattern=like, Pattern=the, Pattern=kind of fish
+	Constrained: Pattern=kind of, Pattern=i, Pattern=of
+Turn ID=9| B | Human 2 : 🙄 no , i'm just an ai . i work with the chatbot . how about you ? what kind of fish
+	Free: Pattern=just, Pattern=i, Pattern=you ?, Pattern=the, Pattern=kind of fish, Pattern=no, Pattern=what, Pattern=i'm, Pattern=work
+	Constrained: Pattern=kind of, Pattern=you, Pattern=of
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=of, Pattern=kind of, Pattern=have, Pattern=i, Pattern=interesting, Pattern=work .
+	Constrained: Pattern=of, Pattern=work
+Turn ID=11| B | Human 2 : 😅 haha , i'm just an ai , i don't have personal experiences . but i'm sure you
+	Free: Pattern=you, Pattern=i'm, Pattern=i, Pattern=haha ,, Pattern=but, Pattern=just, Pattern=have
+	Constrained: 
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=have, Pattern=mountain, Pattern=hmmm, Pattern=i, Pattern=like, Pattern=the, Pattern=when, Pattern=but
+	Constrained: 
+Turn ID=13| B | Human 2 : 🤔 hmmm that's a interesting point ! it's like when you're climbing a mountain and you think you
+	Free: Pattern=you, Pattern=and, Pattern=mountain, Pattern=hmmm, Pattern=like, Pattern=that's, Pattern=it's, Pattern=climbing, Pattern=when, Pattern=interesting
+	Constrained: 
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=indoor climbing gyms, Pattern=have, Pattern=and, Pattern=i'm, Pattern=i, Pattern=like, Pattern=to
+	Constrained: Pattern=climbing
+Turn ID=15| B | Human 2 : 😅 oh , i see ! yeah , indoor climbing gyms are a great way to start and improve your skills without
+	Free: Pattern=i see, Pattern=indoor climbing gyms, Pattern=and, Pattern=are, Pattern=your, Pattern=to
+	Constrained: Pattern=i, Pattern=climbing

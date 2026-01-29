@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _week_ so far ? 
+B|3| Human 2: just started [week] 1 of regular season 
+A|4| Human 1: _same_ _. _going_ _to_ catch up on_ my _reading_ ! do _you have_ _a_ feast planned ? 
+B|5| Human 2: just finished [reading] _it_ . _i_ [have] [you] all waiting , but _i_ still need some time [to catch up on] _the_ next week's stuff :p . _i_ 
+A|6| Human 1: _something_ _deeply hidden_ by sean carroll <redacted_link> 
+B|7| Human 2: i've been [reading] _the_ [deeply hidden] . _i_ [have] no clue who [you] are and no one cares , _how_ are _you ?_ 
+A|8| Human 1: largely _scifi_ [how] _about_ [you ?] 
+B|9| Human 2: i'm [reading] [deeply hidden] right now , [about] [a] billion pages _in_ [. going] through that book at _the_ moment . 
+A|10| Human 1: [i] _haven't_ what is [it] [about] ? 
+B|11| Human 2: yeah [you have] . [deeply hidden] was awesome . 
+A|12| Human 1: [how] do _the _survivors_ survive_ _such a_ _thing_ ? 
+B|13| Human 2: yes , [you] [haven't] read [the] [deeply hidden] ? it's [such a] [scifi] [thing] that [the survivors] are _in_ [the] [same] state . 
+A|14| Human 1: sounds _like_ [a] tv _show_ [i] watched 
+B|15| Human 2: it's [like] [the] [show] [deeply hidden] . it's [a] documentary [about] [how] [survivors survive] _in_ [the] world with an evil [thing] . 
+A|16| Human 1: _can't_ quite remember . _something about_ [survivors] _going to live in space_ 
+B|17| Human 2: there [can't] be [something about] [space] [going to live in space] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: Pattern=week
+	Constrained: 
+Turn ID=3| B | Human 2 : just started week 1 of regular season
+	Free: Pattern=week
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going to, Pattern=to catch up on, Pattern=. going, Pattern=a, Pattern=same, Pattern=you have, Pattern=reading
+	Constrained: Pattern=have, Pattern=you
+Turn ID=5| B | Human 2 : just finished reading it . i have you all waiting , but i still need some time to catch up on the next week's stuff :p . i
+	Free: Pattern=you, Pattern=it, Pattern=reading, Pattern=i, Pattern=the, Pattern=to catch up on, Pattern=have
+	Constrained: 
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=deeply hidden, Pattern=something
+	Constrained: 
+Turn ID=7| B | Human 2 : i've been reading the deeply hidden . i have no clue who you are and no one cares , how are you ?
+	Free: Pattern=you, Pattern=have, Pattern=how, Pattern=reading, Pattern=i, Pattern=you ?, Pattern=the, Pattern=deeply hidden
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=you ?, Pattern=about, Pattern=how, Pattern=scifi
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : i'm reading deeply hidden right now , about a billion pages in . going through that book at the moment .
+	Free: Pattern=. going, Pattern=a, Pattern=about, Pattern=reading, Pattern=in, Pattern=the, Pattern=deeply hidden
+	Constrained: 
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=i, Pattern=haven't, Pattern=about, Pattern=it
+	Constrained: 
+Turn ID=11| B | Human 2 : yeah you have . deeply hidden was awesome .
+	Free: Pattern=deeply hidden, Pattern=you have
+	Constrained: Pattern=you, Pattern=have
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=such a, Pattern=survivors survive, Pattern=how, Pattern=the survivors, Pattern=thing
+	Constrained: Pattern=the, Pattern=a, Pattern=survivors
+Turn ID=13| B | Human 2 : yes , you haven't read the deeply hidden ? it's such a scifi thing that the survivors are in the same state .
+	Free: Pattern=such a, Pattern=you, Pattern=haven't, Pattern=in, Pattern=deeply hidden, Pattern=the survivors, Pattern=thing, Pattern=the, Pattern=same, Pattern=scifi
+	Constrained: Pattern=the, Pattern=a, Pattern=survivors
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=show, Pattern=i, Pattern=a, Pattern=like
+	Constrained: 
+Turn ID=15| B | Human 2 : it's like the show deeply hidden . it's a documentary about how survivors survive in the world with an evil thing .
+	Free: Pattern=survivors survive, Pattern=a, Pattern=how, Pattern=about, Pattern=in, Pattern=like, Pattern=show, Pattern=deeply hidden, Pattern=thing, Pattern=the
+	Constrained: Pattern=survivors
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=going to live in space, Pattern=something about, Pattern=can't, Pattern=survivors
+	Constrained: Pattern=going to, Pattern=in, Pattern=something, Pattern=about, Pattern=space
+Turn ID=17| B | Human 2 : there can't be something about space going to live in space .
+	Free: Pattern=going to live in space, Pattern=something about, Pattern=space, Pattern=can't
+	Constrained: Pattern=going to, Pattern=in, Pattern=something, Pattern=about, Pattern=space

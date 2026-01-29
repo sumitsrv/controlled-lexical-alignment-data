@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , it _is_ flying _by quicker than_ _i_ _expected_ . how _is_ [your day _going] on_ ? 
+B|3| Human 2: great [day] _, i_ _went_ _to_ go _see_ _the_ national _a_ few days ago . 
+A|4| Human 1: oh _, i would love to_ twiddle my thumbs . you're _so_ lucky ! today , i've _been_ _mostly_ attending meetings , _reading and writing_ docs , _reading_ _papers_ etc . 
+B|5| Human 2: [i] [love] [reading and writing] [papers] . hows [your day] [been] ? 
+A|6| Human 1: wow ! [i] _sometimes_ _drift off_ _during_ _work_ , _and see_ similar _things_ in my head . 
+B|7| Human 2: [i] [love to] [see] _a_ [day] go [off] [and] [work] [mostly] goes [by quicker than] [expected] [and] [i would] like [to] [drift off] [sometimes] 
+A|8| Human 1: [mostly] _saving_ _the world from_ mess _on_ _social_ media . how _about_ _you_ ? 
+B|9| Human 2: [i] [love] [the] [social] events [and] [going] out [to] eat [and] [things] [during] [the] _day ._ [mostly] [work] [and] [saving] . 
+A|10| Human 1: nice , _what_ _all_ _places_ [would] _you_ be [going] [to] ? 
+B|11| Human 2: [i would love to] [see] [the world from] [all] perspectives [and see] [what] other [places] have [going on] _, you_ never _know_ [about] [things] until [you] travel 
+A|12| Human 1: [i] just met _someone who_ [went] _diving_ in australia . apparently [, you] _cannot_ fly 24 hrs _after_ [you] _dive_ , _because_ [your] body accumulates _too_ _much_ <redacted_term> when breathing _with_ [a] cylinder _so_ , _don't_ do _that_ ! 
+B|13| Human 2: [i would love] [too] , [going] [places] [to] [see] [the world] [with] [someone who] [cannot] [dive] [because] [you] [don't] _know_ [much] [about] [diving] [and] [that] person [is] 
+A|14| Human 1: _that's_ equally _amazing_ ! [i] wish [i] _can_ explore such [places] _one day ._ _it's_ just _so_ expensive 
+B|15| Human 2: [that's] [amazing] [that] [you] [can] [see] [the world] [with] [someone who] dives [, i would love to] [too] [one day .] 
+A|16| Human 1: woah !... [you] [know] sharing [is] caring _. you should_ share [that] money [with] me :) 
+B|17| Human 2: [that's] [so] sad [that] [someone] can't [dive] [after] only [a] [day [.] you should] tell them [about] [your] friend ! [it's] [amazing] [what] [you] [can] [see] 
+A|18| Human 1: [you] are [a] kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=your day, Pattern=your, Pattern=going, Pattern=day
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=going on, Pattern=expected, Pattern=by quicker than, Pattern=your day going, Pattern=is, Pattern=i
+	Constrained: Pattern=on, Pattern=going, Pattern=your day, Pattern=day, Pattern=your
+Turn ID=3| B | Human 2 : great day , i went to go see the national a few days ago .
+	Free: Pattern=went, Pattern=a, Pattern=day, Pattern=see, Pattern=to, Pattern=the, Pattern=, i
+	Constrained: Pattern=i
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=reading, Pattern=mostly, Pattern=reading and writing, Pattern=papers, Pattern=been, Pattern=, i would love to, Pattern=so
+	Constrained: Pattern=love to, Pattern=and, Pattern=reading, Pattern=love, Pattern=i, Pattern=, i, Pattern=to, Pattern=i would love, Pattern=i would love to, Pattern=would, Pattern=i would
+Turn ID=5| B | Human 2 : i love reading and writing papers . hows your day been ?
+	Free: Pattern=your day, Pattern=love, Pattern=i, Pattern=reading and writing, Pattern=papers, Pattern=been
+	Constrained: Pattern=your, Pattern=reading, Pattern=day, Pattern=and
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=drift off, Pattern=things, Pattern=work, Pattern=during, Pattern=sometimes, Pattern=and see, Pattern=i
+	Constrained: Pattern=off, Pattern=and, Pattern=see
+Turn ID=7| B | Human 2 : i love to see a day go off and work mostly goes by quicker than expected and i would like to drift off sometimes
+	Free: Pattern=drift off, Pattern=love to, Pattern=a, Pattern=and, Pattern=expected, Pattern=work, Pattern=mostly, Pattern=off, Pattern=to, Pattern=by quicker than, Pattern=sometimes, Pattern=day, Pattern=i, Pattern=see, Pattern=i would
+	Constrained: Pattern=love, Pattern=i, Pattern=off, Pattern=would, Pattern=to
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=you, Pattern=about, Pattern=saving, Pattern=mostly, Pattern=social, Pattern=on, Pattern=the world from
+	Constrained: Pattern=the world, Pattern=the
+Turn ID=9| B | Human 2 : i love the social events and going out to eat and things during the day . mostly work and saving .
+	Free: Pattern=day ., Pattern=going, Pattern=and, Pattern=things, Pattern=love, Pattern=work, Pattern=i, Pattern=saving, Pattern=mostly, Pattern=social, Pattern=the, Pattern=during, Pattern=to
+	Constrained: Pattern=day
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=you, Pattern=going, Pattern=all, Pattern=would, Pattern=to, Pattern=places, Pattern=what
+	Constrained: 
+Turn ID=11| B | Human 2 : i would love to see the world from all perspectives and see what other places have going on , you never know about things until you travel
+	Free: Pattern=you, Pattern=i would love to, Pattern=going on, Pattern=and see, Pattern=all, Pattern=see, Pattern=the world from, Pattern=places, Pattern=what, Pattern=about, Pattern=things, Pattern=know, Pattern=, you
+	Constrained: Pattern=going, Pattern=i would love, Pattern=and, Pattern=love, Pattern=to, Pattern=you, Pattern=love to, Pattern=the world, Pattern=i, Pattern=on, Pattern=the, Pattern=would, Pattern=see, Pattern=i would
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=diving, Pattern=you, Pattern=cannot, Pattern=went, Pattern=too, Pattern=after, Pattern=, you, Pattern=don't, Pattern=so, Pattern=a, Pattern=because, Pattern=your, Pattern=i, Pattern=dive, Pattern=someone who, Pattern=much, Pattern=with, Pattern=that
+	Constrained: Pattern=someone, Pattern=you
+Turn ID=13| B | Human 2 : i would love too , going places to see the world with someone who cannot dive because you don't know much about diving and that person is
+	Free: Pattern=diving, Pattern=you, Pattern=i would love, Pattern=places, Pattern=because, Pattern=about, Pattern=know, Pattern=to, Pattern=cannot, Pattern=going, Pattern=and, Pattern=too, Pattern=is, Pattern=the world, Pattern=dive, Pattern=someone who, Pattern=much, Pattern=see, Pattern=don't, Pattern=with, Pattern=that
+	Constrained: Pattern=someone, Pattern=love, Pattern=i, Pattern=the, Pattern=would, Pattern=i would
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=amazing, Pattern=places, Pattern=can, Pattern=i, Pattern=that's, Pattern=so, Pattern=one day ., Pattern=it's
+	Constrained: Pattern=day ., Pattern=day
+Turn ID=15| B | Human 2 : that's amazing that you can see the world with someone who dives , i would love to too one day .
+	Free: Pattern=you, Pattern=amazing, Pattern=too, Pattern=can, Pattern=the world, Pattern=someone who, Pattern=that's, Pattern=see, Pattern=one day ., Pattern=with, Pattern=that, Pattern=, i would love to
+	Constrained: Pattern=day ., Pattern=love to, Pattern=someone, Pattern=love, Pattern=to, Pattern=i would love, Pattern=i would love to, Pattern=day, Pattern=i, Pattern=the, Pattern=, i, Pattern=would, Pattern=i would
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=you, Pattern=. you should, Pattern=know, Pattern=is, Pattern=with, Pattern=that
+	Constrained: Pattern=you
+Turn ID=17| B | Human 2 : that's so sad that someone can't dive after only a day . you should tell them about your friend ! it's amazing what you can see
+	Free: Pattern=day ., Pattern=you, Pattern=amazing, Pattern=what, Pattern=a, Pattern=someone, Pattern=can, Pattern=. you should, Pattern=your, Pattern=dive, Pattern=that's, Pattern=see, Pattern=so, Pattern=about, Pattern=after, Pattern=that, Pattern=it's
+	Constrained: Pattern=day, Pattern=you
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=a, Pattern=you
+	Constrained: 

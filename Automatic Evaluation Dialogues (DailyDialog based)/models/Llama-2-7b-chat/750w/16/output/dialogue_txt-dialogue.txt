@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: great ! how _can_ _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _going to the_ bahamas . can't wait !!! 
+B|5| Human 2: _oh_ , wow ! 🌴 how exciting ! _can_ _i_ help _you_ find some information or make recommendations for _your_ trip ? < 
+A|6| Human 1: [oh] _where_ _are_ [you] _now ?_ 
+B|7| Human 2: _can_ [you] please provide [the] city or location [where] [you] [are] [now ?] [i'm] just an ai and need more information [to] better assist [you] . 
+A|8| Human 1: [oh] no . [i] never seen this _in_ person _. is_ it scary ? 
+B|9| Human 2: ah , [i] see 🤖 my apologies for [the] confusion earlier . it's great [to] hear _that_ you're [going to the] 
+A|10| Human 1: [that] does sound nice . so what [are] [you] doing these _holidays_ ? 
+B|11| Human 2: 🤖 [i'm] just an ai , [i] don't have personal experiences or [holidays] like humans do . however , 
+A|12| Human 1: nice nice . [i'm] gonna _go snorkeling_ yey 
+B|13| Human 2: [i'm] just an ai , [i] don't have [the] ability [to] [go snorkeling] or engage [in] any physical activities . i' 
+A|14| Human 1: [you] [can] stay on [the] shallow side [i] think . well hope [you] enjoy _time with your_ extended _family_ ! 
+B|15| Human 2: [i'm] sure you'll have a great [time with your] [family] [. is] there anything else [i] [can] help [you] [with] ? <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how can i help you today ?
+	Free: Pattern=can, Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=going to the, Pattern=i'm
+	Constrained: Pattern=to, Pattern=the, Pattern=going
+Turn ID=5| B | Human 2 : oh , wow ! 🌴 how exciting ! can i help you find some information or make recommendations for your trip ? <
+	Free: Pattern=you, Pattern=oh, Pattern=can, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=you, Pattern=now ?, Pattern=oh, Pattern=are, Pattern=where
+	Constrained: 
+Turn ID=7| B | Human 2 : can you please provide the city or location where you are now ? i'm just an ai and need more information to better assist you .
+	Free: Pattern=you, Pattern=now ?, Pattern=are, Pattern=can, Pattern=the, Pattern=to, Pattern=where, Pattern=i'm
+	Constrained: 
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=. is, Pattern=in, Pattern=i, Pattern=oh
+	Constrained: 
+Turn ID=9| B | Human 2 : ah , i see 🤖 my apologies for the confusion earlier . it's great to hear that you're going to the
+	Free: Pattern=going to the, Pattern=i, Pattern=the, Pattern=to, Pattern=that
+	Constrained: Pattern=to, Pattern=the, Pattern=going
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=are, Pattern=holidays, Pattern=that, Pattern=you
+	Constrained: 
+Turn ID=11| B | Human 2 : 🤖 i'm just an ai , i don't have personal experiences or holidays like humans do . however ,
+	Free: Pattern=holidays, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=go snorkeling, Pattern=i'm
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm just an ai , i don't have the ability to go snorkeling or engage in any physical activities . i'
+	Free: Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=go snorkeling, Pattern=in
+	Constrained: 
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=you, Pattern=can, Pattern=family, Pattern=i, Pattern=time with your, Pattern=the
+	Constrained: Pattern=your, Pattern=with
+Turn ID=15| B | Human 2 : i'm sure you'll have a great time with your family . is there anything else i can help you with ? <|im_end
+	Free: Pattern=you, Pattern=. is, Pattern=can, Pattern=family, Pattern=i'm, Pattern=i, Pattern=time with your, Pattern=with
+	Constrained: Pattern=your, Pattern=with

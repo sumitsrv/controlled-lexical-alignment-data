@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: wow , hello . can't believe _we are_ finally talking ! 
+A|2| Human 1: _yeah ,_ sorry _for the_ _long_ gap ! _i heard_ _you_ took _a_ _break_ _and were_ travelling around _the_ world _. how_ _was the_ travel ? 
+B|3| Human 2: oh , [you] [heard] right ! *chuckles* _it_ [was] an amazing experience [and] [a] much-needed [break] _from_ [the] usual 9- 
+A|4| Human 1: _great_ ! _vietnam_ is _still_ _in_ _my_ todo bucket _list_ _. did you_ _also_ _visit_ _cambodia_ [and] _other_ neighboring _places_ ? 
+B|5| Human 2: [vietnam] [and] [cambodia] [were] [also] _on_ [my] [list] , but unfortunately , [i] didn't make _it_ _to_ those [places] . but [i heard] [the] food [in] [vietnam] 
+A|6| Human 1: hehe ! _how long was the stay_ ? 
+B|7| Human 2: [how long was the stay] [and were] [you] able _to_ try out different local dishes ? [did you] [visit] any [other] [places] [in] [vietnam] _like_ hanoi or 
+A|8| Human 1: _great_ ! good _time_ [to] be back . [we _are] still_ [in] _planning_ phase [and] haven't fully _aligned_ [on] [the] _projects_ [to] tackle _for_ _next quarter_ . reat ! good _time_ [to] be back . [we _are] still_ [in] _planning_ phase [and] haven't fully _aligned_ [on] [the] _projects_ [to] tackle _for_ _next quarter_ . 
+B|9| Human 2: [great] , [next] quarter's [projects] [are still] _being_ planned [and] [aligned] [. did you] [visit] [other] [places] [in] [vietnam] _like_ hanoi or<|im 
+A|10| Human 1: hehe , _yeah_ ! [it] seems [like] [the] _quarter_ is [being] pushed earlier than [from] where [it] starts 🙂 [i] [like] these _planning sessions_ . [it] _makes_ _me_ _feel more confident about_ _the work_ [i] am _doing_ . 
+B|11| Human 2: [i] _see_ . [yeah ,] [planning sessions] [are] important [for [the] work] you're [doing] [and] [makes] [you] [feel more confident about] your [projects] [. [how] long was] 
+A|12| Human 1: true ! [i] think [we] _should_ _set_ aside _some_ _time_ [to] _discuss_ _some project details_ _? does_ _tomorrow afternoon_ _work for you ?_ 
+B|13| Human 2: [yeah ,] [tomorrow afternoon] [should] [work for] [me] [. how] [about] 2 pm your [time] [? does] that [work for you ?] <|im_end| 
+A|14| Human 1: _okay_ . [see] _tomorrow then_ . 
+B|15| Human 2:  . [okay] , got [it] ! [see] [you] [tomorrow then] ! 👍</s><s> [discuss] [and] [set] [some project details] [for the] [next quarter] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : wow , hello . can't believe we are finally talking !
+	Free: Pattern=we are
+	Constrained: Pattern=we, Pattern=are
+Turn ID=2| A | Human 1 : yeah , sorry for the long gap ! i heard you took a break and were travelling around the world . how was the travel ?
+	Free: Pattern=you, Pattern=for the, Pattern=long, Pattern=yeah ,, Pattern=i heard, Pattern=. how, Pattern=was the, Pattern=the, Pattern=break, Pattern=and were, Pattern=a
+	Constrained: Pattern=heard, Pattern=for, Pattern=i, Pattern=the, Pattern=was, Pattern=were, Pattern=yeah, Pattern=and
+Turn ID=3| B | Human 2 : oh , you heard right ! *chuckles* it was an amazing experience and a much-needed break from the usual 9-
+	Free: Pattern=heard, Pattern=you, Pattern=a, Pattern=from, Pattern=the, Pattern=break, Pattern=was, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=4| A | Human 1 : great ! vietnam is still in my todo bucket list . did you also visit cambodia and other neighboring places ?
+	Free: Pattern=. did you, Pattern=great, Pattern=places, Pattern=and, Pattern=vietnam, Pattern=other, Pattern=in, Pattern=also, Pattern=list, Pattern=cambodia, Pattern=my, Pattern=visit, Pattern=still
+	Constrained: Pattern=did you, Pattern=you
+Turn ID=5| B | Human 2 : vietnam and cambodia were also on my list , but unfortunately , i didn't make it to those places . but i heard the food in vietnam
+	Free: Pattern=places, Pattern=i heard, Pattern=vietnam, Pattern=in, Pattern=i, Pattern=also, Pattern=list, Pattern=to, Pattern=cambodia, Pattern=it, Pattern=and, Pattern=on, Pattern=the, Pattern=my, Pattern=were
+	Constrained: Pattern=i, Pattern=heard
+Turn ID=6| A | Human 1 : hehe ! how long was the stay ?
+	Free: Pattern=how long was the stay
+	Constrained: Pattern=long, Pattern=was the, Pattern=the, Pattern=how long was, Pattern=was
+Turn ID=7| B | Human 2 : how long was the stay and were you able to try out different local dishes ? did you visit any other places in vietnam like hanoi or
+	Free: Pattern=you, Pattern=did you, Pattern=places, Pattern=and were, Pattern=vietnam, Pattern=other, Pattern=in, Pattern=like, Pattern=to, Pattern=how long was the stay, Pattern=visit
+	Constrained: Pattern=you, Pattern=long, Pattern=and, Pattern=was the, Pattern=the, Pattern=how long was, Pattern=was, Pattern=were
+Turn ID=8| A | Human 1 : great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects to tackle for next quarter . reat ! good time to be back . we are still in planning phase and haven't fully aligned on the projects to tackle for next quarter .
+	Free: Pattern=planning, Pattern=great, Pattern=for, Pattern=and, Pattern=projects, Pattern=in, Pattern=we are, Pattern=aligned, Pattern=to, Pattern=are still, Pattern=time, Pattern=next quarter, Pattern=on, Pattern=the
+	Constrained: Pattern=next, Pattern=are, Pattern=we, Pattern=quarter, Pattern=still
+Turn ID=9| B | Human 2 : great , next quarter's projects are still being planned and aligned . did you visit other places in vietnam like hanoi or<|im
+	Free: Pattern=next, Pattern=. did you, Pattern=great, Pattern=places, Pattern=and, Pattern=in, Pattern=like, Pattern=aligned, Pattern=visit, Pattern=are still, Pattern=vietnam, Pattern=projects, Pattern=other, Pattern=being
+	Constrained: Pattern=did you, Pattern=still, Pattern=you, Pattern=are
+Turn ID=10| A | Human 1 : hehe , yeah ! it seems like the quarter is being pushed earlier than from where it starts 🙂 i like these planning sessions . it makes me feel more confident about the work i am doing .
+	Free: Pattern=planning sessions, Pattern=the work, Pattern=me, Pattern=doing, Pattern=makes, Pattern=i, Pattern=like, Pattern=quarter, Pattern=the, Pattern=feel more confident about, Pattern=it, Pattern=yeah, Pattern=being, Pattern=from
+	Constrained: Pattern=planning, Pattern=about, Pattern=the
+Turn ID=11| B | Human 2 : i see . yeah , planning sessions are important for the work you're doing and makes you feel more confident about your projects . how long was
+	Free: Pattern=planning sessions, Pattern=for the, Pattern=yeah ,, Pattern=doing, Pattern=and, Pattern=. how, Pattern=makes, Pattern=i, Pattern=see, Pattern=how long was, Pattern=feel more confident about, Pattern=you, Pattern=the work, Pattern=are, Pattern=projects
+	Constrained: Pattern=planning, Pattern=long, Pattern=for, Pattern=yeah, Pattern=about, Pattern=the, Pattern=was
+Turn ID=12| A | Human 1 : true ! i think we should set aside some time to discuss some project details ? does tomorrow afternoon work for you ?
+	Free: Pattern=time, Pattern=tomorrow afternoon, Pattern=should, Pattern=work for you ?, Pattern=some, Pattern=i, Pattern=we, Pattern=some project details, Pattern=to, Pattern=discuss, Pattern=set, Pattern=? does
+	Constrained: Pattern=for, Pattern=you, Pattern=work for, Pattern=some
+Turn ID=13| B | Human 2 : yeah , tomorrow afternoon should work for me . how about 2 pm your time ? does that work for you ? <|im_end|
+	Free: Pattern=time, Pattern=tomorrow afternoon, Pattern=me, Pattern=work for you ?, Pattern=. how, Pattern=about, Pattern=work for, Pattern=? does, Pattern=should, Pattern=yeah ,
+	Constrained: Pattern=for, Pattern=you, Pattern=work for, Pattern=yeah
+Turn ID=14| A | Human 1 : okay . see tomorrow then .
+	Free: Pattern=tomorrow then, Pattern=okay, Pattern=see
+	Constrained: 
+Turn ID=15| B | Human 2 :  . okay , got it ! see you tomorrow then ! 👍</s><s> discuss and set some project details for the next quarter
+	Free: Pattern=next quarter, Pattern=you, Pattern=for the, Pattern=tomorrow then, Pattern=set, Pattern=some project details, Pattern=see, Pattern=it, Pattern=and, Pattern=okay, Pattern=discuss
+	Constrained: Pattern=next, Pattern=for, Pattern=some, Pattern=quarter, Pattern=the

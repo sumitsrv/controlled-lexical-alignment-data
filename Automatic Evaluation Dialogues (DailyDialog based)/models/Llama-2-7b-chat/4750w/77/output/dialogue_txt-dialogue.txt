@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are_ _you_ ? 
+A|2| Human 1: _pretty good_ . i just drank _this new_ _hint water_ . so _good_ 
+B|3| Human 2: interesting ! [hint water] can be quite [good] for _you_ . would _you_ like _some_ recommendations for [new] drinks _to_ try ? <|im 
+A|4| Human 1: _watermelon_ 
+B|5| Human 2: sure ! [watermelon] [water] is _a_ great option . it's refreshing and [good] for hydration . would _you_ like _some_ more 
+A|6| Human 1: i see . _yeah some are pretty strange_ 
+B|7| Human 2: [yeah some are pretty strange] . have _you_ _tried_ ghost [water] ? it's _a_ [new] trend where _you_ put [watermelon] slice in _a_ 
+A|8| Human 1: _lol_ i _tried this_ tangerine walnut _icecream_ _that_ _was super_ _weird_ 
+B|9| Human 2: [lol] _that sounds_ [weird] ! [yeah some] [water] [are] [strange] , but it's [good] _to_ try [new] things sometimes . have _you_ [tried this] one ice 
+A|10| Human 1: [that _sounds] pretty_ _tasty_ _actually_ 
+B|11| Human 2: [actually] [lol] [tasty] [weird] [sounds [pretty] good] [actually] [yeah] [watermelon] [water] is _a_ [new] trend that's [super] refreshing 
+A|12| Human 1: do [you] _want_ _to get some_ of [that] _icecream_ together [some] _time_ . show me [a] [good] _place_ 
+B|13| Human 2: [sounds] [good] [actually] [yeah] [icecream] tastes [pretty] [weird] [that] [time] [lol] [want] [some] [place] [you] [tried [this] new] [water] [was super] strange<| 
+A|14| Human 1: [lol] 
+B|15| Human 2: [lol] [that] [actually] [sounds [pretty] good] [want] [you] [to get some] [tasty] [weird] ice 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . i just drank this new hint water . so good
+	Free: Pattern=pretty good, Pattern=this new, Pattern=hint water, Pattern=good
+	Constrained: Pattern=good, Pattern=pretty, Pattern=water, Pattern=new
+Turn ID=3| B | Human 2 : interesting ! hint water can be quite good for you . would you like some recommendations for new drinks to try ? <|im
+	Free: Pattern=good, Pattern=new, Pattern=you, Pattern=some, Pattern=to, Pattern=hint water
+	Constrained: Pattern=water
+Turn ID=4| A | Human 1 : watermelon
+	Free: Pattern=watermelon
+	Constrained: 
+Turn ID=5| B | Human 2 : sure ! watermelon water is a great option . it's refreshing and good for hydration . would you like some more
+	Free: Pattern=good, Pattern=you, Pattern=a, Pattern=some, Pattern=water, Pattern=watermelon
+	Constrained: 
+Turn ID=6| A | Human 1 : i see . yeah some are pretty strange
+	Free: Pattern=yeah some are pretty strange
+	Constrained: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=pretty, Pattern=yeah some
+Turn ID=7| B | Human 2 : yeah some are pretty strange . have you tried ghost water ? it's a new trend where you put watermelon slice in a
+	Free: Pattern=new, Pattern=you, Pattern=a, Pattern=yeah some are pretty strange, Pattern=water, Pattern=tried, Pattern=watermelon
+	Constrained: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=pretty, Pattern=yeah some
+Turn ID=8| A | Human 1 : lol i tried this tangerine walnut icecream that was super weird
+	Free: Pattern=weird, Pattern=icecream, Pattern=tried this, Pattern=that, Pattern=was super, Pattern=lol
+	Constrained: Pattern=super, Pattern=tried
+Turn ID=9| B | Human 2 : lol that sounds weird ! yeah some water are strange , but it's good to try new things sometimes . have you tried this one ice
+	Free: Pattern=good, Pattern=that sounds, Pattern=you, Pattern=strange, Pattern=weird, Pattern=are, Pattern=water, Pattern=yeah some, Pattern=lol, Pattern=new, Pattern=tried this, Pattern=to
+	Constrained: Pattern=yeah, Pattern=some, Pattern=sounds, Pattern=tried, Pattern=that
+Turn ID=10| A | Human 1 : that sounds pretty tasty actually
+	Free: Pattern=sounds pretty, Pattern=that sounds, Pattern=tasty, Pattern=actually
+	Constrained: Pattern=that, Pattern=sounds, Pattern=pretty
+Turn ID=11| B | Human 2 : actually lol tasty weird sounds pretty good actually yeah watermelon water is a new trend that's super refreshing
+	Free: Pattern=sounds pretty, Pattern=tasty, Pattern=water, Pattern=watermelon, Pattern=lol, Pattern=new, Pattern=actually, Pattern=a, Pattern=yeah, Pattern=weird, Pattern=super, Pattern=pretty good
+	Constrained: Pattern=good, Pattern=sounds, Pattern=pretty
+Turn ID=12| A | Human 1 : do you want to get some of that icecream together some time . show me a good place
+	Free: Pattern=good, Pattern=time, Pattern=want, Pattern=you, Pattern=a, Pattern=to get some, Pattern=place, Pattern=that, Pattern=icecream, Pattern=some
+	Constrained: Pattern=to, Pattern=some
+Turn ID=13| B | Human 2 : sounds good actually yeah icecream tastes pretty weird that time lol want some place you tried this new water was super strange<|
+	Free: Pattern=good, Pattern=time, Pattern=want, Pattern=you, Pattern=actually, Pattern=pretty, Pattern=this new, Pattern=tried this, Pattern=place, Pattern=that, Pattern=was super, Pattern=lol, Pattern=yeah, Pattern=weird, Pattern=icecream, Pattern=some, Pattern=water, Pattern=sounds
+	Constrained: Pattern=new, Pattern=super, Pattern=tried
+Turn ID=14| A | Human 1 : lol
+	Free: Pattern=lol
+	Constrained: 
+Turn ID=15| B | Human 2 : lol that actually sounds pretty good want you to get some tasty weird ice
+	Free: Pattern=lol, Pattern=want, Pattern=tasty, Pattern=actually, Pattern=weird, Pattern=to get some, Pattern=you, Pattern=sounds pretty, Pattern=pretty good, Pattern=that
+	Constrained: Pattern=good, Pattern=some, Pattern=sounds, Pattern=pretty, Pattern=to

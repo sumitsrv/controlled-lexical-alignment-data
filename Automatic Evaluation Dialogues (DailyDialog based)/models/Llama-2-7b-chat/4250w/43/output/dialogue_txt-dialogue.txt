@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! 
+A|2| Human 1: _are_ _you_ _participating_ _in_ _the _mentorship program_ _this_ cycle_ ? 
+B|3| Human 2: yes , _i_ am [participating] [this cycle] . can [you] please tell me more about [the] [program] _and_ how _it_ works ? <|im_end| 
+A|4| Human 1: either of _them_ ... [i] find _mentorship_ overall pretty useful 
+B|5| Human 2: [the mentorship program] is designed _to_ connect [you] _with_ an experienced entrepreneur or professional [in] your desired field who can provide guidance _and_ support throughout [the] 
+A|6| Human 1: [i] signed up _this time_ [to] be _a_ _mentee_ . _i have got a good_ _mentor_ . 
+B|7| Human 2: [mentorship program [this] time] because [i have got a good] [mentee] assigned [to] me _and_ [are] excited [to] support [them] [in] their entrepreneur 
+A|8| Human 1: _yeah_ ... [i] certainly prefer 1:1 _as_ _well_ , but sometimes [it] [good] _to hear other_ _peer_ _perspective_ _as_ _well_ . 
+B|9| Human 2: [yeah] 1:1 [mentorship program [this] time] because [have got] [good] [mentee] [are] excited [to hear other] [perspective] [peer] [as] well<| 
+A|10| Human 1: _great_ ! what sort of _things_ do [you] _plan_ _to mentor on_ ? 
+B|11| Human 2: [great] [plan] [things] _mentor [this_ time] 1:1 [program] [good] [perspective] [peer] [well] [have got] [mentee] assigned [are] excited support [them] entrepreneur 
+A|12| Human 1: _very cool_ . [i _have] been_ _working_ _on_ _my_ _communication skills_ _with my_ _mentor this cycle_ 
+B|13| Human 2: 1: [communication skills] [very cool] [working] [mentor this cycle] [have been] [with my] [good] [perspective] [peer] [well] [other] [things] [to mentor on] [plan] [are] [time] 
+A|14| Human 1: going [good] . [in] [the] last session , everyone had [to] actually prepare [and] give [a] presentation . pretty serious stuff 😉 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : are you participating in the mentorship program this cycle ?
+	Free: Pattern=this cycle, Pattern=are, Pattern=in, Pattern=mentorship program this, Pattern=participating, Pattern=you, Pattern=the mentorship program
+	Constrained: Pattern=program, Pattern=mentorship, Pattern=the
+Turn ID=3| B | Human 2 : yes , i am participating this cycle . can you please tell me more about the program and how it works ? <|im_end|
+	Free: Pattern=this cycle, Pattern=you, Pattern=program, Pattern=i, Pattern=participating, Pattern=the, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=4| A | Human 1 : either of them ... i find mentorship overall pretty useful
+	Free: Pattern=mentorship, Pattern=i, Pattern=them
+	Constrained: 
+Turn ID=5| B | Human 2 : the mentorship program is designed to connect you with an experienced entrepreneur or professional in your desired field who can provide guidance and support throughout the
+	Free: Pattern=and, Pattern=in, Pattern=the, Pattern=to, Pattern=with, Pattern=you, Pattern=the mentorship program
+	Constrained: Pattern=mentorship, Pattern=the, Pattern=program
+Turn ID=6| A | Human 1 : i signed up this time to be a mentee . i have got a good mentor .
+	Free: Pattern=this time, Pattern=mentor, Pattern=a, Pattern=i have got a good, Pattern=to, Pattern=mentee, Pattern=i
+	Constrained: Pattern=good, Pattern=a, Pattern=i, Pattern=i have, Pattern=have got, Pattern=time
+Turn ID=7| B | Human 2 : mentorship program this time because i have got a good mentee assigned to me and are excited to support them in their entrepreneur
+	Free: Pattern=this time, Pattern=and, Pattern=are, Pattern=in, Pattern=mentee, Pattern=mentorship program this, Pattern=i have got a good, Pattern=to, Pattern=them
+	Constrained: Pattern=good, Pattern=program, Pattern=a, Pattern=mentorship, Pattern=i, Pattern=i have, Pattern=have got, Pattern=time
+Turn ID=8| A | Human 1 : yeah ... i certainly prefer 1:1 as well , but sometimes it good to hear other peer perspective as well .
+	Free: Pattern=good, Pattern=well, Pattern=as, Pattern=perspective, Pattern=to hear other, Pattern=it, Pattern=yeah, Pattern=peer, Pattern=i
+	Constrained: Pattern=other, Pattern=to
+Turn ID=9| B | Human 2 : yeah 1:1 mentorship program this time because have got good mentee are excited to hear other perspective peer as well<|
+	Free: Pattern=good, Pattern=as, Pattern=perspective, Pattern=yeah, Pattern=are, Pattern=mentorship program this, Pattern=to hear other, Pattern=have got, Pattern=this time, Pattern=mentee, Pattern=peer
+	Constrained: Pattern=time, Pattern=program, Pattern=other, Pattern=mentorship, Pattern=to
+Turn ID=10| A | Human 1 : great ! what sort of things do you plan to mentor on ?
+	Free: Pattern=to mentor on, Pattern=things, Pattern=you, Pattern=great, Pattern=plan
+	Constrained: Pattern=mentor, Pattern=on, Pattern=to
+Turn ID=11| B | Human 2 : great plan things mentor this time 1:1 program good perspective peer well have got mentee assigned are excited support them entrepreneur
+	Free: Pattern=good, Pattern=well, Pattern=program, Pattern=are, Pattern=things, Pattern=them, Pattern=have got, Pattern=this time, Pattern=great, Pattern=plan, Pattern=perspective, Pattern=mentor this, Pattern=mentee, Pattern=peer
+	Constrained: Pattern=mentor, Pattern=time
+Turn ID=12| A | Human 1 : very cool . i have been working on my communication skills with my mentor this cycle
+	Free: Pattern=communication skills, Pattern=working, Pattern=have been, Pattern=mentor this cycle, Pattern=my, Pattern=very cool, Pattern=i have, Pattern=with my, Pattern=on
+	Constrained: Pattern=mentor, Pattern=this cycle, Pattern=mentor this, Pattern=i, Pattern=my, Pattern=with
+Turn ID=13| B | Human 2 : 1: communication skills very cool working mentor this cycle have been with my good perspective peer well other things to mentor on plan are time
+	Free: Pattern=good, Pattern=well, Pattern=plan, Pattern=perspective, Pattern=to mentor on, Pattern=are, Pattern=mentor this cycle, Pattern=peer, Pattern=with my, Pattern=very cool, Pattern=communication skills, Pattern=time, Pattern=other, Pattern=working, Pattern=have been, Pattern=things
+	Constrained: Pattern=mentor, Pattern=this cycle, Pattern=mentor this, Pattern=on, Pattern=to, Pattern=my, Pattern=with
+Turn ID=14| A | Human 1 : going good . in the last session , everyone had to actually prepare and give a presentation . pretty serious stuff 😉
+	Free: Pattern=good, Pattern=a, Pattern=and, Pattern=in, Pattern=the, Pattern=to
+	Constrained: 

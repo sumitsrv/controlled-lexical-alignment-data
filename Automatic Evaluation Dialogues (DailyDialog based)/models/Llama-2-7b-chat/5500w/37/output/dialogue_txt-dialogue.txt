@@ -1,0 +1,59 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] sorry _for_ _the_ late response . how _are_ _you_ doing ? 
+A|2| Human 1: _i'm_ _great_ , thanks ! _i'm_ meeting some _friends_ [for] _a_ soccer _game_ soon . _what about_ [you] ? 
+B|3| Human 2: [i'm] glad you're doing well ! occer [game] , [great] ! [what about] your work ? any new projects _or_ developments ? <| 
+A|4| Human 1: yes , _but_ [i'm] terrible at _it_ . _it's_ _fun_ _to_ _play_ anything _with friends_ _, _i_ think_ . _would you_ _prefer to exercise with_ _a_ _group_ , [or] by yourself , do [you] _think_ ? 
+B|5| Human 2: [i'm] _just_ _an_ ai [, i] don't have preferences [for] [exercise] 😅 _but it's_ [great] that you' 
+A|6| Human 1: [i'm] thinking _about getting a switch_ , _would you recommend_ _it_ ? 
+B|7| Human 2: [it's] [great] [for] [group] [play] [i think] [you] [would] [prefer to exercise [with] friends] ! [what [about] getting a switch] ? [would you recommend] [game] console ? 
+A|8| Human 1: _i'm not much_ of [a] gamer [but it's] _something_ i'd _like_ [to] get _into_ . 
+B|9| Human 2: [i think] [it's] [great] [for] [group] [play] [would you recommend] [getting a switch] ? [it's] [a] [fun] gaming console [but] [not] _too_ [much] [into] 
+A|10| Human 1: [i] _like_ [to] _read_ [for] [fun] . [i] [just] finished [a] _book_ called _temeraire_ . [it's] [an] adventure _story_ set in [the] napoleonic navy , _like_ patrick o'brien , _except there_ [are] _dragons_ [too] . 
+B|11| Human 2: that sounds [like] [an] interesting [read] [i'm not much] [into] gaming [but] [dragons] [are] [fun] [too] ! [what about] [the] [story] ? [it's] 
+A|12| Human 1: what's [the] most recent _good_ thing [you] [read] ? 
+B|13| Human 2: [i'm] [just] [an] ai [but] [it] [would] [recommend] [you] [something] [good] [too] [read] ! [what] [are] [you] [into] [like] [the] [temeraire] [book] [except there] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! sorry for the late response . how are you doing ?
+	Free: Pattern=you, Pattern=for, Pattern=are, Pattern=hi !, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks ! i'm meeting some friends for a soccer game soon . what about you ?
+	Free: Pattern=a, Pattern=game, Pattern=for, Pattern=i'm, Pattern=friends, Pattern=what about, Pattern=you, Pattern=great
+	Constrained: Pattern=what
+Turn ID=3| B | Human 2 : i'm glad you're doing well ! occer game , great ! what about your work ? any new projects or developments ? <|
+	Free: Pattern=great, Pattern=game, Pattern=i'm, Pattern=or, Pattern=what about
+	Constrained: Pattern=what
+Turn ID=4| A | Human 1 : yes , but i'm terrible at it . it's fun to play anything with friends , i think . would you prefer to exercise with a group , or by yourself , do you think ?
+	Free: Pattern=you, Pattern=a, Pattern=group, Pattern=it, Pattern=prefer to exercise with, Pattern=would you, Pattern=think, Pattern=i'm, Pattern=or, Pattern=, i, Pattern=to, Pattern=play, Pattern=i think, Pattern=fun, Pattern=with friends, Pattern=it's, Pattern=but
+	Constrained: Pattern=you, Pattern=exercise, Pattern=think, Pattern=i, Pattern=friends, Pattern=would, Pattern=to
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have preferences for exercise 😅 but it's great that you'
+	Free: Pattern=great, Pattern=for, Pattern=i'm, Pattern=, i, Pattern=exercise, Pattern=just, Pattern=an, Pattern=but it's
+	Constrained: Pattern=but, Pattern=i, Pattern=it's
+Turn ID=6| A | Human 1 : i'm thinking about getting a switch , would you recommend it ?
+	Free: Pattern=about getting a switch, Pattern=would you recommend, Pattern=it, Pattern=i'm
+	Constrained: Pattern=you, Pattern=a, Pattern=would you, Pattern=recommend, Pattern=would, Pattern=getting a switch
+Turn ID=7| B | Human 2 : it's great for group play i think you would prefer to exercise with friends ! what about getting a switch ? would you recommend game console ?
+	Free: Pattern=with friends, Pattern=for, Pattern=prefer to exercise with, Pattern=what about, Pattern=would, Pattern=would you recommend, Pattern=it's, Pattern=i think, Pattern=you, Pattern=great, Pattern=group, Pattern=game, Pattern=play, Pattern=about getting a switch
+	Constrained: Pattern=you, Pattern=exercise, Pattern=what, Pattern=a, Pattern=would you, Pattern=think, Pattern=recommend, Pattern=i, Pattern=friends, Pattern=would, Pattern=to, Pattern=getting a switch
+Turn ID=8| A | Human 1 : i'm not much of a gamer but it's something i'd like to get into .
+	Free: Pattern=into, Pattern=a, Pattern=but it's, Pattern=i'm not much, Pattern=like, Pattern=to, Pattern=something
+	Constrained: Pattern=i'm, Pattern=much, Pattern=not, Pattern=it's, Pattern=but
+Turn ID=9| B | Human 2 : i think it's great for group play would you recommend getting a switch ? it's a fun gaming console but not too much into
+	Free: Pattern=fun, Pattern=great, Pattern=into, Pattern=a, Pattern=group, Pattern=for, Pattern=too, Pattern=much, Pattern=play, Pattern=would you recommend, Pattern=i think, Pattern=not, Pattern=it's, Pattern=getting a switch, Pattern=but
+	Constrained: Pattern=you, Pattern=a, Pattern=would you, Pattern=think, Pattern=recommend, Pattern=i, Pattern=would
+Turn ID=10| A | Human 1 : i like to read for fun . i just finished a book called temeraire . it's an adventure story set in the napoleonic navy , like patrick o'brien , except there are dragons too .
+	Free: Pattern=fun, Pattern=story, Pattern=just, Pattern=except there, Pattern=for, Pattern=too, Pattern=are, Pattern=temeraire, Pattern=i, Pattern=like, Pattern=the, Pattern=to, Pattern=read, Pattern=it's, Pattern=a, Pattern=book, Pattern=an, Pattern=dragons
+	Constrained: 
+Turn ID=11| B | Human 2 : that sounds like an interesting read i'm not much into gaming but dragons are fun too ! what about the story ? it's
+	Free: Pattern=fun, Pattern=story, Pattern=into, Pattern=too, Pattern=are, Pattern=i'm not much, Pattern=like, Pattern=read, Pattern=an, Pattern=dragons, Pattern=what about, Pattern=the, Pattern=it's, Pattern=but
+	Constrained: Pattern=i'm, Pattern=what, Pattern=much, Pattern=not
+Turn ID=12| A | Human 1 : what's the most recent good thing you read ?
+	Free: Pattern=read, Pattern=good, Pattern=you, Pattern=the
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm just an ai but it would recommend you something good too read ! what are you into like the temeraire book except there
+	Free: Pattern=good, Pattern=you, Pattern=just, Pattern=except there, Pattern=book, Pattern=an, Pattern=are, Pattern=temeraire, Pattern=like, Pattern=the, Pattern=would, Pattern=read, Pattern=but, Pattern=something, Pattern=into, Pattern=what, Pattern=it, Pattern=too, Pattern=recommend, Pattern=i'm
+	Constrained: 

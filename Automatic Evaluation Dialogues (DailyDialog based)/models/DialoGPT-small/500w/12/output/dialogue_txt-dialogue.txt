@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey how's _it_ going 
+A|2| Human 1: _it's good_ _it's good_ . how _are you_ ? 
+B|3| Human 2: hello [you] , [it's good] _to_ hear that 
+A|4| Human 1: oh _nice_ ! where do _you live_ ? 
+B|5| Human 2: [you live] a [good] life _. it's_ [nice] _to_ hear [you] [are] happy . how's _it_ going ? 
+A|6| Human 1: ahh _yes_ , japan is hot during _the_ _summer_ . last _time_ _i was_ _in kyoto it was 114 degrees_ .... 
+B|7| Human 2: [i] [live] [in kyoto] _so_ [it] has [nice] winters _and_ [summer] [time] . _so_ [yes] we [are] [nice] 
+A|8| Human 1: [yes] [yes] . _i've been_ _to tokyo_ as well [. it's] [so] [nice] ! 
+B|9| Human 2: [are you] [nice] ? [it's] [been] warm [the] past few days [i've been] [in kyoto it was 114 degrees] [in] [summer] [time] . 
+A|10| Human 1: oh everything ! [i] went [to] an onsen , _the fish market_ , _disney land and_ giant robot fighting show haha 
+B|11| Human 2: [i was] [the fish market] [i] am a tourist 
+A|12| Human 1: [the] _disney_ lands [are] _all_ _different_ ! there's also _disney_ sea , which is completely unique ! 
+B|13| Human 2: [i was] on [disney land and] [all] [the fish] [are] on [different] islands 
+A|14| Human 1: [i] don't really remember what part of town [it was] [in] . [it was] pretty cool though - i'm sure [you] can find [it] if [you] google "giant robot fighting show tokyo" haha 
+B|15| Human 2: kyo [to tokyo] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey how's it going
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good it's good . how are you ?
+	Free: Pattern=are you, Pattern=it's good
+	Constrained: Pattern=it's, Pattern=are, Pattern=you, Pattern=good
+Turn ID=3| B | Human 2 : hello you , it's good to hear that
+	Free: Pattern=it's good, Pattern=to, Pattern=you
+	Constrained: Pattern=it's, Pattern=good
+Turn ID=4| A | Human 1 : oh nice ! where do you live ?
+	Free: Pattern=you live, Pattern=nice
+	Constrained: Pattern=live, Pattern=you
+Turn ID=5| B | Human 2 : you live a good life . it's nice to hear you are happy . how's it going ?
+	Free: Pattern=good, Pattern=you, Pattern=. it's, Pattern=nice, Pattern=it, Pattern=are, Pattern=to, Pattern=you live
+	Constrained: Pattern=it's, Pattern=live, Pattern=you
+Turn ID=6| A | Human 1 : ahh yes , japan is hot during the summer . last time i was in kyoto it was 114 degrees ....
+	Free: Pattern=yes, Pattern=the, Pattern=in kyoto it was 114 degrees, Pattern=summer, Pattern=time, Pattern=i was
+	Constrained: Pattern=it, Pattern=in, Pattern=i, Pattern=it was, Pattern=in kyoto
+Turn ID=7| B | Human 2 : i live in kyoto so it has nice winters and summer time . so yes we are nice
+	Free: Pattern=in kyoto, Pattern=time, Pattern=yes, Pattern=nice, Pattern=i, Pattern=summer, Pattern=so, Pattern=it, Pattern=and, Pattern=live, Pattern=are
+	Constrained: Pattern=in
+Turn ID=8| A | Human 1 : yes yes . i've been to tokyo as well . it's so nice !
+	Free: Pattern=i've been, Pattern=yes, Pattern=. it's, Pattern=nice, Pattern=to tokyo, Pattern=so
+	Constrained: Pattern=it's, Pattern=to, Pattern=been
+Turn ID=9| B | Human 2 : are you nice ? it's been warm the past few days i've been in kyoto it was 114 degrees in summer time .
+	Free: Pattern=time, Pattern=i've been, Pattern=nice, Pattern=in, Pattern=are you, Pattern=the, Pattern=been, Pattern=in kyoto it was 114 degrees, Pattern=summer, Pattern=it's
+	Constrained: Pattern=you, Pattern=it, Pattern=are, Pattern=in, Pattern=been, Pattern=it was, Pattern=in kyoto
+Turn ID=10| A | Human 1 : oh everything ! i went to an onsen , the fish market , disney land and giant robot fighting show haha
+	Free: Pattern=the fish market, Pattern=disney land and, Pattern=to, Pattern=i
+	Constrained: Pattern=the fish, Pattern=disney, Pattern=and, Pattern=the
+Turn ID=11| B | Human 2 : i was the fish market i am a tourist
+	Free: Pattern=the fish market, Pattern=i was, Pattern=i
+	Constrained: Pattern=the fish, Pattern=i, Pattern=the
+Turn ID=12| A | Human 1 : the disney lands are all different ! there's also disney sea , which is completely unique !
+	Free: Pattern=different, Pattern=are, Pattern=disney, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=13| B | Human 2 : i was on disney land and all the fish are on different islands
+	Free: Pattern=are, Pattern=the fish, Pattern=all, Pattern=disney land and, Pattern=different, Pattern=i was
+	Constrained: Pattern=disney, Pattern=i, Pattern=and, Pattern=the
+Turn ID=14| A | Human 1 : i don't really remember what part of town it was in . it was pretty cool though - i'm sure you can find it if you google "giant robot fighting show tokyo" haha
+	Free: Pattern=it was, Pattern=you, Pattern=it, Pattern=in, Pattern=i
+	Constrained: Pattern=it
+Turn ID=15| B | Human 2 : kyo to tokyo
+	Free: Pattern=to tokyo
+	Constrained: Pattern=to

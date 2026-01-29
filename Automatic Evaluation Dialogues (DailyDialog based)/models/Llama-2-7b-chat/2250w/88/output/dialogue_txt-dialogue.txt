@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] _how are you_ _doing_ today ? 
+A|2| Human 1: _i'm doing_ _great_ [how are you] ?? 
+B|3| Human 2: [i'm doing] well , thank [you] ! _it's_ [great] _to_ be here chatting with [you] . 😊 [how] can _i_ assist 
+A|4| Human 1: [are you] _a_ _tea_ person _or_ do [you] like _coffee_ too ? 
+B|5| Human 2: [i'm] just an ai , _i_ don't _have_ personal preferences [or] taste buds _, but i_ can suggest _some_ [tea] [or] [coffee] options 
+A|6| Human 1: [i] love _hot chocolate_ . _have you_ ever had european style _hot chocolate_ ? [it's] kind of like drinking melted _chocolate_ bars haha 
+B|7| Human 2: [i'm] just an ai , [i] don't drink [hot chocolate] [or] [coffee] _, but_ [i'm] here _to_ help [you] with any 
+A|8| Human 1: _that's great_ _. it's_ so _cold_ these nights . right setting _for_ [hot] coco . do [you] [have] anything [you] _enjoy_ [doing] _during cold times_ ? 
+B|9| Human 2: [i] [enjoy] spending time with family _and_ friends [during cold times] [. it's] [great] [for] bonding _and_ creating memories<|im_end| 
+A|10| Human 1: [i] tuck in blankets [and] read _a_ book _lol . i_ [have] never _done tubing_ [, but i] seen [some] people do it . is it _worth_ it if [you] already ski ? 
+B|11| Human 2: [it's] [worth] [doing] [tubing] [and] skiing _together_ ! [you] _get_ _to_ [enjoy] the [cold] weather [but] with [some] extra thrills [lol . i] 
+A|12| Human 1: hahaha _that's_ _a_ [great] _way to_ put it 
+B|13| Human 2: [lol] [that's great] ! [have you] [done tubing] before ? 
+A|14| Human 1: _yeah_ . _i'll_ try [to] [get] _a_ group [together] . ttyl ! 
+B|15| Human 2: [yeah] [for] sure , [i'll] see [you] there ! [it's] [a] fun [way to] [enjoy] the [cold] weather [and] [get] [some] exercise [lol .] t 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how are you doing today ?
+	Free: Pattern=how are you, Pattern=hi !, Pattern=doing
+	Constrained: Pattern=are you, Pattern=you, Pattern=how
+Turn ID=2| A | Human 1 : i'm doing great how are you ??
+	Free: Pattern=how are you, Pattern=i'm doing, Pattern=great
+	Constrained: Pattern=you, Pattern=i'm, Pattern=are you, Pattern=how, Pattern=doing
+Turn ID=3| B | Human 2 : i'm doing well , thank you ! it's great to be here chatting with you . 😊 how can i assist
+	Free: Pattern=how, Pattern=i, Pattern=i'm doing, Pattern=to, Pattern=it's, Pattern=you, Pattern=great
+	Constrained: Pattern=i'm, Pattern=doing
+Turn ID=4| A | Human 1 : are you a tea person or do you like coffee too ?
+	Free: Pattern=you, Pattern=a, Pattern=are you, Pattern=or, Pattern=coffee, Pattern=tea
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal preferences or taste buds , but i can suggest some tea or coffee options
+	Free: Pattern=, but i, Pattern=have, Pattern=some, Pattern=i'm, Pattern=i, Pattern=or, Pattern=coffee, Pattern=tea
+	Constrained: Pattern=, but, Pattern=but, Pattern=i
+Turn ID=6| A | Human 1 : i love hot chocolate . have you ever had european style hot chocolate ? it's kind of like drinking melted chocolate bars haha
+	Free: Pattern=hot chocolate, Pattern=chocolate, Pattern=it's, Pattern=have you, Pattern=i
+	Constrained: Pattern=have, Pattern=chocolate, Pattern=you, Pattern=hot
+Turn ID=7| B | Human 2 : i'm just an ai , i don't drink hot chocolate or coffee , but i'm here to help you with any
+	Free: Pattern=coffee, Pattern=hot chocolate, Pattern=i'm, Pattern=i, Pattern=or, Pattern=to, Pattern=you, Pattern=, but
+	Constrained: Pattern=but, Pattern=chocolate, Pattern=hot
+Turn ID=8| A | Human 1 : that's great . it's so cold these nights . right setting for hot coco . do you have anything you enjoy doing during cold times ?
+	Free: Pattern=you, Pattern=have, Pattern=. it's, Pattern=doing, Pattern=for, Pattern=during cold times, Pattern=that's great, Pattern=enjoy, Pattern=cold, Pattern=hot
+	Constrained: Pattern=cold, Pattern=great, Pattern=it's, Pattern=that's
+Turn ID=9| B | Human 2 : i enjoy spending time with family and friends during cold times . it's great for bonding and creating memories<|im_end|
+	Free: Pattern=great, Pattern=during cold times, Pattern=. it's, Pattern=for, Pattern=and, Pattern=enjoy, Pattern=i
+	Constrained: Pattern=it's, Pattern=cold
+Turn ID=10| A | Human 1 : i tuck in blankets and read a book lol . i have never done tubing , but i seen some people do it . is it worth it if you already ski ?
+	Free: Pattern=, but i, Pattern=you, Pattern=have, Pattern=a, Pattern=and, Pattern=some, Pattern=i, Pattern=worth, Pattern=lol . i, Pattern=done tubing
+	Constrained: Pattern=lol, Pattern=, but, Pattern=tubing, Pattern=i, Pattern=lol ., Pattern=but
+Turn ID=11| B | Human 2 : it's worth doing tubing and skiing together ! you get to enjoy the cold weather but with some extra thrills lol . i
+	Free: Pattern=you, Pattern=doing, Pattern=and, Pattern=worth, Pattern=together, Pattern=to, Pattern=enjoy, Pattern=cold, Pattern=tubing, Pattern=some, Pattern=get, Pattern=lol . i, Pattern=it's, Pattern=but
+	Constrained: Pattern=lol ., Pattern=i, Pattern=lol
+Turn ID=12| A | Human 1 : hahaha that's a great way to put it
+	Free: Pattern=way to, Pattern=great, Pattern=a, Pattern=that's
+	Constrained: Pattern=to
+Turn ID=13| B | Human 2 : lol that's great ! have you done tubing before ?
+	Free: Pattern=done tubing, Pattern=that's great, Pattern=have you, Pattern=lol
+	Constrained: Pattern=have, Pattern=tubing, Pattern=that's, Pattern=you, Pattern=great
+Turn ID=14| A | Human 1 : yeah . i'll try to get a group together . ttyl !
+	Free: Pattern=a, Pattern=i'll, Pattern=yeah, Pattern=together, Pattern=to, Pattern=get
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah for sure , i'll see you there ! it's a fun way to enjoy the cold weather and get some exercise lol . t
+	Free: Pattern=you, Pattern=a, Pattern=i'll, Pattern=for, Pattern=some, Pattern=way to, Pattern=lol ., Pattern=get, Pattern=it's, Pattern=yeah, Pattern=and, Pattern=enjoy, Pattern=cold
+	Constrained: Pattern=to, Pattern=lol

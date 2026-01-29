@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _have _you_ had_ _lunch_ _yet_ ? 
+B|3| Human 2: not [yet] , thanks _for_ asking ! may _i_ ask [you] _a_ favor ? 
+A|4| Human 1: cool . where _and_ what did [you] eat ? 
+B|5| Human 2: _i_ _had a_ delicious [lunch] at _a_ nearby restaurant _. they_ [have] _a_ great selection [and] _the_ _food_ is always fresh [and] tasty . _would_ 
+A|6| Human 1: [a] sandwich [for] [lunch] ? _was_ _it_ filling . _i'm_ currently having some mix of shrimp , fish , chicken [and] pork . _i'm_ considering going vegetarian _though_ . _lol_ . 
+B|7| Human 2: [i'm] glad [you _had] a_ good [lunch] ! 😊 may _i_ help [you] with something else ? <|im_end| 
+A|8| Human 1: cause _the environment_ [and] humans _suck ._ [i'm] keeping my bets open [for] _space though in case the environment dies_ _. i mixed up_ [a] couple of dishes . _it_ _was_ [a] buffet style place . 
+B|9| Human 2: [i'm] glad [you _had] a_ good [lunch] ! 😊 [space though in case the environment dies] [suck [.] i mixed up] 
+A|10| Human 1: [i] love _them_ !!!! _i've_ [had a] couple of different kinds [. _they] are all pretty expensive though_ . _have you tried them ?_ 
+B|11| Human 2: [i'm] glad [you [had] a] good [lunch] ! 😊 [they are all pretty expensive though] [have you tried them ?] [lol] [was] 
+A|12| Human 1: [i] love _it_ too . _but_ _depending on how it's prepared_ [you] _can_ _taste_ [the] _peanut butter_ . _but_ if _prepared_ well [i] love _it_ . what kind of _food would_ _you have eaten_ if _it_ wasn't rainy ? 
+B|13| Human 2: [i've] [tried] [it] [and] [the] [taste] [can] vary [depending on how it's prepared] [but] [peanut butter] [you have eaten] [food would] [have] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : have you had lunch yet ?
+	Free: Pattern=have you, Pattern=you had, Pattern=yet, Pattern=lunch
+	Constrained: Pattern=have, Pattern=you
+Turn ID=3| B | Human 2 : not yet , thanks for asking ! may i ask you a favor ?
+	Free: Pattern=you, Pattern=a, Pattern=for, Pattern=i, Pattern=yet
+	Constrained: 
+Turn ID=4| A | Human 1 : cool . where and what did you eat ?
+	Free: Pattern=and, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : i had a delicious lunch at a nearby restaurant . they have a great selection and the food is always fresh and tasty . would
+	Free: Pattern=had a, Pattern=have, Pattern=and, Pattern=i, Pattern=the, Pattern=would, Pattern=. they, Pattern=a, Pattern=lunch, Pattern=food
+	Constrained: Pattern=a
+Turn ID=6| A | Human 1 : a sandwich for lunch ? was it filling . i'm currently having some mix of shrimp , fish , chicken and pork . i'm considering going vegetarian though . lol .
+	Free: Pattern=lol, Pattern=though, Pattern=a, Pattern=for, Pattern=i'm, Pattern=lunch, Pattern=was, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm glad you had a good lunch ! 😊 may i help you with something else ? <|im_end|
+	Free: Pattern=had a, Pattern=you, Pattern=you had, Pattern=i'm, Pattern=i, Pattern=lunch
+	Constrained: Pattern=a, Pattern=you
+Turn ID=8| A | Human 1 : cause the environment and humans suck . i'm keeping my bets open for space though in case the environment dies . i mixed up a couple of dishes . it was a buffet style place .
+	Free: Pattern=for, Pattern=i'm, Pattern=was, Pattern=space though in case the environment dies, Pattern=suck ., Pattern=. i mixed up, Pattern=the environment, Pattern=a, Pattern=it, Pattern=and
+	Constrained: Pattern=though, Pattern=the environment, Pattern=the, Pattern=i
+Turn ID=9| B | Human 2 : i'm glad you had a good lunch ! 😊 space though in case the environment dies suck . i mixed up
+	Free: Pattern=had a, Pattern=you had, Pattern=i'm, Pattern=lunch, Pattern=space though in case the environment dies, Pattern=suck ., Pattern=. i mixed up
+	Constrained: Pattern=you, Pattern=though, Pattern=i, Pattern=the, Pattern=the environment, Pattern=a
+Turn ID=10| A | Human 1 : i love them !!!! i've had a couple of different kinds . they are all pretty expensive though . have you tried them ?
+	Free: Pattern=had a, Pattern=. they, Pattern=i've, Pattern=i, Pattern=they are all pretty expensive though, Pattern=them, Pattern=have you tried them ?
+	Constrained: Pattern=you, Pattern=have, Pattern=though, Pattern=a, Pattern=have you, Pattern=tried, Pattern=them
+Turn ID=11| B | Human 2 : i'm glad you had a good lunch ! 😊 they are all pretty expensive though have you tried them ? lol was
+	Free: Pattern=had a, Pattern=lol, Pattern=you had, Pattern=i'm, Pattern=lunch, Pattern=they are all pretty expensive though, Pattern=was, Pattern=have you tried them ?
+	Constrained: Pattern=you, Pattern=have, Pattern=though, Pattern=a, Pattern=have you, Pattern=tried, Pattern=them
+Turn ID=12| A | Human 1 : i love it too . but depending on how it's prepared you can taste the peanut butter . but if prepared well i love it . what kind of food would you have eaten if it wasn't rainy ?
+	Free: Pattern=you, Pattern=peanut butter, Pattern=it, Pattern=you have eaten, Pattern=can, Pattern=i, Pattern=prepared, Pattern=depending on how it's prepared, Pattern=food would, Pattern=the, Pattern=taste, Pattern=but
+	Constrained: Pattern=you, Pattern=have, Pattern=food, Pattern=would, Pattern=prepared
+Turn ID=13| B | Human 2 : i've tried it and the taste can vary depending on how it's prepared but peanut butter you have eaten food would have
+	Free: Pattern=have, Pattern=peanut butter, Pattern=can, Pattern=tried, Pattern=depending on how it's prepared, Pattern=it, Pattern=and, Pattern=i've, Pattern=you have eaten, Pattern=food would, Pattern=the, Pattern=taste, Pattern=but
+	Constrained: Pattern=you, Pattern=have, Pattern=food, Pattern=would, Pattern=prepared

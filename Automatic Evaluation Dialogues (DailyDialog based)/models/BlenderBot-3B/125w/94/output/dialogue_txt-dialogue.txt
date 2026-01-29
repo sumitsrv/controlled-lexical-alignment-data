@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _have you _had_ lunch_ yet ? 
+B|3| Human 2: no , _i_ [had] to work this morning . 
+A|4| Human 1: cool . where _and_ _what_ _did_ _you_ _eat_ ? 
+B|5| Human 2: _i_ just [had lunch] [and] _i_ [did] not [eat] any _of_ _the_ leftovers . 
+A|6| Human 1: a sandwich _for lunch_ ? was _it_ filling . _i'm_ currently having _some_ mix [of] _shrimp_ , fish , _chicken and_ pork . _i'm_ considering _going_ vegetarian _though ._ lol . 
+B|7| Human 2: [i'm] [going] to get [chicken and] [shrimp] [for lunch] _. i_ really wanted [some] fried rice [though .] 
+A|8| Human 1: cause _the environment and humans suck_ . [i'm] keeping my bets open [for] space [though] in case _the environment_ dies [. i] mixed up a couple [of] dishes . _it_ was a buffet style place . 
+B|9| Human 2: [the environment and humans suck] 
+A|10| Human 1: _i love_ them !!!! i've [had] a couple [of] different _kinds_ . they are _all_ _pretty_ expensive [though .] _have you_ tried them ? 
+B|11| Human 2: [i love] [chicken and] [shrimp] ! [have you had] [it] before ? 
+A|12| Human 1: [i love] [it] too . but depending on how _it's_ prepared [you] can taste [the] peanut butter . but if prepared well [i love] [it] . _what kind of food would you_ [have] eaten if [it] wasn't rainy ? 
+B|13| Human 2: [i] [have] [had] [it] before , [it's] [pretty] good ! [what kind of food would you] like ? [i love] [all] [kinds] , including chinese [and] american . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : have you had lunch yet ?
+	Free: Pattern=have you had, Pattern=had lunch
+	Constrained: Pattern=have, Pattern=had, Pattern=have you, Pattern=you
+Turn ID=3| B | Human 2 : no , i had to work this morning .
+	Free: Pattern=had, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : cool . where and what did you eat ?
+	Free: Pattern=you, Pattern=eat, Pattern=what, Pattern=did, Pattern=and
+	Constrained: 
+Turn ID=5| B | Human 2 : i just had lunch and i did not eat any of the leftovers .
+	Free: Pattern=of, Pattern=eat, Pattern=and, Pattern=i, Pattern=the, Pattern=did, Pattern=had lunch
+	Constrained: Pattern=had
+Turn ID=6| A | Human 1 : a sandwich for lunch ? was it filling . i'm currently having some mix of shrimp , fish , chicken and pork . i'm considering going vegetarian though . lol .
+	Free: Pattern=of, Pattern=going, Pattern=chicken and, Pattern=it, Pattern=i'm, Pattern=for lunch, Pattern=though ., Pattern=shrimp, Pattern=some
+	Constrained: Pattern=though, Pattern=for, Pattern=and
+Turn ID=7| B | Human 2 : i'm going to get chicken and shrimp for lunch . i really wanted some fried rice though .
+	Free: Pattern=going, Pattern=chicken and, Pattern=. i, Pattern=i'm, Pattern=for lunch, Pattern=though ., Pattern=shrimp, Pattern=some
+	Constrained: Pattern=for, Pattern=though, Pattern=i, Pattern=and
+Turn ID=8| A | Human 1 : cause the environment and humans suck . i'm keeping my bets open for space though in case the environment dies . i mixed up a couple of dishes . it was a buffet style place .
+	Free: Pattern=of, Pattern=though, Pattern=the environment, Pattern=for, Pattern=it, Pattern=. i, Pattern=i'm, Pattern=the environment and humans suck
+	Constrained: Pattern=i, Pattern=the environment, Pattern=the, Pattern=and
+Turn ID=9| B | Human 2 : the environment and humans suck
+	Free: Pattern=the environment and humans suck
+	Constrained: Pattern=the environment, Pattern=the, Pattern=and
+Turn ID=10| A | Human 1 : i love them !!!! i've had a couple of different kinds . they are all pretty expensive though . have you tried them ?
+	Free: Pattern=of, Pattern=kinds, Pattern=have you, Pattern=all, Pattern=though ., Pattern=i love, Pattern=had, Pattern=pretty
+	Constrained: Pattern=have, Pattern=though, Pattern=i, Pattern=you
+Turn ID=11| B | Human 2 : i love chicken and shrimp ! have you had it before ?
+	Free: Pattern=chicken and, Pattern=have you had, Pattern=it, Pattern=shrimp, Pattern=i love
+	Constrained: Pattern=you, Pattern=have, Pattern=and, Pattern=had, Pattern=have you, Pattern=i
+Turn ID=12| A | Human 1 : i love it too . but depending on how it's prepared you can taste the peanut butter . but if prepared well i love it . what kind of food would you have eaten if it wasn't rainy ?
+	Free: Pattern=you, Pattern=have, Pattern=it, Pattern=the, Pattern=what kind of food would you, Pattern=i love, Pattern=it's
+	Constrained: Pattern=what, Pattern=i, Pattern=you, Pattern=of
+Turn ID=13| B | Human 2 : i have had it before , it's pretty good ! what kind of food would you like ? i love all kinds , including chinese and american .
+	Free: Pattern=have, Pattern=kinds, Pattern=i, Pattern=all, Pattern=what kind of food would you, Pattern=i love, Pattern=it's, Pattern=it, Pattern=and, Pattern=had, Pattern=pretty
+	Constrained: Pattern=what, Pattern=i, Pattern=you, Pattern=of

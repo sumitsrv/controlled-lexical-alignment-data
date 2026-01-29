@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , whats _up_ ? 
+A|2| Human 1: _i_ was _not_ _able to_ attend _the_ lectures last _week_ _. can you_ _help_ _me_ _understand_ some _concepts_ ? 
+B|3| Human 2: _of_ _course_ ! i'd _be_ happy [to] [help] [you] [understand] [the] [concepts] [. can you] tell [me] which topics you're having trouble _with_ ? <| 
+A|4| Human 1: _i_ was _not_ _able to_ figure out [the] last few slides _. i think_ _its_ _best_ [to] discuss _this_ in person . _do _you_ _have_ time right now_ ? 
+B|5| Human 2: yes , [i] [have time right now] . how would [you] _like_ [to] proceed ? [do you] want [me] [to] explain [the] [concepts] [to] [you] _over_ video call ? < 
+A|6| Human 1: no problem ! sure . we still [have] plenty [of] [time] _for the test_ . anyways , _how's your preparation going_ ? 
+B|7| Human 2: [how's your preparation going] [for the test] ? [have] [you] been [able to] [understand] [the] [concepts] _well_ ? 
+A|8| Human 1: _same feeling here !_ but _i think_ _the syllabus_ _may not_ _that tough ._ [you] _may_ _be able to cover it_ [up] _over the weekend_ . 
+B|9| Human 2: you're [right] ! [the syllabus] [for] [this] [test] [may not] [be] [that tough [.] i think] you'll [be able to cover it] 
+A|10| Human 1: true ! [this] _will_ _be a_ very _hectic_ november ! [i] [do] [like] [the] [course] _content_ _though_ . _its_ very much [up] [to] date [with] _latest research findings ._ 
+B|11| Human 2: that's great ! [its] [the] [best] [feeling] when [you have] [content] [that] is [latest research findings .] [will] [cover it] [over the weekend] 
+A|12| Human 1: thats pretty cool ! [i] hope [you] [do] [well] _next_ _week_ . 
+B|13| Human 2: [you] too ! [same feeling here !] [its] [going] [to] [be a] [hectic] [week] [with] [the test] [next] thursday [though] ! <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , whats up ?
+	Free: Pattern=up
+	Constrained: 
+Turn ID=2| A | Human 1 : i was not able to attend the lectures last week . can you help me understand some concepts ?
+	Free: Pattern=able to, Pattern=. can you, Pattern=the, Pattern=not, Pattern=me, Pattern=week, Pattern=understand, Pattern=i, Pattern=concepts, Pattern=help
+	Constrained: Pattern=you, Pattern=to
+Turn ID=3| B | Human 2 : of course ! i'd be happy to help you understand the concepts . can you tell me which topics you're having trouble with ? <|
+	Free: Pattern=of, Pattern=you, Pattern=me, Pattern=. can you, Pattern=be, Pattern=the, Pattern=to, Pattern=course, Pattern=understand, Pattern=concepts, Pattern=help, Pattern=with
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : i was not able to figure out the last few slides . i think its best to discuss this in person . do you have time right now ?
+	Free: Pattern=its, Pattern=have time right now, Pattern=able to, Pattern=do you, Pattern=. i think, Pattern=you have, Pattern=i, Pattern=the, Pattern=to, Pattern=this, Pattern=best, Pattern=not
+	Constrained: Pattern=time, Pattern=right, Pattern=you, Pattern=have, Pattern=do, Pattern=i, Pattern=to, Pattern=i think
+Turn ID=5| B | Human 2 : yes , i have time right now . how would you like to proceed ? do you want me to explain the concepts to you over video call ? <
+	Free: Pattern=have time right now, Pattern=you, Pattern=me, Pattern=do you, Pattern=over, Pattern=i, Pattern=like, Pattern=the, Pattern=to, Pattern=concepts
+	Constrained: Pattern=time, Pattern=right, Pattern=you, Pattern=have, Pattern=do
+Turn ID=6| A | Human 1 : no problem ! sure . we still have plenty of time for the test . anyways , how's your preparation going ?
+	Free: Pattern=time, Pattern=of, Pattern=have, Pattern=how's your preparation going, Pattern=for the test
+	Constrained: Pattern=going, Pattern=for, Pattern=the, Pattern=test, Pattern=the test
+Turn ID=7| B | Human 2 : how's your preparation going for the test ? have you been able to understand the concepts well ?
+	Free: Pattern=well, Pattern=you, Pattern=have, Pattern=able to, Pattern=how's your preparation going, Pattern=understand, Pattern=for the test, Pattern=the, Pattern=concepts
+	Constrained: Pattern=going, Pattern=for, Pattern=the, Pattern=test, Pattern=to, Pattern=the test
+Turn ID=8| A | Human 1 : same feeling here ! but i think the syllabus may not that tough . you may be able to cover it up over the weekend .
+	Free: Pattern=you, Pattern=may not, Pattern=that tough ., Pattern=over the weekend, Pattern=be able to cover it, Pattern=the syllabus, Pattern=up, Pattern=i think, Pattern=same feeling here !, Pattern=may
+	Constrained: Pattern=able to, Pattern=over, Pattern=i, Pattern=be, Pattern=to, Pattern=that, Pattern=not, Pattern=feeling, Pattern=cover it, Pattern=the, Pattern=may
+Turn ID=9| B | Human 2 : you're right ! the syllabus for this test may not be that tough . i think you'll be able to cover it
+	Free: Pattern=right, Pattern=may not, Pattern=for, Pattern=that tough ., Pattern=. i think, Pattern=be, Pattern=the syllabus, Pattern=this, Pattern=test, Pattern=be able to cover it
+	Constrained: Pattern=cover it, Pattern=able to, Pattern=i, Pattern=be, Pattern=to, Pattern=that, Pattern=i think, Pattern=not, Pattern=the, Pattern=may
+Turn ID=10| A | Human 1 : true ! this will be a very hectic november ! i do like the course content though . its very much up to date with latest research findings .
+	Free: Pattern=latest research findings ., Pattern=its, Pattern=hectic, Pattern=do, Pattern=will, Pattern=be a, Pattern=like, Pattern=the, Pattern=this, Pattern=with, Pattern=content, Pattern=though, Pattern=course, Pattern=i, Pattern=up, Pattern=to
+	Constrained: Pattern=be
+Turn ID=11| B | Human 2 : that's great ! its the best feeling when you have content that is latest research findings . will cover it over the weekend
+	Free: Pattern=latest research findings ., Pattern=its, Pattern=content, Pattern=over the weekend, Pattern=the, Pattern=feeling, Pattern=cover it, Pattern=will, Pattern=you have, Pattern=best, Pattern=that
+	Constrained: Pattern=have, Pattern=you, Pattern=over, Pattern=the
+Turn ID=12| A | Human 1 : thats pretty cool ! i hope you do well next week .
+	Free: Pattern=next, Pattern=well, Pattern=you, Pattern=week, Pattern=do, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : you too ! same feeling here ! its going to be a hectic week with the test next thursday though ! <|im_end
+	Free: Pattern=its, Pattern=next, Pattern=hectic, Pattern=you, Pattern=going, Pattern=week, Pattern=though, Pattern=be a, Pattern=same feeling here !, Pattern=to, Pattern=the test, Pattern=with
+	Constrained: Pattern=test, Pattern=feeling, Pattern=be, Pattern=the

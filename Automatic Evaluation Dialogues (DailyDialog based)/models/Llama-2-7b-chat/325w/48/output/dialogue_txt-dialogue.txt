@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm_ _good_ . [how are you] _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] well , thanks _for_ asking ! [how] can _i_ assist [you] [today ?] 
+A|4| Human 1: [i] was _flying_ my _kite_ [today] in the sunshine ! what did [you] _have_ [for] lunch ? 
+B|5| Human 2: _wow ,_ [flying] a [kite] sounds _like_ fun ! [i'm] just _an_ ai , [i] don't [have] personal experiences _or_ a physical body 
+A|6| Human 1: oh that _is_ _great !_ [i] love _seafood_ - especially shellfish ! 
+B|7| Human 2: [i] can't eat [seafood] , [i'm] just _an_ ai , [i] don't [have] a physical body _or_ taste buds< 
+A|8| Human 1: oh _nice _!_ is_ it hard ? 
+B|9| Human 2: [nice !] [how] can [i] help [you] [today ?] 
+A|10| Human 1: oh [wow ,] [you] sound [like] [an] expert _! have you_ done _this_ _before ?_ 
+B|11| Human 2: [i'm] happy to help [you] with _your_ inquiry [! is] there something specific [you] _would_ [like] to know ? 
+A|12| Human 1: haha , [you] _really_ [have] done [your] research [i] suppose ! ever done any other kind of _fishing_ [or] hunting ? 
+B|13| Human 2: 😂 [you] [are] [really] [good] at [this] ! can [i] ask [you] a personal question ? [are you] a [seafood] lover [or] just 
+A|14| Human 1: _ahh ,_ [would] [you] consider yourself [an] outdoorsy type of person ? 
+B|15| Human 2: [ahh ,] that's [great [!] have you] tried [fishing] [before ?] it's [really] relaxing and fun ! <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=how, Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=how are you, Pattern=doing, Pattern=i'm, Pattern=today ?, Pattern=good
+	Constrained: Pattern=you, Pattern=today, Pattern=how, Pattern=are, Pattern=are you
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking ! how can i assist you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=for, Pattern=i'm, Pattern=i, Pattern=how, Pattern=doing
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=you, Pattern=have, Pattern=today, Pattern=for, Pattern=flying, Pattern=i, Pattern=kite
+	Constrained: 
+Turn ID=5| B | Human 2 : wow , flying a kite sounds like fun ! i'm just an ai , i don't have personal experiences or a physical body
+	Free: Pattern=have, Pattern=an, Pattern=wow ,, Pattern=flying, Pattern=i'm, Pattern=i, Pattern=like, Pattern=or, Pattern=kite
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=great !, Pattern=i, Pattern=seafood, Pattern=is
+	Constrained: 
+Turn ID=7| B | Human 2 : i can't eat seafood , i'm just an ai , i don't have a physical body or taste buds<
+	Free: Pattern=have, Pattern=an, Pattern=i'm, Pattern=i, Pattern=or, Pattern=seafood
+	Constrained: 
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: Pattern=nice !, Pattern=! is
+	Constrained: Pattern=is
+Turn ID=9| B | Human 2 : nice ! how can i help you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=how, Pattern=i, Pattern=nice !
+	Constrained: Pattern=today
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=you, Pattern=an, Pattern=wow ,, Pattern=! have you, Pattern=like, Pattern=before ?, Pattern=this
+	Constrained: Pattern=have, Pattern=you
+Turn ID=11| B | Human 2 : i'm happy to help you with your inquiry ! is there something specific you would like to know ?
+	Free: Pattern=you, Pattern=! is, Pattern=i'm, Pattern=your, Pattern=like, Pattern=would
+	Constrained: Pattern=is
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=you, Pattern=have, Pattern=fishing, Pattern=really, Pattern=or, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : 😂 you are really good at this ! can i ask you a personal question ? are you a seafood lover or just
+	Free: Pattern=good, Pattern=you, Pattern=are, Pattern=really, Pattern=or, Pattern=seafood, Pattern=this, Pattern=are you, Pattern=i
+	Constrained: Pattern=you, Pattern=are
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=ahh ,, Pattern=would, Pattern=you, Pattern=an
+	Constrained: 
+Turn ID=15| B | Human 2 : ahh , that's great ! have you tried fishing before ? it's really relaxing and fun ! <|im_end
+	Free: Pattern=ahh ,, Pattern=fishing, Pattern=really, Pattern=before ?, Pattern=! have you, Pattern=great !
+	Constrained: Pattern=have, Pattern=you

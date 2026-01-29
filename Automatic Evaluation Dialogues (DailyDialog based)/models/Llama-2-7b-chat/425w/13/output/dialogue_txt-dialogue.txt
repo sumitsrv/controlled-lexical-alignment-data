@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i_ _saw_ "the _parasite_ . " ever _heard_ _of_ _it ?_ 
+B|3| Human 2: _oh_ , wow ! [i] [heard] it's _a_ _really_ _great_ movie . _can_ _you_ tell me more about [it ?] 
+A|4| Human 1: my friend wanted _to_ _see_ [it] . [it] has [great] reviews on imdb _and_ rotten tomatoes ! _what_ _did you_ _do_ _last weekend_ ? 
+B|5| Human 2: [last weekend] _was_ [great] , thanks ! [i] went [to] _a_ festival [and] [saw] some live music performances . which music [do] [you] like ? <|im_ 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: 🤖 yes ! [the mandalorian] [and] [the] [last] season [of] stranger things were [great] ! [did you] [see] any _good_ shows l 
+A|8| Human 1: lol are [you] [a] big _marvel fan_ ? 
+B|9| Human 2: [marvel fan] 🤖 ! i'm more [of] an anime [and] korean drama [fan] _myself_ . [what] [do] [you] _think_ [of] [parasite] 
+A|10| Human 1: i've only [seen] _spiderman_ . honestly [it] [was] [a] little too _scary_ [and] so [i] don't [think] [i] [can] bring [myself] [to] watch [the] other _marvel movies_ ! haha 
+B|11| Human 2: [i] [see] , [spiderman] [can] _be_ [scary] 😅 ! [parasite] _is_ actually [a] [great] choice though , it's [a] 
+A|12| Human 1: [oh] [really] ? [to] [be] honest _i think_ _the actor_ _is not_ that _good looking_ , so _not_ so surprising ! haha 
+B|13| Human 2: [i think] that's [the] wrong impression 😅 ! [parasite] [is not] about [good looking] actors , but about [the] story [and] [the] 
+A|14| Human 1: _who_ [is] _loki_ ? i've never [heard] that _name_ before 
+B|15| Human 2: [loki] [is] actually [the] [name] [of] [the actor] [who] played thor's adopted brother in [the] [marvel movies] 😅 ! he's 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=seen, Pattern=good, Pattern=you, Pattern=movies
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=saw, Pattern=it ?, Pattern=parasite, Pattern=i, Pattern=last weekend, Pattern=of, Pattern=heard
+	Constrained: Pattern=last, Pattern=it
+Turn ID=3| B | Human 2 : oh , wow ! i heard it's a really great movie . can you tell me more about it ?
+	Free: Pattern=heard, Pattern=it ?, Pattern=a, Pattern=oh, Pattern=can, Pattern=i, Pattern=really, Pattern=you, Pattern=great
+	Constrained: Pattern=it
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=great, Pattern=did you, Pattern=what, Pattern=do, Pattern=see, Pattern=it, Pattern=and, Pattern=last weekend, Pattern=to
+	Constrained: Pattern=last, Pattern=you
+Turn ID=5| B | Human 2 : last weekend was great , thanks ! i went to a festival and saw some live music performances . which music do you like ? <|im_
+	Free: Pattern=saw, Pattern=and, Pattern=i, Pattern=was, Pattern=you, Pattern=great, Pattern=do, Pattern=a, Pattern=last weekend, Pattern=to
+	Constrained: Pattern=last
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : 🤖 yes ! the mandalorian and the last season of stranger things were great ! did you see any good shows l
+	Free: Pattern=good, Pattern=of, Pattern=great, Pattern=did you, Pattern=and, Pattern=the mandalorian, Pattern=last, Pattern=the, Pattern=see
+	Constrained: Pattern=the, Pattern=you
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=marvel fan, Pattern=a, Pattern=you
+	Constrained: Pattern=fan
+Turn ID=9| B | Human 2 : marvel fan 🤖 ! i'm more of an anime and korean drama fan myself . what do you think of parasite
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=do, Pattern=parasite, Pattern=and, Pattern=think, Pattern=myself, Pattern=marvel fan, Pattern=fan
+	Constrained: Pattern=fan
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=scary, Pattern=a, Pattern=can, Pattern=think, Pattern=i, Pattern=the, Pattern=spiderman, Pattern=to, Pattern=was, Pattern=myself, Pattern=seen, Pattern=marvel movies, Pattern=it, Pattern=and
+	Constrained: Pattern=movies
+Turn ID=11| B | Human 2 : i see , spiderman can be scary 😅 ! parasite is actually a great choice though , it's a
+	Free: Pattern=great, Pattern=scary, Pattern=a, Pattern=parasite, Pattern=can, Pattern=be, Pattern=see, Pattern=spiderman, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=is not, Pattern=really, Pattern=be, Pattern=to, Pattern=the actor, Pattern=i think, Pattern=not, Pattern=oh, Pattern=good looking
+	Constrained: Pattern=good, Pattern=think, Pattern=the, Pattern=not, Pattern=is, Pattern=i
+Turn ID=13| B | Human 2 : i think that's the wrong impression 😅 ! parasite is not about good looking actors , but about the story and the
+	Free: Pattern=is not, Pattern=parasite, Pattern=the, Pattern=i think, Pattern=and, Pattern=good looking
+	Constrained: Pattern=good, Pattern=think, Pattern=not, Pattern=is, Pattern=i
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=heard, Pattern=who, Pattern=name, Pattern=is, Pattern=loki
+	Constrained: 
+Turn ID=15| B | Human 2 : loki is actually the name of the actor who played thor's adopted brother in the marvel movies 😅 ! he's
+	Free: Pattern=of, Pattern=who, Pattern=name, Pattern=is, Pattern=the, Pattern=the actor, Pattern=marvel movies, Pattern=loki
+	Constrained: Pattern=the, Pattern=movies

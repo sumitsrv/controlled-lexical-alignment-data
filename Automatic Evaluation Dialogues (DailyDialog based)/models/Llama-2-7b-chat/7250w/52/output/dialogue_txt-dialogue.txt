@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ doing today ? 
+A|2| Human 1: i heard _they are_ _giving out some_ _goodies_ in _microkitchen_ . 
+B|3| Human 2: 😊 yes , [microkitchen] is [giving out some] tasty snacks today ! would _you_ like me _to_ send _you_ [some] _good_ 
+A|4| Human 1: i guess _its_ a _jacket_ ! very much needed _that_ in _the cold_ 🙂 
+B|5| Human 2: 😊 haha , that's funny ! [microkitchen] is [giving out some] [jacket] [goodies] , but [they are] only 
+A|6| Human 1: sure hate it ! limits _our ability to_ go [out] _even for_ a _walk_ ! _its good that_ we don't _get_ _to suffer extreme_ _cold weather_ ! 
+B|7| Human 2: [its good that] [the] [microkitchen] is [giving out some] [jacket] [goodies] [for] [our] [cold weather] 🙂<|im_end| 
+A|8| Human 1: _oh nice ! where did you live before ?_ 
+B|9| Human 2: [oh nice ! where did you live before ?] [did you] _get the_ [jacket] [goodies] from [microkitchen] ? 
+A|10| Human 1: _new york_ ! [nice !] best _place_ [to] [live] 🙂 .. _right_ , except _for the cold_ ! 
+B|11| Human 2: [oh nice] [place] ! [new york] [goodies] [for the [cold] weather] you'll [get] from [microkitchen] [are] [right] [that] [our ability [to] suffer extreme] 
+A|12| Human 1: anyways , i guess we should _better_ hurry up [to] [get the] [goodies] . i remember _last time_ _they ran out_ of it . 
+B|13| Human 2: [right] [you] [are] 🙂 that's [good] [they ran out] [last time] [before] [the [cold] weather] [get] [better] so [our] [suffer] is [extreme] [even for] 
+A|14| Human 1: [the] one in _our floor_ . i _will get_ by _your_ desk _and_ we can _walk_ _there_ . 
+B|15| Human 2: [there] [you] [will get] [your] [goodies] 🙂 [and] [walk] back [to] [our floor] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you doing today ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : i heard they are giving out some goodies in microkitchen .
+	Free: Pattern=giving out some, Pattern=they are, Pattern=goodies, Pattern=microkitchen
+	Constrained: Pattern=are, Pattern=out, Pattern=some
+Turn ID=3| B | Human 2 : 😊 yes , microkitchen is giving out some tasty snacks today ! would you like me to send you some good
+	Free: Pattern=good, Pattern=you, Pattern=microkitchen, Pattern=some, Pattern=giving out some, Pattern=to
+	Constrained: Pattern=out, Pattern=some
+Turn ID=4| A | Human 1 : i guess its a jacket ! very much needed that in the cold 🙂
+	Free: Pattern=the cold, Pattern=jacket, Pattern=its, Pattern=that
+	Constrained: Pattern=the
+Turn ID=5| B | Human 2 : 😊 haha , that's funny ! microkitchen is giving out some jacket goodies , but they are only
+	Free: Pattern=goodies, Pattern=microkitchen, Pattern=jacket, Pattern=they are, Pattern=giving out some
+	Constrained: Pattern=are, Pattern=out, Pattern=some
+Turn ID=6| A | Human 1 : sure hate it ! limits our ability to go out even for a walk ! its good that we don't get to suffer extreme cold weather !
+	Free: Pattern=out, Pattern=to suffer extreme, Pattern=even for, Pattern=walk, Pattern=its good that, Pattern=get, Pattern=cold weather, Pattern=our ability to
+	Constrained: Pattern=good, Pattern=its, Pattern=extreme, Pattern=suffer, Pattern=to, Pattern=that, Pattern=our, Pattern=for
+Turn ID=7| B | Human 2 : its good that the microkitchen is giving out some jacket goodies for our cold weather 🙂<|im_end|
+	Free: Pattern=goodies, Pattern=microkitchen, Pattern=giving out some, Pattern=cold weather, Pattern=our, Pattern=for, Pattern=jacket, Pattern=its good that, Pattern=the
+	Constrained: Pattern=good, Pattern=its, Pattern=out, Pattern=some, Pattern=that
+Turn ID=8| A | Human 1 : oh nice ! where did you live before ?
+	Free: Pattern=oh nice ! where did you live before ?
+	Constrained: Pattern=you, Pattern=did you, Pattern=oh nice, Pattern=live, Pattern=before, Pattern=nice !
+Turn ID=9| B | Human 2 : oh nice ! where did you live before ? did you get the jacket goodies from microkitchen ?
+	Free: Pattern=goodies, Pattern=did you, Pattern=microkitchen, Pattern=jacket, Pattern=get the, Pattern=oh nice ! where did you live before ?
+	Constrained: Pattern=you, Pattern=did you, Pattern=oh nice, Pattern=live, Pattern=the, Pattern=before, Pattern=nice !, Pattern=get
+Turn ID=10| A | Human 1 : new york ! nice ! best place to live 🙂 .. right , except for the cold !
+	Free: Pattern=right, Pattern=new york, Pattern=live, Pattern=to, Pattern=place, Pattern=for the cold, Pattern=nice !
+	Constrained: Pattern=the cold, Pattern=for, Pattern=the
+Turn ID=11| B | Human 2 : oh nice place ! new york goodies for the cold weather you'll get from microkitchen are right that our ability to suffer extreme
+	Free: Pattern=goodies, Pattern=right, Pattern=microkitchen, Pattern=new york, Pattern=oh nice, Pattern=are, Pattern=to suffer extreme, Pattern=place, Pattern=for the cold, Pattern=get, Pattern=that, Pattern=cold weather, Pattern=our ability to
+	Constrained: Pattern=extreme, Pattern=the, Pattern=suffer, Pattern=the cold, Pattern=to, Pattern=our, Pattern=for
+Turn ID=12| A | Human 1 : anyways , i guess we should better hurry up to get the goodies . i remember last time they ran out of it .
+	Free: Pattern=goodies, Pattern=they ran out, Pattern=last time, Pattern=better, Pattern=to, Pattern=get the
+	Constrained: Pattern=out, Pattern=the, Pattern=get
+Turn ID=13| B | Human 2 : right you are 🙂 that's good they ran out last time before the cold weather get better so our suffer is extreme even for
+	Free: Pattern=good, Pattern=right, Pattern=you, Pattern=our, Pattern=they ran out, Pattern=are, Pattern=last time, Pattern=extreme, Pattern=even for, Pattern=better, Pattern=suffer, Pattern=the cold, Pattern=before, Pattern=get, Pattern=cold weather
+	Constrained: Pattern=for, Pattern=out, Pattern=the
+Turn ID=14| A | Human 1 : the one in our floor . i will get by your desk and we can walk there .
+	Free: Pattern=there, Pattern=and, Pattern=the, Pattern=your, Pattern=walk, Pattern=our floor, Pattern=will get
+	Constrained: Pattern=our, Pattern=get
+Turn ID=15| B | Human 2 : there you will get your goodies 🙂 and walk back to our floor
+	Free: Pattern=goodies, Pattern=you, Pattern=there, Pattern=and, Pattern=to, Pattern=your, Pattern=walk, Pattern=our floor, Pattern=will get
+	Constrained: Pattern=our, Pattern=get

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: _it's good_ ! _how_ is your _day_ ? 
+B|3| Human 2: [it's good] , just _a_ [day] off work , nothing interesting _going_ on _here_ so i'll just go read for _a bit_ . 
+A|4| Human 1: _yes ,_ _the_ darkness can be [a bit] depressing . this _weekend_ _i went rock climbing_ ! _it _was_ _great_ !_ _how about yourself ?_ 
+B|5| Human 2: [it was] [good] , just [went rock climbing] on [the] [weekend] , [how about yourself ?] 
+A|6| Human 1: oh _nice_ _! what movie_ ? 
+B|7| Human 2: that's [great [!] what movie] did _you_ _see_ last [weekend] ? [i went rock climbing] as well , [was] pretty [good] _. it was_ _dark_ [the] whole time 
+A|8| Human 1: _hahah_ _yes , _they_ all look the same_ ! _i saw that_ _very_ _same_ [movie] _over thanksgiving_ break . lots of twists _and_ turns ! 
+B|9| Human 2: [it was] "get smart" . [i saw that] [the] [movie] [was great] [and] [they all look the same] _to_ _you_ [hahah] 
+A|10| Human 1: hmm [good] question . evening runs can be fun , _but_ [it] can be [a] little _scary_ _when_ [it's] [dark] _out_ ! 
+B|11| Human 2: we [went] [and] [saw] jurassic world on [the] [weekend] .. _it was very_ [good] [but] [scary] in parts . 
+A|12| Human 1: _yes_ ! i've been [to] _australia_ [. [it was] very] nice; [i] regret _not_ [going] [to] [see] _the southern_ _lights_ . me personally , _i like_ _winter_ . [but] i'd prefer [it] [to] be _more_ brief _than_ [it] actually is [here] ... where _are_ [you] _from_ _originally_ ? 
+B|13| Human 2: [i saw] [the same] [over thanksgiving] . [yes , they] [are] [all] [very] similar [and] [i like] watching them [when] [the] [lights] [out] [but] [that] [was] [not] [the] 
+A|14| Human 1: ahh me too ! [you] should definitely try [to] visit _australia_ at least once ! 
+B|15| Human 2: i'm [originally] [from] [the southern] states . we [see] [more] [winter] [than] you'd think [here] . [it's] still [very] pretty [and] [nice] [but] [not] [like] [australia] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=it's good, Pattern=how, Pattern=day
+	Constrained: Pattern=good, Pattern=it's
+Turn ID=3| B | Human 2 : it's good , just a day off work , nothing interesting going on here so i'll just go read for a bit .
+	Free: Pattern=going, Pattern=here, Pattern=a, Pattern=a bit, Pattern=day, Pattern=it's good
+	Constrained: Pattern=good, Pattern=a, Pattern=it's
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=it was, Pattern=a bit, Pattern=weekend, Pattern=great !, Pattern=how about yourself ?, Pattern=the, Pattern=was great, Pattern=i went rock climbing, Pattern=yes ,
+	Constrained: Pattern=went rock climbing, Pattern=yes, Pattern=went, Pattern=a, Pattern=how, Pattern=it, Pattern=i, Pattern=was
+Turn ID=5| B | Human 2 : it was good , just went rock climbing on the weekend , how about yourself ?
+	Free: Pattern=weekend, Pattern=how about yourself ?, Pattern=the, Pattern=it was, Pattern=went rock climbing, Pattern=good
+	Constrained: Pattern=it, Pattern=was, Pattern=how, Pattern=went
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=! what movie, Pattern=nice
+	Constrained: Pattern=movie
+Turn ID=7| B | Human 2 : that's great ! what movie did you see last weekend ? i went rock climbing as well , was pretty good . it was dark the whole time
+	Free: Pattern=good, Pattern=. it was, Pattern=weekend, Pattern=great !, Pattern=the, Pattern=see, Pattern=was, Pattern=! what movie, Pattern=you, Pattern=i went rock climbing, Pattern=dark
+	Constrained: Pattern=went, Pattern=movie, Pattern=it, Pattern=i, Pattern=was, Pattern=it was, Pattern=went rock climbing
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=they all look the same, Pattern=movie, Pattern=i saw that, Pattern=yes , they, Pattern=very, Pattern=same, Pattern=over thanksgiving, Pattern=and, Pattern=hahah
+	Constrained: Pattern=saw, Pattern=i, Pattern=same, Pattern=the same, Pattern=that, Pattern=yes, Pattern=yes ,, Pattern=i saw, Pattern=the, Pattern=all
+Turn ID=9| B | Human 2 : it was "get smart" . i saw that the movie was great and they all look the same to you hahah
+	Free: Pattern=it was, Pattern=you, Pattern=they all look the same, Pattern=movie, Pattern=i saw that, Pattern=the, Pattern=to, Pattern=was great, Pattern=and, Pattern=hahah
+	Constrained: Pattern=saw, Pattern=it, Pattern=i, Pattern=same, Pattern=that, Pattern=i saw, Pattern=the, Pattern=all, Pattern=the same, Pattern=was
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=good, Pattern=scary, Pattern=a, Pattern=it, Pattern=when, Pattern=out, Pattern=dark, Pattern=it's, Pattern=but
+	Constrained: 
+Turn ID=11| B | Human 2 : we went and saw jurassic world on the weekend .. it was very good but scary in parts .
+	Free: Pattern=scary, Pattern=went, Pattern=and, Pattern=weekend, Pattern=it was very, Pattern=the, Pattern=but, Pattern=saw, Pattern=good
+	Constrained: Pattern=it, Pattern=was, Pattern=it was, Pattern=very
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=originally, Pattern=more, Pattern=the southern, Pattern=going, Pattern=here, Pattern=lights, Pattern=. it was, Pattern=it, Pattern=are, Pattern=from, Pattern=than, Pattern=i, Pattern=australia, Pattern=see, Pattern=to, Pattern=but, Pattern=i like, Pattern=not, Pattern=you, Pattern=yes, Pattern=it was very, Pattern=winter
+	Constrained: Pattern=it was, Pattern=it, Pattern=like, Pattern=the, Pattern=was, Pattern=very, Pattern=i
+Turn ID=13| B | Human 2 : i saw the same over thanksgiving . yes , they are all very similar and i like watching them when the lights out but that was not the
+	Free: Pattern=out, Pattern=lights, Pattern=and, Pattern=are, Pattern=yes , they, Pattern=very, Pattern=i like, Pattern=not, Pattern=i saw, Pattern=the, Pattern=all, Pattern=when, Pattern=over thanksgiving, Pattern=the same, Pattern=was, Pattern=that, Pattern=but
+	Constrained: Pattern=saw, Pattern=i, Pattern=like, Pattern=the, Pattern=same, Pattern=yes, Pattern=yes ,
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=to, Pattern=australia, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm originally from the southern states . we see more winter than you'd think here . it's still very pretty and nice but not like australia
+	Free: Pattern=originally, Pattern=more, Pattern=the southern, Pattern=here, Pattern=nice, Pattern=and, Pattern=from, Pattern=winter, Pattern=than, Pattern=very, Pattern=like, Pattern=australia, Pattern=see, Pattern=not, Pattern=it's, Pattern=but
+	Constrained: Pattern=the

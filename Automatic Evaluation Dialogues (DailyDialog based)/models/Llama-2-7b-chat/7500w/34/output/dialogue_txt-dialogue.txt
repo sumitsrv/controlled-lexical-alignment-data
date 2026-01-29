@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! tell me something _about_ _the_ holiday season ? 
+A|2| Human 1: _are_ _you_ talking [about] _thanksgiving_ ? i _plan_ _to_ do plenty _of_ _shopping_ _here_ . do _you_ _have_ _any plans_ ? 
+B|3| Human 2: [of] course ! _the_ holiday season _is_ [about] much _more_ than just [shopping] . it's _a_ time [to] spend _with_ loved ones , enjoy trad 
+A|4| Human 1: sounds _great !_ _you_ need _not_ wait _for thanksgiving_ _for_ _pumpkin pie_ 🙂 
+B|5| Human 2: 🙂 thanks [for] noticing ! [pumpkin pie] _is_ definitely _a_ popular dessert during _the_ holiday season . [here] [are] _a_ few 
+A|6| Human 1: true ! i think _thanksgiving_ [is] _more about_ _sharing_ . so _you may_ end up _sharing_ [the] [pie] _with the_ whole _family_ :p 
+B|7| Human 2: [you may] [have] [more] [pie] [for thanksgiving] [with the] [family] [sharing] [plan] ! [any plans] [for] xmas [shopping] ? <|im_end| 
+A|8| Human 1: stuffing ! _yes_ please ! i wonder _what_ _would_ _be the excitement levels for christmas then_ :) 
+B|9| Human 2: 🙂 [yes] [christmas] [shopping] _can_ [be] exciting ! [for] _some_ people , [the excitement] [may] [be] [more about] [what] they [would] get than 
+A|10| Human 1: like everything _that_ has [a] discount tag ! .. kidding ! i normally do [some] research [for] [the] _prices_ , _and_ _mostly_ buy _clothes and electronics_ . 
+B|11| Human 2: that's [great !] researching [for] [prices] [and] buying [clothes and electronics] [would] [mostly] [be the excitement levels for christmas then] :)<| 
+A|12| Human 1: i _bought_ [the] best _suit_ ever [for] [a] price _that_ [may] _scare_ [you] 🙂 
+B|13| Human 2: [that] [suit] [you] [bought] [for christmas] [shopping] [would] [mostly] [scare] [the excitement levels] [then] 😅 [thanksgiving] [and] xmas [may] [not] 
+A|14| Human 1: hehe , sure ! i [can] share [some] links [with] [you] later . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! tell me something about the holiday season ?
+	Free: Pattern=about, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : are you talking about thanksgiving ? i plan to do plenty of shopping here . do you have any plans ?
+	Free: Pattern=of, Pattern=have, Pattern=here, Pattern=are, Pattern=any plans, Pattern=to, Pattern=shopping, Pattern=you, Pattern=plan, Pattern=about, Pattern=thanksgiving
+	Constrained: 
+Turn ID=3| B | Human 2 : of course ! the holiday season is about much more than just shopping . it's a time to spend with loved ones , enjoy trad
+	Free: Pattern=a, Pattern=about, Pattern=is, Pattern=the, Pattern=to, Pattern=with, Pattern=shopping, Pattern=of, Pattern=more
+	Constrained: 
+Turn ID=4| A | Human 1 : sounds great ! you need not wait for thanksgiving for pumpkin pie 🙂
+	Free: Pattern=you, Pattern=for, Pattern=great !, Pattern=for thanksgiving, Pattern=pumpkin pie, Pattern=not
+	Constrained: Pattern=pie, Pattern=thanksgiving, Pattern=for
+Turn ID=5| B | Human 2 : 🙂 thanks for noticing ! pumpkin pie is definitely a popular dessert during the holiday season . here are a few
+	Free: Pattern=here, Pattern=a, Pattern=for, Pattern=are, Pattern=is, Pattern=the, Pattern=pumpkin pie
+	Constrained: Pattern=pie
+Turn ID=6| A | Human 1 : true ! i think thanksgiving is more about sharing . so you may end up sharing the pie with the whole family :p
+	Free: Pattern=you may, Pattern=with the, Pattern=pie, Pattern=the, Pattern=more about, Pattern=thanksgiving, Pattern=family, Pattern=sharing, Pattern=is
+	Constrained: Pattern=more, Pattern=you, Pattern=about, Pattern=with, Pattern=the, Pattern=may
+Turn ID=7| B | Human 2 : you may have more pie for thanksgiving with the family sharing plan ! any plans for xmas shopping ? <|im_end|
+	Free: Pattern=plan, Pattern=for, Pattern=family, Pattern=pie, Pattern=sharing, Pattern=any plans, Pattern=for thanksgiving, Pattern=shopping, Pattern=more, Pattern=you may, Pattern=with the, Pattern=have
+	Constrained: Pattern=you, Pattern=for, Pattern=thanksgiving, Pattern=with, Pattern=the, Pattern=may
+Turn ID=8| A | Human 1 : stuffing ! yes please ! i wonder what would be the excitement levels for christmas then :)
+	Free: Pattern=be the excitement levels for christmas then, Pattern=what, Pattern=would, Pattern=yes
+	Constrained: Pattern=the excitement levels, Pattern=for christmas, Pattern=the excitement, Pattern=then, Pattern=for, Pattern=be, Pattern=christmas, Pattern=the
+Turn ID=9| B | Human 2 : 🙂 yes christmas shopping can be exciting ! for some people , the excitement may be more about what they would get than
+	Free: Pattern=yes, Pattern=for, Pattern=can, Pattern=some, Pattern=be, Pattern=would, Pattern=more about, Pattern=shopping, Pattern=what, Pattern=the excitement, Pattern=christmas, Pattern=may
+	Constrained: Pattern=about, Pattern=the, Pattern=more
+Turn ID=10| A | Human 1 : like everything that has a discount tag ! .. kidding ! i normally do some research for the prices , and mostly buy clothes and electronics .
+	Free: Pattern=a, Pattern=for, Pattern=and, Pattern=some, Pattern=clothes and electronics, Pattern=mostly, Pattern=prices, Pattern=the, Pattern=that
+	Constrained: Pattern=and
+Turn ID=11| B | Human 2 : that's great ! researching for prices and buying clothes and electronics would mostly be the excitement levels for christmas then :)<|
+	Free: Pattern=for, Pattern=and, Pattern=mostly, Pattern=prices, Pattern=would, Pattern=be the excitement levels for christmas then, Pattern=clothes and electronics, Pattern=great !
+	Constrained: Pattern=the excitement levels, Pattern=for christmas, Pattern=the excitement, Pattern=then, Pattern=for, Pattern=and, Pattern=be, Pattern=christmas, Pattern=the
+Turn ID=12| A | Human 1 : i bought the best suit ever for a price that may scare you 🙂
+	Free: Pattern=a, Pattern=for, Pattern=suit, Pattern=scare, Pattern=that, Pattern=you, Pattern=bought, Pattern=the, Pattern=may
+	Constrained: 
+Turn ID=13| B | Human 2 : that suit you bought for christmas shopping would mostly scare the excitement levels then 😅 thanksgiving and xmas may not
+	Free: Pattern=the excitement levels, Pattern=for christmas, Pattern=then, Pattern=and, Pattern=thanksgiving, Pattern=mostly, Pattern=suit, Pattern=may, Pattern=would, Pattern=scare, Pattern=that, Pattern=you, Pattern=bought, Pattern=not, Pattern=shopping
+	Constrained: Pattern=for, Pattern=the excitement, Pattern=the, Pattern=christmas
+Turn ID=14| A | Human 1 : hehe , sure ! i can share some links with you later .
+	Free: Pattern=some, Pattern=you, Pattern=with, Pattern=can
+	Constrained: 

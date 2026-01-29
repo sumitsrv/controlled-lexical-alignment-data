@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ ? 
+A|2| Human 1: _i'm_ _great_ , thanks _. i_ _just_ ate _a_ delicious _breakfast_ , which _always_ sets _the day_ up right . 
+B|3| Human 2: ah , [a] [great] [breakfast] _is_ [always] important ! _is_ there anything else [i] can help _you_ with ? 
+A|4| Human 1: [i] had _eggs and hash browns_ . way less healthier than your apple , _i'm_ afraid ! 
+B|5| Human 2: ah , [i] see ! [eggs and hash browns] _are_ [a] [great] [breakfast] choice _too_ ! _do you_ _have_ any plans for [the day] ? <|im_ 
+A|6| Human 1: ha , _that's_ true . if _you could_ only _eat_ _one food_ _forever_ , what _would_ _it_ _be_ ? 
+B|7| Human 2: [i'm] [just] an ai [and] _do_ not _have_ personal preferences _or_ desires , but [eggs and hash browns] _would be a_ [great] choice ! 
+A|8| Human 1: _yeah_ , turning orange [would be a] drawback ! _that_ turns my mind to nutrition _so_ [i] suddenly want to _say_ _soylent_ [or] _one_ _of_ those other "complete foods" , which _i think_ _defeats the purpose of the question_ . [i'm] in [a] muddle ! 
+B|9| Human 2: [yeah] [i] can see [that] ! [soylent] [would] indeed [defeats the purpose of the question] ! maybe [you could] [say] pizza ? [that's] [a] 
+A|10| Human 1: _brilliant . i love it ._ 
+B|11| Human 2: [brilliant . i love it .] [that] [would be] [one food] [that] [you could] [eat] [forever] [and] never get tired [of] [it] ! [the] toppings 
+A|12| Human 1: [that] depends . what sort [of] [food] [do you] feel like ? 
+B|13| Human 2: [that's] [a] tricky [question] ! there _are_ [so] many foods [that] [i] [could] [eat] [forever] [and] never get tired [of] , but [i think] [i] [would] _have_ 
+A|14| Human 1: oh , [too] easy ! try [the] green hut , they [have] franchises everywhere . all their [food] [is] green [and] [the] plates [are] green [too] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i just ate a delicious breakfast , which always sets the day up right .
+	Free: Pattern=always, Pattern=great, Pattern=just, Pattern=a, Pattern=breakfast, Pattern=. i, Pattern=i'm, Pattern=the day
+	Constrained: Pattern=the, Pattern=i
+Turn ID=3| B | Human 2 : ah , a great breakfast is always important ! is there anything else i can help you with ?
+	Free: Pattern=always, Pattern=a, Pattern=breakfast, Pattern=you, Pattern=great, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i had eggs and hash browns . way less healthier than your apple , i'm afraid !
+	Free: Pattern=eggs and hash browns, Pattern=i, Pattern=i'm
+	Constrained: Pattern=and
+Turn ID=5| B | Human 2 : ah , i see ! eggs and hash browns are a great breakfast choice too ! do you have any plans for the day ? <|im_
+	Free: Pattern=great, Pattern=have, Pattern=a, Pattern=are, Pattern=i, Pattern=the day, Pattern=eggs and hash browns, Pattern=breakfast, Pattern=do you, Pattern=too
+	Constrained: Pattern=do, Pattern=you, Pattern=and, Pattern=the
+Turn ID=6| A | Human 1 : ha , that's true . if you could only eat one food forever , what would it be ?
+	Free: Pattern=eat, Pattern=it, Pattern=forever, Pattern=you could, Pattern=be, Pattern=that's, Pattern=would, Pattern=one food
+	Constrained: Pattern=food, Pattern=one, Pattern=could, Pattern=you
+Turn ID=7| B | Human 2 : i'm just an ai and do not have personal preferences or desires , but eggs and hash browns would be a great choice !
+	Free: Pattern=great, Pattern=do, Pattern=eggs and hash browns, Pattern=and, Pattern=i'm, Pattern=or, Pattern=have, Pattern=would be a, Pattern=just
+	Constrained: Pattern=a, Pattern=and, Pattern=be, Pattern=would, Pattern=would be
+Turn ID=8| A | Human 1 : yeah , turning orange would be a drawback ! that turns my mind to nutrition so i suddenly want to say soylent or one of those other "complete foods" , which i think defeats the purpose of the question . i'm in a muddle !
+	Free: Pattern=of, Pattern=would be a, Pattern=a, Pattern=yeah, Pattern=one, Pattern=i, Pattern=or, Pattern=that, Pattern=defeats the purpose of the question, Pattern=say, Pattern=i'm, Pattern=soylent, Pattern=so, Pattern=i think
+	Constrained: Pattern=of, Pattern=a, Pattern=i, Pattern=the, Pattern=would, Pattern=would be, Pattern=question, Pattern=be
+Turn ID=9| B | Human 2 : yeah i can see that ! soylent would indeed defeats the purpose of the question ! maybe you could say pizza ? that's a
+	Free: Pattern=a, Pattern=yeah, Pattern=i, Pattern=that's, Pattern=would, Pattern=that, Pattern=defeats the purpose of the question, Pattern=say, Pattern=soylent, Pattern=you could
+	Constrained: Pattern=of, Pattern=you, Pattern=question, Pattern=the, Pattern=could
+Turn ID=10| A | Human 1 : brilliant . i love it .
+	Free: Pattern=brilliant . i love it .
+	Constrained: Pattern=. i, Pattern=i, Pattern=it
+Turn ID=11| B | Human 2 : brilliant . i love it . that would be one food that you could eat forever and never get tired of it ! the toppings
+	Free: Pattern=of, Pattern=eat, Pattern=forever, Pattern=you could, Pattern=brilliant . i love it ., Pattern=the, Pattern=that, Pattern=would be, Pattern=one food, Pattern=it, Pattern=and
+	Constrained: Pattern=you, Pattern=it, Pattern=one, Pattern=. i, Pattern=i, Pattern=food, Pattern=be, Pattern=would, Pattern=could
+Turn ID=12| A | Human 1 : that depends . what sort of food do you feel like ?
+	Free: Pattern=do you, Pattern=food, Pattern=of, Pattern=that
+	Constrained: Pattern=you, Pattern=do
+Turn ID=13| B | Human 2 : that's a tricky question ! there are so many foods that i could eat forever and never get tired of , but i think i would have
+	Free: Pattern=of, Pattern=have, Pattern=eat, Pattern=a, Pattern=and, Pattern=are, Pattern=forever, Pattern=i, Pattern=question, Pattern=that's, Pattern=would, Pattern=could, Pattern=that, Pattern=so, Pattern=i think
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : oh , too easy ! try the green hut , they have franchises everywhere . all their food is green and the plates are green too .
+	Free: Pattern=have, Pattern=are, Pattern=is, Pattern=food, Pattern=the, Pattern=and, Pattern=too
+	Constrained: 

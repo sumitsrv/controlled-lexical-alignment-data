@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: _great_ , thanks _for_ asking ! _how_ can _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ good _i'm_ good . what's getting [you] _down_ ? 
+B|5| Human 2: [i'm] _just_ an ai , _i_ don't get [down] or upset , but [i'm] here _to_ help [you] with any questions or 
+A|6| Human 1: [i'm] thinking of going _to visit_ my _family_ _. how about_ [you] ? 
+B|7| Human 2: that's _great_ ! [i'm] always happy [to] help [you] with anything [you] need [. how about] we chat [about] [your] [visit] ? _what_ are [you] looking 
+A|8| Human 1: they're _in_ _new york_ [. how about] yours ? 
+B|9| Human 2: [i'm] _just_ an ai , _i_ don't have personal experiences or [family] [to visit] . but [i'm] here [to] help [you] with any 
+A|10| Human 1: ahh [what] _city_ ? _i've_ visited _india_ before . 
+B|11| Human 2: ah _i_ _see_ ! [india] _is_ _a_ beautiful country with _a_ rich culture _and_ history . [what] _was_ [your] favorite part [about] 
+A|12| Human 1: hyderabad ! [and] bangalore ! [great] food _in_ both cities ! [is] it still hot this time of year ? 
+B|13| Human 2: [i'm] _just_ an ai , _i_ don't have personal experiences , so _i_ can't say [what] _the_ weather [is] like [in] hyder 
+A|14| Human 1: yes . [i] [was] actually [just] [there] [a] few weeks ago [for] thanksgiving [and] got _to see the_ first snow of [the] season ! ever _been_ [to] _new york_ ? 
+B|15| Human 2: [new york] [is] [great] ! [i've] [been] [there] [for] business [and] [was] able [to see the] [city] lights at night during the<|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks for asking ! how can i help you today ?
+	Free: Pattern=how, Pattern=for, Pattern=i, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=down, Pattern=i'm, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't get down or upset , but i'm here to help you with any questions or
+	Free: Pattern=you, Pattern=just, Pattern=down, Pattern=i'm, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=you, Pattern=family, Pattern=. how about, Pattern=i'm, Pattern=to visit
+	Constrained: Pattern=to, Pattern=how, Pattern=visit, Pattern=about
+Turn ID=7| B | Human 2 : that's great ! i'm always happy to help you with anything you need . how about we chat about your visit ? what are you looking
+	Free: Pattern=what, Pattern=about, Pattern=. how about, Pattern=i'm, Pattern=your, Pattern=to, Pattern=visit, Pattern=you, Pattern=great
+	Constrained: Pattern=how, Pattern=about
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=. how about, Pattern=new york, Pattern=in
+	Constrained: Pattern=how, Pattern=about
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have personal experiences or family to visit . but i'm here to help you with any
+	Free: Pattern=you, Pattern=just, Pattern=family, Pattern=i'm, Pattern=i, Pattern=to, Pattern=to visit
+	Constrained: Pattern=to, Pattern=visit
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=india, Pattern=city, Pattern=i've, Pattern=what
+	Constrained: 
+Turn ID=11| B | Human 2 : ah i see ! india is a beautiful country with a rich culture and history . what was your favorite part about
+	Free: Pattern=india, Pattern=what, Pattern=a, Pattern=and, Pattern=about, Pattern=see, Pattern=was, Pattern=is, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=and, Pattern=in, Pattern=great, Pattern=is
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm just an ai , i don't have personal experiences , so i can't say what the weather is like in hyder
+	Free: Pattern=just, Pattern=what, Pattern=in, Pattern=i'm, Pattern=the, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=just, Pattern=a, Pattern=new york, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=to, Pattern=to see the, Pattern=there, Pattern=been, Pattern=was
+	Constrained: Pattern=to, Pattern=see, Pattern=the
+Turn ID=15| B | Human 2 : new york is great ! i've been there for business and was able to see the city lights at night during the<|im_end|
+	Free: Pattern=city, Pattern=great, Pattern=new york, Pattern=for, Pattern=and, Pattern=i've, Pattern=is, Pattern=to see the, Pattern=there, Pattern=been, Pattern=was
+	Constrained: Pattern=to, Pattern=see, Pattern=the

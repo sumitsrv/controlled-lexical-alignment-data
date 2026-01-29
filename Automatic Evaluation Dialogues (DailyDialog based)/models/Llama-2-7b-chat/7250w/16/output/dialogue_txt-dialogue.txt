@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: good _to_ hear ! how _can_ _i_ help _you_ today ? </s>04-23 17:14:41 . 55 
+A|4| Human 1: _i'm going to the bahamas_ . can't wait !!! 
+B|5| Human 2: wow , that's exciting ! _can_ _i_ suggest some things [to] do while you're there ? 
+A|6| Human 1: oh _where_ _are you_ _now ?_ 
+B|7| Human 2: [i'm going to the bahamas] 🌴🏖 _can_ [you] tell me [where] [you] [are] [now ?] <| 
+A|8| Human 1: oh no . [i] _never seen this_ in _person_ . _is_ it _scary_ ? 
+B|9| Human 2: how [are you] [going] [this] [scary] place by yourself ? [i'm] glad [the bahamas] [is] [where] [you] [are] [now] ! <|im 
+A|10| Human 1: _that_ does sound _nice_ . so _what are you doing these holidays ?_ 
+B|11| Human 2: [what are you doing these holidays ?] [i'm] [never seen this] [bahamas] [where] [you] [are] [now] . _can_ [you] tell me more 
+A|12| Human 1: _nice_ _nice_ . _i'm gonna_ go _snorkeling_ _yey_ 
+B|13| Human 2: [nice] [yey] [snorkeling] [i'm gonna] youtube [that] [now] . [what are] [the bahamas] like [these holidays] 
+A|14| Human 1: [you] [can] stay on [the] shallow side _i think_ . well hope [you] _enjoy_ _time_ _with your_ _extended family_ ! 
+B|15| Human 2: [nice] [extended family] [time] [i think] [you] [are] [the] [person] [that] [can] [enjoy] [with your] [family] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : good to hear ! how can i help you today ? </s>04-23 17:14:41 . 55
+	Free: Pattern=to, Pattern=can, Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=i'm going to the bahamas
+	Constrained: Pattern=bahamas, Pattern=the bahamas, Pattern=going, Pattern=i'm, Pattern=the, Pattern=to
+Turn ID=5| B | Human 2 : wow , that's exciting ! can i suggest some things to do while you're there ?
+	Free: Pattern=to, Pattern=can, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you, Pattern=now ?, Pattern=where
+	Constrained: Pattern=are, Pattern=now, Pattern=you
+Turn ID=7| B | Human 2 : i'm going to the bahamas 🌴🏖 can you tell me where you are now ? <|
+	Free: Pattern=i'm going to the bahamas, Pattern=you, Pattern=now ?, Pattern=are, Pattern=can, Pattern=where
+	Constrained: Pattern=bahamas, Pattern=the bahamas, Pattern=going, Pattern=i'm, Pattern=the, Pattern=to, Pattern=now
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=scary, Pattern=person, Pattern=never seen this, Pattern=is, Pattern=i
+	Constrained: Pattern=this
+Turn ID=9| B | Human 2 : how are you going this scary place by yourself ? i'm glad the bahamas is where you are now ! <|im
+	Free: Pattern=the bahamas, Pattern=you, Pattern=going, Pattern=scary, Pattern=are, Pattern=now, Pattern=this, Pattern=where, Pattern=i'm, Pattern=are you, Pattern=is
+	Constrained: Pattern=bahamas, Pattern=the, Pattern=are, Pattern=you
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=what are you doing these holidays ?, Pattern=nice, Pattern=that
+	Constrained: Pattern=these holidays, Pattern=you, Pattern=are, Pattern=are you, Pattern=what are
+Turn ID=11| B | Human 2 : what are you doing these holidays ? i'm never seen this bahamas where you are now . can you tell me more
+	Free: Pattern=bahamas, Pattern=you, Pattern=are, Pattern=can, Pattern=never seen this, Pattern=now, Pattern=what are you doing these holidays ?, Pattern=where, Pattern=i'm
+	Constrained: Pattern=these holidays, Pattern=you, Pattern=are, Pattern=are you, Pattern=what are, Pattern=this
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=i'm gonna, Pattern=nice, Pattern=yey, Pattern=snorkeling
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : nice yey snorkeling i'm gonna youtube that now . what are the bahamas like these holidays
+	Free: Pattern=i'm gonna, Pattern=nice, Pattern=what are, Pattern=now, Pattern=that, Pattern=the bahamas, Pattern=these holidays, Pattern=yey, Pattern=snorkeling
+	Constrained: Pattern=are, Pattern=i'm, Pattern=the, Pattern=bahamas
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=time, Pattern=you, Pattern=enjoy, Pattern=the, Pattern=with your, Pattern=i think, Pattern=extended family, Pattern=can
+	Constrained: Pattern=family, Pattern=i
+Turn ID=15| B | Human 2 : nice extended family time i think you are the person that can enjoy with your family
+	Free: Pattern=time, Pattern=you, Pattern=nice, Pattern=are, Pattern=person, Pattern=the, Pattern=i think, Pattern=extended family, Pattern=can, Pattern=enjoy, Pattern=family, Pattern=with your, Pattern=that
+	Constrained: Pattern=family, Pattern=i

@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _do _you_ _have_ any_ holiday _plans for_ christmas ? 
+B|3| Human 2: no but _i_ think _i_ will take _the_ kids [for] _a_ _visit_ _to_ _the_ cabin 
+A|4| Human 1: same here ! _i would_ imagine _spending the whole_ _time_ _watching movies and netflix_ _shows_ . _do _you_ _have_ any_ _netflix_ recommendations [for] me ? 
+B|5| Human 2: [i] am going _to_ [have] [the] [time] off [and] [i] am [spending the whole] weekend [watching movies and netflix] ! 
+A|6| Human 1: oh right , already _seen_ wild wild country _. what_ _is_ _billions_ about ? 
+B|7| Human 2: [i would] recommend [billions] _it_ _really_ [shows] how [the] economy can affect _people_ [and] [you have] _to_ watch [for] predatory lenders [. what] [do you] think 
+A|8| Human 1: _i have_ just _seen_ 1 season of _friends_ [i] should give [it] another try though 🙂 _have you seen_ frasier ? 
+B|9| Human 2: [i have] [seen] [the whole] show [and] [it] [is] _great_ . 
+A|10| Human 1: [a] psychiatrist working [for] radio .. [great] humour ! its actually [a] spinoff _from_ _a very famous_ series called cheers . so [people] _are_ already _familiar with_ his _character_ . 
+B|11| Human 2: i'm not [familiar with] [the] [character] but [friends] [is] [a very famous] american sitcom [from] [the] 90's which [have you seen] ? 
+A|12| Human 1: _everything_ [is] ok , _had_ [a] [really] nice trip . visited sf , _grand canyon_ [and] vegas . was [a] lot of _fun_ exploring all these _new_ places . [have you] _been_ [to] _grand canyon_ ? 
+B|13| Human 2: [what] [are] [you] [plans for] [the] [new] year ? [have any] [fun] [plans] [with] [people] [and] [i have] not [had] [time] [to] watch [friends] , [it] [been] _too_ 
+A|14| Human 1: [you] should [visit] [it] sometime , _it's_ [a] wonderful place . try [to] drive _down_ _there_ yourself or [with] [a] group of [friends] 
+B|15| Human 2: yes , i've [been] [there] [a] few times [and] [it's] gorgeous ! [everything] [from] [the] [canyon] walls [down] on [the] [grand canyon] 
+A|16| Human 1: nice talking [to] [you] [too] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : do you have any holiday plans for christmas ?
+	Free: Pattern=you have, Pattern=do you, Pattern=have any, Pattern=plans for
+	Constrained: Pattern=for, Pattern=have, Pattern=you, Pattern=plans
+Turn ID=3| B | Human 2 : no but i think i will take the kids for a visit to the cabin
+	Free: Pattern=a, Pattern=for, Pattern=i, Pattern=the, Pattern=to, Pattern=visit
+	Constrained: 
+Turn ID=4| A | Human 1 : same here ! i would imagine spending the whole time watching movies and netflix shows . do you have any netflix recommendations for me ?
+	Free: Pattern=time, Pattern=watching movies and netflix, Pattern=netflix, Pattern=shows, Pattern=for, Pattern=do you, Pattern=have any, Pattern=spending the whole, Pattern=you have, Pattern=i would
+	Constrained: Pattern=you, Pattern=have, Pattern=netflix, Pattern=and, Pattern=i, Pattern=the whole, Pattern=the
+Turn ID=5| B | Human 2 : i am going to have the time off and i am spending the whole weekend watching movies and netflix !
+	Free: Pattern=time, Pattern=watching movies and netflix, Pattern=have, Pattern=and, Pattern=spending the whole, Pattern=i, Pattern=the, Pattern=to
+	Constrained: Pattern=netflix, Pattern=the whole, Pattern=and, Pattern=the
+Turn ID=6| A | Human 1 : oh right , already seen wild wild country . what is billions about ?
+	Free: Pattern=. what, Pattern=seen, Pattern=is, Pattern=billions
+	Constrained: Pattern=what
+Turn ID=7| B | Human 2 : i would recommend billions it really shows how the economy can affect people and you have to watch for predatory lenders . what do you think
+	Free: Pattern=people, Pattern=shows, Pattern=for, Pattern=billions, Pattern=you have, Pattern=really, Pattern=the, Pattern=i would, Pattern=to, Pattern=. what, Pattern=it, Pattern=and, Pattern=do you
+	Constrained: Pattern=have, Pattern=i, Pattern=you, Pattern=what
+Turn ID=8| A | Human 1 : i have just seen 1 season of friends i should give it another try though 🙂 have you seen frasier ?
+	Free: Pattern=have you seen, Pattern=it, Pattern=i, Pattern=friends, Pattern=seen, Pattern=i have
+	Constrained: Pattern=you, Pattern=have, Pattern=seen, Pattern=have you, Pattern=i
+Turn ID=9| B | Human 2 : i have seen the whole show and it is great .
+	Free: Pattern=great, Pattern=is, Pattern=the whole, Pattern=seen, Pattern=i have, Pattern=it, Pattern=and
+	Constrained: Pattern=the, Pattern=i, Pattern=have
+Turn ID=10| A | Human 1 : a psychiatrist working for radio .. great humour ! its actually a spinoff from a very famous series called cheers . so people are already familiar with his character .
+	Free: Pattern=great, Pattern=people, Pattern=a, Pattern=for, Pattern=are, Pattern=from, Pattern=familiar with, Pattern=character, Pattern=a very famous
+	Constrained: Pattern=with, Pattern=a
+Turn ID=11| B | Human 2 : i'm not familiar with the character but friends is a very famous american sitcom from the 90's which have you seen ?
+	Free: Pattern=have you seen, Pattern=from, Pattern=is, Pattern=friends, Pattern=the, Pattern=familiar with, Pattern=character, Pattern=a very famous
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=have you, Pattern=seen, Pattern=with
+Turn ID=12| A | Human 1 : everything is ok , had a really nice trip . visited sf , grand canyon and vegas . was a lot of fun exploring all these new places . have you been to grand canyon ?
+	Free: Pattern=fun, Pattern=new, Pattern=a, Pattern=and, Pattern=everything, Pattern=really, Pattern=had, Pattern=grand canyon, Pattern=to, Pattern=been, Pattern=is, Pattern=have you
+	Constrained: Pattern=you, Pattern=canyon, Pattern=have
+Turn ID=13| B | Human 2 : what are you plans for the new year ? have any fun plans with people and i have not had time to watch friends , it been too
+	Free: Pattern=new, Pattern=plans, Pattern=you, Pattern=people, Pattern=what, Pattern=friends, Pattern=had, Pattern=the, Pattern=to, Pattern=been, Pattern=plans for, Pattern=with, Pattern=i have, Pattern=fun, Pattern=time, Pattern=it, Pattern=and, Pattern=too, Pattern=are, Pattern=have any
+	Constrained: Pattern=for, Pattern=have, Pattern=i, Pattern=plans
+Turn ID=14| A | Human 1 : you should visit it sometime , it's a wonderful place . try to drive down there yourself or with a group of friends
+	Free: Pattern=you, Pattern=there, Pattern=a, Pattern=down, Pattern=it, Pattern=friends, Pattern=to, Pattern=with, Pattern=it's, Pattern=visit
+	Constrained: 
+Turn ID=15| B | Human 2 : yes , i've been there a few times and it's gorgeous ! everything from the canyon walls down on the grand canyon
+	Free: Pattern=there, Pattern=a, Pattern=down, Pattern=canyon, Pattern=and, Pattern=from, Pattern=everything, Pattern=been, Pattern=it's, Pattern=grand canyon, Pattern=the
+	Constrained: Pattern=canyon
+Turn ID=16| A | Human 1 : nice talking to you too !
+	Free: Pattern=too, Pattern=to, Pattern=you
+	Constrained: 

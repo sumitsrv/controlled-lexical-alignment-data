@@ -1,0 +1,63 @@
+A|0| Human 1: hello , nice to meet _you_ 
+B|1| Human 2: if [you] could eat only _one_ _food_ for _the_ rest _of_ time , _what_ _would_ _it_ _be_ ? 
+A|2| Human 1: hmm ... that's _a_ tough [one] _. i_ think _i_ [would] go asian [food] > _chinese_ [food] > stirfry . [what] _about you ?_ 
+B|3| Human 2: _how about you ?_ what's your favorite [chinese] restaurant _and_ restaurants ? 
+A|4| Human 1: _i_ _love ice cream_ too ! 
+B|5| Human 2: she [would] [love ice cream] 
+A|6| Human 1: _i like_ vanilla _more than_ chocolate _ice cream _._ i_ typically will _do_ any variations on vanilla . to pick from [the] top [of] my head , _i_ [would] say cookies [and] [cream] , mint chocolate chip , [and] coffee . [how about you ?] 
+B|7| Human 2: _so_ [you] [would] [like] [ice cream] [more than] 
+A|8| Human 1: very nice _. i_ [love] sorbet's [and] _smoothies_ . changing topics , _do you believe in an afterlife ?_ 
+B|9| Human 2: nope [. [i] like] [smoothies] [and] [ice cream .] 
+A|10| Human 1: [i] think [so] [. i] feel there must [be] _something more than_ [the] physical _world_ as we understand [it] . 
+B|11| Human 2: nope . [do you believe in an afterlife ?] 
+A|12| Human 1: [what] is _the most supernatural experience_ [you] _have ever had_ ? 
+B|13| Human 2: it's [the most supernatural experience] [i] [have ever had] [and] [i] [believe] it's [something more than] [a] spiritual [world] 
+A|14| Human 1: haha .. that's [a] cool [experience] [. i] went to [a] hindu retreat before , [a] number [of] buddhist temples , [and] hung out with christian mystics [in] santa cruz before . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hello , nice to meet you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=1| B | Human 2 : if you could eat only one food for the rest of time , what would it be ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=it, Pattern=one, Pattern=food, Pattern=be, Pattern=the, Pattern=would
+	Constrained: 
+Turn ID=2| A | Human 1 : hmm ... that's a tough one . i think i would go asian food > chinese food > stirfry . what about you ?
+	Free: Pattern=what, Pattern=a, Pattern=one, Pattern=. i, Pattern=chinese, Pattern=i, Pattern=food, Pattern=would, Pattern=about you ?
+	Constrained: Pattern=i, Pattern=you
+Turn ID=3| B | Human 2 : how about you ? what's your favorite chinese restaurant and restaurants ?
+	Free: Pattern=how about you ?, Pattern=and, Pattern=chinese
+	Constrained: Pattern=about you ?, Pattern=you
+Turn ID=4| A | Human 1 : i love ice cream too !
+	Free: Pattern=love ice cream, Pattern=i
+	Constrained: Pattern=ice cream, Pattern=cream, Pattern=love
+Turn ID=5| B | Human 2 : she would love ice cream
+	Free: Pattern=love ice cream, Pattern=would
+	Constrained: Pattern=ice cream, Pattern=cream, Pattern=love
+Turn ID=6| A | Human 1 : i like vanilla more than chocolate ice cream . i typically will do any variations on vanilla . to pick from the top of my head , i would say cookies and cream , mint chocolate chip , and coffee . how about you ?
+	Free: Pattern=of, Pattern=ice cream ., Pattern=do, Pattern=and, Pattern=. i, Pattern=i, Pattern=would, Pattern=how about you ?, Pattern=more than, Pattern=i like, Pattern=cream, Pattern=the
+	Constrained: Pattern=you, Pattern=ice cream, Pattern=i, Pattern=like, Pattern=cream, Pattern=about you ?
+Turn ID=7| B | Human 2 : so you would like ice cream more than
+	Free: Pattern=you, Pattern=ice cream, Pattern=like, Pattern=would, Pattern=more than, Pattern=so
+	Constrained: Pattern=cream
+Turn ID=8| A | Human 1 : very nice . i love sorbet's and smoothies . changing topics , do you believe in an afterlife ?
+	Free: Pattern=. i, Pattern=love, Pattern=smoothies, Pattern=and, Pattern=do you believe in an afterlife ?
+	Constrained: Pattern=you, Pattern=do, Pattern=believe, Pattern=in, Pattern=i
+Turn ID=9| B | Human 2 : nope . i like smoothies and ice cream .
+	Free: Pattern=ice cream ., Pattern=and, Pattern=. i, Pattern=smoothies, Pattern=i like
+	Constrained: Pattern=i, Pattern=cream, Pattern=ice cream, Pattern=like
+Turn ID=10| A | Human 1 : i think so . i feel there must be something more than the physical world as we understand it .
+	Free: Pattern=it, Pattern=. i, Pattern=i, Pattern=be, Pattern=the, Pattern=something more than, Pattern=world, Pattern=so
+	Constrained: Pattern=more than, Pattern=i
+Turn ID=11| B | Human 2 : nope . do you believe in an afterlife ?
+	Free: Pattern=do you believe in an afterlife ?
+	Constrained: Pattern=in, Pattern=do, Pattern=you, Pattern=believe
+Turn ID=12| A | Human 1 : what is the most supernatural experience you have ever had ?
+	Free: Pattern=the most supernatural experience, Pattern=have ever had, Pattern=what, Pattern=you
+	Constrained: Pattern=experience, Pattern=the
+Turn ID=13| B | Human 2 : it's the most supernatural experience i have ever had and i believe it's something more than a spiritual world
+	Free: Pattern=the most supernatural experience, Pattern=a, Pattern=believe, Pattern=and, Pattern=have ever had, Pattern=i, Pattern=something more than, Pattern=world
+	Constrained: Pattern=experience, Pattern=more than, Pattern=the
+Turn ID=14| A | Human 1 : haha .. that's a cool experience . i went to a hindu retreat before , a number of buddhist temples , and hung out with christian mystics in santa cruz before .
+	Free: Pattern=of, Pattern=a, Pattern=and, Pattern=. i, Pattern=in, Pattern=experience
+	Constrained: Pattern=i

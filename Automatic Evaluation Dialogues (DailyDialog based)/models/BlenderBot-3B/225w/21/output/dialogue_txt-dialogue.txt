@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , how _are you_ _doing_ ! 
+A|2| Human 1: _i'm_ _doing well_ _. _what_ are you_ _up_ _to_ ? 
+B|3| Human 2: [what are you] [doing] ? [i'm] looking for my glasses ! 
+A|4| Human 1: wow , _that's_ impressive _. i_ already gave _up_ on _cleaning_ _emails_ _long_ ago 
+B|5| Human 2: [i] am [cleaning] [up] _the_ house , [cleaning] out my desk _that_ has all my old [emails] . 
+A|6| Human 1: yea , _a little_ bit , _but_ _it's_ okay 🙂 [what] _do_ [you] enjoy [doing] _outside_ work ? 
+B|7| Human 2: [i] am [doing well] , just [cleaning] , [you] know , [it's] [what] _one_ should [do] after [a] [long] day [outside] ! 
+A|8| Human 1: ah _cool ._ so [you] _like action movies_ ? 
+B|9| Human 2: [i] [like] _movies but_ [i'm] watching _the_ last _of_ us 2 . [it's] [cool .] 
+A|10| Human 1: [what] happened there ? [i] watched bits [of] _terminators_ [movies but] _never_ [a] full [one] 
+B|11| Human 2: [i] [like action [movies] but] [terminators] [are] [one] [of] favorite [of] mine , especially t2 [. what] about [you] ? 
+A|12| Human 1: _haha_ sure . by [the] _time_ , [i] _get to_ it; _i will_ forget [the] details , only knowing [that] [it's] touching at [the] end 
+B|13| Human 2: yeah [it's] [one] [of] [the] best [movies] [of] all [time] [that] [i will] [never] [get] tired [of] seeing ! 
+A|14| Human 1: _oh_ no , so [it's] _not happy_ _ending_ ? 
+B|15| Human 2: [i] was [not happy] [haha] _it_ was [a] horror film [that's] [the] best way [to] explain _it_ 
+A|16| Human 1: then [i] want [to] watch [it] ! [you] didn't spoil much 🙂 
+B|17| Human 2: [oh] [you] [will] [not] be [happy] . [you] [get to] see [the] [ending] with sarah conner [. i] was [a little] disappointed [but] [it] was [one] [of] 
+A|18| Human 1: thanks ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you doing !
+	Free: Pattern=are you, Pattern=doing, Pattern=hi
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm doing well . what are you up to ?
+	Free: Pattern=i'm, Pattern=. what, Pattern=doing well, Pattern=what are you, Pattern=up, Pattern=to
+	Constrained: Pattern=you, Pattern=what, Pattern=doing, Pattern=are, Pattern=are you
+Turn ID=3| B | Human 2 : what are you doing ? i'm looking for my glasses !
+	Free: Pattern=what are you, Pattern=doing, Pattern=i'm
+	Constrained: Pattern=are you, Pattern=what, Pattern=are, Pattern=you
+Turn ID=4| A | Human 1 : wow , that's impressive . i already gave up on cleaning emails long ago
+	Free: Pattern=long, Pattern=cleaning, Pattern=. i, Pattern=emails, Pattern=that's, Pattern=up
+	Constrained: Pattern=i
+Turn ID=5| B | Human 2 : i am cleaning up the house , cleaning out my desk that has all my old emails .
+	Free: Pattern=cleaning, Pattern=emails, Pattern=i, Pattern=the, Pattern=up, Pattern=that
+	Constrained: 
+Turn ID=6| A | Human 1 : yea , a little bit , but it's okay 🙂 what do you enjoy doing outside work ?
+	Free: Pattern=you, Pattern=what, Pattern=do, Pattern=doing, Pattern=a little, Pattern=outside, Pattern=it's, Pattern=but
+	Constrained: Pattern=a
+Turn ID=7| B | Human 2 : i am doing well , just cleaning , you know , it's what one should do after a long day outside !
+	Free: Pattern=you, Pattern=long, Pattern=what, Pattern=one, Pattern=cleaning, Pattern=it's, Pattern=do, Pattern=a, Pattern=doing well, Pattern=outside, Pattern=i
+	Constrained: Pattern=doing
+Turn ID=8| A | Human 1 : ah cool . so you like action movies ?
+	Free: Pattern=like action movies, Pattern=cool ., Pattern=you
+	Constrained: Pattern=like, Pattern=movies
+Turn ID=9| B | Human 2 : i like movies but i'm watching the last of us 2 . it's cool .
+	Free: Pattern=of, Pattern=i'm, Pattern=i, Pattern=like, Pattern=movies but, Pattern=it's, Pattern=cool ., Pattern=the
+	Constrained: Pattern=but, Pattern=movies
+Turn ID=10| A | Human 1 : what happened there ? i watched bits of terminators movies but never a full one
+	Free: Pattern=of, Pattern=a, Pattern=one, Pattern=movies but, Pattern=terminators, Pattern=what, Pattern=never, Pattern=i
+	Constrained: Pattern=but, Pattern=movies
+Turn ID=11| B | Human 2 : i like action movies but terminators are one of favorite of mine , especially t2 . what about you ?
+	Free: Pattern=of, Pattern=you, Pattern=terminators, Pattern=like action movies, Pattern=i, Pattern=movies but, Pattern=. what, Pattern=are, Pattern=one
+	Constrained: Pattern=but, Pattern=what, Pattern=movies, Pattern=like
+Turn ID=12| A | Human 1 : haha sure . by the time , i get to it; i will forget the details , only knowing that it's touching at the end
+	Free: Pattern=get to, Pattern=time, Pattern=i, Pattern=haha, Pattern=the, Pattern=i will, Pattern=that, Pattern=it's
+	Constrained: Pattern=get, Pattern=to, Pattern=will, Pattern=i
+Turn ID=13| B | Human 2 : yeah it's one of the best movies of all time that i will never get tired of seeing !
+	Free: Pattern=time, Pattern=of, Pattern=one, Pattern=never, Pattern=the, Pattern=i will, Pattern=movies, Pattern=get, Pattern=that, Pattern=it's
+	Constrained: Pattern=will, Pattern=i
+Turn ID=14| A | Human 1 : oh no , so it's not happy ending ?
+	Free: Pattern=not happy, Pattern=ending, Pattern=it's, Pattern=oh
+	Constrained: Pattern=happy, Pattern=not
+Turn ID=15| B | Human 2 : i was not happy haha it was a horror film that's the best way to explain it
+	Free: Pattern=a, Pattern=it, Pattern=i, Pattern=haha, Pattern=not happy, Pattern=to, Pattern=that's, Pattern=the
+	Constrained: Pattern=happy, Pattern=not
+Turn ID=16| A | Human 1 : then i want to watch it ! you didn't spoil much 🙂
+	Free: Pattern=to, Pattern=it, Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=17| B | Human 2 : oh you will not be happy . you get to see the ending with sarah conner . i was a little disappointed but it was one of
+	Free: Pattern=get to, Pattern=of, Pattern=you, Pattern=happy, Pattern=one, Pattern=a little, Pattern=. i, Pattern=will, Pattern=the, Pattern=not, Pattern=it, Pattern=oh, Pattern=ending, Pattern=but
+	Constrained: Pattern=a, Pattern=i, Pattern=to, Pattern=get
+Turn ID=18| A | Human 1 : thanks !
+	Free: 
+	Constrained: 

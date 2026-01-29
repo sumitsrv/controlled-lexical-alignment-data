@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just came back from_ _a_ _ski trip_ 
+B|3| Human 2: [great] [just came back from] [ski trip] , where _do you_ guys usually _go_ ? 
+A|4| Human 1: _i_ _slammed onto_ an _ice_ wall , _but_ _i_ _got_ better _and_ turning _after that_ haha 
+B|5| Human 2: [i] [just] [got] [back from] skiing too . _it was_ fun [and] [great] [that] _it_ snowed [but] [after that] [slammed onto] [ice] . 
+A|6| Human 1: oh cool ! [do _you] know_ any _french_ ? _i used to_ take _french_ in _high school_ [but] basically forgot _most_ of [it] 
+B|7| Human 2: [i] [know] [a] little [french] [but] _don't_ speak fluently . have [you] ever skiied before ? 
+A|8| Human 1: did [you] [go] _anywhere_ else in _montreal_ ? 
+B|9| Human 2: [i] [know] [french] [but] [most] [montreal] kids [that] have [just] [a] [high school] level 
+A|10| Human 1: oh cool ! _i've_ _always_ wanted _to_ attend _the_ olympics as [a] viewer of course [i] watch [a] lot of _olympic_ _figure skating_ on youtube 
+B|11| Human 2: i'm [the] same . skiing is my favorite [and] [i've] skied [anywhere] [from] [olympic] [montreal] [to] yellow c 
+A|12| Human 1: _barely_ [i] [don't] think [i] _can_ , in conscience , call [it] [that] [i] kind of [just] pull myself along [the] sides 
+B|13| Human 2: [i used to] [ski] [and] [can] [ski] . [barely] is [the] [most] popular winter [figure skating] [you know] . 
+A|14| Human 1: are [you] good at <redacted_term> ? 
+B|15| Human 2: [you] [can] [always] practice [that] skill [it] [just] takes hard work [and] time 
+A|16| Human 1: okay ! [it was] nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=just came back from, Pattern=ski trip, Pattern=a, Pattern=great
+	Constrained: Pattern=ski, Pattern=from, Pattern=back from, Pattern=just
+Turn ID=3| B | Human 2 : great just came back from ski trip , where do you guys usually go ?
+	Free: Pattern=great, Pattern=go, Pattern=do you, Pattern=ski trip, Pattern=just came back from
+	Constrained: Pattern=ski, Pattern=you, Pattern=just, Pattern=from, Pattern=back from
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=ice, Pattern=i, Pattern=got, Pattern=after that, Pattern=but, Pattern=and, Pattern=slammed onto
+	Constrained: Pattern=that
+Turn ID=5| B | Human 2 : i just got back from skiing too . it was fun and great that it snowed but after that slammed onto ice .
+	Free: Pattern=it was, Pattern=just, Pattern=i, Pattern=got, Pattern=after that, Pattern=back from, Pattern=great, Pattern=ice, Pattern=it, Pattern=and, Pattern=slammed onto, Pattern=that, Pattern=but
+	Constrained: Pattern=it, Pattern=that, Pattern=from
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=you know, Pattern=high school, Pattern=french, Pattern=most, Pattern=it, Pattern=do you, Pattern=i used to, Pattern=but
+	Constrained: Pattern=i, Pattern=to, Pattern=you, Pattern=know
+Turn ID=7| B | Human 2 : i know a little french but don't speak fluently . have you ever skiied before ?
+	Free: Pattern=you, Pattern=a, Pattern=know, Pattern=don't, Pattern=but, Pattern=french, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=you, Pattern=montreal, Pattern=anywhere, Pattern=go
+	Constrained: 
+Turn ID=9| B | Human 2 : i know french but most montreal kids that have just a high school level
+	Free: Pattern=just, Pattern=a, Pattern=montreal, Pattern=most, Pattern=high school, Pattern=know, Pattern=french, Pattern=i, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=always, Pattern=a, Pattern=olympic, Pattern=i've, Pattern=figure skating, Pattern=i, Pattern=the, Pattern=to
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm the same . skiing is my favorite and i've skied anywhere from olympic montreal to yellow c
+	Free: Pattern=montreal, Pattern=olympic, Pattern=and, Pattern=i've, Pattern=from, Pattern=anywhere, Pattern=the, Pattern=to
+	Constrained: 
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=just, Pattern=it, Pattern=can, Pattern=i, Pattern=the, Pattern=don't, Pattern=that, Pattern=barely
+	Constrained: 
+Turn ID=13| B | Human 2 : i used to ski and can ski . barely is the most popular winter figure skating you know .
+	Free: Pattern=ski, Pattern=you know, Pattern=and, Pattern=most, Pattern=the, Pattern=i used to, Pattern=barely, Pattern=can, Pattern=figure skating
+	Constrained: Pattern=i, Pattern=to, Pattern=you, Pattern=know
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : you can always practice that skill it just takes hard work and time
+	Free: Pattern=always, Pattern=you, Pattern=just, Pattern=can, Pattern=that, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=it was, Pattern=you, Pattern=to
+	Constrained: Pattern=it

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: _how's your day going ?_ 
+B|3| Human 2: hello _there_ ! 
+A|4| Human 1: _i'm_ good _i'm_ good . what's getting _you_ _down_ ? 
+B|5| Human 2: [how's your day going ?] 
+A|6| Human 1: _i'm_ thinking of _going _to visit_ my family_ _. how about you ?_ 
+B|7| Human 2: _i_ have [family] [visit] me every [day] _i_ am [down] , [about] [to] go back [to visit my family] 
+A|8| Human 1: they're in _new york_ _. how about_ yours ? 
+B|9| Human 2: alright [going to visit] [family] today [i'm] [going to] make _a_ [new] post [about] [new york] 
+A|10| Human 1: ahh what city ? i've visited _india_ before . 
+B|11| Human 2: hello [i'm] [india] [. how about you ?] 
+A|12| Human 1: hyderabad ! _and bangalore_ ! great _food_ in _both_ cities ! _is_ it still hot _this_ time of year ? 
+B|13| Human 2: [new york] [and bangalore] [india] [both] have [food] _i_ know [this] . 
+A|14| Human 1: yes . [i] was actually just [there] [a] few weeks ago _for_ thanksgiving [and] got [to] see _the first snow_ of _the_ season ! ever been [to] [new york] ? 
+B|15| Human 2: [is] [this] [the first snow] [for] [india] [and bangalore] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=how's your day going ?
+	Constrained: Pattern=day
+Turn ID=3| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=you, Pattern=down, Pattern=i'm
+	Constrained: 
+Turn ID=5| B | Human 2 : how's your day going ?
+	Free: Pattern=how's your day going ?
+	Constrained: Pattern=day
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=. how about you ?, Pattern=to visit my family, Pattern=going to visit, Pattern=i'm
+	Constrained: Pattern=going to, Pattern=you, Pattern=. how about, Pattern=to, Pattern=visit, Pattern=about, Pattern=family
+Turn ID=7| B | Human 2 : i have family visit me every day i am down , about to go back to visit my family
+	Free: Pattern=down, Pattern=to visit my family, Pattern=to, Pattern=visit, Pattern=about, Pattern=family, Pattern=day, Pattern=i
+	Constrained: Pattern=to, Pattern=family, Pattern=visit
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=. how about, Pattern=new york
+	Constrained: Pattern=about, Pattern=new
+Turn ID=9| B | Human 2 : alright going to visit family today i'm going to make a new post about new york
+	Free: Pattern=going to, Pattern=new, Pattern=a, Pattern=new york, Pattern=i'm, Pattern=about, Pattern=going to visit, Pattern=family
+	Constrained: Pattern=to, Pattern=visit, Pattern=new, Pattern=going to
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=india
+	Constrained: 
+Turn ID=11| B | Human 2 : hello i'm india . how about you ?
+	Free: Pattern=. how about you ?, Pattern=india, Pattern=i'm
+	Constrained: Pattern=. how about, Pattern=you, Pattern=about
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=and bangalore, Pattern=both, Pattern=is, Pattern=food, Pattern=this
+	Constrained: Pattern=and
+Turn ID=13| B | Human 2 : new york and bangalore india both have food i know this .
+	Free: Pattern=india, Pattern=new york, Pattern=and bangalore, Pattern=both, Pattern=i, Pattern=food, Pattern=this
+	Constrained: Pattern=and, Pattern=new
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=there, Pattern=a, Pattern=new york, Pattern=for, Pattern=and, Pattern=the, Pattern=to, Pattern=the first snow, Pattern=i
+	Constrained: Pattern=new, Pattern=the
+Turn ID=15| B | Human 2 : is this the first snow for india and bangalore ?
+	Free: Pattern=india, Pattern=for, Pattern=and bangalore, Pattern=this, Pattern=is, Pattern=the first snow
+	Constrained: Pattern=and, Pattern=the

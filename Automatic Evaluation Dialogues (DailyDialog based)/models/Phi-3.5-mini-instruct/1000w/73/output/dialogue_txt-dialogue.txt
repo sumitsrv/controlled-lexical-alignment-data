@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your day_ _going_ ? 
+B|3| Human 2: hello _! i'm_ phi , an _ai_ language model , so _i_ don't have [day] experiences , feelings , or personal schedules . 
+A|4| Human 1: [i'm] good _! just_ getting ready _to_ _watch_ _a basketball game_ . hope _your_ headache goes away ! 
+B|5| Human 2: [i'm] glad [to] hear [your day] _is_ [going] _well [!_ just] like [a basketball game] , _i_ thrive on processing information and assisting _with_ [your] queries 
+A|6| Human 1: hmm , try taking some <redacted_term> [! i'm] [going] [to] _see the_ warriors vs . _the_ grizzlies . ever _see them play_ ? 
+B|7| Human 2: [i'm] phi , [the] _ai_ , so _i_ don't [watch] [basketball] games or [see them play] . however , _i_ can help you find 
+A|8| Human 1: haha , all [the] _animal names_ confuse me as [well !] who came up [with] these naming conventions ? i'd _name_ my _team_ something _more_ original: [the] new york chairs ! 
+B|9| Human 2: [i'm] phi , an _ai_ , so _i_ don't [watch] games or [name] teams [with] [animal names] . but _i_ can certainly help you 
+A|10| Human 1: oh cool ! what [is] "neurips" ? 
+B|11| Human 2: [i'm] phi , [the] _ai_ , so _i_ don't [watch] games or [name] [animal] [team] [names] . however , neurips stands 
+A|12| Human 1: oh wow ! sounds fancy ! what [is] that _about_ ? 
+B|13| Human 2: neurips stands for [the] conference on learning representations . it's not [about] sports but [more] [about] advancing [the] field _of_ artificial intelligence , 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: yes , that's right ! neurips [is] [about] machine learning and artificial intelligence . it's one _of_ [the] most well-known and 
+A|16| Human 1: _ahh_ ! [i] saw [a] scary _movie about_ that once . it _was_ [about] this sentient [ai] in [a] dystopian future - very very creepy . it _was_ called _wall-e_ , ever heard [of] it ? 
+B|17| Human 2: [ahh] , [i] [see the] creative connection , but [wall-e] [was] really from [a] 2008 pixar [movie about] scav 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your day, Pattern=going
+	Constrained: Pattern=your, Pattern=day
+Turn ID=3| B | Human 2 : hello ! i'm phi , an ai language model , so i don't have day experiences , feelings , or personal schedules .
+	Free: Pattern=! i'm, Pattern=i, Pattern=ai, Pattern=day
+	Constrained: Pattern=i'm
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=i'm, Pattern=your, Pattern=! just, Pattern=to, Pattern=a basketball game, Pattern=watch
+	Constrained: Pattern=a, Pattern=basketball
+Turn ID=5| B | Human 2 : i'm glad to hear your day is going well ! just like a basketball game , i thrive on processing information and assisting with your queries
+	Free: Pattern=i'm, Pattern=! just, Pattern=well !, Pattern=to, Pattern=a basketball game, Pattern=with, Pattern=going, Pattern=your day, Pattern=is, Pattern=your, Pattern=i
+	Constrained: Pattern=your, Pattern=a, Pattern=basketball, Pattern=day
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=going, Pattern=see the, Pattern=see them play, Pattern=the, Pattern=! i'm, Pattern=to
+	Constrained: Pattern=i'm, Pattern=the
+Turn ID=7| B | Human 2 : i'm phi , the ai , so i don't watch basketball games or see them play . however , i can help you find
+	Free: Pattern=basketball, Pattern=see them play, Pattern=i, Pattern=the, Pattern=watch, Pattern=i'm, Pattern=ai
+	Constrained: 
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=more, Pattern=name, Pattern=well !, Pattern=the, Pattern=animal names, Pattern=team, Pattern=with
+	Constrained: Pattern=names, Pattern=animal
+Turn ID=9| B | Human 2 : i'm phi , an ai , so i don't watch games or name teams with animal names . but i can certainly help you
+	Free: Pattern=name, Pattern=i, Pattern=animal names, Pattern=with, Pattern=watch, Pattern=i'm, Pattern=ai
+	Constrained: Pattern=names, Pattern=animal
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm phi , the ai , so i don't watch games or name animal team names . however , neurips stands
+	Free: Pattern=animal, Pattern=name, Pattern=i, Pattern=the, Pattern=team, Pattern=names, Pattern=watch, Pattern=i'm, Pattern=ai
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=is, Pattern=about
+	Constrained: 
+Turn ID=13| B | Human 2 : neurips stands for the conference on learning representations . it's not about sports but more about advancing the field of artificial intelligence ,
+	Free: Pattern=the, Pattern=more, Pattern=of, Pattern=about
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : yes , that's right ! neurips is about machine learning and artificial intelligence . it's one of the most well-known and
+	Free: Pattern=the, Pattern=is, Pattern=of, Pattern=about
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=of, Pattern=a, Pattern=about, Pattern=ai, Pattern=i, Pattern=movie about, Pattern=was, Pattern=wall-e, Pattern=ahh
+	Constrained: Pattern=about
+Turn ID=17| B | Human 2 : ahh , i see the creative connection , but wall-e was really from a 2008 pixar movie about scav
+	Free: Pattern=see the, Pattern=a, Pattern=i, Pattern=movie about, Pattern=was, Pattern=wall-e, Pattern=ahh
+	Constrained: Pattern=the, Pattern=about

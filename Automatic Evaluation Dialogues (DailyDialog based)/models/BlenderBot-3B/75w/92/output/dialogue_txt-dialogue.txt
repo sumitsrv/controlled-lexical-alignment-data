@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ _good_ ! just _went_ _to _the_ park_ _to_ enjoy _the_ sun _. you_ ? 
+B|3| Human 2: _i_ [went] for a walk around [the park] ! _i'm_ really [good] now _that_ my dog _is_ back 
+A|4| Human 1: haha , _beach_ season _is coming_ ! _you_ need _to look_ tan ! what did _you_ _do_ indoors all [day] ? 
+B|5| Human 2: _i_ [went] _outside_ _and_ played [beach] hockey 
+A|6| Human 1: hahahaha , _that's_ pretty funny . ever thought of bringing [your] _work_ things _to _the_ beach_ ?? 
+B|7| Human 2: oh [that's] [good] [to] hear _that_ [your] dog [is coming] back from [the beach] . _i_ [went] for an early morning run today 
+A|8| Human 1: hmm [i] see . _it_ sounds _like_ _you_ _work near the water_ already , no ? are _you_ some kind of _fish_ researcher ? 
+B|9| Human 2: [i] [do] [work near the water] . [the] ocean [is] amazing . _i like to_ [fish] _and_ relax by [the beach] . 
+A|10| Human 1: woah ! this [is] _very interesting_ _! i_ _have_ honestly _never heard_ of such kind of [work] . [is] _it_ _dangerous_ _at_ all ? 
+B|11| Human 2: [i] [work] in [the] lab , so [beach] [work] [is] _not_ for me lol . [it's] [very interesting] though [. you] should [look] [it] up , [you] might 
+A|12| Human 1: hmmm , yes [i] _have_ _heard that_ . apparently most _mountain_ climbers fall [not] on [the] most _dangerous_ routes , _but_ on [the] easier routes , _when_ their guard [is] down ! sounds [like] [the] same psychological phenomenon . 
+B|13| Human 2: [it] certainly can be [when] [you] [have] _to climb_ out [to [the] water] [to] retrieve [the] [fish] you're missing . 
+A|14| Human 1: [i'm] pretty amateur _! i like [to_ climb] _at_ indoor _climbing_ gyms [and] [have] _never_ gone [outside] on _dangerous_ routes actually . ever tried [it] yourself ? 
+B|15| Human 2: [i] [never [heard] that] [beach] [work] [is] [not] [very] [dangerous] [but] [mountain] [climbing] [is] [! i like [to] look] [at] [the] view from [the] top though 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=good, Pattern=went, Pattern=to the, Pattern=the park, Pattern=. you, Pattern=the, Pattern=to, Pattern=it's
+	Constrained: Pattern=to, Pattern=the, Pattern=you
+Turn ID=3| B | Human 2 : i went for a walk around the park ! i'm really good now that my dog is back
+	Free: Pattern=good, Pattern=went, Pattern=the park, Pattern=i'm, Pattern=that, Pattern=is, Pattern=i
+	Constrained: Pattern=the
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=do, Pattern=beach, Pattern=is coming, Pattern=day, Pattern=to look
+	Constrained: Pattern=is, Pattern=to, Pattern=look
+Turn ID=5| B | Human 2 : i went outside and played beach hockey
+	Free: Pattern=went, Pattern=beach, Pattern=and, Pattern=outside, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=to the, Pattern=the beach, Pattern=work, Pattern=your, Pattern=that's
+	Constrained: Pattern=to, Pattern=the, Pattern=beach
+Turn ID=7| B | Human 2 : oh that's good to hear that your dog is coming back from the beach . i went for an early morning run today
+	Free: Pattern=good, Pattern=went, Pattern=is coming, Pattern=the beach, Pattern=that's, Pattern=to, Pattern=that, Pattern=your, Pattern=i
+	Constrained: Pattern=is, Pattern=the, Pattern=beach
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=you, Pattern=it, Pattern=i, Pattern=like, Pattern=fish, Pattern=work near the water
+	Constrained: Pattern=work, Pattern=the water, Pattern=the
+Turn ID=9| B | Human 2 : i do work near the water . the ocean is amazing . i like to fish and relax by the beach .
+	Free: Pattern=do, Pattern=and, Pattern=the beach, Pattern=fish, Pattern=the, Pattern=i like to, Pattern=work near the water, Pattern=is, Pattern=i
+	Constrained: Pattern=beach, Pattern=the water, Pattern=work, Pattern=i, Pattern=like, Pattern=the, Pattern=to
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=very interesting, Pattern=have, Pattern=work, Pattern=is, Pattern=never heard, Pattern=it, Pattern=! i, Pattern=dangerous, Pattern=at
+	Constrained: Pattern=i, Pattern=very, Pattern=never
+Turn ID=11| B | Human 2 : i work in the lab , so beach work is not for me lol . it's very interesting though . you should look it up , you might
+	Free: Pattern=very interesting, Pattern=you, Pattern=beach, Pattern=it, Pattern=the, Pattern=it's, Pattern=not, Pattern=. you, Pattern=work, Pattern=is, Pattern=look, Pattern=i
+	Constrained: Pattern=you, Pattern=very
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=heard that, Pattern=have, Pattern=like, Pattern=the, Pattern=when, Pattern=but, Pattern=not, Pattern=dangerous, Pattern=mountain, Pattern=is, Pattern=i
+	Constrained: Pattern=that
+Turn ID=13| B | Human 2 : it certainly can be when you have to climb out to the water to retrieve the fish you're missing .
+	Free: Pattern=you, Pattern=have, Pattern=it, Pattern=to climb, Pattern=fish, Pattern=the, Pattern=when, Pattern=to, Pattern=to the, Pattern=the water
+	Constrained: Pattern=to, Pattern=the
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=! i like to, Pattern=have, Pattern=i'm, Pattern=climbing, Pattern=it, Pattern=and, Pattern=dangerous, Pattern=to climb, Pattern=at, Pattern=never, Pattern=outside
+	Constrained: Pattern=! i, Pattern=i, Pattern=like, Pattern=to, Pattern=i like to
+Turn ID=15| B | Human 2 : i never heard that beach work is not very dangerous but mountain climbing is ! i like to look at the view from the top though
+	Free: Pattern=! i like to, Pattern=heard that, Pattern=beach, Pattern=work, Pattern=the, Pattern=never heard, Pattern=but, Pattern=dangerous, Pattern=at, Pattern=mountain, Pattern=very, Pattern=is, Pattern=to look, Pattern=i, Pattern=not, Pattern=climbing
+	Constrained: Pattern=! i, Pattern=like, Pattern=to, Pattern=i like to, Pattern=that, Pattern=look, Pattern=never, Pattern=i

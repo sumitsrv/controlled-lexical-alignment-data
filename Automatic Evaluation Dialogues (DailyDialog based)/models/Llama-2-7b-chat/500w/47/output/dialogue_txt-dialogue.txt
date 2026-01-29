@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's your day _going_ ? 
+B|3| Human 2: _great_ ! _how_ can _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _good_ _i'm_ _good_ . _what's_ getting [you] _down_ ? 
+B|5| Human 2: sorry _to_ hear that you're feeling [down] . _is_ _there_ anything _i_ can do _to_ help ? 
+A|6| Human 1: _i'm_ thinking of _going_ _to visit_ _my_ _family_ _. how_ _about_ [you] ? 
+B|7| Human 2: _i_ _see_ . it's [good] [to] have [family] around during difficult times . do [you] want [to] talk [about] [what's] [going] on ? <|im 
+A|8| Human 1: they're _in_ _new york_ _. how_ [about] yours ? 
+B|9| Human 2: [i'm] _just_ an ai _a_ simple chatbot trained by meta ai , _i_ don't have personal experiences or [family] [to visit] . however 
+A|10| Human 1: _ahh_ what city ? _i've visited_ _india_ _before ._ 
+B|11| Human 2: [i'm] _just_ an ai _a_ simple chatbot trained by meta ai , _i_ don't have personal experiences or [family] [to visit] . however 
+A|12| Human 1: _hyderabad_ ! _and_ bangalore ! [great] _food_ _in_ both cities ! [is] it still _hot_ this _time_ of year ? 
+B|13| Human 2: [ahh] [hot] [and] humid ! [i've visited] [hyderabad] [before .] do [you] have [family] [in] [india] ? 
+A|14| Human 1: yes . [i] _was_ actually [just] [there] [a] few weeks ago _for_ thanksgiving [and] got [to] [see] _the_ first snow of _the_ season ! ever _been_ [to] _new york_ ? 
+B|15| Human 2: [new york] [is] on [my] list ! [i've] [been] wanting [to visit] [there] [for] some [time] now [. how] [was] [the] [food] ? <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how can i help you today ?
+	Free: Pattern=great, Pattern=i, Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=good, Pattern=you, Pattern=down, Pattern=i'm, Pattern=what's
+	Constrained: 
+Turn ID=5| B | Human 2 : sorry to hear that you're feeling down . is there anything i can do to help ?
+	Free: Pattern=there, Pattern=down, Pattern=to, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=you, Pattern=going, Pattern=. how, Pattern=i'm, Pattern=to visit, Pattern=my, Pattern=about, Pattern=family
+	Constrained: Pattern=to, Pattern=how
+Turn ID=7| B | Human 2 : i see . it's good to have family around during difficult times . do you want to talk about what's going on ? <|im
+	Free: Pattern=good, Pattern=you, Pattern=going, Pattern=i, Pattern=what's, Pattern=see, Pattern=to, Pattern=about, Pattern=family
+	Constrained: 
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=. how, Pattern=new york, Pattern=in, Pattern=about
+	Constrained: Pattern=how
+Turn ID=9| B | Human 2 : i'm just an ai a simple chatbot trained by meta ai , i don't have personal experiences or family to visit . however
+	Free: Pattern=just, Pattern=a, Pattern=family, Pattern=i'm, Pattern=i, Pattern=to visit
+	Constrained: Pattern=to
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=i've visited, Pattern=before ., Pattern=india, Pattern=ahh
+	Constrained: Pattern=i've
+Turn ID=11| B | Human 2 : i'm just an ai a simple chatbot trained by meta ai , i don't have personal experiences or family to visit . however
+	Free: Pattern=just, Pattern=a, Pattern=family, Pattern=i'm, Pattern=i, Pattern=to visit
+	Constrained: Pattern=to
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=time, Pattern=great, Pattern=and, Pattern=hot, Pattern=in, Pattern=is, Pattern=food, Pattern=hyderabad
+	Constrained: 
+Turn ID=13| B | Human 2 : ahh hot and humid ! i've visited hyderabad before . do you have family in india ?
+	Free: Pattern=i've visited, Pattern=india, Pattern=you, Pattern=and, Pattern=in, Pattern=hyderabad, Pattern=before ., Pattern=ahh, Pattern=hot, Pattern=family
+	Constrained: Pattern=i've
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=just, Pattern=there, Pattern=a, Pattern=new york, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=see, Pattern=to, Pattern=been, Pattern=was
+	Constrained: 
+Turn ID=15| B | Human 2 : new york is on my list ! i've been wanting to visit there for some time now . how was the food ? <|im_end
+	Free: Pattern=time, Pattern=there, Pattern=new york, Pattern=for, Pattern=i've, Pattern=. how, Pattern=is, Pattern=food, Pattern=the, Pattern=my, Pattern=to visit, Pattern=been, Pattern=was
+	Constrained: Pattern=to, Pattern=how

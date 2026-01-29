@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: _i_ am good and _you_ ? 
+A|4| Human 1: _i'm going to the bahamas_ . _can't wait_ !!! 
+B|5| Human 2: _i_ am [going] [the bahamas] _on_ a cruise 
+A|6| Human 1: oh where _are you_ _now_ ? 
+B|7| Human 2: [i'm going to the bahamas] [now] . _can_ [you] believe _that_ ? how [are you] ? 
+A|8| Human 1: oh no . _i _never_ seen this_ in person . is it scary ? 
+B|9| Human 2: [i'm] just [going to the bahamas] and [you] [never seen this] before . 
+A|10| Human 1: _that does_ sound _nice_ . so _what_ [are you] doing these _holidays_ ? 
+B|11| Human 2: [i'm going to the] beach [this] [holidays] ! [you] know [what] [that does] [to] my body . it's [nice] [to] see [the] ocean for 
+A|12| Human 1: [nice] [nice] . [i'm] _gonna_ go _snorkeling_ yey 
+B|13| Human 2: [i'm going] [snorkeling] [this] weekend ! [i] [can't wait] ! [i never] know [what] [the] [holidays] [are] [gonna] bring ! 
+A|14| Human 1: [you] [can] stay [on] [the] shallow side [i] think . well hope [you] _enjoy_ time _with_ your extended _family_ ! 
+B|15| Human 2: [i'm] [with] [family] . you'll [enjoy] [the] beach . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : i am good and you ?
+	Free: Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=i'm going to the bahamas, Pattern=can't wait
+	Constrained: Pattern=the bahamas, Pattern=i'm, Pattern=i'm going, Pattern=the, Pattern=to, Pattern=i'm going to the, Pattern=going, Pattern=going to the bahamas
+Turn ID=5| B | Human 2 : i am going the bahamas on a cruise
+	Free: Pattern=the bahamas, Pattern=on, Pattern=going, Pattern=i
+	Constrained: Pattern=the
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you, Pattern=now
+	Constrained: Pattern=are, Pattern=you
+Turn ID=7| B | Human 2 : i'm going to the bahamas now . can you believe that ? how are you ?
+	Free: Pattern=i'm going to the bahamas, Pattern=you, Pattern=can, Pattern=are you, Pattern=now, Pattern=that
+	Constrained: Pattern=the bahamas, Pattern=you, Pattern=are, Pattern=i'm, Pattern=i'm going, Pattern=the, Pattern=to, Pattern=i'm going to the, Pattern=going, Pattern=going to the bahamas
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=never seen this, Pattern=i never
+	Constrained: Pattern=this, Pattern=i
+Turn ID=9| B | Human 2 : i'm just going to the bahamas and you never seen this before .
+	Free: Pattern=going to the bahamas, Pattern=never seen this, Pattern=you, Pattern=i'm
+	Constrained: Pattern=the bahamas, Pattern=going, Pattern=the, Pattern=to, Pattern=this
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=holidays, Pattern=that does, Pattern=what, Pattern=nice, Pattern=are you
+	Constrained: Pattern=are, Pattern=you, Pattern=that
+Turn ID=11| B | Human 2 : i'm going to the beach this holidays ! you know what that does to my body . it's nice to see the ocean for
+	Free: Pattern=holidays, Pattern=you, Pattern=that does, Pattern=what, Pattern=nice, Pattern=the, Pattern=to, Pattern=i'm going to the, Pattern=this
+	Constrained: Pattern=going, Pattern=i'm, Pattern=i'm going, Pattern=the, Pattern=to, Pattern=that
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=snorkeling, Pattern=i'm, Pattern=nice, Pattern=gonna
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm going snorkeling this weekend ! i can't wait ! i never know what the holidays are gonna bring !
+	Free: Pattern=holidays, Pattern=i never, Pattern=what, Pattern=gonna, Pattern=are, Pattern=can't wait, Pattern=i, Pattern=i'm going, Pattern=the, Pattern=this, Pattern=snorkeling
+	Constrained: Pattern=going, Pattern=i, Pattern=i'm
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=you, Pattern=can, Pattern=i, Pattern=with, Pattern=enjoy, Pattern=family, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm with family . you'll enjoy the beach .
+	Free: Pattern=i'm, Pattern=the, Pattern=with, Pattern=enjoy, Pattern=family
+	Constrained: 

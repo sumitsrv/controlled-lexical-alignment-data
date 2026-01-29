@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how’s _your day_ _going ?_ 
+A|2| Human 1: bruhhhhhh !!!!! 
+B|3| Human 2: 😅 sorry , it looks like you're feeling _a_ bit frustrated today . 😔 is everything okay ? 
+A|4| Human 1: _i_ _was_ screaming in agony upon recounting my [day] . 
+B|5| Human 2: 🤷‍♀️ [i] see . sometimes it can be challenging _to_ deal with _a_ [day] that's not _going_ as planned . 
+A|6| Human 1: [a] _project_ i've been working on for _some_ months _got_ _shelved_ . _so_ _i'm_ [a] mix of helpless , _sad_ _, _and_ angry_ . 
+B|7| Human 2: [i'm] sorry _to_ hear _that_ 😕 it can be tough when things don't go as planned [, and] [project] shel 
+A|8| Human 1: lol _. _would_ you say_ [that] [to] _someone_ who _lost_ [a] _loved one_ - or _some_ _similar circumstance ?_ 
+B|9| Human 2: [i'm] [so] sorry [you] [lost] [someone] [loved] [and] [that] it [was] [shelved] [project] [. would] [say] [similar circumstance ?] [got] [some] [sad] news yesterday 
+A|10| Human 1: no worries . [was] pulling [your] leg . [i] forgot [to] ask _how_ _your day was [going_ ?] 
+B|11| Human 2: [i'm] worried [that] [you] [got] [sad] [and angry] [your day was going] [how] [someone] [lost] [loved one] [shelved] project<|im_end 
+A|12| Human 1: lol . what are [your] choices ? [i'm] _trying out keto_ ! _it's_ pretty _tiring_ . 
+B|13| Human 2: [it's] [tiring] [trying out keto] [i] [got] [sad] [and angry] [that] [lost] [someone] [loved one] [shelved] [project] [would you say] [similar circumstance] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how’s your day going ?
+	Free: Pattern=your day, Pattern=going ?
+	Constrained: Pattern=your, Pattern=going, Pattern=day
+Turn ID=2| A | Human 1 : bruhhhhhh !!!!!
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : 😅 sorry , it looks like you're feeling a bit frustrated today . 😔 is everything okay ?
+	Free: Pattern=a
+	Constrained: 
+Turn ID=4| A | Human 1 : i was screaming in agony upon recounting my day .
+	Free: Pattern=i, Pattern=was, Pattern=day
+	Constrained: 
+Turn ID=5| B | Human 2 : 🤷‍♀️ i see . sometimes it can be challenging to deal with a day that's not going as planned .
+	Free: Pattern=going, Pattern=a, Pattern=to, Pattern=day, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : a project i've been working on for some months got shelved . so i'm a mix of helpless , sad , and angry .
+	Free: Pattern=sad, Pattern=and angry, Pattern=some, Pattern=i'm, Pattern=got, Pattern=, and, Pattern=project, Pattern=so, Pattern=shelved, Pattern=a
+	Constrained: Pattern=and
+Turn ID=7| B | Human 2 : i'm sorry to hear that 😕 it can be tough when things don't go as planned , and project shel
+	Free: Pattern=i'm, Pattern=, and, Pattern=to, Pattern=that, Pattern=project
+	Constrained: Pattern=and
+Turn ID=8| A | Human 1 : lol . would you say that to someone who lost a loved one - or some similar circumstance ?
+	Free: Pattern=would you say, Pattern=lost, Pattern=. would, Pattern=a, Pattern=loved one, Pattern=some, Pattern=to, Pattern=that, Pattern=someone, Pattern=similar circumstance ?
+	Constrained: Pattern=you, Pattern=loved, Pattern=say, Pattern=similar circumstance
+Turn ID=9| B | Human 2 : i'm so sorry you lost someone loved and that it was shelved project . would say similar circumstance ? got some sad news yesterday
+	Free: Pattern=sad, Pattern=. would, Pattern=shelved, Pattern=some, Pattern=was, Pattern=so, Pattern=you, Pattern=lost, Pattern=and, Pattern=someone, Pattern=similar circumstance ?, Pattern=say, Pattern=i'm, Pattern=got, Pattern=loved, Pattern=that, Pattern=project
+	Constrained: Pattern=similar circumstance
+Turn ID=10| A | Human 1 : no worries . was pulling your leg . i forgot to ask how your day was going ?
+	Free: Pattern=how, Pattern=going ?, Pattern=was, Pattern=your, Pattern=i, Pattern=your day was going, Pattern=to
+	Constrained: Pattern=was, Pattern=going, Pattern=your day, Pattern=day, Pattern=your
+Turn ID=11| B | Human 2 : i'm worried that you got sad and angry your day was going how someone lost loved one shelved project<|im_end
+	Free: Pattern=sad, Pattern=and angry, Pattern=shelved, Pattern=how, Pattern=loved one, Pattern=someone, Pattern=i'm, Pattern=got, Pattern=your day was going, Pattern=that, Pattern=you, Pattern=lost
+	Constrained: Pattern=and, Pattern=loved, Pattern=was, Pattern=going, Pattern=your day, Pattern=day, Pattern=your
+Turn ID=12| A | Human 1 : lol . what are your choices ? i'm trying out keto ! it's pretty tiring .
+	Free: Pattern=tiring, Pattern=i'm, Pattern=your, Pattern=trying out keto, Pattern=it's
+	Constrained: 
+Turn ID=13| B | Human 2 : it's tiring trying out keto i got sad and angry that lost someone loved one shelved project would you say similar circumstance
+	Free: Pattern=sad, Pattern=lost, Pattern=loved one, Pattern=i, Pattern=trying out keto, Pattern=got, Pattern=would you say, Pattern=and angry, Pattern=shelved, Pattern=similar circumstance, Pattern=tiring, Pattern=someone, Pattern=that, Pattern=it's, Pattern=project
+	Constrained: Pattern=you, Pattern=loved, Pattern=say, Pattern=and

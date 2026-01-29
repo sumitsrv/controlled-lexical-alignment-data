@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _oh_ hello . long time no talk . how's _the_ _day_ _going_ _for_ yuo ? 
+A|2| Human 1: very well , thanks [for] asking . how _has_ _your day_ _been_ ? 
+B|3| Human 2: what [has] [been] [your day] _for the_ past few years ? 
+A|4| Human 1: glad to hear _you're_ better . sorry to hear _you_ were _sick_ . i _was_ _sick_ a couple of _weeks_ ago _with_ a _bad_ _cough_ . there's definitely a bug [going] _around_ . admit i _just_ want to _stay_ healthy _for the holidays_ _and_ _plan_ to relax . 
+B|5| Human 2: _yes_ [and] [you] [stay] [with] [your] friend's [the holidays] [around] [the] [day] . there [was] [just] this [sick] [cough] [for] [weeks] . 
+A|6| Human 1: definitely ! i _know_ a lot of folks travel _for the holidays_ , but _i'm_ happy to [stay] home myself ! 
+B|7| Human 2: so [you] [plan] [for] [holidays] ? 
+A|8| Human 1: me _too_ . now i have folks come visit me _for the holidays !_ but that's _also_ tiresome .. 
+B|9| Human 2: [i'm] [too] [bad] [for the holidays !] 
+A|10| Human 1: [yes] ! we set up an eco-friendly (i . e . fake) _christmas_ _tree_ [and] put up some _colorful_ led _lights_ which is very festive . 
+B|11| Human 2: _it_ [also] [has] [christmas] [lights] [and] [colorful] led's [you] [know] ? 
+A|12| Human 1: buying a _tree_ is a neat experience . i [was] torn between buying an artificial/eco-friendly/fake one vs . a _real_ one that smells like fresh pine . in [the] end , we opted [for the] one that we can disassemble every year . 
+B|13| Human 2: it's [real] 
+A|14| Human 1: [oh] , very clever pun ! i like [it] ! depends . i remember having [real] [christmas] _trees_ from childhood , but these days [with] climate change , i _think_ not chopping down a _tree_ [just] to decorate [it] [and] then throw [it] out in a month is [the] _more_ responsible thing to do . 
+B|15| Human 2: [you] [think] [more] [trees] [for the] [tree] 
+A|16| Human 1: admit my favorite store is target , plus they often have _good deals ._ 
+B|17| Human 2: [you're] [good deals .] 
+A|18| Human 1: great , i hope [you] find a nice [tree] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hello . long time no talk . how's the day going for yuo ?
+	Free: Pattern=going, Pattern=for, Pattern=oh, Pattern=day, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : very well , thanks for asking . how has your day been ?
+	Free: Pattern=your day, Pattern=for, Pattern=has, Pattern=been
+	Constrained: Pattern=day, Pattern=your
+Turn ID=3| B | Human 2 : what has been your day for the past few years ?
+	Free: Pattern=for the, Pattern=your day, Pattern=has, Pattern=been
+	Constrained: Pattern=for, Pattern=day, Pattern=the, Pattern=your
+Turn ID=4| A | Human 1 : glad to hear you're better . sorry to hear you were sick . i was sick a couple of weeks ago with a bad cough . there's definitely a bug going around . admit i just want to stay healthy for the holidays and plan to relax .
+	Free: Pattern=bad, Pattern=cough, Pattern=and, Pattern=weeks, Pattern=sick, Pattern=was, Pattern=with, Pattern=you're, Pattern=stay, Pattern=you, Pattern=plan, Pattern=going, Pattern=just, Pattern=around, Pattern=for the holidays
+	Constrained: Pattern=holidays, Pattern=for the, Pattern=the holidays, Pattern=for, Pattern=the
+Turn ID=5| B | Human 2 : yes and you stay with your friend's the holidays around the day . there was just this sick cough for weeks .
+	Free: Pattern=cough, Pattern=stay, Pattern=just, Pattern=the holidays, Pattern=and, Pattern=weeks, Pattern=was, Pattern=with, Pattern=you, Pattern=yes, Pattern=around, Pattern=for, Pattern=day, Pattern=your, Pattern=sick, Pattern=the
+	Constrained: Pattern=holidays, Pattern=the
+Turn ID=6| A | Human 1 : definitely ! i know a lot of folks travel for the holidays , but i'm happy to stay home myself !
+	Free: Pattern=for the holidays, Pattern=stay, Pattern=know, Pattern=i'm
+	Constrained: Pattern=holidays, Pattern=for the, Pattern=the holidays, Pattern=for, Pattern=the
+Turn ID=7| B | Human 2 : so you plan for holidays ?
+	Free: Pattern=you, Pattern=for, Pattern=holidays, Pattern=plan
+	Constrained: 
+Turn ID=8| A | Human 1 : me too . now i have folks come visit me for the holidays ! but that's also tiresome ..
+	Free: Pattern=for the holidays !, Pattern=too, Pattern=also
+	Constrained: Pattern=holidays, Pattern=for the, Pattern=the holidays, Pattern=the, Pattern=for the holidays, Pattern=for
+Turn ID=9| B | Human 2 : i'm too bad for the holidays !
+	Free: Pattern=for the holidays !, Pattern=bad, Pattern=too, Pattern=i'm
+	Constrained: Pattern=holidays, Pattern=for the, Pattern=the holidays, Pattern=the, Pattern=for the holidays, Pattern=for
+Turn ID=10| A | Human 1 : yes ! we set up an eco-friendly (i . e . fake) christmas tree and put up some colorful led lights which is very festive .
+	Free: Pattern=colorful, Pattern=lights, Pattern=and, Pattern=christmas, Pattern=tree, Pattern=yes
+	Constrained: 
+Turn ID=11| B | Human 2 : it also has christmas lights and colorful led's you know ?
+	Free: Pattern=you, Pattern=colorful, Pattern=lights, Pattern=know, Pattern=also, Pattern=christmas, Pattern=it, Pattern=and, Pattern=has
+	Constrained: 
+Turn ID=12| A | Human 1 : buying a tree is a neat experience . i was torn between buying an artificial/eco-friendly/fake one vs . a real one that smells like fresh pine . in the end , we opted for the one that we can disassemble every year .
+	Free: Pattern=tree, Pattern=for the, Pattern=the, Pattern=was, Pattern=real
+	Constrained: Pattern=for, Pattern=the
+Turn ID=13| B | Human 2 : it's real
+	Free: Pattern=real
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , very clever pun ! i like it ! depends . i remember having real christmas trees from childhood , but these days with climate change , i think not chopping down a tree just to decorate it and then throw it out in a month is the more responsible thing to do .
+	Free: Pattern=more, Pattern=tree, Pattern=just, Pattern=think, Pattern=with, Pattern=real, Pattern=it, Pattern=and, Pattern=oh, Pattern=christmas, Pattern=trees, Pattern=the
+	Constrained: 
+Turn ID=15| B | Human 2 : you think more trees for the tree
+	Free: Pattern=more, Pattern=for the, Pattern=think, Pattern=trees, Pattern=you, Pattern=tree
+	Constrained: Pattern=for, Pattern=the
+Turn ID=16| A | Human 1 : admit my favorite store is target , plus they often have good deals .
+	Free: Pattern=good deals .
+	Constrained: 
+Turn ID=17| B | Human 2 : you're good deals .
+	Free: Pattern=good deals ., Pattern=you're
+	Constrained: 
+Turn ID=18| A | Human 1 : great , i hope you find a nice tree .
+	Free: Pattern=you, Pattern=tree
+	Constrained: 

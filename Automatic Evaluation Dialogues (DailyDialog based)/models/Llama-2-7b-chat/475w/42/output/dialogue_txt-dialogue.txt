@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: do _you have_ _any_ _holiday_ plans _for_ christmas ? 
+B|3| Human 2: i'd be happy _to_ help [you] plan your [holiday] ! can [you] tell _me_ _a_ bit more _about_ _what_ [you have] in mind ? <|im 
+A|4| Human 1: same _here_ ! _i_ would imagine spending _the_ whole time watching _movies_ _and_ _netflix shows_ . do [you have] _any_ _netflix_ _recommendations for_ [me] ? 
+B|5| Human 2: _i have_ _a_ few [recommendations for] [you] ! [here] _are_ some [netflix shows] [and] [movies] that _are_ popular _right_ now:<|im_list 
+A|6| Human 1: oh _right ,_ already _seen_ wild wild country . [what] _is_ _billions_ [about] ? 
+B|7| Human 2: [billions] [is] _a_ crime drama _series_ that follows [the] journey _of_ bobby "axe" axelrod , _a_ wealthy hedge fund manager [and] _his_ 
+A|8| Human 1: [i have] just _seen_ 1 season [of] friends [i] should give _it_ _another_ try though 🙂 _have you seen_ _frasier_ ? 
+B|9| Human 2: [frasier] [is] [another] _great_ show ! _it's a_ sitcom [about] _a psychiatrist_ named [frasier] crane [and] _his_ life in seattle 
+A|10| Human 1: [a psychiatrist] working [for] radio .. [great] humour ! its actually [a] spinoff _from_ _a very_ famous [series] called cheers . so people [are] already familiar with [his] character . 
+B|11| Human 2: ah , [i] see ! yes , [frasier] [is] [a very] popular [and] funny show 😂 [have you seen] [the] office (us 
+A|12| Human 1: everything [is] ok , had [a] really nice trip . visited sf _, _grand canyon_ and_ vegas . was [a] lot [of] fun exploring _all_ these new places _. have you_ _been to grand canyon_ ? 
+B|13| Human 2: [i have] [been to [grand canyon] and] [it] [is] indeed [a] breathtakingly beautiful _place_ 😍 [have you seen] [any] [of] 
+A|14| Human 1: [you] should visit [it] sometime , [it's a] wonderful _place ._ try [to] drive _down there_ yourself or with [a] group [of] friends 
+B|15| Human 2: you're [right [,] grand canyon] [is] an amazing [place [.] [have you] seen] [it] [from] [down there] , [from] [all] [the] way <| 
+A|16| Human 1: nice talking [to] [you] too ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : do you have any holiday plans for christmas ?
+	Free: Pattern=you have, Pattern=holiday, Pattern=for, Pattern=any
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : i'd be happy to help you plan your holiday ! can you tell me a bit more about what you have in mind ? <|im
+	Free: Pattern=you, Pattern=me, Pattern=what, Pattern=a, Pattern=about, Pattern=you have, Pattern=holiday, Pattern=to
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : same here ! i would imagine spending the whole time watching movies and netflix shows . do you have any netflix recommendations for me ?
+	Free: Pattern=netflix shows, Pattern=here, Pattern=and, Pattern=you have, Pattern=i, Pattern=the, Pattern=movies, Pattern=me, Pattern=netflix, Pattern=recommendations for, Pattern=any
+	Constrained: Pattern=for, Pattern=netflix, Pattern=you
+Turn ID=5| B | Human 2 : i have a few recommendations for you ! here are some netflix shows and movies that are popular right now:<|im_list
+	Free: Pattern=you, Pattern=here, Pattern=a, Pattern=recommendations for, Pattern=and, Pattern=are, Pattern=movies, Pattern=i have, Pattern=right, Pattern=netflix shows
+	Constrained: Pattern=for, Pattern=i, Pattern=netflix
+Turn ID=6| A | Human 1 : oh right , already seen wild wild country . what is billions about ?
+	Free: Pattern=right ,, Pattern=what, Pattern=is, Pattern=seen, Pattern=about, Pattern=billions
+	Constrained: Pattern=right
+Turn ID=7| B | Human 2 : billions is a crime drama series that follows the journey of bobby "axe" axelrod , a wealthy hedge fund manager and his
+	Free: Pattern=a, Pattern=and, Pattern=billions, Pattern=is, Pattern=the, Pattern=series, Pattern=of, Pattern=his
+	Constrained: 
+Turn ID=8| A | Human 1 : i have just seen 1 season of friends i should give it another try though 🙂 have you seen frasier ?
+	Free: Pattern=of, Pattern=have you seen, Pattern=it, Pattern=another, Pattern=i, Pattern=seen, Pattern=i have, Pattern=frasier
+	Constrained: Pattern=seen, Pattern=i, Pattern=you
+Turn ID=9| B | Human 2 : frasier is another great show ! it's a sitcom about a psychiatrist named frasier crane and his life in seattle
+	Free: Pattern=great, Pattern=a psychiatrist, Pattern=and, Pattern=another, Pattern=about, Pattern=is, Pattern=frasier, Pattern=it's a, Pattern=his
+	Constrained: Pattern=a
+Turn ID=10| A | Human 1 : a psychiatrist working for radio .. great humour ! its actually a spinoff from a very famous series called cheers . so people are already familiar with his character .
+	Free: Pattern=his, Pattern=great, Pattern=a, Pattern=a psychiatrist, Pattern=for, Pattern=are, Pattern=from, Pattern=a very, Pattern=series
+	Constrained: Pattern=a
+Turn ID=11| B | Human 2 : ah , i see ! yes , frasier is a very popular and funny show 😂 have you seen the office (us
+	Free: Pattern=have you seen, Pattern=and, Pattern=the, Pattern=frasier, Pattern=is, Pattern=a very, Pattern=i
+	Constrained: Pattern=seen, Pattern=a, Pattern=you
+Turn ID=12| A | Human 1 : everything is ok , had a really nice trip . visited sf , grand canyon and vegas . was a lot of fun exploring all these new places . have you been to grand canyon ?
+	Free: Pattern=of, Pattern=grand canyon and, Pattern=, grand canyon, Pattern=is, Pattern=all, Pattern=been to grand canyon, Pattern=a, Pattern=. have you
+	Constrained: Pattern=and, Pattern=to, Pattern=you
+Turn ID=13| B | Human 2 : i have been to grand canyon and it is indeed a breathtakingly beautiful place 😍 have you seen any of
+	Free: Pattern=of, Pattern=grand canyon and, Pattern=have you seen, Pattern=a, Pattern=any, Pattern=it, Pattern=is, Pattern=place, Pattern=been to grand canyon, Pattern=i have
+	Constrained: Pattern=you, Pattern=and, Pattern=i, Pattern=to, Pattern=seen
+Turn ID=14| A | Human 1 : you should visit it sometime , it's a wonderful place . try to drive down there yourself or with a group of friends
+	Free: Pattern=you, Pattern=a, Pattern=it, Pattern=down there, Pattern=to, Pattern=place ., Pattern=of, Pattern=it's a
+	Constrained: Pattern=a, Pattern=place
+Turn ID=15| B | Human 2 : you're right , grand canyon is an amazing place . have you seen it from down there , from all the way <|
+	Free: Pattern=right ,, Pattern=have you seen, Pattern=, grand canyon, Pattern=. have you, Pattern=it, Pattern=down there, Pattern=from, Pattern=is, Pattern=place ., Pattern=the, Pattern=all
+	Constrained: Pattern=seen, Pattern=place, Pattern=right, Pattern=you
+Turn ID=16| A | Human 1 : nice talking to you too !
+	Free: Pattern=to, Pattern=you
+	Constrained: 

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: what's _your_ _name_ ? 
+A|2| Human 1: my [name] _is_ _pikachu ._ it’s nice _to_ meet _you_ ! _what are you_ up _to_ _this month ?_ 
+B|3| Human 2: i'm _just_ an ai _, i_ don't _have_ personal experiences _or_ emotions _like_ _you do_ , [pikachu _.] but i_ 
+A|4| Human 1: i’m trying _to_ _organize_ my _life and start the_ _new _year_ ready_ _to_ go ! _what about you_ ? 
+B|5| Human 2: that's great [to] hear [pikachu] ! [organize] [life and start the] [year ready] . [what are you] planning [this month ?] </s>0 
+A|6| Human 1: [what] _do [you_ do] _to unwind_ ? 
+B|7| Human 2: 0i _like_ [to unwind] [and] relax by playing [the] guitar [and] singing [about] [life] . [what are you] doing [this] [new year] ? <|im_ 
+A|8| Human 1: oddly enough [, i] _also_ _catch pokémon_ on my phone . [i] used [to] [do] it _more_ , [but] it [just] _never ends_ . [i] used [to] [do] it everyday . _now i_ mostly _catch_ them when [i] _travel somewhere exotic_ . 
+B|9| Human 2: [travel somewhere exotic] [and] [catch pokémon] ? [what] an adventure [you] [are] describing [pikachu] 
+A|10| Human 1: _in_ [the] _game_ [, i] use vaporeon a lot [. but i] _think_ _pikachu is_ _the cutest_ , that’s why [i] changed my [name] [to] match . _lately_ [, i] _think_ _baby yoda_ _is_ _the cutest_ though . [have] [you] seen _baby yoda ?_ 
+B|11| Human 2: [lately] [you] say [baby yoda ?] [now] _that_ [the] newest [pokémon] [game] [just] came out [and] [pikachu is] [more] powerful than 
+A|12| Human 1: [what] [is] [your] _favorite_ _show_ [to] _watch_ _right now_ ? 
+B|13| Human 2: [right [now] i] [watch] [the] [show] [you] [just] mentioned [baby yoda] [but] [also] [pikachu] because _that_ [never ends] [what about you] [favorite] [pokémon] 
+A|14| Human 1: [i] _was_ _watching cat rescue videos_ on youtube a lot . there _sure_ [are] a lot of stray _cat_ _babies_ [that] _get stuck in pipes_ [and] _gutters_ _in_ _south korea_ . 
+B|15| Human 2: [south korea] [that] [sure] [is] unfortunate [but] [now] [you] [are] [watching cat rescue videos] [and] [baby yoda] [right] ? [what] [show] [do you] [think] [was] [the] 
+A|16| Human 1: [do you] [like] _cats_ [or] _dogs_ _better_ ? [do you] [have] any _pets_ ? 
+B|17| Human 2: [cats] [are] [better] [pets] [and] [dogs] [have] [the cutest] [babies] [but] [cat rescue videos] [like] [you] said [get stuck in pipes] [gutters] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : what's your name ?
+	Free: Pattern=your, Pattern=name
+	Constrained: 
+Turn ID=2| A | Human 1 : my name is pikachu . it’s nice to meet you ! what are you up to this month ?
+	Free: Pattern=you, Pattern=pikachu ., Pattern=to, Pattern=name, Pattern=this month ?, Pattern=what are you, Pattern=is
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=pikachu, Pattern=this
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have personal experiences or emotions like you do , pikachu . but i
+	Free: Pattern=. but i, Pattern=you do, Pattern=like, Pattern=or, Pattern=, i, Pattern=pikachu ., Pattern=just, Pattern=have
+	Constrained: Pattern=you, Pattern=do, Pattern=i, Pattern=pikachu, Pattern=but
+Turn ID=4| A | Human 1 : i’m trying to organize my life and start the new year ready to go ! what about you ?
+	Free: Pattern=organize, Pattern=year ready, Pattern=new year, Pattern=life and start the, Pattern=what about you, Pattern=to
+	Constrained: Pattern=you, Pattern=what, Pattern=and, Pattern=about, Pattern=the, Pattern=life
+Turn ID=5| B | Human 2 : that's great to hear pikachu ! organize life and start the year ready . what are you planning this month ? </s>0
+	Free: Pattern=organize, Pattern=this month ?, Pattern=year ready, Pattern=what are you, Pattern=to, Pattern=pikachu, Pattern=life and start the
+	Constrained: Pattern=you, Pattern=what, Pattern=and, Pattern=are, Pattern=the, Pattern=this, Pattern=life
+Turn ID=6| A | Human 1 : what do you do to unwind ?
+	Free: Pattern=to unwind, Pattern=do you, Pattern=you do, Pattern=what
+	Constrained: Pattern=to, Pattern=do, Pattern=you
+Turn ID=7| B | Human 2 : 0i like to unwind and relax by playing the guitar and singing about life . what are you doing this new year ? <|im_
+	Free: Pattern=to unwind, Pattern=and, Pattern=about, Pattern=what are you, Pattern=like, Pattern=the, Pattern=new year, Pattern=this, Pattern=life
+	Constrained: Pattern=are, Pattern=what, Pattern=to, Pattern=you
+Turn ID=8| A | Human 1 : oddly enough , i also catch pokémon on my phone . i used to do it more , but it just never ends . i used to do it everyday . now i mostly catch them when i travel somewhere exotic .
+	Free: Pattern=more, Pattern=just, Pattern=now i, Pattern=do, Pattern=catch pokémon, Pattern=i, Pattern=also, Pattern=, i, Pattern=catch, Pattern=never ends, Pattern=but, Pattern=travel somewhere exotic, Pattern=to
+	Constrained: Pattern=i, Pattern=now, Pattern=pokémon, Pattern=catch
+Turn ID=9| B | Human 2 : travel somewhere exotic and catch pokémon ? what an adventure you are describing pikachu
+	Free: Pattern=you, Pattern=what, Pattern=and, Pattern=are, Pattern=catch pokémon, Pattern=travel somewhere exotic, Pattern=pikachu
+	Constrained: Pattern=catch, Pattern=pokémon
+Turn ID=10| A | Human 1 : in the game , i use vaporeon a lot . but i think pikachu is the cutest , that’s why i changed my name to match . lately , i think baby yoda is the cutest though . have you seen baby yoda ?
+	Free: Pattern=lately, Pattern=. but i, Pattern=you, Pattern=have, Pattern=game, Pattern=name, Pattern=the cutest, Pattern=baby yoda, Pattern=to, Pattern=pikachu is, Pattern=baby yoda ?, Pattern=think, Pattern=in, Pattern=is, Pattern=i, Pattern=the, Pattern=, i
+	Constrained: Pattern=baby yoda, Pattern=the, Pattern=pikachu, Pattern=but, Pattern=is, Pattern=i
+Turn ID=11| B | Human 2 : lately you say baby yoda ? now that the newest pokémon game just came out and pikachu is more powerful than
+	Free: Pattern=lately, Pattern=more, Pattern=you, Pattern=just, Pattern=game, Pattern=and, Pattern=baby yoda ?, Pattern=the, Pattern=pokémon, Pattern=now, Pattern=that, Pattern=pikachu is
+	Constrained: Pattern=is, Pattern=pikachu, Pattern=baby yoda
+Turn ID=12| A | Human 1 : what is your favorite show to watch right now ?
+	Free: Pattern=what, Pattern=favorite, Pattern=to, Pattern=right now, Pattern=show, Pattern=watch, Pattern=is, Pattern=your
+	Constrained: Pattern=right, Pattern=now
+Turn ID=13| B | Human 2 : right now i watch the show you just mentioned baby yoda but also pikachu because that never ends what about you favorite pokémon
+	Free: Pattern=you, Pattern=just, Pattern=now i, Pattern=favorite, Pattern=also, Pattern=baby yoda, Pattern=the, Pattern=what about you, Pattern=right now, Pattern=pikachu, Pattern=show, Pattern=watch, Pattern=pokémon, Pattern=never ends, Pattern=that, Pattern=but
+	Constrained: Pattern=right, Pattern=you, Pattern=what, Pattern=about, Pattern=i, Pattern=now
+Turn ID=14| A | Human 1 : i was watching cat rescue videos on youtube a lot . there sure are a lot of stray cat babies that get stuck in pipes and gutters in south korea .
+	Free: Pattern=cat, Pattern=and, Pattern=are, Pattern=watching cat rescue videos, Pattern=in, Pattern=i, Pattern=was, Pattern=that, Pattern=babies, Pattern=sure, Pattern=get stuck in pipes, Pattern=south korea, Pattern=gutters
+	Constrained: Pattern=in, Pattern=cat, Pattern=cat rescue videos
+Turn ID=15| B | Human 2 : south korea that sure is unfortunate but now you are watching cat rescue videos and baby yoda right ? what show do you think was the
+	Free: Pattern=right, Pattern=you, Pattern=what, Pattern=are, Pattern=watching cat rescue videos, Pattern=think, Pattern=is, Pattern=the, Pattern=was, Pattern=now, Pattern=and, Pattern=do you, Pattern=sure, Pattern=baby yoda, Pattern=show, Pattern=south korea, Pattern=that, Pattern=but
+	Constrained: Pattern=do, Pattern=you, Pattern=cat, Pattern=cat rescue videos
+Turn ID=16| A | Human 1 : do you like cats or dogs better ? do you have any pets ?
+	Free: Pattern=have, Pattern=dogs, Pattern=do you, Pattern=like, Pattern=better, Pattern=cats, Pattern=or, Pattern=pets
+	Constrained: Pattern=do, Pattern=you
+Turn ID=17| B | Human 2 : cats are better pets and dogs have the cutest babies but cat rescue videos like you said get stuck in pipes gutters
+	Free: Pattern=you, Pattern=have, Pattern=dogs, Pattern=are, Pattern=cat rescue videos, Pattern=like, Pattern=pets, Pattern=cats, Pattern=gutters, Pattern=but, Pattern=babies, Pattern=and, Pattern=the cutest, Pattern=better, Pattern=get stuck in pipes
+	Constrained: Pattern=in, Pattern=cat, Pattern=the

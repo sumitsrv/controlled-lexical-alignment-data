@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i_ am _good_ . [how are _you] ?_ ：） 
+B|3| Human 2: well , if _you are_ [good] , then [i] will try _to_ answer 
+A|4| Human 1: [i] am _busy_ . _a lot of_ _work ._ _what_ [are you] _working on ?_ 
+B|5| Human 2: [a lot of] [busy] [work .] 
+A|6| Human 1: [i] am _working on_ _a _new classifier_ ._ 
+B|7| Human 2: so _you are_ using that _to_ test _for_ [new classifier .] prop _for_ [you ?] [what] is _your_ [working on ?] 
+A|8| Human 1: _a new classifier for hate speech ._ which research topic catches [your] eyes _most_ ? 
+B|9| Human 2: this is [most] likely the result [of] [hate speech] _or_ [a new classifier for hate speech .] 
+A|10| Human 1: nice ! do [you] refer [to] [work] [or] anything else ? 
+B|11| Human 2: my [work .] this is [a new classifier for hate speech .] 
+A|12| Human 1: [you are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=you ?, Pattern=good, Pattern=i
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=3| B | Human 2 : well , if you are good , then i will try to answer
+	Free: Pattern=you are, Pattern=good, Pattern=i, Pattern=to
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=a lot of, Pattern=what, Pattern=busy, Pattern=work ., Pattern=working on ?, Pattern=are you, Pattern=i
+	Constrained: Pattern=work, Pattern=working on, Pattern=of, Pattern=you
+Turn ID=5| B | Human 2 : a lot of busy work .
+	Free: Pattern=a lot of, Pattern=work ., Pattern=busy
+	Constrained: Pattern=work, Pattern=of
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=new classifier ., Pattern=a new classifier, Pattern=working on, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : so you are using that to test for new classifier . prop for you ? what is your working on ?
+	Free: Pattern=what, Pattern=new classifier ., Pattern=for, Pattern=you are, Pattern=your, Pattern=you ?, Pattern=to, Pattern=working on ?
+	Constrained: Pattern=you, Pattern=working on
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=a new classifier for hate speech ., Pattern=your, Pattern=most
+	Constrained: Pattern=for, Pattern=a new classifier, Pattern=hate speech
+Turn ID=9| B | Human 2 : this is most likely the result of hate speech or a new classifier for hate speech .
+	Free: Pattern=of, Pattern=a new classifier for hate speech ., Pattern=or, Pattern=most, Pattern=hate speech
+	Constrained: Pattern=for, Pattern=a new classifier, Pattern=hate speech
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=you, Pattern=or, Pattern=work, Pattern=to
+	Constrained: 
+Turn ID=11| B | Human 2 : my work . this is a new classifier for hate speech .
+	Free: Pattern=a new classifier for hate speech ., Pattern=work .
+	Constrained: Pattern=for, Pattern=a new classifier, Pattern=hate speech, Pattern=work
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=you are
+	Constrained: Pattern=you

@@ -1,0 +1,63 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] 
+A|2| Human 1: _how_ is _your_ _day_ _going ?_ 
+B|3| Human 2: great , thanks for asking ! [how] _can_ _i_ help you today ? 
+A|4| Human 1: [how] is _your_ _day_ ? 
+B|5| Human 2: as _a_ conversational ai model _, i_ don't have _a_ physical [day] or emotions , but _i'm_ here _to_ help you with any 
+A|6| Human 1: [i] went [to] _gym_ _and_ worked on _weight_ lifting . 
+B|7| Human 2: _that's_ great ! [how] was [your] [gym] experience ? 
+A|8| Human 1: no [, i] am _just_ [a] starter . 
+B|9| Human 2: [i] see ! well , [just] let me know if you have any questions or if there's anything else _i can_ help you with ! </s>{ 
+A|10| Human 1: [i] go everyday . in fact , [i'm] in [a] _running challenge_ . 
+B|11| Human 2: how's [your] [running challenge] [going ?] 
+A|12| Human 1: _it's_ _actually_ _not that impressive_ . [i can] only run . [i] _cannot lift weight ._ 
+B|13| Human 2: [i'm] [just] an ai [and] [cannot lift weight .] [it's] [not that impressive] [actually] . [how] [can] [i] help you today ? <| 
+A|14| Human 1: oh [that's] [a] really interesting idea . [i] like [to] be coa 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : how is your day going ?
+	Free: Pattern=going ?, Pattern=day, Pattern=how, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks for asking ! how can i help you today ?
+	Free: Pattern=i, Pattern=how, Pattern=can
+	Constrained: 
+Turn ID=4| A | Human 1 : how is your day ?
+	Free: Pattern=day, Pattern=how, Pattern=your
+	Constrained: 
+Turn ID=5| B | Human 2 : as a conversational ai model , i don't have a physical day or emotions , but i'm here to help you with any
+	Free: Pattern=a, Pattern=i'm, Pattern=day, Pattern=, i, Pattern=to
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : i went to gym and worked on weight lifting .
+	Free: Pattern=and, Pattern=weight, Pattern=i, Pattern=gym, Pattern=to
+	Constrained: 
+Turn ID=7| B | Human 2 : that's great ! how was your gym experience ?
+	Free: Pattern=how, Pattern=your, Pattern=that's, Pattern=gym
+	Constrained: 
+Turn ID=8| A | Human 1 : no , i am just a starter .
+	Free: Pattern=, i, Pattern=a, Pattern=just
+	Constrained: Pattern=i
+Turn ID=9| B | Human 2 : i see ! well , just let me know if you have any questions or if there's anything else i can help you with ! </s>{
+	Free: Pattern=i can, Pattern=i, Pattern=just
+	Constrained: Pattern=i, Pattern=can
+Turn ID=10| A | Human 1 : i go everyday . in fact , i'm in a running challenge .
+	Free: Pattern=running challenge, Pattern=i, Pattern=i'm, Pattern=a
+	Constrained: 
+Turn ID=11| B | Human 2 : how's your running challenge going ?
+	Free: Pattern=running challenge, Pattern=going ?, Pattern=your
+	Constrained: 
+Turn ID=12| A | Human 1 : it's actually not that impressive . i can only run . i cannot lift weight .
+	Free: Pattern=actually, Pattern=i, Pattern=not that impressive, Pattern=i can, Pattern=cannot lift weight ., Pattern=it's
+	Constrained: Pattern=i, Pattern=can, Pattern=weight
+Turn ID=13| B | Human 2 : i'm just an ai and cannot lift weight . it's not that impressive actually . how can i help you today ? <|
+	Free: Pattern=just, Pattern=actually, Pattern=how, Pattern=and, Pattern=can, Pattern=i'm, Pattern=i, Pattern=not that impressive, Pattern=cannot lift weight ., Pattern=it's
+	Constrained: Pattern=weight
+Turn ID=14| A | Human 1 : oh that's a really interesting idea . i like to be coa
+	Free: Pattern=i, Pattern=to, Pattern=a, Pattern=that's
+	Constrained: 

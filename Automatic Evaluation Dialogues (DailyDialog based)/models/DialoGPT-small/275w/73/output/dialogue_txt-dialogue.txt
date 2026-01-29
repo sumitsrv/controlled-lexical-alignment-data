@@ -1,0 +1,75 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's your _day_ _going_ ? 
+B|3| Human 2: [hi] there ! 
+A|4| Human 1: _i'm_ _good_ ! _just_ getting ready _to watch_ a _basketball_ game . hope your headache goes away ! 
+B|5| Human 2: [good] [day] , [good] [day] . _i'm going [to_ watch] [basketball] , that's _about_ _it_ . 
+A|6| Human 1: hmm , try taking _some_ <redacted_term> ! [i'm going to] see _the warriors_ vs . _the_ grizzlies . ever see _them play_ ? 
+B|7| Human 2: hull's gameplan _is_ [the] same _as_ [some] other teams , but [the warriors] [play] _in_ their own stadium . [i'm] [just] [going [to] watch] [them play] 
+A|8| Human 1: _haha_ , _all the_ animal _names_ confuse me [as] well ! who came up with these naming conventions ? _i'd_ _name_ _my_ team _something_ _more_ original: [the] new york chairs ! 
+B|9| Human 2: that's [more] original [names] . [haha] [something] ... [i'd] [all the] [name] . 
+A|10| Human 1: _oh_ cool ! what [is] "neurips" ? 
+B|11| Human 2: it's for [the] neener . [i'm] ... [haha] ha'la [is] [my] ... 
+A|12| Human 1: _oh_ wow ! _sounds_ fancy ! what [is] _that_ [about] ? 
+B|13| Human 2: [that] [sounds] 
+A|14| Human 1: _oh_ , ml ? 
+B|15| Human 2: [oh] [the] [haha] ha'la [that] [is] . 
+A|16| Human 1: _ahh_ ! i saw a _scary_ _movie_ [about] [that] _once ._ [it] _was_ _about this_ sentient ai [in] a dystopian future - very very creepy . [it] _was_ called wall-e , ever _heard of_ [it] ? 
+B|17| Human 2: [that] [was] [scary] . [ahh] [the] halo [that] can shoot bullets . [i'd] [heard of] wall and e [about this] [movie] [once .] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going, Pattern=day
+	Constrained: 
+Turn ID=3| B | Human 2 : hi there !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=good, Pattern=just, Pattern=to watch, Pattern=basketball, Pattern=i'm
+	Constrained: 
+Turn ID=5| B | Human 2 : good day , good day . i'm going to watch basketball , that's about it .
+	Free: Pattern=good, Pattern=to watch, Pattern=basketball, Pattern=it, Pattern=about, Pattern=day, Pattern=i'm going to
+	Constrained: Pattern=going, Pattern=going to, Pattern=i'm
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=them play, Pattern=the warriors, Pattern=some, Pattern=the, Pattern=i'm going to
+	Constrained: Pattern=going to, Pattern=going, Pattern=i'm, Pattern=the, Pattern=play
+Turn ID=7| B | Human 2 : hull's gameplan is the same as some other teams , but the warriors play in their own stadium . i'm just going to watch them play
+	Free: Pattern=going to, Pattern=to watch, Pattern=them play, Pattern=the warriors, Pattern=some, Pattern=in, Pattern=i'm, Pattern=is, Pattern=the, Pattern=play, Pattern=as, Pattern=just
+	Constrained: Pattern=the, Pattern=going, Pattern=play
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=more, Pattern=name, Pattern=haha, Pattern=all the, Pattern=the, Pattern=my, Pattern=names, Pattern=something, Pattern=as, Pattern=i'd
+	Constrained: Pattern=the
+Turn ID=9| B | Human 2 : that's more original names . haha something ... i'd all the name .
+	Free: Pattern=more, Pattern=i'd, Pattern=name, Pattern=haha, Pattern=all the, Pattern=names, Pattern=something
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=oh, Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : it's for the neener . i'm ... haha ha'la is my ...
+	Free: Pattern=i'm, Pattern=is, Pattern=haha, Pattern=the, Pattern=my
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=oh, Pattern=about, Pattern=is, Pattern=sounds, Pattern=that
+	Constrained: 
+Turn ID=13| B | Human 2 : that sounds
+	Free: Pattern=that, Pattern=sounds
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: Pattern=oh
+	Constrained: 
+Turn ID=15| B | Human 2 : oh the haha ha'la that is .
+	Free: Pattern=oh, Pattern=is, Pattern=haha, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=scary, Pattern=about this, Pattern=movie, Pattern=it, Pattern=about, Pattern=in, Pattern=heard of, Pattern=once ., Pattern=was, Pattern=that, Pattern=ahh
+	Constrained: Pattern=about
+Turn ID=17| B | Human 2 : that was scary . ahh the halo that can shoot bullets . i'd heard of wall and e about this movie once .
+	Free: Pattern=i'd, Pattern=scary, Pattern=about this, Pattern=movie, Pattern=heard of, Pattern=the, Pattern=once ., Pattern=was, Pattern=that, Pattern=ahh
+	Constrained: Pattern=about

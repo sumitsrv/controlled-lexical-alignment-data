@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _it_ going ?!? 
+B|3| Human 2: hello how are you 
+A|4| Human 1: _what game_ ? 
+B|5| Human 2: _i'm_ just here _to_ see [what game] . 
+A|6| Human 1: nice . that's _football right_ ? 
+B|7| Human 2: _i'm_ just here _to_ see who's watching [football right] 
+A|8| Human 1: ok . [what] _stadium is it_ at ? 
+B|9| Human 2: _i'm_ watching a [game] [right] now 
+A|10| Human 1: yeah _i'm gonna_ go kayaking 
+B|11| Human 2: [what] about this [stadium is it] on [i'm gonna] kayak this ? 
+A|12| Human 1: [is it] easy [to] _flip over accidentally_ ? it's [gonna] be my first _time_ _actually_ 
+B|13| Human 2: [i'm gonna] [flip over accidentally] i have a big group of friends that are [actually] on [it] [right] now and will have [time] tomorrow 
+A|14| Human 1: thanks ! 
+B|15| Human 2: i'll have [it] on sunday ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?!?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=3| B | Human 2 : hello how are you
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : what game ?
+	Free: Pattern=what game
+	Constrained: Pattern=game, Pattern=what
+Turn ID=5| B | Human 2 : i'm just here to see what game .
+	Free: Pattern=what game, Pattern=to, Pattern=i'm
+	Constrained: Pattern=game, Pattern=what
+Turn ID=6| A | Human 1 : nice . that's football right ?
+	Free: Pattern=football right
+	Constrained: Pattern=right
+Turn ID=7| B | Human 2 : i'm just here to see who's watching football right
+	Free: Pattern=football right, Pattern=to, Pattern=i'm
+	Constrained: Pattern=right
+Turn ID=8| A | Human 1 : ok . what stadium is it at ?
+	Free: Pattern=stadium is it, Pattern=what
+	Constrained: Pattern=is it, Pattern=it
+Turn ID=9| B | Human 2 : i'm watching a game right now
+	Free: Pattern=right, Pattern=game, Pattern=i'm
+	Constrained: 
+Turn ID=10| A | Human 1 : yeah i'm gonna go kayaking
+	Free: Pattern=i'm gonna
+	Constrained: Pattern=gonna, Pattern=i'm
+Turn ID=11| B | Human 2 : what about this stadium is it on i'm gonna kayak this ?
+	Free: Pattern=stadium is it, Pattern=i'm gonna, Pattern=what
+	Constrained: Pattern=is it, Pattern=gonna, Pattern=i'm, Pattern=it
+Turn ID=12| A | Human 1 : is it easy to flip over accidentally ? it's gonna be my first time actually
+	Free: Pattern=time, Pattern=actually, Pattern=flip over accidentally, Pattern=to, Pattern=gonna, Pattern=is it
+	Constrained: Pattern=it
+Turn ID=13| B | Human 2 : i'm gonna flip over accidentally i have a big group of friends that are actually on it right now and will have time tomorrow
+	Free: Pattern=i'm gonna, Pattern=time, Pattern=right, Pattern=actually, Pattern=it, Pattern=flip over accidentally
+	Constrained: Pattern=gonna, Pattern=i'm
+Turn ID=14| A | Human 1 : thanks !
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : i'll have it on sunday !
+	Free: Pattern=it
+	Constrained: 

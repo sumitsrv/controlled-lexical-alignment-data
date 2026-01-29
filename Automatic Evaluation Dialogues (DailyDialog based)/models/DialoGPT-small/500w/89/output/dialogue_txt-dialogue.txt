@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _week_ so far ? 
+B|3| Human 2: woo [week] 9 ! 
+A|4| Human 1: same . _going _to_ catch up on_ my _reading_ ! do _you have a_ feast _planned_ ? 
+B|5| Human 2: _i_ [have a] new book [planned] tonight ... 
+A|6| Human 1: _something_ deeply hidden _by_ _sean carroll_ <redacted_link> 
+B|7| Human 2: [you have a] lot of [reading] [to catch up on] , [sean carroll] . 
+A|8| Human 1: largely _scifi_ _how_ _about_ [you] ? 
+B|9| Human 2: [you] mean [you have] _the_ plot of [how] it's made : [how] it's always [about] _the_ [scifi] and not _the_ other way around , because you're 
+A|10| Human 1: _i haven't what_ is _it about_ ? 
+B|11| Human 2: [i haven't what] [about] [it about] [how] it's [scifi] ? 
+A|12| Human 1: [how] do _the survivors_ survive _such_ [a] _thing_ ? 
+B|13| Human 2: [i haven't what] [about] [it] [such] [thing] , why not just [the survivors] ? 
+A|14| Human 1: sounds _like_ [a] tv _show_ [i] _watched_ 
+B|15| Human 2: it's [the] [show] [you] [watched] . 
+A|16| Human 1: can't quite remember . _something about_ _survivors going to_ _live in space_ 
+B|17| Human 2: [the] [live in space] [show] [by] [the] company that made [the] movie star wars was [like] star wars [to] me ... [something about] [the [survivors] going to] [space] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: Pattern=week
+	Constrained: 
+Turn ID=3| B | Human 2 : woo week 9 !
+	Free: Pattern=week
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going to, Pattern=to catch up on, Pattern=you have a, Pattern=reading, Pattern=planned
+	Constrained: Pattern=you, Pattern=have a, Pattern=a, Pattern=you have, Pattern=to
+Turn ID=5| B | Human 2 : i have a new book planned tonight ...
+	Free: Pattern=have a, Pattern=i, Pattern=planned
+	Constrained: Pattern=a
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=sean carroll, Pattern=something, Pattern=by
+	Constrained: 
+Turn ID=7| B | Human 2 : you have a lot of reading to catch up on , sean carroll .
+	Free: Pattern=to catch up on, Pattern=you have a, Pattern=sean carroll, Pattern=reading
+	Constrained: Pattern=you, Pattern=have a, Pattern=a, Pattern=you have, Pattern=to
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=about, Pattern=you, Pattern=scifi, Pattern=how
+	Constrained: 
+Turn ID=9| B | Human 2 : you mean you have the plot of how it's made : how it's always about the scifi and not the other way around , because you're
+	Free: Pattern=you, Pattern=how, Pattern=about, Pattern=you have, Pattern=the, Pattern=scifi
+	Constrained: Pattern=you
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=i haven't what, Pattern=it about
+	Constrained: Pattern=it, Pattern=about, Pattern=i
+Turn ID=11| B | Human 2 : i haven't what about it about how it's scifi ?
+	Free: Pattern=how, Pattern=about, Pattern=scifi, Pattern=it about, Pattern=i haven't what
+	Constrained: Pattern=it, Pattern=about, Pattern=i
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=a, Pattern=how, Pattern=such, Pattern=the survivors, Pattern=thing
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : i haven't what about it such thing , why not just the survivors ?
+	Free: Pattern=it, Pattern=such, Pattern=about, Pattern=i haven't what, Pattern=the survivors, Pattern=thing
+	Constrained: Pattern=the, Pattern=i
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=a, Pattern=i, Pattern=like, Pattern=watched, Pattern=show
+	Constrained: 
+Turn ID=15| B | Human 2 : it's the show you watched .
+	Free: Pattern=the, Pattern=show, Pattern=you, Pattern=watched
+	Constrained: 
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=survivors going to, Pattern=live in space, Pattern=something about
+	Constrained: Pattern=going to, Pattern=to, Pattern=something, Pattern=about, Pattern=space
+Turn ID=17| B | Human 2 : the live in space show by the company that made the movie star wars was like star wars to me ... something about the survivors going to space
+	Free: Pattern=something about, Pattern=space, Pattern=like, Pattern=live in space, Pattern=to, Pattern=by, Pattern=survivors going to, Pattern=show, Pattern=the survivors, Pattern=the
+	Constrained: Pattern=going to, Pattern=the, Pattern=to, Pattern=something, Pattern=about, Pattern=space

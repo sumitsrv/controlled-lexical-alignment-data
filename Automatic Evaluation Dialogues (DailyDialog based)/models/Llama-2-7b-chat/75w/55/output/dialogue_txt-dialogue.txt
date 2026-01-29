@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what are_ _you_ up _to_ ? 
+B|3| Human 2: i'm here [to] help [you] with any questions _or_ tasks [you] may have _. what_ can _i_ assist [you] with today ? <|im_end| 
+A|4| Human 1: me ? _just_ chilling out at work [. what] _is_ _code refactoring_ ? 
+B|5| Human 2: [code refactoring] [is] the process of improving the structure and organization of existing [code] , without changing its external behavior . _it_ involves identifying and removing duplicates 
+A|6| Human 1: haha , forget [it] [. what] else _do_ _you like_ [to] _do_ beside work ? 
+B|7| Human 2: i'm [just] an ai , _i_ don't have personal preferences _or_ hobbies [like] humans [do] . my purpose [is] [to] assist and 
+A|8| Human 1: _these_ _are_ _important_ _things_ [to] [do] in life 😉 
+B|9| Human 2: exactly ! it's [important] [to] have _a_ work-life balance and [do] [things] that make [you] happy and fulfilled [. [what] are] some [things] [you] enjoy 
+A|10| Human 1: [what] _food_ [do] _you like_ [to] eat ? 
+B|11| Human 2: _i_ don't have personal preferences _or_ taste buds 😅 
+A|12| Human 1: [like] szechuan [or] hunan ? 🙂 
+B|13| Human 2: [you] can try [these] dishes and see [what] [you like] ! they [are] all delicious 😋 
+A|14| Human 1: [i] [like] noodle soup [like] _pho_ [or] _ramen_ . [i] _also_ [like] _beijing duck_ [a] lot ! 
+B|15| Human 2: [pho] and [ramen] [are] both great choices ! [beijing duck] [is] [also] delicious 🙂 
+A|16| Human 1: [i] love _<redacted_term>_ in san mateo 
+B|17| Human 2: [<redacted_term>] [is] [a] great place [to] try different kinds of asian [food] 😊<|im_end 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=what are, Pattern=you, Pattern=to
+	Constrained: Pattern=are, Pattern=what
+Turn ID=3| B | Human 2 : i'm here to help you with any questions or tasks you may have . what can i assist you with today ? <|im_end|
+	Free: Pattern=you, Pattern=i, Pattern=or, Pattern=to, Pattern=. what
+	Constrained: Pattern=what
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=code refactoring, Pattern=. what, Pattern=just, Pattern=is
+	Constrained: Pattern=code, Pattern=what
+Turn ID=5| B | Human 2 : code refactoring is the process of improving the structure and organization of existing code , without changing its external behavior . it involves identifying and removing duplicates
+	Free: Pattern=code refactoring, Pattern=is, Pattern=code, Pattern=it
+	Constrained: Pattern=code
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=do, Pattern=it, Pattern=you like, Pattern=to, Pattern=. what
+	Constrained: Pattern=like, Pattern=you, Pattern=what
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or hobbies like humans do . my purpose is to assist and
+	Free: Pattern=just, Pattern=do, Pattern=like, Pattern=or, Pattern=to, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=do, Pattern=are, Pattern=these, Pattern=things, Pattern=important, Pattern=to
+	Constrained: 
+Turn ID=9| B | Human 2 : exactly ! it's important to have a work-life balance and do things that make you happy and fulfilled . what are some things you enjoy
+	Free: Pattern=you, Pattern=things, Pattern=important, Pattern=what are, Pattern=to, Pattern=. what, Pattern=do, Pattern=a
+	Constrained: Pattern=are, Pattern=what
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=what, Pattern=do, Pattern=food, Pattern=you like, Pattern=to
+	Constrained: Pattern=like, Pattern=you
+Turn ID=11| B | Human 2 : i don't have personal preferences or taste buds 😅
+	Free: Pattern=i, Pattern=or
+	Constrained: 
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like, Pattern=or
+	Constrained: 
+Turn ID=13| B | Human 2 : you can try these dishes and see what you like ! they are all delicious 😋
+	Free: Pattern=you, Pattern=what, Pattern=are, Pattern=these, Pattern=you like
+	Constrained: Pattern=like, Pattern=you
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=a, Pattern=beijing duck, Pattern=pho, Pattern=ramen, Pattern=i, Pattern=or, Pattern=also, Pattern=like
+	Constrained: 
+Turn ID=15| B | Human 2 : pho and ramen are both great choices ! beijing duck is also delicious 🙂
+	Free: Pattern=beijing duck, Pattern=pho, Pattern=are, Pattern=ramen, Pattern=is, Pattern=also
+	Constrained: 
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=i, Pattern=<redacted_term>
+	Constrained: 
+Turn ID=17| B | Human 2 : <redacted_term> is a great place to try different kinds of asian food 😊<|im_end
+	Free: Pattern=a, Pattern=<redacted_term>, Pattern=is, Pattern=food, Pattern=to
+	Constrained: 
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

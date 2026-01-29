@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted _to_ know if [you] _and_ _the_ _kids_ _would_ want _to join_ us _for disneyland_ _trip_ _around_ _christmas_ ? 
+B|3| Human 2: hello ! i'm phi , _an_ ai , [and] _i_ don't _have_ [kids] or [the] ability [to join] [you] [for] _a_ [trip] . 
+A|4| Human 1: tentative _plan_ is [to] drive [to] la on 23rd [and] _then_ stay at [the] _disney_ resort _for 2 nights_ . [i] heard _christmas eve_ they [have] loads of _fun_ _events_ . 
+B|5| Human 2: _that_ sounds like _a_ [fun] [and] festive [plan] [for] [the] [christmas eve] [events] _! _i_ would_ [have] no way [to join] [you] in person , _but _i_ can_ 
+A|6| Human 1: great idea [! i] _will probably_ do [the] same . surprise surprise .... _traffic_ _might_ be _a little_ _harsh_ . 
+B|7| Human 2: [traffic] [around] [the] [christmas eve] [and] staying [for 2 nights] [will probably] peak [around] [then] . planning [might] require leaving [a little] early or 
+A|8| Human 1: good point . [i] am _not_ sure about [that] . let me inquire about [that] . if _not_ , [then] we _can look for_ [an] _airbnb_ closeby . does [that] work ? 
+B|9| Human 2: _i [can_ look for] [the] best [airbnb] options in close proximity [to] [disneyland] [that] [might] [not] [have] such [harsh] [traffic] [and] [will] offer [you] [a] 
+A|10| Human 1: [but [i] would] think _everything_ is closed on [christmas eve] 
+B|11| Human 2: right [you] _are_ [that] [the] [eve] [will] [have] limited hours [for disneyland] [but] [not] [everything] [would] close . let's [plan] [around] it [then] . 
+A|12| Human 1: sure , [i can] take [a] lead on [that] . what [are] [you] _getting_ _for your <redacted_term> year old this time_ ? 
+B|13| Human 2: ah , [for your <redacted_term> year old this time] , [you] [might] [look] into [getting] them [a] [fun] [disneyland] themed 
+A|14| Human 1: likewise . my son is crazy about _legos_ . 
+B|15| Human 2: in [that] case , [you] [might] consider [getting] [your <redacted_term> year old] [a] [disney] character [legos] set [for] their [disneyland] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=for disneyland, Pattern=you, Pattern=around, Pattern=and, Pattern=kids, Pattern=to join, Pattern=trip, Pattern=would, Pattern=to, Pattern=christmas, Pattern=the
+	Constrained: Pattern=disneyland, Pattern=to, Pattern=for
+Turn ID=3| B | Human 2 : hello ! i'm phi , an ai , and i don't have kids or the ability to join you for a trip .
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=an, Pattern=for, Pattern=and, Pattern=kids, Pattern=to join, Pattern=i, Pattern=trip, Pattern=the
+	Constrained: Pattern=to
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=fun, Pattern=have, Pattern=then, Pattern=events, Pattern=and, Pattern=i, Pattern=the, Pattern=to, Pattern=plan, Pattern=christmas eve, Pattern=for 2 nights, Pattern=disney
+	Constrained: Pattern=for, Pattern=christmas, Pattern=eve
+Turn ID=5| B | Human 2 : that sounds like a fun and festive plan for the christmas eve events ! i would have no way to join you in person , but i can
+	Free: Pattern=fun, Pattern=have, Pattern=but i, Pattern=a, Pattern=to join, Pattern=the, Pattern=i would, Pattern=i can, Pattern=that, Pattern=you, Pattern=plan, Pattern=christmas eve, Pattern=for, Pattern=events, Pattern=and, Pattern=! i
+	Constrained: Pattern=i, Pattern=eve, Pattern=christmas, Pattern=would, Pattern=to, Pattern=but
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=! i, Pattern=a little, Pattern=will probably, Pattern=the, Pattern=might, Pattern=harsh, Pattern=traffic
+	Constrained: Pattern=a, Pattern=i, Pattern=will
+Turn ID=7| B | Human 2 : traffic around the christmas eve and staying for 2 nights will probably peak around then . planning might require leaving a little early or
+	Free: Pattern=christmas eve, Pattern=then, Pattern=around, Pattern=and, Pattern=a little, Pattern=for 2 nights, Pattern=will probably, Pattern=the, Pattern=might, Pattern=traffic
+	Constrained: Pattern=a, Pattern=for, Pattern=will, Pattern=eve, Pattern=christmas
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=then, Pattern=an, Pattern=can look for, Pattern=i, Pattern=airbnb, Pattern=that, Pattern=not
+	Constrained: Pattern=look, Pattern=for
+Turn ID=9| B | Human 2 : i can look for the best airbnb options in close proximity to disneyland that might not have such harsh traffic and will offer you a
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=and, Pattern=can look for, Pattern=will, Pattern=the, Pattern=airbnb, Pattern=to, Pattern=harsh, Pattern=that, Pattern=might, Pattern=i can, Pattern=not, Pattern=traffic, Pattern=disneyland
+	Constrained: Pattern=for, Pattern=look, Pattern=i
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=but i, Pattern=christmas eve, Pattern=i would, Pattern=everything
+	Constrained: Pattern=i, Pattern=eve, Pattern=christmas, Pattern=would, Pattern=but
+Turn ID=11| B | Human 2 : right you are that the eve will have limited hours for disneyland but not everything would close . let's plan around it then .
+	Free: Pattern=for disneyland, Pattern=have, Pattern=then, Pattern=around, Pattern=are, Pattern=will, Pattern=everything, Pattern=eve, Pattern=the, Pattern=would, Pattern=not, Pattern=you, Pattern=plan, Pattern=that, Pattern=but
+	Constrained: Pattern=disneyland, Pattern=for
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=you, Pattern=for your <redacted_term> year old this time, Pattern=a, Pattern=are, Pattern=i can, Pattern=that, Pattern=getting
+	Constrained: Pattern=for, Pattern=your <redacted_term> year old, Pattern=i
+Turn ID=13| B | Human 2 : ah , for your <redacted_term> year old this time , you might look into getting them a fun disneyland themed
+	Free: Pattern=fun, Pattern=you, Pattern=for your <redacted_term> year old this time, Pattern=a, Pattern=look, Pattern=might, Pattern=disneyland, Pattern=getting
+	Constrained: Pattern=for, Pattern=your <redacted_term> year old
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: Pattern=legos
+	Constrained: 
+Turn ID=15| B | Human 2 : in that case , you might consider getting your <redacted_term> year old a disney character legos set for their disneyland
+	Free: Pattern=legos, Pattern=you, Pattern=a, Pattern=for, Pattern=disney, Pattern=your <redacted_term> year old, Pattern=might, Pattern=that, Pattern=disneyland, Pattern=getting
+	Constrained: 

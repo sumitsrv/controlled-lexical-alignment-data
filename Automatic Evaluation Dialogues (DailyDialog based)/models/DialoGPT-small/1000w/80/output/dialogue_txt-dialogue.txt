@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how was the trip last weekend_ ? 
+B|3| Human 2: not really . _i_ [was the] [last] host of [how was the trip last weekend] _and_ [the] [last] one that _i_ saw . 
+A|4| Human 1: _nice_ , _what_ _all_ places _did_ _you_ _cover_ ? 
+B|5| Human 2: _i_ [did] [cover] [the] [weekend] [last] night so [you] [all] can enjoy [what] we're about . [nice] _to_ meet [you] too , u [how was the trip] ? 
+A|6| Human 1: [i] am actually attending _cooking_ classes _over the weekends ._ 
+B|7| Human 2: [i] [did] [the] [weekend] [last] night _in_ seoul , [you] [all] can enjoy [what] we're [cooking] [over the weekends .] 
+A|8| Human 1: true ! they started with _some_ basic _zucchini_ based dish . _we_ may _try_ [cooking] _some_ italian dish later _this_ _week_ . 
+B|9| Human 2: [we] [cooking] [zucchini] 
+A|10| Human 1: [nice] ! [i] hope [to] volunteer [to] _cook_ _for_ _the team_ [in] our _next_ _team_ offsite :) 
+B|11| Human 2: you'll [try] [the team] , [this] off ofsite [cook] [some] zuc 
+A|12| Human 1: sure , [i] will love [to] invite [you] _and your family for_ a meal [over the] holidays . have [you] guys made any other plans ? 
+B|13| Human 2: can [you] [cook] [and your family for] [next] [week] off [the] teams ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=how was the trip last weekend
+	Constrained: Pattern=weekend, Pattern=was the, Pattern=last, Pattern=the, Pattern=how was the trip
+Turn ID=3| B | Human 2 : not really . i was the last host of how was the trip last weekend and the last one that i saw .
+	Free: Pattern=and, Pattern=was the, Pattern=i, Pattern=last, Pattern=how was the trip last weekend, Pattern=the
+	Constrained: Pattern=weekend, Pattern=was the, Pattern=last, Pattern=the, Pattern=how was the trip
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=you, Pattern=what, Pattern=did, Pattern=cover, Pattern=nice, Pattern=all
+	Constrained: 
+Turn ID=5| B | Human 2 : i did cover the weekend last night so you all can enjoy what we're about . nice to meet you too , u how was the trip ?
+	Free: Pattern=you, Pattern=what, Pattern=did, Pattern=cover, Pattern=nice, Pattern=weekend, Pattern=i, Pattern=last, Pattern=to, Pattern=how was the trip, Pattern=the, Pattern=all
+	Constrained: Pattern=was the, Pattern=the
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=over the weekends ., Pattern=i, Pattern=cooking
+	Constrained: Pattern=over the, Pattern=the
+Turn ID=7| B | Human 2 : i did the weekend last night in seoul , you all can enjoy what we're cooking over the weekends .
+	Free: Pattern=you, Pattern=what, Pattern=did, Pattern=in, Pattern=i, Pattern=last, Pattern=over the weekends ., Pattern=weekend, Pattern=cooking, Pattern=the, Pattern=all
+	Constrained: Pattern=over the, Pattern=the
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=week, Pattern=try, Pattern=cooking, Pattern=some, Pattern=we, Pattern=zucchini, Pattern=this
+	Constrained: 
+Turn ID=9| B | Human 2 : we cooking zucchini
+	Free: Pattern=cooking, Pattern=we, Pattern=zucchini
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=next, Pattern=the team, Pattern=in, Pattern=to, Pattern=team, Pattern=nice, Pattern=for, Pattern=cook, Pattern=i
+	Constrained: Pattern=the, Pattern=team
+Turn ID=11| B | Human 2 : you'll try the team , this off ofsite cook some zuc
+	Free: Pattern=the team, Pattern=try, Pattern=some, Pattern=cook, Pattern=this
+	Constrained: Pattern=the, Pattern=team
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=and your family for, Pattern=you, Pattern=i, Pattern=to, Pattern=over the
+	Constrained: Pattern=for, Pattern=the, Pattern=and
+Turn ID=13| B | Human 2 : can you cook and your family for next week off the teams ?
+	Free: Pattern=you, Pattern=week, Pattern=cook, Pattern=the, Pattern=next, Pattern=and your family for
+	Constrained: Pattern=for, Pattern=and

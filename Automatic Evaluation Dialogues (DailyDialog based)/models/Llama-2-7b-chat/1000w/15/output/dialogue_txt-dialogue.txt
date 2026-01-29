@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , _how_ is _it_ going ? 
+A|2| Human 1: all _good ._ _planning to_ head _home_ soon _. how about you ?_ 
+B|3| Human 2: _yes ,_ i'm [good] too [. how] can _i_ help [you] today ? 
+A|4| Human 1: oh ... sorry _to_ hear that . _but_ _after_ that [it] will be _a hard_ earned _vacation_ 
+B|5| Human 2: understood ! vacations _are_ important [to] recharge _and_ relax [after] [a hard] working year [. how] _are you_ [planning to] spend your [vacation] ? < 
+A|6| Human 1: [i] _have some_ tentative _plans_ , _but_ if that doesn't pan _out_ , will _just chill at home_ . 
+B|7| Human 2: 😌 sounds [good .] sometimes _it's_ best [to] [just chill at home] [after] [a] long [hard] year . do [you] [have] any 
+A|8| Human 1: _where are you_ _based out of_ _these _days_ ?_ 
+B|9| Human 2: [days ?] i'm [just] an ai [based out of] silicon valley [. how about you ?] [where are [you] ?] so we can [have some] 
+A|10| Human 1: san francisco . _it's been raining_ cats [and] dogs _here_ since last 2-3 weeks 
+B|11| Human 2: [days] 😅 [it's been raining] [here] too [but] we [have] our [vacation] [plans] [to] look forward [to] . what [are] [some] [of] 
+A|12| Human 1: _the flu has been hitting_ [hard] as well . [i] had several _folks_ in _the_ house down [at] one point . 
+B|13| Human 2: [days] [out] [here] [it's been] [hard] [to] keep track [of] [the] weather [these days] . [the flu has been hitting] [folks] pretty hard<|im 
+A|14| Human 1: [yes ,] everyone recovered now 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : all good . planning to head home soon . how about you ?
+	Free: Pattern=. how about you ?, Pattern=good ., Pattern=planning to, Pattern=home
+	Constrained: Pattern=good, Pattern=you, Pattern=how, Pattern=. how, Pattern=you ?, Pattern=to
+Turn ID=3| B | Human 2 : yes , i'm good too . how can i help you today ?
+	Free: Pattern=good, Pattern=. how, Pattern=i, Pattern=you, Pattern=yes ,
+	Constrained: Pattern=how
+Turn ID=4| A | Human 1 : oh ... sorry to hear that . but after that it will be a hard earned vacation
+	Free: Pattern=vacation, Pattern=it, Pattern=after, Pattern=to, Pattern=a hard, Pattern=but
+	Constrained: Pattern=a, Pattern=hard
+Turn ID=5| B | Human 2 : understood ! vacations are important to recharge and relax after a hard working year . how are you planning to spend your vacation ? <
+	Free: Pattern=planning to, Pattern=vacation, Pattern=and, Pattern=are, Pattern=. how, Pattern=after, Pattern=are you, Pattern=to, Pattern=a hard
+	Constrained: Pattern=you, Pattern=a, Pattern=how, Pattern=are, Pattern=hard, Pattern=to
+Turn ID=6| A | Human 1 : i have some tentative plans , but if that doesn't pan out , will just chill at home .
+	Free: Pattern=have some, Pattern=plans, Pattern=out, Pattern=just chill at home, Pattern=i, Pattern=but
+	Constrained: Pattern=at, Pattern=some, Pattern=home, Pattern=just, Pattern=have
+Turn ID=7| B | Human 2 : 😌 sounds good . sometimes it's best to just chill at home after a long hard year . do you have any
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=just chill at home, Pattern=after, Pattern=good ., Pattern=hard, Pattern=to, Pattern=it's
+	Constrained: Pattern=good, Pattern=just, Pattern=home, Pattern=at
+Turn ID=8| A | Human 1 : where are you based out of these days ?
+	Free: Pattern=based out of, Pattern=where are you, Pattern=days ?, Pattern=these days
+	Constrained: Pattern=of, Pattern=are, Pattern=are you, Pattern=days, Pattern=you, Pattern=out
+Turn ID=9| B | Human 2 : days ? i'm just an ai based out of silicon valley . how about you ? where are you ? so we can have some
+	Free: Pattern=have some, Pattern=. how about you ?, Pattern=where are you, Pattern=just, Pattern=days ?, Pattern=based out of, Pattern=you ?
+	Constrained: Pattern=of, Pattern=have, Pattern=how, Pattern=are, Pattern=. how, Pattern=some, Pattern=are you, Pattern=you ?, Pattern=days, Pattern=you, Pattern=out
+Turn ID=10| A | Human 1 : san francisco . it's been raining cats and dogs here since last 2-3 weeks
+	Free: Pattern=it's been raining, Pattern=here, Pattern=and
+	Constrained: Pattern=it's, Pattern=it's been
+Turn ID=11| B | Human 2 : days 😅 it's been raining here too but we have our vacation plans to look forward to . what are some of
+	Free: Pattern=of, Pattern=plans, Pattern=have, Pattern=vacation, Pattern=are, Pattern=some, Pattern=days, Pattern=to, Pattern=but, Pattern=it's been raining, Pattern=here
+	Constrained: Pattern=it's, Pattern=it's been
+Turn ID=12| A | Human 1 : the flu has been hitting hard as well . i had several folks in the house down at one point .
+	Free: Pattern=at, Pattern=folks, Pattern=i, Pattern=hard, Pattern=the flu has been hitting, Pattern=the
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : days out here it's been hard to keep track of the weather these days . the flu has been hitting folks pretty hard<|im
+	Free: Pattern=of, Pattern=out, Pattern=these days, Pattern=folks, Pattern=to, Pattern=here, Pattern=it's been, Pattern=the flu has been hitting, Pattern=the, Pattern=days, Pattern=hard
+	Constrained: Pattern=it's, Pattern=days, Pattern=the
+Turn ID=14| A | Human 1 : yes , everyone recovered now
+	Free: Pattern=yes ,
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: howdy _. i_ am _well_ . and yourself ? 
+A|4| Human 1: _i'm going to the_ _bahamas_ . can't wait !!! 
+B|5| Human 2: [i'm] _doing_ great . [the] weather here _is_ [bahamas] _is_ a little chilly but [the] beach _is_ great . 
+A|6| Human 1: oh _where_ _are_ _you_ _now_ ? 
+B|7| Human 2: [i'm going to the] beach [where] [you] [are] [now] ! 
+A|8| Human 1: oh _no_ [. i] _never seen_ _this_ in person . [is] it _scary_ ? 
+B|9| Human 2: [i] bet [you] [never seen] [the] ocean before ! its [scary] but exciting at [the] same _time_ . 
+A|10| Human 1: _that_ does sound _nice_ . so what [are] [you] [doing] _these holidays_ ? 
+B|11| Human 2: [i'm going to the] beach _with_ my sister's _family_ . we [are] [doing] [this] thing [where] [you] wear [these holidays] outfit [that] have been 
+A|12| Human 1: _nice_ _nice_ . _i'm gonna_ go snorkeling yey 
+B|13| Human 2: [i'm going to] [that] beach and [i'm gonna] wear a wetsuit , which [you] [never] want [to] forget ! 
+A|14| Human 1: [you] _can_ stay on _the shallow side_ _i think_ . [well] hope [you] enjoy [time] [with] your extended [family] ! 
+B|15| Human 2: [no] [i think] [you] [are] right , [the shallow side] [can] be [nice] too 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : howdy . i am well . and yourself ?
+	Free: Pattern=. i, Pattern=well
+	Constrained: Pattern=i
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=i'm going to the, Pattern=bahamas
+	Constrained: Pattern=going, Pattern=i'm, Pattern=the, Pattern=to, Pattern=i'm going to
+Turn ID=5| B | Human 2 : i'm doing great . the weather here is bahamas is a little chilly but the beach is great .
+	Free: Pattern=bahamas, Pattern=doing, Pattern=i'm, Pattern=is, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are, Pattern=you, Pattern=where, Pattern=now
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm going to the beach where you are now !
+	Free: Pattern=you, Pattern=are, Pattern=where, Pattern=i'm going to the, Pattern=now
+	Constrained: Pattern=going, Pattern=i'm, Pattern=the, Pattern=to, Pattern=i'm going to
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=scary, Pattern=no, Pattern=never seen, Pattern=. i, Pattern=is, Pattern=this
+	Constrained: Pattern=i, Pattern=never
+Turn ID=9| B | Human 2 : i bet you never seen the ocean before ! its scary but exciting at the same time .
+	Free: Pattern=time, Pattern=you, Pattern=scary, Pattern=never seen, Pattern=i, Pattern=the
+	Constrained: Pattern=never
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=these holidays, Pattern=you, Pattern=doing, Pattern=nice, Pattern=are, Pattern=that
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm going to the beach with my sister's family . we are doing this thing where you wear these holidays outfit that have been
+	Free: Pattern=these holidays, Pattern=you, Pattern=doing, Pattern=are, Pattern=family, Pattern=where, Pattern=i'm going to the, Pattern=this, Pattern=with, Pattern=that
+	Constrained: Pattern=going, Pattern=i'm, Pattern=the, Pattern=to, Pattern=i'm going to
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=i'm gonna, Pattern=nice
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : i'm going to that beach and i'm gonna wear a wetsuit , which you never want to forget !
+	Free: Pattern=i'm gonna, Pattern=you, Pattern=never, Pattern=to, Pattern=that, Pattern=i'm going to
+	Constrained: Pattern=going, Pattern=i'm, Pattern=to
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=time, Pattern=well, Pattern=you, Pattern=the shallow side, Pattern=can, Pattern=family, Pattern=with, Pattern=i think
+	Constrained: Pattern=i, Pattern=the
+Turn ID=15| B | Human 2 : no i think you are right , the shallow side can be nice too
+	Free: Pattern=you, Pattern=nice, Pattern=are, Pattern=can, Pattern=i think, Pattern=no, Pattern=the shallow side
+	Constrained: Pattern=i, Pattern=the

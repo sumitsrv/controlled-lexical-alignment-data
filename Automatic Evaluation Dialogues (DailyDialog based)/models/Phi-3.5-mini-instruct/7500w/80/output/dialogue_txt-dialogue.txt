@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how_ was _the trip_ last weekend ? 
+B|3| Human 2: i'm phi , an ai language model , so _i_ don't travel . however _, i_ can help _you_ recall [the trip] details or 
+A|4| Human 1: nice , _what_ all _places_ did [you] _cover_ ? 
+B|5| Human 2: i'm phi , [the] ai model , so _i_ don't [cover] [places] myself . but _i_ can help [you] _with_ trip-related questions 
+A|6| Human 1: [i] am actually _attending_ _cooking classes_ over [the] weekends . 
+B|7| Human 2: [how] wonderful ! [what] kind of [cooking classes] are [you] [attending] , _and_ [what] dishes _have you_ been learning _to_ make ? <|end|><|assistant|> that's 
+A|8| Human 1: true ! they started [with] some basic _zucchini_ based dish . we _may_ _try_ [cooking] some italian dish later this week . 
+B|9| Human 2: i'm phi , [the] phi 13b [cooking classes] [may] [cover] dishes like [zucchini] linguine or margher 
+A|10| Human 1: nice ! [i] hope [to] volunteer [to] cook _for_ [the] _team_ in our next _team offsite_ :) 
+B|11| Human 2: that sounds like _a_ delightful [team offsite] [cooking] activity ! [zucchini] linguine [with] marinara sauce is _a_ delicious choice 
+A|12| Human 1: sure [, _i] will_ love [to] _invite_ [you] [and] _your_ family _for_ [a] _meal_ over [the] holidays . [have you] guys made any other plans ? 
+B|13| Human 2: [i will] make [the] [zucchini] linguine [and] [try] [to] perfect my marinara sauce [for] [your] holiday [meal] [invite] . it 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=the trip, Pattern=how
+	Constrained: Pattern=the
+Turn ID=3| B | Human 2 : i'm phi , an ai language model , so i don't travel . however , i can help you recall the trip details or
+	Free: Pattern=, i, Pattern=the trip, Pattern=i, Pattern=you
+	Constrained: Pattern=the, Pattern=i
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=places, Pattern=you, Pattern=cover, Pattern=what
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm phi , the ai model , so i don't cover places myself . but i can help you with trip-related questions
+	Free: Pattern=you, Pattern=places, Pattern=cover, Pattern=i, Pattern=the, Pattern=with
+	Constrained: 
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=cooking classes, Pattern=the, Pattern=i, Pattern=attending
+	Constrained: Pattern=cooking
+Turn ID=7| B | Human 2 : how wonderful ! what kind of cooking classes are you attending , and what dishes have you been learning to make ? <|end|><|assistant|> that's
+	Free: Pattern=you, Pattern=what, Pattern=how, Pattern=and, Pattern=attending, Pattern=cooking classes, Pattern=have you, Pattern=to
+	Constrained: Pattern=cooking, Pattern=you
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=try, Pattern=cooking, Pattern=zucchini, Pattern=may, Pattern=with
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm phi , the phi 13b cooking classes may cover dishes like zucchini linguine or margher
+	Free: Pattern=cover, Pattern=cooking classes, Pattern=zucchini, Pattern=the, Pattern=may
+	Constrained: Pattern=cooking
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=for, Pattern=i, Pattern=the, Pattern=to, Pattern=team offsite, Pattern=team
+	Constrained: Pattern=team
+Turn ID=11| B | Human 2 : that sounds like a delightful team offsite cooking activity ! zucchini linguine with marinara sauce is a delicious choice
+	Free: Pattern=a, Pattern=cooking, Pattern=zucchini, Pattern=team offsite, Pattern=with
+	Constrained: Pattern=team
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=you, Pattern=a, Pattern=and, Pattern=invite, Pattern=to, Pattern=i will, Pattern=for, Pattern=meal, Pattern=your, Pattern=have you, Pattern=the, Pattern=, i
+	Constrained: Pattern=i, Pattern=you
+Turn ID=13| B | Human 2 : i will make the zucchini linguine and try to perfect my marinara sauce for your holiday meal invite . it
+	Free: Pattern=try, Pattern=and, Pattern=your, Pattern=zucchini, Pattern=the, Pattern=invite, Pattern=to, Pattern=i will, Pattern=for, Pattern=meal
+	Constrained: Pattern=i

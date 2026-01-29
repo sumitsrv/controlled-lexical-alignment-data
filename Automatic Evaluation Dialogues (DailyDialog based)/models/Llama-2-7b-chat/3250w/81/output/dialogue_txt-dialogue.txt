@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ came back from _a_ _ski_ trip 
+B|3| Human 2: _oh_ , wow ! _that_ sounds like _a lot of_ fun ! _did you_ [ski] _on_ _any_ challenging slopes ? <|im_end| 
+A|4| Human 1: _i_ slammed onto _an_ _ice wall_ _, but_ _i_ _got_ better _and turning_ after [that] _haha_ 
+B|5| Human 2: [haha] [that] sounds like [an] adventure ! [ice wall] _can_ be tricky [but] [great] for learning how _to_ control your speed [and turning] . 
+A|6| Human 1: [oh] cool ! do _you know_ [any] _french_ ? _i_ used [to] take _french_ _in_ high school [but] basically forgot most [of] it 
+B|7| Human 2: _i can_ provide [you] with some [french] phrases [that] [you] might find useful while skiing [in] france ! 😊<|im_ 
+A|8| Human 1: [did you] go anywhere else [in] _montreal_ ? 
+B|9| Human 2: [did [you] know] [that] [montreal] has [a] beautiful [ski] resort called station massif ? it's [a] [great] spot for intermediate [and] advanced skiers [, but] 
+A|10| Human 1: [oh] cool ! _i've always wanted to attend the olympics_ as [a] viewer [of] course [i] watch [a lot of] olympic figure _skating_ [on] youtube 
+B|11| Human 2: [i've always wanted to attend the olympics] [but] never [got] [the] chance 😔 
+A|12| Human 1: barely [i] don't think [i can] , [in] conscience , call it [that] [i] kind [of] _just pull myself along the sides_ 
+B|13| Human 2: 😂 [i can] [just pull myself along the sides] , that's funny ! 😂<|im_end 
+A|14| Human 1: _are you good at_ _<redacted_term> ?_ 
+B|15| Human 2: [are you good at] [skating] [<redacted_term> ?] [i've always wanted to] [know] [the] answer [to] [that] question [but] 
+A|16| Human 1: okay ! it was nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=ski, Pattern=great, Pattern=a, Pattern=just
+	Constrained: 
+Turn ID=3| B | Human 2 : oh , wow ! that sounds like a lot of fun ! did you ski on any challenging slopes ? <|im_end|
+	Free: Pattern=ski, Pattern=a lot of, Pattern=did you, Pattern=any, Pattern=oh, Pattern=on, Pattern=that
+	Constrained: Pattern=you, Pattern=of, Pattern=a
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=and turning, Pattern=ice wall, Pattern=, but, Pattern=an, Pattern=i, Pattern=haha, Pattern=got, Pattern=that
+	Constrained: Pattern=and, Pattern=but
+Turn ID=5| B | Human 2 : haha that sounds like an adventure ! ice wall can be tricky but great for learning how to control your speed and turning .
+	Free: Pattern=and turning, Pattern=ice wall, Pattern=great, Pattern=an, Pattern=can, Pattern=haha, Pattern=to, Pattern=that, Pattern=but
+	Constrained: Pattern=and
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=of, Pattern=you know, Pattern=any, Pattern=oh, Pattern=in, Pattern=to, Pattern=but, Pattern=french, Pattern=i
+	Constrained: Pattern=you, Pattern=know
+Turn ID=7| B | Human 2 : i can provide you with some french phrases that you might find useful while skiing in france ! 😊<|im_
+	Free: Pattern=you, Pattern=in, Pattern=french, Pattern=i can, Pattern=that
+	Constrained: Pattern=can, Pattern=i
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you, Pattern=montreal, Pattern=in
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : did you know that montreal has a beautiful ski resort called station massif ? it's a great spot for intermediate and advanced skiers , but
+	Free: Pattern=ski, Pattern=did you, Pattern=a, Pattern=montreal, Pattern=and, Pattern=that, Pattern=great, Pattern=you know, Pattern=, but
+	Constrained: Pattern=you, Pattern=know, Pattern=but
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=a, Pattern=i, Pattern=i've always wanted to attend the olympics, Pattern=on, Pattern=a lot of, Pattern=of, Pattern=oh, Pattern=skating
+	Constrained: Pattern=of, Pattern=a, Pattern=the, Pattern=i've always wanted to, Pattern=to
+Turn ID=11| B | Human 2 : i've always wanted to attend the olympics but never got the chance 😔
+	Free: Pattern=i've always wanted to attend the olympics, Pattern=the, Pattern=but, Pattern=got
+	Constrained: Pattern=i've always wanted to, Pattern=to, Pattern=the
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=in, Pattern=i, Pattern=just pull myself along the sides, Pattern=i can, Pattern=that
+	Constrained: Pattern=just, Pattern=i, Pattern=can, Pattern=the
+Turn ID=13| B | Human 2 : 😂 i can just pull myself along the sides , that's funny ! 😂<|im_end
+	Free: Pattern=just pull myself along the sides, Pattern=i can
+	Constrained: Pattern=just, Pattern=i, Pattern=can, Pattern=the
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=are you good at, Pattern=<redacted_term> ?
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : are you good at skating <redacted_term> ? i've always wanted to know the answer to that question but
+	Free: Pattern=<redacted_term> ?, Pattern=skating, Pattern=know, Pattern=the, Pattern=i've always wanted to, Pattern=to, Pattern=are you good at, Pattern=that, Pattern=but
+	Constrained: Pattern=to, Pattern=you
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=you, Pattern=to
+	Constrained: 

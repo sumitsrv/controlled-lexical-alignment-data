@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _it_ _going_ ?!? 
+B|3| Human 2: [going] well ! how can i assist you today ? 
+A|4| Human 1: _what game ?_ 
+B|5| Human 2: [what game ?] 
+A|6| Human 1: _nice_ . _that's_ _football_ _right_ ? 
+B|7| Human 2: [that's] [right] ! [football] _is_ a [game] where you try _to_ score points by kicking a ball through a goal 
+A|8| Human 1: ok . [what] _stadium_ _is it_ at ? 
+B|9| Human 2: [nice] [stadium] you've got there ! [what] league [is it] in ? 
+A|10| Human 1: _yeah_ i'm gonna go _kayaking_ 
+B|11| Human 2: [kayaking] [is] great ! what's your favorite part about [it] ? </s>3 . dialog flow 
+A|12| Human 1: [is it] _easy to flip over accidentally_ ? _it's_ gonna _be_ my first time _actually_ 
+B|13| Human 2: [that's] [actually] a really common fear for [kayaking] beginners ! [it] can [be] [easy to flip over accidentally] , especially if you' 
+A|14| Human 1: thanks ! 
+B|15| Human 2: [yeah] , [it's] definitely something [to] [be] aware of . here are a few tips that might help you avoid flipping over: 1 . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?!?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : going well ! how can i assist you today ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=4| A | Human 1 : what game ?
+	Free: Pattern=what game ?
+	Constrained: Pattern=game, Pattern=what
+Turn ID=5| B | Human 2 : what game ?
+	Free: Pattern=what game ?
+	Constrained: Pattern=game, Pattern=what
+Turn ID=6| A | Human 1 : nice . that's football right ?
+	Free: Pattern=right, Pattern=nice, Pattern=football, Pattern=that's
+	Constrained: 
+Turn ID=7| B | Human 2 : that's right ! football is a game where you try to score points by kicking a ball through a goal
+	Free: Pattern=right, Pattern=game, Pattern=is, Pattern=football, Pattern=that's, Pattern=to
+	Constrained: 
+Turn ID=8| A | Human 1 : ok . what stadium is it at ?
+	Free: Pattern=is it, Pattern=stadium, Pattern=what
+	Constrained: Pattern=it, Pattern=is
+Turn ID=9| B | Human 2 : nice stadium you've got there ! what league is it in ?
+	Free: Pattern=is it, Pattern=stadium, Pattern=nice, Pattern=what
+	Constrained: Pattern=it, Pattern=is
+Turn ID=10| A | Human 1 : yeah i'm gonna go kayaking
+	Free: Pattern=kayaking, Pattern=yeah
+	Constrained: 
+Turn ID=11| B | Human 2 : kayaking is great ! what's your favorite part about it ? </s>3 . dialog flow
+	Free: Pattern=it, Pattern=is, Pattern=kayaking
+	Constrained: 
+Turn ID=12| A | Human 1 : is it easy to flip over accidentally ? it's gonna be my first time actually
+	Free: Pattern=actually, Pattern=is it, Pattern=easy to flip over accidentally, Pattern=be, Pattern=it's
+	Constrained: Pattern=is, Pattern=it, Pattern=to
+Turn ID=13| B | Human 2 : that's actually a really common fear for kayaking beginners ! it can be easy to flip over accidentally , especially if you'
+	Free: Pattern=actually, Pattern=it, Pattern=easy to flip over accidentally, Pattern=be, Pattern=that's, Pattern=kayaking
+	Constrained: Pattern=to
+Turn ID=14| A | Human 1 : thanks !
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah , it's definitely something to be aware of . here are a few tips that might help you avoid flipping over: 1 .
+	Free: Pattern=be, Pattern=it's, Pattern=to, Pattern=yeah
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how's_ _it_ _going ?_ 
+B|3| Human 2: [how's] _your_ day [going ?] </|im_end|>user good , thanks . <|im_ 
+A|4| Human 1: _i'm going to _the_ bahamas ._ _can't wait_ !!! 
+B|5| Human 2: _that_ sounds like a great trip ! how long will _you_ be there for ? </|im_end|>user _i_ 
+A|6| Human 1: _oh_ where _are you_ _now_ ? 
+B|7| Human 2: [i'm] [now] _in_ [the bahamas .] [the] weather _is_ amazing here ! </|im_end|>user lucky [you] ! 
+A|8| Human 1: _oh_ no . [i] never seen this [in] person . [is] _it_ _scary ?_ 
+B|9| Human 2: [scary ?] how [are you] [going to] make [it] there ? </|im_end|>user [i'm] actually taking a boat there . [it] 
+A|10| Human 1: _that does sound nice_ . so _what_ [are you] _doing_ these _holidays_ ? 
+B|11| Human 2: [what] do [you] mean ? [i'm] an ai and don't have [holidays] . </|im_end|>user [oh] that' 
+A|12| Human 1: _nice_ _nice_ . [i'm] _gonna_ go snorkeling _yey_ 
+B|13| Human 2: [that does sound nice] ! [i'm going to the] beach and [doing] yoga . </|im_end|>user [you] [gonna] have fun 
+A|14| Human 1: [you] can stay on [the] shallow side [i] think . well _hope you enjoy_ _time with your extended family !_ 
+B|15| Human 2: [i] [hope you enjoy] [your] [time with your extended family !] </|im_end|>user [yey] [i] [can't wait] for [the] fe 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going ?, Pattern=how's, Pattern=it
+	Constrained: 
+Turn ID=3| B | Human 2 : how's your day going ? </|im_end|>user good , thanks . <|im_
+	Free: Pattern=going ?, Pattern=your, Pattern=how's
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=i'm going to the, Pattern=the bahamas ., Pattern=can't wait
+	Constrained: Pattern=going to, Pattern=i'm, Pattern=the
+Turn ID=5| B | Human 2 : that sounds like a great trip ! how long will you be there for ? </|im_end|>user i
+	Free: Pattern=i, Pattern=that, Pattern=you
+	Constrained: 
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you, Pattern=now, Pattern=oh
+	Constrained: Pattern=you
+Turn ID=7| B | Human 2 : i'm now in the bahamas . the weather is amazing here ! </|im_end|>user lucky you !
+	Free: Pattern=you, Pattern=the bahamas ., Pattern=in, Pattern=i'm, Pattern=is, Pattern=the, Pattern=now
+	Constrained: Pattern=the
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=scary ?, Pattern=in, Pattern=it, Pattern=oh, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : scary ? how are you going to make it there ? </|im_end|>user i'm actually taking a boat there . it
+	Free: Pattern=going to, Pattern=scary ?, Pattern=it, Pattern=i'm, Pattern=are you
+	Constrained: Pattern=you
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=holidays, Pattern=what, Pattern=are you, Pattern=doing, Pattern=that does sound nice
+	Constrained: Pattern=nice, Pattern=that, Pattern=you
+Turn ID=11| B | Human 2 : what do you mean ? i'm an ai and don't have holidays . </|im_end|>user oh that'
+	Free: Pattern=holidays, Pattern=you, Pattern=what, Pattern=oh, Pattern=i'm
+	Constrained: 
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=nice, Pattern=yey, Pattern=i'm, Pattern=gonna
+	Constrained: 
+Turn ID=13| B | Human 2 : that does sound nice ! i'm going to the beach and doing yoga . </|im_end|>user you gonna have fun
+	Free: Pattern=you, Pattern=gonna, Pattern=i'm going to the, Pattern=doing, Pattern=that does sound nice
+	Constrained: Pattern=going to, Pattern=nice, Pattern=i'm, Pattern=the, Pattern=that
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=you, Pattern=time with your extended family !, Pattern=i, Pattern=the, Pattern=hope you enjoy
+	Constrained: Pattern=your, Pattern=you
+Turn ID=15| B | Human 2 : i hope you enjoy your time with your extended family ! </|im_end|>user yey i can't wait for the fe
+	Free: Pattern=time with your extended family !, Pattern=can't wait, Pattern=the, Pattern=hope you enjoy, Pattern=yey, Pattern=your, Pattern=i
+	Constrained: Pattern=your, Pattern=you

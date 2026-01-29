@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ doing today ? 
+A|2| Human 1: _i heard they are giving out some_ goodies _in_ microkitchen . 
+B|3| Human 2: i'm _good_ ! [i heard they are giving out some] great prizes ! what _did you_ _get_ ? 
+A|4| Human 1: [i] guess _its_ _a_ _jacket_ ! very _much_ needed _that_ _in the_ _cold_ 🙂 
+B|5| Human 2: [the] [jacket] is _nice_ , [its] [that] _good that_ [they are giving out] microkitchens [in] [a] mall 
+A|6| Human 1: _sure_ _hate it_ ! limits our ability to go [out] even _for_ [a] _walk_ ! _its [good_ that] we _don't get_ to suffer extreme _cold_ _weather_ ! 
+B|7| Human 2: [its] [cold] [out] [for] [sure] , [its] like [that] every month _and_ [i] love [the] [weather] so [it] evens [out] [good] . 
+A|8| Human 1: oh [nice] ! where [did you] _live_ before ? 
+B|9| Human 2: [the] [weather] is great . [nice] cool evening , [did you] [walk] at night ? [its good] _for the_ soul 
+A|10| Human 1: new york ! [nice] ! best place to _live_ 🙂 .. _right_ , _except [for_ the] [cold] ! 
+B|11| Human 2: [i] [live] [in the] country [right] now _and_ [hate it] , so [cold] _and_ dreary here _. i_ [don't get] [out] [much] [except for] when [i] run 
+A|12| Human 1: anyways , [i] guess we should _better hurry_ up to [get] [the] goodies [. i] remember last time [they] ran [out] of [it] . 
+B|13| Human 2: [i] [live] [right] [in the] city , [they] [better hurry] cause [its] [cold] [out] now ! 
+A|14| Human 1: [the] one [in] our floor _. i will_ [get] by your desk [and] we can [walk] _there_ . 
+B|15| Human 2: [i] can't [walk] [right] now , [there] is [a] storm [out] [. i will] be staying home [and] watching [the] [weather] [for] [sure] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you doing today ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : i heard they are giving out some goodies in microkitchen .
+	Free: Pattern=i heard they are giving out some, Pattern=in
+	Constrained: Pattern=out, Pattern=they are giving out, Pattern=they, Pattern=are, Pattern=i
+Turn ID=3| B | Human 2 : i'm good ! i heard they are giving out some great prizes ! what did you get ?
+	Free: Pattern=i heard they are giving out some, Pattern=did you, Pattern=good, Pattern=get
+	Constrained: Pattern=they are giving out, Pattern=they, Pattern=are, Pattern=i, Pattern=you, Pattern=out
+Turn ID=4| A | Human 1 : i guess its a jacket ! very much needed that in the cold 🙂
+	Free: Pattern=its, Pattern=a, Pattern=jacket, Pattern=in the, Pattern=cold, Pattern=i, Pattern=much, Pattern=that
+	Constrained: Pattern=in, Pattern=the
+Turn ID=5| B | Human 2 : the jacket is nice , its that good that they are giving out microkitchens in a mall
+	Free: Pattern=good that, Pattern=its, Pattern=they are giving out, Pattern=a, Pattern=in, Pattern=the, Pattern=that, Pattern=nice, Pattern=jacket
+	Constrained: Pattern=good, Pattern=out, Pattern=they, Pattern=are, Pattern=that
+Turn ID=6| A | Human 1 : sure hate it ! limits our ability to go out even for a walk ! its good that we don't get to suffer extreme cold weather !
+	Free: Pattern=good that, Pattern=its good, Pattern=out, Pattern=hate it, Pattern=a, Pattern=for, Pattern=cold, Pattern=walk, Pattern=sure, Pattern=weather, Pattern=don't get
+	Constrained: Pattern=good, Pattern=its, Pattern=it, Pattern=get, Pattern=that
+Turn ID=7| B | Human 2 : its cold out for sure , its like that every month and i love the weather so it evens out good .
+	Free: Pattern=good, Pattern=its, Pattern=out, Pattern=for, Pattern=cold, Pattern=i, Pattern=sure, Pattern=the, Pattern=that, Pattern=weather, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=8| A | Human 1 : oh nice ! where did you live before ?
+	Free: Pattern=did you, Pattern=nice, Pattern=live
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : the weather is great . nice cool evening , did you walk at night ? its good for the soul
+	Free: Pattern=its good, Pattern=nice, Pattern=walk, Pattern=the, Pattern=weather, Pattern=did you, Pattern=for the
+	Constrained: Pattern=good, Pattern=its, Pattern=you, Pattern=for, Pattern=the
+Turn ID=10| A | Human 1 : new york ! nice ! best place to live 🙂 .. right , except for the cold !
+	Free: Pattern=right, Pattern=for the, Pattern=nice, Pattern=live, Pattern=cold, Pattern=except for
+	Constrained: Pattern=for, Pattern=the
+Turn ID=11| B | Human 2 : i live in the country right now and hate it , so cold and dreary here . i don't get out much except for when i run
+	Free: Pattern=right, Pattern=out, Pattern=hate it, Pattern=and, Pattern=except for, Pattern=i, Pattern=much, Pattern=don't get, Pattern=live, Pattern=in the, Pattern=cold, Pattern=. i
+	Constrained: Pattern=for, Pattern=it, Pattern=in, Pattern=i, Pattern=the, Pattern=get
+Turn ID=12| A | Human 1 : anyways , i guess we should better hurry up to get the goodies . i remember last time they ran out of it .
+	Free: Pattern=out, Pattern=they, Pattern=it, Pattern=better hurry, Pattern=. i, Pattern=i, Pattern=the, Pattern=get
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : i live right in the city , they better hurry cause its cold out now !
+	Free: Pattern=its, Pattern=right, Pattern=out, Pattern=they, Pattern=better hurry, Pattern=cold, Pattern=i, Pattern=live, Pattern=in the
+	Constrained: Pattern=in, Pattern=the
+Turn ID=14| A | Human 1 : the one in our floor . i will get by your desk and we can walk there .
+	Free: Pattern=. i will, Pattern=there, Pattern=and, Pattern=in, Pattern=walk, Pattern=the, Pattern=get
+	Constrained: Pattern=. i, Pattern=i
+Turn ID=15| B | Human 2 : i can't walk right now , there is a storm out . i will be staying home and watching the weather for sure .
+	Free: Pattern=out, Pattern=there, Pattern=a, Pattern=for, Pattern=and, Pattern=sure, Pattern=the, Pattern=weather, Pattern=right, Pattern=. i will, Pattern=walk, Pattern=i
+	Constrained: Pattern=. i, Pattern=i

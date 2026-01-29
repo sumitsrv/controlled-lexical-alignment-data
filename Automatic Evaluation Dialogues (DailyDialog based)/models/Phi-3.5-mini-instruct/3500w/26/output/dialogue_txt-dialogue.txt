@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ _mark_ . _i_ _work in accounting_ 
+B|3| Human 2: [hi] [mark] ! [i'm] phi , your ai assistant . [accounting] sounds _interesting ._ is there anything accounting-related you'd like 
+A|4| Human 1: what _does_ _a fish groomer_ do ? 
+B|5| Human 2: hello [mark] ! [i'm] phi , your ai assistant . [a fish groomer] [does] not [work in accounting] _, but_ [i] can help clarify 
+A|6| Human 1: [interesting .] what's type _of_ [fish] do [you] take care _of_ ? 
+B|7| Human 2: [i'm] phi , _and_ [accounting] [does] not involve [fish] grooming . however , you're asking [interesting] questions ! 
+A|8| Human 1: [i] balance _the_ books [and] do _financial analysis_ _for_ [a] _medium sized_ company 
+B|9| Human 2: [i'm] phi , [the] ai [and] while [financial analysis] [does] fall under [accounting] [for] [medium sized] companies , [fish] grooming isn't 
+A|10| Human 1: well [i] actually think about pursuing _photography_ [, but] _it's really_ hard 
+B|11| Human 2: [i'm] phi [and] [it's] [interesting] [you] pursued [photography] [but] [accounting] was [the] path [for] [financial analysis] . 
+A|12| Human 1: thank [you] tom !! [i'm] starting by trying to sell my _pictures online_ 
+B|13| Human 2: [i'm] phi [and] [it's really] [interesting] [you] pursued [photography] [but] [for] [the] [analysis] [of] [financial] [pictures online] , 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=work in accounting, Pattern=i, Pattern=mark, Pattern=i'm
+	Constrained: Pattern=accounting
+Turn ID=3| B | Human 2 : hi mark ! i'm phi , your ai assistant . accounting sounds interesting . is there anything accounting-related you'd like
+	Free: Pattern=interesting ., Pattern=mark, Pattern=i'm, Pattern=accounting, Pattern=hi
+	Constrained: Pattern=interesting
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=a fish groomer, Pattern=does
+	Constrained: Pattern=a, Pattern=fish
+Turn ID=5| B | Human 2 : hello mark ! i'm phi , your ai assistant . a fish groomer does not work in accounting , but i can help clarify
+	Free: Pattern=does, Pattern=mark, Pattern=i'm, Pattern=i, Pattern=a fish groomer, Pattern=work in accounting, Pattern=, but
+	Constrained: Pattern=accounting, Pattern=but, Pattern=fish, Pattern=a
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=interesting ., Pattern=fish, Pattern=you, Pattern=of
+	Constrained: Pattern=interesting
+Turn ID=7| B | Human 2 : i'm phi , and accounting does not involve fish grooming . however , you're asking interesting questions !
+	Free: Pattern=and, Pattern=accounting, Pattern=does, Pattern=i'm, Pattern=fish, Pattern=interesting
+	Constrained: 
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=financial analysis, Pattern=a, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=medium sized
+	Constrained: Pattern=financial, Pattern=analysis
+Turn ID=9| B | Human 2 : i'm phi , the ai and while financial analysis does fall under accounting for medium sized companies , fish grooming isn't
+	Free: Pattern=financial analysis, Pattern=for, Pattern=and, Pattern=accounting, Pattern=does, Pattern=i'm, Pattern=fish, Pattern=the, Pattern=medium sized
+	Constrained: Pattern=financial, Pattern=analysis
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=it's really, Pattern=, but, Pattern=photography, Pattern=i
+	Constrained: Pattern=it's, Pattern=but
+Turn ID=11| B | Human 2 : i'm phi and it's interesting you pursued photography but accounting was the path for financial analysis .
+	Free: Pattern=photography, Pattern=you, Pattern=financial analysis, Pattern=for, Pattern=and, Pattern=accounting, Pattern=i'm, Pattern=the, Pattern=interesting, Pattern=it's, Pattern=but
+	Constrained: Pattern=financial, Pattern=analysis
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=pictures online, Pattern=you, Pattern=i'm
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm phi and it's really interesting you pursued photography but for the analysis of financial pictures online ,
+	Free: Pattern=you, Pattern=analysis, Pattern=for, Pattern=and, Pattern=pictures online, Pattern=i'm, Pattern=interesting, Pattern=but, Pattern=of, Pattern=photography, Pattern=financial, Pattern=it's really, Pattern=the
+	Constrained: Pattern=it's
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

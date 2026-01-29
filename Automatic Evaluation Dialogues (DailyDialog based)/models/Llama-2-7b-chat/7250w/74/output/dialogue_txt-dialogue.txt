@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _it_ _going_ ?!? 
+B|3| Human 2: [going] well ! how can i assist you today ? 
+A|4| Human 1: _what _game_ ?_ 
+B|5| Human 2: [what game] would you like _to_ play ? we have a wide variety of games available . 
+A|6| Human 1: nice . _that's_ _football_ _right_ ? 
+B|7| Human 2: [that's] [right] ! [football] _is_ a very popular [game] here _at_ our chatbot _. what_ would you like _to_ do ? <|im_end| 
+A|8| Human 1: ok [. what] _stadium_ [is] _it_ [at] ? 
+B|9| Human 2: [that's] [right] ! [football] [stadium] 1 [is] [what] we have available . how many players would you like _to_ have in the [game ?] <| 
+A|10| Human 1: _yeah_ i'm gonna go _kayaking_ 
+B|11| Human 2: kayaking's a great choice ! [what] kind of [game] would you like _to_ play ? we have [football] , basketball , tennis , and vol 
+A|12| Human 1: [is] _it_ _easy to flip over accidentally_ ? _it's_ gonna _be_ my _first_ time actually 
+B|13| Human 2: [it's] [easy to flip over accidentally] , [yeah] . [kayaking] can [be] a bit tricky [at] [first] . how about [football] [stadium] 
+A|14| Human 1: thanks ! 
+B|15| Human 2: 's [right] ! [football] [stadium] 1 [it] [is] [. what] play style would you like [to] use ? we have three options: [easy] , normal , 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?!?
+	Free: Pattern=going, Pattern=it
+	Constrained: 
+Turn ID=3| B | Human 2 : going well ! how can i assist you today ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=4| A | Human 1 : what game ?
+	Free: Pattern=game ?, Pattern=what game
+	Constrained: Pattern=game, Pattern=what
+Turn ID=5| B | Human 2 : what game would you like to play ? we have a wide variety of games available .
+	Free: Pattern=what game, Pattern=to
+	Constrained: Pattern=game, Pattern=what
+Turn ID=6| A | Human 1 : nice . that's football right ?
+	Free: Pattern=right, Pattern=football, Pattern=that's
+	Constrained: 
+Turn ID=7| B | Human 2 : that's right ! football is a very popular game here at our chatbot . what would you like to do ? <|im_end|
+	Free: Pattern=right, Pattern=game, Pattern=at, Pattern=is, Pattern=football, Pattern=that's, Pattern=to, Pattern=. what
+	Constrained: Pattern=what
+Turn ID=8| A | Human 1 : ok . what stadium is it at ?
+	Free: Pattern=it, Pattern=at, Pattern=is, Pattern=stadium, Pattern=. what
+	Constrained: Pattern=what
+Turn ID=9| B | Human 2 : that's right ! football stadium 1 is what we have available . how many players would you like to have in the game ? <|
+	Free: Pattern=right, Pattern=what, Pattern=is, Pattern=game ?, Pattern=football, Pattern=that's, Pattern=stadium, Pattern=to
+	Constrained: Pattern=game
+Turn ID=10| A | Human 1 : yeah i'm gonna go kayaking
+	Free: Pattern=yeah, Pattern=kayaking
+	Constrained: 
+Turn ID=11| B | Human 2 : kayaking's a great choice ! what kind of game would you like to play ? we have football , basketball , tennis , and vol
+	Free: Pattern=game, Pattern=to, Pattern=what, Pattern=football
+	Constrained: 
+Turn ID=12| A | Human 1 : is it easy to flip over accidentally ? it's gonna be my first time actually
+	Free: Pattern=it, Pattern=easy to flip over accidentally, Pattern=is, Pattern=be, Pattern=it's, Pattern=first
+	Constrained: Pattern=to, Pattern=easy
+Turn ID=13| B | Human 2 : it's easy to flip over accidentally , yeah . kayaking can be a bit tricky at first . how about football stadium
+	Free: Pattern=yeah, Pattern=at, Pattern=easy to flip over accidentally, Pattern=kayaking, Pattern=stadium, Pattern=football, Pattern=be, Pattern=it's, Pattern=first
+	Constrained: Pattern=to, Pattern=easy
+Turn ID=14| A | Human 1 : thanks !
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : 's right ! football stadium 1 it is . what play style would you like to use ? we have three options: easy , normal ,
+	Free: Pattern=right, Pattern=easy, Pattern=it, Pattern=is, Pattern=football, Pattern=stadium, Pattern=to, Pattern=. what
+	Constrained: Pattern=what

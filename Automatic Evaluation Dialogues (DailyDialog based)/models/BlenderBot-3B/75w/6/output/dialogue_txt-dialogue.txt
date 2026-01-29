@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: _not much_ . any plans _this weekend_ ? 
+B|3| Human 2: hey ! [not much] , probably [not] _going to_ the beach [this weekend] . i've been too sick with the flu lately . 
+A|4| Human 1: _ziplining_ ? 
+B|5| Human 2: oh _no_ hope _you_ _get_ better soon . _i_ just got back form _a_ zip line tour . 
+A|6| Human 1: [i] _have_ [a] couple years ago . _it's quite a unique experience_ 
+B|7| Human 2: i've gone [ziplining] _and_ [have] [it's quite a unique experience] , [not] like anything i've ever experienced before . 
+A|8| Human 1: [i] forgot where _it was_ _, it_ wasn't local [i] don't think _though_ 
+B|9| Human 2: _that's_ great that _you_ [have] been there before . [it was] probably [a unique experience] for _you_ 
+A|10| Human 1: [that's] [a] hard question [and] _i'm tired_ so _i'm going to_ go . see [you] 
+B|11| Human 2: yeah [, [it] was] [quite] fun , [though] [i'm tired] now , too , since [i] went in the afternoon during the _day_ 
+A|12| Human 1: [no] , _i'm going to get a_ _massage_ first 
+B|13| Human 2: [massage] will definitely take your mind off that feeling of dread 
+A|14| Human 1: traditional _kind_ 
+B|15| Human 2: yeah [i] had the best feeling from [massage] . what [kind] of [massage] are [you] [going to get] ? 
+A|16| Human 1: [you] _should_ ! [it's] relaxing after [a] long [day] . talk [to] [you] later ! 
+B|17| Human 2: [i'm going to get a] handmotions [massage] . [it] [should] be nice . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=this weekend, Pattern=not much
+	Constrained: Pattern=not
+Turn ID=3| B | Human 2 : hey ! not much , probably not going to the beach this weekend . i've been too sick with the flu lately .
+	Free: Pattern=this weekend, Pattern=not much, Pattern=going to, Pattern=not
+	Constrained: Pattern=to, Pattern=not
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining
+	Constrained: 
+Turn ID=5| B | Human 2 : oh no hope you get better soon . i just got back form a zip line tour .
+	Free: Pattern=you, Pattern=no, Pattern=a, Pattern=i, Pattern=get
+	Constrained: 
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=it's quite a unique experience, Pattern=i, Pattern=have, Pattern=a
+	Constrained: Pattern=it's, Pattern=a unique experience, Pattern=a, Pattern=quite
+Turn ID=7| B | Human 2 : i've gone ziplining and have it's quite a unique experience , not like anything i've ever experienced before .
+	Free: Pattern=ziplining, Pattern=have, Pattern=and, Pattern=it's quite a unique experience, Pattern=not
+	Constrained: Pattern=it's, Pattern=a unique experience, Pattern=a, Pattern=quite
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=it was, Pattern=, it, Pattern=i, Pattern=though
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : that's great that you have been there before . it was probably a unique experience for you
+	Free: Pattern=it was, Pattern=you, Pattern=have, Pattern=a unique experience, Pattern=that's
+	Constrained: Pattern=it, Pattern=a
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=you, Pattern=a, Pattern=and, Pattern=that's, Pattern=i'm tired, Pattern=i'm going to
+	Constrained: Pattern=going to, Pattern=to
+Turn ID=11| B | Human 2 : yeah , it was quite fun , though i'm tired now , too , since i went in the afternoon during the day
+	Free: Pattern=it was, Pattern=, it, Pattern=though, Pattern=quite, Pattern=i'm tired, Pattern=day, Pattern=i
+	Constrained: Pattern=it
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=i'm going to get a, Pattern=no, Pattern=massage
+	Constrained: Pattern=going to, Pattern=a, Pattern=going to get, Pattern=to, Pattern=get, Pattern=i'm going to
+Turn ID=13| B | Human 2 : massage will definitely take your mind off that feeling of dread
+	Free: Pattern=massage
+	Constrained: 
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=kind
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah i had the best feeling from massage . what kind of massage are you going to get ?
+	Free: Pattern=kind, Pattern=massage, Pattern=you, Pattern=going to get, Pattern=i
+	Constrained: Pattern=going to, Pattern=to, Pattern=get
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=you, Pattern=should, Pattern=a, Pattern=day, Pattern=to, Pattern=it's
+	Constrained: 
+Turn ID=17| B | Human 2 : i'm going to get a handmotions massage . it should be nice .
+	Free: Pattern=i'm going to get a, Pattern=massage, Pattern=it, Pattern=should
+	Constrained: Pattern=going to, Pattern=a, Pattern=going to get, Pattern=to, Pattern=get, Pattern=i'm going to

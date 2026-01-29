@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , how is _it_ going ? 
+A|2| Human 1: pretty _great_ . _i_ _just_ _won_ _a_ _pingpong_ _game ._ _what_ about _you_ ? 
+B|3| Human 2: _i'm just a_ digital assistant _, so i don't_ play [pingpong] _, but i'm_ here _and_ ready _to_ assist [you] ! [what] 
+A|4| Human 1: no , _very_ rarely _. it's_ kind _of_ _amazing_ _that_ [i] _won_ [, but i'm] still taking credit _for_ [it] . 
+B|5| Human 2: [it's] [great] [that] [you] [won] ! _i'm just_ [amazing] [for] _being_ here _to_ support [you] _and_ engage in conversation even _though_ [pingpong] 
+A|6| Human 1: haha thank [you] , _i guess_ [i'm just a] _natural_ . what's _your_ favourite _game_ ? 
+B|7| Human 2: [i'm just a] collection [of] algorithms [but] [i guess] [you] could say [that] [game] _for me_ is [natural] language processing where [i] interact _with_ humans _like_ [your] [very] 
+A|8| Human 1: what's _racquetball_ [like] ? from context clues , [i'm] guessing [that] [it] involves hitting [a] ball _with a_ racquet 
+B|9| Human 2: [i'm just] [your] friendly neighborhood ai [with a] knack [for] [natural] language understanding [. it's] not [racquetball] [but] [i] [like] [that] [game] 
+A|10| Human 1: wow ! [a] _cage_ _match_ ! does [it] _get physical_ ? 
+B|11| Human 2: [i'm just] [your] friendly ai - physicality is not in my [game [.] it's] [cage] [like] we're inside [a] virtual [match] 
+A|12| Human 1: [that] sounds fun . [i] think [of] _tennis_ itself as [being] really athletic [and] _tiring_ [, so i don't] think [it's] [a] sport [for me] , [though] ! 
+B|13| Human 2: that's [a] [great] metaphor ! [i don't] [get physical] [tiring] [like] [tennis] players . [but] [that] [just] means [i'm] 2 
+A|14| Human 1: [what] [a] good idea , i'd love [to] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty great . i just won a pingpong game . what about you ?
+	Free: Pattern=won, Pattern=just, Pattern=what, Pattern=a, Pattern=i, Pattern=pingpong, Pattern=game ., Pattern=you, Pattern=great
+	Constrained: Pattern=game
+Turn ID=3| B | Human 2 : i'm just a digital assistant , so i don't play pingpong , but i'm here and ready to assist you ! what
+	Free: Pattern=, so i don't, Pattern=you, Pattern=what, Pattern=and, Pattern=pingpong, Pattern=to, Pattern=, but i'm, Pattern=i'm just a
+	Constrained: Pattern=a, Pattern=i'm just, Pattern=i'm, Pattern=i, Pattern=but, Pattern=just, Pattern=i don't
+Turn ID=4| A | Human 1 : no , very rarely . it's kind of amazing that i won , but i'm still taking credit for it .
+	Free: Pattern=of, Pattern=won, Pattern=amazing, Pattern=. it's, Pattern=for, Pattern=it, Pattern=, but i'm, Pattern=that, Pattern=very, Pattern=i
+	Constrained: Pattern=it's, Pattern=but, Pattern=i'm
+Turn ID=5| B | Human 2 : it's great that you won ! i'm just amazing for being here to support you and engage in conversation even though pingpong
+	Free: Pattern=won, Pattern=amazing, Pattern=though, Pattern=for, Pattern=and, Pattern=being, Pattern=i'm just, Pattern=pingpong, Pattern=to, Pattern=you, Pattern=great, Pattern=that, Pattern=it's
+	Constrained: Pattern=i'm, Pattern=just
+Turn ID=6| A | Human 1 : haha thank you , i guess i'm just a natural . what's your favourite game ?
+	Free: Pattern=you, Pattern=your, Pattern=natural, Pattern=game, Pattern=i'm just a, Pattern=i guess
+	Constrained: Pattern=just, Pattern=a, Pattern=i'm just, Pattern=i'm, Pattern=i
+Turn ID=7| B | Human 2 : i'm just a collection of algorithms but i guess you could say that game for me is natural language processing where i interact with humans like your very
+	Free: Pattern=of, Pattern=you, Pattern=for me, Pattern=natural, Pattern=game, Pattern=very, Pattern=your, Pattern=i, Pattern=i'm just a, Pattern=i guess, Pattern=like, Pattern=with, Pattern=that, Pattern=but
+	Constrained: Pattern=just, Pattern=a, Pattern=for, Pattern=i'm just, Pattern=i'm, Pattern=i
+Turn ID=8| A | Human 1 : what's racquetball like ? from context clues , i'm guessing that it involves hitting a ball with a racquet
+	Free: Pattern=racquetball, Pattern=it, Pattern=i'm, Pattern=like, Pattern=that, Pattern=with a, Pattern=a
+	Constrained: Pattern=a, Pattern=with
+Turn ID=9| B | Human 2 : i'm just your friendly neighborhood ai with a knack for natural language understanding . it's not racquetball but i like that game
+	Free: Pattern=racquetball, Pattern=. it's, Pattern=with a, Pattern=for, Pattern=i'm just, Pattern=like, Pattern=natural, Pattern=game, Pattern=your, Pattern=i, Pattern=that, Pattern=but
+	Constrained: Pattern=just, Pattern=a, Pattern=i'm, Pattern=with, Pattern=it's
+Turn ID=10| A | Human 1 : wow ! a cage match ! does it get physical ?
+	Free: Pattern=match, Pattern=cage, Pattern=a, Pattern=it, Pattern=get physical
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm just your friendly ai - physicality is not in my game . it's cage like we're inside a virtual match
+	Free: Pattern=match, Pattern=a, Pattern=i'm just, Pattern=your, Pattern=like, Pattern=game ., Pattern=cage, Pattern=. it's
+	Constrained: Pattern=game, Pattern=it's, Pattern=i'm, Pattern=just
+Turn ID=12| A | Human 1 : that sounds fun . i think of tennis itself as being really athletic and tiring , so i don't think it's a sport for me , though !
+	Free: Pattern=of, Pattern=, so i don't, Pattern=though, Pattern=a, Pattern=being, Pattern=for me, Pattern=i, Pattern=tennis, Pattern=tiring, Pattern=and, Pattern=that, Pattern=it's
+	Constrained: Pattern=for, Pattern=i don't, Pattern=i
+Turn ID=13| B | Human 2 : that's a great metaphor ! i don't get physical tiring like tennis players . but that just means i'm 2
+	Free: Pattern=great, Pattern=a, Pattern=tiring, Pattern=get physical, Pattern=i'm, Pattern=like, Pattern=tennis, Pattern=just, Pattern=i don't, Pattern=that, Pattern=but
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : what a good idea , i'd love to !
+	Free: Pattern=a, Pattern=to, Pattern=what
+	Constrained: 

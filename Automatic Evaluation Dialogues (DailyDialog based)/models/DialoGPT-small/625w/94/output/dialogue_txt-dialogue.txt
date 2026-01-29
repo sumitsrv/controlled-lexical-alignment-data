@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _have_ _you had_ _lunch_ yet ? 
+B|3| Human 2: [you] should be more specific you're trying to find [lunch] . 
+A|4| Human 1: cool . where _and what_ did _you eat_ ? 
+B|5| Human 2: [you eat] [lunch] [and what] [you had] today _. have_ _a_ nice day ! 
+A|6| Human 1: [a] sandwich _for lunch_ ? was _it_ filling . _i'm_ currently _having some_ mix of _shrimp_ , _fish_ , chicken [and] pork . _i'm_ considering _going vegetarian_ _though_ . lol . 
+B|7| Human 2: [i'm] [going vegetarian] i'll [eat] [some] [fish] [and] [shrimp] [for lunch] [though] ! 
+A|8| Human 1: cause _the_ environment [and] humans suck . [i'm] keeping my bets open [for] space [though] in case _the_ environment dies . i mixed up [a] couple of dishes . _it_ was [a] buffet style place . 
+B|9| Human 2: [what] ? 
+A|10| Human 1: i love _them_ !!!! _i've_ [had] [a] couple of different kinds . they are _all_ pretty _expensive_ [though] [. have] _you tried them_ ? 
+B|11| Human 2: [i'm] [having some] . [you tried them] [all] [the] [expensive] [and] [i've] 
+A|12| Human 1: i love _it_ _too_ . but depending on how it's prepared [you] can taste [the] _peanut butter_ . but if prepared well i love _it_ . [what] kind of food would [you] [have] eaten if _it_ wasn't rainy ? 
+B|13| Human 2: [peanut butter] ?? [too] ! [you] can't [have] [it] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : have you had lunch yet ?
+	Free: Pattern=you had, Pattern=have, Pattern=lunch
+	Constrained: Pattern=had, Pattern=you
+Turn ID=3| B | Human 2 : you should be more specific you're trying to find lunch .
+	Free: Pattern=you, Pattern=lunch
+	Constrained: 
+Turn ID=4| A | Human 1 : cool . where and what did you eat ?
+	Free: Pattern=you eat, Pattern=and what
+	Constrained: Pattern=eat, Pattern=and, Pattern=you, Pattern=what
+Turn ID=5| B | Human 2 : you eat lunch and what you had today . have a nice day !
+	Free: Pattern=you had, Pattern=. have, Pattern=lunch, Pattern=and what, Pattern=you eat, Pattern=a
+	Constrained: Pattern=you, Pattern=have, Pattern=eat, Pattern=what, Pattern=and, Pattern=had
+Turn ID=6| A | Human 1 : a sandwich for lunch ? was it filling . i'm currently having some mix of shrimp , fish , chicken and pork . i'm considering going vegetarian though . lol .
+	Free: Pattern=having some, Pattern=though, Pattern=a, Pattern=shrimp, Pattern=i'm, Pattern=fish, Pattern=for lunch, Pattern=going vegetarian, Pattern=it, Pattern=and
+	Constrained: Pattern=some, Pattern=lunch, Pattern=for
+Turn ID=7| B | Human 2 : i'm going vegetarian i'll eat some fish and shrimp for lunch though !
+	Free: Pattern=eat, Pattern=though, Pattern=and, Pattern=i'm, Pattern=fish, Pattern=for lunch, Pattern=going vegetarian, Pattern=shrimp, Pattern=some
+	Constrained: Pattern=lunch, Pattern=for
+Turn ID=8| A | Human 1 : cause the environment and humans suck . i'm keeping my bets open for space though in case the environment dies . i mixed up a couple of dishes . it was a buffet style place .
+	Free: Pattern=though, Pattern=a, Pattern=for, Pattern=i'm, Pattern=the, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=9| B | Human 2 : what ?
+	Free: Pattern=what
+	Constrained: 
+Turn ID=10| A | Human 1 : i love them !!!! i've had a couple of different kinds . they are all pretty expensive though . have you tried them ?
+	Free: Pattern=though, Pattern=a, Pattern=i've, Pattern=. have, Pattern=had, Pattern=all, Pattern=expensive, Pattern=them, Pattern=you tried them
+	Constrained: Pattern=have, Pattern=you, Pattern=them
+Turn ID=11| B | Human 2 : i'm having some . you tried them all the expensive and i've
+	Free: Pattern=having some, Pattern=and, Pattern=i've, Pattern=i'm, Pattern=expensive, Pattern=you tried them, Pattern=the, Pattern=all
+	Constrained: Pattern=some, Pattern=you, Pattern=them
+Turn ID=12| A | Human 1 : i love it too . but depending on how it's prepared you can taste the peanut butter . but if prepared well i love it . what kind of food would you have eaten if it wasn't rainy ?
+	Free: Pattern=you, Pattern=have, Pattern=peanut butter, Pattern=what, Pattern=the, Pattern=it, Pattern=too
+	Constrained: 
+Turn ID=13| B | Human 2 : peanut butter ?? too ! you can't have it ?
+	Free: Pattern=you, Pattern=have, Pattern=peanut butter, Pattern=it, Pattern=too
+	Constrained: 

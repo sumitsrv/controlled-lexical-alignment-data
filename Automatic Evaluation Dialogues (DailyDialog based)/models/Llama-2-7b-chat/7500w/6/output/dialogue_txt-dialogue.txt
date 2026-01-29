@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: _not_ _much_ . any plans _this weekend_ ? 
+B|3| Human 2: sure ! _i'm_ free [this weekend] if _you_ want _to_ hang out . what do _you_ _have_ in mind ? <|im_end| 
+A|4| Human 1: _ziplining_ ? 
+B|5| Human 2: that sounds like fun ! _i'm_ [not] too [much] of _a_ thrill-seeker , but i'd be happy _to_ join _you_ for 
+A|6| Human 1: _i_ _have a_ couple years ago . _it's_ _quite_ [a] _unique experience_ 
+B|7| Human 2: [unique experience] _it_ is ! [have] _you_ ziplined before ? 
+A|8| Human 1: _i_ _forgot where it was_ , [it] wasn't _local_ _i_ _don't_ _think_ _though_ 
+B|9| Human 2: [it's] [not] [local] , but [it was] [quite] an [experience] . [i] [think] i'll [have] _to_ give [ziplining] [a] try [though] . [where] 
+A|10| Human 1: _that's_ [a] hard question _and_ [i'm] tired so _i'm going to_ go . _see you_ 
+B|11| Human 2: [see _you] later !_ [have a] good night [and] [don't] forget [to] zipline 😅 
+A|12| Human 1: no , _i'm going to_ get [a] _massage first_ 
+B|13| Human 2: [massage first] [and] then [i'm going to] zipline [it was] [quite] an [experience] that [you] [forgot where it was] [local] though<| 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] [i] [see] [that's] interesting [have] [you] tried [it] before [and] [ziplining] [was] [quite] an [experience] [going] [first] time [though] [where] [local] or 
+A|16| Human 1: [you] _should_ ! [it's] _relaxing after_ [a] _long day_ . _talk_ [to] [you later !] 
+B|17| Human 2: [i'm going] [talk] [you later !] [it was] [quite] [relaxing after] [long day] [massage] [and] [ziplining] [local] [though] [where] that [forgot] [should] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=this weekend, Pattern=much, Pattern=not
+	Constrained: 
+Turn ID=3| B | Human 2 : sure ! i'm free this weekend if you want to hang out . what do you have in mind ? <|im_end|
+	Free: Pattern=have, Pattern=i'm, Pattern=to, Pattern=this weekend, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining
+	Constrained: 
+Turn ID=5| B | Human 2 : that sounds like fun ! i'm not too much of a thrill-seeker , but i'd be happy to join you for
+	Free: Pattern=you, Pattern=a, Pattern=i'm, Pattern=much, Pattern=to, Pattern=not
+	Constrained: 
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=have a, Pattern=a, Pattern=unique experience, Pattern=i, Pattern=quite, Pattern=it's
+	Constrained: Pattern=experience, Pattern=a, Pattern=have
+Turn ID=7| B | Human 2 : unique experience it is ! have you ziplined before ?
+	Free: Pattern=unique experience, Pattern=it, Pattern=you, Pattern=have
+	Constrained: Pattern=experience
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=though, Pattern=it, Pattern=forgot where it was, Pattern=think, Pattern=i, Pattern=don't, Pattern=local
+	Constrained: Pattern=it was, Pattern=it, Pattern=forgot, Pattern=where, Pattern=was
+Turn ID=9| B | Human 2 : it's not local , but it was quite an experience . i think i'll have to give ziplining a try though . where
+	Free: Pattern=it was, Pattern=ziplining, Pattern=have, Pattern=though, Pattern=a, Pattern=think, Pattern=i, Pattern=quite, Pattern=to, Pattern=not, Pattern=where, Pattern=experience, Pattern=local, Pattern=it's
+	Constrained: Pattern=was, Pattern=it
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=see you, Pattern=a, Pattern=and, Pattern=i'm, Pattern=that's, Pattern=i'm going to
+	Constrained: Pattern=you, Pattern=going, Pattern=i'm, Pattern=i'm going, Pattern=see, Pattern=to
+Turn ID=11| B | Human 2 : see you later ! have a good night and don't forget to zipline 😅
+	Free: Pattern=see you, Pattern=have a, Pattern=and, Pattern=you later !, Pattern=don't, Pattern=to
+	Constrained: Pattern=have, Pattern=a, Pattern=you, Pattern=see
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=i'm going to, Pattern=massage first, Pattern=a
+	Constrained: Pattern=massage, Pattern=going, Pattern=i'm, Pattern=i'm going, Pattern=to, Pattern=first
+Turn ID=13| B | Human 2 : massage first and then i'm going to zipline it was quite an experience that you forgot where it was local though<|
+	Free: Pattern=it was, Pattern=you, Pattern=and, Pattern=forgot where it was, Pattern=massage first, Pattern=experience, Pattern=quite, Pattern=local, Pattern=i'm going to
+	Constrained: Pattern=it was, Pattern=massage, Pattern=going, Pattern=it, Pattern=forgot, Pattern=i'm going, Pattern=to, Pattern=was, Pattern=first, Pattern=where, Pattern=i'm
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: 
+Turn ID=15| B | Human 2 : traditional kind i see that's interesting have you tried it before and ziplining was quite an experience going first time though where local or
+	Free: Pattern=though, Pattern=i, Pattern=quite, Pattern=that's, Pattern=see, Pattern=was, Pattern=traditional kind, Pattern=you, Pattern=ziplining, Pattern=going, Pattern=have, Pattern=it, Pattern=and, Pattern=where, Pattern=experience, Pattern=local, Pattern=first
+	Constrained: 
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=long day, Pattern=you, Pattern=should, Pattern=a, Pattern=you later !, Pattern=to, Pattern=relaxing after, Pattern=talk, Pattern=it's
+	Constrained: Pattern=you
+Turn ID=17| B | Human 2 : i'm going talk you later ! it was quite relaxing after long day massage and ziplining local though where that forgot should
+	Free: Pattern=it was, Pattern=massage, Pattern=long day, Pattern=ziplining, Pattern=and, Pattern=forgot, Pattern=where, Pattern=i'm going, Pattern=quite, Pattern=you later !, Pattern=relaxing after, Pattern=should, Pattern=though, Pattern=talk, Pattern=local
+	Constrained: Pattern=you, Pattern=going, Pattern=it, Pattern=i'm, Pattern=was

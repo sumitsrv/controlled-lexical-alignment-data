@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are_ _you_ ? 
+A|2| Human 1: _pretty_ _good_ . _i_ just drank this new _hint water_ . so _good_ 
+B|3| Human 2: 😋 [water] is great , isn't it ? [i] like [hint water] myself ! _do you_ have any favorite flavors ? <| 
+A|4| Human 1: _watermelon_ 
+B|5| Human 2: 👍 [watermelon] is definitely one _of_ the best flavors ! _do you_ think [hint water] is better than other brands ? 
+A|6| Human 1: [i] _see_ . _yeah some are pretty strange_ 
+B|7| Human 2: [yeah some are pretty strange] . [hint water] is [good] but _you_ have _to_ [see] what _you_ like 
+A|8| Human 1: _lol_ [i] tried this _tangerine walnut_ _icecream_ _that_ was super _weird_ 
+B|9| Human 2: [weird] [lol] [that] does sound [strange] 😂 
+A|10| Human 1: _that sounds pretty_ tasty _actually_ 
+B|11| Human 2: [yeah] [tangerine walnut] [lol] [that sounds pretty] [weird] 😂 
+A|12| Human 1: [do _you] want_ [to] get [some] [of] [that] _icecream_ together [some] time . show me a [good] place 
+B|13| Human 2: [that sounds] awesome 😃 [actually] [you want] [some] [tangerine] [icecream] [lol] 
+A|14| Human 1: [lol] 
+B|15| Human 2: [that] does sound [weird] 😂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . i just drank this new hint water . so good
+	Free: Pattern=hint water, Pattern=good, Pattern=i, Pattern=pretty
+	Constrained: Pattern=water
+Turn ID=3| B | Human 2 : 😋 water is great , isn't it ? i like hint water myself ! do you have any favorite flavors ? <|
+	Free: Pattern=hint water, Pattern=do you, Pattern=water, Pattern=i
+	Constrained: Pattern=you, Pattern=water
+Turn ID=4| A | Human 1 : watermelon
+	Free: Pattern=watermelon
+	Constrained: 
+Turn ID=5| B | Human 2 : 👍 watermelon is definitely one of the best flavors ! do you think hint water is better than other brands ?
+	Free: Pattern=hint water, Pattern=do you, Pattern=watermelon, Pattern=of
+	Constrained: Pattern=you, Pattern=water
+Turn ID=6| A | Human 1 : i see . yeah some are pretty strange
+	Free: Pattern=yeah some are pretty strange, Pattern=see, Pattern=i
+	Constrained: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=pretty
+Turn ID=7| B | Human 2 : yeah some are pretty strange . hint water is good but you have to see what you like
+	Free: Pattern=good, Pattern=you, Pattern=yeah some are pretty strange, Pattern=see, Pattern=to, Pattern=hint water
+	Constrained: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=water, Pattern=pretty
+Turn ID=8| A | Human 1 : lol i tried this tangerine walnut icecream that was super weird
+	Free: Pattern=lol, Pattern=weird, Pattern=tangerine walnut, Pattern=icecream, Pattern=i, Pattern=that
+	Constrained: Pattern=tangerine
+Turn ID=9| B | Human 2 : weird lol that does sound strange 😂
+	Free: Pattern=that, Pattern=lol, Pattern=weird, Pattern=strange
+	Constrained: 
+Turn ID=10| A | Human 1 : that sounds pretty tasty actually
+	Free: Pattern=that sounds pretty, Pattern=actually
+	Constrained: Pattern=pretty, Pattern=that, Pattern=that sounds
+Turn ID=11| B | Human 2 : yeah tangerine walnut lol that sounds pretty weird 😂
+	Free: Pattern=lol, Pattern=tangerine walnut, Pattern=that sounds pretty, Pattern=yeah, Pattern=weird
+	Constrained: Pattern=pretty, Pattern=tangerine, Pattern=that sounds, Pattern=that
+Turn ID=12| A | Human 1 : do you want to get some of that icecream together some time . show me a good place
+	Free: Pattern=good, Pattern=of, Pattern=do you, Pattern=you want, Pattern=to, Pattern=that, Pattern=icecream, Pattern=some
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : that sounds awesome 😃 actually you want some tangerine icecream lol
+	Free: Pattern=that sounds, Pattern=lol, Pattern=actually, Pattern=you want, Pattern=tangerine, Pattern=icecream, Pattern=some
+	Constrained: Pattern=that, Pattern=you
+Turn ID=14| A | Human 1 : lol
+	Free: Pattern=lol
+	Constrained: 
+Turn ID=15| B | Human 2 : that does sound weird 😂
+	Free: Pattern=that, Pattern=weird
+	Constrained: 

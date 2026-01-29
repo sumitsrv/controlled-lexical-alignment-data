@@ -1,0 +1,59 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , what's up ! 
+A|2| Human 1: everything is _good_ . there's so much _to_ be thankful _for_ - especially coming out of _thanksgiving holidays_ . how _are you ?_ 
+B|3| Human 2: great [to] hear ! 🤗 [thanksgiving holidays] [are] always _a_ [good] _time_ [to] reflect _on_ what's important _and_ express grat 
+A|4| Human 1: do _you_ _have_ interesting _plans_ ? 
+B|5| Human 2: not [plans] [for] [thanksgiving holidays] , [are you ?] <| im_end|>user no , 
+A|6| Human 1: nice ! what [for] ? _it's_ [a] _really_ _beautiful_ _place_ . _really_ _cold_ _this time_ of _year_ though . 
+B|7| Human 2: [it's] [cold] [for] [this time] [year] [you] [are] [really] [good] at [this] 
+A|8| Human 1: _cool_ . which _conference_ ? i saw [on] twitter _the_ other _day_ , _some_ _people_ _saying_ _they_ were denied visas [for] _some conference_ in canada . perhaps [it's] _the_ same one . i [really] liked [this] _place called_ _kingyo_ . _it has_ _good japanese food_ if _you're_ into _that_ . 
+B|9| Human 2: [kingyo] [you're] [saying] [really] [good japanese food] [that] [the] [place called] king [day] . [cool] [it has] [a] [beautiful] garden [they] [have] [some conference] [this] 
+A|10| Human 1: i _don't recall_ . my _friend_ was _hosting_ me [and] _did _all_ _the_ leg work_ . do _you _know_ any_ _people_ in [the] _area_ ? 
+B|11| Human 2: [people] [and] [area] [friend] [has] [the leg work] [don't recall] [hosting] [some conference] [you] [did all] [know any] [good japanese food] [place] [for] [this time] [year] [that] 
+A|12| Human 1: _you attend these often_ ? 
+B|13| Human 2: [you attend these often] [conference] [you know] [people] [don't recall] [leg work] [friend] [has] [all the] [good japanese food] [place] [for] [this time] [year] [that] [some] [hosting] [they] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , what's up !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : everything is good . there's so much to be thankful for - especially coming out of thanksgiving holidays . how are you ?
+	Free: Pattern=good, Pattern=thanksgiving holidays, Pattern=for, Pattern=are you ?, Pattern=to
+	Constrained: Pattern=are, Pattern=you
+Turn ID=3| B | Human 2 : great to hear ! 🤗 thanksgiving holidays are always a good time to reflect on what's important and express grat
+	Free: Pattern=good, Pattern=time, Pattern=thanksgiving holidays, Pattern=a, Pattern=and, Pattern=are, Pattern=on, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : do you have interesting plans ?
+	Free: Pattern=have, Pattern=you, Pattern=plans
+	Constrained: 
+Turn ID=5| B | Human 2 : not plans for thanksgiving holidays , are you ? <| im_end|>user no ,
+	Free: Pattern=are you ?, Pattern=thanksgiving holidays, Pattern=plans, Pattern=for
+	Constrained: Pattern=are, Pattern=you
+Turn ID=6| A | Human 1 : nice ! what for ? it's a really beautiful place . really cold this time of year though .
+	Free: Pattern=this time, Pattern=a, Pattern=for, Pattern=cold, Pattern=beautiful, Pattern=really, Pattern=year, Pattern=place, Pattern=it's
+	Constrained: Pattern=time, Pattern=this
+Turn ID=7| B | Human 2 : it's cold for this time year you are really good at this
+	Free: Pattern=good, Pattern=this time, Pattern=you, Pattern=for, Pattern=are, Pattern=cold, Pattern=really, Pattern=year, Pattern=this, Pattern=it's
+	Constrained: Pattern=time, Pattern=this
+Turn ID=8| A | Human 1 : cool . which conference ? i saw on twitter the other day , some people saying they were denied visas for some conference in canada . perhaps it's the same one . i really liked this place called kingyo . it has good japanese food if you're into that .
+	Free: Pattern=some conference, Pattern=you're, Pattern=kingyo, Pattern=people, Pattern=they, Pattern=cool, Pattern=some, Pattern=really, Pattern=saying, Pattern=this, Pattern=for, Pattern=conference, Pattern=day, Pattern=it has, Pattern=on, Pattern=the, Pattern=place called, Pattern=good japanese food, Pattern=that, Pattern=it's
+	Constrained: Pattern=good, Pattern=conference, Pattern=has, Pattern=some, Pattern=place
+Turn ID=9| B | Human 2 : kingyo you're saying really good japanese food that the place called king day . cool it has a beautiful garden they have some conference this
+	Free: Pattern=some conference, Pattern=you're, Pattern=kingyo, Pattern=have, Pattern=they, Pattern=a, Pattern=cool, Pattern=beautiful, Pattern=really, Pattern=saying, Pattern=this, Pattern=day, Pattern=it has, Pattern=the, Pattern=place called, Pattern=good japanese food, Pattern=that
+	Constrained: Pattern=good, Pattern=conference, Pattern=has, Pattern=some, Pattern=place
+Turn ID=10| A | Human 1 : i don't recall . my friend was hosting me and did all the leg work . do you know any people in the area ?
+	Free: Pattern=you know, Pattern=people, Pattern=did all, Pattern=don't recall, Pattern=and, Pattern=know any, Pattern=the leg work, Pattern=hosting, Pattern=all the, Pattern=the, Pattern=friend, Pattern=area
+	Constrained: Pattern=the, Pattern=you, Pattern=leg work
+Turn ID=11| B | Human 2 : people and area friend has the leg work don't recall hosting some conference you did all know any good japanese food place for this time year that
+	Free: Pattern=some conference, Pattern=this time, Pattern=you, Pattern=people, Pattern=did all, Pattern=know any, Pattern=the leg work, Pattern=hosting, Pattern=year, Pattern=friend, Pattern=don't recall, Pattern=for, Pattern=and, Pattern=has, Pattern=area, Pattern=place, Pattern=good japanese food, Pattern=that
+	Constrained: Pattern=good, Pattern=time, Pattern=conference, Pattern=leg work, Pattern=some, Pattern=the, Pattern=this
+Turn ID=12| A | Human 1 : you attend these often ?
+	Free: Pattern=you attend these often
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : you attend these often conference you know people don't recall leg work friend has all the good japanese food place for this time year that some hosting they
+	Free: Pattern=this time, Pattern=you know, Pattern=people, Pattern=they, Pattern=some, Pattern=friend, Pattern=place, Pattern=don't recall, Pattern=for, Pattern=conference, Pattern=leg work, Pattern=has, Pattern=you attend these often, Pattern=hosting, Pattern=all the, Pattern=year, Pattern=good japanese food, Pattern=that
+	Constrained: Pattern=good, Pattern=time, Pattern=you, Pattern=the, Pattern=this

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's week so far ? 
+B|3| Human 2: great , _how_ can _i_ help _you_ today ? 
+A|4| Human 1: same . _going_ to catch up on my reading ! _do you_ _have_ _a_ _feast planned_ ? 
+B|5| Human 2: i'm just an ai 🤖 , _i_ don't [have] personal [feast planned] . however , [you] can find many del 
+A|6| Human 1: _something deeply hidden_ by sean carroll _<redacted_link>_ 
+B|7| Human 2: [<redacted_link>] 📚 
+A|8| Human 1: largely _scifi_ _how about you ?_ 
+B|9| Human 2: 🤖 [how about you ?] [<redacted_link>] [something deeply hidden] _is_ [a] [scifi] novel that expl 
+A|10| Human 1: [i] haven't what [is] it [about] ? 
+B|11| Human 2:  
+A|12| Human 1: _how do_ _the_ _survivors_ survive _such a thing ?_ 
+B|13| Human 2: [how about] [the] survivors' stories [<redacted_link>] [how [do] you] envision [such a thing ?] <|im 
+A|14| Human 1: sounds _like_ [a] tv _show_ [i] watched 
+B|15| Human 2: 🤖 what's [the] name of [the] [show] ? 
+A|16| Human 1: can't quite remember . [something] [about] _survivors going_ to live in space 
+B|17| Human 2: [how about] [something] [<redacted_link>] [survivors going] through [the] 🤖 what's [the] [show] [like] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : great , how can i help you today ?
+	Free: Pattern=i, Pattern=you, Pattern=how
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=feast planned, Pattern=a, Pattern=do you, Pattern=going, Pattern=have
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i'm just an ai 🤖 , i don't have personal feast planned . however , you can find many del
+	Free: Pattern=feast planned, Pattern=i, Pattern=have, Pattern=you
+	Constrained: 
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=something deeply hidden, Pattern=<redacted_link>
+	Constrained: Pattern=something
+Turn ID=7| B | Human 2 : <redacted_link> 📚
+	Free: Pattern=<redacted_link>
+	Constrained: 
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you ?, Pattern=scifi
+	Constrained: Pattern=how about, Pattern=you, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : 🤖 how about you ? <redacted_link> something deeply hidden is a scifi novel that expl
+	Free: Pattern=a, Pattern=something deeply hidden, Pattern=is, Pattern=scifi, Pattern=<redacted_link>, Pattern=how about you ?
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=how about, Pattern=something
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=i, Pattern=is, Pattern=about
+	Constrained: 
+Turn ID=11| B | Human 2 : 
+	Free: 
+	Constrained: 
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=such a thing ?, Pattern=how do, Pattern=survivors, Pattern=the
+	Constrained: Pattern=how, Pattern=a
+Turn ID=13| B | Human 2 : how about the survivors' stories <redacted_link> how do you envision such a thing ? <|im
+	Free: Pattern=such a thing ?, Pattern=do you, Pattern=how do, Pattern=how about, Pattern=the, Pattern=<redacted_link>
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=a
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=i, Pattern=a, Pattern=like, Pattern=show
+	Constrained: 
+Turn ID=15| B | Human 2 : 🤖 what's the name of the show ?
+	Free: Pattern=show, Pattern=the
+	Constrained: 
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=survivors going, Pattern=something, Pattern=about
+	Constrained: Pattern=going, Pattern=survivors
+Turn ID=17| B | Human 2 : how about something <redacted_link> survivors going through the 🤖 what's the show like ?
+	Free: Pattern=survivors going, Pattern=how about, Pattern=like, Pattern=the, Pattern=<redacted_link>, Pattern=show, Pattern=something
+	Constrained: Pattern=going, Pattern=about, Pattern=how, Pattern=survivors

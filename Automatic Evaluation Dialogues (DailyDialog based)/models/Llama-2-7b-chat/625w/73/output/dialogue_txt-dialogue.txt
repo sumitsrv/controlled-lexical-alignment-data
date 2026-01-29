@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: great , thanks ! how can _i_ help you today ? 
+A|4| Human 1: _i'm_ good ! _just_ getting ready _to watch_ _a_ _basketball_ game . hope _your_ _headache_ goes away ! 
+B|5| Human 2: [i'm] sorry [to] hear _that_ you're experiencing [a] [headache] . _is_ there anything _i_ can do [to] help ? <|im_end 
+A|6| Human 1: hmm , try taking some <redacted_term> _! i'm_ going [to] _see_ _the_ warriors vs . _the_ grizzlies . ever _see_ them play ? 
+B|7| Human 2: _i_ [see] . unfortunately , [i'm] [just] an _ai_ and do not have [the] ability [to watch] [basketball] games or provide advice on how [to] cure 
+A|8| Human 1: _haha ,_ _all_ [the] animal names confuse me as well ! who came up with these _naming conventions_ ? i'd name my team something _more_ original: [the] new york chairs ! 
+B|9| Human 2: [haha ,] _i_ [see] _what_ you're saying ! [the] [naming conventions] can be [a] bit confusing . but hey , at least we [all] have 
+A|10| Human 1: oh cool ! [what] [is] "neurips" ? 
+B|11| Human 2: ah , _i_ [see] ! neurips [is] [a] conference for neuroscience and machine learning researchers . we'd love [to] have you present 
+A|12| Human 1: oh wow ! sounds fancy ! [what] [is] [that] _about_ ? 
+B|13| Human 2: it's [about] [the] latest research and developments _in_ [the] field _of_ artificial intelligence . we'd love [to] have you present [your] work<|im 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: 🤖 yep [! i'm] [all] [about] [the] machine learning 
+A|16| Human 1: _ahh_ ! [i] saw [a] scary _movie_ [about] [that] once . it _was_ [about] this sentient [ai] [in] [a] _dystopian future_ - very very creepy . it _was_ called wall-e , ever heard [of] it ? 
+B|17| Human 2: 😅 [ahh] , no that's [more] like [the] [dystopian future] [movie] [i] [was] talking [about] ! ��� 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ?
+	Free: Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=just, Pattern=to watch, Pattern=a, Pattern=i'm, Pattern=your, Pattern=basketball, Pattern=headache
+	Constrained: Pattern=to
+Turn ID=5| B | Human 2 : i'm sorry to hear that you're experiencing a headache . is there anything i can do to help ? <|im_end
+	Free: Pattern=a, Pattern=headache, Pattern=i'm, Pattern=to, Pattern=that, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=! i'm, Pattern=to, Pattern=the, Pattern=see
+	Constrained: Pattern=i'm
+Turn ID=7| B | Human 2 : i see . unfortunately , i'm just an ai and do not have the ability to watch basketball games or provide advice on how to cure
+	Free: Pattern=just, Pattern=to watch, Pattern=basketball, Pattern=i, Pattern=the, Pattern=see, Pattern=to, Pattern=i'm, Pattern=ai
+	Constrained: Pattern=to
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=more, Pattern=haha ,, Pattern=naming conventions, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=9| B | Human 2 : haha , i see what you're saying ! the naming conventions can be a bit confusing . but hey , at least we all have
+	Free: Pattern=what, Pattern=a, Pattern=i, Pattern=haha ,, Pattern=see, Pattern=naming conventions, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=is, Pattern=what
+	Constrained: 
+Turn ID=11| B | Human 2 : ah , i see ! neurips is a conference for neuroscience and machine learning researchers . we'd love to have you present
+	Free: Pattern=a, Pattern=see, Pattern=to, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=that, Pattern=is, Pattern=about, Pattern=what
+	Constrained: 
+Turn ID=13| B | Human 2 : it's about the latest research and developments in the field of artificial intelligence . we'd love to have you present your work<|im
+	Free: Pattern=of, Pattern=about, Pattern=in, Pattern=your, Pattern=the, Pattern=to
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : 🤖 yep ! i'm all about the machine learning
+	Free: Pattern=! i'm, Pattern=all, Pattern=the, Pattern=about
+	Constrained: Pattern=i'm
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=of, Pattern=a, Pattern=movie, Pattern=about, Pattern=ai, Pattern=i, Pattern=was, Pattern=that, Pattern=ahh, Pattern=dystopian future, Pattern=in
+	Constrained: 
+Turn ID=17| B | Human 2 : 😅 ahh , no that's more like the dystopian future movie i was talking about ! ���
+	Free: Pattern=more, Pattern=movie, Pattern=about, Pattern=dystopian future, Pattern=i, Pattern=the, Pattern=was, Pattern=ahh
+	Constrained: 

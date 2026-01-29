@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! what's up 
+A|2| Human 1: _just_ chilling _at home_ 
+B|3| Human 2: hello ! _i_ [just] took _my_ dogs out . how about _you_ ? what _have you been_ up _to_ ? 
+A|4| Human 1: _where do you work ?_ 
+B|5| Human 2: _i_ [just] left [work] [where] _i_ [work] [at home] [you] _know_ 
+A|6| Human 1: _i _live_ in sapporo_ , _japan_ _. where_ _is_ mountain view 
+B|7| Human 2: [sapporo] [japan] ! _that_ [is] [where] [you] [live] ? [i] [work] [at home] as well [. [where] do you work ?] 
+A|8| Human 1: how's _living_ _in japan_ ? 
+B|9| Human 2: [sapporo] [japan] _is a_ _city_ [just] outside of tokyo [where] [i live] . 
+A|10| Human 1: _i wish_ ! ramen [is] [my] _favorite_ dish _and sapporo_ [is a] special _beer_ 
+B|11| Human 2: it's [japan] [and sapporo] [beer] [is] so yummy ! _that_ [is] [where] [i live] 
+A|12| Human 1: oh _wow_ , didn't [know] [that] . [have you _been] to the us_ ? 
+B|13| Human 2: [wow] that's cool [you] [live in sapporo] [japan] [and] [have] [been] [living] there [the] majority of your life _. i_ haven't [been to the us] 
+A|14| Human 1: awesome ! [where] [have you been] ? 
+B|15| Human 2: [i] [have] [been to the us] , but that's _it_ . [japan] has always [been] [a] [favorite] of mine [and] [i wish] [i] had visited more . 
+A|16| Human 1: [you] _like_ [it] ? 
+B|17| Human 2: [wow] [you] [have] [been to] [japan] [and] [like] [the] [beer] style ! [sapporo] [i] [like] alot that's [the] [favorite] [beer] _here_ [in japan] ! 
+A|18| Human 1: yea , same [here] [. i] love broadway shows [in] new york [city] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! what's up
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : just chilling at home
+	Free: Pattern=at home, Pattern=just
+	Constrained: 
+Turn ID=3| B | Human 2 : hello ! i just took my dogs out . how about you ? what have you been up to ?
+	Free: Pattern=you, Pattern=just, Pattern=have you been, Pattern=i, Pattern=to, Pattern=my
+	Constrained: Pattern=you, Pattern=have, Pattern=been
+Turn ID=4| A | Human 1 : where do you work ?
+	Free: Pattern=where do you work ?
+	Constrained: Pattern=work, Pattern=you, Pattern=where
+Turn ID=5| B | Human 2 : i just left work where i work at home you know
+	Free: Pattern=you, Pattern=just, Pattern=at home, Pattern=i, Pattern=where, Pattern=know, Pattern=work
+	Constrained: 
+Turn ID=6| A | Human 1 : i live in sapporo , japan . where is mountain view
+	Free: Pattern=. where, Pattern=is, Pattern=japan, Pattern=live in sapporo, Pattern=i live
+	Constrained: Pattern=live, Pattern=sapporo, Pattern=in, Pattern=where, Pattern=i
+Turn ID=7| B | Human 2 : sapporo japan ! that is where you live ? i work at home as well . where do you work ?
+	Free: Pattern=you, Pattern=at home, Pattern=live, Pattern=. where, Pattern=where do you work ?, Pattern=sapporo, Pattern=japan, Pattern=that, Pattern=where, Pattern=work, Pattern=is, Pattern=i
+	Constrained: Pattern=work, Pattern=you, Pattern=where
+Turn ID=8| A | Human 1 : how's living in japan ?
+	Free: Pattern=in japan, Pattern=living
+	Constrained: Pattern=in, Pattern=japan
+Turn ID=9| B | Human 2 : sapporo japan is a city just outside of tokyo where i live .
+	Free: Pattern=city, Pattern=sapporo, Pattern=i live, Pattern=where, Pattern=japan, Pattern=is a, Pattern=just
+	Constrained: Pattern=i, Pattern=a, Pattern=live, Pattern=is
+Turn ID=10| A | Human 1 : i wish ! ramen is my favorite dish and sapporo is a special beer
+	Free: Pattern=and sapporo, Pattern=is a, Pattern=i wish, Pattern=favorite, Pattern=is, Pattern=my, Pattern=beer
+	Constrained: Pattern=a, Pattern=and, Pattern=sapporo, Pattern=is, Pattern=i
+Turn ID=11| B | Human 2 : it's japan and sapporo beer is so yummy ! that is where i live
+	Free: Pattern=and sapporo, Pattern=i live, Pattern=where, Pattern=is, Pattern=japan, Pattern=beer, Pattern=that
+	Constrained: Pattern=i, Pattern=sapporo, Pattern=live, Pattern=and
+Turn ID=12| A | Human 1 : oh wow , didn't know that . have you been to the us ?
+	Free: Pattern=have you been, Pattern=been to the us, Pattern=wow, Pattern=know, Pattern=that
+	Constrained: Pattern=you, Pattern=have, Pattern=been to, Pattern=the, Pattern=to, Pattern=been
+Turn ID=13| B | Human 2 : wow that's cool you live in sapporo japan and have been living there the majority of your life . i haven't been to the us
+	Free: Pattern=you, Pattern=have, Pattern=been to the us, Pattern=and, Pattern=wow, Pattern=. i, Pattern=live in sapporo, Pattern=living, Pattern=the, Pattern=been, Pattern=japan
+	Constrained: Pattern=been to, Pattern=live, Pattern=sapporo, Pattern=in, Pattern=i, Pattern=the, Pattern=to, Pattern=been
+Turn ID=14| A | Human 1 : awesome ! where have you been ?
+	Free: Pattern=have you been, Pattern=where
+	Constrained: Pattern=you, Pattern=have, Pattern=been
+Turn ID=15| B | Human 2 : i have been to the us , but that's it . japan has always been a favorite of mine and i wish i had visited more .
+	Free: Pattern=have, Pattern=favorite, Pattern=i, Pattern=been, Pattern=japan, Pattern=been to the us, Pattern=a, Pattern=it, Pattern=and, Pattern=i wish
+	Constrained: Pattern=been to, Pattern=i, Pattern=the, Pattern=to, Pattern=been
+Turn ID=16| A | Human 1 : you like it ?
+	Free: Pattern=it, Pattern=you, Pattern=like
+	Constrained: 
+Turn ID=17| B | Human 2 : wow you have been to japan and like the beer style ! sapporo i like alot that's the favorite beer here in japan !
+	Free: Pattern=you, Pattern=have, Pattern=here, Pattern=been to, Pattern=and, Pattern=sapporo, Pattern=i, Pattern=like, Pattern=the, Pattern=in japan, Pattern=japan, Pattern=beer, Pattern=favorite, Pattern=wow
+	Constrained: Pattern=in, Pattern=japan, Pattern=been, Pattern=to
+Turn ID=18| A | Human 1 : yea , same here . i love broadway shows in new york city .
+	Free: Pattern=. i, Pattern=in, Pattern=here, Pattern=city
+	Constrained: Pattern=i

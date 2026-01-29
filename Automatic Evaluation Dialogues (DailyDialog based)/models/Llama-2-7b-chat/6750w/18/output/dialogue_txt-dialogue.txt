@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: heya , _nice to meet you_ , _i'm_ paul 
+A|2| Human 1: [nice to meet you] _too !_ [i'm] james . _how_ are [you] _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] well , thanks _for_ asking ! 😊 [how] _about_ [you] ? 
+A|4| Human 1: _same here_ ! _i hope_ _the weather_ _will_ be [nice] 
+B|5| Human 2: [i hope] so [too !] 🌞 _do you_ have any plans [today ?] 
+A|6| Human 1: oh no , which areas _will_ be affected ? 
+B|7| Human 2: [same here] [i] [will] definitely take [the weather] into account 😅 [nice] chat though 
+A|8| Human 1: uh oh , i'd _better_ not [to] plan [for] bbq _then_ _instead_ _just_ enjoying _playing_ board _games inside_ 🙂 
+B|9| Human 2: [i'm] [just] [playing] [games inside] [too] [today] , [nice] [weather] [for] _that_ [instead] [then] ! 😊 
+A|10| Human 1: _yea , you'd better check_ . _where_ [do you] _live_ ? 
+B|11| Human 2: [yea , you'd better check] [the weather] [for] [where] [i] [live] [too] 😅 [nice] chat though ! <|im_end| 
+A|12| Human 1: gotcha . anything [you] love _about where_ [you] [live] ? 
+B|13| Human 2: [i'm] justa ia , don't have personal experiences or feelings [about where] [i] [live] 😅 [nice] chat though ! < 
+A|14| Human 1: [nice] ! i'd love [to] come visit [that] area some times 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : heya , nice to meet you , i'm paul
+	Free: Pattern=nice to meet you, Pattern=i'm
+	Constrained: Pattern=nice, Pattern=to, Pattern=you
+Turn ID=2| A | Human 1 : nice to meet you too ! i'm james . how are you doing today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=i'm, Pattern=nice to meet you, Pattern=too !, Pattern=how, Pattern=doing
+	Constrained: Pattern=you, Pattern=today, Pattern=nice, Pattern=too, Pattern=to
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking ! 😊 how about you ?
+	Free: Pattern=you, Pattern=for, Pattern=about, Pattern=i'm, Pattern=how, Pattern=doing
+	Constrained: 
+Turn ID=4| A | Human 1 : same here ! i hope the weather will be nice
+	Free: Pattern=same here, Pattern=nice, Pattern=will, Pattern=the weather, Pattern=i hope
+	Constrained: Pattern=weather, Pattern=i
+Turn ID=5| B | Human 2 : i hope so too ! 🌞 do you have any plans today ?
+	Free: Pattern=i hope, Pattern=today ?, Pattern=do you, Pattern=too !
+	Constrained: Pattern=too, Pattern=i, Pattern=you, Pattern=today
+Turn ID=6| A | Human 1 : oh no , which areas will be affected ?
+	Free: Pattern=will
+	Constrained: 
+Turn ID=7| B | Human 2 : same here i will definitely take the weather into account 😅 nice chat though
+	Free: Pattern=same here, Pattern=nice, Pattern=will, Pattern=i, Pattern=the weather
+	Constrained: Pattern=weather
+Turn ID=8| A | Human 1 : uh oh , i'd better not to plan for bbq then instead just enjoying playing board games inside 🙂
+	Free: Pattern=just, Pattern=instead, Pattern=then, Pattern=for, Pattern=better, Pattern=to, Pattern=playing, Pattern=games inside
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm just playing games inside too today , nice weather for that instead then ! 😊
+	Free: Pattern=just, Pattern=instead, Pattern=too, Pattern=i'm, Pattern=that, Pattern=weather, Pattern=then, Pattern=today, Pattern=nice, Pattern=for, Pattern=playing, Pattern=games inside
+	Constrained: 
+Turn ID=10| A | Human 1 : yea , you'd better check . where do you live ?
+	Free: Pattern=yea , you'd better check, Pattern=do you, Pattern=where, Pattern=live
+	Constrained: Pattern=you, Pattern=better
+Turn ID=11| B | Human 2 : yea , you'd better check the weather for where i live too 😅 nice chat though ! <|im_end|
+	Free: Pattern=too, Pattern=live, Pattern=where, Pattern=the weather, Pattern=nice, Pattern=for, Pattern=yea , you'd better check, Pattern=i
+	Constrained: Pattern=weather, Pattern=better
+Turn ID=12| A | Human 1 : gotcha . anything you love about where you live ?
+	Free: Pattern=about where, Pattern=you, Pattern=live
+	Constrained: Pattern=where, Pattern=about
+Turn ID=13| B | Human 2 : i'm justa ia , don't have personal experiences or feelings about where i live 😅 nice chat though ! <
+	Free: Pattern=nice, Pattern=live, Pattern=i'm, Pattern=i, Pattern=about where
+	Constrained: Pattern=where, Pattern=about
+Turn ID=14| A | Human 1 : nice ! i'd love to come visit that area some times
+	Free: Pattern=that, Pattern=to, Pattern=nice
+	Constrained: 

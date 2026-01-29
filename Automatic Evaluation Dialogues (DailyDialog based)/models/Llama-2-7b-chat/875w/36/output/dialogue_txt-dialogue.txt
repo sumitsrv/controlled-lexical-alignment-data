@@ -1,0 +1,55 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] . this _is_ a pleasant surprise . 
+A|2| Human 1: haha ... _thanks_ ! how _did_ _you_ _like the gift_ ? 
+B|3| Human 2: _i_ [did] not [like the gift] , and _i_ cannot express [thanks] or any other emotion . i'm just an ai designed _to_ assist with 
+A|4| Human 1: hope _you_ [like] _it_ ! morning [is] good . busy finishing up stuff before [the] holidays . 
+B|5| Human 2: _i_ cannot [like] or dislike [the gift] , or express any sentiment towards [it] . i'm just an ai designed _to_ assist with</|im 
+A|6| Human 1: _yes_ 
+B|7| Human 2: [yes] , you're right . my apologies _for the_ confusion earlier . let me know if [you] need anything else ! </s><s> ��� 
+A|8| Human 1: _hawaii_ ... looking forward [to] _warm beaches_ . 
+B|9| Human 2: [yes] , [hawaii] [is] a beautiful place with [warm beaches] and a tropical climate . it's a popular destination _for_ vacations and relaxation . 
+A|10| Human 1: mauii ... hope [i] [like] [it] too . never been there before . 
+B|11| Human 2: [yes] , maui [is] a beautiful island with stunning [beaches] , lush rainforests , and a vibrant culture . it's 
+A|12| Human 1: awesome ! [thanks] [for the] tip . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi . this is a pleasant surprise .
+	Free: Pattern=is, Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : haha ... thanks ! how did you like the gift ?
+	Free: Pattern=like the gift, Pattern=thanks, Pattern=did, Pattern=you
+	Constrained: Pattern=the gift, Pattern=like, Pattern=the
+Turn ID=3| B | Human 2 : i did not like the gift , and i cannot express thanks or any other emotion . i'm just an ai designed to assist with
+	Free: Pattern=thanks, Pattern=like the gift, Pattern=did, Pattern=i, Pattern=to
+	Constrained: Pattern=the gift, Pattern=like, Pattern=the
+Turn ID=4| A | Human 1 : hope you like it ! morning is good . busy finishing up stuff before the holidays .
+	Free: Pattern=you, Pattern=it, Pattern=is, Pattern=like, Pattern=the
+	Constrained: 
+Turn ID=5| B | Human 2 : i cannot like or dislike the gift , or express any sentiment towards it . i'm just an ai designed to assist with</|im
+	Free: Pattern=the gift, Pattern=it, Pattern=i, Pattern=like, Pattern=to
+	Constrained: Pattern=the
+Turn ID=6| A | Human 1 : yes
+	Free: Pattern=yes
+	Constrained: 
+Turn ID=7| B | Human 2 : yes , you're right . my apologies for the confusion earlier . let me know if you need anything else ! </s><s> ���
+	Free: Pattern=for the, Pattern=you, Pattern=yes
+	Constrained: Pattern=for, Pattern=the
+Turn ID=8| A | Human 1 : hawaii ... looking forward to warm beaches .
+	Free: Pattern=warm beaches, Pattern=to, Pattern=hawaii
+	Constrained: Pattern=beaches
+Turn ID=9| B | Human 2 : yes , hawaii is a beautiful place with warm beaches and a tropical climate . it's a popular destination for vacations and relaxation .
+	Free: Pattern=yes, Pattern=warm beaches, Pattern=is, Pattern=hawaii, Pattern=for
+	Constrained: Pattern=beaches
+Turn ID=10| A | Human 1 : mauii ... hope i like it too . never been there before .
+	Free: Pattern=like, Pattern=it, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : yes , maui is a beautiful island with stunning beaches , lush rainforests , and a vibrant culture . it's
+	Free: Pattern=beaches, Pattern=is, Pattern=yes
+	Constrained: 
+Turn ID=12| A | Human 1 : awesome ! thanks for the tip .
+	Free: Pattern=for the, Pattern=thanks
+	Constrained: Pattern=for, Pattern=the

@@ -1,0 +1,87 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: how's _it_ going ? 
+A|2| Human 1: _i'm_ so _sleepy today_ ! 
+B|3| Human 2: u jamesyw _is_ awake !!! [i'm] [sleepy today] 
+A|4| Human 1: yeah _was working all night_ on _a_ homework 
+B|5| Human 2: _it [was_ working all night] _i_ _thought_ , [today] [was] [a] good [night] . 
+A|6| Human 1: _biology_ . _i'm gonna be a doc_ _someday_ ha 
+B|7| Human 2: _what_ [was] your job title _for_ [biology] [i'm gonna be a doc] [today] 
+A|8| Human 1: no _high _school_ actually_ haha 
+B|9| Human 2: _it was_ [high school] [biology] , [i'm gonna be a] grad student later _this_ year ! 
+A|10| Human 1: [i] wanna _be a brain surgeon_ !! 
+B|11| Human 2: my [school actually] started doing _something_ similar _to_ _this_ [i'm gonna [be a] brain surgeon] [someday] _and_ _this_ _is_ [a] very common thing . 
+A|12| Human 1: kind _of_ [i] _think_ 
+B|13| Human 2: it's _an_ extremely common thing . 
+A|14| Human 1: [is] _that_ _something you can practice_ ? 
+B|15| Human 2: it's [something you can practice] _with_ [that] [i'm] going _to be_ doing tomorrow . it's [a] common saying 
+A|16| Human 1: [i] honestly [thought] [it was] _one of_ those things [you] _have_ [to be] _born with_ ... not [that] [you] shouldn't try though ! 
+B|17| Human 2: [i] [have] [that] problem [with] [one of] my [high school] girls . they [think] [i] [was] [born with] _the_ [brain] in _the_ shape [of] [something] . 
+A|18| Human 1: maybe its [a] little _too_ early [to] even [be] thinking about [this] . just aim [for] _med school_ [and] enjoy [the] journey ! 
+B|19| Human 2: [i] [have] [this] [too] [the] [med school] 
+A|20| Human 1: [what] other subjects do [you] enjoy ? try [to] keep [an] open mind ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : how's it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm so sleepy today !
+	Free: Pattern=sleepy today, Pattern=i'm
+	Constrained: Pattern=today
+Turn ID=3| B | Human 2 : u jamesyw is awake !!! i'm sleepy today
+	Free: Pattern=sleepy today, Pattern=i'm, Pattern=is
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : yeah was working all night on a homework
+	Free: Pattern=was working all night, Pattern=a
+	Constrained: Pattern=night, Pattern=was
+Turn ID=5| B | Human 2 : it was working all night i thought , today was a good night .
+	Free: Pattern=it was, Pattern=was working all night, Pattern=night, Pattern=i, Pattern=thought, Pattern=was, Pattern=today, Pattern=a
+	Constrained: Pattern=it, Pattern=night, Pattern=was
+Turn ID=6| A | Human 1 : biology . i'm gonna be a doc someday ha
+	Free: Pattern=i'm gonna be a doc, Pattern=biology, Pattern=someday
+	Constrained: Pattern=a, Pattern=i'm gonna be a, Pattern=be, Pattern=i'm
+Turn ID=7| B | Human 2 : what was your job title for biology i'm gonna be a doc today
+	Free: Pattern=biology, Pattern=what, Pattern=today, Pattern=for, Pattern=i'm gonna be a doc, Pattern=was
+	Constrained: Pattern=a, Pattern=i'm gonna be a, Pattern=be, Pattern=i'm
+Turn ID=8| A | Human 1 : no high school actually haha
+	Free: Pattern=high school, Pattern=school actually
+	Constrained: 
+Turn ID=9| B | Human 2 : it was high school biology , i'm gonna be a grad student later this year !
+	Free: Pattern=it was, Pattern=biology, Pattern=i'm gonna be a, Pattern=high school, Pattern=this
+	Constrained: Pattern=a, Pattern=it, Pattern=i'm, Pattern=be, Pattern=was
+Turn ID=10| A | Human 1 : i wanna be a brain surgeon !!
+	Free: Pattern=be a brain surgeon, Pattern=i
+	Constrained: Pattern=a, Pattern=brain, Pattern=be
+Turn ID=11| B | Human 2 : my school actually started doing something similar to this i'm gonna be a brain surgeon someday and this is a very common thing .
+	Free: Pattern=a, Pattern=and, Pattern=is, Pattern=this, Pattern=be a brain surgeon, Pattern=something, Pattern=i'm gonna be a, Pattern=school actually, Pattern=someday, Pattern=to
+	Constrained: Pattern=a, Pattern=brain, Pattern=be, Pattern=i'm
+Turn ID=12| A | Human 1 : kind of i think
+	Free: Pattern=i, Pattern=of, Pattern=think
+	Constrained: 
+Turn ID=13| B | Human 2 : it's an extremely common thing .
+	Free: Pattern=an
+	Constrained: 
+Turn ID=14| A | Human 1 : is that something you can practice ?
+	Free: Pattern=something you can practice, Pattern=that, Pattern=is
+	Constrained: Pattern=you, Pattern=something
+Turn ID=15| B | Human 2 : it's something you can practice with that i'm going to be doing tomorrow . it's a common saying
+	Free: Pattern=a, Pattern=i'm, Pattern=something you can practice, Pattern=to be, Pattern=with, Pattern=that
+	Constrained: Pattern=something, Pattern=be, Pattern=to, Pattern=you
+Turn ID=16| A | Human 1 : i honestly thought it was one of those things you have to be born with ... not that you shouldn't try though !
+	Free: Pattern=it was, Pattern=you, Pattern=have, Pattern=i, Pattern=thought, Pattern=born with, Pattern=to be, Pattern=one of, Pattern=that
+	Constrained: Pattern=of, Pattern=it, Pattern=be, Pattern=to, Pattern=was, Pattern=with
+Turn ID=17| B | Human 2 : i have that problem with one of my high school girls . they think i was born with the brain in the shape of something .
+	Free: Pattern=of, Pattern=have, Pattern=think, Pattern=high school, Pattern=i, Pattern=the, Pattern=brain, Pattern=one of, Pattern=something, Pattern=was, Pattern=born with, Pattern=with, Pattern=that
+	Constrained: Pattern=of, Pattern=with
+Turn ID=18| A | Human 1 : maybe its a little too early to even be thinking about this . just aim for med school and enjoy the journey !
+	Free: Pattern=a, Pattern=med school, Pattern=for, Pattern=be, Pattern=the, Pattern=to, Pattern=this, Pattern=and, Pattern=too
+	Constrained: 
+Turn ID=19| B | Human 2 : i have this too the med school
+	Free: Pattern=have, Pattern=med school, Pattern=too, Pattern=i, Pattern=the, Pattern=this
+	Constrained: 
+Turn ID=20| A | Human 1 : what other subjects do you enjoy ? try to keep an open mind !
+	Free: Pattern=an, Pattern=what, Pattern=you, Pattern=to
+	Constrained: 

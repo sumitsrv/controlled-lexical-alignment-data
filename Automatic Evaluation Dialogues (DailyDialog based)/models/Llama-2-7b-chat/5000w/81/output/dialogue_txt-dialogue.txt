@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great !_ _just_ came _back_ _from_ _a_ _ski trip_ 
+B|3| Human 2: _oh_ wow , _that_ sounds [great !] [ski trip] sounds like so much fun 😍 have _you_ tried _any_ new skiing spots recently 
+A|4| Human 1: _i_ slammed _onto_ _an_ _ice wall_ _, but_ _i_ _got better_ _and_ turning _after_ _that haha_ 
+B|5| Human 2: 😂 skiing _can_ be tough [but] [great] [that] _you_ [got better] [after] slamming [onto] [ice wall] [haha] ��� 
+A|6| Human 1: [oh] _cool_ ! do _you know_ [any] _french_ ? _i used to take french_ _in_ _high_ school _but basically forgot most of it_ 
+B|7| Human 2: 🤔 [french] is actually one [of] _the_ [most] [used] languages [after] english [and] spanish [but] [you know] [that] already [haha] [got] [any] 
+A|8| Human 1: _did you_ go anywhere else _in_ _montreal_ ? 
+B|9| Human 2: 🤔 [cool] you're [from] [montreal] [haha] [i used to take french] [but basically forgot most of it] [after] [high] school< 
+A|10| Human 1: [oh] [cool] ! _i've always wanted to attend the olympics_ as _a_ viewer [of] course [i] _watch_ _a_ lot [of] olympic figure skating on youtube 
+B|11| Human 2: [did you] [watch] [the olympics] [back] [in] 2018 [i've always wanted to attend] [but] never [got] [the] chance<|im_end| 
+A|12| Human 1: barely _i don't think_ [i] [can] , [in] conscience , _call_ [it] [that] [i] kind [of] _just pull_ _myself_ _along_ [the] _sides_ 
+B|13| Human 2: 😂 [i've always wanted to attend the olympics] [, but] can't [call] [myself] [that haha] [just pull] [along] [sides] � 
+A|14| Human 1: are [you] good at _<redacted_term>_ ? 
+B|15| Human 2: [i don't think] that's [an] appropriate or respectful term [<redacted_term>] is [a] slur [used to] 
+A|16| Human 1: okay ! [it] was nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=just, Pattern=a, Pattern=from, Pattern=great !, Pattern=ski trip, Pattern=back
+	Constrained: Pattern=great
+Turn ID=3| B | Human 2 : oh wow , that sounds great ! ski trip sounds like so much fun 😍 have you tried any new skiing spots recently
+	Free: Pattern=you, Pattern=any, Pattern=oh, Pattern=great !, Pattern=ski trip, Pattern=that
+	Constrained: Pattern=great
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=got better, Pattern=ice wall, Pattern=, but, Pattern=an, Pattern=and, Pattern=after, Pattern=i, Pattern=that haha, Pattern=onto
+	Constrained: Pattern=got, Pattern=but, Pattern=that, Pattern=haha
+Turn ID=5| B | Human 2 : 😂 skiing can be tough but great that you got better after slamming onto ice wall haha ���
+	Free: Pattern=got better, Pattern=ice wall, Pattern=can, Pattern=after, Pattern=haha, Pattern=onto, Pattern=you, Pattern=great, Pattern=that, Pattern=but
+	Constrained: Pattern=got
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=i used to take french, Pattern=you know, Pattern=but basically forgot most of it, Pattern=cool, Pattern=any, Pattern=oh, Pattern=high, Pattern=in, Pattern=french
+	Constrained: Pattern=used to, Pattern=of, Pattern=you, Pattern=it, Pattern=to, Pattern=but, Pattern=french, Pattern=i, Pattern=most, Pattern=used
+Turn ID=7| B | Human 2 : 🤔 french is actually one of the most used languages after english and spanish but you know that already haha got any
+	Free: Pattern=of, Pattern=you know, Pattern=any, Pattern=and, Pattern=after, Pattern=french, Pattern=haha, Pattern=the, Pattern=got, Pattern=most, Pattern=used, Pattern=that, Pattern=but
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you, Pattern=montreal, Pattern=in
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : 🤔 cool you're from montreal haha i used to take french but basically forgot most of it after high school<
+	Free: Pattern=i used to take french, Pattern=but basically forgot most of it, Pattern=high, Pattern=from, Pattern=after, Pattern=haha, Pattern=cool, Pattern=montreal
+	Constrained: Pattern=used to, Pattern=of, Pattern=it, Pattern=to, Pattern=but, Pattern=french, Pattern=i, Pattern=most, Pattern=used
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=of, Pattern=a, Pattern=cool, Pattern=oh, Pattern=i, Pattern=i've always wanted to attend the olympics, Pattern=watch
+	Constrained: Pattern=to, Pattern=the, Pattern=the olympics, Pattern=i've always wanted to attend
+Turn ID=11| B | Human 2 : did you watch the olympics back in 2018 i've always wanted to attend but never got the chance<|im_end|
+	Free: Pattern=did you, Pattern=the olympics, Pattern=in, Pattern=back, Pattern=the, Pattern=got, Pattern=watch, Pattern=i've always wanted to attend, Pattern=but
+	Constrained: Pattern=the, Pattern=to, Pattern=you
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=just pull, Pattern=it, Pattern=call, Pattern=in, Pattern=i, Pattern=the, Pattern=myself, Pattern=that, Pattern=sides, Pattern=i don't think, Pattern=along, Pattern=can
+	Constrained: Pattern=just, Pattern=i
+Turn ID=13| B | Human 2 : 😂 i've always wanted to attend the olympics , but can't call myself that haha just pull along sides �
+	Free: Pattern=, but, Pattern=sides, Pattern=just pull, Pattern=along, Pattern=call, Pattern=i've always wanted to attend the olympics, Pattern=that haha, Pattern=myself
+	Constrained: Pattern=just, Pattern=the olympics, Pattern=haha, Pattern=the, Pattern=to, Pattern=i've always wanted to attend, Pattern=that, Pattern=but
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=<redacted_term>, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : i don't think that's an appropriate or respectful term <redacted_term> is a slur used to
+	Free: Pattern=used to, Pattern=i don't think, Pattern=a, Pattern=an, Pattern=<redacted_term>
+	Constrained: Pattern=used, Pattern=i, Pattern=to
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=to, Pattern=it, Pattern=you
+	Constrained: 

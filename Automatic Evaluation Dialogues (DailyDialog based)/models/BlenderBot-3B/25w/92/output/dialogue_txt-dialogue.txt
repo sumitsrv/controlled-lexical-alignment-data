@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ _good_ ! just _went to the park_ _to_ enjoy _the_ sun . _you_ ? 
+B|3| Human 2: _it_ was a [good] _day_ ! _it_ was my birthday so _i_ had cake _and_ cake-shaped icecream _and_ [went to the park] with my friends 
+A|4| Human 1: _haha ,_ _beach_ season is coming ! _you_ need [to] look tan ! what _did_ _you_ _do_ indoors _all day_ ? 
+B|5| Human 2: _i_ took [the] dogs _outside_ , we ran around , _and_ ate lunch _. it_ was a [good] [day] . 
+A|6| Human 1: hahahaha , that's pretty funny . ever _thought_ _of_ bringing [your] _work_ things _to the beach_ ?? 
+B|7| Human 2: [haha ,] _that_ _sounds like_ a [good] [day] for a birthday , _i_ love [the beach] in [the] summer months . _i_ was _at_ [work] [all day] , _i_ 
+A|8| Human 1: hmm [i] see [. it] [sounds like] _you_ _work near the_ water already , _no_ ? _are you_ some _kind of_ fish researcher ? 
+B|9| Human 2: [are you] from [the] us ? [i] [work] in [the] office so [i] [did] _not_ go out [to the beach] . 
+A|10| Human 1: woah ! this is _very_ interesting ! [i] have honestly never heard _of_ such _kind of work_ . is [it] _dangerous_ [at] [all] ? 
+B|11| Human 2: i've [thought] about [it] _but_ [i] can't [do] _that_ [kind of [work] near the] ocean [. it] makes me too anxious ! 
+A|12| Human 1: hmmm , yes [i] have heard [that] . apparently _most mountain climbers_ fall [not] on [the] _most_ _dangerous_ routes _, but_ on [the] easier routes , _when_ their guard is down ! [sounds like] [the] same psychological phenomenon . 
+B|13| Human 2: [it] can be [dangerous] [, but] [the] benefits outweigh [the] risks . [the] [work] gives great benefits ! [it's] a [very] stable career . 
+A|14| Human 1: _i'm_ pretty amateur ! [i] [like] [to] climb [at] indoor climbing gyms [and] have never gone [outside] on [dangerous] routes actually . ever tried [it] yourself ? 
+B|15| Human 2: [no] [i'm] [not] from [the] us [, but] [most mountain climbers] [do] [not] use ropes [when] using [the] route ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=good, Pattern=you, Pattern=went to the park, Pattern=the, Pattern=to, Pattern=it's
+	Constrained: Pattern=to, Pattern=the
+Turn ID=3| B | Human 2 : it was a good day ! it was my birthday so i had cake and cake-shaped icecream and went to the park with my friends
+	Free: Pattern=good, Pattern=went to the park, Pattern=it, Pattern=and, Pattern=day, Pattern=i
+	Constrained: Pattern=to, Pattern=the
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=beach, Pattern=all day, Pattern=haha ,, Pattern=to, Pattern=do, Pattern=did
+	Constrained: Pattern=day, Pattern=all
+Turn ID=5| B | Human 2 : i took the dogs outside , we ran around , and ate lunch . it was a good day .
+	Free: Pattern=good, Pattern=and, Pattern=the, Pattern=. it, Pattern=day, Pattern=outside, Pattern=i
+	Constrained: Pattern=it
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=of, Pattern=work, Pattern=your, Pattern=thought, Pattern=to the beach
+	Constrained: Pattern=the beach, Pattern=to, Pattern=beach, Pattern=the
+Turn ID=7| B | Human 2 : haha , that sounds like a good day for a birthday , i love the beach in the summer months . i was at work all day , i
+	Free: Pattern=good, Pattern=at, Pattern=the beach, Pattern=work, Pattern=haha ,, Pattern=the, Pattern=that, Pattern=sounds like, Pattern=all day, Pattern=day, Pattern=i
+	Constrained: Pattern=beach, Pattern=day, Pattern=like, Pattern=the, Pattern=all
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=work near the, Pattern=kind of, Pattern=you, Pattern=no, Pattern=sounds like, Pattern=. it, Pattern=are you, Pattern=i
+	Constrained: Pattern=of, Pattern=you, Pattern=it, Pattern=work, Pattern=like, Pattern=the
+Turn ID=9| B | Human 2 : are you from the us ? i work in the office so i did not go out to the beach .
+	Free: Pattern=did, Pattern=work, Pattern=the, Pattern=to the beach, Pattern=not, Pattern=are you, Pattern=i
+	Constrained: Pattern=you, Pattern=beach, Pattern=the beach, Pattern=the, Pattern=to
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=of, Pattern=all, Pattern=it, Pattern=kind of work, Pattern=dangerous, Pattern=at, Pattern=very, Pattern=i
+	Constrained: Pattern=kind of, Pattern=of, Pattern=work
+Turn ID=11| B | Human 2 : i've thought about it but i can't do that kind of work near the ocean . it makes me too anxious !
+	Free: Pattern=work near the, Pattern=do, Pattern=i, Pattern=thought, Pattern=. it, Pattern=it, Pattern=kind of work, Pattern=that, Pattern=but
+	Constrained: Pattern=of, Pattern=kind of, Pattern=it, Pattern=work, Pattern=the
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=, but, Pattern=most mountain climbers, Pattern=sounds like, Pattern=dangerous, Pattern=i, Pattern=most, Pattern=the, Pattern=when, Pattern=that, Pattern=not
+	Constrained: Pattern=but, Pattern=most, Pattern=like
+Turn ID=13| B | Human 2 : it can be dangerous , but the benefits outweigh the risks . the work gives great benefits ! it's a very stable career .
+	Free: Pattern=, but, Pattern=it, Pattern=dangerous, Pattern=work, Pattern=very, Pattern=the, Pattern=it's
+	Constrained: Pattern=but
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=i'm, Pattern=like, Pattern=to, Pattern=it, Pattern=and, Pattern=dangerous, Pattern=at, Pattern=outside, Pattern=i
+	Constrained: 
+Turn ID=15| B | Human 2 : no i'm not from the us , but most mountain climbers do not use ropes when using the route !
+	Free: Pattern=, but, Pattern=do, Pattern=i'm, Pattern=the, Pattern=when, Pattern=not, Pattern=no, Pattern=most mountain climbers
+	Constrained: Pattern=but, Pattern=most

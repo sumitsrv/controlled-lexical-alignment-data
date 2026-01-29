@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: _how's_ _your_ day _going ?_ 
+B|3| Human 2: _i_ know _a_ bunch _of_ [your] friends . [how's] _it_ [going ?] 
+A|4| Human 1: _i'm good _i'm_ good_ . what's getting you down ? 
+B|5| Human 2: no [i'm good] 
+A|6| Human 1: [i'm] thinking [of] _going _to_ visit_ my _family_ . how _about_ you ? 
+B|7| Human 2: [i'm good i'm] [going] home [to visit] [family] 
+A|8| Human 1: _they're_ in _new york_ . how _about_ yours ? 
+B|9| Human 2: [i'm good] _i_ think [about] [going _to] new york_ 
+A|10| Human 1: ahh what city ? _i've_ visited _india before ._ 
+B|11| Human 2: yeah [i've] met [india before .] [they're] [good] with me 
+A|12| Human 1: hyderabad ! _and bangalore_ ! great food in both cities ! is [it] still hot this time [of] _year_ ? 
+B|13| Human 2: nope [i'm] [india] [and bangalore] . 
+A|14| Human 1: yes . [i] _was_ actually _just there_ [a] few weeks ago _for thanksgiving_ [and] got [to] see _the_ first snow [of] _the_ season ! ever been [to new york] ? 
+B|15| Human 2: [i'm] from [india] [and] [was] [just there] [for thanksgiving] [the] other [year] ... [new york] [i] think ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going ?, Pattern=your, Pattern=how's
+	Constrained: Pattern=going
+Turn ID=3| B | Human 2 : i know a bunch of your friends . how's it going ?
+	Free: Pattern=of, Pattern=a, Pattern=it, Pattern=going ?, Pattern=how's, Pattern=your, Pattern=i
+	Constrained: Pattern=going
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=i'm good i'm, Pattern=i'm good
+	Constrained: Pattern=i'm good, Pattern=good, Pattern=i'm
+Turn ID=5| B | Human 2 : no i'm good
+	Free: Pattern=i'm good
+	Constrained: Pattern=good, Pattern=i'm
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=going to, Pattern=of, Pattern=i'm, Pattern=to visit, Pattern=about, Pattern=family
+	Constrained: Pattern=going, Pattern=to
+Turn ID=7| B | Human 2 : i'm good i'm going home to visit family
+	Free: Pattern=i'm good i'm, Pattern=to visit, Pattern=going, Pattern=family
+	Constrained: Pattern=good, Pattern=i'm good, Pattern=to, Pattern=i'm
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=new york, Pattern=about, Pattern=they're
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm good i think about going to new york
+	Free: Pattern=going to, Pattern=to new york, Pattern=about, Pattern=i, Pattern=i'm good
+	Constrained: Pattern=good, Pattern=going, Pattern=new york, Pattern=i'm, Pattern=to
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=india before ., Pattern=i've
+	Constrained: Pattern=india
+Turn ID=11| B | Human 2 : yeah i've met india before . they're good with me
+	Free: Pattern=india before ., Pattern=good, Pattern=i've, Pattern=they're
+	Constrained: Pattern=india
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=and bangalore, Pattern=year, Pattern=of, Pattern=it
+	Constrained: Pattern=and
+Turn ID=13| B | Human 2 : nope i'm india and bangalore .
+	Free: Pattern=and bangalore, Pattern=i'm, Pattern=india
+	Constrained: Pattern=and
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=of, Pattern=a, Pattern=i, Pattern=the, Pattern=for thanksgiving, Pattern=to, Pattern=was, Pattern=just there, Pattern=and, Pattern=to new york
+	Constrained: Pattern=to, Pattern=there, Pattern=new york
+Turn ID=15| B | Human 2 : i'm from india and was just there for thanksgiving the other year ... new york i think ?
+	Free: Pattern=india, Pattern=new york, Pattern=and, Pattern=i'm, Pattern=i, Pattern=year, Pattern=the, Pattern=for thanksgiving, Pattern=was, Pattern=just there
+	Constrained: Pattern=there

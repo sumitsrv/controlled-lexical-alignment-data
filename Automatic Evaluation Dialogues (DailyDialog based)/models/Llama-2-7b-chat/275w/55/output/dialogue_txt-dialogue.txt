@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what are_ _you_ up _to_ ? 
+B|3| Human 2: glad [you] asked ! 😊 [what] can _i_ help [you] with today ? 
+A|4| Human 1: me ? _just_ chilling out at _work_ . [what] _is_ _code refactoring_ ? 
+B|5| Human 2: [code refactoring] [is] the process of improving the structure and organization of existing [code] without changing its external behavior . _it_ can help [you] make your [code] more 
+A|6| Human 1: _haha ,_ forget [it] . _what else_ _do you_ _like_ _to _do_ beside work ?_ 
+B|7| Human 2: oh _, you_ know ... [just] the usual stuff . 😴 [like] ... [what else] [is] there [to do] ? haha<|im_ 
+A|8| Human 1: _these_ _are_ _important_ _things_ [to do] in life 😉 
+B|9| Human 2: 🤔 [what are] some of [these] [things] [you] [do beside work ?] 
+A|10| Human 1: [what] _food_ _do you_ [like] [to] eat ? 
+B|11| Human 2: [haha ,] you're right ! [food] [is] [important] ! [what are] some of your favorite foods ? 
+A|12| Human 1: [like] szechuan _or_ hunan ? 🙂 
+B|13| Human 2: [what else] ? [like] kung pao chicken 🍗 [or] hot pot ? 
+A|14| Human 1: [i] [like] noodle soup [like] pho [or] ramen . [i] also [like] _beijing duck_ a lot ! 
+B|15| Human 2: oh wow , [beijing duck] [is] great ! _i love_ the crispy skin 😍 [do you] have any favorite restaur 
+A|16| Human 1: _i love <redacted_term>_ in _san mateo_ 
+B|17| Human 2: ah , [san mateo] 🏠 [i love <redacted_term>] too ! they have great [food] and atmosphere 
+A|18| Human 1: yes [, you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=what are, Pattern=to, Pattern=you
+	Constrained: Pattern=what, Pattern=are
+Turn ID=3| B | Human 2 : glad you asked ! 😊 what can i help you with today ?
+	Free: Pattern=what, Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=just, Pattern=what, Pattern=work, Pattern=is, Pattern=code refactoring
+	Constrained: Pattern=code
+Turn ID=5| B | Human 2 : code refactoring is the process of improving the structure and organization of existing code without changing its external behavior . it can help you make your code more
+	Free: Pattern=you, Pattern=code, Pattern=it, Pattern=is, Pattern=code refactoring
+	Constrained: Pattern=code
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=to do, Pattern=like, Pattern=haha ,, Pattern=do beside work ?, Pattern=what else, Pattern=it, Pattern=do you
+	Constrained: Pattern=what, Pattern=work, Pattern=to, Pattern=you
+Turn ID=7| B | Human 2 : oh , you know ... just the usual stuff . 😴 like ... what else is there to do ? haha<|im_
+	Free: Pattern=just, Pattern=to do, Pattern=, you, Pattern=is, Pattern=like, Pattern=what else
+	Constrained: Pattern=what, Pattern=to, Pattern=you
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=to do, Pattern=are, Pattern=these, Pattern=things, Pattern=important
+	Constrained: Pattern=to
+Turn ID=9| B | Human 2 : 🤔 what are some of these things you do beside work ?
+	Free: Pattern=you, Pattern=these, Pattern=things, Pattern=what are, Pattern=do beside work ?
+	Constrained: Pattern=what, Pattern=work, Pattern=are
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=what, Pattern=do you, Pattern=to, Pattern=food, Pattern=like
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : haha , you're right ! food is important ! what are some of your favorite foods ?
+	Free: Pattern=important, Pattern=is, Pattern=haha ,, Pattern=what are, Pattern=food
+	Constrained: Pattern=what, Pattern=are
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=or, Pattern=like
+	Constrained: 
+Turn ID=13| B | Human 2 : what else ? like kung pao chicken 🍗 or hot pot ?
+	Free: Pattern=what else, Pattern=or, Pattern=like
+	Constrained: Pattern=what
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=beijing duck, Pattern=or, Pattern=like, Pattern=i
+	Constrained: 
+Turn ID=15| B | Human 2 : oh wow , beijing duck is great ! i love the crispy skin 😍 do you have any favorite restaur
+	Free: Pattern=i love, Pattern=beijing duck, Pattern=do you, Pattern=is
+	Constrained: Pattern=you, Pattern=i
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=i love <redacted_term>, Pattern=san mateo
+	Constrained: Pattern=i, Pattern=i love
+Turn ID=17| B | Human 2 : ah , san mateo 🏠 i love <redacted_term> too ! they have great food and atmosphere
+	Free: Pattern=i love <redacted_term>, Pattern=san mateo, Pattern=food
+	Constrained: Pattern=i, Pattern=i love
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=, you
+	Constrained: Pattern=you

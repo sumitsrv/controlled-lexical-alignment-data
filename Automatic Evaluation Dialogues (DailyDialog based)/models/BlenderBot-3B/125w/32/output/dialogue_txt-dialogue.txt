@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _nice to_ meet _you_ ! _is_ _this_ your first _time_ _doing_ something like _this_ ? 
+B|3| Human 2: yes i've never _been_ [to] one before . _i_ had no idea it was [this] fun . 
+A|4| Human 1: _i _have been with_ the company for_ over _3 years_ . stick _with _the_ same_ _team_ _what_ _about_ _you_ ? 
+B|5| Human 2: yes . [i have been with] [this] [company for] [about] [the same] [time] _. what_ [team] are [you] on ? 
+A|6| Human 1: that sounds like _a_ perfect plan ! 
+B|7| Human 2: _we_ [have been with the company for] [about] [3 years] also . _we_ [have been] [doing] [a] lot of construction work but it will be [nice to] get [to] 
+A|8| Human 1: let's try something different [. what] [about] _<redacted_term>_ ? _do you_ always prefer lunch sync over regular meeting syncs ? 
+B|9| Human 2: my [team] [is] [<redacted_term>] _we_ are [a] research [company] 
+A|10| Human 1: [we] can check [the] menu _then_ decide :) 
+B|11| Human 2: are [you] in [the same] field [then] ? [what] kind of menu's [do you] make ? 
+A|12| Human 1: sure . see [you] [then] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=time, Pattern=you, Pattern=doing, Pattern=is, Pattern=nice to, Pattern=this
+	Constrained: Pattern=to
+Turn ID=3| B | Human 2 : yes i've never been to one before . i had no idea it was this fun .
+	Free: Pattern=been, Pattern=this, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=have been with the company for, Pattern=you, Pattern=with the, Pattern=what, Pattern=about, Pattern=3 years, Pattern=i have been with, Pattern=the same, Pattern=team
+	Constrained: Pattern=company, Pattern=with the, Pattern=have been, Pattern=i, Pattern=company for, Pattern=the, Pattern=been
+Turn ID=5| B | Human 2 : yes . i have been with this company for about the same time . what team are you on ?
+	Free: Pattern=time, Pattern=you, Pattern=about, Pattern=company for, Pattern=i have been with, Pattern=the same, Pattern=. what, Pattern=team, Pattern=this
+	Constrained: Pattern=company, Pattern=what, Pattern=have been, Pattern=i, Pattern=the, Pattern=been
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=a
+	Constrained: 
+Turn ID=7| B | Human 2 : we have been with the company for about 3 years also . we have been doing a lot of construction work but it will be nice to get to
+	Free: Pattern=have been with the company for, Pattern=a, Pattern=doing, Pattern=to, Pattern=about, Pattern=have been, Pattern=nice to, Pattern=we, Pattern=3 years
+	Constrained: Pattern=company, Pattern=with the, Pattern=have been, Pattern=company for, Pattern=the, Pattern=to, Pattern=been
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=. what, Pattern=do you, Pattern=about, Pattern=<redacted_term>
+	Constrained: Pattern=what, Pattern=you
+Turn ID=9| B | Human 2 : my team is <redacted_term> we are a research company
+	Free: Pattern=company, Pattern=a, Pattern=<redacted_term>, Pattern=is, Pattern=we, Pattern=team
+	Constrained: 
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=the, Pattern=we, Pattern=then
+	Constrained: 
+Turn ID=11| B | Human 2 : are you in the same field then ? what kind of menu's do you make ?
+	Free: Pattern=you, Pattern=what, Pattern=then, Pattern=do you, Pattern=the same
+	Constrained: Pattern=the, Pattern=you
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=then, Pattern=you
+	Constrained: 

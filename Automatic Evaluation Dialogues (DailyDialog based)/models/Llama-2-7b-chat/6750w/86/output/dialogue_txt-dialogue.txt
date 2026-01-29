@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: morning ! _how_ are _you_ ? 
+A|2| Human 1: _i_ am doing well . do [you] _have_ _any_ _plans_ _for the holidays ?_ 
+B|3| Human 2: i'm _just_ an ai _, _i_ don't have_ personal [plans] or [holidays] _, but_ i'm here _to_ help [you] _with_ [any] 
+A|4| Human 1: [i don't have] [any] _special_ [plans] . [i] _will_ [just] stay at home [with] my family _. how_ _come_ [you] [have] [to] _work_ on christmas ? 
+B|5| Human 2: [i don't have] [work] [holidays] or [any] personal days off . i'm [just] _a_ language model [with] 24/7 availability 
+A|6| Human 1: [i] see . _where did you go_ ? 
+B|7| Human 2: [where did you go] [for the holidays ?] 
+A|8| Human 1: _i have not_ . _i have_ _only_ _been_ [to] _uganda_ _in africa_ . 
+B|9| Human 2: [how] is [uganda] ? [i have not] [been] there yet [for the holidays] </s>t [will] [only] [work] [with] _a_ [special] passport<| 
+A|10| Human 1: [i] _was_ working on [a] _volunteer_ _project_ [to] _build_ [a] _school_ _and_ [i] traveled around [a] bit by myself after . it _was_ _more than_ 10 _years_ ago , so it _must have changed_ [a] _lot_ . 
+B|11| Human 2: [how] [was] [uganda] [and] [the] [school] [project] [volunteer] [work] [you] [did] [in africa] ? 
+A|12| Human 1: no , it _was using a non-profit organization_ . they do these kinds of _volunteer projects all over the world_ . 
+B|13| Human 2: [was using a non-profit organization] [volunteer projects all over the world] [and] [uganda] [school] [build] [project] [must have changed] [lot] [more than] [years] 
+A|14| Human 1: it [was] called _ijgd_ . it's [a] german [organization] [, but] they [have] local partners [all over the world] . [i] [was] living [in] germany at [the] time . 
+B|15| Human 2: [uganda] [must have] [been] an interesting [and] enriching experience [for] [you] [. how] [did] [the] [school] [project] [come] about ? [did] [ijgd] approach 
+A|16| Human 1: yes [, i] grew up [in] germany . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : morning ! how are you ?
+	Free: Pattern=you, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : i am doing well . do you have any plans for the holidays ?
+	Free: Pattern=plans, Pattern=you, Pattern=have, Pattern=for the holidays ?, Pattern=any, Pattern=i
+	Constrained: Pattern=for, Pattern=holidays, Pattern=for the holidays, Pattern=the
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have personal plans or holidays , but i'm here to help you with any
+	Free: Pattern=holidays, Pattern=plans, Pattern=just, Pattern=any, Pattern=, i, Pattern=to, Pattern=you, Pattern=, but, Pattern=i don't have, Pattern=with
+	Constrained: Pattern=have, Pattern=i
+Turn ID=4| A | Human 1 : i don't have any special plans . i will just stay at home with my family . how come you have to work on christmas ?
+	Free: Pattern=plans, Pattern=you, Pattern=come, Pattern=any, Pattern=. how, Pattern=will, Pattern=work, Pattern=i, Pattern=to, Pattern=special, Pattern=just, Pattern=have, Pattern=i don't have, Pattern=with
+	Constrained: Pattern=have, Pattern=i, Pattern=how
+Turn ID=5| B | Human 2 : i don't have work holidays or any personal days off . i'm just a language model with 24/7 availability
+	Free: Pattern=holidays, Pattern=just, Pattern=a, Pattern=any, Pattern=work, Pattern=i don't have, Pattern=with
+	Constrained: Pattern=have, Pattern=i
+Turn ID=6| A | Human 1 : i see . where did you go ?
+	Free: Pattern=where did you go, Pattern=i
+	Constrained: Pattern=you, Pattern=did
+Turn ID=7| B | Human 2 : where did you go for the holidays ?
+	Free: Pattern=where did you go, Pattern=for the holidays ?
+	Constrained: Pattern=holidays, Pattern=you, Pattern=did, Pattern=the, Pattern=for the holidays, Pattern=for
+Turn ID=8| A | Human 1 : i have not . i have only been to uganda in africa .
+	Free: Pattern=only, Pattern=in africa, Pattern=i have not, Pattern=uganda, Pattern=to, Pattern=been, Pattern=i have
+	Constrained: Pattern=i, Pattern=i have, Pattern=in, Pattern=have
+Turn ID=9| B | Human 2 : how is uganda ? i have not been there yet for the holidays </s>t will only work with a special passport<|
+	Free: Pattern=only, Pattern=a, Pattern=for the holidays, Pattern=uganda, Pattern=will, Pattern=work, Pattern=with, Pattern=how, Pattern=i have not, Pattern=been, Pattern=special
+	Constrained: Pattern=holidays, Pattern=have, Pattern=for, Pattern=i, Pattern=the, Pattern=i have
+Turn ID=10| A | Human 1 : i was working on a volunteer project to build a school and i traveled around a bit by myself after . it was more than 10 years ago , so it must have changed a lot .
+	Free: Pattern=a, Pattern=years, Pattern=i, Pattern=lot, Pattern=to, Pattern=was, Pattern=and, Pattern=volunteer, Pattern=must have changed, Pattern=build, Pattern=more than, Pattern=project, Pattern=school
+	Constrained: Pattern=have, Pattern=must have
+Turn ID=11| B | Human 2 : how was uganda and the school project volunteer work you did in africa ?
+	Free: Pattern=you, Pattern=in africa, Pattern=did, Pattern=how, Pattern=uganda, Pattern=work, Pattern=the, Pattern=was, Pattern=and, Pattern=volunteer, Pattern=project, Pattern=school
+	Constrained: Pattern=in
+Turn ID=12| A | Human 1 : no , it was using a non-profit organization . they do these kinds of volunteer projects all over the world .
+	Free: Pattern=volunteer projects all over the world, Pattern=was using a non-profit organization
+	Constrained: Pattern=organization, Pattern=a, Pattern=volunteer, Pattern=all over the world, Pattern=the, Pattern=was
+Turn ID=13| B | Human 2 : was using a non-profit organization volunteer projects all over the world and uganda school build project must have changed lot more than years
+	Free: Pattern=volunteer projects all over the world, Pattern=was using a non-profit organization, Pattern=years, Pattern=and, Pattern=uganda, Pattern=lot, Pattern=must have changed, Pattern=build, Pattern=more than, Pattern=project, Pattern=school
+	Constrained: Pattern=organization, Pattern=have, Pattern=a, Pattern=volunteer, Pattern=must have, Pattern=all over the world, Pattern=the, Pattern=was
+Turn ID=14| A | Human 1 : it was called ijgd . it's a german organization , but they have local partners all over the world . i was living in germany at the time .
+	Free: Pattern=organization, Pattern=, but, Pattern=have, Pattern=a, Pattern=all over the world, Pattern=in, Pattern=i, Pattern=the, Pattern=was, Pattern=ijgd
+	Constrained: Pattern=the
+Turn ID=15| B | Human 2 : uganda must have been an interesting and enriching experience for you . how did the school project come about ? did ijgd approach
+	Free: Pattern=you, Pattern=did, Pattern=come, Pattern=for, Pattern=and, Pattern=must have, Pattern=the, Pattern=been, Pattern=ijgd, Pattern=. how, Pattern=uganda, Pattern=project, Pattern=school
+	Constrained: Pattern=have, Pattern=how
+Turn ID=16| A | Human 1 : yes , i grew up in germany .
+	Free: Pattern=, i, Pattern=in
+	Constrained: Pattern=i

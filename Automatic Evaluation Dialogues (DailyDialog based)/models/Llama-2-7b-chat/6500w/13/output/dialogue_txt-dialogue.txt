@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i_ saw "the parasite . " ever heard _of_ it ? 
+B|3| Human 2: _oh_ , _that_ one ! yes , it's _a_ _great_ film . _the_ social commentary _is_ _really_ compelling , _and_ _the_ acting _is_ top- 
+A|4| Human 1: my friend wanted _to see_ it . it _has_ [great] reviews on imdb [and] rotten tomatoes ! _what_ _did you_ _do_ _last weekend ?_ 
+B|5| Human 2: [last weekend] _was_ [great] ! [i] went [to see] _a_ concert [and] [did] some shopping with friends . _the_ concert _was a_ lot [of] fun<| 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: [the mandalorian] [and] star wars _are_ [the] best ! [did you] [see] _that_ [last weekend ?] [what] [do] [you] recommend ? <|im_ 
+A|8| Human 1: _lol_ _are you_ [a] big _marvel_ fan ? 
+B|9| Human 2: [marvel] [and] [the mandalorian] ? [are you] sure ? [lol] [what] about [the] witcher ? have [you] _seen_ _that_ ? <|im 
+A|10| Human 1: i've only [seen] _spiderman_ . honestly it [was a] little _too_ scary [and] so [i] _don't_ _think_ _i can_ bring _myself_ [to] _watch_ [the] _other_ _marvel movies_ ! _haha_ 
+B|11| Human 2: [lol] [i can] [see] [myself] rewatching [the mandalorian] [and] [spiderman] [movies] 100 times [haha] what's 
+A|12| Human 1: [oh] [really] ? [to] be _honest_ _i think_ _the actor_ [is] not [that] _good looking_ , so not so surprising ! [haha] 
+B|13| Human 2: [haha] [i think] you've [seen] [too] many [movies] [lol] [don't] [watch] [spiderman] [the actor] [has] [really] [good looking] [and] [honest] 
+A|14| Human 1: who [is] _loki_ ? i've never heard [that] _name_ before 
+B|15| Human 2: [loki] [is] [the] [name] [of] [the actor] [that] plays thor's brother in [marvel movies] [i think] [you] will [really] enjoy [spiderman] [and] [other] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=movies, Pattern=you, Pattern=seen
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=last weekend, Pattern=i, Pattern=of
+	Constrained: 
+Turn ID=3| B | Human 2 : oh , that one ! yes , it's a great film . the social commentary is really compelling , and the acting is top-
+	Free: Pattern=great, Pattern=a, Pattern=is, Pattern=really, Pattern=the, Pattern=that, Pattern=and, Pattern=oh
+	Constrained: 
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=last weekend ?, Pattern=to see, Pattern=great, Pattern=did you, Pattern=what, Pattern=do, Pattern=and, Pattern=has
+	Constrained: Pattern=you, Pattern=did, Pattern=see, Pattern=last weekend, Pattern=to
+Turn ID=5| B | Human 2 : last weekend was great ! i went to see a concert and did some shopping with friends . the concert was a lot of fun<|
+	Free: Pattern=of, Pattern=to see, Pattern=great, Pattern=and, Pattern=was a, Pattern=i, Pattern=the, Pattern=last weekend, Pattern=was, Pattern=did, Pattern=a
+	Constrained: Pattern=a, Pattern=to, Pattern=was, Pattern=see
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : the mandalorian and star wars are the best ! did you see that last weekend ? what do you recommend ? <|im_
+	Free: Pattern=last weekend ?, Pattern=you, Pattern=did you, Pattern=what, Pattern=do, Pattern=and, Pattern=are, Pattern=the mandalorian, Pattern=the, Pattern=see, Pattern=that
+	Constrained: Pattern=last weekend, Pattern=the, Pattern=you, Pattern=did
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=are you, Pattern=lol, Pattern=marvel, Pattern=a
+	Constrained: Pattern=are, Pattern=you
+Turn ID=9| B | Human 2 : marvel and the mandalorian ? are you sure ? lol what about the witcher ? have you seen that ? <|im
+	Free: Pattern=lol, Pattern=you, Pattern=what, Pattern=and, Pattern=the mandalorian, Pattern=marvel, Pattern=are you, Pattern=the, Pattern=seen, Pattern=that
+	Constrained: Pattern=are, Pattern=the, Pattern=you
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=think, Pattern=i, Pattern=haha, Pattern=the, Pattern=don't, Pattern=spiderman, Pattern=to, Pattern=seen, Pattern=marvel movies, Pattern=watch, Pattern=and, Pattern=too, Pattern=was a, Pattern=other, Pattern=myself, Pattern=i can
+	Constrained: Pattern=a, Pattern=marvel, Pattern=i, Pattern=was, Pattern=movies
+Turn ID=11| B | Human 2 : lol i can see myself rewatching the mandalorian and spiderman movies 100 times haha what's
+	Free: Pattern=lol, Pattern=and, Pattern=the mandalorian, Pattern=haha, Pattern=see, Pattern=spiderman, Pattern=movies, Pattern=myself, Pattern=i can
+	Constrained: Pattern=the, Pattern=i
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=honest, Pattern=is, Pattern=to, Pattern=the actor, Pattern=that, Pattern=i think, Pattern=oh, Pattern=good looking, Pattern=haha, Pattern=really
+	Constrained: Pattern=good, Pattern=i, Pattern=think, Pattern=the
+Turn ID=13| B | Human 2 : haha i think you've seen too many movies lol don't watch spiderman the actor has really good looking and honest
+	Free: Pattern=lol, Pattern=honest, Pattern=don't, Pattern=spiderman, Pattern=i think, Pattern=watch, Pattern=and, Pattern=good looking, Pattern=has, Pattern=too, Pattern=haha, Pattern=really, Pattern=movies, Pattern=seen, Pattern=the actor
+	Constrained: Pattern=good, Pattern=i, Pattern=think, Pattern=the
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=that, Pattern=loki, Pattern=is, Pattern=name
+	Constrained: 
+Turn ID=15| B | Human 2 : loki is the name of the actor that plays thor's brother in marvel movies i think you will really enjoy spiderman and other
+	Free: Pattern=of, Pattern=you, Pattern=name, Pattern=and, Pattern=other, Pattern=is, Pattern=really, Pattern=the, Pattern=spiderman, Pattern=the actor, Pattern=that, Pattern=marvel movies, Pattern=i think, Pattern=loki
+	Constrained: Pattern=think, Pattern=marvel, Pattern=i, Pattern=the, Pattern=movies

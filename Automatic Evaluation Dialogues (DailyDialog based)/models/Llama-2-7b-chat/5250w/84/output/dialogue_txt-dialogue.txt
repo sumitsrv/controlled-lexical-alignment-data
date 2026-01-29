@@ -1,0 +1,55 @@
+A|0| Human 1: hi , _can_ _you_ _recommend some_ _good_ _netflix_ _shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: of course ! _what_ type of [shows] are [you] interested in ? we [can] [recommend some] popular _and_ highly-rated [shows] _based_ on your preferences<| 
+A|3| Human 1: not [a lot] ! but [i] preparing _for_ _a good_ vacation _season_ 🙂 [what] _is_ [white collar] about ? 
+B|4| Human 2: [white collar] [is] [a] crime drama tv _series_ that follows the story of neal caffrey , [a] [white collar] criminal who has 8 months 
+A|5| Human 1: hehe ! _sounds_ very _interesting_ 🙂 [i] only see [shows] belonging to few genre's .. _like_ easy going _light comedy_ , or phychological _thrillers_ 🙂 _also_ [some] _manga_ [based] [series] _like_ _one punch man !_ _love it !_ 
+B|6| Human 2: ah , [interesting] ! 🙂 well , [white collar] [is] [a good] choice [for] [light comedy] _and_ [thrillers] . [also] [sounds] [like] [you] 
+A|7| Human 1: which _anime_ [do you] _follow_ ? 
+B|8| Human 2: _oh_ wow ! you're [a] [manga] [anime] fan ! 😍 [love] [one punch man !] [also] [follow] dragon 
+A|9| Human 1: _have_ [you] _seen_ _rick and morty_ ? 
+B|10| Human 2: [rick and morty] 😂 you'll [love it !] it's [like] an adult version of [manga] ! [lot] of [comedy] [and] 
+A|11| Human 1: [oh] _nice_ ! [i] heard _its_ latest _season arrived_ _last_ _month_ . [i] _have_ watched all previous seasons . _its_ [a] total _mind_ bender 🙂 
+B|12| Human 2: [you] [have] [seen] boku no pico ? [its] [also] [nice] [anime] [and] [comedy] genre . totaly [mind] blowing . [last] [season arrived] [month] ago 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=good, Pattern=you, Pattern=netflix, Pattern=shows, Pattern=can, Pattern=recommend some
+	Constrained: Pattern=some
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=you, Pattern=a, Pattern=lot
+Turn ID=2| B | Human 2 : of course ! what type of shows are you interested in ? we can recommend some popular and highly-rated shows based on your preferences<|
+	Free: Pattern=you, Pattern=what, Pattern=based, Pattern=shows, Pattern=and, Pattern=can, Pattern=recommend some
+	Constrained: Pattern=some
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=what, Pattern=white collar, Pattern=a good, Pattern=for, Pattern=season, Pattern=a lot, Pattern=is, Pattern=i
+	Constrained: Pattern=good, Pattern=a, Pattern=lot
+Turn ID=4| B | Human 2 : white collar is a crime drama tv series that follows the story of neal caffrey , a white collar criminal who has 8 months
+	Free: Pattern=white collar, Pattern=series, Pattern=is, Pattern=a
+	Constrained: 
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=thrillers, Pattern=based, Pattern=shows, Pattern=love it !, Pattern=light comedy, Pattern=manga, Pattern=i, Pattern=interesting, Pattern=series, Pattern=some, Pattern=one punch man !, Pattern=also, Pattern=sounds, Pattern=like
+	Constrained: Pattern=love, Pattern=comedy
+Turn ID=6| B | Human 2 : ah , interesting ! 🙂 well , white collar is a good choice for light comedy and thrillers . also sounds like you
+	Free: Pattern=you, Pattern=thrillers, Pattern=white collar, Pattern=a good, Pattern=for, Pattern=and, Pattern=light comedy, Pattern=is, Pattern=interesting, Pattern=also, Pattern=sounds, Pattern=like
+	Constrained: Pattern=comedy, Pattern=good, Pattern=a
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=follow, Pattern=anime
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : oh wow ! you're a manga anime fan ! 😍 love one punch man ! also follow dragon
+	Free: Pattern=a, Pattern=oh, Pattern=one punch man !, Pattern=love, Pattern=manga, Pattern=also, Pattern=anime, Pattern=follow
+	Constrained: 
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=rick and morty, Pattern=you, Pattern=have, Pattern=seen
+	Constrained: Pattern=and
+Turn ID=10| B | Human 2 : rick and morty 😂 you'll love it ! it's like an adult version of manga ! lot of comedy and
+	Free: Pattern=love it !, Pattern=and, Pattern=comedy, Pattern=manga, Pattern=lot, Pattern=like, Pattern=rick and morty
+	Constrained: Pattern=love, Pattern=and
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=its, Pattern=mind, Pattern=have, Pattern=a, Pattern=nice, Pattern=i, Pattern=last, Pattern=month, Pattern=oh, Pattern=season arrived
+	Constrained: Pattern=season
+Turn ID=12| B | Human 2 : you have seen boku no pico ? its also nice anime and comedy genre . totaly mind blowing . last season arrived month ago
+	Free: Pattern=its, Pattern=have, Pattern=nice, Pattern=comedy, Pattern=also, Pattern=last, Pattern=month, Pattern=anime, Pattern=seen, Pattern=you, Pattern=mind, Pattern=and, Pattern=season arrived
+	Constrained: Pattern=season

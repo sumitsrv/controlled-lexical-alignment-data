@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: it's _good_ ! how is _your_ day ? 
+B|3| Human 2: i'm just an ai _, i_ don't have _a_ physical body or emotions , so _i_ don't have [good] or bad days 
+A|4| Human 1: _yes ,_ _the_ darkness _can be a_ bit depressing . this _weekend_ [i] went rock _climbing_ ! [it] was _great !_ how about _yourself_ ? 
+B|5| Human 2: that's [great !] [climbing] [can be a] [great] way _to_ challenge [yourself] _and_ build confidence _. it_ sounds _like_ _you_ had [a] _fun_ [weekend] . 
+A|6| Human 1: _oh nice !_ what _movie ?_ 
+B|7| Human 2: i'm just an ai _, i_ don't have personal preferences or opinions _, but_ [i] [can] suggest some movies _that_ have [good] clim 
+A|8| Human 1: _hahah yes ,_ _they all_ look _the_ same ! [i] saw [that] very same _movie_ over thanksgiving break . lots of twists [and] turns ! 
+B|9| Human 2: [hahah yes ,] [and] [they all] have [that] one famous line [that] everyone quotes ! what's [your] favorite [climbing] [movie ?] <|im_ 
+A|10| Human 1: hmm [good] question . evening runs [can be] [fun] [, but] [it] [can be a] little scary when it's dark out ! 
+B|11| Human 2: [oh nice !] what's [your] favorite outdoor activity ? 
+A|12| Human 1: [yes] ! _i've been to australia_ [. it] was very nice; [i] regret not [going] [to] _see the southern lights ._ me personally [, i] [like] _winter_ _. but_ i'd _prefer_ [it] [to] [be] more brief than [it] _actually_ is _here_ ... _where are you from originally ?_ 
+B|13| Human 2: i'm just an ai [, i] don't have [a] physical body , so [i] can't [actually] go [see the southern lights [.] but] 
+A|14| Human 1: ahh me _too !_ [you] should definitely try [to] visit _australia_ at least once ! 
+B|15| Human 2: [i've been to australia] [too !] [but] [i] [prefer] [the] [winter] season [here] in [the] us . [where are you from originally ?] <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=your, Pattern=good
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have a physical body or emotions , so i don't have good or bad days
+	Free: Pattern=, i, Pattern=a, Pattern=i, Pattern=good
+	Constrained: Pattern=i
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=yes ,, Pattern=it, Pattern=weekend, Pattern=great !, Pattern=i, Pattern=the, Pattern=yourself, Pattern=can be a, Pattern=climbing
+	Constrained: Pattern=a, Pattern=can be, Pattern=can, Pattern=be, Pattern=great, Pattern=yes
+Turn ID=5| B | Human 2 : that's great ! climbing can be a great way to challenge yourself and build confidence . it sounds like you had a fun weekend .
+	Free: Pattern=fun, Pattern=a, Pattern=and, Pattern=weekend, Pattern=great !, Pattern=like, Pattern=to, Pattern=yourself, Pattern=. it, Pattern=can be a, Pattern=climbing, Pattern=you, Pattern=great
+	Constrained: Pattern=great, Pattern=a, Pattern=can be, Pattern=it, Pattern=can, Pattern=be
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=oh nice !, Pattern=movie ?
+	Constrained: Pattern=movie
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or opinions , but i can suggest some movies that have good clim
+	Free: Pattern=good, Pattern=, but, Pattern=can, Pattern=i, Pattern=, i, Pattern=that
+	Constrained: Pattern=i, Pattern=but
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=movie, Pattern=and, Pattern=hahah yes ,, Pattern=they all, Pattern=i, Pattern=the, Pattern=that
+	Constrained: Pattern=yes ,, Pattern=yes
+Turn ID=9| B | Human 2 : hahah yes , and they all have that one famous line that everyone quotes ! what's your favorite climbing movie ? <|im_
+	Free: Pattern=movie ?, Pattern=and, Pattern=hahah yes ,, Pattern=they all, Pattern=your, Pattern=that, Pattern=climbing
+	Constrained: Pattern=yes ,, Pattern=yes, Pattern=movie
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=good, Pattern=fun, Pattern=, but, Pattern=can be, Pattern=it, Pattern=can be a
+	Constrained: Pattern=a, Pattern=can be, Pattern=can, Pattern=be, Pattern=but
+Turn ID=11| B | Human 2 : oh nice ! what's your favorite outdoor activity ?
+	Free: Pattern=oh nice !, Pattern=your
+	Constrained: 
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=yes, Pattern=going, Pattern=here, Pattern=actually, Pattern=it, Pattern=winter, Pattern=like, Pattern=, i, Pattern=to, Pattern=i've been to australia, Pattern=see the southern lights ., Pattern=prefer, Pattern=i, Pattern=. but, Pattern=be, Pattern=. it, Pattern=where are you from originally ?
+	Constrained: Pattern=you, Pattern=it, Pattern=i, Pattern=australia, Pattern=the, Pattern=to, Pattern=but
+Turn ID=13| B | Human 2 : i'm just an ai , i don't have a physical body , so i can't actually go see the southern lights . but
+	Free: Pattern=. but, Pattern=, i, Pattern=actually, Pattern=a, Pattern=see the southern lights ., Pattern=i
+	Constrained: Pattern=but, Pattern=i, Pattern=the
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=too !, Pattern=you, Pattern=to, Pattern=australia
+	Constrained: 
+Turn ID=15| B | Human 2 : i've been to australia too ! but i prefer the winter season here in the us . where are you from originally ? <|im_end
+	Free: Pattern=here, Pattern=winter, Pattern=the, Pattern=where are you from originally ?, Pattern=i've been to australia, Pattern=prefer, Pattern=i, Pattern=too !, Pattern=but
+	Constrained: Pattern=australia, Pattern=to, Pattern=you

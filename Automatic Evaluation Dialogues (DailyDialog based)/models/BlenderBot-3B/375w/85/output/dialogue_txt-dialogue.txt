@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! 
+A|2| Human 1: how's life ? 
+B|3| Human 2: its great ! how are _you ?_ _i_ hope _you_ are getting along well ! 
+A|4| Human 1: _lol_ _which cafe_ ? let me _guess_ . <redacted_term> ? 
+B|5| Human 2: [lol] , _i_ [guess] we will _have_ _to_ figure _that_ out when _the_ time comes ! _i_ am just glad _to_ be home , [which cafe] we should hit 
+A|6| Human 1: _what_ _is_ your favoriate _cuisine_ ? _my favorite_ _food_ _is chinese_ _. what about you ?_ 
+B|7| Human 2: _i_ love italian [food] , _i_ love [cafe] [which] offers meals with pasta , breads and such [. what about you ?] 
+A|8| Human 1: hmm _you _like_ spicy food_ . nice 
+B|9| Human 2: _i_ [like spicy food] ! [my favorite] thing [about] italy [is] their [cuisine] . 
+A|10| Human 1: [i] would recommend _hunan impression which_ _has_ very _good_ _hunan_ cruisine . _not sure_ if [you] [have] _tried_ it or _not_ 
+B|11| Human 2: [i] [have] never [tried] [hunan impression which] [is chinese] restaurant [has] [good] [food] [you like] 
+A|12| Human 1: _yeah_ of course [the] fun fact [is] [that] [the] owner of <redacted_term> _used to_ _run_ <redacted_term> 
+B|13| Human 2: [yeah] that's [the] one [that] [used to] be [run] by sir david letterman , right ? [not sure] [which] [is] [the] best , but [my favorite] 
+A|14| Human 1: same former owner ?? 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's life ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : its great ! how are you ? i hope you are getting along well !
+	Free: Pattern=you ?, Pattern=i, Pattern=you
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : lol which cafe ? let me guess . <redacted_term> ?
+	Free: Pattern=which cafe, Pattern=guess, Pattern=lol
+	Constrained: Pattern=which, Pattern=cafe
+Turn ID=5| B | Human 2 : lol , i guess we will have to figure that out when the time comes ! i am just glad to be home , which cafe we should hit
+	Free: Pattern=which cafe, Pattern=lol, Pattern=have, Pattern=i, Pattern=the, Pattern=guess, Pattern=to, Pattern=that
+	Constrained: Pattern=which, Pattern=cafe
+Turn ID=6| A | Human 1 : what is your favoriate cuisine ? my favorite food is chinese . what about you ?
+	Free: Pattern=my favorite, Pattern=is chinese, Pattern=is, Pattern=food, Pattern=. what about you ?, Pattern=what, Pattern=cuisine
+	Constrained: Pattern=you, Pattern=what, Pattern=about, Pattern=is, Pattern=you ?
+Turn ID=7| B | Human 2 : i love italian food , i love cafe which offers meals with pasta , breads and such . what about you ?
+	Free: Pattern=cafe, Pattern=i, Pattern=food, Pattern=which, Pattern=. what about you ?
+	Constrained: Pattern=what, Pattern=you, Pattern=you ?, Pattern=about
+Turn ID=8| A | Human 1 : hmm you like spicy food . nice
+	Free: Pattern=like spicy food, Pattern=you like
+	Constrained: Pattern=food, Pattern=you
+Turn ID=9| B | Human 2 : i like spicy food ! my favorite thing about italy is their cuisine .
+	Free: Pattern=cuisine, Pattern=my favorite, Pattern=about, Pattern=like spicy food, Pattern=is, Pattern=i
+	Constrained: Pattern=food
+Turn ID=10| A | Human 1 : i would recommend hunan impression which has very good hunan cruisine . not sure if you have tried it or not
+	Free: Pattern=good, Pattern=you, Pattern=have, Pattern=has, Pattern=not sure, Pattern=i, Pattern=hunan, Pattern=tried, Pattern=not, Pattern=hunan impression which
+	Constrained: Pattern=not, Pattern=which, Pattern=hunan
+Turn ID=11| B | Human 2 : i have never tried hunan impression which is chinese restaurant has good food you like
+	Free: Pattern=good, Pattern=have, Pattern=has, Pattern=is chinese, Pattern=i, Pattern=food, Pattern=tried, Pattern=you like, Pattern=hunan impression which
+	Constrained: Pattern=is, Pattern=which, Pattern=you, Pattern=hunan
+Turn ID=12| A | Human 1 : yeah of course the fun fact is that the owner of <redacted_term> used to run <redacted_term>
+	Free: Pattern=used to, Pattern=yeah, Pattern=run, Pattern=is, Pattern=the, Pattern=that
+	Constrained: Pattern=to
+Turn ID=13| B | Human 2 : yeah that's the one that used to be run by sir david letterman , right ? not sure which is the best , but my favorite
+	Free: Pattern=used to, Pattern=run, Pattern=not sure, Pattern=is, Pattern=the, Pattern=which, Pattern=that, Pattern=yeah, Pattern=my favorite
+	Constrained: Pattern=to, Pattern=not
+Turn ID=14| A | Human 1 : same former owner ?? 🙂
+	Free: 
+	Constrained: 

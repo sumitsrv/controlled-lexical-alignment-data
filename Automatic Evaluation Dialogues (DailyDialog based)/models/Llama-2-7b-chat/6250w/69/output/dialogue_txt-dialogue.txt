@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _how_ _was_ your _party_ last week ? 
+B|3| Human 2: i'm just an ai _and_ do _not_ _have_ personal experiences _or_ _party ._ [how] can _i_ help _you_ today ? <|im_end| 
+A|4| Human 1: _haha_ ... [you] ate turkeys' [or] [you] _like calling_ your bunch _turkey_ ? 
+B|5| Human 2: i'm just _a_ language model , _i_ don't _have_ personal preferences [or] [like calling] _any_ particular group _of_ people [turkey] . it's important 
+A|6| Human 1: _haha_ ... thought so ! but it _was funny eitherways_ 
+B|7| Human 2: [how] can _i_ assist [you] today ? _is_ there _a_ topic you'd [like] _to_ discuss [or] ask about ? </s>t [was funny eitherways] 
+A|8| Human 1: _did you_ _cook_ it at _home_ , [or] _got_ it _from outside_ ? 
+B|9| Human 2: [haha] , [you] [got] me there ! _as_ _a_ [home] [cook] , _i_ can assure [you] _that_ _my_ [turkey] [was] [from outside] 😂 
+A|10| Human 1: nice ... [i] always find it hard [to] fit _the_ [turkey] in [my] small oven . also , we _are not_ big [turkey] fans ... so we roll _with_ _thanksgiving with chicken_ 😉 
+B|11| Human 2: [got] [you] ! [thanksgiving with chicken] 🍗 _is_ _a_ great alternative . do _you have any fun_ traditions [or] recipes for 
+A|12| Human 1: we _played_ [a] lot [of] _fun games_ in our [party .] _did [you have any_ fun] _things_ [you] _did_ ? 
+B|13| Human 2: [fun games] [you] [played] [are not] [the] [things] [i] [like] o_0 
+A|14| Human 1: _pictionary_ [is] [fun] ! we [played] office tennis . in [that] we take paper balls [and] using writing pads [as] rackets , two _players_ [have] [to] work together [to] put [the] ball in [a] bucket kept at [a] distance . it [was] [a] lot [of] [fun] . 
+B|15| Human 2: [fun] [party] [games] [are] [the] best ! [did you have any] [turkey] [pictionary] [players] ? [that] would be [a] hoot ! <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was your party last week ?
+	Free: Pattern=party, Pattern=how, Pattern=was
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai and do not have personal experiences or party . how can i help you today ? <|im_end|
+	Free: Pattern=you, Pattern=how, Pattern=and, Pattern=i, Pattern=or, Pattern=not, Pattern=party ., Pattern=have
+	Constrained: Pattern=party
+Turn ID=4| A | Human 1 : haha ... you ate turkeys' or you like calling your bunch turkey ?
+	Free: Pattern=you, Pattern=turkey, Pattern=haha, Pattern=or, Pattern=like calling
+	Constrained: Pattern=like
+Turn ID=5| B | Human 2 : i'm just a language model , i don't have personal preferences or like calling any particular group of people turkey . it's important
+	Free: Pattern=of, Pattern=have, Pattern=a, Pattern=any, Pattern=turkey, Pattern=i, Pattern=or, Pattern=like calling
+	Constrained: Pattern=like
+Turn ID=6| A | Human 1 : haha ... thought so ! but it was funny eitherways
+	Free: Pattern=was funny eitherways, Pattern=haha
+	Constrained: Pattern=was
+Turn ID=7| B | Human 2 : how can i assist you today ? is there a topic you'd like to discuss or ask about ? </s>t was funny eitherways
+	Free: Pattern=you, Pattern=was funny eitherways, Pattern=a, Pattern=how, Pattern=like, Pattern=or, Pattern=to, Pattern=is, Pattern=i
+	Constrained: Pattern=was
+Turn ID=8| A | Human 1 : did you cook it at home , or got it from outside ?
+	Free: Pattern=did you, Pattern=cook, Pattern=or, Pattern=home, Pattern=from outside, Pattern=got
+	Constrained: Pattern=you, Pattern=did
+Turn ID=9| B | Human 2 : haha , you got me there ! as a home cook , i can assure you that my turkey was from outside 😂
+	Free: Pattern=you, Pattern=as, Pattern=a, Pattern=turkey, Pattern=haha, Pattern=was, Pattern=that, Pattern=cook, Pattern=i, Pattern=from outside, Pattern=got, Pattern=my, Pattern=home
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ... i always find it hard to fit the turkey in my small oven . also , we are not big turkey fans ... so we roll with thanksgiving with chicken 😉
+	Free: Pattern=are not, Pattern=turkey, Pattern=thanksgiving with chicken, Pattern=i, Pattern=the, Pattern=to, Pattern=my, Pattern=with
+	Constrained: Pattern=are, Pattern=not, Pattern=with
+Turn ID=11| B | Human 2 : got you ! thanksgiving with chicken 🍗 is a great alternative . do you have any fun traditions or recipes for
+	Free: Pattern=you have any fun, Pattern=you, Pattern=a, Pattern=thanksgiving with chicken, Pattern=is, Pattern=or, Pattern=got
+	Constrained: Pattern=fun, Pattern=you, Pattern=have, Pattern=any, Pattern=with
+Turn ID=12| A | Human 1 : we played a lot of fun games in our party . did you have any fun things you did ?
+	Free: Pattern=of, Pattern=you have any fun, Pattern=you, Pattern=party ., Pattern=fun games, Pattern=things, Pattern=did you have any, Pattern=played, Pattern=did, Pattern=a
+	Constrained: Pattern=fun, Pattern=did, Pattern=any, Pattern=party, Pattern=you, Pattern=games, Pattern=have, Pattern=did you
+Turn ID=13| B | Human 2 : fun games you played are not the things i like o_0
+	Free: Pattern=are not, Pattern=you, Pattern=fun games, Pattern=things, Pattern=i, Pattern=like, Pattern=the, Pattern=played
+	Constrained: Pattern=fun, Pattern=games, Pattern=are, Pattern=not
+Turn ID=14| A | Human 1 : pictionary is fun ! we played office tennis . in that we take paper balls and using writing pads as rackets , two players have to work together to put the ball in a bucket kept at a distance . it was a lot of fun .
+	Free: Pattern=fun, Pattern=a, Pattern=and, Pattern=pictionary, Pattern=is, Pattern=the, Pattern=played, Pattern=to, Pattern=was, Pattern=that, Pattern=players, Pattern=of, Pattern=as, Pattern=have
+	Constrained: 
+Turn ID=15| B | Human 2 : fun party games are the best ! did you have any turkey pictionary players ? that would be a hoot ! <|im_end
+	Free: Pattern=fun, Pattern=players, Pattern=games, Pattern=a, Pattern=are, Pattern=turkey, Pattern=did you have any, Pattern=the, Pattern=that, Pattern=party, Pattern=pictionary
+	Constrained: Pattern=you, Pattern=did, Pattern=any, Pattern=have, Pattern=did you

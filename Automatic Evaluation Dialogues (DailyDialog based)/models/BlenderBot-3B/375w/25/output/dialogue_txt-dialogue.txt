@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ _good_ . [how are you] ? ：） 
+B|3| Human 2: [i am] great , [are you] watching baseball ? 
+A|4| Human 1: [i am] _busy_ . a lot of _work_ _. what are you working on_ ? 
+B|5| Human 2: [i] [work] [on] the pyramids when i'm not [busy] [working on] ancient egyptian artifacts 
+A|6| Human 1: [i am] [working on] a _new_ _classifier_ . 
+B|7| Human 2: i'm [good] thank [you] , [are you working on] [new] classifiers _for_ the egyptian ruins ? 
+A|8| Human 1: a [new] _classifier_ [for] hate speech . which _research_ topic catches _your_ eyes _most_ ? 
+B|9| Human 2: [i] think [classifier] [research] is [most] interesting [for] sure . 
+A|10| Human 1: nice ! do [you] refer to [work] or anything else ? 
+B|11| Human 2: that is awesome [. what are you working on] [for] [your] [research] ? [i] [work] [on] [classifier] [research] , but i'm always in school . 
+A|12| Human 1: [you] [are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=i am, Pattern=good
+	Constrained: Pattern=are, Pattern=i, Pattern=you, Pattern=are you
+Turn ID=3| B | Human 2 : i am great , are you watching baseball ?
+	Free: Pattern=i am, Pattern=are you
+	Constrained: Pattern=are, Pattern=you, Pattern=i
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=. what are you working on, Pattern=i am, Pattern=work, Pattern=busy
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=on, Pattern=are you working on, Pattern=are you, Pattern=i
+Turn ID=5| B | Human 2 : i work on the pyramids when i'm not busy working on ancient egyptian artifacts
+	Free: Pattern=busy, Pattern=working on, Pattern=work, Pattern=i, Pattern=on
+	Constrained: Pattern=on
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=working on, Pattern=i am, Pattern=new, Pattern=classifier
+	Constrained: Pattern=on, Pattern=i
+Turn ID=7| B | Human 2 : i'm good thank you , are you working on new classifiers for the egyptian ruins ?
+	Free: Pattern=good, Pattern=new, Pattern=you, Pattern=for, Pattern=are you working on
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=are you, Pattern=on
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=new, Pattern=research, Pattern=for, Pattern=your, Pattern=classifier, Pattern=most
+	Constrained: 
+Turn ID=9| B | Human 2 : i think classifier research is most interesting for sure .
+	Free: Pattern=research, Pattern=for, Pattern=i, Pattern=classifier, Pattern=most
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=you, Pattern=work
+	Constrained: 
+Turn ID=11| B | Human 2 : that is awesome . what are you working on for your research ? i work on classifier research , but i'm always in school .
+	Free: Pattern=research, Pattern=work, Pattern=classifier, Pattern=on, Pattern=. what are you working on, Pattern=for, Pattern=your, Pattern=i
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=are you, Pattern=on, Pattern=are you working on
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=are, Pattern=you
+	Constrained: 

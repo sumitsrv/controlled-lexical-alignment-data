@@ -1,0 +1,55 @@
+A|0| Human 1: hi , can _you_ recommend some good _netflix_ _shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: of course ! _what_ type of [shows] are [you] interested in ? action , _comedy ,_ drama _, or_ something else ? </|im_end|><| 
+A|3| Human 1: not [a lot] ! but [i] preparing _for a_ good vacation _season_ 🙂 [what] _is_ [white collar] _about_ ? 
+B|4| Human 2: [white collar] [is] [a] crime drama _series_ [about] an fbi agent who teams up with [a] con artist _to_ solve [white collar] crimes . � 
+A|5| Human 1: hehe ! sounds very interesting 🙂 [i] only _see_ [shows] belonging [to] few genre's .. like easy going light [comedy [,] or] phychological thrillers 🙂 also some manga based [series] like _one punch man_ _! love_ it ! 
+B|6| Human 2: ah , [i] [see] ! well , [white collar] [is] definitely worth checking out if you're in the mood [for a] crime drama . it' 
+A|7| Human 1: which _anime_ [do you] _follow_ ? 
+B|8| Human 2: 😃 [i] [follow] [one punch man] , attack on titan , _and_ parasyte [! love] them ! ��� 
+A|9| Human 1: _have you seen_ _rick and morty_ ? 
+B|10| Human 2: 🤖 [rick and morty] [is] an amazing [anime] 😃 [i] [love] the dark humor [and] the complexity of the 
+A|11| Human 1: oh nice ! [i] heard _its_ _latest season_ arrived last month . [i] _have_ watched all previous seasons . _its a total_ mind bender 🙂 
+B|12| Human 2: [have you seen] the [latest season] of stranger things yet ? 🤔 [its a total] '80s nostalgic trip [and] [i] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=netflix, Pattern=you, Pattern=shows
+	Constrained: 
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=you, Pattern=a
+Turn ID=2| B | Human 2 : of course ! what type of shows are you interested in ? action , comedy , drama , or something else ? </|im_end|><|
+	Free: Pattern=you, Pattern=what, Pattern=shows, Pattern=, or, Pattern=comedy ,
+	Constrained: 
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=what, Pattern=white collar, Pattern=about, Pattern=season, Pattern=a lot, Pattern=for a, Pattern=is, Pattern=i
+	Constrained: Pattern=a
+Turn ID=4| B | Human 2 : white collar is a crime drama series about an fbi agent who teams up with a con artist to solve white collar crimes . �
+	Free: Pattern=about, Pattern=is, Pattern=to, Pattern=series, Pattern=white collar, Pattern=a
+	Constrained: 
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=shows, Pattern=one punch man, Pattern=i, Pattern=see, Pattern=series, Pattern=, or, Pattern=comedy ,, Pattern=! love, Pattern=to
+	Constrained: Pattern=love
+Turn ID=6| B | Human 2 : ah , i see ! well , white collar is definitely worth checking out if you're in the mood for a crime drama . it'
+	Free: Pattern=white collar, Pattern=see, Pattern=for a, Pattern=is, Pattern=i
+	Constrained: Pattern=a
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=anime, Pattern=follow
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : 😃 i follow one punch man , attack on titan , and parasyte ! love them ! ���
+	Free: Pattern=i, Pattern=! love, Pattern=follow, Pattern=and, Pattern=one punch man
+	Constrained: Pattern=love
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=have you seen, Pattern=rick and morty
+	Constrained: Pattern=have, Pattern=and, Pattern=you
+Turn ID=10| B | Human 2 : 🤖 rick and morty is an amazing anime 😃 i love the dark humor and the complexity of the
+	Free: Pattern=and, Pattern=love, Pattern=rick and morty, Pattern=anime, Pattern=is, Pattern=i
+	Constrained: Pattern=and
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=its, Pattern=have, Pattern=its a total, Pattern=i, Pattern=latest season
+	Constrained: Pattern=a, Pattern=its, Pattern=season
+Turn ID=12| B | Human 2 : have you seen the latest season of stranger things yet ? 🤔 its a total '80s nostalgic trip and i
+	Free: Pattern=have you seen, Pattern=and, Pattern=its a total, Pattern=i, Pattern=latest season
+	Constrained: Pattern=its, Pattern=you, Pattern=have, Pattern=a, Pattern=season

@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! what's up 
+A|2| Human 1: just chilling _at home_ 
+B|3| Human 2: how ya doin ? 
+A|4| Human 1: _where_ do _you work ?_ 
+B|5| Human 2: u [work] [at home] or on _the_ internet ? 
+A|6| Human 1: i _live_ _in_ _sapporo_ , _japan_ . _where is_ _mountain view_ 
+B|7| Human 2: [where] [you] [live] ? [where] _japan ?_ [where] [you work ?] 
+A|8| Human 1: how's _living_ _in_ [japan ?] 
+B|9| Human 2: what's [japan ?] [where] [you] [live] ? what's [mountain view] ? [where] [you] [live] ? [where] are [you] [living] ? 
+A|10| Human 1: i wish ! ramen _is_ my favorite dish _and_ _sapporo_ _is_ a special beer 
+B|11| Human 2: what's [japan] [and] [where] [you] [live] ? [where is] [sapporo] ? [and] how are [you] [living] ? 
+A|12| Human 1: oh wow , didn't know _that_ . _have you been_ to _the us_ ? 
+B|13| Human 2: yes [have you been] [in] [the us] [and] [japan ?] 
+A|14| Human 1: awesome ! [where] [have you been] ? 
+B|15| Human 2: ayyy you've [been] [the] best ! 
+A|16| Human 1: _you like_ it ? 
+B|17| Human 2: [you like] [that] , [you] [have] [been] [the] best ? 
+A|18| Human 1: yea , same here . i love broadway shows [in] new york city . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! what's up
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : just chilling at home
+	Free: Pattern=at home
+	Constrained: 
+Turn ID=3| B | Human 2 : how ya doin ?
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : where do you work ?
+	Free: Pattern=you work ?, Pattern=where
+	Constrained: Pattern=work, Pattern=you
+Turn ID=5| B | Human 2 : u work at home or on the internet ?
+	Free: Pattern=at home, Pattern=work, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : i live in sapporo , japan . where is mountain view
+	Free: Pattern=mountain view, Pattern=live, Pattern=sapporo, Pattern=in, Pattern=where is, Pattern=japan
+	Constrained: Pattern=is, Pattern=where
+Turn ID=7| B | Human 2 : where you live ? where japan ? where you work ?
+	Free: Pattern=you, Pattern=live, Pattern=you work ?, Pattern=where, Pattern=japan ?
+	Constrained: Pattern=work, Pattern=japan, Pattern=you
+Turn ID=8| A | Human 1 : how's living in japan ?
+	Free: Pattern=japan ?, Pattern=in, Pattern=living
+	Constrained: Pattern=japan
+Turn ID=9| B | Human 2 : what's japan ? where you live ? what's mountain view ? where you live ? where are you living ?
+	Free: Pattern=you, Pattern=mountain view, Pattern=live, Pattern=living, Pattern=where, Pattern=japan ?
+	Constrained: Pattern=japan
+Turn ID=10| A | Human 1 : i wish ! ramen is my favorite dish and sapporo is a special beer
+	Free: Pattern=and, Pattern=is, Pattern=sapporo
+	Constrained: 
+Turn ID=11| B | Human 2 : what's japan and where you live ? where is sapporo ? and how are you living ?
+	Free: Pattern=you, Pattern=and, Pattern=live, Pattern=sapporo, Pattern=where, Pattern=where is, Pattern=living, Pattern=japan
+	Constrained: Pattern=is, Pattern=where
+Turn ID=12| A | Human 1 : oh wow , didn't know that . have you been to the us ?
+	Free: Pattern=have you been, Pattern=the us, Pattern=that
+	Constrained: Pattern=have, Pattern=you, Pattern=been, Pattern=the
+Turn ID=13| B | Human 2 : yes have you been in the us and japan ?
+	Free: Pattern=the us, Pattern=have you been, Pattern=and, Pattern=in, Pattern=japan ?
+	Constrained: Pattern=you, Pattern=have, Pattern=the, Pattern=been, Pattern=japan
+Turn ID=14| A | Human 1 : awesome ! where have you been ?
+	Free: Pattern=have you been, Pattern=where
+	Constrained: Pattern=you, Pattern=been, Pattern=have
+Turn ID=15| B | Human 2 : ayyy you've been the best !
+	Free: Pattern=been, Pattern=the
+	Constrained: 
+Turn ID=16| A | Human 1 : you like it ?
+	Free: Pattern=you like
+	Constrained: Pattern=you
+Turn ID=17| B | Human 2 : you like that , you have been the best ?
+	Free: Pattern=you, Pattern=have, Pattern=you like, Pattern=the, Pattern=been, Pattern=that
+	Constrained: Pattern=you
+Turn ID=18| A | Human 1 : yea , same here . i love broadway shows in new york city .
+	Free: Pattern=in
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _, have_ _you_ seen any _good_ _movies_ _lately_ ? 
+A|2| Human 1: _i_ watched _a_ few [lately] _, but_ nothing _is_ _as_ [good] _as_ _avatar_ . _what's your favorite ?_ 
+B|3| Human 2: [i] am not much _of_ [a] _movie_ fan [but] [i] saw _the_ force awakens _the_ other day , [what's your favorite ?] 
+A|4| Human 1: it's [a] _science-fiction_ _movie with_ beautiful landscape [of] an imaginary nature _with_ non-human creatures . people figured _out_ [a] way _to_ join _that_ nature through _avatar_ transformation . _the movie_ ends _with_ [a] meaningful story [of] _how_ human behaviors , e . g ., cutting trees [, have] affected nature 
+B|5| Human 2: [i] [have] seen it [, but] not recently . _do you_ mean [the [movie] with] james cameron , _or_ [avatar] , [the] animated poc 
+A|6| Human 1: yea . _what_ else _do you like to_ [do] beside [movies] ? 
+B|7| Human 2: [i] [like] [science-fiction] [movies] [that] are set in [the] far [out] in [the] future . [i] recently saw [the] first star wars [movie with] mark hamill 
+A|8| Human 1: [i] enjoy eating 🙂 
+B|9| Human 2: [i] saw [the [movie] with] [avatar] , [what] about [you] ? [how] did [you like] it ? 
+A|10| Human 1: [i] will [have] _to bake_ some soon _and_ let [you] know . [what] types _of food_ _do you like to_ eat ? 
+B|11| Human 2: [i] [like] it too ! my [favorite] [food] [is] chicken [and] waffles ! [what] [is] [you] [favorite] [food] ? 
+A|12| Human 1: noodle _soup_ [is] _delicious_ ! [do you] make homemade noodle _soup_ [or] [do you] prefer _to_ go [out] ? 
+B|13| Human 2: [that] [soup] sounds so [delicious] [and] [like] [a] lot [of food] ! i've never had it personally [but] it must [have] been created by chinese immigrants 
+A|14| Human 1: same ! even though [i] _bake_ _, i_ cannot cook 
+B|15| Human 2: yes [, i] think so too . [do you like [to] bake] [as] well ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , have you seen any good movies lately ?
+	Free: Pattern=you, Pattern=, have, Pattern=movies, Pattern=lately, Pattern=good
+	Constrained: Pattern=have
+Turn ID=2| A | Human 1 : i watched a few lately , but nothing is as good as avatar . what's your favorite ?
+	Free: Pattern=, but, Pattern=as, Pattern=a, Pattern=what's your favorite ?, Pattern=avatar, Pattern=lately, Pattern=good, Pattern=is, Pattern=i
+	Constrained: Pattern=but, Pattern=favorite
+Turn ID=3| B | Human 2 : i am not much of a movie fan but i saw the force awakens the other day , what's your favorite ?
+	Free: Pattern=of, Pattern=a, Pattern=movie, Pattern=what's your favorite ?, Pattern=i, Pattern=the, Pattern=but
+	Constrained: Pattern=favorite
+Turn ID=4| A | Human 1 : it's a science-fiction movie with beautiful landscape of an imaginary nature with non-human creatures . people figured out a way to join that nature through avatar transformation . the movie ends with a meaningful story of how human behaviors , e . g ., cutting trees , have affected nature
+	Free: Pattern=of, Pattern=out, Pattern=a, Pattern=how, Pattern=movie with, Pattern=, have, Pattern=the movie, Pattern=science-fiction, Pattern=avatar, Pattern=to, Pattern=with, Pattern=that
+	Constrained: Pattern=the, Pattern=have, Pattern=movie, Pattern=with
+Turn ID=5| B | Human 2 : i have seen it , but not recently . do you mean the movie with james cameron , or avatar , the animated poc
+	Free: Pattern=, but, Pattern=have, Pattern=do you, Pattern=movie with, Pattern=i, Pattern=or, Pattern=the, Pattern=avatar, Pattern=the movie
+	Constrained: Pattern=you, Pattern=do, Pattern=movie, Pattern=the, Pattern=with, Pattern=but
+Turn ID=6| A | Human 1 : yea . what else do you like to do beside movies ?
+	Free: Pattern=do you like to, Pattern=do, Pattern=movies, Pattern=what
+	Constrained: Pattern=you, Pattern=do, Pattern=do you, Pattern=like, Pattern=you like, Pattern=to
+Turn ID=7| B | Human 2 : i like science-fiction movies that are set in the far out in the future . i recently saw the first star wars movie with mark hamill
+	Free: Pattern=out, Pattern=movie with, Pattern=i, Pattern=like, Pattern=the, Pattern=movies, Pattern=that, Pattern=science-fiction
+	Constrained: Pattern=movie, Pattern=with
+Turn ID=8| A | Human 1 : i enjoy eating 🙂
+	Free: Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : i saw the movie with avatar , what about you ? how did you like it ?
+	Free: Pattern=you, Pattern=what, Pattern=how, Pattern=movie with, Pattern=i, Pattern=you like, Pattern=avatar, Pattern=the movie
+	Constrained: Pattern=you, Pattern=movie, Pattern=like, Pattern=the, Pattern=with
+Turn ID=10| A | Human 1 : i will have to bake some soon and let you know . what types of food do you like to eat ?
+	Free: Pattern=you, Pattern=have, Pattern=what, Pattern=and, Pattern=of food, Pattern=to bake, Pattern=do you like to, Pattern=i
+	Constrained: Pattern=of, Pattern=bake, Pattern=you, Pattern=do, Pattern=do you, Pattern=you like, Pattern=to, Pattern=food, Pattern=like
+Turn ID=11| B | Human 2 : i like it too ! my favorite food is chicken and waffles ! what is you favorite food ?
+	Free: Pattern=you, Pattern=what, Pattern=and, Pattern=favorite, Pattern=is, Pattern=i, Pattern=food, Pattern=like
+	Constrained: 
+Turn ID=12| A | Human 1 : noodle soup is delicious ! do you make homemade noodle soup or do you prefer to go out ?
+	Free: Pattern=soup, Pattern=out, Pattern=do you, Pattern=is, Pattern=delicious, Pattern=or, Pattern=to
+	Constrained: Pattern=do, Pattern=you
+Turn ID=13| B | Human 2 : that soup sounds so delicious and like a lot of food ! i've never had it personally but it must have been created by chinese immigrants
+	Free: Pattern=soup, Pattern=have, Pattern=a, Pattern=and, Pattern=of food, Pattern=delicious, Pattern=like, Pattern=that, Pattern=but
+	Constrained: Pattern=food, Pattern=of
+Turn ID=14| A | Human 1 : same ! even though i bake , i cannot cook
+	Free: Pattern=, i, Pattern=i, Pattern=bake
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : yes , i think so too . do you like to bake as well ?
+	Free: Pattern=do you like to, Pattern=, i, Pattern=to bake, Pattern=as
+	Constrained: Pattern=bake, Pattern=you, Pattern=do, Pattern=do you, Pattern=i, Pattern=like, Pattern=you like, Pattern=to

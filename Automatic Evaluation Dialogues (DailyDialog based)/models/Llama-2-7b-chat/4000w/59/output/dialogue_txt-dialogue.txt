@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _how_ _is_ _your_ day ? 
+A|2| Human 1: _it's_ _good_ _. _it's_ raining_ _a_ bit _, but_ _i_ am _enjoying_ _a_ _good_ _book_ _. how about you ?_ 
+B|3| Human 2: [it's raining] here too [, but] _i'm_ [enjoying] _an_ iced tea _and_ [good] company [. how about you ?] would [you] like _to_ 
+A|4| Human 1: _i'm reading _the three body problem_ ._ _ever_ heard _of_ _it_ ? 
+B|5| Human 2: yes , [i'm] familiar with [the three body problem [.] _it's] a_ _book about_ [the] first contact between humans _and_ _an _alien_ civilization_ , 
+A|6| Human 1: _it's a sci-fi book about aliens and_ [a] type _of_ _virtual_ reality . pique [your] interest at _all_ ? 
+B|7| Human 2: [i'm] just _an_ ai [and] [your] [virtual] assistant [. how about you ?] _do you_ have any [book] recommendation ? <|im_end| 
+A|8| Human 1: cool . this [virtual] reality [is] [a] _based on_ life _on_ [an alien] planet . _there_ [is] [a] twist though . [do you] want me [to] spoil _it_ _for [you_ ?] 
+B|9| Human 2: [i'm reading the three body problem] [and] loving [it] [. [it's] a sci-fi book about aliens and] [virtual] reality<|im 
+A|10| Human 1: [the] [virtual] reality _is actually based on_ [a] real [alien civilization] _! and_ _that_ _civilization is_ coming [to] attack earth ! _dun_ _dun_ _dun_ dunnnnnnn 
+B|11| Human 2: [and] that's _not_ [all] ! [the] [alien [civilization] [is] actually based on] [the] real-life [three body problem] in planetary motion [dun] 
+A|12| Human 1: _there are other twists_ as well , so _i haven't spoiled_ [the] whole thing ! [to] be honest _i_ am _not a fan of_ spoilers 
+B|13| Human 2: [there are other twists] [and] turns [that] [i haven't spoiled] [for you] [! and] honestly , [i'm] [not a fan of] spo 
+A|14| Human 1: [the] audi _book is also very good ! ever give those a try ?_ 
+B|15| Human 2: [the] [book is also very good ! ever give those a try ?] [and] honestly [the three body problem] [is] [not] [spoiled] [for you] , i' 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how is your day ?
+	Free: Pattern=how, Pattern=is, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good . it's raining a bit , but i am enjoying a good book . how about you ?
+	Free: Pattern=good, Pattern=. how about you ?, Pattern=, but, Pattern=. it's, Pattern=it's raining, Pattern=enjoying, Pattern=i, Pattern=it's, Pattern=a, Pattern=book
+	Constrained: Pattern=it's, Pattern=you, Pattern=you ?, Pattern=how
+Turn ID=3| B | Human 2 : it's raining here too , but i'm enjoying an iced tea and good company . how about you ? would you like to
+	Free: Pattern=good, Pattern=. how about you ?, Pattern=and, Pattern=to, Pattern=you, Pattern=, but, Pattern=an, Pattern=it's raining, Pattern=enjoying, Pattern=i'm
+	Constrained: Pattern=it's, Pattern=you, Pattern=you ?, Pattern=how
+Turn ID=4| A | Human 1 : i'm reading the three body problem . ever heard of it ?
+	Free: Pattern=of, Pattern=i'm reading the three body problem, Pattern=it, Pattern=ever, Pattern=the three body problem .
+	Constrained: Pattern=three body problem, Pattern=the three body problem, Pattern=i'm, Pattern=the
+Turn ID=5| B | Human 2 : yes , i'm familiar with the three body problem . it's a book about the first contact between humans and an alien civilization ,
+	Free: Pattern=an alien, Pattern=it's a, Pattern=book about, Pattern=. it's, Pattern=and, Pattern=alien civilization, Pattern=i'm, Pattern=the three body problem ., Pattern=the
+	Constrained: Pattern=three body problem, Pattern=an, Pattern=the three body problem, Pattern=the, Pattern=it's, Pattern=a, Pattern=book
+Turn ID=6| A | Human 1 : it's a sci-fi book about aliens and a type of virtual reality . pique your interest at all ?
+	Free: Pattern=of, Pattern=a, Pattern=your, Pattern=virtual, Pattern=it's a sci-fi book about aliens and, Pattern=all
+	Constrained: Pattern=it's a, Pattern=book about, Pattern=and, Pattern=it's, Pattern=a, Pattern=book
+Turn ID=7| B | Human 2 : i'm just an ai and your virtual assistant . how about you ? do you have any book recommendation ? <|im_end|
+	Free: Pattern=. how about you ?, Pattern=book, Pattern=an, Pattern=i'm, Pattern=your, Pattern=virtual, Pattern=and, Pattern=do you
+	Constrained: Pattern=you, Pattern=you ?, Pattern=how
+Turn ID=8| A | Human 1 : cool . this virtual reality is a based on life on an alien planet . there is a twist though . do you want me to spoil it for you ?
+	Free: Pattern=an alien, Pattern=there, Pattern=a, Pattern=based on, Pattern=for you, Pattern=is, Pattern=you ?, Pattern=on, Pattern=to, Pattern=virtual, Pattern=it, Pattern=do you
+	Constrained: Pattern=you, Pattern=an, Pattern=on
+Turn ID=9| B | Human 2 : i'm reading the three body problem and loving it . it's a sci-fi book about aliens and virtual reality<|im
+	Free: Pattern=. it's, Pattern=i'm reading the three body problem, Pattern=it's a sci-fi book about aliens and, Pattern=virtual, Pattern=it, Pattern=and
+	Constrained: Pattern=it's a, Pattern=book about, Pattern=three body problem, Pattern=and, Pattern=i'm, Pattern=the three body problem, Pattern=the, Pattern=it's, Pattern=a, Pattern=book
+Turn ID=10| A | Human 1 : the virtual reality is actually based on a real alien civilization ! and that civilization is coming to attack earth ! dun dun dun dunnnnnnn
+	Free: Pattern=a, Pattern=dun, Pattern=the, Pattern=! and, Pattern=to, Pattern=virtual, Pattern=is actually based on, Pattern=that, Pattern=civilization is, Pattern=alien civilization
+	Constrained: Pattern=is, Pattern=on, Pattern=and, Pattern=based on
+Turn ID=11| B | Human 2 : and that's not all ! the alien civilization is actually based on the real-life three body problem in planetary motion dun
+	Free: Pattern=three body problem, Pattern=dun, Pattern=and, Pattern=is actually based on, Pattern=not, Pattern=civilization is, Pattern=alien civilization, Pattern=the, Pattern=all
+	Constrained: Pattern=is, Pattern=on, Pattern=based on
+Turn ID=12| A | Human 1 : there are other twists as well , so i haven't spoiled the whole thing ! to be honest i am not a fan of spoilers
+	Free: Pattern=i haven't spoiled, Pattern=i, Pattern=to, Pattern=there are other twists, Pattern=the, Pattern=not a fan of
+	Constrained: Pattern=of, Pattern=there, Pattern=a, Pattern=i, Pattern=not, Pattern=spoiled
+Turn ID=13| B | Human 2 : there are other twists and turns that i haven't spoiled for you ! and honestly , i'm not a fan of spo
+	Free: Pattern=and, Pattern=i haven't spoiled, Pattern=not a fan of, Pattern=! and, Pattern=there are other twists, Pattern=that, Pattern=i'm, Pattern=for you
+	Constrained: Pattern=of, Pattern=you, Pattern=there, Pattern=a, Pattern=and, Pattern=i, Pattern=not, Pattern=spoiled
+Turn ID=14| A | Human 1 : the audi book is also very good ! ever give those a try ?
+	Free: Pattern=book is also very good ! ever give those a try ?, Pattern=the
+	Constrained: Pattern=good, Pattern=is, Pattern=ever, Pattern=a, Pattern=book
+Turn ID=15| B | Human 2 : the book is also very good ! ever give those a try ? and honestly the three body problem is not spoiled for you , i'
+	Free: Pattern=book is also very good ! ever give those a try ?, Pattern=and, Pattern=for you, Pattern=is, Pattern=the three body problem, Pattern=the, Pattern=not, Pattern=spoiled
+	Constrained: Pattern=good, Pattern=you, Pattern=three body problem, Pattern=is, Pattern=ever, Pattern=the, Pattern=a, Pattern=book

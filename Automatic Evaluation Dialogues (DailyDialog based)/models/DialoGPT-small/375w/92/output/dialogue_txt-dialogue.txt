@@ -1,0 +1,67 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's good_ _! just went to the park_ _to_ enjoy _the_ sun . _you_ ? 
+B|3| Human 2: morning [! just went to the park] _and_ watched [the] flash's new episode with my new girl . [it's good] [to] _see_ [you] , too ! 
+A|4| Human 1: haha , _beach season_ is coming ! [you] need [to] _look_ tan ! what did [you] _do_ indoors _all day_ ? 
+B|5| Human 2: [hi] , _i'm_ _the [beach_ season] [all day] . 
+A|6| Human 1: hahahaha , _that's pretty_ funny . ever thought _of_ bringing [your] _work_ things [to [the] beach] ?? 
+B|7| Human 2: hey , [look] _at_ _that_ [beach season] ! 
+A|8| Human 1: hmm _i_ [see] . it sounds like [you] _work near the water_ already , no ? _are you_ some kind _of_ fish researcher ? 
+B|9| Human 2: [i] [work near the water] . 
+A|10| Human 1: woah ! this is very _interesting_ ! _i have_ honestly _never_ _heard of_ such kind _of_ [work] . is it dangerous [at] [all] ? 
+B|11| Human 2: [i _have] never_ even [heard of] [the] [work] [you] described . [i] [do] [work near] [water] though _, but_ [that's pretty] [interesting] . 
+A|12| Human 1: hmmm , yes [i have] [heard] [that] . apparently most mountain climbers fall _not_ on [the] most dangerous routes [, but] on [the] easier routes , when their guard is down ! sounds like _the same_ psychological _phenomenon ._ 
+B|13| Human 2: _i'm_ [not] [the same] [phenomenon .] 
+A|14| Human 1: [i'm] [pretty] amateur ! [i] like [to] climb [at] indoor _climbing_ gyms [and] [have never] gone outside on dangerous routes actually . ever tried it yourself ? 
+B|15| Human 2: how [are you] [climbing] [i'm] [climbing] ?? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=your, Pattern=day
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=the, Pattern=you, Pattern=! just went to the park, Pattern=it's good, Pattern=to
+	Constrained: Pattern=to the, Pattern=to, Pattern=the
+Turn ID=3| B | Human 2 : morning ! just went to the park and watched the flash's new episode with my new girl . it's good to see you , too !
+	Free: Pattern=and, Pattern=the, Pattern=see, Pattern=you, Pattern=! just went to the park, Pattern=it's good, Pattern=to
+	Constrained: Pattern=to the, Pattern=to, Pattern=the
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=do, Pattern=all day, Pattern=beach season, Pattern=look, Pattern=to
+	Constrained: Pattern=day, Pattern=all
+Turn ID=5| B | Human 2 : hi , i'm the beach season all day .
+	Free: Pattern=all day, Pattern=hi, Pattern=beach season, Pattern=the beach, Pattern=i'm
+	Constrained: Pattern=all, Pattern=day, Pattern=the
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=of, Pattern=to the, Pattern=the beach, Pattern=work, Pattern=your, Pattern=that's pretty
+	Constrained: Pattern=to, Pattern=pretty, Pattern=the
+Turn ID=7| B | Human 2 : hey , look at that beach season !
+	Free: Pattern=beach season, Pattern=at, Pattern=look, Pattern=that
+	Constrained: 
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=of, Pattern=you, Pattern=see, Pattern=work near the water, Pattern=are you, Pattern=i
+	Constrained: Pattern=you, Pattern=work, Pattern=water, Pattern=the, Pattern=work near
+Turn ID=9| B | Human 2 : i work near the water .
+	Free: Pattern=work near the water, Pattern=i
+	Constrained: Pattern=work, Pattern=water, Pattern=work near, Pattern=the
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=of, Pattern=at, Pattern=work, Pattern=all, Pattern=interesting, Pattern=i have, Pattern=heard of, Pattern=never
+	Constrained: Pattern=of, Pattern=heard, Pattern=i
+Turn ID=11| B | Human 2 : i have never even heard of the work you described . i do work near water though , but that's pretty interesting .
+	Free: Pattern=do, Pattern=work, Pattern=water, Pattern=the, Pattern=interesting, Pattern=work near, Pattern=that's pretty, Pattern=i have, Pattern=you, Pattern=, but, Pattern=heard of, Pattern=have never, Pattern=i
+	Constrained: Pattern=work, Pattern=pretty, Pattern=of, Pattern=heard, Pattern=never, Pattern=i
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=heard, Pattern=, but, Pattern=the same, Pattern=that, Pattern=phenomenon ., Pattern=the, Pattern=not, Pattern=i have
+	Constrained: Pattern=i, Pattern=the
+Turn ID=13| B | Human 2 : i'm not the same phenomenon .
+	Free: Pattern=the same, Pattern=phenomenon ., Pattern=i'm, Pattern=not
+	Constrained: Pattern=the
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=and, Pattern=at, Pattern=i'm, Pattern=pretty, Pattern=to, Pattern=climbing, Pattern=have never, Pattern=i
+	Constrained: Pattern=never
+Turn ID=15| B | Human 2 : how are you climbing i'm climbing ??
+	Free: Pattern=are you, Pattern=i'm, Pattern=climbing
+	Constrained: Pattern=you

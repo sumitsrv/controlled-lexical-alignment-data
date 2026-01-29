@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ _mark_ . _i_ _work_ in _accounting_ 
+B|3| Human 2: nice _to_ meet _you_ [mark] ! 👋 [accounting] can be _a_ very challenging field . would _you_ like _to_ talk _about_ it ? [i] 
+A|4| Human 1: _what_ _does_ [a] _fish_ groomer _do ?_ 
+B|5| Human 2: 😂 [i'm] an ai _and_ _my_ [work] is _to_ groom [fish] tanks . [what] _about_ [accounting] [does] [mark] [do ?] 
+A|6| Human 1: _interesting_ . _what's_ _type of_ [fish] [do] [you] _take_ care _of_ ? 
+B|7| Human 2: [i'm] glad [you] find [fish] grooming [interesting] 👀 [what] [type of] [accounting] [work] [does] [mark] [do ?] <|im_end 
+A|8| Human 1: [i] _balance_ _the_ _books and_ [do] _financial analysis _for_ a_ medium sized _company_ 
+B|9| Human 2: [interesting] 😍 [what's] [the] [balance] [books and] [financial analysis for] ? [does] [mark] [work] [for a] [company] that sells [fish] tanks or 
+A|10| Human 1: well _i actually think about pursuing photography_ , _but it's really hard_ 
+B|11| Human 2: [actually] [pursuing photography] 📸 [what] [type of] [photography] [does] [mark] [take] [and] how's [the] [fish] grooming going ? <| 
+A|12| Human 1: thank [you] tom !! [i'm] starting by _trying to_ sell [my] pictures online 
+B|13| Human 2: you're welcome 🙂 [i actually think about pursuing photography] too [but it's really hard] [and] [i'm] [trying to] 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=accounting, Pattern=mark, Pattern=i, Pattern=i'm, Pattern=work
+	Constrained: 
+Turn ID=3| B | Human 2 : nice to meet you mark ! 👋 accounting can be a very challenging field . would you like to talk about it ? i
+	Free: Pattern=you, Pattern=a, Pattern=accounting, Pattern=about, Pattern=mark, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=what, Pattern=a, Pattern=does, Pattern=fish, Pattern=do ?
+	Constrained: Pattern=do
+Turn ID=5| B | Human 2 : 😂 i'm an ai and my work is to groom fish tanks . what about accounting does mark do ?
+	Free: Pattern=what, Pattern=and, Pattern=accounting, Pattern=about, Pattern=does, Pattern=mark, Pattern=fish, Pattern=to, Pattern=do ?, Pattern=my, Pattern=i'm, Pattern=work
+	Constrained: Pattern=do
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=of, Pattern=you, Pattern=type of, Pattern=do, Pattern=what's, Pattern=fish, Pattern=take, Pattern=interesting
+	Constrained: Pattern=of
+Turn ID=7| B | Human 2 : i'm glad you find fish grooming interesting 👀 what type of accounting work does mark do ? <|im_end
+	Free: Pattern=you, Pattern=accounting, Pattern=does, Pattern=mark, Pattern=fish, Pattern=interesting, Pattern=do ?, Pattern=type of, Pattern=what, Pattern=i'm, Pattern=work
+	Constrained: Pattern=do, Pattern=of
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=company, Pattern=balance, Pattern=do, Pattern=i, Pattern=the, Pattern=for a, Pattern=books and, Pattern=financial analysis for
+	Constrained: Pattern=and, Pattern=a
+Turn ID=9| B | Human 2 : interesting 😍 what's the balance books and financial analysis for ? does mark work for a company that sells fish tanks or
+	Free: Pattern=company, Pattern=balance, Pattern=does, Pattern=mark, Pattern=work, Pattern=what's, Pattern=fish, Pattern=the, Pattern=interesting, Pattern=for a, Pattern=books and, Pattern=financial analysis for
+	Constrained: Pattern=and, Pattern=a
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=i actually think about pursuing photography, Pattern=but it's really hard
+	Constrained: Pattern=photography, Pattern=actually, Pattern=about, Pattern=i, Pattern=pursuing photography
+Turn ID=11| B | Human 2 : actually pursuing photography 📸 what type of photography does mark take and how's the fish grooming going ? <|
+	Free: Pattern=photography, Pattern=actually, Pattern=and, Pattern=does, Pattern=mark, Pattern=fish, Pattern=pursuing photography, Pattern=type of, Pattern=what, Pattern=take, Pattern=the
+	Constrained: Pattern=photography, Pattern=of
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=trying to, Pattern=i'm, Pattern=you, Pattern=my
+	Constrained: Pattern=to
+Turn ID=13| B | Human 2 : you're welcome 🙂 i actually think about pursuing photography too but it's really hard and i'm trying to
+	Free: Pattern=but it's really hard, Pattern=and, Pattern=i'm, Pattern=trying to, Pattern=i actually think about pursuing photography
+	Constrained: Pattern=photography, Pattern=actually, Pattern=about, Pattern=i, Pattern=pursuing photography, Pattern=to
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

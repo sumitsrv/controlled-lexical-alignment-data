@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! what's up 
+A|2| Human 1: just chilling at home 
+B|3| Human 2: that's cool ! _do you_ _have_ any plans for _the_ weekend ? 
+A|4| Human 1: _where_ [do you] _work_ ? 
+B|5| Human 2: _i_ [work] as _a_ digital assistant for _a_ company based _in_ _the_ usa 
+A|6| Human 1: [i] live [in] _sapporo_ , _japan_ . _where_ _is_ _mountain view_ 
+B|7| Human 2: [mountain view] [is] [where] google's headquarters [is] located , [in] california , usa 
+A|8| Human 1: how's _living in japan_ ? 
+B|9| Human 2: [living in japan] [is] great ! _i love_ _the_ culture _and_ history , _and sapporo is a_ beautiful _city_ with _a_ lot of outdoor activities _to_ enjoy 
+A|10| Human 1: [i] wish ! ramen [is] my favorite dish [and sapporo is a] special _beer_ 
+B|11| Human 2: [beer] ? [sapporo is] known for its ice sculptures [and] _the_ [sapporo] snow festival , which [is a] must-see if you' 
+A|12| Human 1: oh wow , didn't know that _. _have you _been to_ the_ us_ ? 
+B|13| Human 2: yes , [i] [have] [been to the us] . i've [been to] san francisco [and] seattle 
+A|14| Human 1: awesome ! [where] _have you been_ ? 
+B|15| Human 2: san francisco [and] seattle are great cities , but [have you been to the] countryside ? 
+A|16| Human 1: [you] _like it_ ? 
+B|17| Human 2: yes , [i] [like it] [. have you been to] tokyo ? 
+A|18| Human 1: yea , same here . [i love] broadway shows [in] new york [city] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! what's up
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : just chilling at home
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : that's cool ! do you have any plans for the weekend ?
+	Free: Pattern=do you, Pattern=the, Pattern=have
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : where do you work ?
+	Free: Pattern=do you, Pattern=work, Pattern=where
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i work as a digital assistant for a company based in the usa
+	Free: Pattern=a, Pattern=in, Pattern=work, Pattern=i, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : i live in sapporo , japan . where is mountain view
+	Free: Pattern=mountain view, Pattern=sapporo, Pattern=in, Pattern=where, Pattern=japan, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : mountain view is where google's headquarters is located , in california , usa
+	Free: Pattern=mountain view, Pattern=is, Pattern=in, Pattern=where
+	Constrained: 
+Turn ID=8| A | Human 1 : how's living in japan ?
+	Free: Pattern=living in japan
+	Constrained: Pattern=in, Pattern=japan
+Turn ID=9| B | Human 2 : living in japan is great ! i love the culture and history , and sapporo is a beautiful city with a lot of outdoor activities to enjoy
+	Free: Pattern=city, Pattern=a, Pattern=and, Pattern=and sapporo is a, Pattern=is, Pattern=the, Pattern=living in japan, Pattern=to, Pattern=i love
+	Constrained: Pattern=is a, Pattern=a, Pattern=and, Pattern=sapporo, Pattern=japan, Pattern=sapporo is, Pattern=in, Pattern=is, Pattern=i
+Turn ID=10| A | Human 1 : i wish ! ramen is my favorite dish and sapporo is a special beer
+	Free: Pattern=and sapporo is a, Pattern=is, Pattern=i, Pattern=beer
+	Constrained: Pattern=is a, Pattern=a, Pattern=and, Pattern=sapporo, Pattern=sapporo is, Pattern=is
+Turn ID=11| B | Human 2 : beer ? sapporo is known for its ice sculptures and the sapporo snow festival , which is a must-see if you'
+	Free: Pattern=is a, Pattern=and, Pattern=sapporo, Pattern=sapporo is, Pattern=the, Pattern=beer
+	Constrained: Pattern=is, Pattern=sapporo, Pattern=a
+Turn ID=12| A | Human 1 : oh wow , didn't know that . have you been to the us ?
+	Free: Pattern=. have you been to, Pattern=have you been to the, Pattern=been to the us
+	Constrained: Pattern=you, Pattern=have, Pattern=have you been, Pattern=been to, Pattern=the, Pattern=to
+Turn ID=13| B | Human 2 : yes , i have been to the us . i've been to san francisco and seattle
+	Free: Pattern=have, Pattern=been to the us, Pattern=been to, Pattern=and, Pattern=i
+	Constrained: Pattern=to, Pattern=the, Pattern=been to
+Turn ID=14| A | Human 1 : awesome ! where have you been ?
+	Free: Pattern=have you been, Pattern=where
+	Constrained: Pattern=you, Pattern=have
+Turn ID=15| B | Human 2 : san francisco and seattle are great cities , but have you been to the countryside ?
+	Free: Pattern=have you been to the, Pattern=and
+	Constrained: Pattern=you, Pattern=have, Pattern=have you been, Pattern=been to, Pattern=the, Pattern=to
+Turn ID=16| A | Human 1 : you like it ?
+	Free: Pattern=like it, Pattern=you
+	Constrained: 
+Turn ID=17| B | Human 2 : yes , i like it . have you been to tokyo ?
+	Free: Pattern=. have you been to, Pattern=like it, Pattern=i
+	Constrained: Pattern=you, Pattern=have, Pattern=have you been, Pattern=been to, Pattern=to
+Turn ID=18| A | Human 1 : yea , same here . i love broadway shows in new york city .
+	Free: Pattern=i love, Pattern=in, Pattern=city
+	Constrained: Pattern=i

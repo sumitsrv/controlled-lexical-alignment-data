@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: just chillin' . _how_ _are you_ ? 
+B|3| Human 2: inb 4 chillin is [how] [you] [are] 
+A|4| Human 1: do anything interesting _today_ ? 
+B|5| Human 2: _i_ _was_ chillin [today] . _what_ [are you] doing in _my_ apartment ? 
+A|6| Human 1: oh _that's cool_ ! [i] actually went _to an amusement park_ _and_ went on [my] _first_ _roller coaster_ ! 
+B|7| Human 2: [you] [first] , [and] [today] [you] [are] going [to an amusement park] . :p [and] [that's cool] for [how] chillin _i am_ 
+A|8| Human 1: _it_ [was] scary ! _it_ [was] actually kingda ka _, the world's tallest roller coaster_ . ever heard of _it_ ? 
+B|9| Human 2: yeah [you] [are] [, the world's tallest roller coaster] 
+A|10| Human 1: oh wow ! _i'm not_ on that level yet , _but i_ understand [the] appeal . [are you] [an] _adrenaline junkie_ at all ? 
+B|11| Human 2: [i'm not] [adrenaline] 
+A|12| Human 1: same ! _i guess_ [the] [roller coaster] wasn't so bad because _i trust the engineering haha_ 
+B|13| Human 2: [i guess] [you] [are] [not] [adrenaline junkie] [but [i] trust the engineering haha] 
+A|14| Human 1: maybe [not] so much at [the] time , [but [i] am] glad [i] _did it now_ that it's done , _know what_ [i] _mean_ ? 
+B|15| Human 2: [you] [did it now] [you] [know what] [you] [mean] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : just chillin' . how are you ?
+	Free: Pattern=are you, Pattern=how
+	Constrained: Pattern=are, Pattern=you
+Turn ID=3| B | Human 2 : inb 4 chillin is how you are
+	Free: Pattern=are, Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : do anything interesting today ?
+	Free: Pattern=today
+	Constrained: 
+Turn ID=5| B | Human 2 : i was chillin today . what are you doing in my apartment ?
+	Free: Pattern=what, Pattern=today, Pattern=was, Pattern=my, Pattern=are you, Pattern=i
+	Constrained: Pattern=are, Pattern=you
+Turn ID=6| A | Human 1 : oh that's cool ! i actually went to an amusement park and went on my first roller coaster !
+	Free: Pattern=that's cool, Pattern=and, Pattern=roller coaster, Pattern=my, Pattern=first, Pattern=to an amusement park, Pattern=i
+	Constrained: Pattern=an
+Turn ID=7| B | Human 2 : you first , and today you are going to an amusement park . :p and that's cool for how chillin i am
+	Free: Pattern=that's cool, Pattern=you, Pattern=today, Pattern=how, Pattern=and, Pattern=are, Pattern=i am, Pattern=to an amusement park, Pattern=first
+	Constrained: Pattern=i, Pattern=an
+Turn ID=8| A | Human 1 : it was scary ! it was actually kingda ka , the world's tallest roller coaster . ever heard of it ?
+	Free: Pattern=, the world's tallest roller coaster, Pattern=was, Pattern=it
+	Constrained: Pattern=roller coaster, Pattern=the
+Turn ID=9| B | Human 2 : yeah you are , the world's tallest roller coaster
+	Free: Pattern=, the world's tallest roller coaster, Pattern=are, Pattern=you
+	Constrained: Pattern=roller coaster, Pattern=the
+Turn ID=10| A | Human 1 : oh wow ! i'm not on that level yet , but i understand the appeal . are you an adrenaline junkie at all ?
+	Free: Pattern=but i, Pattern=an, Pattern=i'm not, Pattern=are you, Pattern=the, Pattern=adrenaline junkie
+	Constrained: Pattern=you, Pattern=are, Pattern=i, Pattern=adrenaline, Pattern=not
+Turn ID=11| B | Human 2 : i'm not adrenaline
+	Free: Pattern=i'm not, Pattern=adrenaline
+	Constrained: Pattern=not
+Turn ID=12| A | Human 1 : same ! i guess the roller coaster wasn't so bad because i trust the engineering haha
+	Free: Pattern=i trust the engineering haha, Pattern=i guess, Pattern=roller coaster, Pattern=the
+	Constrained: Pattern=i, Pattern=the
+Turn ID=13| B | Human 2 : i guess you are not adrenaline junkie but i trust the engineering haha
+	Free: Pattern=you, Pattern=but i, Pattern=are, Pattern=i guess, Pattern=i trust the engineering haha, Pattern=not, Pattern=adrenaline junkie
+	Constrained: Pattern=adrenaline, Pattern=i, Pattern=the
+Turn ID=14| A | Human 1 : maybe not so much at the time , but i am glad i did it now that it's done , know what i mean ?
+	Free: Pattern=mean, Pattern=but i, Pattern=did it now, Pattern=i am, Pattern=know what, Pattern=i, Pattern=the, Pattern=not
+	Constrained: Pattern=what, Pattern=it, Pattern=i
+Turn ID=15| B | Human 2 : you did it now you know what you mean
+	Free: Pattern=did it now, Pattern=know what, Pattern=mean, Pattern=you
+	Constrained: Pattern=what, Pattern=it

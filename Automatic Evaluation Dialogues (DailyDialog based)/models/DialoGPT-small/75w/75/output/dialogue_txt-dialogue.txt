@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: it's on _the_ screen ! _i don't recall meeting you_ . do _you _have_ a_ sense of _where_ _we_ [met] ? 
+B|3| Human 2: [i don't recall meeting you] , _but_ who knows , maybe i've [met] [you] before and [i] think i've seen [the] same thing [you have] . 
+A|4| Human 1: did _we_ dance together perchance ? 
+B|5| Human 2: no , [i] mean [i don't] remember [meeting you] , _that's_ [the] point . _but_ _i'm_ pretty _sure_ [we] [have] already [met] 
+A|6| Human 1: lol . were [you] schwasty ? 
+B|7| Human 2: _i'm_ so sorry , you're right , [i] didn't 
+A|8| Human 1: [i'm] _a_ cardiologist in palo alto . _i have a_ private practice _. you_ ? 
+B|9| Human 2: are [you] [a] doctor ? _i'm not sure_ who you're talking about _but_ _that's_ [where] [the] medical staff _is ._ 
+A|10| Human 1: _i'm not sure i know _what_ that is ._ 
+B|11| Human 2: [i'm not sure i know what] you're talking about _but_ _that's_ [where] [the] medical staff [is .] 
+A|12| Human 1: lol . [not] _to_ be elitist [but] ... [that's] _a real job_ ? 
+B|13| Human 2: [i have [a] real job] [but] [i'm not sure] [what that is [.] you] [don't] [know] how [to] work [the] phone . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=i, Pattern=you, Pattern=met
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=have a, Pattern=i don't recall meeting you, Pattern=you have, Pattern=where, Pattern=met, Pattern=we, Pattern=the
+	Constrained: Pattern=meeting you, Pattern=you, Pattern=a, Pattern=i, Pattern=don't, Pattern=i don't, Pattern=have
+Turn ID=3| B | Human 2 : i don't recall meeting you , but who knows , maybe i've met you before and i think i've seen the same thing you have .
+	Free: Pattern=you, Pattern=i don't recall meeting you, Pattern=you have, Pattern=the, Pattern=but, Pattern=i, Pattern=met
+	Constrained: Pattern=meeting you, Pattern=you, Pattern=i, Pattern=don't, Pattern=i don't, Pattern=have
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=we
+	Constrained: 
+Turn ID=5| B | Human 2 : no , i mean i don't remember meeting you , that's the point . but i'm pretty sure we have already met
+	Free: Pattern=meeting you, Pattern=i'm, Pattern=we, Pattern=sure, Pattern=but, Pattern=i don't, Pattern=have, Pattern=i, Pattern=met, Pattern=that's, Pattern=the
+	Constrained: Pattern=i, Pattern=you, Pattern=don't
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm so sorry , you're right , i didn't
+	Free: Pattern=i, Pattern=i'm
+	Constrained: 
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=i have a, Pattern=. you, Pattern=a, Pattern=i'm
+	Constrained: Pattern=you, Pattern=have, Pattern=have a, Pattern=a, Pattern=i
+Turn ID=9| B | Human 2 : are you a doctor ? i'm not sure who you're talking about but that's where the medical staff is .
+	Free: Pattern=you, Pattern=is ., Pattern=a, Pattern=where, Pattern=i'm not sure, Pattern=but, Pattern=that's, Pattern=the
+	Constrained: Pattern=not, Pattern=sure, Pattern=i'm
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=i'm not sure i know what, Pattern=what that is .
+	Constrained: Pattern=is ., Pattern=i, Pattern=sure, Pattern=i'm not sure, Pattern=not, Pattern=know, Pattern=i'm
+Turn ID=11| B | Human 2 : i'm not sure i know what you're talking about but that's where the medical staff is .
+	Free: Pattern=is ., Pattern=i'm not sure i know what, Pattern=where, Pattern=but, Pattern=that's, Pattern=the
+	Constrained: Pattern=i, Pattern=sure, Pattern=i'm not sure, Pattern=not, Pattern=know, Pattern=i'm
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=a real job, Pattern=that's, Pattern=to, Pattern=but, Pattern=not
+	Constrained: Pattern=a
+Turn ID=13| B | Human 2 : i have a real job but i'm not sure what that is . you don't know how to work the phone .
+	Free: Pattern=a real job, Pattern=the, Pattern=don't, Pattern=but, Pattern=i have a, Pattern=know, Pattern=. you, Pattern=i'm not sure, Pattern=what that is ., Pattern=to
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=i'm, Pattern=i, Pattern=sure, Pattern=not, Pattern=is ., Pattern=have a

@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] _how are you_ _doing_ today ? 
+A|2| Human 1: _i'm doing great_ [how are you] ?? 
+B|3| Human 2: happy monday everyone ! [i'm doing great] today . 
+A|4| Human 1: [are you] _a_ _tea_ person or do [you] _like coffee too_ ? 
+B|5| Human 2: hello [i'm doing great] ! [i'm doing] [too] good _i_ [like coffee too] . _and_ [tea] . 
+A|6| Human 1: [i] love _hot chocolate_ . _have_ [you] ever had european style _hot chocolate_ ? _it's_ kind of _like drinking_ melted _chocolate_ bars _haha_ 
+B|7| Human 2: [hot chocolate] _and_ water _. it's_ [like drinking] [coffee] [haha] . 
+A|8| Human 1: _that's_ [great] [. it's] so _cold_ these nights . right setting for [hot] _coco_ . do [you] _have_ anything [you] _enjoy_ [doing] during _cold_ times ? 
+B|9| Human 2: [i] [enjoy] [coco] , [hot] [coffee] , [cold] [chocolate] _and_ [coffee] 
+A|10| Human 1: [i] tuck in blankets [and] read _a_ book _lol ._ _i have_ never done tubing , but [i] seen _some_ people do _it_ . is _it_ worth _it_ if [you] already ski ? 
+B|11| Human 2: [i have] been [doing] [it] [lol .] 
+A|12| Human 1: hahaha _that's_ _a_ [great] way to put [it] 
+B|13| Human 2: [that's] actually what [i] did [lol] , [i] was just [a] little bored [and] [some] [great] 
+A|14| Human 1: yeah . i'll try to get [a] group together . ttyl ! 
+B|15| Human 2: [i] am trying [too] [lol] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how are you doing today ?
+	Free: Pattern=how are you, Pattern=hi !, Pattern=doing
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great how are you ??
+	Free: Pattern=i'm doing great, Pattern=how are you
+	Constrained: Pattern=doing, Pattern=are you, Pattern=i'm doing, Pattern=you, Pattern=great
+Turn ID=3| B | Human 2 : happy monday everyone ! i'm doing great today .
+	Free: Pattern=i'm doing great
+	Constrained: Pattern=i'm doing, Pattern=great, Pattern=doing
+Turn ID=4| A | Human 1 : are you a tea person or do you like coffee too ?
+	Free: Pattern=you, Pattern=a, Pattern=tea, Pattern=like coffee too, Pattern=are you
+	Constrained: Pattern=too, Pattern=you, Pattern=coffee
+Turn ID=5| B | Human 2 : hello i'm doing great ! i'm doing too good i like coffee too . and tea .
+	Free: Pattern=tea, Pattern=like coffee too, Pattern=i, Pattern=i'm doing, Pattern=i'm doing great, Pattern=and, Pattern=too
+	Constrained: Pattern=great, Pattern=doing, Pattern=coffee, Pattern=too, Pattern=i'm doing
+Turn ID=6| A | Human 1 : i love hot chocolate . have you ever had european style hot chocolate ? it's kind of like drinking melted chocolate bars haha
+	Free: Pattern=you, Pattern=have, Pattern=hot chocolate, Pattern=like drinking, Pattern=i, Pattern=haha, Pattern=chocolate, Pattern=it's
+	Constrained: Pattern=hot, Pattern=chocolate
+Turn ID=7| B | Human 2 : hot chocolate and water . it's like drinking coffee haha .
+	Free: Pattern=. it's, Pattern=coffee, Pattern=like drinking, Pattern=haha, Pattern=and, Pattern=hot chocolate
+	Constrained: Pattern=it's, Pattern=chocolate, Pattern=hot
+Turn ID=8| A | Human 1 : that's great . it's so cold these nights . right setting for hot coco . do you have anything you enjoy doing during cold times ?
+	Free: Pattern=have, Pattern=. it's, Pattern=doing, Pattern=coco, Pattern=that's, Pattern=you, Pattern=great, Pattern=enjoy, Pattern=cold, Pattern=hot
+	Constrained: Pattern=it's
+Turn ID=9| B | Human 2 : i enjoy coco , hot coffee , cold chocolate and coffee
+	Free: Pattern=coffee, Pattern=and, Pattern=i, Pattern=coco, Pattern=chocolate, Pattern=enjoy, Pattern=cold, Pattern=hot
+	Constrained: 
+Turn ID=10| A | Human 1 : i tuck in blankets and read a book lol . i have never done tubing , but i seen some people do it . is it worth it if you already ski ?
+	Free: Pattern=you, Pattern=a, Pattern=some, Pattern=i, Pattern=lol ., Pattern=i have, Pattern=it, Pattern=and
+	Constrained: Pattern=i, Pattern=have, Pattern=lol
+Turn ID=11| B | Human 2 : i have been doing it lol .
+	Free: Pattern=lol ., Pattern=i have, Pattern=it, Pattern=doing
+	Constrained: Pattern=i, Pattern=have, Pattern=lol
+Turn ID=12| A | Human 1 : hahaha that's a great way to put it
+	Free: Pattern=great, Pattern=a, Pattern=it, Pattern=that's
+	Constrained: 
+Turn ID=13| B | Human 2 : that's actually what i did lol , i was just a little bored and some great
+	Free: Pattern=lol, Pattern=great, Pattern=a, Pattern=and, Pattern=some, Pattern=i, Pattern=that's
+	Constrained: 
+Turn ID=14| A | Human 1 : yeah . i'll try to get a group together . ttyl !
+	Free: Pattern=a
+	Constrained: 
+Turn ID=15| B | Human 2 : i am trying too lol
+	Free: Pattern=i, Pattern=too, Pattern=lol
+	Constrained: 

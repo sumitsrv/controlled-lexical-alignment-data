@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my friends are gonna _visit_ me _this weekend ._ we _might_ _go_ hiking ! 
+B|3| Human 2: _i_ [might] , _i_ have _a_ friend _i_ [visit] who lives _in_ ohio . 
+A|4| Human 1: should be _very_ sunny ! _you_ ? 
+B|5| Human 2: _i_ [might] [visit] [you] [this weekend .] 
+A|6| Human 1: 😐 _hope_ _you get your work done very soon_ ! [a] bug free [weekend] ! 
+B|7| Human 2: _i_ [might] [visit] [your] [very soon] , [you get] _the_ point . [hope] [your work done] 
+A|8| Human 1: [i] am going to _diablo_ ! 
+B|9| Human 2: [go] [diablo] [you get your work done very soon] 
+A|10| Human 1: hours drive _from _here_ ._ still [in] bay area 
+B|11| Human 2: yup ! san diego [here .] 
+A|12| Human 1: actually no idea , but it will _take the entire_ day [for] _that_ . 
+B|13| Human 2: so [that] [take the entire] [weekend] [from here] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=the, Pattern=weekend, Pattern=for
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=this weekend ., Pattern=go, Pattern=visit, Pattern=might
+	Constrained: Pattern=weekend
+Turn ID=3| B | Human 2 : i might , i have a friend i visit who lives in ohio .
+	Free: Pattern=a, Pattern=in, Pattern=i, Pattern=might, Pattern=visit
+	Constrained: 
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=very, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : i might visit you this weekend .
+	Free: Pattern=you, Pattern=this weekend ., Pattern=i, Pattern=might, Pattern=visit
+	Constrained: Pattern=weekend
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=you get your work done very soon, Pattern=hope, Pattern=weekend, Pattern=a
+	Constrained: Pattern=you, Pattern=very soon, Pattern=your work done, Pattern=you get, Pattern=very, Pattern=your
+Turn ID=7| B | Human 2 : i might visit your very soon , you get the point . hope your work done
+	Free: Pattern=hope, Pattern=very soon, Pattern=your work done, Pattern=might, Pattern=visit, Pattern=your, Pattern=i, Pattern=you get, Pattern=the
+	Constrained: Pattern=your, Pattern=you, Pattern=very
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=i, Pattern=diablo
+	Constrained: 
+Turn ID=9| B | Human 2 : go diablo you get your work done very soon
+	Free: Pattern=you get your work done very soon, Pattern=go, Pattern=diablo
+	Constrained: Pattern=you, Pattern=very soon, Pattern=your work done, Pattern=you get, Pattern=very, Pattern=your
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=from here, Pattern=here ., Pattern=in
+	Constrained: 
+Turn ID=11| B | Human 2 : yup ! san diego here .
+	Free: Pattern=here .
+	Constrained: 
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=take the entire, Pattern=that, Pattern=for
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : so that take the entire weekend from here ?
+	Free: Pattern=take the entire, Pattern=from here, Pattern=that, Pattern=weekend
+	Constrained: Pattern=the

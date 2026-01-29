@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: great , thanks ! how can _i_ help _you_ _today ?_ 
+A|4| Human 1: ehhh so-so . _my moped_ broke down _on_ _the_ way _to work_ this morning _and_ [i] am _in the shop_ _getting_ it _fixed_ ... 
+B|5| Human 2: oh no , that's frustrating ! what kind of [moped] do _you_ have ? maybe [i] can help _you_ find a solution . <| 
+A|6| Human 1: _the_ mechanic _is_ _trying to figure_ that _out_ _now_ . apparently [i] wasn't supposed _to_ be using diesel _lol_ . 
+B|7| Human 2: [lol] that's quite [the] mistake ! _but_ _don't_ worry , we can [figure] [out] a solution together . can _you_ tell _me_ more about [the] 
+A|8| Human 1: okay sounds good . would [you] be able _to_ pick [me] up by [the] way , if they [don't] finish up _here in_ time ? did [you] drive _to work [today_ ?] 
+B|9| Human 2: yes , [i] drove [to work today] . _but_ [i] [don't] have [the] keys [to] [the] [moped] [and] i'm stuck [here [in] the shop] . 
+A|10| Human 1: that should be fine [i] _think_ . did [you] catch _the warriors game_ last night btw ? 
+B|11| Human 2: [i] [don't] have [the warriors game] [on] [my] mind right [now] , sorry . i'm [trying to figure] [out] why [my moped] [is] le 
+A|12| Human 1: haha [i] appreciate _your_ faith , [but] their record thus far [is] hard [to] refute ! 
+B|13| Human 2: [but] [in] any case , [don't] worry about [the warriors game] , let's focus [on] [getting] [your] [moped] [fixed] ! what do [you] [think] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : ehhh so-so . my moped broke down on the way to work this morning and i am in the shop getting it fixed ...
+	Free: Pattern=fixed, Pattern=my moped, Pattern=and, Pattern=i, Pattern=to work, Pattern=in the shop, Pattern=getting, Pattern=on, Pattern=the
+	Constrained: Pattern=moped, Pattern=in, Pattern=the, Pattern=to, Pattern=my
+Turn ID=5| B | Human 2 : oh no , that's frustrating ! what kind of moped do you have ? maybe i can help you find a solution . <|
+	Free: Pattern=you, Pattern=moped, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : the mechanic is trying to figure that out now . apparently i wasn't supposed to be using diesel lol .
+	Free: Pattern=lol, Pattern=out, Pattern=the, Pattern=to, Pattern=trying to figure, Pattern=now, Pattern=is, Pattern=i
+	Constrained: Pattern=to, Pattern=figure
+Turn ID=7| B | Human 2 : lol that's quite the mistake ! but don't worry , we can figure out a solution together . can you tell me more about the
+	Free: Pattern=lol, Pattern=me, Pattern=figure, Pattern=the, Pattern=don't, Pattern=but, Pattern=you, Pattern=out
+	Constrained: 
+Turn ID=8| A | Human 1 : okay sounds good . would you be able to pick me up by the way , if they don't finish up here in time ? did you drive to work today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=me, Pattern=here in, Pattern=the, Pattern=don't, Pattern=to, Pattern=to work today
+	Constrained: Pattern=in, Pattern=to, Pattern=to work
+Turn ID=9| B | Human 2 : yes , i drove to work today . but i don't have the keys to the moped and i'm stuck here in the shop .
+	Free: Pattern=moped, Pattern=and, Pattern=here in, Pattern=i, Pattern=the, Pattern=don't, Pattern=to, Pattern=to work today, Pattern=in the shop, Pattern=but
+	Constrained: Pattern=in, Pattern=to, Pattern=the, Pattern=to work
+Turn ID=10| A | Human 1 : that should be fine i think . did you catch the warriors game last night btw ?
+	Free: Pattern=the warriors game, Pattern=think, Pattern=you, Pattern=i
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : i don't have the warriors game on my mind right now , sorry . i'm trying to figure out why my moped is le
+	Free: Pattern=my moped, Pattern=out, Pattern=the warriors game, Pattern=on, Pattern=don't, Pattern=trying to figure, Pattern=now, Pattern=my, Pattern=is, Pattern=i
+	Constrained: Pattern=moped, Pattern=figure, Pattern=the, Pattern=to, Pattern=my
+Turn ID=12| A | Human 1 : haha i appreciate your faith , but their record thus far is hard to refute !
+	Free: Pattern=to, Pattern=but, Pattern=is, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : but in any case , don't worry about the warriors game , let's focus on getting your moped fixed ! what do you think
+	Free: Pattern=you, Pattern=the warriors game, Pattern=your, Pattern=on, Pattern=don't, Pattern=but, Pattern=getting, Pattern=fixed, Pattern=moped, Pattern=think, Pattern=in
+	Constrained: Pattern=the

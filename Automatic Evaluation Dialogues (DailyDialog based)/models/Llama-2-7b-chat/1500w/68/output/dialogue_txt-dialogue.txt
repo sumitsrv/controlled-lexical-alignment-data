@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , whats _up_ ? 
+A|2| Human 1: _i_ was not able _to_ attend _the_ lectures last week _. can you_ _help_ _me_ _understand some concepts_ ? 
+B|3| Human 2: _of_ _course_ , i'd _be_ happy [to] [help] [you] [understand some concepts] ! [can you] please provide [me] _with_ [the] topics [you] need [help] _with_ and any specific 
+A|4| Human 1: _i_ was not able [to] _figure out_ [the] last few _slides_ . _i think_ its best [to] discuss _this_ in person _. do you have_ time _right now_ ? 
+B|5| Human 2: _sure_ , i'm available [right now] [. can you] tell [me] [some] more details about [the] [slides] [you] need [help] _with_ ? <|im_ 
+A|6| Human 1: no problem ! [sure] . _we_ still _have_ plenty [of] time _for_ _the _test_ ._ anyways , how's _your_ preparation going ? 
+B|7| Human 2: [sure] , i'm happy [to] [help] [you] [understand] [the] [concepts] [for] [your] [test [.] can you] tell [me] what topics [you] are struggling _with_ ? <|im 
+A|8| Human 1: same feeling here ! but _i think _the_ syllabus_ _may_ not _that_ tough . _you may_ [be] able [to] _cover_ it [up] _over the_ weekend . 
+B|9| Human 2: sounds good ! let's go [over [the] syllabus] together and [figure out] which [concepts] [you may] need extra [help] _with_ [. do you have] 
+A|10| Human 1: true ! _this_ _will_ [be] a _very_ hectic november _! i_ [do] _like_ _the course content_ though . its _very_ much [up] [to] date [with] latest research findings . 
+B|11| Human 2: you're [right] [! [i] think [the] course content] [for] [this] [test] [will] [cover] [some] [very] important [concepts] [that] [we] [have] learned throughout [the] term . it's 
+A|12| Human 1: thats pretty cool [! i] hope [you] [do] well next week . 
+B|13| Human 2: [sure] thing ! [do you have] any questions about [the course content] [that] you'd [like] [to] go [over] before [the test] ? <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , whats up ?
+	Free: Pattern=up
+	Constrained: 
+Turn ID=2| A | Human 1 : i was not able to attend the lectures last week . can you help me understand some concepts ?
+	Free: Pattern=me, Pattern=i, Pattern=the, Pattern=to, Pattern=help, Pattern=. can you, Pattern=understand some concepts
+	Constrained: Pattern=you, Pattern=some, Pattern=understand, Pattern=can you, Pattern=concepts
+Turn ID=3| B | Human 2 : of course , i'd be happy to help you understand some concepts ! can you please provide me with the topics you need help with and any specific
+	Free: Pattern=of, Pattern=you, Pattern=me, Pattern=understand some concepts, Pattern=course, Pattern=be, Pattern=the, Pattern=can you, Pattern=to, Pattern=help, Pattern=with
+	Constrained: Pattern=understand, Pattern=concepts, Pattern=you, Pattern=some
+Turn ID=4| A | Human 1 : i was not able to figure out the last few slides . i think its best to discuss this in person . do you have time right now ?
+	Free: Pattern=figure out, Pattern=. do you have, Pattern=slides, Pattern=i, Pattern=the, Pattern=to, Pattern=right now, Pattern=this, Pattern=i think
+	Constrained: Pattern=right, Pattern=you, Pattern=have, Pattern=do, Pattern=i, Pattern=do you have
+Turn ID=5| B | Human 2 : sure , i'm available right now . can you tell me some more details about the slides you need help with ? <|im_
+	Free: Pattern=you, Pattern=me, Pattern=slides, Pattern=. can you, Pattern=some, Pattern=sure, Pattern=the, Pattern=right now, Pattern=help, Pattern=with
+	Constrained: Pattern=can you, Pattern=right, Pattern=you
+Turn ID=6| A | Human 1 : no problem ! sure . we still have plenty of time for the test . anyways , how's your preparation going ?
+	Free: Pattern=of, Pattern=have, Pattern=for, Pattern=your, Pattern=we, Pattern=sure, Pattern=test ., Pattern=the test
+	Constrained: Pattern=the, Pattern=test
+Turn ID=7| B | Human 2 : sure , i'm happy to help you understand the concepts for your test . can you tell me what topics you are struggling with ? <|im
+	Free: Pattern=you, Pattern=me, Pattern=for, Pattern=. can you, Pattern=sure, Pattern=the, Pattern=your, Pattern=understand, Pattern=test ., Pattern=to, Pattern=concepts, Pattern=help, Pattern=with
+	Constrained: Pattern=can you, Pattern=you, Pattern=test
+Turn ID=8| A | Human 1 : same feeling here ! but i think the syllabus may not that tough . you may be able to cover it up over the weekend .
+	Free: Pattern=you may, Pattern=cover, Pattern=may, Pattern=the syllabus, Pattern=over the, Pattern=that, Pattern=i think the, Pattern=be, Pattern=up, Pattern=to
+	Constrained: Pattern=you, Pattern=over, Pattern=i, Pattern=i think, Pattern=the, Pattern=may
+Turn ID=9| B | Human 2 : sounds good ! let's go over the syllabus together and figure out which concepts you may need extra help with . do you have
+	Free: Pattern=figure out, Pattern=. do you have, Pattern=you may, Pattern=the syllabus, Pattern=over the, Pattern=concepts, Pattern=help, Pattern=with
+	Constrained: Pattern=you, Pattern=have, Pattern=do, Pattern=over, Pattern=do you have, Pattern=the, Pattern=may
+Turn ID=10| A | Human 1 : true ! this will be a very hectic november ! i do like the course content though . its very much up to date with latest research findings .
+	Free: Pattern=the course content, Pattern=do, Pattern=! i, Pattern=will, Pattern=very, Pattern=like, Pattern=be, Pattern=this, Pattern=with, Pattern=up, Pattern=to
+	Constrained: Pattern=course, Pattern=i, Pattern=the
+Turn ID=11| B | Human 2 : you're right ! i think the course content for this test will cover some very important concepts that we have learned throughout the term . it's
+	Free: Pattern=have, Pattern=cover, Pattern=for, Pattern=! i, Pattern=very, Pattern=we, Pattern=i think the, Pattern=the, Pattern=test, Pattern=this, Pattern=right, Pattern=the course content, Pattern=will, Pattern=some, Pattern=concepts, Pattern=that
+	Constrained: Pattern=i, Pattern=i think, Pattern=the, Pattern=course
+Turn ID=12| A | Human 1 : thats pretty cool ! i hope you do well next week .
+	Free: Pattern=! i, Pattern=do, Pattern=you
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : sure thing ! do you have any questions about the course content that you'd like to go over before the test ? <|im_end
+	Free: Pattern=the course content, Pattern=over, Pattern=like, Pattern=sure, Pattern=do you have, Pattern=to, Pattern=the test, Pattern=that
+	Constrained: Pattern=you, Pattern=have, Pattern=do, Pattern=course, Pattern=the, Pattern=test

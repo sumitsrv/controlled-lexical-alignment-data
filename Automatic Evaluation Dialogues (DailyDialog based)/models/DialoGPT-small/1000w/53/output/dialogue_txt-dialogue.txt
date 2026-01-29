@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: how's your day going ? 
+A|2| Human 1: pretty busy , lots _of_ _work_ to finish up _. _you_ ?_ 
+B|3| Human 2: _what_ else _is_ going [work] ? [you ?] 
+A|4| Human 1: a couple projects _that_ _i_ am trying to finish up _before_ thanksgiving 🙂 _do _you_ have any_ _fun_ _plans_ _for the_ break ? 
+B|5| Human 2: yeah that's [the] [fun] part [for] [you] [. [you] have any] [plans] ? 
+A|6| Human 1: _haha_ xd so _what do _you_ like_ to _do_ [for] [fun] ? 
+B|7| Human 2: [haha] [that] [you have] [the] [fun] [of] doing [. [you] like] [what] [you] see ? [haha] 
+A|8| Human 1: cool ! _i've_ started to _run_ a bit _as well_ _not_ _long distances_ _though_ , _just_ a couple _miles_ 
+B|9| Human 2: yep [i've] [run] [for the] longest [of] [miles] [before] , [though] [that] _was_ [just] [long distances] [what] [you] mean 
+A|10| Human 1: [haha] 
+B|11| Human 2: [haha] [haha] [i've] [run] [long distances] [you have] 
+A|12| Human 1: _i like_ to _do_ [long distances] . _i have_ [run] a few _marathons_ . 
+B|13| Human 2: [i like] _it_ _i run_ [long distances] [not] only [marathons] ! [i have] [the] [fun] _of running_ [as well] [haha] 
+A|14| Human 1: no . [not] _this_ _year_ _. this_ [is] my half-marathon _year_ . instead [of running] [marathons] , _i run one_ half-marathon _every_ month . 
+B|15| Human 2: [what do you] [run] [every] [year] ? 
+A|16| Human 1: two days _ago ._ [it] [was] a _tough_ _one_ . 
+B|17| Human 2: when [was] [this] ? [i run one] half marathon [year] [ago [.] this] [was] [tough] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : how's your day going ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty busy , lots of work to finish up . you ?
+	Free: Pattern=. you, Pattern=you ?, Pattern=work, Pattern=of
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : what else is going work ? you ?
+	Free: Pattern=you ?, Pattern=work, Pattern=is, Pattern=what
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : a couple projects that i am trying to finish up before thanksgiving 🙂 do you have any fun plans for the break ?
+	Free: Pattern=plans, Pattern=for the, Pattern=do you, Pattern=i, Pattern=before, Pattern=that, Pattern=fun, Pattern=you have any
+	Constrained: Pattern=you, Pattern=do, Pattern=for, Pattern=you have, Pattern=the
+Turn ID=5| B | Human 2 : yeah that's the fun part for you . you have any plans ?
+	Free: Pattern=plans, Pattern=you, Pattern=for, Pattern=. you, Pattern=the, Pattern=fun, Pattern=you have any
+	Constrained: Pattern=you, Pattern=you have
+Turn ID=6| A | Human 1 : haha xd so what do you like to do for fun ?
+	Free: Pattern=fun, Pattern=do, Pattern=for, Pattern=what do you, Pattern=haha, Pattern=you like
+	Constrained: Pattern=do, Pattern=you, Pattern=what, Pattern=do you
+Turn ID=7| B | Human 2 : haha that you have the fun of doing . you like what you see ? haha
+	Free: Pattern=fun, Pattern=of, Pattern=you, Pattern=what, Pattern=you have, Pattern=. you, Pattern=haha, Pattern=you like, Pattern=the, Pattern=that
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : cool ! i've started to run a bit as well not long distances though , just a couple miles
+	Free: Pattern=just, Pattern=though, Pattern=i've, Pattern=run, Pattern=as well, Pattern=not, Pattern=miles, Pattern=long distances
+	Constrained: 
+Turn ID=9| B | Human 2 : yep i've run for the longest of miles before , though that was just long distances what you mean
+	Free: Pattern=of, Pattern=you, Pattern=i've, Pattern=run, Pattern=before, Pattern=was, Pattern=that, Pattern=miles, Pattern=long distances, Pattern=just, Pattern=for the, Pattern=though, Pattern=what
+	Constrained: Pattern=the, Pattern=for
+Turn ID=10| A | Human 1 : haha
+	Free: Pattern=haha
+	Constrained: 
+Turn ID=11| B | Human 2 : haha haha i've run long distances you have
+	Free: Pattern=long distances, Pattern=i've, Pattern=run, Pattern=you have, Pattern=haha
+	Constrained: Pattern=you
+Turn ID=12| A | Human 1 : i like to do long distances . i have run a few marathons .
+	Free: Pattern=long distances, Pattern=marathons, Pattern=do, Pattern=run, Pattern=i like, Pattern=i have
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : i like it i run long distances not only marathons ! i have the fun of running as well haha
+	Free: Pattern=long distances, Pattern=marathons, Pattern=of running, Pattern=it, Pattern=haha, Pattern=the, Pattern=as well, Pattern=i like, Pattern=fun, Pattern=i run, Pattern=not, Pattern=i have
+	Constrained: Pattern=run, Pattern=i, Pattern=of
+Turn ID=14| A | Human 1 : no . not this year . this is my half-marathon year . instead of running marathons , i run one half-marathon every month .
+	Free: Pattern=every, Pattern=marathons, Pattern=of running, Pattern=i run one, Pattern=is, Pattern=this, Pattern=not, Pattern=. this, Pattern=year
+	Constrained: Pattern=i run, Pattern=of, Pattern=one, Pattern=run, Pattern=i, Pattern=this
+Turn ID=15| B | Human 2 : what do you run every year ?
+	Free: Pattern=what do you, Pattern=run, Pattern=year, Pattern=every
+	Constrained: Pattern=do you, Pattern=do, Pattern=you, Pattern=what
+Turn ID=16| A | Human 1 : two days ago . it was a tough one .
+	Free: Pattern=it, Pattern=one, Pattern=was, Pattern=tough, Pattern=ago .
+	Constrained: 
+Turn ID=17| B | Human 2 : when was this ? i run one half marathon year ago . this was tough .
+	Free: Pattern=was, Pattern=this, Pattern=i run one, Pattern=tough, Pattern=ago ., Pattern=. this, Pattern=year
+	Constrained: Pattern=i run, Pattern=one, Pattern=run, Pattern=i, Pattern=this

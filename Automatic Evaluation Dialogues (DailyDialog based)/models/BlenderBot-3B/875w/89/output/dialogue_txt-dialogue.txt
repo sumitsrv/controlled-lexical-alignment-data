@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: _how's_ _week_ so far ? 
+B|3| Human 2: [how's] life _going_ for _you_ . _i_ am doing great 
+A|4| Human 1: same _. going to_ catch up _on_ _my_ reading ! do _you have_ _a_ feast _planned_ ? 
+B|5| Human 2: yes , [have] [you] [planned] yours ? [going to] take _the_ family out [to] eat . 
+A|6| Human 1: something deeply _hidden_ by _sean carroll_ <redacted_link> 
+B|7| Human 2: [my] week's [going] wonderfully ! _how about you ?_ [sean carroll] ? he's [a] great author , right ? [have] [you] read [hidden] b 
+A|8| Human 1: largely _scifi_ [how about you ?] 
+B|9| Human 2: [my] [week] was just fine [. going to] watch [sean] carroll's documentary [about] [how] [hidden] b [scifi] _is_ one of _the_ top 200 series 
+A|10| Human 1: _i haven't_ _what_ _is it_ [about] ? 
+B|11| Human 2: [i haven't] , it's been awhile since [i] [have] read [what] [i] think [is] carroll's best work . [what] [about you ?] [how] [is it] ? 
+A|12| Human 1: [how] do [the] _survivors_ _survive_ _such_ [a] thing ? 
+B|13| Human 2: yes [the] [hidden] b [scifi] [about] [how] [such] [scifi] [have] [survivors] and [what] they are doing _in_ them . [the] story are based [on] [a] 
+A|14| Human 1: _sounds like_ [a] tv _show_ _i watched_ 
+B|15| Human 2: [the] [show] was [on] [the] history channel and [i watched] [like] [the] last 5 weeks of [it] . [it] [sounds like] [you] [haven't] seen [it] , 
+A|16| Human 1: can't quite _remember_ . something [about] [survivors] [going to] live [in] space 
+B|17| Human 2: [i] [remember] [the] [show] survivor [about] [how] can people handle [going] out [in] [the] wilderness [like] [you have] [to] [survive] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: Pattern=how's, Pattern=week
+	Constrained: 
+Turn ID=3| B | Human 2 : how's life going for you . i am doing great
+	Free: Pattern=how's, Pattern=i, Pattern=going, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=. going to, Pattern=a, Pattern=you have, Pattern=planned, Pattern=on, Pattern=my
+	Constrained: Pattern=going to, Pattern=you, Pattern=to, Pattern=going, Pattern=have
+Turn ID=5| B | Human 2 : yes , have you planned yours ? going to take the family out to eat .
+	Free: Pattern=going to, Pattern=you, Pattern=have, Pattern=planned, Pattern=the, Pattern=to
+	Constrained: Pattern=to, Pattern=going
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=sean carroll, Pattern=hidden
+	Constrained: Pattern=sean
+Turn ID=7| B | Human 2 : my week's going wonderfully ! how about you ? sean carroll ? he's a great author , right ? have you read hidden b
+	Free: Pattern=you, Pattern=a, Pattern=hidden, Pattern=sean carroll, Pattern=how about you ?, Pattern=my, Pattern=going, Pattern=have
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=sean, Pattern=about you ?
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you ?, Pattern=scifi
+	Constrained: Pattern=you, Pattern=about you ?, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : my week was just fine . going to watch sean carroll's documentary about how hidden b scifi is one of the top 200 series
+	Free: Pattern=. going to, Pattern=week, Pattern=how, Pattern=about, Pattern=is, Pattern=sean, Pattern=scifi, Pattern=my, Pattern=hidden, Pattern=the
+	Constrained: Pattern=going to, Pattern=to, Pattern=going
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=is it, Pattern=i haven't, Pattern=what, Pattern=about
+	Constrained: Pattern=haven't, Pattern=i, Pattern=it, Pattern=is
+Turn ID=11| B | Human 2 : i haven't , it's been awhile since i have read what i think is carroll's best work . what about you ? how is it ?
+	Free: Pattern=have, Pattern=what, Pattern=how, Pattern=is it, Pattern=about you ?, Pattern=i haven't, Pattern=is, Pattern=i
+	Constrained: Pattern=you, Pattern=it, Pattern=haven't, Pattern=about, Pattern=is, Pattern=i
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=survive, Pattern=a, Pattern=how, Pattern=such, Pattern=the, Pattern=survivors
+	Constrained: 
+Turn ID=13| B | Human 2 : yes the hidden b scifi about how such scifi have survivors and what they are doing in them . the story are based on a
+	Free: Pattern=have, Pattern=what, Pattern=a, Pattern=how, Pattern=such, Pattern=about, Pattern=in, Pattern=scifi, Pattern=survivors, Pattern=on, Pattern=hidden, Pattern=the
+	Constrained: 
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=sounds like, Pattern=i watched, Pattern=a, Pattern=show
+	Constrained: Pattern=like, Pattern=i
+Turn ID=15| B | Human 2 : the show was on the history channel and i watched like the last 5 weeks of it . it sounds like you haven't seen it ,
+	Free: Pattern=sounds like, Pattern=it, Pattern=haven't, Pattern=like, Pattern=show, Pattern=you, Pattern=i watched, Pattern=on, Pattern=the
+	Constrained: Pattern=like, Pattern=i
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=about, Pattern=in, Pattern=survivors, Pattern=going to, Pattern=remember
+	Constrained: Pattern=to, Pattern=going
+Turn ID=17| B | Human 2 : i remember the show survivor about how can people handle going out in the wilderness like you have to survive
+	Free: Pattern=going, Pattern=how, Pattern=about, Pattern=you have, Pattern=in, Pattern=i, Pattern=like, Pattern=the, Pattern=to, Pattern=show, Pattern=survive, Pattern=remember
+	Constrained: Pattern=you, Pattern=have

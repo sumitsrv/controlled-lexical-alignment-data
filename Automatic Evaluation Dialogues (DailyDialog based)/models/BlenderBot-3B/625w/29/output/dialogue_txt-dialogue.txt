@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! how _are you_ doing 🙂 
+A|2| Human 1: _i'm great !_ how's _your_ _day_ _going_ ? 
+B|3| Human 2: [i'm great !] just [going] _to_ _the_ lake . how _are you_ ? 
+A|4| Human 1: oh _that_ _is_ cool ! _what class_ ? [are you] working _part time_ ? 
+B|5| Human 2: [i'm] well . how [are you] ? [what class] [are you] [going] _to_ _the_ lake _for_ ? 
+A|6| Human 1: oh _that_ _is_ awesome ! [for] _some_ reason _i_ assumed _it was_ a _college_ [class] , _but_ a sewing [class] sounds way better ! _i work_ full _time_ , _but_ _i_ _take_ _pottery_ _classes_ _from_ _time_ [to] _time_ ! 
+B|7| Human 2: [i'm great] thanks , [you] ? how [was] [your] [work] [day] _? i_ don't sew [but] [take] craft [classes] at [college] . 
+A|8| Human 1: [i] feel [you] on _that_ ! _it's important_ [to] balance _all_ [the] _different parts of_ [your] brain . _i like_ _pottery_ _because_ [i] _also_ _drink_ a lot _of_ _tea_ , _so_ [i] _get_ _to make_ _some_ _tea_ ware . 
+B|9| Human 2: [i work] [part time] [but] [some] days that's [the] [important] thing [because] [you] [get] [your] [work] done . [it was] [great] [to make] [pottery] [all] [day] ! 
+A|10| Human 1: [i] would _love_ [to] build one , once [i] acquire [the] skills [to] ! [what] _kind of_ _tea_ _is_ [your] favorite ? 
+B|11| Human 2: [i] [love] [tea] [i] [drink] [so] much [of] [that] [kind of] thing [but] [also] [the] water . [it's important] [because] [you] [get] [all] [your] vitamins and 
+A|12| Human 1: ahh , those [are] mostly _from_ japan , no [? _i] like_ white _teas_ , _like_ silver needle . 
+B|13| Human 2: [i like] green [tea] [the] best [because] [of] [all] [of] [that] vitamin b . [but] [some] [teas] [are] made [from] [different parts of] [the] [tea] plant 
+A|14| Human 1: [i] actually found a youtube channel _called_ <redacted_term> _that [i_ like] a lot . [you] should check [it] out ! [the] host talks about [all] kinds [of] [different] [teas] . 
+B|15| Human 2: [the] [tea] [from] [the] faroe islands [that i] [love] [is] [called] japanese gyokuro . [it's] very strong and very good ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! how are you doing 🙂
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm great ! how's your day going ?
+	Free: Pattern=i'm great !, Pattern=day, Pattern=your, Pattern=going
+	Constrained: Pattern=i'm great, Pattern=i'm, Pattern=great
+Turn ID=3| B | Human 2 : i'm great ! just going to the lake . how are you ?
+	Free: Pattern=i'm great !, Pattern=going, Pattern=are you, Pattern=the, Pattern=to
+	Constrained: Pattern=are, Pattern=i'm great, Pattern=i'm, Pattern=you, Pattern=great
+Turn ID=4| A | Human 1 : oh that is cool ! what class ? are you working part time ?
+	Free: Pattern=what class, Pattern=that, Pattern=part time, Pattern=are you, Pattern=is
+	Constrained: Pattern=time, Pattern=you, Pattern=what, Pattern=are, Pattern=class
+Turn ID=5| B | Human 2 : i'm well . how are you ? what class are you going to the lake for ?
+	Free: Pattern=going, Pattern=for, Pattern=i'm, Pattern=are you, Pattern=what class, Pattern=the, Pattern=to
+	Constrained: Pattern=are, Pattern=you, Pattern=class, Pattern=what
+Turn ID=6| A | Human 1 : oh that is awesome ! for some reason i assumed it was a college class , but a sewing class sounds way better ! i work full time , but i take pottery classes from time to time !
+	Free: Pattern=it was, Pattern=time, Pattern=college, Pattern=i work, Pattern=for, Pattern=from, Pattern=some, Pattern=pottery, Pattern=take, Pattern=classes, Pattern=to, Pattern=class, Pattern=is, Pattern=i, Pattern=that, Pattern=but
+	Constrained: Pattern=work, Pattern=was, Pattern=it, Pattern=i
+Turn ID=7| B | Human 2 : i'm great thanks , you ? how was your work day ? i don't sew but take craft classes at college .
+	Free: Pattern=? i, Pattern=you, Pattern=college, Pattern=i'm great, Pattern=work, Pattern=take, Pattern=classes, Pattern=was, Pattern=but, Pattern=day, Pattern=your
+	Constrained: Pattern=i'm, Pattern=great, Pattern=i
+Turn ID=8| A | Human 1 : i feel you on that ! it's important to balance all the different parts of your brain . i like pottery because i also drink a lot of tea , so i get to make some tea ware .
+	Free: Pattern=you, Pattern=different parts of, Pattern=because, Pattern=some, Pattern=to make, Pattern=to, Pattern=get, Pattern=that, Pattern=of, Pattern=drink, Pattern=it's important, Pattern=tea, Pattern=your, Pattern=i, Pattern=also, Pattern=pottery, Pattern=the, Pattern=all, Pattern=so, Pattern=i like
+	Constrained: Pattern=different, Pattern=of, Pattern=important, Pattern=i, Pattern=like, Pattern=to, Pattern=it's
+Turn ID=9| B | Human 2 : i work part time but some days that's the important thing because you get your work done . it was great to make pottery all day !
+	Free: Pattern=it was, Pattern=i work, Pattern=because, Pattern=some, Pattern=pottery, Pattern=to make, Pattern=get, Pattern=but, Pattern=you, Pattern=great, Pattern=important, Pattern=work, Pattern=part time, Pattern=day, Pattern=your, Pattern=the, Pattern=all
+	Constrained: Pattern=time, Pattern=it, Pattern=work, Pattern=i, Pattern=to, Pattern=was
+Turn ID=10| A | Human 1 : i would love to build one , once i acquire the skills to ! what kind of tea is your favorite ?
+	Free: Pattern=kind of, Pattern=what, Pattern=tea, Pattern=love, Pattern=the, Pattern=to, Pattern=is, Pattern=your, Pattern=i
+	Constrained: Pattern=of
+Turn ID=11| B | Human 2 : i love tea i drink so much of that kind of thing but also the water . it's important because you get all your vitamins and
+	Free: Pattern=kind of, Pattern=you, Pattern=because, Pattern=love, Pattern=also, Pattern=get, Pattern=so, Pattern=of, Pattern=drink, Pattern=it's important, Pattern=tea, Pattern=your, Pattern=i, Pattern=the, Pattern=all, Pattern=that, Pattern=but
+	Constrained: Pattern=important, Pattern=it's, Pattern=of
+Turn ID=12| A | Human 1 : ahh , those are mostly from japan , no ? i like white teas , like silver needle .
+	Free: Pattern=? i, Pattern=are, Pattern=from, Pattern=like, Pattern=teas, Pattern=i like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=13| B | Human 2 : i like green tea the best because of all of that vitamin b . but some teas are made from different parts of the tea plant
+	Free: Pattern=of, Pattern=different parts of, Pattern=because, Pattern=tea, Pattern=are, Pattern=from, Pattern=some, Pattern=teas, Pattern=i like, Pattern=the, Pattern=all, Pattern=that, Pattern=but
+	Constrained: Pattern=different, Pattern=i, Pattern=like, Pattern=of
+Turn ID=14| A | Human 1 : i actually found a youtube channel called <redacted_term> that i like a lot . you should check it out ! the host talks about all kinds of different teas .
+	Free: Pattern=different, Pattern=you, Pattern=it, Pattern=i, Pattern=that i, Pattern=teas, Pattern=i like, Pattern=called, Pattern=of, Pattern=the, Pattern=all
+	Constrained: Pattern=like, Pattern=that, Pattern=i
+Turn ID=15| B | Human 2 : the tea from the faroe islands that i love is called japanese gyokuro . it's very strong and very good !
+	Free: Pattern=called, Pattern=tea, Pattern=from, Pattern=love, Pattern=is, Pattern=the, Pattern=that i, Pattern=it's
+	Constrained: Pattern=that, Pattern=i

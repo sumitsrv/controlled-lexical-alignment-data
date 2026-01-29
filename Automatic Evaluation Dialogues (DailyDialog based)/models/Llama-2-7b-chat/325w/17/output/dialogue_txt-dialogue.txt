@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how was _your_ weekend ? 
+A|2| Human 1: _pretty_ _good ._ _just_ _went to_ _church and_ hangout _with friends_ 
+B|3| Human 2: that sounds great ! [church and] spending time [with friends] are great ways [to] relax [and] connect [with] others . _did you_ enjoy [church] ? <|im_ 
+A|4| Human 1: _did you do_ _anything_ ? 
+B|5| Human 2: [church] was [good .] our pastor gave _a_ great sermon [and] the music was beautiful . [and] yes , i [did] [anything] . i [went to] _a_ nearby 
+A|6| Human 1: yum yum yum no only _good old_ _oily frier_ 
+B|7| Human 2: i see ! so , [did _you] have_ _a_ [good] weekend ? 
+A|8| Human 1: _do_ [you have] one _at your home or were you at a friends place ?_ 
+B|9| Human 2: [oily frier] is [a] [good old] [frier] [you have] [at your home or were you at a friends place ?] [and] yes i [did] [have] [a] 
+A|10| Human 1: _i'm going to impersonate a pumpkin_ 
+B|11| Human 2: [i'm going to impersonate a pumpkin] [and] say "oh my goodness , [i'm] so glad [you] had [a] [good] week 
+A|12| Human 1: _i'm pretty unique person_ 
+B|13| Human 2: [i'm pretty unique person] [and] [i'm] glad [you] had [a] great time ! what [did you do] this weekend ? <|im_end 
+A|14| Human 1: any other _hobbies_ besides air frying everything ? 🙂 
+B|15| Human 2: [i'm] [just] an ai [and] i don't [have] [hobbies] [or] personal experiences like humans [do] 😅 , but i 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how was your weekend ?
+	Free: Pattern=hi !, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . just went to church and hangout with friends
+	Free: Pattern=with friends, Pattern=just, Pattern=church and, Pattern=pretty, Pattern=good ., Pattern=went to
+	Constrained: Pattern=good, Pattern=and, Pattern=church, Pattern=to, Pattern=with
+Turn ID=3| B | Human 2 : that sounds great ! church and spending time with friends are great ways to relax and connect with others . did you enjoy church ? <|im_
+	Free: Pattern=with friends, Pattern=did you, Pattern=and, Pattern=church, Pattern=church and, Pattern=to, Pattern=with
+	Constrained: Pattern=you, Pattern=did, Pattern=and, Pattern=church, Pattern=with
+Turn ID=4| A | Human 1 : did you do anything ?
+	Free: Pattern=did you do, Pattern=anything
+	Constrained: Pattern=did you, Pattern=do, Pattern=you, Pattern=did
+Turn ID=5| B | Human 2 : church was good . our pastor gave a great sermon and the music was beautiful . and yes , i did anything . i went to a nearby
+	Free: Pattern=and, Pattern=church, Pattern=anything, Pattern=did, Pattern=a, Pattern=good ., Pattern=went to
+	Constrained: Pattern=to, Pattern=good
+Turn ID=6| A | Human 1 : yum yum yum no only good old oily frier
+	Free: Pattern=good old, Pattern=oily frier
+	Constrained: Pattern=frier, Pattern=good
+Turn ID=7| B | Human 2 : i see ! so , did you have a good weekend ?
+	Free: Pattern=you have, Pattern=did you, Pattern=a, Pattern=good
+	Constrained: Pattern=have, Pattern=you, Pattern=did
+Turn ID=8| A | Human 1 : do you have one at your home or were you at a friends place ?
+	Free: Pattern=at your home or were you at a friends place ?, Pattern=you have, Pattern=do
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=your, Pattern=or
+Turn ID=9| B | Human 2 : oily frier is a good old frier you have at your home or were you at a friends place ? and yes i did have a
+	Free: Pattern=frier, Pattern=and, Pattern=good old, Pattern=at your home or were you at a friends place ?, Pattern=have, Pattern=did, Pattern=a, Pattern=oily frier, Pattern=you have
+	Constrained: Pattern=good, Pattern=have, Pattern=a, Pattern=your, Pattern=or, Pattern=you, Pattern=frier
+Turn ID=10| A | Human 1 : i'm going to impersonate a pumpkin
+	Free: Pattern=i'm going to impersonate a pumpkin
+	Constrained: Pattern=a, Pattern=i'm, Pattern=to
+Turn ID=11| B | Human 2 : i'm going to impersonate a pumpkin and say "oh my goodness , i'm so glad you had a good week
+	Free: Pattern=good, Pattern=you, Pattern=a, Pattern=and, Pattern=i'm, Pattern=i'm going to impersonate a pumpkin
+	Constrained: Pattern=a, Pattern=i'm, Pattern=to
+Turn ID=12| A | Human 1 : i'm pretty unique person
+	Free: Pattern=i'm pretty unique person
+	Constrained: Pattern=pretty, Pattern=i'm
+Turn ID=13| B | Human 2 : i'm pretty unique person and i'm glad you had a great time ! what did you do this weekend ? <|im_end
+	Free: Pattern=you, Pattern=i'm pretty unique person, Pattern=a, Pattern=and, Pattern=i'm, Pattern=did you do
+	Constrained: Pattern=you, Pattern=did you, Pattern=i'm, Pattern=pretty, Pattern=do, Pattern=did
+Turn ID=14| A | Human 1 : any other hobbies besides air frying everything ? 🙂
+	Free: Pattern=hobbies
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm just an ai and i don't have hobbies or personal experiences like humans do 😅 , but i
+	Free: Pattern=do, Pattern=and, Pattern=i'm, Pattern=or, Pattern=hobbies, Pattern=just, Pattern=have
+	Constrained: 

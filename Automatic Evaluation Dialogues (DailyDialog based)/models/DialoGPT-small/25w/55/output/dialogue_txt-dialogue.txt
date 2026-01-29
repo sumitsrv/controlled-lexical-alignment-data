@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what_ _are you_ up _to_ ? 
+B|3| Human 2: hey guys , how [are you] ? 
+A|4| Human 1: me ? _just_ chilling out at _work_ . _what_ is _code refactoring_ ? 
+B|5| Human 2: _i_ [just] realized that my [code refactoring] function can make [you] look very ... familiar . 
+A|6| Human 1: haha , forget _it_ . _what_ else do [you] _like to_ do beside _work_ ? 
+B|7| Human 2: _i [like_ to] [work] _in_ front of _a_ computer , _i [like_ to] go _in_ the back room . but _i also_ enjoy the internet so that's [what] _i_ 
+A|8| Human 1: these [are] _important_ _things_ [to] do [in] life 😉 
+B|9| Human 2: _i like_ [things] _i_ find [important] 
+A|10| Human 1: [what] _food_ do [you] _like to eat_ ? 
+B|11| Human 2: yup ! it's always good . sometimes when _i_ need [food] , i'm craving for _a_ burger _or_ something . other [things] , _i [like_ to eat] 
+A|12| Human 1: _like szechuan_ [or] hunan ? 🙂 
+B|13| Human 2: well _i_ [eat] _a lot_ ... and [like szechuan] , lol 
+A|14| Human 1: [i like] noodle soup [like] pho [or] ramen _. [i_ also] [like] beijing duck [a lot] ! 
+B|15| Human 2: yup , [food] [in] general [. [i] like] [food] . [it] tastes good [in] general and helps the brain ! 
+A|16| Human 1: [i] love <redacted_term> [in] san mateo 
+B|17| Human 2: [a lot] of people [like] that 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=are you, Pattern=to, Pattern=what
+	Constrained: Pattern=are, Pattern=you
+Turn ID=3| B | Human 2 : hey guys , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=code refactoring, Pattern=work, Pattern=what, Pattern=just
+	Constrained: 
+Turn ID=5| B | Human 2 : i just realized that my code refactoring function can make you look very ... familiar .
+	Free: Pattern=code refactoring, Pattern=i, Pattern=you, Pattern=just
+	Constrained: 
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=you, Pattern=what, Pattern=it, Pattern=work, Pattern=like to
+	Constrained: Pattern=like, Pattern=to
+Turn ID=7| B | Human 2 : i like to work in front of a computer , i like to go in the back room . but i also enjoy the internet so that's what i
+	Free: Pattern=i also, Pattern=what, Pattern=a, Pattern=in, Pattern=work, Pattern=i, Pattern=like to, Pattern=i like
+	Constrained: Pattern=like, Pattern=to, Pattern=i
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=are, Pattern=things, Pattern=in, Pattern=important, Pattern=to
+	Constrained: 
+Turn ID=9| B | Human 2 : i like things i find important
+	Free: Pattern=i like, Pattern=things, Pattern=i, Pattern=important
+	Constrained: Pattern=like, Pattern=i
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=like to eat, Pattern=food, Pattern=what, Pattern=you
+	Constrained: Pattern=eat, Pattern=like to, Pattern=to, Pattern=like
+Turn ID=11| B | Human 2 : yup ! it's always good . sometimes when i need food , i'm craving for a burger or something . other things , i like to eat
+	Free: Pattern=a, Pattern=things, Pattern=like to eat, Pattern=i, Pattern=food, Pattern=or, Pattern=i like
+	Constrained: Pattern=eat, Pattern=i, Pattern=like, Pattern=like to, Pattern=to
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like szechuan, Pattern=or
+	Constrained: Pattern=like
+Turn ID=13| B | Human 2 : well i eat a lot ... and like szechuan , lol
+	Free: Pattern=like szechuan, Pattern=a lot, Pattern=i, Pattern=eat
+	Constrained: Pattern=a, Pattern=like
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=i also, Pattern=. i, Pattern=like, Pattern=or, Pattern=a lot, Pattern=i like
+	Constrained: Pattern=a, Pattern=i, Pattern=like
+Turn ID=15| B | Human 2 : yup , food in general . i like food . it tastes good in general and helps the brain !
+	Free: Pattern=it, Pattern=. i, Pattern=in, Pattern=food, Pattern=i like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=i, Pattern=in
+	Constrained: 
+Turn ID=17| B | Human 2 : a lot of people like that
+	Free: Pattern=a lot, Pattern=like
+	Constrained: Pattern=a
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

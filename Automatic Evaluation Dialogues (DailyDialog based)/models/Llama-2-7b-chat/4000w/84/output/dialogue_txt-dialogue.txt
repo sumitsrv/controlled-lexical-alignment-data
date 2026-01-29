@@ -1,0 +1,55 @@
+A|0| Human 1: hi , _can_ _you_ recommend _some good_ _netflix_ _shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: of course ! _what_ type of [shows] are [you] interested in ? action , _comedy ,_ drama _, or_ something else ? 
+A|3| Human 1: not [a lot] ! but [i] preparing for [a] _good_ vacation _season_ 🙂 [what] _is_ [white collar] _about_ ? 
+B|4| Human 2: [white collar] [is] [a] crime drama _series_ [about] fbi agent peter burke who [is] tasked with tracking down _and_ bringing _to_ justice [some] of the 
+A|5| Human 1: hehe ! sounds very _interesting_ 🙂 [i] only see [shows] belonging [to] few genre's .. _like_ easy going light [comedy [,] or] phychological thrillers 🙂 _also_ [some] manga _based_ _series like_ _one_ punch man ! love it ! 
+B|6| Human 2: ah , [interesting] ! 🙂 well , [some good] [comedy] [shows] on [netflix] include "the office" _and_ "parks _and_ rec 
+A|7| Human 1: _which_ _anime_ [do you] follow ? 
+B|8| Human 2: you've got [some good] [shows] there ! [netflix] [also] has [anime] [series like] "narcos" [which] [based] on colombian drug 
+A|9| Human 1: _have you seen_ _rick and morty_ ? 
+B|10| Human 2: yeah , [rick and morty] [is] an [interesting] [one] 🙂 [have you seen] bojack horseman ? [also] on [netflix] 
+A|11| Human 1: oh _nice_ ! [i] heard its latest _season_ arrived _last month_ . [i] [have] _watched_ all previous _seasons_ . its [a] total mind bender 🙂 
+B|12| Human 2: [rick and morty] [have] [season] 4 [seasons] [last month] [also] [nice] [anime] [series like] "sense 8" [which] [you] [can] binge [watched] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=you, Pattern=netflix, Pattern=shows, Pattern=can, Pattern=some good
+	Constrained: Pattern=good, Pattern=some
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=a, Pattern=you
+Turn ID=2| B | Human 2 : of course ! what type of shows are you interested in ? action , comedy , drama , or something else ?
+	Free: Pattern=you, Pattern=what, Pattern=shows, Pattern=, or, Pattern=comedy ,
+	Constrained: Pattern=comedy
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=good, Pattern=what, Pattern=about, Pattern=season, Pattern=a lot, Pattern=white collar, Pattern=a, Pattern=is, Pattern=i
+	Constrained: Pattern=a
+Turn ID=4| B | Human 2 : white collar is a crime drama series about fbi agent peter burke who is tasked with tracking down and bringing to justice some of the
+	Free: Pattern=and, Pattern=about, Pattern=some, Pattern=is, Pattern=to, Pattern=series, Pattern=white collar, Pattern=a
+	Constrained: 
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=based, Pattern=shows, Pattern=one, Pattern=series like, Pattern=some, Pattern=i, Pattern=interesting, Pattern=to, Pattern=also, Pattern=like, Pattern=, or, Pattern=comedy ,
+	Constrained: Pattern=comedy, Pattern=like, Pattern=series
+Turn ID=6| B | Human 2 : ah , interesting ! 🙂 well , some good comedy shows on netflix include "the office" and "parks and rec
+	Free: Pattern=netflix, Pattern=shows, Pattern=and, Pattern=comedy, Pattern=some good, Pattern=interesting
+	Constrained: Pattern=good, Pattern=some
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=which, Pattern=anime
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : you've got some good shows there ! netflix also has anime series like "narcos" which based on colombian drug
+	Free: Pattern=netflix, Pattern=based, Pattern=shows, Pattern=series like, Pattern=some good, Pattern=also, Pattern=anime, Pattern=which
+	Constrained: Pattern=like, Pattern=good, Pattern=some, Pattern=series
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=have you seen, Pattern=rick and morty
+	Constrained: Pattern=have, Pattern=and, Pattern=you
+Turn ID=10| B | Human 2 : yeah , rick and morty is an interesting one 🙂 have you seen bojack horseman ? also on netflix
+	Free: Pattern=one, Pattern=is, Pattern=interesting, Pattern=netflix, Pattern=have you seen, Pattern=also, Pattern=rick and morty
+	Constrained: Pattern=have, Pattern=and, Pattern=you
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=have, Pattern=a, Pattern=nice, Pattern=seasons, Pattern=last month, Pattern=i, Pattern=watched, Pattern=season
+	Constrained: 
+Turn ID=12| B | Human 2 : rick and morty have season 4 seasons last month also nice anime series like "sense 8" which you can binge watched
+	Free: Pattern=you, Pattern=have, Pattern=nice, Pattern=seasons, Pattern=can, Pattern=series like, Pattern=last month, Pattern=anime, Pattern=which, Pattern=also, Pattern=rick and morty, Pattern=watched, Pattern=season
+	Constrained: Pattern=series, Pattern=like, Pattern=and

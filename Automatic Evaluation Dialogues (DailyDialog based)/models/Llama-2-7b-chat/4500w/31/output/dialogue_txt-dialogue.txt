@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: wow , hello . can't believe _we are_ finally talking ! 
+A|2| Human 1: _yeah_ , _sorry for the_ _long_ gap ! i heard _you_ _took a break_ _and_ _were_ _travelling _around_ the world_ . _how was the_ _travel_ ? 
+B|3| Human 2: [travel] [was] amazing [and] [the world] _is_ [a] beautiful place , [travelling] [for] [long] _time_ [you] start _to_ find similarities _in_ cultures [around the world] 
+A|4| Human 1: _great !_ _vietnam_ [is] _still in_ my todo _bucket list_ . _did you_ _also_ _visit_ _cambodia _and_ other_ _neighboring places_ ? 
+B|5| Human 2: [sorry for the] confusion but [cambodia and] [neighboring places] [were] [also] [list] [was] [long] [and other] [bucket list] [took] over [travelling around] [world] [took a break] 
+A|6| Human 1: _hehe_ ! _how_ [long] _was the stay ?_ 
+B|7| Human 2: [how [was the] stay ?] [did you] [visit] [other] [places] apart _from_ [vietnam] [and] [cambodia] ? 
+A|8| Human 1: _great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects_ _to tackle_ _for next quarter_ . reat _! good time to be back . we are still in planning phase and haven't fully aligned on the projects_ _to tackle_ _for next quarter_ . 
+B|9| Human 2: [great] . do [you] have any idea [for next] quarter's [projects] yet ? [how] many [are] [you] [planning] [to tackle] ? <|im_end 
+A|10| Human 1: _hehe_ , _yeah_ ! it _seems like_ [the] _quarter_ [is] being pushed earlier _than_ [from] where it starts 🙂 i _like_ these [planning] sessions . it makes me feel _more_ confident _about_ [the] work i am doing . 
+B|11| Human 2: [yeah] . [planning] [for the] [next quarter] [projects] [are] [in] progress [and] [seems like] you're [about] [to tackle] [more] [than] 3 [bucket list] [places] he 
+A|12| Human 1: true ! i think [we] should set aside some _time to_ discuss some project details ? does _tomorrow_ afternoon work [for] [you] ? 
+B|13| Human 2: [great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects] [for next quarter] yet [hehe] 
+A|14| Human 1: okay . _see_ _tomorrow then ._ 
+B|15| Human 2: 👋 [see] [you] [tomorrow then .] [good] [planning] [for the] [next quarter] [projects] , [and] enjoy [travelling] [to] [more] [than] three [bucket list] [places] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : wow , hello . can't believe we are finally talking !
+	Free: Pattern=we are
+	Constrained: Pattern=we, Pattern=are
+Turn ID=2| A | Human 1 : yeah , sorry for the long gap ! i heard you took a break and were travelling around the world . how was the travel ?
+	Free: Pattern=you, Pattern=long, Pattern=travel, Pattern=took a break, Pattern=how was the, Pattern=travelling around, Pattern=were, Pattern=sorry for the, Pattern=yeah, Pattern=and, Pattern=around the world
+	Constrained: Pattern=for the, Pattern=a, Pattern=how, Pattern=for, Pattern=travelling, Pattern=the world, Pattern=the, Pattern=was, Pattern=took, Pattern=world
+Turn ID=3| B | Human 2 : travel was amazing and the world is a beautiful place , travelling for long time you start to find similarities in cultures around the world
+	Free: Pattern=time, Pattern=you, Pattern=long, Pattern=a, Pattern=for, Pattern=travel, Pattern=travelling, Pattern=in, Pattern=to, Pattern=was, Pattern=and, Pattern=around the world, Pattern=is, Pattern=the world
+	Constrained: Pattern=the world, Pattern=the, Pattern=world
+Turn ID=4| A | Human 1 : great ! vietnam is still in my todo bucket list . did you also visit cambodia and other neighboring places ?
+	Free: Pattern=did you, Pattern=cambodia and, Pattern=vietnam, Pattern=great !, Pattern=also, Pattern=neighboring places, Pattern=bucket list, Pattern=is, Pattern=and other, Pattern=still in, Pattern=visit
+	Constrained: Pattern=places, Pattern=and, Pattern=other, Pattern=in, Pattern=list, Pattern=cambodia, Pattern=you, Pattern=great
+Turn ID=5| B | Human 2 : sorry for the confusion but cambodia and neighboring places were also list was long and other bucket list took over travelling around world took a break
+	Free: Pattern=long, Pattern=cambodia and, Pattern=took a break, Pattern=and other, Pattern=also, Pattern=travelling around, Pattern=list, Pattern=was, Pattern=sorry for the, Pattern=world, Pattern=neighboring places, Pattern=bucket list, Pattern=took, Pattern=were
+	Constrained: Pattern=for the, Pattern=places, Pattern=a, Pattern=for, Pattern=and, Pattern=the, Pattern=list, Pattern=cambodia, Pattern=took, Pattern=other, Pattern=travelling
+Turn ID=6| A | Human 1 : hehe ! how long was the stay ?
+	Free: Pattern=was the stay ?, Pattern=how, Pattern=long, Pattern=hehe
+	Constrained: Pattern=was, Pattern=the
+Turn ID=7| B | Human 2 : how was the stay ? did you visit other places apart from vietnam and cambodia ?
+	Free: Pattern=did you, Pattern=places, Pattern=and, Pattern=vietnam, Pattern=was the stay ?, Pattern=how was the, Pattern=cambodia, Pattern=visit, Pattern=other, Pattern=from
+	Constrained: Pattern=you, Pattern=was, Pattern=how, Pattern=the
+Turn ID=8| A | Human 1 : great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects to tackle for next quarter . reat ! good time to be back . we are still in planning phase and haven't fully aligned on the projects to tackle for next quarter .
+	Free: Pattern=great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects, Pattern=! good time to be back . we are still in planning phase and haven't fully aligned on the projects, Pattern=for next quarter, Pattern=to tackle
+	Constrained: Pattern=good, Pattern=planning, Pattern=time to, Pattern=! good time to be back . we are still in planning phase and haven't fully aligned on the projects, Pattern=for, Pattern=and, Pattern=we, Pattern=the, Pattern=to, Pattern=still in, Pattern=time, Pattern=next quarter, Pattern=for next, Pattern=great, Pattern=are, Pattern=projects, Pattern=great !, Pattern=in, Pattern=we are, Pattern=quarter
+Turn ID=9| B | Human 2 : great . do you have any idea for next quarter's projects yet ? how many are you planning to tackle ? <|im_end
+	Free: Pattern=to tackle, Pattern=planning, Pattern=how, Pattern=for next, Pattern=you, Pattern=great, Pattern=are, Pattern=projects
+	Constrained: Pattern=for, Pattern=to
+Turn ID=10| A | Human 1 : hehe , yeah ! it seems like the quarter is being pushed earlier than from where it starts 🙂 i like these planning sessions . it makes me feel more confident about the work i am doing .
+	Free: Pattern=more, Pattern=planning, Pattern=hehe, Pattern=seems like, Pattern=yeah, Pattern=from, Pattern=about, Pattern=than, Pattern=is, Pattern=like, Pattern=quarter, Pattern=the
+	Constrained: Pattern=like
+Turn ID=11| B | Human 2 : yeah . planning for the next quarter projects are in progress and seems like you're about to tackle more than 3 bucket list places he
+	Free: Pattern=next quarter, Pattern=planning, Pattern=for the, Pattern=places, Pattern=seems like, Pattern=about, Pattern=to tackle, Pattern=more, Pattern=bucket list, Pattern=yeah, Pattern=and, Pattern=are, Pattern=projects, Pattern=than, Pattern=in
+	Constrained: Pattern=for, Pattern=like, Pattern=quarter, Pattern=the, Pattern=list, Pattern=to
+Turn ID=12| A | Human 1 : true ! i think we should set aside some time to discuss some project details ? does tomorrow afternoon work for you ?
+	Free: Pattern=you, Pattern=tomorrow, Pattern=time to, Pattern=for, Pattern=we
+	Constrained: Pattern=time, Pattern=to
+Turn ID=13| B | Human 2 : great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects for next quarter yet hehe
+	Free: Pattern=great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects, Pattern=for next quarter, Pattern=hehe
+	Constrained: Pattern=good, Pattern=planning, Pattern=time to, Pattern=! good time to be back . we are still in planning phase and haven't fully aligned on the projects, Pattern=for, Pattern=and, Pattern=we, Pattern=the, Pattern=to, Pattern=still in, Pattern=time, Pattern=next quarter, Pattern=for next, Pattern=great, Pattern=are, Pattern=projects, Pattern=great !, Pattern=in, Pattern=we are, Pattern=quarter
+Turn ID=14| A | Human 1 : okay . see tomorrow then .
+	Free: Pattern=tomorrow then ., Pattern=see
+	Constrained: Pattern=tomorrow
+Turn ID=15| B | Human 2 : 👋 see you tomorrow then . good planning for the next quarter projects , and enjoy travelling to more than three bucket list places
+	Free: Pattern=good, Pattern=next quarter, Pattern=planning, Pattern=you, Pattern=for the, Pattern=places, Pattern=and, Pattern=projects, Pattern=travelling, Pattern=than, Pattern=tomorrow then ., Pattern=see, Pattern=to, Pattern=more, Pattern=bucket list
+	Constrained: Pattern=tomorrow, Pattern=for, Pattern=quarter, Pattern=the, Pattern=list

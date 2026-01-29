@@ -1,0 +1,63 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] 
+A|2| Human 1: _how_ is your day going ? 
+B|3| Human 2: [how] _can_ _i_ help you today ? </|im_end|> 
+A|4| Human 1: [how] is your day ? 
+B|5| Human 2: [how] _can_ _i_ help you today ? </|im_end|> 
+A|6| Human 1: [i] _went to gym and worked_ on _weight lifting_ . 
+B|7| Human 2: [how] may [i] help you today ? [and] the assistant says they [went to gym and worked] [weight lifting] , [and] then<|im_end 
+A|8| Human 1: no , [i] am _just a starter_ . 
+B|9| Human 2: [how] may [i] help you [and] the user asks [how] they _can_ help them , [and] the assistant responds they are [just a starter] [and] _cannot_ _be_ 
+A|10| Human 1: [i] go everyday . in fact , _i'm_ in [a] _running challenge ._ 
+B|11| Human 2: [i'm] [just] an ai [and] do _not_ have [a] physical body , so [i] don't have [a] [gym] or [running challenge .] 
+A|12| Human 1: it's actually [not] that impressive . [i] [can] only _run_ . [i] [cannot] _lift weight_ . 
+B|13| Human 2: [i'm] [just a starter] [and] [cannot] [run] or [lift weight] because [i] don't have physical body or [gym] . 
+A|14| Human 1: oh that's [a] really interesting idea . [i] like [to] [be] coa 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : how is your day going ?
+	Free: Pattern=how
+	Constrained: 
+Turn ID=3| B | Human 2 : how can i help you today ? </|im_end|>
+	Free: Pattern=how, Pattern=can, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : how is your day ?
+	Free: Pattern=how
+	Constrained: 
+Turn ID=5| B | Human 2 : how can i help you today ? </|im_end|>
+	Free: Pattern=how, Pattern=can, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i went to gym and worked on weight lifting .
+	Free: Pattern=went to gym and worked, Pattern=weight lifting, Pattern=i
+	Constrained: Pattern=to, Pattern=gym, Pattern=and
+Turn ID=7| B | Human 2 : how may i help you today ? and the assistant says they went to gym and worked weight lifting , and then<|im_end
+	Free: Pattern=weight lifting, Pattern=how, Pattern=and, Pattern=i, Pattern=went to gym and worked
+	Constrained: Pattern=to, Pattern=gym, Pattern=and
+Turn ID=8| A | Human 1 : no , i am just a starter .
+	Free: Pattern=just a starter, Pattern=i
+	Constrained: Pattern=a, Pattern=just
+Turn ID=9| B | Human 2 : how may i help you and the user asks how they can help them , and the assistant responds they are just a starter and cannot be
+	Free: Pattern=cannot, Pattern=how, Pattern=and, Pattern=can, Pattern=be, Pattern=just a starter, Pattern=i
+	Constrained: Pattern=a, Pattern=just
+Turn ID=10| A | Human 1 : i go everyday . in fact , i'm in a running challenge .
+	Free: Pattern=running challenge ., Pattern=a, Pattern=i, Pattern=i'm
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm just an ai and do not have a physical body , so i don't have a gym or running challenge .
+	Free: Pattern=just, Pattern=a, Pattern=and, Pattern=running challenge ., Pattern=i'm, Pattern=i, Pattern=gym, Pattern=not
+	Constrained: 
+Turn ID=12| A | Human 1 : it's actually not that impressive . i can only run . i cannot lift weight .
+	Free: Pattern=cannot, Pattern=can, Pattern=run, Pattern=lift weight, Pattern=i, Pattern=not
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm just a starter and cannot run or lift weight because i don't have physical body or gym .
+	Free: Pattern=cannot, Pattern=and, Pattern=run, Pattern=gym, Pattern=i'm, Pattern=lift weight, Pattern=just a starter, Pattern=i
+	Constrained: Pattern=just, Pattern=a
+Turn ID=14| A | Human 1 : oh that's a really interesting idea . i like to be coa
+	Free: Pattern=to, Pattern=be, Pattern=a, Pattern=i
+	Constrained: 

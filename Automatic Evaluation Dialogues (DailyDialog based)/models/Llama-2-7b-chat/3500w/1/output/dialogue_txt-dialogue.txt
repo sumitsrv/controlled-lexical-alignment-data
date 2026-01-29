@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my friends _are_ _gonna visit me_ _this weekend_ . we might _go_ _hiking_ ! 
+B|3| Human 2: 😍 [hiking] sounds like _a_ lot of fun ! [are] _you_ [gonna] climb _a_ mountain ? <|im_end| 
+A|4| Human 1: _should_ be _very_ _sunny_ _! you_ ? 
+B|5| Human 2: 🌞 [sunny] weather is always great _for_ [hiking] . [are] [you] [gonna] bring any snacks ? <|im_end 
+A|6| Human 1: 😐 hope [you] get your work done _very_ _soon !_ [a] bug free [weekend] ! 
+B|7| Human 2: 👍 thanks _for_ _the_ get-well [soon [!] you] [gonna visit me] sometime ? 
+A|8| Human 1: i am _going_ to _diablo_ ! 
+B|9| Human 2: 🏔 [diablo] is [a] [very] nice place [! you] [gonna] climb _the_ mountain ? 
+A|10| Human 1: hours drive from _here_ . still in _bay area_ 
+B|11| Human 2: 👍 , [bay area] [here] [you] [go] ! [going] [hiking] on [diablo] [this weekend] ? 
+A|12| Human 1: actually no idea , _but_ it _will take the entire day for that ._ 
+B|13| Human 2: [diablo] [will take the entire day for that .] it's [very] long and steep [but] it's [a] beautiful hike [! you] [should] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=weekend, Pattern=for, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=this weekend, Pattern=go, Pattern=are, Pattern=gonna visit me, Pattern=hiking
+	Constrained: Pattern=weekend, Pattern=gonna
+Turn ID=3| B | Human 2 : 😍 hiking sounds like a lot of fun ! are you gonna climb a mountain ? <|im_end|
+	Free: Pattern=you, Pattern=a, Pattern=gonna, Pattern=are, Pattern=hiking
+	Constrained: 
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=! you, Pattern=should, Pattern=very, Pattern=sunny
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : 🌞 sunny weather is always great for hiking . are you gonna bring any snacks ? <|im_end
+	Free: Pattern=you, Pattern=are, Pattern=hiking, Pattern=sunny, Pattern=gonna, Pattern=for
+	Constrained: 
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=you, Pattern=a, Pattern=weekend, Pattern=very, Pattern=soon !
+	Constrained: 
+Turn ID=7| B | Human 2 : 👍 thanks for the get-well soon ! you gonna visit me sometime ?
+	Free: Pattern=for, Pattern=soon !, Pattern=! you, Pattern=gonna visit me, Pattern=the
+	Constrained: Pattern=you, Pattern=gonna
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=going, Pattern=diablo
+	Constrained: 
+Turn ID=9| B | Human 2 : 🏔 diablo is a very nice place ! you gonna climb the mountain ?
+	Free: Pattern=diablo, Pattern=a, Pattern=gonna, Pattern=very, Pattern=the, Pattern=! you
+	Constrained: Pattern=you
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=bay area, Pattern=here
+	Constrained: 
+Turn ID=11| B | Human 2 : 👍 , bay area here you go ! going hiking on diablo this weekend ?
+	Free: Pattern=go, Pattern=here, Pattern=hiking, Pattern=this weekend, Pattern=you, Pattern=bay area, Pattern=going, Pattern=diablo
+	Constrained: Pattern=weekend
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=will take the entire day for that ., Pattern=but
+	Constrained: Pattern=for, Pattern=the
+Turn ID=13| B | Human 2 : diablo will take the entire day for that . it's very long and steep but it's a beautiful hike ! you should
+	Free: Pattern=will take the entire day for that ., Pattern=diablo, Pattern=should, Pattern=a, Pattern=very, Pattern=! you, Pattern=but
+	Constrained: Pattern=for, Pattern=the, Pattern=you

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ _mark_ . _i_ work _in_ _accounting_ 
+B|3| Human 2: hello , [mark] ! [i'm] phi , your ai assistant . how can [i] help _you_ with [accounting] or any other queries _you_ might have 
+A|4| Human 1: what _does_ _a_ _fish_ groomer _do_ ? 
+B|5| Human 2: it seems there's [a] bit _of_ confusion . _the_ role _of_ grooming [fish] doesn't correspond _to_ [a] common profession , as _fish do_ not require 
+A|6| Human 1: interesting . what's type [of] [fish do] [you] _take_ _care_ [of] ? 
+B|7| Human 2: [i'm] phi , your ai assistant . while [fish] grooming [in] _the_ traditional sense [does] not exist , [you] may be referencing _the_ [care] _and_ 
+A|8| Human 1: [i] _balance_ [the] _books and_ [do] _financial analysis for_ [a] medium sized _company_ 
+B|9| Human 2: [i'm] phi , [and] [i] am here _to_ assist [you] . if [the] [company] [for] which [you] [balance] [books and] [financial analysis] requires grooming [fish] , 
+A|10| Human 1: _well_ [i] _actually_ think _about_ _pursuing_ _photography_ _, but_ _it's_ really hard 
+B|11| Human 2: [i] understand [the] imaginative [take] on it . while [photography] [and] [financial analysis] are indeed careers you're [pursuing] , [actually] grooming [fish] 
+A|12| Human 1: thank [you] tom !! [i'm] starting by trying [to] sell my pictures _online_ 
+B|13| Human 2: [i'm] phi [and] [it's] [about] [the] pursuit [of] [financial analysis for] [you] [, but] considering [photography] [online] [does] align [well] with modern career 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=accounting, Pattern=i'm, Pattern=i, Pattern=mark, Pattern=in
+	Constrained: 
+Turn ID=3| B | Human 2 : hello , mark ! i'm phi , your ai assistant . how can i help you with accounting or any other queries you might have
+	Free: Pattern=you, Pattern=accounting, Pattern=mark, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=a, Pattern=do, Pattern=fish, Pattern=does
+	Constrained: 
+Turn ID=5| B | Human 2 : it seems there's a bit of confusion . the role of grooming fish doesn't correspond to a common profession , as fish do not require
+	Free: Pattern=of, Pattern=a, Pattern=fish do, Pattern=fish, Pattern=the, Pattern=to
+	Constrained: Pattern=do, Pattern=fish
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=of, Pattern=you, Pattern=care, Pattern=fish do, Pattern=take
+	Constrained: Pattern=do, Pattern=fish
+Turn ID=7| B | Human 2 : i'm phi , your ai assistant . while fish grooming in the traditional sense does not exist , you may be referencing the care and
+	Free: Pattern=you, Pattern=care, Pattern=and, Pattern=does, Pattern=in, Pattern=i'm, Pattern=fish, Pattern=the
+	Constrained: 
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=company, Pattern=balance, Pattern=i, Pattern=the, Pattern=books and, Pattern=financial analysis for, Pattern=do, Pattern=a
+	Constrained: Pattern=for, Pattern=financial analysis, Pattern=and
+Turn ID=9| B | Human 2 : i'm phi , and i am here to assist you . if the company for which you balance books and financial analysis requires grooming fish ,
+	Free: Pattern=company, Pattern=balance, Pattern=books and, Pattern=you, Pattern=financial analysis, Pattern=for, Pattern=and, Pattern=i'm, Pattern=i, Pattern=fish, Pattern=the, Pattern=to
+	Constrained: Pattern=and
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=photography, Pattern=well, Pattern=, but, Pattern=actually, Pattern=pursuing, Pattern=about, Pattern=i, Pattern=it's
+	Constrained: 
+Turn ID=11| B | Human 2 : i understand the imaginative take on it . while photography and financial analysis are indeed careers you're pursuing , actually grooming fish
+	Free: Pattern=photography, Pattern=financial analysis, Pattern=actually, Pattern=pursuing, Pattern=and, Pattern=i, Pattern=fish, Pattern=take, Pattern=the
+	Constrained: 
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=you, Pattern=to, Pattern=online, Pattern=i'm
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm phi and it's about the pursuit of financial analysis for you , but considering photography online does align well with modern career
+	Free: Pattern=well, Pattern=and, Pattern=about, Pattern=does, Pattern=i'm, Pattern=online, Pattern=the, Pattern=it's, Pattern=of, Pattern=photography, Pattern=financial analysis for, Pattern=you, Pattern=, but
+	Constrained: Pattern=for, Pattern=financial analysis
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

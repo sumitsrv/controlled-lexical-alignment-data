@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what are you_ up _to_ ? 
+B|3| Human 2: hey , what's new with [you] ? 
+A|4| Human 1: me ? just chilling _out_ at _work_ _. what_ _is_ _code refactoring_ ? 
+B|5| Human 2: [code refactoring] [is] the process of improving the structure and organization of [code] without changing its external behavior . this can involve simplifying [code] , reducing repet 
+A|6| Human 1: haha , forget it _. _what_ else_ do [you] _like to_ do beside _work_ ? 
+B|7| Human 2: _i [like_ to] [work] [out] and listen [to] music _in_ my free time [. what] about [you] ? 
+A|8| Human 1: these _are_ _important_ things [to] do _in life_ 😉 
+B|9| Human 2: [you] know [what else] [is] [important] ? 🤔 [refactoring] [code] without changing its external behavior ! it's [like] _a_ workout for your 
+A|10| Human 1: [what] _food_ do [you] [like to] eat ? 
+B|11| Human 2: [food] 🤤 [what else] [are you] looking forward [to] [in life] ? 
+A|12| Human 1: _like szechuan or hunan ?_ 🙂 
+B|13| Human 2: 🤔 [what else] [are you] looking forward [to] [in life] ? [like szechuan or hunan ?] 🙂<| 
+A|14| Human 1: [i like] noodle soup [like] pho [or] ramen . [i] _also_ [like] _beijing duck_ [a] lot ! 
+B|15| Human 2: 😍 [beijing duck] [is] [also] delicious ! [what are you] looking forward [to] doing [in] the future ? <|im_ 
+A|16| Human 1: [i] love _<redacted_term> in san mateo_ 
+B|17| Human 2: 🤔 [what else] [are you] looking forward [to] [in life] ? [like] [<redacted_term> in san mateo] ? 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=what are you, Pattern=to
+	Constrained: Pattern=are you, Pattern=what, Pattern=are, Pattern=you
+Turn ID=3| B | Human 2 : hey , what's new with you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=out, Pattern=work, Pattern=is, Pattern=code refactoring, Pattern=. what
+	Constrained: Pattern=what, Pattern=code, Pattern=refactoring
+Turn ID=5| B | Human 2 : code refactoring is the process of improving the structure and organization of code without changing its external behavior . this can involve simplifying code , reducing repet
+	Free: Pattern=code refactoring, Pattern=is, Pattern=code
+	Constrained: Pattern=code, Pattern=refactoring
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=you, Pattern=work, Pattern=like to, Pattern=. what, Pattern=what else
+	Constrained: Pattern=like, Pattern=to, Pattern=what
+Turn ID=7| B | Human 2 : i like to work out and listen to music in my free time . what about you ?
+	Free: Pattern=in, Pattern=work, Pattern=like to, Pattern=to, Pattern=. what, Pattern=i like, Pattern=you, Pattern=out
+	Constrained: Pattern=like, Pattern=to, Pattern=what, Pattern=i
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=in life, Pattern=to, Pattern=important, Pattern=are
+	Constrained: Pattern=in
+Turn ID=9| B | Human 2 : you know what else is important ? 🤔 refactoring code without changing its external behavior ! it's like a workout for your
+	Free: Pattern=you, Pattern=code, Pattern=a, Pattern=important, Pattern=is, Pattern=like, Pattern=what else, Pattern=refactoring
+	Constrained: Pattern=what
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=like to, Pattern=food, Pattern=what, Pattern=you
+	Constrained: Pattern=like, Pattern=to
+Turn ID=11| B | Human 2 : food 🤤 what else are you looking forward to in life ?
+	Free: Pattern=in life, Pattern=are you, Pattern=food, Pattern=to, Pattern=what else
+	Constrained: Pattern=in, Pattern=are, Pattern=what, Pattern=you
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like szechuan or hunan ?
+	Constrained: Pattern=or, Pattern=like
+Turn ID=13| B | Human 2 : 🤔 what else are you looking forward to in life ? like szechuan or hunan ? 🙂<|
+	Free: Pattern=in life, Pattern=are you, Pattern=to, Pattern=what else, Pattern=like szechuan or hunan ?
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=in, Pattern=like, Pattern=or
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=a, Pattern=beijing duck, Pattern=i, Pattern=or, Pattern=i like, Pattern=also, Pattern=like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=15| B | Human 2 : 😍 beijing duck is also delicious ! what are you looking forward to doing in the future ? <|im_
+	Free: Pattern=beijing duck, Pattern=in, Pattern=also, Pattern=to, Pattern=what are you, Pattern=is
+	Constrained: Pattern=are, Pattern=what, Pattern=you, Pattern=are you
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=<redacted_term> in san mateo, Pattern=i
+	Constrained: Pattern=in
+Turn ID=17| B | Human 2 : 🤔 what else are you looking forward to in life ? like <redacted_term> in san mateo ?
+	Free: Pattern=<redacted_term> in san mateo, Pattern=in life, Pattern=are you, Pattern=like, Pattern=to, Pattern=what else
+	Constrained: Pattern=in, Pattern=are, Pattern=what, Pattern=you
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

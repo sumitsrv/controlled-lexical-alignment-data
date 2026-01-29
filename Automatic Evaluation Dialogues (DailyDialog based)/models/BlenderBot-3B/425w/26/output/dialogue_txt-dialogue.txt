@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm mark_ . _i work_ in accounting 
+B|3| Human 2: [i'm mark] ! nice _to_ meet _you_ ! _it's_ good _to_ meet _a_ friend ! 
+A|4| Human 1: _what_ _does_ [a] _fish_ groomer _do_ ? 
+B|5| Human 2: [i work] at _the_ grooming salon _and_ _the_ [fish] tank 
+A|6| Human 1: interesting . what's _type_ _of fish_ _do you_ _take care of_ ? 
+B|7| Human 2: [i] [take] grooming [fish] because [you] get _to_ [care] _for_ them while _it's_ their caregiver [does] all _the_ [work] ! 
+A|8| Human 1: [i] balance [the] books [and] _do_ financial analysis [for] [a] medium sized _company_ 
+B|9| Human 2: [i] [take care [of] fish] [for] [the] [company] [and] [what] [type] [do you] [work] [for] ? 
+A|10| Human 1: well [i] _actually_ think about pursuing photography , _but it's_ _really_ _hard_ 
+B|11| Human 2: [i work] [for] [the] [fish] [and] aquariums department at [the] pet store [but it's] [hard] _to_ get [a] break 
+A|12| Human 1: thank [you] tom !! [i'm] starting by trying [to] sell my pictures _online_ 
+B|13| Human 2: [i'm] [actually] [a] photographer [and] [you] can [do] it [online] [for] [really] cheap . 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=i work, Pattern=i'm mark
+	Constrained: Pattern=i, Pattern=i'm, Pattern=work
+Turn ID=3| B | Human 2 : i'm mark ! nice to meet you ! it's good to meet a friend !
+	Free: Pattern=you, Pattern=a, Pattern=to, Pattern=i'm mark, Pattern=it's
+	Constrained: Pattern=i'm
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=what, Pattern=does, Pattern=fish, Pattern=do, Pattern=a
+	Constrained: 
+Turn ID=5| B | Human 2 : i work at the grooming salon and the fish tank
+	Free: Pattern=i work, Pattern=and, Pattern=fish, Pattern=the
+	Constrained: Pattern=i, Pattern=work
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=take care of, Pattern=do you, Pattern=of fish, Pattern=type
+	Constrained: Pattern=you, Pattern=do, Pattern=care, Pattern=fish, Pattern=take
+Turn ID=7| B | Human 2 : i take grooming fish because you get to care for them while it's their caregiver does all the work !
+	Free: Pattern=you, Pattern=does, Pattern=work, Pattern=i, Pattern=fish, Pattern=to, Pattern=it's, Pattern=for, Pattern=care, Pattern=take, Pattern=the
+	Constrained: 
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=company, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=do, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : i take care of fish for the company and what type do you work for ?
+	Free: Pattern=company, Pattern=what, Pattern=for, Pattern=of fish, Pattern=work, Pattern=the, Pattern=type, Pattern=and, Pattern=do you, Pattern=take care of, Pattern=i
+	Constrained: Pattern=you, Pattern=do, Pattern=care, Pattern=fish, Pattern=take
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=actually, Pattern=but it's, Pattern=i, Pattern=really, Pattern=hard
+	Constrained: Pattern=it's
+Turn ID=11| B | Human 2 : i work for the fish and aquariums department at the pet store but it's hard to get a break
+	Free: Pattern=i work, Pattern=a, Pattern=but it's, Pattern=for, Pattern=and, Pattern=fish, Pattern=the, Pattern=hard, Pattern=to
+	Constrained: Pattern=i, Pattern=it's, Pattern=work
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=to, Pattern=i'm, Pattern=you, Pattern=online
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm actually a photographer and you can do it online for really cheap .
+	Free: Pattern=you, Pattern=for, Pattern=and, Pattern=i'm, Pattern=online, Pattern=really, Pattern=do, Pattern=actually, Pattern=a
+	Constrained: 
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

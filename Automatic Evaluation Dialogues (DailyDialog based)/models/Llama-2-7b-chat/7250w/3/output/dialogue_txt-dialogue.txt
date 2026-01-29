@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey 
+A|2| Human 1: is it _raining pretty bad today_ ? 
+B|3| Human 2: [today] [raining pretty bad] 
+A|4| Human 1: surprising _that_ _the _rain_ started early this year_ ... i _don't like them_ _too much_ . _they_ _make days gloomy_ 
+B|5| Human 2: [too much] [gloomy] [days] [make] [the rain] 
+A|6| Human 1: where i grew up , we _had_ _lots_ of _water_ _trouble too_ ... 
+B|7| Human 2: [lots] [trouble too] [make] [the] [water] [year] [rain started early this year] [they] [don't like them] [much] [that] [days gloomy] [raining pretty bad today] [had] 
+A|8| Human 1: _haha_ ... i [don't] think i can _survive_ in [that] _weather_ _ever_ . _just the rains_ at 50 degrees [make] me _want_ to _sit_ in _heated rroms_ 
+B|9| Human 2: [haha] [don't] [want] [sit] [heated rroms] [rain] [make days gloomy] [ever] 
+A|10| Human 1: people say there is drought _here_ ... but we have 24 hours _water supply here_ ... _lol_ ... _never seen_ [that] in a drought ridden _area_ 
+B|11| Human 2: [never seen] [area] [rroms] [rain] [don't] [want] [survive] [make] [gloomy] [ever] [days] [weather] [just the rains] [that] [water supply here] [lol] 
+A|12| Human 1: _hmm_ .... _okay_ . _climate change talk this morning_ was [pretty] darn _interesting_ . _did_ you _see_ it ? 
+B|13| Human 2: [interesting] [climate change talk this morning] [did] [see] [okay] [hmm] [survive] [make] [ever] [days] [weather] [just the] [rroms] [rain] [water supply here] [lol] 
+A|14| Human 1: [they] were talking about how ai is helping [climate change] . nice use of upcoming tech . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : is it raining pretty bad today ?
+	Free: Pattern=raining pretty bad today
+	Constrained: Pattern=today, Pattern=pretty, Pattern=raining pretty bad
+Turn ID=3| B | Human 2 : today raining pretty bad
+	Free: Pattern=raining pretty bad, Pattern=today
+	Constrained: Pattern=pretty
+Turn ID=4| A | Human 1 : surprising that the rain started early this year ... i don't like them too much . they make days gloomy
+	Free: Pattern=the rain, Pattern=too much, Pattern=they, Pattern=rain started early this year, Pattern=don't like them, Pattern=that, Pattern=make days gloomy
+	Constrained: Pattern=rain, Pattern=gloomy, Pattern=make, Pattern=much, Pattern=year, Pattern=the, Pattern=don't, Pattern=days, Pattern=days gloomy
+Turn ID=5| B | Human 2 : too much gloomy days make the rain
+	Free: Pattern=the rain, Pattern=too much, Pattern=gloomy, Pattern=make, Pattern=days
+	Constrained: Pattern=much, Pattern=the, Pattern=rain
+Turn ID=6| A | Human 1 : where i grew up , we had lots of water trouble too ...
+	Free: Pattern=trouble too, Pattern=had, Pattern=lots, Pattern=water
+	Constrained: 
+Turn ID=7| B | Human 2 : lots trouble too make the water year rain started early this year they don't like them much that days gloomy raining pretty bad today had
+	Free: Pattern=they, Pattern=lots, Pattern=raining pretty bad today, Pattern=trouble too, Pattern=make, Pattern=year, Pattern=the, Pattern=that, Pattern=days gloomy, Pattern=water, Pattern=rain started early this year, Pattern=had, Pattern=much, Pattern=don't like them
+	Constrained: Pattern=rain, Pattern=today, Pattern=gloomy, Pattern=raining pretty bad, Pattern=pretty, Pattern=year, Pattern=don't, Pattern=days
+Turn ID=8| A | Human 1 : haha ... i don't think i can survive in that weather ever . just the rains at 50 degrees make me want to sit in heated rroms
+	Free: Pattern=survive, Pattern=want, Pattern=make, Pattern=haha, Pattern=ever, Pattern=don't, Pattern=just the rains, Pattern=sit, Pattern=that, Pattern=heated rroms, Pattern=weather
+	Constrained: Pattern=rroms, Pattern=just the, Pattern=the
+Turn ID=9| B | Human 2 : haha don't want sit heated rroms rain make days gloomy ever
+	Free: Pattern=want, Pattern=rain, Pattern=haha, Pattern=ever, Pattern=don't, Pattern=sit, Pattern=make days gloomy, Pattern=heated rroms
+	Constrained: Pattern=gloomy, Pattern=rroms, Pattern=make, Pattern=days, Pattern=days gloomy
+Turn ID=10| A | Human 1 : people say there is drought here ... but we have 24 hours water supply here ... lol ... never seen that in a drought ridden area
+	Free: Pattern=lol, Pattern=here, Pattern=never seen, Pattern=water supply here, Pattern=area, Pattern=that
+	Constrained: Pattern=water, Pattern=here
+Turn ID=11| B | Human 2 : never seen area rroms rain don't want survive make gloomy ever days weather just the rains that water supply here lol
+	Free: Pattern=survive, Pattern=lol, Pattern=want, Pattern=rain, Pattern=never seen, Pattern=gloomy, Pattern=rroms, Pattern=make, Pattern=ever, Pattern=don't, Pattern=area, Pattern=that, Pattern=weather, Pattern=days, Pattern=just the rains, Pattern=water supply here
+	Constrained: Pattern=just the, Pattern=the, Pattern=water, Pattern=here
+Turn ID=12| A | Human 1 : hmm .... okay . climate change talk this morning was pretty darn interesting . did you see it ?
+	Free: Pattern=climate change talk this morning, Pattern=did, Pattern=hmm, Pattern=pretty, Pattern=see, Pattern=interesting, Pattern=okay
+	Constrained: Pattern=climate change
+Turn ID=13| B | Human 2 : interesting climate change talk this morning did see okay hmm survive make ever days weather just the rroms rain water supply here lol
+	Free: Pattern=survive, Pattern=lol, Pattern=climate change talk this morning, Pattern=rain, Pattern=did, Pattern=rroms, Pattern=just the, Pattern=make, Pattern=hmm, Pattern=ever, Pattern=see, Pattern=weather, Pattern=okay, Pattern=days, Pattern=interesting, Pattern=water supply here
+	Constrained: Pattern=water, Pattern=here, Pattern=climate change, Pattern=the
+Turn ID=14| A | Human 1 : they were talking about how ai is helping climate change . nice use of upcoming tech .
+	Free: Pattern=climate change, Pattern=they
+	Constrained: 

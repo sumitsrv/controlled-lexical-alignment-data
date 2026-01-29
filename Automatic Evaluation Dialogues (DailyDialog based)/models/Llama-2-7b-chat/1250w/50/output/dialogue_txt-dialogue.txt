@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how're _you_ _doing_ ? _busy_ _with_ _your_ work ? 
+A|2| Human 1: yes , actually _it_ was _a_ very [busy] day ! how's [your] day _so far_ ? 
+B|3| Human 2: [so far] , [so] good ! 😊 how can _i_ help _you_ today ? _do you_ have _any_ questions or anything you'd like _to_ 
+A|4| Human 1: _hope _you_ are having fun_ [doing] _that_ 🙂 [any] _plans_ _for_ _the_ _weekend ?_ 
+B|5| Human 2: not [plans] per se _, but_ i'll be [doing] some [fun] stuff 😉 would [you] like _me_ _to_ tell [you] more about [it] ? 
+A|6| Human 1: _europe_ sounds [fun] ! [i] _will_ just stay home _and_ watch _the_ game _. where_ in _europe_ [do you] plan [to] _visit_ ? 
+B|7| Human 2: [hope you] [will] [visit] [the] eiffel tower [and] [the] colosseum 😊 [are] [you] planing [for] [europe] trip ? <| 
+A|8| Human 1: sounds _great !_ [i] recommend spain . _it's_ perfect [for] _road trips ._ 
+B|9| Human 2: [it's] [great] [that] [you are having fun] [and] [doing] [road trips [.] where] did [you] [visit] last [weekend ?] <|im_end| 
+A|10| Human 1: yep , [i] tried learning spanish too [, but] couldn't make _much_ progress . [but] [i] should [do] decent [with] my german . 
+B|11| Human 2: that's [great !] germany is [a] beautiful country [with] [much] [to] offer . did [you] [visit] [the] neuschwanstein castle ? <|im_ 
+A|12| Human 1: thanks ! let [me] try [to] make all [the] arrangement as soon as possible . [hope you] also enjoy [your] weekday [and] [weekend] as well 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how're you doing ? busy with your work ?
+	Free: Pattern=you, Pattern=busy, Pattern=doing, Pattern=your, Pattern=with
+	Constrained: 
+Turn ID=2| A | Human 1 : yes , actually it was a very busy day ! how's your day so far ?
+	Free: Pattern=it, Pattern=your, Pattern=so far, Pattern=busy, Pattern=a
+	Constrained: Pattern=so
+Turn ID=3| B | Human 2 : so far , so good ! 😊 how can i help you today ? do you have any questions or anything you'd like to
+	Free: Pattern=you, Pattern=any, Pattern=do you, Pattern=i, Pattern=so far, Pattern=to, Pattern=so
+	Constrained: Pattern=do, Pattern=so, Pattern=you
+Turn ID=4| A | Human 1 : hope you are having fun doing that 🙂 any plans for the weekend ?
+	Free: Pattern=plans, Pattern=doing, Pattern=you are having fun, Pattern=hope you, Pattern=the, Pattern=weekend ?, Pattern=that, Pattern=for, Pattern=any
+	Constrained: Pattern=are, Pattern=weekend, Pattern=you, Pattern=fun
+Turn ID=5| B | Human 2 : not plans per se , but i'll be doing some fun stuff 😉 would you like me to tell you more about it ?
+	Free: Pattern=fun, Pattern=plans, Pattern=me, Pattern=doing, Pattern=it, Pattern=to, Pattern=you, Pattern=, but
+	Constrained: Pattern=but
+Turn ID=6| A | Human 1 : europe sounds fun ! i will just stay home and watch the game . where in europe do you plan to visit ?
+	Free: Pattern=fun, Pattern=. where, Pattern=will, Pattern=i, Pattern=the, Pattern=to, Pattern=europe, Pattern=visit, Pattern=and, Pattern=do you
+	Constrained: Pattern=do, Pattern=you
+Turn ID=7| B | Human 2 : hope you will visit the eiffel tower and the colosseum 😊 are you planing for europe trip ? <|
+	Free: Pattern=you, Pattern=for, Pattern=and, Pattern=are, Pattern=will, Pattern=hope you, Pattern=the, Pattern=europe, Pattern=visit
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : sounds great ! i recommend spain . it's perfect for road trips .
+	Free: Pattern=for, Pattern=great !, Pattern=i, Pattern=road trips ., Pattern=it's
+	Constrained: Pattern=great
+Turn ID=9| B | Human 2 : it's great that you are having fun and doing road trips . where did you visit last weekend ? <|im_end|
+	Free: Pattern=doing, Pattern=and, Pattern=. where, Pattern=you are having fun, Pattern=weekend ?, Pattern=road trips ., Pattern=you, Pattern=great, Pattern=that, Pattern=it's, Pattern=visit
+	Constrained: Pattern=are, Pattern=weekend, Pattern=fun, Pattern=you
+Turn ID=10| A | Human 1 : yep , i tried learning spanish too , but couldn't make much progress . but i should do decent with my german .
+	Free: Pattern=, but, Pattern=do, Pattern=i, Pattern=much, Pattern=with, Pattern=but
+	Constrained: Pattern=but
+Turn ID=11| B | Human 2 : that's great ! germany is a beautiful country with much to offer . did you visit the neuschwanstein castle ? <|im_
+	Free: Pattern=you, Pattern=a, Pattern=great !, Pattern=much, Pattern=the, Pattern=to, Pattern=with, Pattern=visit
+	Constrained: Pattern=great
+Turn ID=12| A | Human 1 : thanks ! let me try to make all the arrangement as soon as possible . hope you also enjoy your weekday and weekend as well
+	Free: Pattern=me, Pattern=and, Pattern=weekend, Pattern=hope you, Pattern=your, Pattern=the, Pattern=to
+	Constrained: Pattern=you

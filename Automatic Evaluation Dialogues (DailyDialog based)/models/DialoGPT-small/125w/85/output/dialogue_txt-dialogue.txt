@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! 
+A|2| Human 1: _how's_ life ? 
+B|3| Human 2: [how's] _the_ hurricane ? 
+A|4| Human 1: lol which _cafe_ ? let me guess . <redacted_term> ? 
+B|5| Human 2: he's a [cafe] . 
+A|6| Human 1: _what_ is _your_ favoriate cuisine ? my _favorite food_ is chinese _. what_ _about you ?_ 
+B|7| Human 2: how [about you ?] _i_ enjoy cooking [. what] do [you] enjoy doing ? 
+A|8| Human 1: hmm _you like_ spicy _food_ . nice 
+B|9| Human 2: what's [your] [favorite food] [you like] ? 
+A|10| Human 1: [i] would recommend _hunan impression_ which has very good _hunan_ cruisine . not _sure_ if [you] have tried it or not 
+B|11| Human 2: [i] [like] [hunan impression] 
+A|12| Human 1: _yeah_ _of_ course [the] fun fact is _that_ _the owner of_ <redacted_term> used to run <redacted_term> 
+B|13| Human 2: oh [you] mean [the owner of] [that] [hunan impression] ? [yeah] [sure] , that's probably [your] [favorite] [of] [the] ones [i] got :d 
+A|14| Human 1: same former [owner] ?? 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's life ?
+	Free: Pattern=how's
+	Constrained: 
+Turn ID=3| B | Human 2 : how's the hurricane ?
+	Free: Pattern=the, Pattern=how's
+	Constrained: 
+Turn ID=4| A | Human 1 : lol which cafe ? let me guess . <redacted_term> ?
+	Free: Pattern=cafe
+	Constrained: 
+Turn ID=5| B | Human 2 : he's a cafe .
+	Free: Pattern=cafe
+	Constrained: 
+Turn ID=6| A | Human 1 : what is your favoriate cuisine ? my favorite food is chinese . what about you ?
+	Free: Pattern=what, Pattern=your, Pattern=about you ?, Pattern=. what, Pattern=favorite food
+	Constrained: Pattern=favorite, Pattern=what, Pattern=you, Pattern=food
+Turn ID=7| B | Human 2 : how about you ? i enjoy cooking . what do you enjoy doing ?
+	Free: Pattern=about you ?, Pattern=. what, Pattern=you, Pattern=i
+	Constrained: Pattern=you, Pattern=what
+Turn ID=8| A | Human 1 : hmm you like spicy food . nice
+	Free: Pattern=you like, Pattern=food
+	Constrained: Pattern=you, Pattern=like
+Turn ID=9| B | Human 2 : what's your favorite food you like ?
+	Free: Pattern=favorite food, Pattern=you like, Pattern=your
+	Constrained: Pattern=favorite, Pattern=you, Pattern=food, Pattern=like
+Turn ID=10| A | Human 1 : i would recommend hunan impression which has very good hunan cruisine . not sure if you have tried it or not
+	Free: Pattern=you, Pattern=i, Pattern=hunan, Pattern=sure, Pattern=hunan impression
+	Constrained: Pattern=hunan
+Turn ID=11| B | Human 2 : i like hunan impression
+	Free: Pattern=hunan impression, Pattern=like, Pattern=i
+	Constrained: Pattern=hunan
+Turn ID=12| A | Human 1 : yeah of course the fun fact is that the owner of <redacted_term> used to run <redacted_term>
+	Free: Pattern=of, Pattern=the, Pattern=that, Pattern=yeah, Pattern=the owner of
+	Constrained: Pattern=of, Pattern=the, Pattern=owner
+Turn ID=13| B | Human 2 : oh you mean the owner of that hunan impression ? yeah sure , that's probably your favorite of the ones i got :d
+	Free: Pattern=of, Pattern=you, Pattern=favorite, Pattern=sure, Pattern=the, Pattern=hunan impression, Pattern=that, Pattern=yeah, Pattern=the owner of, Pattern=your, Pattern=i
+	Constrained: Pattern=owner, Pattern=of, Pattern=hunan, Pattern=the
+Turn ID=14| A | Human 1 : same former owner ?? 🙂
+	Free: Pattern=owner
+	Constrained: 

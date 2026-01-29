@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there how's it _going_ 
+A|2| Human 1: all good _, you_ ? 
+B|3| Human 2: great ! 😊 _is_ there anything you'd like _to_ chat _about_ or ask me ? i'm here _to_ help _with_ any questions 
+A|4| Human 1: how has _that_ been [going] ? 
+B|5| Human 2: oh [, you] know 😅 . here's hoping [that] things go well _for_ [you] 
+A|6| Human 1: _that's too_ bad hopefully _with practice_ it'll _get_ _better_ _what_ [about] _the_ doggy paddle _haha_ 
+B|7| Human 2: 😂 i'll do [better] [that] [with practice] [too] [haha] 
+A|8| Human 1: corgi belly flop compilation - _cute_ funny dogs corgi flop <redacted_link> 
+B|9| Human 2: 😂 [that's too] [cute] ! do [you] have any pets ? 
+A|10| Human 1: _from_ _a_ high enough distance , _yes_ ? 
+B|11| Human 2: 😂 [yes] [from] [what] i've seen 
+A|12| Human 1: _no_ _so_ _far_ _sadly_ [you] ? _a_ _relative_ _is coming_ [to] _visit_ _for thanksgiving though_ 
+B|13| Human 2: [that's] sad 😞 [thanksgiving] [is coming] up [though] [you] should [get] [a] pet [for] [the] [visit] <|im_end| 
+A|14| Human 1: [that's] still pretty fun _are you going to_ _cook the turkey_ yourself ? 
+B|15| Human 2: [cook the turkey] [that's] [cute] [are you going to] [for thanksgiving though] [sadly] [relative] [coming] [from] [far] away [so] [no] pets 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there how's it going
+	Free: Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : all good , you ?
+	Free: Pattern=, you
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : great ! 😊 is there anything you'd like to chat about or ask me ? i'm here to help with any questions
+	Free: Pattern=to, Pattern=about, Pattern=is, Pattern=with
+	Constrained: 
+Turn ID=4| A | Human 1 : how has that been going ?
+	Free: Pattern=that, Pattern=going
+	Constrained: 
+Turn ID=5| B | Human 2 : oh , you know 😅 . here's hoping that things go well for you
+	Free: Pattern=, you, Pattern=for, Pattern=that, Pattern=you
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : that's too bad hopefully with practice it'll get better what about the doggy paddle haha
+	Free: Pattern=what, Pattern=about, Pattern=haha, Pattern=the, Pattern=get, Pattern=better, Pattern=that's too, Pattern=with practice
+	Constrained: Pattern=too, Pattern=with, Pattern=that's
+Turn ID=7| B | Human 2 : 😂 i'll do better that with practice too haha
+	Free: Pattern=too, Pattern=haha, Pattern=that, Pattern=better, Pattern=with practice
+	Constrained: Pattern=with
+Turn ID=8| A | Human 1 : corgi belly flop compilation - cute funny dogs corgi flop <redacted_link>
+	Free: Pattern=cute
+	Constrained: 
+Turn ID=9| B | Human 2 : 😂 that's too cute ! do you have any pets ?
+	Free: Pattern=that's too, Pattern=you, Pattern=cute
+	Constrained: Pattern=too, Pattern=that's
+Turn ID=10| A | Human 1 : from a high enough distance , yes ?
+	Free: Pattern=from, Pattern=a, Pattern=yes
+	Constrained: 
+Turn ID=11| B | Human 2 : 😂 yes from what i've seen
+	Free: Pattern=from, Pattern=what, Pattern=yes
+	Constrained: 
+Turn ID=12| A | Human 1 : no so far sadly you ? a relative is coming to visit for thanksgiving though
+	Free: Pattern=far, Pattern=you, Pattern=no, Pattern=a, Pattern=sadly, Pattern=is coming, Pattern=for thanksgiving though, Pattern=to, Pattern=visit, Pattern=so, Pattern=relative
+	Constrained: Pattern=for, Pattern=thanksgiving, Pattern=is, Pattern=coming, Pattern=though
+Turn ID=13| B | Human 2 : that's sad 😞 thanksgiving is coming up though you should get a pet for the visit <|im_end|
+	Free: Pattern=you, Pattern=though, Pattern=a, Pattern=for, Pattern=get, Pattern=visit, Pattern=thanksgiving, Pattern=is coming, Pattern=that's, Pattern=the
+	Constrained: Pattern=is, Pattern=coming
+Turn ID=14| A | Human 1 : that's still pretty fun are you going to cook the turkey yourself ?
+	Free: Pattern=are you going to, Pattern=cook the turkey, Pattern=that's
+	Constrained: Pattern=going, Pattern=to, Pattern=you, Pattern=the
+Turn ID=15| B | Human 2 : cook the turkey that's cute are you going to for thanksgiving though sadly relative coming from far away so no pets
+	Free: Pattern=far, Pattern=sadly, Pattern=from, Pattern=for thanksgiving though, Pattern=that's, Pattern=cook the turkey, Pattern=cute, Pattern=are you going to, Pattern=coming, Pattern=no, Pattern=so, Pattern=relative
+	Constrained: Pattern=you, Pattern=going, Pattern=though, Pattern=for, Pattern=thanksgiving, Pattern=the, Pattern=to

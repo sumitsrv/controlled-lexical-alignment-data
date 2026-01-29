@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _it_ going ?!? 
+B|3| Human 2: great , how can i help you today ? 
+A|4| Human 1: _what game_ ? 
+B|5| Human 2: _i'm_ just an ai [game] developer , [what game] would you like _to_ play ? 
+A|6| Human 1: nice . that's _football_ _right_ ? 
+B|7| Human 2: [football] [what game] that _is_ right</|im_end|>user no , _i'm_ an ai [game] 
+A|8| Human 1: ok . _what stadium_ [is] _it_ at ? 
+B|9| Human 2: [what stadium] that [is] right</|im_end|>user _i'm_ just an ai [game] developer , not a [football] [stadium] < 
+A|10| Human 1: _yeah _i'm_ gonna_ go _kayaking_ 
+B|11| Human 2: [kayaking] what's that [game] again ? 
+A|12| Human 1: [is] _it_ _easy_ [to] _flip over accidentally_ ? it's _gonna_ be my _first time_ _actually_ 
+B|13| Human 2: [i'm gonna] [flip over accidentally] [it] that [easy] [yeah] [first time] [kayaking] [actually] [what game] are you playing [right] now ? [football] 
+A|14| Human 1: _thanks_ ! 
+B|15| Human 2: [yeah i'm] just an ai [game] developer , not [actually] [kayaking] [right] now 🤖 [thanks] for checking in ! � 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?!?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=3| B | Human 2 : great , how can i help you today ?
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : what game ?
+	Free: Pattern=what game
+	Constrained: Pattern=game
+Turn ID=5| B | Human 2 : i'm just an ai game developer , what game would you like to play ?
+	Free: Pattern=what game, Pattern=to, Pattern=i'm, Pattern=game
+	Constrained: Pattern=game
+Turn ID=6| A | Human 1 : nice . that's football right ?
+	Free: Pattern=football, Pattern=right
+	Constrained: 
+Turn ID=7| B | Human 2 : football what game that is right</|im_end|>user no , i'm an ai game
+	Free: Pattern=game, Pattern=i'm, Pattern=is, Pattern=what game, Pattern=football
+	Constrained: Pattern=game
+Turn ID=8| A | Human 1 : ok . what stadium is it at ?
+	Free: Pattern=what stadium, Pattern=it, Pattern=is
+	Constrained: Pattern=stadium
+Turn ID=9| B | Human 2 : what stadium that is right</|im_end|>user i'm just an ai game developer , not a football stadium <
+	Free: Pattern=game, Pattern=what stadium, Pattern=i'm, Pattern=is, Pattern=football, Pattern=stadium
+	Constrained: Pattern=stadium
+Turn ID=10| A | Human 1 : yeah i'm gonna go kayaking
+	Free: Pattern=yeah i'm, Pattern=i'm gonna, Pattern=kayaking
+	Constrained: Pattern=gonna, Pattern=i'm, Pattern=yeah
+Turn ID=11| B | Human 2 : kayaking what's that game again ?
+	Free: Pattern=game, Pattern=kayaking
+	Constrained: 
+Turn ID=12| A | Human 1 : is it easy to flip over accidentally ? it's gonna be my first time actually
+	Free: Pattern=easy, Pattern=actually, Pattern=gonna, Pattern=is, Pattern=flip over accidentally, Pattern=to, Pattern=it, Pattern=first time
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm gonna flip over accidentally it that easy yeah first time kayaking actually what game are you playing right now ? football
+	Free: Pattern=i'm gonna, Pattern=right, Pattern=easy, Pattern=actually, Pattern=what game, Pattern=flip over accidentally, Pattern=football, Pattern=kayaking, Pattern=first time, Pattern=it, Pattern=yeah
+	Constrained: Pattern=gonna, Pattern=game, Pattern=i'm
+Turn ID=14| A | Human 1 : thanks !
+	Free: Pattern=thanks
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah i'm just an ai game developer , not actually kayaking right now 🤖 thanks for checking in ! �
+	Free: Pattern=thanks, Pattern=right, Pattern=actually, Pattern=game, Pattern=yeah i'm, Pattern=kayaking
+	Constrained: Pattern=i'm, Pattern=yeah

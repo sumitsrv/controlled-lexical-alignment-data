@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey how's _it_ going 
+A|2| Human 1: _it's_ _good_ _it's_ _good_ . _how are you ?_ 
+B|3| Human 2: _i'm_ [good] , thanks for asking ! [how are you ?] [it's] always _nice_ _to_ chat with [you] 😊<|im 
+A|4| Human 1: oh [nice] ! where _do you_ _live_ ? 
+B|5| Human 2: _i'm_ just _an_ ai , _i don't_ [live] _in_ a specific place , but _you can_ think _of_ me _as_ being everywhere _and_ now 
+A|6| Human 1: ahh _yes_ , _japan_ is _hot_ _during the summer_ . _last time_ _i was in_ _kyoto_ _it was_ _114 degrees_ .... 
+B|7| Human 2: [114 degrees] ?! 😅 that's [hot] ! [how] [do you] handle [the summer] weather ? <|im_end 
+A|8| Human 1: _yes_ _yes_ . _i've been to_ _tokyo_ [as] well . [it's] so [nice] ! 
+B|9| Human 2: [it's] [nice] [during the summer] [yes] 14 [degrees] [hot] [i was in] [tokyo] [last time] [it was] 35 [degrees] [you] know [japan] heat ky 
+A|10| Human 1: oh _everything_ ! [i] went [to] [an] _onsen_ , [the] fish market , _disney land_ [and] _giant robot fighting show_ _haha_ 
+B|11| Human 2: [giant robot fighting show] 🤖 [i've been to] [japan] [and] [the summer] heat [was] intense [haha] [everything] [onsen] [disney land] 
+A|12| Human 1: _the disney lands_ [are] _all different_ ! there's also [disney] sea , which is completely _unique_ ! 
+B|13| Human 2: [the] [onsen] [are] [nice] [and] [hot] [the disney lands] [all different] [unique] [haha] [everything] [disney land] [giant robot fighting show] [japan] [summer] heat [kyoto] 
+A|14| Human 1: [i don't] really remember what part [of] town [it [was] in] . [it was] _pretty_ cool _though_ - _i'm sure you can find_ [it] if [you] google "giant [robot fighting show] tokyo" [haha] 
+B|15| Human 2: [i'm sure you can find] [the] [onsen] [and] [disney lands] [pretty] easily [though] [haha] [everything] [tokyo] [giant robot fighting show] [summer] heat 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey how's it going
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good it's good . how are you ?
+	Free: Pattern=how are you ?, Pattern=it's, Pattern=good
+	Constrained: Pattern=are, Pattern=you, Pattern=how
+Turn ID=3| B | Human 2 : i'm good , thanks for asking ! how are you ? it's always nice to chat with you 😊<|im
+	Free: Pattern=good, Pattern=you, Pattern=nice, Pattern=to, Pattern=it's, Pattern=how are you ?, Pattern=i'm
+	Constrained: Pattern=are, Pattern=you, Pattern=how
+Turn ID=4| A | Human 1 : oh nice ! where do you live ?
+	Free: Pattern=do you, Pattern=nice, Pattern=live
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i'm just an ai , i don't live in a specific place , but you can think of me as being everywhere and now
+	Free: Pattern=of, Pattern=an, Pattern=and, Pattern=live, Pattern=you can, Pattern=in, Pattern=i'm, Pattern=as, Pattern=i don't
+	Constrained: Pattern=i, Pattern=you
+Turn ID=6| A | Human 1 : ahh yes , japan is hot during the summer . last time i was in kyoto it was 114 degrees ....
+	Free: Pattern=it was, Pattern=yes, Pattern=kyoto, Pattern=last time, Pattern=hot, Pattern=114 degrees, Pattern=during the summer, Pattern=i was in, Pattern=japan
+	Constrained: Pattern=it, Pattern=in, Pattern=i, Pattern=was, Pattern=summer, Pattern=degrees, Pattern=the summer, Pattern=was in, Pattern=the
+Turn ID=7| B | Human 2 : 114 degrees ?! 😅 that's hot ! how do you handle the summer weather ? <|im_end
+	Free: Pattern=how, Pattern=do you, Pattern=the summer, Pattern=hot, Pattern=114 degrees
+	Constrained: Pattern=the, Pattern=degrees, Pattern=you, Pattern=summer
+Turn ID=8| A | Human 1 : yes yes . i've been to tokyo as well . it's so nice !
+	Free: Pattern=yes, Pattern=as, Pattern=nice, Pattern=i've been to, Pattern=tokyo, Pattern=it's
+	Constrained: Pattern=to
+Turn ID=9| B | Human 2 : it's nice during the summer yes 14 degrees hot i was in tokyo last time it was 35 degrees you know japan heat ky
+	Free: Pattern=it was, Pattern=nice, Pattern=degrees, Pattern=last time, Pattern=hot, Pattern=tokyo, Pattern=during the summer, Pattern=i was in, Pattern=japan, Pattern=it's, Pattern=you, Pattern=yes
+	Constrained: Pattern=it, Pattern=the summer, Pattern=in, Pattern=i, Pattern=was, Pattern=summer, Pattern=was in, Pattern=the
+Turn ID=10| A | Human 1 : oh everything ! i went to an onsen , the fish market , disney land and giant robot fighting show haha
+	Free: Pattern=an, Pattern=everything, Pattern=i, Pattern=haha, Pattern=the, Pattern=to, Pattern=onsen, Pattern=giant robot fighting show, Pattern=and, Pattern=disney land
+	Constrained: Pattern=disney, Pattern=robot fighting show
+Turn ID=11| B | Human 2 : giant robot fighting show 🤖 i've been to japan and the summer heat was intense haha everything onsen disney land
+	Free: Pattern=the summer, Pattern=haha, Pattern=was, Pattern=giant robot fighting show, Pattern=and, Pattern=disney land, Pattern=everything, Pattern=i've been to, Pattern=japan, Pattern=onsen
+	Constrained: Pattern=robot fighting show, Pattern=disney, Pattern=the, Pattern=to, Pattern=summer
+Turn ID=12| A | Human 1 : the disney lands are all different ! there's also disney sea , which is completely unique !
+	Free: Pattern=unique, Pattern=are, Pattern=disney, Pattern=all different, Pattern=the disney lands
+	Constrained: Pattern=disney lands, Pattern=the, Pattern=disney
+Turn ID=13| B | Human 2 : the onsen are nice and hot the disney lands all different unique haha everything disney land giant robot fighting show japan summer heat kyoto
+	Free: Pattern=unique, Pattern=kyoto, Pattern=nice, Pattern=are, Pattern=hot, Pattern=everything, Pattern=haha, Pattern=the, Pattern=summer, Pattern=and, Pattern=disney land, Pattern=japan, Pattern=onsen, Pattern=all different, Pattern=the disney lands, Pattern=giant robot fighting show
+	Constrained: Pattern=disney lands, Pattern=the, Pattern=disney, Pattern=robot fighting show
+Turn ID=14| A | Human 1 : i don't really remember what part of town it was in . it was pretty cool though - i'm sure you can find it if you google "giant robot fighting show tokyo" haha
+	Free: Pattern=it was, Pattern=of, Pattern=you, Pattern=i don't, Pattern=though, Pattern=i'm sure you can find, Pattern=it, Pattern=robot fighting show, Pattern=haha, Pattern=pretty, Pattern=was in
+	Constrained: Pattern=you, Pattern=it, Pattern=you can, Pattern=in, Pattern=i'm, Pattern=i, Pattern=was
+Turn ID=15| B | Human 2 : i'm sure you can find the onsen and disney lands pretty easily though haha everything tokyo giant robot fighting show summer heat
+	Free: Pattern=though, Pattern=i'm sure you can find, Pattern=and, Pattern=everything, Pattern=pretty, Pattern=the, Pattern=disney lands, Pattern=onsen, Pattern=summer, Pattern=giant robot fighting show, Pattern=haha, Pattern=tokyo
+	Constrained: Pattern=you, Pattern=you can, Pattern=i'm, Pattern=robot fighting show, Pattern=disney

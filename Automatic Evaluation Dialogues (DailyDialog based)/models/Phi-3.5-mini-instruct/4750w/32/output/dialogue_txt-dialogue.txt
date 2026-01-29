@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: nice to _meet_ _you_ ! is _this_ _your_ first time doing _something_ _like_ _this_ ? 
+B|3| Human 2: hello ! as an artificial intelligence , _i_ don't [meet] people or participate in [this] way [like] [you] would . i'm phi , developed 
+A|4| Human 1: _i have_ been _with the company for over 3 years ._ stick _with the_ same _team_ _what about_ [you] ? 
+B|5| Human 2: i'm phi , an artificial intelligence [with the company for over 3 years .] while [i] don't [have] [team] dynamics [like] humans , [i] 
+A|6| Human 1: _that sounds like a_ perfect _plan_ ! 
+B|7| Human 2: indeed , [i] am phi , [your] ai teammate [for] [this] exchange . while [i have] no personal experiences or [plan] [like] [you] , [the] concept of 
+A|8| Human 1: _let's_ _try something_ _different_ _. what about_ <redacted_term> ? do [you] _always_ prefer _lunch sync_ [over] _regular meeting syncs_ ? 
+B|9| Human 2: i'm phi , [your] ai teammate [for] [this] exchange , [always] ready [with] [a] [different] [lunch sync] [plan] . let’s [try something] 
+A|10| Human 1: we can _check the menu_ _then_ _decide_ :) 
+B|11| Human 2: [that sounds like a] [plan] , phi ! [let's] [check the menu] and [decide] [then] [for] [lunch sync] or [regular meeting syncs] [. what about] 
+A|12| Human 1: sure . see [you] [then] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=you, Pattern=meet, Pattern=your, Pattern=like, Pattern=this, Pattern=something
+	Constrained: 
+Turn ID=3| B | Human 2 : hello ! as an artificial intelligence , i don't meet people or participate in this way like you would . i'm phi , developed
+	Free: Pattern=you, Pattern=meet, Pattern=i, Pattern=like, Pattern=this
+	Constrained: 
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=you, Pattern=with the, Pattern=with the company for over 3 years ., Pattern=what about, Pattern=team, Pattern=i have
+	Constrained: Pattern=for, Pattern=over, Pattern=i, Pattern=the, Pattern=with, Pattern=with the, Pattern=have
+Turn ID=5| B | Human 2 : i'm phi , an artificial intelligence with the company for over 3 years . while i don't have team dynamics like humans , i
+	Free: Pattern=have, Pattern=with the company for over 3 years ., Pattern=i, Pattern=like, Pattern=team
+	Constrained: Pattern=with the, Pattern=for, Pattern=over, Pattern=the, Pattern=with
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=that sounds like a, Pattern=plan
+	Constrained: Pattern=a, Pattern=like
+Turn ID=7| B | Human 2 : indeed , i am phi , your ai teammate for this exchange . while i have no personal experiences or plan like you , the concept of
+	Free: Pattern=for, Pattern=like, Pattern=the, Pattern=this, Pattern=i have, Pattern=you, Pattern=plan, Pattern=your, Pattern=i
+	Constrained: Pattern=i, Pattern=have
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=different, Pattern=always, Pattern=you, Pattern=try something, Pattern=over, Pattern=regular meeting syncs, Pattern=. what about, Pattern=lunch sync, Pattern=let's
+	Constrained: Pattern=something, Pattern=what about
+Turn ID=9| B | Human 2 : i'm phi , your ai teammate for this exchange , always ready with a different lunch sync plan . let’s try something
+	Free: Pattern=different, Pattern=always, Pattern=plan, Pattern=a, Pattern=for, Pattern=try something, Pattern=your, Pattern=lunch sync, Pattern=this, Pattern=with
+	Constrained: Pattern=something
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=check the menu, Pattern=then, Pattern=decide
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : that sounds like a plan , phi ! let's check the menu and decide then for lunch sync or regular meeting syncs . what about
+	Free: Pattern=check the menu, Pattern=plan, Pattern=decide, Pattern=then, Pattern=for, Pattern=that sounds like a, Pattern=regular meeting syncs, Pattern=. what about, Pattern=lunch sync, Pattern=let's
+	Constrained: Pattern=a, Pattern=what about, Pattern=like, Pattern=the
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=then, Pattern=you
+	Constrained: 

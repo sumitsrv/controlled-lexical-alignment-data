@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! what's up 
+A|2| Human 1: _just_ chilling at _home_ 
+B|3| Human 2: that's great ! 😊 _is_ there anything you'd _like_ _to_ chat about or ask ? 
+A|4| Human 1: _where_ do _you_ _work_ ? 
+B|5| Human 2: _i_ [work] for _a_ company called 🤖 , which _is a_ chatting platform _that_ helps people _like_ [you] _and_ me _to_ communicate with each other 
+A|6| Human 1: [i] live _in sapporo_ , _japan ._ _where_ [is] _mountain view_ 
+B|7| Human 2: [mountain view] [is] [where] 🤖 [is] headquartered . it's located [in] _the_ san francisco bay area of california , usa< 
+A|8| Human 1: how's living [in] _japan_ ? 
+B|9| Human 2: [japan] [is] 🤖's [home] base . it's [where] many of our engineers _and_ developers [work] on creating cool _new_ features _and_ 
+A|10| Human 1: [i] _wish_ ! ramen [is] my favorite dish [and] _sapporo is a_ special beer 
+B|11| Human 2: 🤖's [sapporo] office [is] [where] [you] [and] [i] chatted from [just] now . it's [home] _to_ our [japan] r 
+A|12| Human 1: oh _wow_ , _didn't know that_ . _have_ [you] _been to the us_ ? 
+B|13| Human 2: [have] [been to the us] [and] [japan] , [just] [didn't know that] [you] were [in sapporo] when we chatted<|im_end 
+A|14| Human 1: _awesome_ ! [where] [have] [you] [been] ? 
+B|15| Human 2: [have] [been to] sf [and] la 
+A|16| Human 1: [you] _like it_ ? 
+B|17| Human 2: [like it] [wow] that's [awesome] [you] [have] [been to the us] [and] [japan .] [sapporo is a] really unique [and] beautiful place . [wish] 
+A|18| Human 1: yea , same here . [i] love broadway shows [in] [new] york city . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! what's up
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : just chilling at home
+	Free: Pattern=just, Pattern=home
+	Constrained: 
+Turn ID=3| B | Human 2 : that's great ! 😊 is there anything you'd like to chat about or ask ?
+	Free: Pattern=to, Pattern=is, Pattern=like
+	Constrained: 
+Turn ID=4| A | Human 1 : where do you work ?
+	Free: Pattern=where, Pattern=work, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : i work for a company called 🤖 , which is a chatting platform that helps people like you and me to communicate with each other
+	Free: Pattern=you, Pattern=is a, Pattern=a, Pattern=and, Pattern=work, Pattern=i, Pattern=like, Pattern=to, Pattern=that
+	Constrained: Pattern=a, Pattern=is
+Turn ID=6| A | Human 1 : i live in sapporo , japan . where is mountain view
+	Free: Pattern=japan ., Pattern=mountain view, Pattern=in sapporo, Pattern=where, Pattern=is, Pattern=i
+	Constrained: Pattern=in, Pattern=sapporo, Pattern=japan
+Turn ID=7| B | Human 2 : mountain view is where 🤖 is headquartered . it's located in the san francisco bay area of california , usa<
+	Free: Pattern=mountain view, Pattern=in, Pattern=where, Pattern=is, Pattern=the
+	Constrained: 
+Turn ID=8| A | Human 1 : how's living in japan ?
+	Free: Pattern=in, Pattern=japan
+	Constrained: 
+Turn ID=9| B | Human 2 : japan is 🤖's home base . it's where many of our engineers and developers work on creating cool new features and
+	Free: Pattern=new, Pattern=and, Pattern=is, Pattern=where, Pattern=work, Pattern=japan, Pattern=home
+	Constrained: 
+Turn ID=10| A | Human 1 : i wish ! ramen is my favorite dish and sapporo is a special beer
+	Free: Pattern=sapporo is a, Pattern=and, Pattern=wish, Pattern=is, Pattern=i
+	Constrained: Pattern=is a, Pattern=a, Pattern=sapporo, Pattern=is
+Turn ID=11| B | Human 2 : 🤖's sapporo office is where you and i chatted from just now . it's home to our japan r
+	Free: Pattern=you, Pattern=just, Pattern=and, Pattern=sapporo, Pattern=where, Pattern=to, Pattern=is, Pattern=i, Pattern=japan, Pattern=home
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow , didn't know that . have you been to the us ?
+	Free: Pattern=you, Pattern=have, Pattern=been to the us, Pattern=didn't know that, Pattern=wow
+	Constrained: Pattern=been to, Pattern=the, Pattern=to, Pattern=been, Pattern=that
+Turn ID=13| B | Human 2 : have been to the us and japan , just didn't know that you were in sapporo when we chatted<|im_end
+	Free: Pattern=you, Pattern=been to the us, Pattern=didn't know that, Pattern=and, Pattern=in sapporo, Pattern=japan, Pattern=just, Pattern=have
+	Constrained: Pattern=been to, Pattern=sapporo, Pattern=in, Pattern=the, Pattern=to, Pattern=been, Pattern=that
+Turn ID=14| A | Human 1 : awesome ! where have you been ?
+	Free: Pattern=you, Pattern=have, Pattern=where, Pattern=awesome, Pattern=been
+	Constrained: 
+Turn ID=15| B | Human 2 : have been to sf and la
+	Free: Pattern=been to, Pattern=and, Pattern=have
+	Constrained: Pattern=to, Pattern=been
+Turn ID=16| A | Human 1 : you like it ?
+	Free: Pattern=like it, Pattern=you
+	Constrained: Pattern=like
+Turn ID=17| B | Human 2 : like it wow that's awesome you have been to the us and japan . sapporo is a really unique and beautiful place . wish
+	Free: Pattern=sapporo is a, Pattern=have, Pattern=been to the us, Pattern=wow, Pattern=wish, Pattern=awesome, Pattern=you, Pattern=japan ., Pattern=and, Pattern=like it
+	Constrained: Pattern=is a, Pattern=a, Pattern=been to, Pattern=sapporo, Pattern=is, Pattern=like, Pattern=the, Pattern=to, Pattern=been, Pattern=japan
+Turn ID=18| A | Human 1 : yea , same here . i love broadway shows in new york city .
+	Free: Pattern=in, Pattern=i, Pattern=new
+	Constrained: 

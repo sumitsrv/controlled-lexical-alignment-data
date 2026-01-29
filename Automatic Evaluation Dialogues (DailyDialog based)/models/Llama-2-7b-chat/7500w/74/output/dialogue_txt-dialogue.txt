@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _it_ _going ?!?_ 
+B|3| Human 2: great , how can i help you today ? </s>s' [going ?!?] 
+A|4| Human 1: _what_ _game_ ? 
+B|5| Human 2: _i'm_ just an ai , i don't have personal preferences or [game] recommendations , but i can help you find [what] you 
+A|6| Human 1: _nice_ . _that's_ _football_ _right ?_ 
+B|7| Human 2: [football] , [nice] [game] [right ?] whats your favorite team ? 
+A|8| Human 1: ok _. what stadium is_ _it_ _at ?_ 
+B|9| Human 2: [that's] [right] ! [football] [is] a [nice] [game] [. what stadium is] the match [at ?] how are you today ? <|im_end 
+A|10| Human 1: _yeah i'm gonna_ go _kayaking_ 
+B|11| Human 2: [nice] ! [kayaking] [is] a great way _to_ stay active and enjoy nature . what's your favorite thing about [kayaking] ? <| 
+A|12| Human 1: [is] _it_ _easy_ [to] flip over accidentally ? _it's_ _gonna be_ my _first time_ _actually_ 
+B|13| Human 2: [it's] [actually] [easy] once you get the hang of [it] . [first time] [kayaking] can [be] a bit challenging but with some practice you' 
+A|14| Human 1: _thanks_ ! 
+B|15| Human 2: [yeah i'm [gonna] be] [easy] [thanks] [to] your tips 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?!?
+	Free: Pattern=going ?!?, Pattern=it
+	Constrained: 
+Turn ID=3| B | Human 2 : great , how can i help you today ? </s>s' going ?!?
+	Free: Pattern=going ?!?
+	Constrained: 
+Turn ID=4| A | Human 1 : what game ?
+	Free: Pattern=what, Pattern=game
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal preferences or game recommendations , but i can help you find what you
+	Free: Pattern=i'm, Pattern=what, Pattern=game
+	Constrained: 
+Turn ID=6| A | Human 1 : nice . that's football right ?
+	Free: Pattern=right ?, Pattern=nice, Pattern=football, Pattern=that's
+	Constrained: Pattern=right
+Turn ID=7| B | Human 2 : football , nice game right ? whats your favorite team ?
+	Free: Pattern=right ?, Pattern=nice, Pattern=football, Pattern=game
+	Constrained: Pattern=right
+Turn ID=8| A | Human 1 : ok . what stadium is it at ?
+	Free: Pattern=. what stadium is, Pattern=at ?, Pattern=it
+	Constrained: Pattern=is, Pattern=what
+Turn ID=9| B | Human 2 : that's right ! football is a nice game . what stadium is the match at ? how are you today ? <|im_end
+	Free: Pattern=right, Pattern=game, Pattern=nice, Pattern=at ?, Pattern=is, Pattern=that's, Pattern=football, Pattern=. what stadium is
+	Constrained: Pattern=is, Pattern=what
+Turn ID=10| A | Human 1 : yeah i'm gonna go kayaking
+	Free: Pattern=yeah i'm gonna, Pattern=kayaking
+	Constrained: Pattern=i'm
+Turn ID=11| B | Human 2 : nice ! kayaking is a great way to stay active and enjoy nature . what's your favorite thing about kayaking ? <|
+	Free: Pattern=nice, Pattern=is, Pattern=kayaking, Pattern=to
+	Constrained: 
+Turn ID=12| A | Human 1 : is it easy to flip over accidentally ? it's gonna be my first time actually
+	Free: Pattern=easy, Pattern=actually, Pattern=gonna be, Pattern=is, Pattern=to, Pattern=it's, Pattern=it, Pattern=first time
+	Constrained: Pattern=be
+Turn ID=13| B | Human 2 : it's actually easy once you get the hang of it . first time kayaking can be a bit challenging but with some practice you'
+	Free: Pattern=easy, Pattern=actually, Pattern=be, Pattern=kayaking, Pattern=it's, Pattern=it, Pattern=first time
+	Constrained: 
+Turn ID=14| A | Human 1 : thanks !
+	Free: Pattern=thanks
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah i'm gonna be easy thanks to your tips
+	Free: Pattern=thanks, Pattern=easy, Pattern=yeah i'm gonna, Pattern=gonna be, Pattern=to
+	Constrained: Pattern=i'm, Pattern=be

@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what are_ _you_ up _to_ ? 
+B|3| Human 2: you’re talking [to] _me_ ! 😊 [what] would _you like to_ chat about ? 
+A|4| Human 1: [me] ? _just_ chilling out at _work_ . [what] _is_ _code refactoring ?_ 
+B|5| Human 2: [refactoring] [code] [is] the process of improving the quality of existing [code] without changing its functionality . _it_ involves making changes [to] the [code] structure , organization , 
+A|6| Human 1: _haha_ , forget [it] . [what] else _do you _like to_ do_ beside _work_ ? 
+B|7| Human 2: 😅 [work] [is] [what] _i [like_ to do] the most ! [code refactoring] [is] [just] one of the many ways we can make our [code] 
+A|8| Human 1: these _are important things_ [to do] _in life_ 😉 
+B|9| Human 2: 🤔 [you like] [work] and [code refactoring ?] [what are] some [things] [you] find [important] [in life] ? 
+A|10| Human 1: [what] _food do you like to eat ?_ 
+B|11| Human 2: 🤮 [work] and [code refactoring] [are important things] , but [food] [is] [life] ! [what] kind of [food do you like to eat ?] < 
+A|12| Human 1: [like] _szechuan_ or hunan ? 🙂 
+B|13| Human 2: [szechuan] [food] [is] [like] [work] ! [you] want [it] [to] be perfect ! [haha] 
+A|14| Human 1: [i _like] noodle soup_ [like] _pho_ or _ramen_ . [i] also [like] _beijing duck_ a lot ! 
+B|15| Human 2: [beijing duck] [is] [like] [code refactoring] _, you_ want [it] [to] be crispy and delicious [like noodle soup] [pho] r 
+A|16| Human 1: [i] love _<redacted_term>_ [in] _san mateo_ 
+B|17| Human 2: [san mateo] 🤔 [like] [<redacted_term>] [soup] [noodle] [pho] [ramen] [duck] [beijing] 
+A|18| Human 1: yes [, you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=what are, Pattern=you, Pattern=to
+	Constrained: Pattern=what
+Turn ID=3| B | Human 2 : you’re talking to me ! 😊 what would you like to chat about ?
+	Free: Pattern=you like to, Pattern=me, Pattern=what, Pattern=to
+	Constrained: Pattern=you like, Pattern=like, Pattern=to, Pattern=you
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=code refactoring ?, Pattern=just, Pattern=me, Pattern=what, Pattern=work, Pattern=is
+	Constrained: Pattern=code refactoring, Pattern=refactoring, Pattern=code
+Turn ID=5| B | Human 2 : refactoring code is the process of improving the quality of existing code without changing its functionality . it involves making changes to the code structure , organization ,
+	Free: Pattern=code, Pattern=it, Pattern=is, Pattern=to, Pattern=refactoring
+	Constrained: 
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=what, Pattern=it, Pattern=do you like to, Pattern=haha, Pattern=like to do, Pattern=work
+	Constrained: Pattern=to do, Pattern=like, Pattern=you like, Pattern=to, Pattern=you, Pattern=you like to
+Turn ID=7| B | Human 2 : 😅 work is what i like to do the most ! code refactoring is just one of the many ways we can make our code
+	Free: Pattern=what, Pattern=is, Pattern=code refactoring, Pattern=i like, Pattern=code, Pattern=just, Pattern=like to do, Pattern=work
+	Constrained: Pattern=code, Pattern=to do, Pattern=i, Pattern=like, Pattern=to, Pattern=refactoring
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=are important things, Pattern=in life, Pattern=to do
+	Constrained: Pattern=things, Pattern=in, Pattern=important, Pattern=to, Pattern=life
+Turn ID=9| B | Human 2 : 🤔 you like work and code refactoring ? what are some things you find important in life ?
+	Free: Pattern=code refactoring ?, Pattern=you, Pattern=in life, Pattern=things, Pattern=what are, Pattern=you like, Pattern=important, Pattern=work
+	Constrained: Pattern=you, Pattern=code, Pattern=what, Pattern=in, Pattern=like, Pattern=code refactoring, Pattern=life, Pattern=refactoring
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=food do you like to eat ?, Pattern=what
+	Constrained: Pattern=do you like to, Pattern=you like, Pattern=to, Pattern=you, Pattern=you like to, Pattern=food, Pattern=like
+Turn ID=11| B | Human 2 : 🤮 work and code refactoring are important things , but food is life ! what kind of food do you like to eat ? <
+	Free: Pattern=food do you like to eat ?, Pattern=what, Pattern=are important things, Pattern=work, Pattern=is, Pattern=food, Pattern=code refactoring, Pattern=life
+	Constrained: Pattern=code, Pattern=things, Pattern=important, Pattern=do you like to, Pattern=you like, Pattern=to, Pattern=refactoring, Pattern=you, Pattern=you like to, Pattern=food, Pattern=like
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like, Pattern=szechuan
+	Constrained: 
+Turn ID=13| B | Human 2 : szechuan food is like work ! you want it to be perfect ! haha
+	Free: Pattern=you, Pattern=it, Pattern=work, Pattern=is, Pattern=to, Pattern=szechuan, Pattern=haha, Pattern=food, Pattern=like
+	Constrained: 
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=beijing duck, Pattern=pho, Pattern=ramen, Pattern=i, Pattern=like, Pattern=like noodle soup, Pattern=i like
+	Constrained: Pattern=soup, Pattern=noodle, Pattern=duck, Pattern=i, Pattern=like, Pattern=beijing
+Turn ID=15| B | Human 2 : beijing duck is like code refactoring , you want it to be crispy and delicious like noodle soup pho r
+	Free: Pattern=beijing duck, Pattern=pho, Pattern=it, Pattern=, you, Pattern=is, Pattern=like, Pattern=code refactoring, Pattern=to, Pattern=like noodle soup
+	Constrained: Pattern=soup, Pattern=you, Pattern=code, Pattern=noodle, Pattern=duck, Pattern=refactoring, Pattern=like, Pattern=beijing
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=san mateo, Pattern=<redacted_term>, Pattern=in, Pattern=i
+	Constrained: 
+Turn ID=17| B | Human 2 : san mateo 🤔 like <redacted_term> soup noodle pho ramen duck beijing
+	Free: Pattern=soup, Pattern=san mateo, Pattern=pho, Pattern=noodle, Pattern=duck, Pattern=<redacted_term>, Pattern=ramen, Pattern=like, Pattern=beijing
+	Constrained: 
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=, you
+	Constrained: Pattern=you

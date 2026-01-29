@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted _to_ know if [you] _and _the_ kids_ _would_ want _to_ join us _for_ disneyland _trip_ _around_ _christmas_ ? 
+B|3| Human 2: _we_ [would] _be_ more than happy _but_ _we_ don't _have_ [kids] . _we_ _are_ more [the] "sport [and] fitness" types . 
+A|4| Human 1: tentative plan _is_ _to_ drive _to_ la on 23rd [and] _then_ stay _at the_ disney resort _for_ 2 nights _. i heard_ _christmas_ eve they [have] loads _of_ _fun_ events . 
+B|5| Human 2: yeah sounds [fun] [. i heard] its [the] _time_ [to] go because all [the kids] _are_ out [of] school [for] [christmas] break . 
+A|6| Human 1: _great_ _idea_ ! _i will _probably_ do_ [the] same . surprise surprise .... traffic _might_ [be] _a little_ harsh . 
+B|7| Human 2: _we_ [might] come [and] [i will probably] _take_ [the kids] [and] [you] [will] see them there 
+A|8| Human 1: _good_ point [. i] am _not_ _sure_ about _that_ . let me inquire about _that_ . if _not_ , _then_ [we] _can_ look [for] an airbnb closeby . does _that_ work ? 
+B|9| Human 2: yeah it [can] get [that] way [around] [then] . [good] [idea] [to] _take_ [the kids] [for] [sure] ! 
+A|10| Human 1: [but] [i] [would] think everything _is_ closed on [christmas] eve 
+B|11| Human 2: it [is] [a] beautiful [christmas] day in dallas . [the] weather [is] [not] bad [and the] city [is] going [great] [but] it [is] always [a little] quieter 
+A|12| Human 1: [sure] , _i can take_ [a] lead on [that] . what [are] [you] getting [for] your <redacted_term> year old this [time] ? 
+B|13| Human 2: ok well that's [good] . maybe [i can take] them [for] [a] day [trip] [at the] last minute [then] . i'll [probably do] [that] in [a] month or 
+A|14| Human 1: likewise . my son [is] crazy about _legos_ . 
+B|15| Human 2: i've [a] bunch [of] [legos] , some new games [that] he's been asking [for] , [and] some new clothes [and] shoes . he just finished with pres 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=you, Pattern=trip, Pattern=christmas, Pattern=to, Pattern=around, Pattern=for, Pattern=and the, Pattern=the kids, Pattern=would
+	Constrained: Pattern=kids, Pattern=the, Pattern=and
+Turn ID=3| B | Human 2 : we would be more than happy but we don't have kids . we are more the "sport and fitness" types .
+	Free: Pattern=have, Pattern=and, Pattern=we, Pattern=be, Pattern=the, Pattern=would, Pattern=but, Pattern=are, Pattern=kids
+	Constrained: 
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=. i heard, Pattern=fun, Pattern=of, Pattern=have, Pattern=then, Pattern=for, Pattern=and, Pattern=at the, Pattern=is, Pattern=christmas, Pattern=to
+	Constrained: Pattern=. i, Pattern=i, Pattern=the
+Turn ID=5| B | Human 2 : yeah sounds fun . i heard its the time to go because all the kids are out of school for christmas break .
+	Free: Pattern=. i heard, Pattern=of, Pattern=for, Pattern=are, Pattern=the kids, Pattern=to, Pattern=fun, Pattern=time, Pattern=christmas, Pattern=the
+	Constrained: Pattern=. i, Pattern=i, Pattern=kids, Pattern=the
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=probably do, Pattern=idea, Pattern=great, Pattern=a little, Pattern=be, Pattern=the, Pattern=i will probably, Pattern=might
+	Constrained: Pattern=a, Pattern=i, Pattern=will
+Turn ID=7| B | Human 2 : we might come and i will probably take the kids and you will see them there
+	Free: Pattern=you, Pattern=and, Pattern=will, Pattern=we, Pattern=take, Pattern=the kids, Pattern=i will probably, Pattern=might
+	Constrained: Pattern=i, Pattern=will, Pattern=kids, Pattern=the
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=good, Pattern=then, Pattern=for, Pattern=can, Pattern=. i, Pattern=we, Pattern=sure, Pattern=that, Pattern=not
+	Constrained: Pattern=i
+Turn ID=9| B | Human 2 : yeah it can get that way around then . good idea to take the kids for sure !
+	Free: Pattern=good, Pattern=idea, Pattern=then, Pattern=can, Pattern=sure, Pattern=take, Pattern=the kids, Pattern=to, Pattern=that, Pattern=around, Pattern=for
+	Constrained: Pattern=kids, Pattern=the
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=christmas, Pattern=would, Pattern=but, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : it is a beautiful christmas day in dallas . the weather is not bad and the city is going great but it is always a little quieter
+	Free: Pattern=great, Pattern=a, Pattern=and the, Pattern=a little, Pattern=is, Pattern=but, Pattern=not, Pattern=christmas, Pattern=the
+	Constrained: Pattern=a, Pattern=the, Pattern=and
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=time, Pattern=you, Pattern=for, Pattern=are, Pattern=sure, Pattern=that, Pattern=i can take, Pattern=a
+	Constrained: Pattern=take, Pattern=i, Pattern=can
+Turn ID=13| B | Human 2 : ok well that's good . maybe i can take them for a day trip at the last minute then . i'll probably do that in a month or
+	Free: Pattern=good, Pattern=probably do, Pattern=for, Pattern=at the, Pattern=trip, Pattern=that, Pattern=then, Pattern=i can take, Pattern=a
+	Constrained: Pattern=can, Pattern=take, Pattern=the, Pattern=i
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: Pattern=is, Pattern=legos
+	Constrained: 
+Turn ID=15| B | Human 2 : i've a bunch of legos , some new games that he's been asking for , and some new clothes and shoes . he just finished with pres
+	Free: Pattern=legos, Pattern=of, Pattern=a, Pattern=for, Pattern=and, Pattern=that
+	Constrained: 

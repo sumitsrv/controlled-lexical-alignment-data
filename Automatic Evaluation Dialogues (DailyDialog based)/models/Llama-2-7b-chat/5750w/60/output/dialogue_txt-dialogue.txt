@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: _it's_ _good_ _! how_ is _your_ day ? 
+B|3| Human 2: i'm doing well , thanks for asking [! how] _can_ _i_ help _you_ today ? 
+A|4| Human 1: _yes ,_ _the_ darkness _can be_ a bit depressing . _this_ weekend [i] _went_ _rock climbing_ ! [it] was _great_ [! how] about yourself ? 
+B|5| Human 2: _oh_ wow , [rock climbing] [can be] quite [the] challenge ! [it's] [great] _that_ _you_ [went] _out_ _of_ [your] comfort zone _and_ tried something new . 
+A|6| Human 1: [oh] _nice ! what movie_ ? 
+B|7| Human 2: [what movie] [can] help _you_ [climbing] [the] [rock] ? <|imend|>user [yes ,] [good] choices ! � 
+A|8| Human 1: _hahah_ [yes ,] _they all look_ [the] _same !_ [i] saw [that] _very_ _same_ [movie] over thanksgiving break . lots [of] twists [and] turns ! 
+B|9| Human 2: [hahah] [nice ! what movie] [can] help _you_ [climbing] [the] [rock] ? [yes ,] that's [very] true [and] [they all look] [same !] [this] 
+A|10| Human 1: _hmm_ _good question_ . _evening runs [can_ be] _fun_ , but [it] [can be] a little _scary when_ [it's] _dark out_ ! 
+B|11| Human 2: [hahah] [nice] one ! [yes] that's [very] true [and] [they all look] [same] [good question] [evening runs can] [scary when] [it] [dark out] 
+A|12| Human 1: [yes] ! i've been to _australia_ . [it] was [very] nice; _i regret not going_ to _see_ [the] _southern lights_ . me _personally_ , [i] like _winter_ . but i'd prefer [it] to [be] more brief than [it] _actually_ is here ... where _are_ [you] from originally ? 
+B|13| Human 2: [hmm] that's [the] [rock] [you] [are] [actually] [climbing] [fun] [yes] [good question] [hahah] [nice] [yes] [i regret not going] [see] [southern lights] [personally] [winter] 
+A|14| Human 1: _ahh_ me _too_ ! [you] should _definitely try_ to _visit_ _australia_ at least _once_ ! 
+B|15| Human 2: [ahh] [too] [see] [australia] [southern lights] [winter] [regret] [yes] [definitely try] [visit] [once] [nice] [question] [good] [evening runs can] [scary] [dark out] [yes] [hahah] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=! how, Pattern=good, Pattern=your, Pattern=it's
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking ! how can i help you today ?
+	Free: Pattern=! how, Pattern=i, Pattern=can, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=went, Pattern=can be, Pattern=it, Pattern=the, Pattern=rock climbing, Pattern=this, Pattern=great, Pattern=yes ,, Pattern=! how, Pattern=i
+	Constrained: Pattern=yes, Pattern=can, Pattern=rock, Pattern=be, Pattern=climbing
+Turn ID=5| B | Human 2 : oh wow , rock climbing can be quite the challenge ! it's great that you went out of your comfort zone and tried something new .
+	Free: Pattern=of, Pattern=went, Pattern=can be, Pattern=your, Pattern=the, Pattern=rock climbing, Pattern=you, Pattern=out, Pattern=great, Pattern=and, Pattern=oh, Pattern=that, Pattern=it's
+	Constrained: Pattern=climbing, Pattern=rock, Pattern=be, Pattern=can
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=nice ! what movie, Pattern=oh
+	Constrained: Pattern=what movie, Pattern=nice, Pattern=movie
+Turn ID=7| B | Human 2 : what movie can help you climbing the rock ? <|imend|>user yes , good choices ! �
+	Free: Pattern=good, Pattern=can, Pattern=rock, Pattern=what movie, Pattern=the, Pattern=climbing, Pattern=you, Pattern=yes ,
+	Constrained: Pattern=movie, Pattern=yes
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=of, Pattern=movie, Pattern=they all look, Pattern=the, Pattern=same, Pattern=that, Pattern=yes ,, Pattern=same !, Pattern=and, Pattern=hahah, Pattern=very, Pattern=i
+	Constrained: Pattern=same, Pattern=yes
+Turn ID=9| B | Human 2 : hahah nice ! what movie can help you climbing the rock ? yes , that's very true and they all look same ! this
+	Free: Pattern=can, Pattern=very, Pattern=this, Pattern=climbing, Pattern=you, Pattern=yes ,, Pattern=same !, Pattern=and, Pattern=hahah, Pattern=they all look, Pattern=rock, Pattern=the, Pattern=nice ! what movie
+	Constrained: Pattern=yes, Pattern=what movie, Pattern=same, Pattern=nice, Pattern=movie
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=fun, Pattern=scary when, Pattern=can be, Pattern=it, Pattern=hmm, Pattern=dark out, Pattern=evening runs can, Pattern=it's, Pattern=good question
+	Constrained: Pattern=good, Pattern=out, Pattern=scary, Pattern=can, Pattern=question, Pattern=be
+Turn ID=11| B | Human 2 : hahah nice one ! yes that's very true and they all look same good question evening runs can scary when it dark out
+	Free: Pattern=yes, Pattern=scary when, Pattern=nice, Pattern=they all look, Pattern=very, Pattern=dark out, Pattern=same, Pattern=evening runs can, Pattern=good question, Pattern=it, Pattern=and, Pattern=hahah
+	Constrained: Pattern=good, Pattern=out, Pattern=scary, Pattern=can, Pattern=question
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=actually, Pattern=it, Pattern=are, Pattern=winter, Pattern=australia, Pattern=be, Pattern=the, Pattern=see, Pattern=i regret not going, Pattern=you, Pattern=yes, Pattern=personally, Pattern=southern lights, Pattern=very, Pattern=i
+	Constrained: Pattern=regret, Pattern=going, Pattern=i
+Turn ID=13| B | Human 2 : hmm that's the rock you are actually climbing fun yes good question hahah nice yes i regret not going see southern lights personally winter
+	Free: Pattern=fun, Pattern=actually, Pattern=nice, Pattern=hahah, Pattern=are, Pattern=winter, Pattern=rock, Pattern=hmm, Pattern=the, Pattern=see, Pattern=i regret not going, Pattern=you, Pattern=yes, Pattern=personally, Pattern=southern lights, Pattern=climbing, Pattern=good question
+	Constrained: Pattern=good, Pattern=going, Pattern=i, Pattern=question, Pattern=regret
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=you, Pattern=once, Pattern=too, Pattern=australia, Pattern=ahh, Pattern=definitely try, Pattern=visit
+	Constrained: 
+Turn ID=15| B | Human 2 : ahh too see australia southern lights winter regret yes definitely try visit once nice question good evening runs can scary dark out yes hahah
+	Free: Pattern=good, Pattern=yes, Pattern=scary, Pattern=once, Pattern=southern lights, Pattern=nice, Pattern=winter, Pattern=australia, Pattern=regret, Pattern=see, Pattern=evening runs can, Pattern=ahh, Pattern=too, Pattern=hahah, Pattern=dark out, Pattern=question, Pattern=definitely try, Pattern=visit
+	Constrained: Pattern=out, Pattern=can

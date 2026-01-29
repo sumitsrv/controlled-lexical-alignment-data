@@ -1,0 +1,75 @@
+A|0| Human 1: hi 
+B|1| Human 2: _i_ was _talking_ to _robot_ _all_ the time:) 
+A|2| Human 1: _haha ._ _what are_ _you_ _talking about_ ? 
+B|3| Human 2: [you] [are] [talking about] [what] _i_ said 5 minutes ago [haha .] it's nice to talk to [you] too ! <|im_end| 
+A|4| Human 1: ok . who's _your favorite group_ 
+B|5| Human 2: i'm just an ai , _i_ don't have personal preferences , _but_ _i_ can provide [you] with information [about] different groups if [you] like< 
+A|6| Human 1: _why_ _not_ ? 
+B|7| Human 2: ha ha , you're [not] going to believe [what] _i_ just said . [why] don't we play 20 questions instead ? <|im 
+A|8| Human 1: _hahaha_ 
+B|9| Human 2: you're [not] going to believe [what] _i_ just said [about] [your favorite group] hahaaha 
+A|10| Human 1: _john_ mayer:) \ 
+B|11| Human 2: [john] mayer _is_ [not] _a_ [group] , he's _a_ singer-songwriter and guitarist [haha] 
+A|12| Human 1: [what] [is] _mellow style_ 
+B|13| Human 2: [mellow style] ? [hahaha] , you're [not] going to believe [what] _i_ just said [about] [your favorite group] [john] mayer , _he_ 
+A|14| Human 1: _umm yes_ [he] has _some_ _but not all_ 
+B|15| Human 2: [what are] [some] [john] mayer [mellow style] songs ? hahaaha [umm yes] [but not all] of his songs [are] [mellow] , [you] 
+A|16| Human 1: [yes] [i] do . [you] act _like a robot_ _how about_ me ? am [i] _like a robot_ ? 
+B|17| Human 2: [umm yes] [you] [are] [like a robot] [but not] really [how about] [some] [mellow] [john] mayer songs [haha] [like] "3x5" 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : i was talking to robot all the time:)
+	Free: Pattern=all, Pattern=talking, Pattern=robot, Pattern=i
+	Constrained: 
+Turn ID=2| A | Human 1 : haha . what are you talking about ?
+	Free: Pattern=what are, Pattern=talking about, Pattern=haha ., Pattern=you
+	Constrained: Pattern=what, Pattern=are, Pattern=talking, Pattern=about, Pattern=haha
+Turn ID=3| B | Human 2 : you are talking about what i said 5 minutes ago haha . it's nice to talk to you too ! <|im_end|
+	Free: Pattern=talking about, Pattern=haha ., Pattern=you, Pattern=what, Pattern=are, Pattern=i
+	Constrained: Pattern=haha, Pattern=talking, Pattern=about
+Turn ID=4| A | Human 1 : ok . who's your favorite group
+	Free: Pattern=your favorite group
+	Constrained: Pattern=group
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal preferences , but i can provide you with information about different groups if you like<
+	Free: Pattern=about, Pattern=you, Pattern=i, Pattern=but
+	Constrained: 
+Turn ID=6| A | Human 1 : why not ?
+	Free: Pattern=not, Pattern=why
+	Constrained: 
+Turn ID=7| B | Human 2 : ha ha , you're not going to believe what i just said . why don't we play 20 questions instead ? <|im
+	Free: Pattern=i, Pattern=what, Pattern=not, Pattern=why
+	Constrained: 
+Turn ID=8| A | Human 1 : hahaha
+	Free: Pattern=hahaha
+	Constrained: 
+Turn ID=9| B | Human 2 : you're not going to believe what i just said about your favorite group hahaaha
+	Free: Pattern=what, Pattern=about, Pattern=i, Pattern=your favorite group, Pattern=not
+	Constrained: Pattern=group
+Turn ID=10| A | Human 1 : john mayer:) \
+	Free: Pattern=john
+	Constrained: 
+Turn ID=11| B | Human 2 : john mayer is not a group , he's a singer-songwriter and guitarist haha
+	Free: Pattern=john, Pattern=a, Pattern=group, Pattern=is, Pattern=haha, Pattern=not
+	Constrained: 
+Turn ID=12| A | Human 1 : what is mellow style
+	Free: Pattern=mellow style, Pattern=is, Pattern=what
+	Constrained: Pattern=mellow
+Turn ID=13| B | Human 2 : mellow style ? hahaha , you're not going to believe what i just said about your favorite group john mayer , he
+	Free: Pattern=hahaha, Pattern=john, Pattern=what, Pattern=he, Pattern=about, Pattern=i, Pattern=not, Pattern=mellow style, Pattern=your favorite group
+	Constrained: Pattern=group, Pattern=mellow
+Turn ID=14| A | Human 1 : umm yes he has some but not all
+	Free: Pattern=but not all, Pattern=umm yes, Pattern=he, Pattern=some
+	Constrained: Pattern=yes, Pattern=but not, Pattern=all, Pattern=but, Pattern=not
+Turn ID=15| B | Human 2 : what are some john mayer mellow style songs ? hahaaha umm yes but not all of his songs are mellow , you
+	Free: Pattern=umm yes, Pattern=john, Pattern=you, Pattern=are, Pattern=but not all, Pattern=some, Pattern=mellow, Pattern=mellow style, Pattern=what are
+	Constrained: Pattern=yes, Pattern=what, Pattern=are, Pattern=but not, Pattern=all, Pattern=mellow, Pattern=but, Pattern=not
+Turn ID=16| A | Human 1 : yes i do . you act like a robot how about me ? am i like a robot ?
+	Free: Pattern=like a robot, Pattern=you, Pattern=yes, Pattern=how about, Pattern=i
+	Constrained: Pattern=a, Pattern=robot, Pattern=about, Pattern=like
+Turn ID=17| B | Human 2 : umm yes you are like a robot but not really how about some mellow john mayer songs haha like "3x5"
+	Free: Pattern=umm yes, Pattern=john, Pattern=you, Pattern=like a robot, Pattern=are, Pattern=how about, Pattern=mellow, Pattern=but not, Pattern=some, Pattern=haha, Pattern=like
+	Constrained: Pattern=yes, Pattern=a, Pattern=about, Pattern=like, Pattern=robot, Pattern=but, Pattern=not

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _just_ chillin' _. how_ are _you_ ? 
+B|3| Human 2: _i'm_ doing well , thanks for asking . _it's_ nice _to_ talk _to_ [you] [. how] can _i_ help [you] _today ?_ <|im_ 
+A|4| Human 1: do anything interesting [today ?] 
+B|5| Human 2: _actually_ , _i_ helped a user solve a problem [today] . _it was_ pretty _cool_ . _i_ also learned a new skill _that_ _i_ can use in _the_ future . 
+A|6| Human 1: oh that's [cool] ! [i] [actually] went [to] an amusement park _and_ went on my first roller coaster ! 
+B|7| Human 2: [how] _was_ _that_ ? _did_ [you] enjoy _it ?_ 
+A|8| Human 1: [it was] scary ! [it was] [actually] kingda ka , [the] world's tallest roller coaster . ever _heard of [it_ ?] 
+B|9| Human 2: yeah , i've [heard of it] . _it's_ definitely _not_ for [the] faint [of] heart ! _did_ [you] feel scared or nervous during [the] 
+A|10| Human 1: oh wow _! i'm_ [not] on [that] level yet _, but_ [i] understand [the] appeal . are [you] an adrenaline junkie at all ? 
+B|11| Human 2: [i'm] [actually] [not] [that] adventurous . [i] [was] mostly [just] excited [to] try something new [and] unique . [it was] a fun experience [, but] [not] 
+A|12| Human 1: _same !_ [i] guess [the] roller coaster wasn't so bad because [i] _trust the_ engineering haha 
+B|13| Human 2: exactly ! _it's_ great when [you] can [trust the] safety measures [and] enjoy [the] ride . thanks for sharing your experience ! would [you] want [to] 
+A|14| Human 1: maybe [not] so much at [the] time [, but] [i] am _glad_ [i] _did it_ now [that] [it's] done , know what [i] mean ? 
+B|15| Human 2: [same [!] i'm] [glad] [you] [did it] [and] [that] [you] got [to] experience something new [and] fun . [it's] always good [to] challenge yourself [and] try 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : just chillin' . how are you ?
+	Free: Pattern=. how, Pattern=you, Pattern=just
+	Constrained: Pattern=how
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking . it's nice to talk to you . how can i help you today ? <|im_
+	Free: Pattern=today ?, Pattern=you, Pattern=. how, Pattern=i'm, Pattern=i, Pattern=to, Pattern=it's
+	Constrained: Pattern=today, Pattern=how
+Turn ID=4| A | Human 1 : do anything interesting today ?
+	Free: Pattern=today ?
+	Constrained: Pattern=today
+Turn ID=5| B | Human 2 : actually , i helped a user solve a problem today . it was pretty cool . i also learned a new skill that i can use in the future .
+	Free: Pattern=it was, Pattern=cool, Pattern=i, Pattern=the, Pattern=that, Pattern=actually, Pattern=today
+	Constrained: Pattern=was
+Turn ID=6| A | Human 1 : oh that's cool ! i actually went to an amusement park and went on my first roller coaster !
+	Free: Pattern=actually, Pattern=cool, Pattern=and, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=7| B | Human 2 : how was that ? did you enjoy it ?
+	Free: Pattern=you, Pattern=it ?, Pattern=did, Pattern=how, Pattern=was, Pattern=that
+	Constrained: 
+Turn ID=8| A | Human 1 : it was scary ! it was actually kingda ka , the world's tallest roller coaster . ever heard of it ?
+	Free: Pattern=it was, Pattern=it ?, Pattern=actually, Pattern=heard of it, Pattern=the
+	Constrained: Pattern=was, Pattern=of
+Turn ID=9| B | Human 2 : yeah , i've heard of it . it's definitely not for the faint of heart ! did you feel scared or nervous during the
+	Free: Pattern=of, Pattern=you, Pattern=did, Pattern=heard of it, Pattern=the, Pattern=it's, Pattern=not
+	Constrained: Pattern=of
+Turn ID=10| A | Human 1 : oh wow ! i'm not on that level yet , but i understand the appeal . are you an adrenaline junkie at all ?
+	Free: Pattern=i, Pattern=the, Pattern=! i'm, Pattern=that, Pattern=not, Pattern=you, Pattern=, but
+	Constrained: Pattern=i'm
+Turn ID=11| B | Human 2 : i'm actually not that adventurous . i was mostly just excited to try something new and unique . it was a fun experience , but not
+	Free: Pattern=it was, Pattern=, but, Pattern=just, Pattern=actually, Pattern=and, Pattern=i'm, Pattern=i, Pattern=to, Pattern=was, Pattern=that, Pattern=not
+	Constrained: Pattern=was
+Turn ID=12| A | Human 1 : same ! i guess the roller coaster wasn't so bad because i trust the engineering haha
+	Free: Pattern=same !, Pattern=trust the, Pattern=the, Pattern=i
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : exactly ! it's great when you can trust the safety measures and enjoy the ride . thanks for sharing your experience ! would you want to
+	Free: Pattern=you, Pattern=and, Pattern=the, Pattern=to, Pattern=trust the, Pattern=it's
+	Constrained: Pattern=the
+Turn ID=14| A | Human 1 : maybe not so much at the time , but i am glad i did it now that it's done , know what i mean ?
+	Free: Pattern=, but, Pattern=glad, Pattern=i, Pattern=not, Pattern=did it, Pattern=the, Pattern=that, Pattern=it's
+	Constrained: Pattern=did
+Turn ID=15| B | Human 2 : same ! i'm glad you did it and that you got to experience something new and fun . it's always good to challenge yourself and try
+	Free: Pattern=and, Pattern=glad, Pattern=did it, Pattern=! i'm, Pattern=to, Pattern=you, Pattern=same !, Pattern=that, Pattern=it's
+	Constrained: Pattern=i'm, Pattern=did

@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my _friends_ _are_ _gonna_ _visit_ me _this weekend ._ we _might_ go _hiking_ ! 
+B|3| Human 2: haha [this] is true . _i_ [might] [visit] _a_ local [hiking] club and hike 
+A|4| Human 1: _should_ _be_ _very_ _sunny_ ! _you ?_ 
+B|5| Human 2: _it_ was [sunny] and warm [this weekend .] [should] [you] ever [be] [hiking] [visit] _your_ [friends] 
+A|6| Human 1: 😐 hope _you get your_ _work_ done _very_ soon ! _a bug free_ [weekend] ! 
+B|7| Human 2: yeah [you] [are] right _i_ [get your] point it's [sunny] and warm [this weekend] 
+A|8| Human 1: [i] am _going to_ _diablo_ ! 
+B|9| Human 2: yeah _the_ game is [gonna] [get] [very] confusing [going] into _it_ . [diablo] is [a bug free] game . 
+A|10| Human 1: hours _drive from here_ . still _in bay area_ 
+B|11| Human 2: [i] [work] [here] [in bay area] [you ?] 
+A|12| Human 1: actually no idea , but [it] _will_ _take_ _the entire_ _day_ [for] _that_ . 
+B|13| Human 2: how long [will] [the entire] [drive from here] [take] [for] ? [that] was [going to] [be] [the] [day] [you get your] first order . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=for, Pattern=weekend, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=gonna, Pattern=are, Pattern=this weekend ., Pattern=friends, Pattern=hiking, Pattern=might, Pattern=visit
+	Constrained: Pattern=this weekend, Pattern=weekend, Pattern=this
+Turn ID=3| B | Human 2 : haha this is true . i might visit a local hiking club and hike
+	Free: Pattern=a, Pattern=i, Pattern=hiking, Pattern=might, Pattern=this, Pattern=visit
+	Constrained: 
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=should, Pattern=very, Pattern=you ?, Pattern=be, Pattern=sunny
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : it was sunny and warm this weekend . should you ever be hiking visit your friends
+	Free: Pattern=you, Pattern=should, Pattern=it, Pattern=this weekend ., Pattern=your, Pattern=friends, Pattern=be, Pattern=hiking, Pattern=sunny, Pattern=visit
+	Constrained: Pattern=this weekend, Pattern=weekend, Pattern=this
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=weekend, Pattern=a bug free, Pattern=work, Pattern=very, Pattern=you get your
+	Constrained: Pattern=get your, Pattern=you, Pattern=a, Pattern=your, Pattern=get
+Turn ID=7| B | Human 2 : yeah you are right i get your point it's sunny and warm this weekend
+	Free: Pattern=get your, Pattern=are, Pattern=i, Pattern=sunny, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=get, Pattern=weekend, Pattern=this, Pattern=your
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=going to, Pattern=diablo, Pattern=i
+	Constrained: Pattern=going
+Turn ID=9| B | Human 2 : yeah the game is gonna get very confusing going into it . diablo is a bug free game .
+	Free: Pattern=gonna, Pattern=it, Pattern=a bug free, Pattern=very, Pattern=the, Pattern=get, Pattern=going, Pattern=diablo
+	Constrained: Pattern=a
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=in bay area, Pattern=drive from here
+	Constrained: Pattern=here
+Turn ID=11| B | Human 2 : i work here in bay area you ?
+	Free: Pattern=in bay area, Pattern=here, Pattern=work, Pattern=i, Pattern=you ?
+	Constrained: Pattern=you
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=for, Pattern=it, Pattern=day, Pattern=take, Pattern=that, Pattern=the entire, Pattern=will
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : how long will the entire drive from here take for ? that was going to be the day you get your first order .
+	Free: Pattern=going to, Pattern=for, Pattern=day, Pattern=be, Pattern=drive from here, Pattern=you get your, Pattern=that, Pattern=the entire, Pattern=will, Pattern=take, Pattern=the
+	Constrained: Pattern=get your, Pattern=you, Pattern=going, Pattern=here, Pattern=your, Pattern=the, Pattern=get

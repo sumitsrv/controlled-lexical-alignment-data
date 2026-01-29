@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend i saw_ "the parasite . " ever _heard of it_ ? 
+B|3| Human 2: [i] haven't [heard of it] but [i] bet [it] _is_ _good_ . _the_ [last] man _on_ earth premiered _on_ netflix _and_ [i] loved _that_ ! 
+A|4| Human 1: my _friend_ wanted _to_ _see_ [it] _. it_ has _great_ reviews [on] imdb [and] rotten tomatoes ! what _did_ [you] _do_ _last weekend_ ? 
+B|5| Human 2: [last weekend i saw] _the_ [last] man , _a_ movie about _a_ vampire [and] werewolf [friend] 
+A|6| Human 1: oooo [the] _mandalorian_ ?!?! 
+B|7| Human 2: [i] [did] [see] [the] [last] man [and] [saw] [the] first [mandalorian] which _was_ an action flick _that_ stars tom cruise [. _it] was_ 
+A|8| Human 1: lol _are_ [you] [a] _big_ _marvel fan_ ? 
+B|9| Human 2: [the] [last] [mandalorian] came out [last weekend] [and] [i saw] [it] with [the] family . they [are] [great] [marvel fan] _movies_ . 
+A|10| Human 1: _i've_ _only_ [seen] _spiderman_ . honestly [it was] [a] little _too_ scary [and] so _i don't think_ [i] can bring myself _to _watch_ the_ other [marvel] [movies] ! _haha_ 
+B|11| Human 2: [i] [only] [watch the] [movies] [and] [don't] read [too] many comics . 
+A|12| Human 1: oh _really_ ? _to_ be honest [i] _think_ [the] _actor_ [is] _not_ [that] [good] looking , so _not_ so surprising ! _haha_ 
+B|13| Human 2: [haha] [i don't think] that's [the] right movie [to watch] with [the] family [and] [was] [not] [really] [too] [big] [a] [fan] [of] [spiderman] 
+A|14| Human 1: who [is] loki ? _i've never_ [heard] [that] name before 
+B|15| Human 2: [i've never] [seen] [that] [marvel] movie . but [i] [do] have [heard] [good] things about [the] logan lucky [actor] [that] [was] nominated for [the] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=you, Pattern=seen, Pattern=movies
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=last weekend i saw, Pattern=heard of it
+	Constrained: Pattern=saw, Pattern=it, Pattern=i, Pattern=last, Pattern=i saw, Pattern=last weekend, Pattern=of, Pattern=heard
+Turn ID=3| B | Human 2 : i haven't heard of it but i bet it is good . the last man on earth premiered on netflix and i loved that !
+	Free: Pattern=good, Pattern=heard of it, Pattern=last, Pattern=that, Pattern=it, Pattern=and, Pattern=is, Pattern=i, Pattern=on, Pattern=the
+	Constrained: Pattern=it, Pattern=of, Pattern=heard
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=on, Pattern=. it, Pattern=you, Pattern=great, Pattern=do, Pattern=did, Pattern=it, Pattern=and, Pattern=see, Pattern=friend, Pattern=last weekend, Pattern=to
+	Constrained: Pattern=last, Pattern=it
+Turn ID=5| B | Human 2 : last weekend i saw the last man , a movie about a vampire and werewolf friend
+	Free: Pattern=a, Pattern=and, Pattern=last weekend i saw, Pattern=last, Pattern=the, Pattern=friend
+	Constrained: Pattern=saw, Pattern=i, Pattern=last, Pattern=i saw, Pattern=last weekend
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=mandalorian, Pattern=the
+	Constrained: 
+Turn ID=7| B | Human 2 : i did see the last man and saw the first mandalorian which was an action flick that stars tom cruise . it was
+	Free: Pattern=did, Pattern=and, Pattern=i, Pattern=last, Pattern=the, Pattern=see, Pattern=was, Pattern=mandalorian, Pattern=. it, Pattern=that, Pattern=saw, Pattern=it was
+	Constrained: Pattern=was, Pattern=it
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=marvel fan, Pattern=you, Pattern=a, Pattern=are, Pattern=big
+	Constrained: Pattern=fan, Pattern=marvel
+Turn ID=9| B | Human 2 : the last mandalorian came out last weekend and i saw it with the family . they are great marvel fan movies .
+	Free: Pattern=marvel fan, Pattern=great, Pattern=are, Pattern=last, Pattern=last weekend, Pattern=mandalorian, Pattern=movies, Pattern=it, Pattern=and, Pattern=i saw, Pattern=the
+	Constrained: Pattern=saw, Pattern=fan, Pattern=marvel, Pattern=i, Pattern=last
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=it was, Pattern=only, Pattern=i don't think, Pattern=to watch, Pattern=a, Pattern=i've, Pattern=marvel, Pattern=i, Pattern=haha, Pattern=spiderman, Pattern=watch the, Pattern=and, Pattern=too, Pattern=seen, Pattern=movies
+	Constrained: Pattern=it, Pattern=think, Pattern=i, Pattern=the, Pattern=don't, Pattern=to, Pattern=was
+Turn ID=11| B | Human 2 : i only watch the movies and don't read too many comics .
+	Free: Pattern=only, Pattern=i, Pattern=don't, Pattern=movies, Pattern=watch the, Pattern=and, Pattern=too
+	Constrained: Pattern=the
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=good, Pattern=think, Pattern=the, Pattern=to, Pattern=that, Pattern=actor, Pattern=not, Pattern=is, Pattern=i, Pattern=haha, Pattern=really
+	Constrained: 
+Turn ID=13| B | Human 2 : haha i don't think that's the right movie to watch with the family and was not really too big a fan of spiderman
+	Free: Pattern=fan, Pattern=of, Pattern=i don't think, Pattern=to watch, Pattern=a, Pattern=spiderman, Pattern=was, Pattern=not, Pattern=and, Pattern=too, Pattern=haha, Pattern=really, Pattern=big, Pattern=the
+	Constrained: Pattern=to, Pattern=think, Pattern=don't, Pattern=i
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=i've never, Pattern=that, Pattern=is, Pattern=heard
+	Constrained: Pattern=i've
+Turn ID=15| B | Human 2 : i've never seen that marvel movie . but i do have heard good things about the logan lucky actor that was nominated for the
+	Free: Pattern=good, Pattern=heard, Pattern=do, Pattern=marvel, Pattern=i, Pattern=the, Pattern=i've never, Pattern=was, Pattern=seen, Pattern=that, Pattern=actor
+	Constrained: Pattern=i've

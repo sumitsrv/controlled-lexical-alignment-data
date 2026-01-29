@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , _it_ is flying by quicker than _i_ expected . how is [your day going] _on_ ? 
+B|3| Human 2: hello ! as [your] digital assistant _, i_ _don't_ experience days _in_ _the_ way humans _do_ , but i'm fully operational _and_ ready _to_ help 
+A|4| Human 1: oh [, _i] would_ love [to] twiddle my thumbs . you're _so_ lucky ! today , _i've been mostly attending _meetings_ ,_ _reading_ [and] writing docs , _reading_ _papers_ etc . 
+B|5| Human 2: i'm here [to] assist [and] engage , [so] [your] day's [been] productive _! _i_ can_ help organize [your] [meetings ,] read [papers] 
+A|6| Human 1: wow [! i] _sometimes_ drift _off_ during _work_ _, and_ _see_ similar _things_ [in] my head . 
+B|7| Human 2: i'm not drifting [off] [, and] [i] _don't_ [see] [things] . [i] [work] _with_ pre-programmed algorithms [and] databases . but [your] support 
+A|8| Human 1: _mostly_ saving _the world_ _from_ mess _on social media_ . how _about_ _you_ ? 
+B|9| Human 2: [i've been mostly attending meetings] [about] [social media] policies [and] [sometimes] [reading] [the] [papers] [you] refer [to] . [i] [work] _with_ structured data [and] protocol 
+A|10| Human 1: nice , what all _places_ _would_ [you] _be going to_ ? 
+B|11| Human 2: [i would] [mostly] [be going to] [work] environments [and] [attending meetings] focused [on social media] , data analysis [, and] [the] implementation of policies [from] [papers] [about] digital 
+A|12| Human 1: [i] just met someone who went _diving_ [in] _australia_ . apparently , [you] cannot fly 24 hrs after [you] _dive_ , because [your] body accumulates too much <redacted_term> when breathing [with] a cylinder [so] , [don't] [do] _that_ ! 
+B|13| Human 2: i'm phi [, and] [i] [don't] [dive] or fly—i process natural language [and] provide information . 
+A|14| Human 1: that's equally amazing [! i] wish [i can] explore such _places_ one [day] . _it's_ just [so] expensive 
+B|15| Human 2: [it's] fantastic [that] [you] appreciate [the] wonders of [the world] [! [i] can] provide information [about] [australia] [and] [dive] [diving] [places] [from] [your] current 
+A|16| Human 1: woah !... [you] _know_ sharing is caring . [you] should _share_ [that] _money_ [with] me :) 
+B|17| Human 2: i'm phi , an ai [, and] [i] [don't] have [the] capacity [to] accumulate [money] or [share] [it] . but [you] [can] [know] 
+A|18| Human 1: [you] are a kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=your, Pattern=day
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=your day going, Pattern=it, Pattern=i, Pattern=on
+	Constrained: Pattern=your, Pattern=day
+Turn ID=3| B | Human 2 : hello ! as your digital assistant , i don't experience days in the way humans do , but i'm fully operational and ready to help
+	Free: Pattern=do, Pattern=and, Pattern=in, Pattern=your, Pattern=don't, Pattern=to, Pattern=the, Pattern=, i
+	Constrained: Pattern=i
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=and, Pattern=reading, Pattern=, i, Pattern=i would, Pattern=so, Pattern=i've been mostly attending meetings, Pattern=meetings ,, Pattern=papers, Pattern=to
+	Constrained: Pattern=attending meetings, Pattern=i, Pattern=mostly, Pattern=would, Pattern=been
+Turn ID=5| B | Human 2 : i'm here to assist and engage , so your day's been productive ! i can help organize your meetings , read papers
+	Free: Pattern=meetings ,, Pattern=your, Pattern=been, Pattern=i can, Pattern=so, Pattern=and, Pattern=! i, Pattern=papers, Pattern=to
+	Constrained: Pattern=can, Pattern=i
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=! i, Pattern=things, Pattern=in, Pattern=work, Pattern=off, Pattern=see, Pattern=, and, Pattern=sometimes
+	Constrained: Pattern=i, Pattern=and
+Turn ID=7| B | Human 2 : i'm not drifting off , and i don't see things . i work with pre-programmed algorithms and databases . but your support
+	Free: Pattern=and, Pattern=things, Pattern=work, Pattern=off, Pattern=, and, Pattern=with, Pattern=your, Pattern=i, Pattern=see, Pattern=don't
+	Constrained: Pattern=and
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=you, Pattern=on social media, Pattern=from, Pattern=about, Pattern=the world, Pattern=mostly
+	Constrained: Pattern=social media, Pattern=on, Pattern=the
+Turn ID=9| B | Human 2 : i've been mostly attending meetings about social media policies and sometimes reading the papers you refer to . i work with structured data and protocol
+	Free: Pattern=i've been mostly attending meetings, Pattern=you, Pattern=and, Pattern=about, Pattern=reading, Pattern=work, Pattern=i, Pattern=the, Pattern=with, Pattern=sometimes, Pattern=papers, Pattern=social media, Pattern=to
+	Constrained: Pattern=attending meetings, Pattern=been, Pattern=mostly
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=be going to, Pattern=you, Pattern=would, Pattern=places
+	Constrained: Pattern=to
+Turn ID=11| B | Human 2 : i would mostly be going to work environments and attending meetings focused on social media , data analysis , and the implementation of policies from papers about digital
+	Free: Pattern=be going to, Pattern=on social media, Pattern=and, Pattern=from, Pattern=about, Pattern=mostly, Pattern=the, Pattern=i would, Pattern=attending meetings, Pattern=work, Pattern=papers, Pattern=, and
+	Constrained: Pattern=and, Pattern=i, Pattern=on, Pattern=would, Pattern=social media, Pattern=to
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=diving, Pattern=you, Pattern=do, Pattern=in, Pattern=don't, Pattern=so, Pattern=your, Pattern=i, Pattern=dive, Pattern=australia, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm phi , and i don't dive or fly—i process natural language and provide information .
+	Free: Pattern=and, Pattern=i, Pattern=dive, Pattern=don't, Pattern=, and
+	Constrained: Pattern=and
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=places, Pattern=! i, Pattern=day, Pattern=i can, Pattern=it's, Pattern=so
+	Constrained: Pattern=can, Pattern=i
+Turn ID=15| B | Human 2 : it's fantastic that you appreciate the wonders of the world ! i can provide information about australia and dive diving places from your current
+	Free: Pattern=diving, Pattern=you, Pattern=places, Pattern=from, Pattern=about, Pattern=the, Pattern=i can, Pattern=and, Pattern=! i, Pattern=your, Pattern=the world, Pattern=dive, Pattern=australia, Pattern=that, Pattern=it's
+	Constrained: Pattern=can, Pattern=i, Pattern=the
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=money, Pattern=you, Pattern=know, Pattern=share, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=17| B | Human 2 : i'm phi , an ai , and i don't have the capacity to accumulate money or share it . but you can know
+	Free: Pattern=money, Pattern=you, Pattern=it, Pattern=can, Pattern=know, Pattern=i, Pattern=share, Pattern=the, Pattern=don't, Pattern=, and, Pattern=to
+	Constrained: Pattern=and
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=you
+	Constrained: 

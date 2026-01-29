@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how _are_ _you_ feeling today ? 
+A|2| Human 1: _good_ [you] ? 
+B|3| Human 2: fantastic ! 😊 is there anything you'd _like_ _to_ chat about or ask ? 
+A|4| Human 1: where did [you] _meet them_ ? 
+B|5| Human 2: interesting question ! _i'm_ just an ai , _i_ don't _have_ [meet them] in the classical sense since _i_ am _a_ computer program 
+A|6| Human 1: cool . [have] [you] _graduated_ already ? 
+B|7| Human 2: 🤖 yes , _i_ [have] [graduated] from the university of michigan with _a_ degree in computer science and linguistics . _i_ was trained using 
+A|8| Human 1: neat . _what are_ _y'all_ _eating_ ? 
+B|9| Human 2: ☕️ _i'm_ just an ai , _i_ don't [have] [eating] experiences or taste buds _, but_ _i_ can suggest 
+A|10| Human 1: _lol_ what's _a klutz ?_ yeah _i like_ [, but] _i'm not good_ 
+B|11| Human 2: [klutz] 😅 [i'm not good] _at_ [eating] [, but] [i like] _to try_ new foods [lol] ! [what are] [you] 
+A|12| Human 1: _ground beef_ pretty easy 
+B|13| Human 2: [y'all] [are] 🤣 [i like] [ground beef] [but] [not good] _at_ [eating] [lol] whats [a] klutz<|im 
+A|14| Human 1: [i _like] badminton_ . [i'm] quite _decent at_ it 
+B|15| Human 2: 🏸 [i'm] [good] [at] [badminton] [but] [not] [eating] [lol] whats [a klutz ?] <|im_end 
+A|16| Human 1: [i] never played _squash_ . would love [to try] 
+B|17| Human 2: [i'm] [decent at] [squash] [but] [not] [eating] [lol] whats [a klutz] , [like badminton] ? <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how are you feeling today ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : good you ?
+	Free: Pattern=good, Pattern=you
+	Constrained: 
+Turn ID=3| B | Human 2 : fantastic ! 😊 is there anything you'd like to chat about or ask ?
+	Free: Pattern=to, Pattern=like
+	Constrained: 
+Turn ID=4| A | Human 1 : where did you meet them ?
+	Free: Pattern=meet them, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : interesting question ! i'm just an ai , i don't have meet them in the classical sense since i am a computer program
+	Free: Pattern=have, Pattern=a, Pattern=meet them, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : cool . have you graduated already ?
+	Free: Pattern=you, Pattern=graduated, Pattern=have
+	Constrained: 
+Turn ID=7| B | Human 2 : 🤖 yes , i have graduated from the university of michigan with a degree in computer science and linguistics . i was trained using
+	Free: Pattern=graduated, Pattern=a, Pattern=have, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : neat . what are y'all eating ?
+	Free: Pattern=what are, Pattern=eating, Pattern=y'all
+	Constrained: Pattern=are
+Turn ID=9| B | Human 2 : ☕️ i'm just an ai , i don't have eating experiences or taste buds , but i can suggest
+	Free: Pattern=eating, Pattern=, but, Pattern=have, Pattern=i'm, Pattern=i
+	Constrained: Pattern=but
+Turn ID=10| A | Human 1 : lol what's a klutz ? yeah i like , but i'm not good
+	Free: Pattern=lol, Pattern=, but, Pattern=i'm not good, Pattern=i like, Pattern=a klutz ?
+	Constrained: Pattern=good, Pattern=a, Pattern=i, Pattern=like, Pattern=not good, Pattern=but, Pattern=klutz, Pattern=not, Pattern=i'm, Pattern=a klutz
+Turn ID=11| B | Human 2 : klutz 😅 i'm not good at eating , but i like to try new foods lol ! what are you
+	Free: Pattern=at, Pattern=i'm not good, Pattern=eating, Pattern=lol, Pattern=you, Pattern=, but, Pattern=what are, Pattern=to try, Pattern=klutz, Pattern=i like
+	Constrained: Pattern=good, Pattern=are, Pattern=i'm, Pattern=i, Pattern=like, Pattern=not good, Pattern=to, Pattern=but, Pattern=not
+Turn ID=12| A | Human 1 : ground beef pretty easy
+	Free: Pattern=ground beef
+	Constrained: 
+Turn ID=13| B | Human 2 : y'all are 🤣 i like ground beef but not good at eating lol whats a klutz<|im
+	Free: Pattern=ground beef, Pattern=y'all, Pattern=a, Pattern=are, Pattern=at, Pattern=not good, Pattern=but, Pattern=i like, Pattern=eating, Pattern=lol
+	Constrained: Pattern=good, Pattern=i, Pattern=not, Pattern=like
+Turn ID=14| A | Human 1 : i like badminton . i'm quite decent at it
+	Free: Pattern=i like, Pattern=decent at, Pattern=like badminton, Pattern=i'm
+	Constrained: Pattern=at, Pattern=i, Pattern=like, Pattern=badminton
+Turn ID=15| B | Human 2 : 🏸 i'm good at badminton but not eating lol whats a klutz ? <|im_end
+	Free: Pattern=good, Pattern=at, Pattern=i'm, Pattern=badminton, Pattern=but, Pattern=eating, Pattern=lol, Pattern=a klutz ?, Pattern=not
+	Constrained: Pattern=a klutz, Pattern=klutz, Pattern=a
+Turn ID=16| A | Human 1 : i never played squash . would love to try
+	Free: Pattern=to try, Pattern=i, Pattern=squash
+	Constrained: Pattern=to
+Turn ID=17| B | Human 2 : i'm decent at squash but not eating lol whats a klutz , like badminton ? <|im_end
+	Free: Pattern=but, Pattern=not, Pattern=eating, Pattern=decent at, Pattern=lol, Pattern=i'm, Pattern=a klutz, Pattern=like badminton, Pattern=squash
+	Constrained: Pattern=a, Pattern=at, Pattern=like, Pattern=badminton, Pattern=klutz

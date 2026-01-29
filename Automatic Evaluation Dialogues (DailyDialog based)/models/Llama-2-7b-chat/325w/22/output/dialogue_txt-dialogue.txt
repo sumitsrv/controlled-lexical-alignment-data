@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: doing _great !_ _what_ [are you] _looking forward to_ ? 
+B|3| Human 2: [great !] i'm [looking forward to] helping [you] _with_ any questions or tasks [you] have _. what_ _can_ _i_ help [you] _with_ today ? <|im_ 
+A|4| Human 1: yay _! turkey and shopping_ ! 
+B|5| Human 2: _ah_ , [great [!] turkey and shopping] [are] both popular things [to] _do_ around _thanksgiving_ . is there something specific you’re [looking] [to] _do_ for 
+A|6| Human 1: _yea_ me too _. i_ sometimes eat _noodle soups_ _in_ [thanksgiving] instead haha 
+B|7| Human 2: interesting ! [noodle soups] [are] a [great] option for [thanksgiving] . they’re comforting [and] _can_ be easily made [in] large quantities 
+A|8| Human 1: me neither . someone told me that _it_ depends on _the_ _stuffing_ inside _the_ [turkey] . _some_ people make very _good_ _stuffing_ 
+B|9| Human 2: _ah_ , [i] see ! yes , [stuffing] is definitely a popular side dish for [thanksgiving] . [it] _can_ be made _with_ a variety of ing 
+A|10| Human 1: _yea_ [. what] [do] [you] _plan to buy_ ? 
+B|11| Human 2: [i] [plan to buy] [some] new clothes [and] shoes . [turkey] is a big deal here _so_ [i] want [to] look [good] for [the] big fea<| 
+A|12| Human 1: [ah] cool . [so] [you] [can] _run_ more frequently ? :) 
+B|13| Human 2: [yea] , exactly ! [i] [run] a lot during [thanksgiving] because it's a [great] opportunity [to] spend time _with_ family [and] friends [. i] also 
+A|14| Human 1: yay , all [the] best [with] keeping calories [in] check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=looking forward to, Pattern=are you, Pattern=great !, Pattern=what
+	Constrained: Pattern=looking, Pattern=are, Pattern=to, Pattern=you, Pattern=great
+Turn ID=3| B | Human 2 : great ! i'm looking forward to helping you with any questions or tasks you have . what can i help you with today ? <|im_
+	Free: Pattern=you, Pattern=can, Pattern=great !, Pattern=i, Pattern=. what, Pattern=with, Pattern=looking forward to
+	Constrained: Pattern=what, Pattern=looking, Pattern=to, Pattern=great
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=! turkey and shopping
+	Constrained: Pattern=and, Pattern=turkey
+Turn ID=5| B | Human 2 : ah , great ! turkey and shopping are both popular things to do around thanksgiving . is there something specific you’re looking to do for
+	Free: Pattern=! turkey and shopping, Pattern=do, Pattern=looking, Pattern=are, Pattern=great !, Pattern=to, Pattern=thanksgiving, Pattern=ah
+	Constrained: Pattern=and, Pattern=great, Pattern=turkey
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=yea, Pattern=in, Pattern=noodle soups, Pattern=thanksgiving, Pattern=. i
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : interesting ! noodle soups are a great option for thanksgiving . they’re comforting and can be easily made in large quantities
+	Free: Pattern=great, Pattern=and, Pattern=are, Pattern=can, Pattern=thanksgiving, Pattern=in, Pattern=noodle soups
+	Constrained: 
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=good, Pattern=turkey, Pattern=some, Pattern=the, Pattern=it, Pattern=stuffing
+	Constrained: 
+Turn ID=9| B | Human 2 : ah , i see ! yes , stuffing is definitely a popular side dish for thanksgiving . it can be made with a variety of ing
+	Free: Pattern=can, Pattern=i, Pattern=with, Pattern=it, Pattern=stuffing, Pattern=thanksgiving, Pattern=ah
+	Constrained: 
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=you, Pattern=do, Pattern=yea, Pattern=plan to buy, Pattern=. what
+	Constrained: Pattern=to, Pattern=what
+Turn ID=11| B | Human 2 : i plan to buy some new clothes and shoes . turkey is a big deal here so i want to look good for the big fea<|
+	Free: Pattern=good, Pattern=and, Pattern=turkey, Pattern=some, Pattern=the, Pattern=to, Pattern=so, Pattern=plan to buy, Pattern=i
+	Constrained: Pattern=to
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=you, Pattern=can, Pattern=so, Pattern=ah, Pattern=run
+	Constrained: 
+Turn ID=13| B | Human 2 : yea , exactly ! i run a lot during thanksgiving because it's a great opportunity to spend time with family and friends . i also
+	Free: Pattern=great, Pattern=and, Pattern=yea, Pattern=i, Pattern=to, Pattern=with, Pattern=thanksgiving, Pattern=. i, Pattern=run
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=the, Pattern=in, Pattern=with
+	Constrained: 

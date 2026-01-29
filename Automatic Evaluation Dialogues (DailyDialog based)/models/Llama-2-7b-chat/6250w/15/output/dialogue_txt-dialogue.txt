@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , _how_ is _it_ going ? 
+A|2| Human 1: all _good_ . planning _to_ head _home soon_ . [how] about _you ?_ 
+B|3| Human 2: great ! [how] far is [home] for [you ?] 
+A|4| Human 1: oh ... sorry _to hear_ _that_ . _but_ _after that_ [it] _will be_ a _hard_ earned vacation 
+B|5| Human 2: haha that's [good] [to hear] ! so [you] [will be] [home soon] [after] 3 hours _of_ [hard] work ? 
+A|6| Human 1: i _have_ some tentative plans , _but_ if _that_ _doesn't pan out_ , [will] _just chill at home_ . 
+B|7| Human 2: [but] 3 hours [after that] [will be] [home soon] [doesn't pan out] [just chill at home] ? 
+A|8| Human 1: where _are you based out of these days ?_ 
+B|9| Human 2: [just chill at home] [doesn't] [have] _the_ same ring [to] [it] 😴 [are you based out of these days ?] <|im 
+A|10| Human 1: _san francisco_ . it's _been_ _raining cats_ _and_ dogs _here_ _since_ _last_ 2-3 _weeks_ 
+B|11| Human 2: 32-23 [and] 53 [are] [based out of] [san] francisco's [here] [last] 2 [weeks] [since] [raining cats] [just] ch 
+A|12| Human 1: [the] _flu_ _has been hitting hard_ as well . i had several _folks_ in [the] house down [at] one point . 
+B|13| Human 2: 23 [and] 53 [are] [based out of] [san francisco] [here] [last] 2 [weeks] [since] [raining cats] [has been hitting hard] [flu] [folks] 
+A|14| Human 1: yes , everyone recovered now 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : all good . planning to head home soon . how about you ?
+	Free: Pattern=good, Pattern=home soon, Pattern=how, Pattern=you ?, Pattern=to
+	Constrained: Pattern=you, Pattern=home
+Turn ID=3| B | Human 2 : great ! how far is home for you ?
+	Free: Pattern=you ?, Pattern=home, Pattern=how
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : oh ... sorry to hear that . but after that it will be a hard earned vacation
+	Free: Pattern=it, Pattern=will be, Pattern=hard, Pattern=after that, Pattern=to hear, Pattern=that, Pattern=but
+	Constrained: Pattern=that, Pattern=after, Pattern=will, Pattern=to
+Turn ID=5| B | Human 2 : haha that's good to hear ! so you will be home soon after 3 hours of hard work ?
+	Free: Pattern=good, Pattern=of, Pattern=you, Pattern=home soon, Pattern=will be, Pattern=after, Pattern=hard, Pattern=to hear
+	Constrained: Pattern=home, Pattern=will, Pattern=to
+Turn ID=6| A | Human 1 : i have some tentative plans , but if that doesn't pan out , will just chill at home .
+	Free: Pattern=doesn't pan out, Pattern=have, Pattern=just chill at home, Pattern=will, Pattern=that, Pattern=but
+	Constrained: Pattern=just, Pattern=home, Pattern=at, Pattern=doesn't
+Turn ID=7| B | Human 2 : but 3 hours after that will be home soon doesn't pan out just chill at home ?
+	Free: Pattern=doesn't pan out, Pattern=home soon, Pattern=just chill at home, Pattern=will be, Pattern=after that, Pattern=but
+	Constrained: Pattern=at, Pattern=after, Pattern=will, Pattern=home, Pattern=that, Pattern=just, Pattern=doesn't
+Turn ID=8| A | Human 1 : where are you based out of these days ?
+	Free: Pattern=are you based out of these days ?
+	Constrained: Pattern=are, Pattern=you, Pattern=of, Pattern=based out of
+Turn ID=9| B | Human 2 : just chill at home doesn't have the same ring to it 😴 are you based out of these days ? <|im
+	Free: Pattern=are you based out of these days ?, Pattern=the, Pattern=to, Pattern=have, Pattern=doesn't, Pattern=it, Pattern=just chill at home
+	Constrained: Pattern=of, Pattern=you, Pattern=just, Pattern=are, Pattern=at, Pattern=based out of, Pattern=home
+Turn ID=10| A | Human 1 : san francisco . it's been raining cats and dogs here since last 2-3 weeks
+	Free: Pattern=and, Pattern=since, Pattern=weeks, Pattern=san francisco, Pattern=last, Pattern=been, Pattern=here, Pattern=raining cats
+	Constrained: Pattern=san
+Turn ID=11| B | Human 2 : 32-23 and 53 are based out of san francisco's here last 2 weeks since raining cats just ch
+	Free: Pattern=just, Pattern=and, Pattern=based out of, Pattern=weeks, Pattern=last, Pattern=here, Pattern=raining cats, Pattern=are, Pattern=since, Pattern=san
+	Constrained: Pattern=of
+Turn ID=12| A | Human 1 : the flu has been hitting hard as well . i had several folks in the house down at one point .
+	Free: Pattern=has been hitting hard, Pattern=at, Pattern=flu, Pattern=folks, Pattern=the
+	Constrained: Pattern=hard, Pattern=been
+Turn ID=13| B | Human 2 : 23 and 53 are based out of san francisco here last 2 weeks since raining cats has been hitting hard flu folks
+	Free: Pattern=has been hitting hard, Pattern=and, Pattern=based out of, Pattern=flu, Pattern=weeks, Pattern=folks, Pattern=san francisco, Pattern=last, Pattern=here, Pattern=raining cats, Pattern=are, Pattern=since
+	Constrained: Pattern=hard, Pattern=san, Pattern=of, Pattern=been
+Turn ID=14| A | Human 1 : yes , everyone recovered now
+	Free: 
+	Constrained: 

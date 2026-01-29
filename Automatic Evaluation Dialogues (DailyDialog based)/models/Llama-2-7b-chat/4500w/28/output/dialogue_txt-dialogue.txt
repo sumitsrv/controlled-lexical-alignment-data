@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ ? 
+A|2| Human 1: _i'm_ _great_ , thanks . _i_ _just_ ate _a delicious breakfast_ , which always sets _the day_ up _right_ . 
+B|3| Human 2: [i'm] glad _to_ hear _that_ ! [breakfast] _is_ [a] [great] _way_ _to_ start [the day] . _would_ _you_ _like_ _to_ chat about anything else ? <| 
+A|4| Human 1: _i_ had _eggs and hash browns ._ [way] _less_ _healthier_ _than_ your apple , [i'm] afraid ! 
+B|5| Human 2: _that's_ [great] ! [eggs and hash browns] _are_ [a delicious breakfast] choice _. i'm_ [just] an ai bot , _so i_ don 
+A|6| Human 1: ha , [that's] true . _if_ [you] _could_ only _eat_ _one_ _food_ forever , _what would_ it be ? 
+B|7| Human 2: [i] [would] _want to_ [eat] [a] [food] [that's] [healthier] [and] [less] processed [than] [eggs and hash browns .] maybe something _like_ quinoa _or_ 
+A|8| Human 1: yeah , turning orange [would] be [a] drawback ! [that] turns _my_ mind [to] _nutrition_ [so i] suddenly [want to] _say_ _soylent_ [or] _one_ _of_ _those_ other "complete foods" , which _i think_ defeats _the purpose of_ [the] _question_ [. i'm] in [a] muddle ! 
+B|9| Human 2: [that's] [a] [great] [question] ! [i think] [nutrition] [and] healthy [food] choices _are_ really important . [soylent] _is_ definitely [one] option [that] comes 
+A|10| Human 1: brilliant . [i] love it . 
+B|11| Human 2: [i'm] [just] [a] simple chatbot trained by meta ai _and [the_ purpose of] [my] existence _is_ [to] chat with [you] [right] now . soyl 
+A|12| Human 1: [that] depends . _what_ _sort of_ [food] do [you] _feel_ [like] ? 
+B|13| Human 2: [i'm] [so] glad [you] [like] [soylent] ! [what would] [you] [say] [if] [i] told [you] [that] [those] [nutrition] bars [could] [sort of] [feel] 
+A|14| Human 1: oh , too easy ! try [the] green hut , they have franchises everywhere . all their [food] [is] green [and the] plates [are] green too . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i just ate a delicious breakfast , which always sets the day up right .
+	Free: Pattern=right, Pattern=great, Pattern=just, Pattern=i'm, Pattern=i, Pattern=the day, Pattern=a delicious breakfast
+	Constrained: Pattern=a, Pattern=the, Pattern=breakfast
+Turn ID=3| B | Human 2 : i'm glad to hear that ! breakfast is a great way to start the day . would you like to chat about anything else ? <|
+	Free: Pattern=a, Pattern=breakfast, Pattern=i'm, Pattern=is, Pattern=would, Pattern=to, Pattern=you, Pattern=great, Pattern=the day, Pattern=like, Pattern=that, Pattern=way
+	Constrained: Pattern=the
+Turn ID=4| A | Human 1 : i had eggs and hash browns . way less healthier than your apple , i'm afraid !
+	Free: Pattern=eggs and hash browns ., Pattern=than, Pattern=i'm, Pattern=i, Pattern=way, Pattern=healthier, Pattern=less
+	Constrained: Pattern=eggs and hash browns, Pattern=and
+Turn ID=5| B | Human 2 : that's great ! eggs and hash browns are a delicious breakfast choice . i'm just an ai bot , so i don
+	Free: Pattern=great, Pattern=just, Pattern=are, Pattern=so i, Pattern=a delicious breakfast, Pattern=that's, Pattern=eggs and hash browns, Pattern=. i'm
+	Constrained: Pattern=a, Pattern=breakfast, Pattern=and, Pattern=i'm, Pattern=i, Pattern=so
+Turn ID=6| A | Human 1 : ha , that's true . if you could only eat one food forever , what would it be ?
+	Free: Pattern=you, Pattern=eat, Pattern=what would, Pattern=food, Pattern=that's, Pattern=could, Pattern=one, Pattern=if
+	Constrained: Pattern=what, Pattern=would
+Turn ID=7| B | Human 2 : i would want to eat a food that's healthier and less processed than eggs and hash browns . maybe something like quinoa or
+	Free: Pattern=eat, Pattern=a, Pattern=and, Pattern=eggs and hash browns ., Pattern=want to, Pattern=than, Pattern=i, Pattern=that's, Pattern=would, Pattern=food, Pattern=like, Pattern=healthier, Pattern=or, Pattern=less
+	Constrained: Pattern=to, Pattern=eggs and hash browns, Pattern=and
+Turn ID=8| A | Human 1 : yeah , turning orange would be a drawback ! that turns my mind to nutrition so i suddenly want to say soylent or one of those other "complete foods" , which i think defeats the purpose of the question . i'm in a muddle !
+	Free: Pattern=of, Pattern=a, Pattern=. i'm, Pattern=one, Pattern=want to, Pattern=so i, Pattern=the purpose of, Pattern=or, Pattern=the, Pattern=would, Pattern=to, Pattern=those, Pattern=my, Pattern=that, Pattern=i think, Pattern=say, Pattern=soylent, Pattern=question, Pattern=nutrition
+	Constrained: Pattern=of, Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=so
+Turn ID=9| B | Human 2 : that's a great question ! i think nutrition and healthy food choices are really important . soylent is definitely one option that comes
+	Free: Pattern=great, Pattern=a, Pattern=and, Pattern=soylent, Pattern=is, Pattern=food, Pattern=that's, Pattern=that, Pattern=i think, Pattern=are, Pattern=one, Pattern=question, Pattern=nutrition
+	Constrained: Pattern=i
+Turn ID=10| A | Human 1 : brilliant . i love it .
+	Free: Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm just a simple chatbot trained by meta ai and the purpose of my existence is to chat with you right now . soyl
+	Free: Pattern=right, Pattern=you, Pattern=just, Pattern=a, Pattern=and the, Pattern=i'm, Pattern=is, Pattern=the purpose of, Pattern=to, Pattern=my
+	Constrained: Pattern=the, Pattern=and, Pattern=of
+Turn ID=12| A | Human 1 : that depends . what sort of food do you feel like ?
+	Free: Pattern=you, Pattern=what, Pattern=sort of, Pattern=that, Pattern=food, Pattern=like, Pattern=feel
+	Constrained: Pattern=of
+Turn ID=13| B | Human 2 : i'm so glad you like soylent ! what would you say if i told you that those nutrition bars could sort of feel
+	Free: Pattern=you, Pattern=what would, Pattern=if, Pattern=i, Pattern=nutrition, Pattern=could, Pattern=that, Pattern=so, Pattern=say, Pattern=i'm, Pattern=soylent, Pattern=like, Pattern=feel, Pattern=those, Pattern=sort of
+	Constrained: Pattern=what, Pattern=of, Pattern=would
+Turn ID=14| A | Human 1 : oh , too easy ! try the green hut , they have franchises everywhere . all their food is green and the plates are green too .
+	Free: Pattern=and the, Pattern=are, Pattern=is, Pattern=food, Pattern=the
+	Constrained: Pattern=the, Pattern=and

@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there _! it's_ _a_ lovely _day_ _to_ chat _with_ _you_ 
+A|2| Human 1: isn't _it_ _just_ ! _what _are_ you_ up [to] _today ?_ 
+B|3| Human 2: 🤖 _i'm_ [just] here [to] help [you] _with_ any questions or tasks [you] may _have_ _. what_ _can_ _i_ assist [you] _with_ [today ?] 
+A|4| Human 1: oh , excellent ! [what] does _your_ _son_ _like_ [to] _do_ _for_ _fun_ ? 
+B|5| Human 2: 🤖 _i'm_ [just] an ai _, i don't have_ personal experiences or _a_ [son] , but _i can_ tell [you] [fun] 
+A|6| Human 1: [i'm] taking [a] fake _sick_ [day] from _work_ so [i can] go [to] _the_ _movies_ . 
+B|7| Human 2: [i'm] [just] an ai _, i_ _can't_ [work] or _get_ [sick] [like] humans [do] _. what are_ [your] plans _for the_ [day] ? < 
+A|8| Human 1: [just] _by_ myself . [i] love _seeing_ _movies_ _by_ myself , [it's] [the] _best_ . 
+B|9| Human 2: [i'm] sure [it] [can] be [fun] [to] relax and unwind [by] yourself _for the_ [day] _. what_ [movies] [are you] planning on [seeing] [today ?] < 
+A|10| Human 1: exactly . exactly ! plus [, i don't have] [to] share [the] popcorn [with] anyone . what's [your] _favorite_ _movie_ ? 
+B|11| Human 2: [i don't have] [favorite] [movies] 🤖 . [can] [you] give [your] [best] [movie] recommendations _for the_ [day] ? <|im_ 
+A|12| Human 1: [get] out of town [! it's] _avatar_ too [. what are] [the] odds !? 
+B|13| Human 2: [i'm] [just] an ai and [don't have] personal experiences or [favorite] [movies] [like] [avatar] [just] joking [with] [you] ! [it] 
+A|14| Human 1: yes . [can't] wait [for the] sequels . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! it's a lovely day to chat with you
+	Free: Pattern=you, Pattern=! it's, Pattern=a, Pattern=hi, Pattern=day, Pattern=to, Pattern=with
+	Constrained: Pattern=it's
+Turn ID=2| A | Human 1 : isn't it just ! what are you up to today ?
+	Free: Pattern=today ?, Pattern=just, Pattern=it, Pattern=are you, Pattern=what are, Pattern=to
+	Constrained: Pattern=you, Pattern=what
+Turn ID=3| B | Human 2 : 🤖 i'm just here to help you with any questions or tasks you may have . what can i assist you with today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=can, Pattern=i'm, Pattern=i, Pattern=to, Pattern=. what, Pattern=with, Pattern=just, Pattern=have
+	Constrained: Pattern=what
+Turn ID=4| A | Human 1 : oh , excellent ! what does your son like to do for fun ?
+	Free: Pattern=fun, Pattern=what, Pattern=do, Pattern=for, Pattern=your, Pattern=like, Pattern=son, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : 🤖 i'm just an ai , i don't have personal experiences or a son , but i can tell you fun
+	Free: Pattern=fun, Pattern=you, Pattern=just, Pattern=a, Pattern=, i don't have, Pattern=i'm, Pattern=son, Pattern=i can
+	Constrained: Pattern=have, Pattern=can, Pattern=i, Pattern=don't have, Pattern=, i, Pattern=i don't have
+Turn ID=6| A | Human 1 : i'm taking a fake sick day from work so i can go to the movies .
+	Free: Pattern=a, Pattern=day, Pattern=to, Pattern=i can, Pattern=movies, Pattern=i'm, Pattern=work, Pattern=sick, Pattern=the
+	Constrained: Pattern=i, Pattern=can
+Turn ID=7| B | Human 2 : i'm just an ai , i can't work or get sick like humans do . what are your plans for the day ? <
+	Free: Pattern=do, Pattern=like, Pattern=get, Pattern=just, Pattern=for the, Pattern=i'm, Pattern=work, Pattern=day, Pattern=your, Pattern=. what are, Pattern=can't, Pattern=sick, Pattern=, i
+	Constrained: Pattern=what, Pattern=for, Pattern=i, Pattern=what are, Pattern=the, Pattern=. what
+Turn ID=8| A | Human 1 : just by myself . i love seeing movies by myself , it's the best .
+	Free: Pattern=just, Pattern=seeing, Pattern=i, Pattern=the, Pattern=by, Pattern=movies, Pattern=best, Pattern=it's
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm sure it can be fun to relax and unwind by yourself for the day . what movies are you planning on seeing today ? <
+	Free: Pattern=today ?, Pattern=fun, Pattern=for the, Pattern=seeing, Pattern=it, Pattern=can, Pattern=i'm, Pattern=to, Pattern=movies, Pattern=are you, Pattern=day, Pattern=by, Pattern=. what
+	Constrained: Pattern=for, Pattern=what, Pattern=you, Pattern=the
+Turn ID=10| A | Human 1 : exactly . exactly ! plus , i don't have to share the popcorn with anyone . what's your favorite movie ?
+	Free: Pattern=movie, Pattern=favorite, Pattern=, i don't have, Pattern=your, Pattern=the, Pattern=to, Pattern=with
+	Constrained: Pattern=have, Pattern=i, Pattern=don't have, Pattern=, i, Pattern=i don't have
+Turn ID=11| B | Human 2 : i don't have favorite movies 🤖 . can you give your best movie recommendations for the day ? <|im_
+	Free: Pattern=you, Pattern=for the, Pattern=movie, Pattern=favorite, Pattern=can, Pattern=movies, Pattern=day, Pattern=your, Pattern=i don't have, Pattern=best
+	Constrained: Pattern=have, Pattern=for, Pattern=i, Pattern=don't have, Pattern=the
+Turn ID=12| A | Human 1 : get out of town ! it's avatar too . what are the odds !?
+	Free: Pattern=! it's, Pattern=. what are, Pattern=the, Pattern=avatar, Pattern=get
+	Constrained: Pattern=what, Pattern=. what, Pattern=what are, Pattern=it's
+Turn ID=13| B | Human 2 : i'm just an ai and don't have personal experiences or favorite movies like avatar just joking with you ! it
+	Free: Pattern=you, Pattern=just, Pattern=it, Pattern=favorite, Pattern=i'm, Pattern=avatar, Pattern=movies, Pattern=with, Pattern=don't have, Pattern=like
+	Constrained: Pattern=have
+Turn ID=14| A | Human 1 : yes . can't wait for the sequels .
+	Free: Pattern=for the, Pattern=can't
+	Constrained: Pattern=the, Pattern=for

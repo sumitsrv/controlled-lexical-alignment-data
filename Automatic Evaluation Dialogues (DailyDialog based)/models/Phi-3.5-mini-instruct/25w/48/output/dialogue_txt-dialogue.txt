@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm_ good . [how are you] doing _today ?_ 
+B|3| Human 2: [i'm] functioning at full capacity as always , thank [you] _for_ asking ! [how] can _i_ assist [you] [today ?] <|end|><|assistant|> [i'm] just _an_ 
+A|4| Human 1: [i] was _flying_ my _kite_ [today] _in the_ sunshine ! what did _you have_ [for] lunch ? 
+B|5| Human 2: as _an_ artificial intelligence , [i] don't eat , but [i'm] glad to hear you're enjoying [the] weather ! [kite] [flying] sounds 
+A|6| Human 1: oh that _is_ great ! _i love_ seafood - especially _shellfish_ ! 
+B|7| Human 2: _haha ,_ if [i] had preferences , i'd choose data and algorithms ! but [for] fun , [shellfish] [is] _an_ interesting choice . what' 
+A|8| Human 1: oh nice ! [is] it hard ? 
+B|9| Human 2: no , not at all . it's all about [the] right data sets and algorithms . speaking _of_ which , do [you have] _any_ specific computational challeng 
+A|10| Human 1: oh wow , [you] sound like [an] expert ! [have] [you] done this before ? 
+B|11| Human 2: [i'm] phi , [an] artificial intelligence , so [i] don't [have] personal experiences _or_ challenges . however , [i'm] here to help 
+A|12| Human 1: [haha ,] [you] really [have] done your research [i] suppose ! ever done [any] other kind [of] fishing [or] hunting ? 
+B|13| Human 2: [i] don't fish [or] hunt , but [i'm] definitely capable [of] swimming [in the] vast ocean [of] data . let's say we 
+A|14| Human 1: ahh , would [you] consider yourself [an] outdoorsy type [of] person ? 
+B|15| Human 2: [i] don't fish , hunt , [or] swim as humans do , but [i love] exploring [the] 'outdoors' [of] data , 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=how, Pattern=you
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=how are you, Pattern=today ?, Pattern=i'm
+	Constrained: Pattern=how, Pattern=you, Pattern=today
+Turn ID=3| B | Human 2 : i'm functioning at full capacity as always , thank you for asking ! how can i assist you today ? <|end|><|assistant|> i'm just an
+	Free: Pattern=today ?, Pattern=you, Pattern=for, Pattern=i'm, Pattern=i, Pattern=an, Pattern=how
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=today, Pattern=for, Pattern=in the, Pattern=flying, Pattern=you have, Pattern=i, Pattern=kite
+	Constrained: Pattern=the, Pattern=have, Pattern=you
+Turn ID=5| B | Human 2 : as an artificial intelligence , i don't eat , but i'm glad to hear you're enjoying the weather ! kite flying sounds
+	Free: Pattern=an, Pattern=flying, Pattern=i'm, Pattern=i, Pattern=kite, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=i love, Pattern=is, Pattern=shellfish
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : haha , if i had preferences , i'd choose data and algorithms ! but for fun , shellfish is an interesting choice . what'
+	Free: Pattern=an, Pattern=for, Pattern=haha ,, Pattern=shellfish, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: Pattern=is
+	Constrained: 
+Turn ID=9| B | Human 2 : no , not at all . it's all about the right data sets and algorithms . speaking of which , do you have any specific computational challeng
+	Free: Pattern=you have, Pattern=the, Pattern=any, Pattern=of
+	Constrained: Pattern=have, Pattern=you
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=have, Pattern=you, Pattern=an
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm phi , an artificial intelligence , so i don't have personal experiences or challenges . however , i'm here to help
+	Free: Pattern=have, Pattern=an, Pattern=i'm, Pattern=i, Pattern=or
+	Constrained: 
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=of, Pattern=you, Pattern=have, Pattern=any, Pattern=i, Pattern=or, Pattern=haha ,
+	Constrained: 
+Turn ID=13| B | Human 2 : i don't fish or hunt , but i'm definitely capable of swimming in the vast ocean of data . let's say we
+	Free: Pattern=of, Pattern=in the, Pattern=i'm, Pattern=i, Pattern=or
+	Constrained: Pattern=the
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=you, Pattern=of, Pattern=an
+	Constrained: 
+Turn ID=15| B | Human 2 : i don't fish , hunt , or swim as humans do , but i love exploring the 'outdoors' of data ,
+	Free: Pattern=of, Pattern=i, Pattern=or, Pattern=the, Pattern=i love
+	Constrained: Pattern=i

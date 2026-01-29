@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ _good_ ! _just_ _went to the park_ _to_ _enjoy the _sun_ ._ _you_ ? 
+B|3| Human 2: _i_ [went to the park] too _, but_ my brother's dog kept barking _and_ _i_ missed a lot _of_ [sun .] 
+A|4| Human 1: haha , _beach_ season is coming ! _you_ need [to] look _tan_ ! what _did you_ do indoors _all day_ ? 
+B|5| Human 2: [it's] been [good] . [just] playing in [the park] . [did you] [enjoy the sun] ? 
+A|6| Human 1: _hahahaha_ , that's pretty funny . ever _thought_ [of] bringing [your] _work_ things _to the beach_ ?? 
+B|7| Human 2: [it's] [all] [good] . _i_ [went] out [to the beach] with my wife _and_ two kids . 
+A|8| Human 1: hmm [i] see . _it_ sounds _like you_ _work near the water_ _already_ , no ? _are you_ _some kind of_ _fish_ researcher ? 
+B|9| Human 2: [i] [work near the water] [like you] [did] . [are you] _that_ [tan] [already] [hahahaha] 
+A|10| Human 1: woah ! this is _very interesting_ ! _i have_ _honestly_ _never heard of_ such _kind of work_ . is _it_ _dangerous_ at [all] ? 
+B|11| Human 2: [hahahaha] yeah [i have] [thought] about [it] , [honestly] [the] [work] was [very interesting] [all] [i] [did] was [fish] [all day] [you] [never heard of] _that_ [kind of work] 
+A|12| Human 1: hmmm , _yes_ [i have] [heard] [that] . apparently _most_ mountain climbers fall _not_ on _the most dangerous_ _routes_ [, but] on [the] easier _routes_ , _when_ _their_ guard is _down_ ! sounds [like] [the] same psychological phenomenon . 
+B|13| Human 2: [yes] [but] [not] [that] [dangerous] [the most dangerous] thing was [when] [some kind of] pesky snakes were nearby _and_ [their] alligators [but] [very] rare 
+A|14| Human 1: i'm pretty amateur ! [i] [like] [to] climb at indoor _climbing_ gyms [and] _have never_ _gone_ outside on [dangerous] _routes_ _actually_ . ever _tried_ [it] yourself ? 
+B|15| Human 2: [i [have] never] [tried] [climbing] mountains [but] [the] [routes] [and] [their] difficulty [have] [actually] [gone] [down] a fair amount , especially in [the] last couple [of] decades 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=good, Pattern=you, Pattern=just, Pattern=went to the park, Pattern=to, Pattern=it's, Pattern=enjoy the sun, Pattern=sun .
+	Constrained: Pattern=to, Pattern=the park, Pattern=went, Pattern=the
+Turn ID=3| B | Human 2 : i went to the park too , but my brother's dog kept barking and i missed a lot of sun .
+	Free: Pattern=of, Pattern=, but, Pattern=went to the park, Pattern=and, Pattern=i, Pattern=sun .
+	Constrained: Pattern=went, Pattern=the park, Pattern=the, Pattern=to, Pattern=but
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=did you, Pattern=tan, Pattern=beach, Pattern=all day, Pattern=to
+	Constrained: Pattern=all, Pattern=day, Pattern=did, Pattern=you
+Turn ID=5| B | Human 2 : it's been good . just playing in the park . did you enjoy the sun ?
+	Free: Pattern=good, Pattern=the park, Pattern=enjoy the sun, Pattern=it's, Pattern=just, Pattern=did you
+	Constrained: Pattern=the, Pattern=you, Pattern=did
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=of, Pattern=work, Pattern=your, Pattern=thought, Pattern=to the beach, Pattern=hahahaha
+	Constrained: Pattern=to, Pattern=beach, Pattern=the
+Turn ID=7| B | Human 2 : it's all good . i went out to the beach with my wife and two kids .
+	Free: Pattern=good, Pattern=went, Pattern=and, Pattern=i, Pattern=all, Pattern=to the beach, Pattern=it's
+	Constrained: Pattern=to, Pattern=beach, Pattern=the
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=some kind of, Pattern=it, Pattern=already, Pattern=fish, Pattern=work near the water, Pattern=like you, Pattern=are you, Pattern=i
+	Constrained: Pattern=of, Pattern=you, Pattern=work, Pattern=like, Pattern=the
+Turn ID=9| B | Human 2 : i work near the water like you did . are you that tan already hahahaha
+	Free: Pattern=already, Pattern=work near the water, Pattern=hahahaha, Pattern=did, Pattern=tan, Pattern=are you, Pattern=i, Pattern=like you, Pattern=that
+	Constrained: Pattern=work, Pattern=you, Pattern=like, Pattern=the
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=very interesting, Pattern=dangerous, Pattern=all, Pattern=i have, Pattern=it, Pattern=kind of work, Pattern=never heard of, Pattern=honestly
+	Constrained: Pattern=have, Pattern=work, Pattern=of, Pattern=heard, Pattern=very, Pattern=i
+Turn ID=11| B | Human 2 : hahahaha yeah i have thought about it , honestly the work was very interesting all i did was fish all day you never heard of that kind of work
+	Free: Pattern=very interesting, Pattern=you, Pattern=did, Pattern=all day, Pattern=work, Pattern=i, Pattern=fish, Pattern=that, Pattern=hahahaha, Pattern=i have, Pattern=it, Pattern=kind of work, Pattern=the, Pattern=all, Pattern=never heard of, Pattern=thought, Pattern=honestly
+	Constrained: Pattern=have, Pattern=work, Pattern=all, Pattern=of, Pattern=heard, Pattern=very, Pattern=day, Pattern=i
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=their, Pattern=heard, Pattern=routes, Pattern=down, Pattern=most, Pattern=the, Pattern=when, Pattern=that, Pattern=, but, Pattern=yes, Pattern=like, Pattern=the most dangerous, Pattern=not, Pattern=i have
+	Constrained: Pattern=have, Pattern=dangerous, Pattern=i, Pattern=most, Pattern=the, Pattern=but
+Turn ID=13| B | Human 2 : yes but not that dangerous the most dangerous thing was when some kind of pesky snakes were nearby and their alligators but very rare
+	Free: Pattern=their, Pattern=yes, Pattern=some kind of, Pattern=and, Pattern=dangerous, Pattern=very, Pattern=the most dangerous, Pattern=when, Pattern=not, Pattern=that, Pattern=but
+	Constrained: Pattern=dangerous, Pattern=most, Pattern=of, Pattern=the
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=routes, Pattern=actually, Pattern=dangerous, Pattern=like, Pattern=tried, Pattern=gone, Pattern=to, Pattern=climbing, Pattern=it, Pattern=and, Pattern=have never, Pattern=i
+	Constrained: Pattern=have
+Turn ID=15| B | Human 2 : i have never tried climbing mountains but the routes and their difficulty have actually gone down a fair amount , especially in the last couple of decades
+	Free: Pattern=their, Pattern=of, Pattern=have, Pattern=routes, Pattern=actually, Pattern=down, Pattern=and, Pattern=have never, Pattern=tried, Pattern=the, Pattern=gone, Pattern=but, Pattern=i have, Pattern=climbing
+	Constrained: Pattern=i, Pattern=have

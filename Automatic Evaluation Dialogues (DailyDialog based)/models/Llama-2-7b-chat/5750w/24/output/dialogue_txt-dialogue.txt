@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] anything _new_ ? 
+B|3| Human 2: not really , just working _on_ some [new] features . how about _you_ ? 
+A|4| Human 1: _any_ plans ? 
+B|5| Human 2: actually , _i'm_ going to be at _a_ conference next week . would _you_ like to attend ? 
+A|6| Human 1: _that's awesome ! i never been_ ! 
+B|7| Human 2: [that's awesome ! i never been] to [any] conferences before . maybe [i] could tag along with _you_ ? <|im_end| 
+A|8| Human 1: _are_ [you] [a] _food person_ , [a] sightseeing _person_ or neither ? 
+B|9| Human 2: [food person] [that's awesome !] can [you] give me some recommendations for good restaurants in the area ? 
+A|10| Human 1: [i'm] [a] [food person] _i think_ _. any_ _specific_ _foods_ _you're planning on trying_ ? 
+B|11| Human 2: [i think] [you're planning on trying] [foods] that [are] [specific] to the conference location [. any] other questions [you] have for me ? <|im 
+A|12| Human 1: yeah my favorite is _taco_ _fish_ 
+B|13| Human 2: [fish] [taco] [i'm] [planning on trying] [foods] that [are] [specific] to the conference location [. any] other questions [you] have for me ? <| 
+A|14| Human 1: no . only eat them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=new, Pattern=hey
+	Constrained: 
+Turn ID=3| B | Human 2 : not really , just working on some new features . how about you ?
+	Free: Pattern=you, Pattern=on, Pattern=new
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=any
+	Constrained: 
+Turn ID=5| B | Human 2 : actually , i'm going to be at a conference next week . would you like to attend ?
+	Free: Pattern=i'm, Pattern=you, Pattern=a
+	Constrained: 
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=that's awesome ! i never been
+	Constrained: Pattern=i, Pattern=that's awesome !
+Turn ID=7| B | Human 2 : that's awesome ! i never been to any conferences before . maybe i could tag along with you ? <|im_end|
+	Free: Pattern=that's awesome ! i never been, Pattern=you, Pattern=i, Pattern=any
+	Constrained: Pattern=i, Pattern=that's awesome !
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=you, Pattern=a, Pattern=are, Pattern=person, Pattern=food person
+	Constrained: Pattern=person
+Turn ID=9| B | Human 2 : food person that's awesome ! can you give me some recommendations for good restaurants in the area ?
+	Free: Pattern=that's awesome !, Pattern=food person, Pattern=you
+	Constrained: Pattern=person
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=you're planning on trying, Pattern=a, Pattern=specific, Pattern=food person, Pattern=i'm, Pattern=. any, Pattern=foods, Pattern=i think
+	Constrained: Pattern=planning on trying, Pattern=any, Pattern=person, Pattern=i, Pattern=on
+Turn ID=11| B | Human 2 : i think you're planning on trying foods that are specific to the conference location . any other questions you have for me ? <|im
+	Free: Pattern=you, Pattern=you're planning on trying, Pattern=. any, Pattern=foods, Pattern=i think, Pattern=are, Pattern=specific
+	Constrained: Pattern=any, Pattern=i, Pattern=on, Pattern=planning on trying
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=taco, Pattern=fish
+	Constrained: 
+Turn ID=13| B | Human 2 : fish taco i'm planning on trying foods that are specific to the conference location . any other questions you have for me ? <|
+	Free: Pattern=planning on trying, Pattern=you, Pattern=i'm, Pattern=fish, Pattern=. any, Pattern=foods, Pattern=taco, Pattern=are, Pattern=specific
+	Constrained: Pattern=on, Pattern=any
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: 
+	Constrained: 

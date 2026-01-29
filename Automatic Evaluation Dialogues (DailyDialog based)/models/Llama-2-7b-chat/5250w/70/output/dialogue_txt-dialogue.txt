@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how_ _is_ _the youtube video creation_ _going_ ? 
+B|3| Human 2: [the youtube video creation] [is] [going] _well_ , [how] may _i_ assist _you_ today ? 
+A|4| Human 1: whoa ! looking forward _to_ _listening to_ _it_ _. what_ _softewares_ _you use for_ _it_ ? 
+B|5| Human 2: [for] [the] [creation] _of_ [youtube video] ? _i_ [use] _a_ variety _of_ [softewares] depending on [the] specific task , but some _of_ [the] most 
+A|6| Human 1: oh cool ! _what sort of music_ do [you] _compose_ ? 
+B|7| Human 2: [you use for] [music] [creation] ? _i_ [compose] _a_ wide range [of music] , from classical [to] electronic , so [the] software _i_ use<|im_end| 
+A|8| Human 1: _nice_ .... _you are a rockstar ! 😉_ 
+B|9| Human 2: [you are a rockstar ! 😉] [nice] ... so [you use] [the] [music] [for] [video creation] ? </a> [what sort of] vide 
+A|10| Human 1: _yeah_ .... [i] _play_ _bit_ [of] _guitar_ . _just got my first_ monitor _this week_ 
+B|11| Human 2: [nice] 😊 [what sort of music] [you are] currently [listening to] ? </a> [just got my first] [guitar] [this week] so _it's_ 
+A|12| Human 1: yes , [the] bar _chords_ [are] [the] worst . _it took_ me several months [to] _play_ _them well_ . [i] still can't _play_ _them_ [for] [a] long _time though_ 
+B|13| Human 2: [yeah] 😔 [bit] [chords] _can_ be difficult [for] beginners [. what] [are] [you] [listening to] [music] [for] [the] most part [though] ? [just got] 
+A|14| Human 1: _that's_ _true_ . [it's] _like the_ alphabets in [a] language . _once you know them_ , _you can pretty much_ write word 
+B|15| Human 2: [yeah] [true] [that's] [like the] [chords] [for] [guitar] [though] [you can pretty much] [play] [a] song [once you know [them] well] [it took] [time though] [i] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how is the youtube video creation going ?
+	Free: Pattern=the youtube video creation, Pattern=is, Pattern=how, Pattern=going
+	Constrained: Pattern=youtube video, Pattern=the, Pattern=video creation, Pattern=creation
+Turn ID=3| B | Human 2 : the youtube video creation is going well , how may i assist you today ?
+	Free: Pattern=well, Pattern=you, Pattern=going, Pattern=how, Pattern=the youtube video creation, Pattern=is, Pattern=i
+	Constrained: Pattern=youtube video, Pattern=the, Pattern=video creation, Pattern=creation
+Turn ID=4| A | Human 1 : whoa ! looking forward to listening to it . what softewares you use for it ?
+	Free: Pattern=it, Pattern=softewares, Pattern=to, Pattern=. what, Pattern=you use for, Pattern=listening to
+	Constrained: Pattern=you, Pattern=for, Pattern=use, Pattern=you use, Pattern=to
+Turn ID=5| B | Human 2 : for the creation of youtube video ? i use a variety of softewares depending on the specific task , but some of the most
+	Free: Pattern=of, Pattern=a, Pattern=for, Pattern=use, Pattern=softewares, Pattern=youtube video, Pattern=i, Pattern=the, Pattern=creation
+	Constrained: 
+Turn ID=6| A | Human 1 : oh cool ! what sort of music do you compose ?
+	Free: Pattern=what sort of music, Pattern=compose, Pattern=you
+	Constrained: Pattern=music, Pattern=what sort of, Pattern=of music, Pattern=of
+Turn ID=7| B | Human 2 : you use for music creation ? i compose a wide range of music , from classical to electronic , so the software i use<|im_end|
+	Free: Pattern=you use for, Pattern=a, Pattern=i, Pattern=creation, Pattern=music, Pattern=to, Pattern=of music, Pattern=compose, Pattern=the
+	Constrained: Pattern=of, Pattern=you, Pattern=for, Pattern=use, Pattern=you use, Pattern=music
+Turn ID=8| A | Human 1 : nice .... you are a rockstar ! 😉
+	Free: Pattern=you are a rockstar ! 😉, Pattern=nice
+	Constrained: Pattern=you are, Pattern=are, Pattern=you, Pattern=a
+Turn ID=9| B | Human 2 : you are a rockstar ! 😉 nice ... so you use the music for video creation ? </a> what sort of vide
+	Free: Pattern=you use, Pattern=you are a rockstar ! 😉, Pattern=the, Pattern=music, Pattern=what sort of, Pattern=nice, Pattern=for, Pattern=video creation
+	Constrained: Pattern=of, Pattern=you, Pattern=a, Pattern=use, Pattern=are, Pattern=you are, Pattern=creation
+Turn ID=10| A | Human 1 : yeah .... i play bit of guitar . just got my first monitor this week
+	Free: Pattern=of, Pattern=bit, Pattern=yeah, Pattern=i, Pattern=guitar, Pattern=this week, Pattern=play, Pattern=just got my first
+	Constrained: Pattern=just got
+Turn ID=11| B | Human 2 : nice 😊 what sort of music you are currently listening to ? </a> just got my first guitar this week so it's
+	Free: Pattern=listening to, Pattern=nice, Pattern=you are, Pattern=what sort of music, Pattern=guitar, Pattern=just got my first, Pattern=it's, Pattern=this week
+	Constrained: Pattern=of, Pattern=you, Pattern=are, Pattern=just got, Pattern=music, Pattern=of music, Pattern=what sort of, Pattern=to
+Turn ID=12| A | Human 1 : yes , the bar chords are the worst . it took me several months to play them well . i still can't play them for a long time though
+	Free: Pattern=a, Pattern=for, Pattern=are, Pattern=i, Pattern=the, Pattern=time though, Pattern=to, Pattern=play, Pattern=them well, Pattern=them, Pattern=it took, Pattern=chords
+	Constrained: Pattern=it, Pattern=them, Pattern=though, Pattern=well
+Turn ID=13| B | Human 2 : yeah 😔 bit chords can be difficult for beginners . what are you listening to music for the most part though ? just got
+	Free: Pattern=listening to, Pattern=though, Pattern=bit, Pattern=for, Pattern=yeah, Pattern=are, Pattern=can, Pattern=the, Pattern=just got, Pattern=music, Pattern=. what, Pattern=you, Pattern=chords
+	Constrained: Pattern=to
+Turn ID=14| A | Human 1 : that's true . it's like the alphabets in a language . once you know them , you can pretty much write word
+	Free: Pattern=true, Pattern=like the, Pattern=it's, Pattern=once you know them, Pattern=a, Pattern=you can pretty much, Pattern=that's
+	Constrained: Pattern=you, Pattern=can, Pattern=them, Pattern=the
+Turn ID=15| B | Human 2 : yeah true that's like the chords for guitar though you can pretty much play a song once you know them well it took time though i
+	Free: Pattern=though, Pattern=for, Pattern=yeah, Pattern=i, Pattern=true, Pattern=time though, Pattern=guitar, Pattern=them well, Pattern=it took, Pattern=chords, Pattern=once you know them, Pattern=a, Pattern=you can pretty much, Pattern=that's, Pattern=like the, Pattern=play
+	Constrained: Pattern=well, Pattern=you, Pattern=though, Pattern=it, Pattern=can, Pattern=the, Pattern=them

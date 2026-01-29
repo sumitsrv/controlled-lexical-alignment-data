@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's_ good ! _i_ spent most of _it_ watching _horse racing_ _. how about_ yourself ? 
+B|3| Human 2: that's interesting ! 😊 [horse racing] _is_ a popular sport [. how _about] you ?_ _what_ _do you_ _do_ for _fun_ ? <| 
+A|4| Human 1: _i_ _actually_ _like to_ put down _some_ money , _but_ _i_ wouldn't call _it_ _my_ favorite part , _since_ _i_ usually lose _it_ ... haha . catching _up with_ _friends_ [is] _great_ ! _how long had it [been_ ?] 
+B|5| Human 2: 😂 ah _, i_ see ! well , [friends] are [great] [to] catch [up with] [. [how] long had it been] [since] _you_ last saw them 
+A|6| Human 1: _i'm_ thinking of _going_ _deep sea fishing_ . ever _tried_ _that_ _before ?_ 
+B|7| Human 2: [i'm] _just_ _an_ ai , so [i] don't _have_ personal experiences [like] [that] . 📸 [but] [some] [friends] [had] [tried] [deep] 
+A|8| Human 1: [just] once ! [i] got _super_ _sea_ sick .. haha [have] any [fun] weekend plans yourself ? 
+B|9| Human 2: [i'm] [actually] [super] excited [about] [going] on [that] [deep sea fishing] trip [with] [some] [friends] 🎣 [it's] [been] on [my] bucket 
+A|10| Human 1: oh _very cool_ . [i] hear its nice _over there_ . [do you] go often ? 
+B|11| Human 2: [actually] [i'm] [going] for _the_ first _time_ 😅 [it's] [been] on [my] bucket _list_ for a while now , so [i] can 
+A|12| Human 1: new york [is] [the] top of [my] [list] because [my] _family_ lives _there_ ! as far as [the] city itself though ... [i] think _i'd_ prefer someplace outside of [the] us , [like] _tokyo_ . [what] [about you ?] 
+B|13| Human 2: [tokyo] [is] [actually] [very cool] 🙂 [have] [you] [been] [there] [before ?] [i'd] [like to] visit [some] [family] [friends] [over there] someday 
+A|14| Human 1: oh _i've_ _never_ [been] _! it_ [is] _such an_ iconic place [, i] [have] [to] make [the] [time] [to] _get_ [there] soon . 
+B|15| Human 2: [i've] [been] [there] 3 times [actually] [! it] [never] [get] old ! [tokyo] has [such an] unique culture and [the] food [is] amazing , [you] [have] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=it, Pattern=. how about, Pattern=i, Pattern=horse racing, Pattern=it's
+	Constrained: Pattern=. how, Pattern=about
+Turn ID=3| B | Human 2 : that's interesting ! 😊 horse racing is a popular sport . how about you ? what do you do for fun ? <|
+	Free: Pattern=fun, Pattern=what, Pattern=do, Pattern=do you, Pattern=. how about, Pattern=is, Pattern=horse racing, Pattern=about you ?
+	Constrained: Pattern=do, Pattern=you, Pattern=. how, Pattern=about
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=great, Pattern=actually, Pattern=it, Pattern=since, Pattern=friends, Pattern=like to, Pattern=up with, Pattern=my, Pattern=but, Pattern=how long had it been, Pattern=been ?, Pattern=some, Pattern=is, Pattern=i
+	Constrained: Pattern=it, Pattern=like, Pattern=had, Pattern=to, Pattern=been, Pattern=with
+Turn ID=5| B | Human 2 : 😂 ah , i see ! well , friends are great to catch up with . how long had it been since you last saw them
+	Free: Pattern=since, Pattern=. how, Pattern=friends, Pattern=, i, Pattern=up with, Pattern=to, Pattern=how long had it been, Pattern=you, Pattern=great
+	Constrained: Pattern=it, Pattern=i, Pattern=had, Pattern=been, Pattern=with
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=going, Pattern=deep sea fishing, Pattern=i'm, Pattern=tried, Pattern=before ?, Pattern=that
+	Constrained: Pattern=sea, Pattern=deep
+Turn ID=7| B | Human 2 : i'm just an ai , so i don't have personal experiences like that . 📸 but some friends had tried deep
+	Free: Pattern=an, Pattern=deep, Pattern=some, Pattern=i'm, Pattern=i, Pattern=just, Pattern=have, Pattern=friends, Pattern=like, Pattern=had, Pattern=tried, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=fun, Pattern=sea, Pattern=i, Pattern=super, Pattern=just, Pattern=have
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm actually super excited about going on that deep sea fishing trip with some friends 🎣 it's been on my bucket
+	Free: Pattern=going, Pattern=actually, Pattern=deep sea fishing, Pattern=about, Pattern=some, Pattern=i'm, Pattern=friends, Pattern=been, Pattern=my, Pattern=super, Pattern=with, Pattern=that, Pattern=it's
+	Constrained: Pattern=sea, Pattern=deep
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=very cool, Pattern=do you, Pattern=over there, Pattern=i
+	Constrained: Pattern=do, Pattern=you, Pattern=there
+Turn ID=11| B | Human 2 : actually i'm going for the first time 😅 it's been on my bucket list for a while now , so i can
+	Free: Pattern=time, Pattern=going, Pattern=actually, Pattern=i'm, Pattern=i, Pattern=the, Pattern=list, Pattern=been, Pattern=my, Pattern=it's
+	Constrained: 
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=i'd, Pattern=family, Pattern=the, Pattern=my, Pattern=what, Pattern=there, Pattern=is, Pattern=i, Pattern=tokyo, Pattern=like, Pattern=about you ?, Pattern=list
+	Constrained: Pattern=you, Pattern=about
+Turn ID=13| B | Human 2 : tokyo is actually very cool 🙂 have you been there before ? i'd like to visit some family friends over there someday
+	Free: Pattern=you, Pattern=there, Pattern=actually, Pattern=over there, Pattern=family, Pattern=some, Pattern=is, Pattern=like to, Pattern=before ?, Pattern=been, Pattern=very cool, Pattern=i'd, Pattern=have, Pattern=tokyo, Pattern=friends
+	Constrained: Pattern=to, Pattern=there, Pattern=like
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=have, Pattern=there, Pattern=i've, Pattern=to, Pattern=been, Pattern=time, Pattern=! it, Pattern=is, Pattern=never, Pattern=the, Pattern=, i, Pattern=get, Pattern=such an
+	Constrained: Pattern=i, Pattern=an, Pattern=it
+Turn ID=15| B | Human 2 : i've been there 3 times actually ! it never get old ! tokyo has such an unique culture and the food is amazing , you have
+	Free: Pattern=! it, Pattern=you, Pattern=have, Pattern=there, Pattern=actually, Pattern=i've, Pattern=tokyo, Pattern=the, Pattern=been, Pattern=is, Pattern=never, Pattern=get, Pattern=such an
+	Constrained: Pattern=an, Pattern=it

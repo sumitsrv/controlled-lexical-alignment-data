@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how_ _was_ _the_ trip last _weekend ?_ 
+B|3| Human 2: it [was] great , thanks ! [how] about _you_ ? 
+A|4| Human 1: nice , _what_ all _places_ _did you_ cover ? 
+B|5| Human 2: _we_ covered _a_ lot of [places] , including [the] beach , _a_ nearby city , _and_ _a_ few hiking trails . 
+A|6| Human 1: i am actually attending _cooking classes_ over [the] weekends . 
+B|7| Human 2: great ! [cooking classes] can be _a_ lot of fun . [did you] learn _any_ new recipes ? 
+A|8| Human 1: true ! they started with _some_ basic zucchini based _dish_ . [we] _may try cooking some_ italian _dish_ later _this_ week . 
+B|9| Human 2: [how] [did] [the] [cooking classes] go ? [did you] [try] _any_ new [dish] [this] [weekend ?] </s>07/01/202 
+A|10| Human 1: nice ! i _hope_ to volunteer to cook _for the_ _team_ in our _next team offsite_ :) 
+B|11| Human 2: [you] [may try cooking some] [team offsite] [for the] [next team offsite] . [hope] [this] is [what] [you] meant 
+A|12| Human 1: sure , i will love to invite _you and your family for_ [a] meal over _the holidays . have_ [you] guys _made any other_ _plans_ ? 
+B|13| Human 2: [you and your family [for] [the] holidays . have] [plans] [made any other] [this] [weekend ?] 07/01/202< 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=weekend ?, Pattern=the, Pattern=how, Pattern=was
+	Constrained: 
+Turn ID=3| B | Human 2 : it was great , thanks ! how about you ?
+	Free: Pattern=how, Pattern=you, Pattern=was
+	Constrained: 
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=did you, Pattern=what, Pattern=places
+	Constrained: Pattern=did, Pattern=you
+Turn ID=5| B | Human 2 : we covered a lot of places , including the beach , a nearby city , and a few hiking trails .
+	Free: Pattern=places, Pattern=a, Pattern=and, Pattern=we, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=cooking classes, Pattern=the
+	Constrained: 
+Turn ID=7| B | Human 2 : great ! cooking classes can be a lot of fun . did you learn any new recipes ?
+	Free: Pattern=did you, Pattern=cooking classes, Pattern=any, Pattern=a
+	Constrained: Pattern=did, Pattern=you
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=may try cooking some, Pattern=we, Pattern=this, Pattern=dish, Pattern=some
+	Constrained: Pattern=try, Pattern=some
+Turn ID=9| B | Human 2 : how did the cooking classes go ? did you try any new dish this weekend ? </s>07/01/202
+	Free: Pattern=did you, Pattern=did, Pattern=any, Pattern=dish, Pattern=cooking classes, Pattern=the, Pattern=weekend ?, Pattern=this, Pattern=how, Pattern=try
+	Constrained: Pattern=did, Pattern=you
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=next team offsite, Pattern=for the, Pattern=hope, Pattern=team
+	Constrained: Pattern=team offsite, Pattern=team, Pattern=the
+Turn ID=11| B | Human 2 : you may try cooking some team offsite for the next team offsite . hope this is what you meant
+	Free: Pattern=hope, Pattern=for the, Pattern=what, Pattern=may try cooking some, Pattern=you, Pattern=next team offsite, Pattern=team offsite, Pattern=this
+	Constrained: Pattern=try, Pattern=some, Pattern=the, Pattern=team offsite, Pattern=team
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=plans, Pattern=you, Pattern=made any other, Pattern=a, Pattern=you and your family for, Pattern=the holidays . have
+	Constrained: Pattern=any, Pattern=you, Pattern=the, Pattern=and
+Turn ID=13| B | Human 2 : you and your family for the holidays . have plans made any other this weekend ? 07/01/202<
+	Free: Pattern=plans, Pattern=for the, Pattern=made any other, Pattern=you and your family for, Pattern=weekend ?, Pattern=the holidays . have, Pattern=this
+	Constrained: Pattern=any, Pattern=you, Pattern=the, Pattern=and

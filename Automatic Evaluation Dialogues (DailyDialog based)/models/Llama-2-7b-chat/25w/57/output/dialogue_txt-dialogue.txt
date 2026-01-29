@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , _it_ is flying by quicker than _i_ expected _. how_ is [your day going] on ? 
+B|3| Human 2: i'm doing well , _just_ assisting users like _you_ [. how] _can_ [i] help _you_ _today_ ? 
+A|4| Human 1: _oh _,_ _i_ would love to_ twiddle _my_ thumbs . you're _so_ lucky ! [today] , _i've_ been mostly attending meetings , reading _and_ writing docs , reading papers etc . 
+B|5| Human 2: [i] _see_ ! sounds like _a_ busy _day ._ _would you_ like _me_ [to] help _you_ _with_ any of those tasks ? like , for example , summarizing 
+A|6| Human 1: _wow ! i sometimes_ drift off _during work_ , _and_ [see] similar things _in my head_ . 
+B|7| Human 2: [oh ,] [wow ! i sometimes] daydream [during work] _too_ [! i] [see] little cartoon scenarios playing out [in my head] , or [i] start thinking 
+A|8| Human 1: mostly _saving the world_ from mess on social media [. how] about [you] ? 
+B|9| Human 2: ah , [saving the world] ! i'm _just_ here [to] help users like [you] _with_ their questions [and] problems . [it] _can_ get _a_ bit dull at 
+A|10| Human 1: nice , what all _places_ [would you] _be_ [going] [to] ? 
+B|11| Human 2: [oh] [wow] , [so] many [places] ! i'm _just_ an ai [, i] _don't_ have _a_ physical _body_ , [so] _i can_ go anywhere 
+A|12| Human 1: [i] [just] met someone who went _diving in australia ._ apparently , [you] cannot fly 24 hrs after [you] dive , because [your] [body] accumulates [too] much <redacted_term> when breathing [with] [a] cylinder [so] , [don't] do that ! 
+B|13| Human 2: ha ! _that's_ funny . [i would love to] go scuba [diving in australia .] [i've] heard [the] coral reefs 
+A|14| Human 1: [that's] equally amazing [! i] wish [i can] explore such [places] one [day .] it's [just] [so] _expensive_ 
+B|15| Human 2: [that's] true , traveling [can] [be] [expensive] , but there _are_ always ways [to] save _money_ [and] make [your] trip more affordable . have [you] considered 
+A|16| Human 1: woah !... [you] know sharing is caring . [you] should share that [money] [with] [me] :) 
+B|17| Human 2: haha [, i] appreciate [your] enthusiasm , but i'm [just] an ai [, i] [don't] have personal finances [to] manage . 
+A|18| Human 1: [you] [are] [a] kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=going, Pattern=your
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=your day going, Pattern=. how, Pattern=i, Pattern=it
+	Constrained: Pattern=your, Pattern=going
+Turn ID=3| B | Human 2 : i'm doing well , just assisting users like you . how can i help you today ?
+	Free: Pattern=you, Pattern=just, Pattern=today, Pattern=i, Pattern=can, Pattern=. how
+	Constrained: 
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=i would love to, Pattern=today, Pattern=and, Pattern=i've, Pattern=, i, Pattern=oh ,, Pattern=my, Pattern=so
+	Constrained: Pattern=oh, Pattern=i, Pattern=to
+Turn ID=5| B | Human 2 : i see ! sounds like a busy day . would you like me to help you with any of those tasks ? like , for example , summarizing
+	Free: Pattern=day ., Pattern=you, Pattern=me, Pattern=a, Pattern=would you, Pattern=i, Pattern=see, Pattern=to, Pattern=with
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=in my head, Pattern=and, Pattern=during work, Pattern=see, Pattern=wow ! i sometimes
+	Constrained: Pattern=wow, Pattern=! i, Pattern=my, Pattern=i
+Turn ID=7| B | Human 2 : oh , wow ! i sometimes daydream during work too ! i see little cartoon scenarios playing out in my head , or i start thinking
+	Free: Pattern=in my head, Pattern=during work, Pattern=i, Pattern=see, Pattern=wow ! i sometimes, Pattern=oh ,, Pattern=too, Pattern=! i
+	Constrained: Pattern=wow, Pattern=i, Pattern=my, Pattern=oh, Pattern=! i
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=saving the world, Pattern=. how, Pattern=you
+	Constrained: Pattern=the
+Turn ID=9| B | Human 2 : ah , saving the world ! i'm just here to help users like you with their questions and problems . it can get a bit dull at
+	Free: Pattern=you, Pattern=just, Pattern=a, Pattern=to, Pattern=with, Pattern=it, Pattern=and, Pattern=can, Pattern=saving the world
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=going, Pattern=places, Pattern=would you, Pattern=be, Pattern=to
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : oh wow , so many places ! i'm just an ai , i don't have a physical body , so i can go anywhere
+	Free: Pattern=just, Pattern=a, Pattern=oh, Pattern=wow, Pattern=, i, Pattern=don't, Pattern=i can, Pattern=so, Pattern=body, Pattern=places
+	Constrained: Pattern=can, Pattern=i
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=diving in australia ., Pattern=you, Pattern=just, Pattern=body, Pattern=a, Pattern=too, Pattern=don't, Pattern=with, Pattern=so, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : ha ! that's funny . i would love to go scuba diving in australia . i've heard the coral reefs
+	Free: Pattern=diving in australia ., Pattern=i would love to, Pattern=i've, Pattern=that's, Pattern=the
+	Constrained: Pattern=i, Pattern=to
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=day ., Pattern=just, Pattern=places, Pattern=! i, Pattern=that's, Pattern=expensive, Pattern=i can, Pattern=so
+	Constrained: Pattern=can, Pattern=i
+Turn ID=15| B | Human 2 : that's true , traveling can be expensive , but there are always ways to save money and make your trip more affordable . have you considered
+	Free: Pattern=money, Pattern=you, Pattern=and, Pattern=are, Pattern=can, Pattern=your, Pattern=be, Pattern=that's, Pattern=expensive, Pattern=to
+	Constrained: 
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=money, Pattern=with, Pattern=you, Pattern=me
+	Constrained: 
+Turn ID=17| B | Human 2 : haha , i appreciate your enthusiasm , but i'm just an ai , i don't have personal finances to manage .
+	Free: Pattern=just, Pattern=your, Pattern=, i, Pattern=don't, Pattern=to
+	Constrained: Pattern=i
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=are, Pattern=a, Pattern=you
+	Constrained: 

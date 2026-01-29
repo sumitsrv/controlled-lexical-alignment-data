@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello . how's your week coming along ? 
+A|2| Human 1: _it's great_ , thanks . _i'm trying to_ learn how _to make_ _croissants_ . 
+B|3| Human 2: hello [i'm] new here how's everyone doin ' ? [it's great] [to] meet everyone _so far_ . 
+A|4| Human 1: i've _done them_ once or twice [so far] , _but_ they haven't been flakey _enough_ . _i'm trying to_ figure out why . _what kind of_ _cookies_ have _you_ made ? 
+B|5| Human 2: hello [i'm] [cookies] ! [what kind of] [croissants] are [you] [trying [to] make] ? 
+A|6| Human 1: ah , _good_ thought , thanks ! 
+B|7| Human 2: [it's] [good] you've [done them] [enough] [but] [i'm trying [to] make] 
+A|8| Human 1: now _that_ is a [good] idea . i'll give it a _try_ next time . would [you] say [you] have a _sweet_ tooth ? 
+B|9| Human 2: oh [sweet] 
+A|10| Human 1: some people don't ! [but] _yeah ,_ me _too_ , _i_ _think_ i'd eat _pastries_ all _the_ time if _i_ _could_ _get_ away with it . 
+B|11| Human 2: o [i] [get] [that] [yeah ,] [think] [you] [could] [try] [the] [pastries] [too] ? 
+A|12| Human 1: wow ! [the] last time [i] paid attention [to] [that] sort [of] stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts [of] _crazy stomach_ upsets . 
+B|13| Human 2: mmm [the] [crazy stomach] . 
+A|14| Human 1: ah , maybe that's [the] solution [i] need [to] enjoy sweets and not feel guilty 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello . how's your week coming along ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : it's great , thanks . i'm trying to learn how to make croissants .
+	Free: Pattern=i'm trying to, Pattern=to make, Pattern=it's great, Pattern=croissants
+	Constrained: Pattern=it's, Pattern=to, Pattern=trying to, Pattern=i'm
+Turn ID=3| B | Human 2 : hello i'm new here how's everyone doin ' ? it's great to meet everyone so far .
+	Free: Pattern=so far, Pattern=it's great, Pattern=to, Pattern=i'm
+	Constrained: Pattern=it's
+Turn ID=4| A | Human 1 : i've done them once or twice so far , but they haven't been flakey enough . i'm trying to figure out why . what kind of cookies have you made ?
+	Free: Pattern=you, Pattern=enough, Pattern=cookies, Pattern=what kind of, Pattern=i'm trying to, Pattern=done them, Pattern=so far, Pattern=but
+	Constrained: Pattern=to, Pattern=trying to, Pattern=of, Pattern=i'm
+Turn ID=5| B | Human 2 : hello i'm cookies ! what kind of croissants are you trying to make ?
+	Free: Pattern=you, Pattern=cookies, Pattern=what kind of, Pattern=i'm, Pattern=croissants, Pattern=trying to, Pattern=to make
+	Constrained: Pattern=to, Pattern=of
+Turn ID=6| A | Human 1 : ah , good thought , thanks !
+	Free: Pattern=good
+	Constrained: 
+Turn ID=7| B | Human 2 : it's good you've done them enough but i'm trying to make
+	Free: Pattern=good, Pattern=enough, Pattern=i'm trying to, Pattern=to make, Pattern=done them, Pattern=it's, Pattern=but
+	Constrained: Pattern=to, Pattern=trying to, Pattern=i'm
+Turn ID=8| A | Human 1 : now that is a good idea . i'll give it a try next time . would you say you have a sweet tooth ?
+	Free: Pattern=good, Pattern=you, Pattern=try, Pattern=sweet, Pattern=that
+	Constrained: 
+Turn ID=9| B | Human 2 : oh sweet
+	Free: Pattern=sweet
+	Constrained: 
+Turn ID=10| A | Human 1 : some people don't ! but yeah , me too , i think i'd eat pastries all the time if i could get away with it .
+	Free: Pattern=yeah ,, Pattern=too, Pattern=think, Pattern=i, Pattern=pastries, Pattern=the, Pattern=could, Pattern=get, Pattern=but
+	Constrained: 
+Turn ID=11| B | Human 2 : o i get that yeah , think you could try the pastries too ?
+	Free: Pattern=you, Pattern=yeah ,, Pattern=try, Pattern=too, Pattern=think, Pattern=i, Pattern=pastries, Pattern=the, Pattern=could, Pattern=get, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : wow ! the last time i paid attention to that sort of stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts of crazy stomach upsets .
+	Free: Pattern=of, Pattern=i, Pattern=the, Pattern=that, Pattern=crazy stomach, Pattern=to
+	Constrained: 
+Turn ID=13| B | Human 2 : mmm the crazy stomach .
+	Free: Pattern=crazy stomach, Pattern=the
+	Constrained: 
+Turn ID=14| A | Human 1 : ah , maybe that's the solution i need to enjoy sweets and not feel guilty 🙂
+	Free: Pattern=to, Pattern=the, Pattern=i
+	Constrained: 

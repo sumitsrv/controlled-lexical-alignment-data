@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's week so far ? 
+B|3| Human 2: great , thanks ! _how_ can _i_ help _you_ today ? 
+A|4| Human 1: same . _going to_ catch up on my reading ! do [you] _have_ _a_ _feast_ planned ? 
+B|5| Human 2: i'm just an ai , _i_ don't [have] personal plans or preferences , but _i_ can certainly help [you] find some great [feast] 
+A|6| Human 1: _something_ deeply hidden by _sean carroll_ _<redacted_link>_ 
+B|7| Human 2: [<redacted_link>] looks interesting . [sean carroll] _is_ [a] renowned physicist and science writer . <| 
+A|8| Human 1: largely _scifi_ _how about you ?_ 
+B|9| Human 2: [scifi] [<redacted_link>] _is_ [a] thought-provoking read [about] _the_ intersection of technology and humanity . [carroll] 
+A|10| Human 1: [i] haven't what [is] it [about] ? 
+B|11| Human 2: [sean] carroll's latest [<redacted_link>] explores [how about you ?] 
+A|12| Human 1: [how] do _the survivors_ survive such [a] thing ? 
+B|13| Human 2: i'm intrigued [how] [the survivors] [<redacted_link>] [about] . [sean] carroll's latest 
+A|14| Human 1: sounds like [a] tv _show_ [i] watched 
+B|15| Human 2: [the] [show] was [about] survivors<redacted_link> [how] they 
+A|16| Human 1: _can't quite remember_ . _something about_ [survivors] _going to live in_ _space_ 
+B|17| Human 2: [can't quite remember] [how] they survive<redacted_link> [something about] [space] travelors [going to live in] [the] [show] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ?
+	Free: Pattern=i, Pattern=you, Pattern=how
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going to, Pattern=you, Pattern=have, Pattern=a, Pattern=feast
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal plans or preferences , but i can certainly help you find some great feast
+	Free: Pattern=i, Pattern=you, Pattern=have, Pattern=feast
+	Constrained: 
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=sean carroll, Pattern=something, Pattern=<redacted_link>
+	Constrained: Pattern=sean, Pattern=carroll
+Turn ID=7| B | Human 2 : <redacted_link> looks interesting . sean carroll is a renowned physicist and science writer . <|
+	Free: Pattern=sean carroll, Pattern=a, Pattern=<redacted_link>, Pattern=is
+	Constrained: Pattern=sean, Pattern=carroll
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you ?, Pattern=scifi
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : scifi <redacted_link> is a thought-provoking read about the intersection of technology and humanity . carroll
+	Free: Pattern=a, Pattern=about, Pattern=is, Pattern=the, Pattern=scifi, Pattern=<redacted_link>, Pattern=carroll
+	Constrained: 
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=i, Pattern=about, Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : sean carroll's latest <redacted_link> explores how about you ?
+	Free: Pattern=how about you ?, Pattern=<redacted_link>, Pattern=sean
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=the survivors, Pattern=a, Pattern=how
+	Constrained: Pattern=the, Pattern=survivors
+Turn ID=13| B | Human 2 : i'm intrigued how the survivors <redacted_link> about . sean carroll's latest
+	Free: Pattern=how, Pattern=about, Pattern=sean, Pattern=the survivors, Pattern=<redacted_link>
+	Constrained: Pattern=the, Pattern=survivors
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=i, Pattern=a, Pattern=show
+	Constrained: 
+Turn ID=15| B | Human 2 : the show was about survivors<redacted_link> how they
+	Free: Pattern=the, Pattern=about, Pattern=how, Pattern=show
+	Constrained: 
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=something about, Pattern=can't quite remember, Pattern=survivors, Pattern=space, Pattern=going to live in
+	Constrained: Pattern=something, Pattern=going to, Pattern=about
+Turn ID=17| B | Human 2 : can't quite remember how they survive<redacted_link> something about space travelors going to live in the show
+	Free: Pattern=something about, Pattern=how, Pattern=show, Pattern=space, Pattern=going to live in, Pattern=can't quite remember, Pattern=the
+	Constrained: Pattern=something, Pattern=going to, Pattern=about

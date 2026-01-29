@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my friends _are_ _gonna visit_ _me_ _this weekend ._ we _might_ go hiking ! 
+B|3| Human 2: how [are] _you_ [this weekend] ? mine was last [weekend] _, but_ i'm not [gonna] miss _it_ ! 
+A|4| Human 1: should _be_ _very_ sunny ! _you ?_ 
+B|5| Human 2: yooo _i_ can't wait i'm [gonna visit] [you] [this weekend .] let's meet up . 
+A|6| Human 1: 😐 hope [you] _get_ _your _work_ done_ _very_ _soon_ ! a bug free [weekend] ! 
+B|7| Human 2: yooo [you] [are] [very] welcome ! 
+A|8| Human 1: [i] am _going to_ diablo ! 
+B|9| Human 2: what is [your work] [going to] [be] [done] _in_ next [weekend] ? 
+A|10| Human 1: _hours_ _drive from here_ . still [in] bay _area_ 
+B|11| Human 2: [i] [might] [drive from here] [in] [area] [soon] [to] [get] [work done] , [you] can count on [me] . 
+A|12| Human 1: actually no idea [, but] [it] _will_ _take the_ entire day [for] _that_ . 
+B|13| Human 2: how many [hours] [will] [that] [take the] [area] [from here] [for] [you ?] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=weekend, Pattern=the, Pattern=for
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=me, Pattern=are, Pattern=this weekend ., Pattern=gonna visit, Pattern=might
+	Constrained: Pattern=weekend, Pattern=gonna, Pattern=this weekend
+Turn ID=3| B | Human 2 : how are you this weekend ? mine was last weekend , but i'm not gonna miss it !
+	Free: Pattern=gonna, Pattern=it, Pattern=are, Pattern=weekend, Pattern=this weekend, Pattern=you, Pattern=, but
+	Constrained: Pattern=weekend
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=you ?, Pattern=be, Pattern=very
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : yooo i can't wait i'm gonna visit you this weekend . let's meet up .
+	Free: Pattern=this weekend ., Pattern=gonna visit, Pattern=you, Pattern=i
+	Constrained: Pattern=weekend, Pattern=gonna, Pattern=this weekend
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=you, Pattern=weekend, Pattern=soon, Pattern=very, Pattern=work done, Pattern=your work, Pattern=get
+	Constrained: Pattern=done
+Turn ID=7| B | Human 2 : yooo you are very welcome !
+	Free: Pattern=very, Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=going to, Pattern=i
+	Constrained: Pattern=to
+Turn ID=9| B | Human 2 : what is your work going to be done in next weekend ?
+	Free: Pattern=going to, Pattern=weekend, Pattern=in, Pattern=be, Pattern=your work, Pattern=done
+	Constrained: Pattern=to
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=drive from here, Pattern=in, Pattern=area, Pattern=hours
+	Constrained: Pattern=from here
+Turn ID=11| B | Human 2 : i might drive from here in area soon to get work done , you can count on me .
+	Free: Pattern=you, Pattern=me, Pattern=in, Pattern=soon, Pattern=i, Pattern=work done, Pattern=area, Pattern=might, Pattern=get, Pattern=drive from here, Pattern=to
+	Constrained: Pattern=from here, Pattern=done
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=, but, Pattern=for, Pattern=will, Pattern=that, Pattern=it, Pattern=take the
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : how many hours will that take the area from here for you ?
+	Free: Pattern=hours, Pattern=from here, Pattern=for, Pattern=take the, Pattern=will, Pattern=you ?, Pattern=area, Pattern=that
+	Constrained: Pattern=you, Pattern=the

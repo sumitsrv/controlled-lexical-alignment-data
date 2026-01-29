@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _it_ _going ?_ 
+B|3| Human 2: great ! how _can_ _i_ help _you_ today ? </s>s' [going ?] _can_ _i_ help _you_ find something or answer a question ? </r> 
+A|4| Human 1: _i'm_ _going to_ _the_ bahamas . can't wait !!! 
+B|5| Human 2: awesome ! _can_ _i_ help _you_ plan _your_ trip or recommend some things [to] do while you're there ? 🏖️</r 
+A|6| Human 1: oh _where are you_ _now ?_ 
+B|7| Human 2: [where are you] [going] [now ?] _can_ _i_ help [you] _with_ [the] directions or recommend some local attractions ? 🗺️</r<| 
+A|8| Human 1: oh no . [i] never seen this in person . _is it_ _scary_ ? 
+B|9| Human 2: [i'm] afraid [you] [are] . _can_ [you] tell me more about [the] haunted house [you] [are] [going to] ? how [scary] [is it] ? 
+A|10| Human 1: _that_ does sound nice . so what [are you] doing these _holidays_ ? 
+B|11| Human 2: [i'm] just an ai bot [that] helps [you] plan _your_ [holidays] _can_ [i] help [you] _with_ anything else ? 😊 
+A|12| Human 1: nice nice . [i'm] gonna go _snorkeling yey_ 
+B|13| Human 2: [that] sounds like a great plan ! [i'm] sure you'll have a wonderful _time_ [snorkeling] . just make sure [to] _stay_ safe and 
+A|14| Human 1: [you] [can] [stay] on [the] _shallow side_ _i think_ . well hope [you] enjoy [time] [with] [your] extended family ! 
+B|15| Human 2: that's a great idea [i think] [stay] [shallow side] [snorkeling yey] [can] [you] tell me more about [the] haunted house [you] [are] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going ?, Pattern=it
+	Constrained: Pattern=going
+Turn ID=3| B | Human 2 : great ! how can i help you today ? </s>s' going ? can i help you find something or answer a question ? </r>
+	Free: Pattern=going ?, Pattern=i, Pattern=can, Pattern=you
+	Constrained: Pattern=going
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=going to, Pattern=the, Pattern=i'm
+	Constrained: Pattern=to, Pattern=going
+Turn ID=5| B | Human 2 : awesome ! can i help you plan your trip or recommend some things to do while you're there ? 🏖️</r
+	Free: Pattern=you, Pattern=can, Pattern=to, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=where are you, Pattern=now ?
+	Constrained: Pattern=are you, Pattern=are, Pattern=you
+Turn ID=7| B | Human 2 : where are you going now ? can i help you with the directions or recommend some local attractions ? 🗺️</r<|
+	Free: Pattern=going, Pattern=now ?, Pattern=can, Pattern=i, Pattern=the, Pattern=with, Pattern=you, Pattern=where are you
+	Constrained: Pattern=are you, Pattern=are, Pattern=you
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=is it, Pattern=i, Pattern=scary
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : i'm afraid you are . can you tell me more about the haunted house you are going to ? how scary is it ?
+	Free: Pattern=going to, Pattern=you, Pattern=scary, Pattern=is it, Pattern=are, Pattern=can, Pattern=i'm, Pattern=the
+	Constrained: Pattern=to, Pattern=it, Pattern=going
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=are you, Pattern=holidays, Pattern=that
+	Constrained: Pattern=are, Pattern=you
+Turn ID=11| B | Human 2 : i'm just an ai bot that helps you plan your holidays can i help you with anything else ? 😊
+	Free: Pattern=holidays, Pattern=you, Pattern=can, Pattern=i'm, Pattern=your, Pattern=i, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=snorkeling yey, Pattern=i'm
+	Constrained: Pattern=snorkeling
+Turn ID=13| B | Human 2 : that sounds like a great plan ! i'm sure you'll have a wonderful time snorkeling . just make sure to stay safe and
+	Free: Pattern=time, Pattern=stay, Pattern=i'm, Pattern=to, Pattern=that, Pattern=snorkeling
+	Constrained: 
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=time, Pattern=stay, Pattern=can, Pattern=your, Pattern=the, Pattern=with, Pattern=i think, Pattern=you, Pattern=shallow side
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : that's a great idea i think stay shallow side snorkeling yey can you tell me more about the haunted house you are
+	Free: Pattern=stay, Pattern=snorkeling yey, Pattern=are, Pattern=can, Pattern=the, Pattern=i think, Pattern=you, Pattern=shallow side
+	Constrained: Pattern=snorkeling, Pattern=i

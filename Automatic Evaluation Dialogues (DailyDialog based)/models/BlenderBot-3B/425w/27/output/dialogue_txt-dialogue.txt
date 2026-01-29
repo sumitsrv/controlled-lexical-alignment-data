@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there how's it _going_ 
+A|2| Human 1: all _good ,_ _you ?_ 
+B|3| Human 2: i'm [good] ! just got back _from a_ bike ride ! [you ?] 
+A|4| Human 1: _how_ _has_ _that_ _been going_ ? 
+B|5| Human 2: _pretty_ [good ,] just [been going] over _the_ news and seeing who [has] won any award . [how] was your bike ride ? 
+A|6| Human 1: that's _too bad_ hopefully _with_ practice it'll _get_ _better_ _what_ _about_ [the] _doggy_ _paddle_ haha 
+B|7| Human 2: i do [that] every time [too] ! it's [the] best , [get] _to_ ride [what] [you] love and [the] world _is_ [better] [with] _a_ [good] [paddle] 
+A|8| Human 1: corgi _belly flop_ compilation - cute funny _dogs_ corgi _flop_ <redacted_link> 
+B|9| Human 2: it's [going] [good ,] just [been] out [with] [the] [dogs] and [the] chickens in [the] garden , [that] [too bad] [about] your [paddle] [doggy] 
+A|10| Human 1: [from a] _high enough_ distance , _yes_ ? 
+B|11| Human 2: [yes] it was [the] first time _for_ [that] i have done it [too] 
+A|12| Human 1: no so far sadly [you ?] [a] relative [is] coming [to] visit _for thanksgiving_ _though_ 
+B|13| Human 2: [yes] it's sad [that] i didn't [get] [the] [high enough] up [for] [the] [belly flop] and my arms came off [from] [the] impact 
+A|14| Human 1: that's _still pretty_ fun _are_ [you] _going to cook_ [the] turkey yourself ? 
+B|15| Human 2: [yes] i am [going to cook] it [for thanksgiving] , [the] dog's [are] [still pretty] young [though] [you] have [to] be careful 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there how's it going
+	Free: Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : all good , you ?
+	Free: Pattern=you ?, Pattern=good ,
+	Constrained: Pattern=good, Pattern=you
+Turn ID=3| B | Human 2 : i'm good ! just got back from a bike ride ! you ?
+	Free: Pattern=you ?, Pattern=from a, Pattern=good
+	Constrained: Pattern=from, Pattern=you, Pattern=a
+Turn ID=4| A | Human 1 : how has that been going ?
+	Free: Pattern=been going, Pattern=has, Pattern=that, Pattern=how
+	Constrained: Pattern=been, Pattern=going
+Turn ID=5| B | Human 2 : pretty good , just been going over the news and seeing who has won any award . how was your bike ride ?
+	Free: Pattern=how, Pattern=has, Pattern=been going, Pattern=pretty, Pattern=the, Pattern=good ,
+	Constrained: Pattern=good, Pattern=been, Pattern=going
+Turn ID=6| A | Human 1 : that's too bad hopefully with practice it'll get better what about the doggy paddle haha
+	Free: Pattern=too bad, Pattern=what, Pattern=about, Pattern=paddle, Pattern=the, Pattern=get, Pattern=with, Pattern=better, Pattern=doggy
+	Constrained: Pattern=too
+Turn ID=7| B | Human 2 : i do that every time too ! it's the best , get to ride what you love and the world is better with a good paddle
+	Free: Pattern=good, Pattern=you, Pattern=what, Pattern=a, Pattern=too, Pattern=is, Pattern=paddle, Pattern=better, Pattern=the, Pattern=to, Pattern=get, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=8| A | Human 1 : corgi belly flop compilation - cute funny dogs corgi flop <redacted_link>
+	Free: Pattern=belly flop, Pattern=dogs, Pattern=flop
+	Constrained: Pattern=flop
+Turn ID=9| B | Human 2 : it's going good , just been out with the dogs and the chickens in the garden , that too bad about your paddle doggy
+	Free: Pattern=too bad, Pattern=going, Pattern=dogs, Pattern=about, Pattern=paddle, Pattern=doggy, Pattern=the, Pattern=been, Pattern=good ,, Pattern=with, Pattern=that
+	Constrained: Pattern=too, Pattern=good
+Turn ID=10| A | Human 1 : from a high enough distance , yes ?
+	Free: Pattern=high enough, Pattern=from a, Pattern=yes
+	Constrained: Pattern=from, Pattern=a
+Turn ID=11| B | Human 2 : yes it was the first time for that i have done it too
+	Free: Pattern=yes, Pattern=for, Pattern=too, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : no so far sadly you ? a relative is coming to visit for thanksgiving though
+	Free: Pattern=though, Pattern=a, Pattern=is, Pattern=you ?, Pattern=for thanksgiving, Pattern=to
+	Constrained: Pattern=you, Pattern=for
+Turn ID=13| B | Human 2 : yes it's sad that i didn't get the high enough up for the belly flop and my arms came off from the impact
+	Free: Pattern=yes, Pattern=for, Pattern=from, Pattern=high enough, Pattern=belly flop, Pattern=the, Pattern=get, Pattern=that
+	Constrained: Pattern=flop
+Turn ID=14| A | Human 1 : that's still pretty fun are you going to cook the turkey yourself ?
+	Free: Pattern=you, Pattern=going to cook, Pattern=are, Pattern=the, Pattern=still pretty
+	Constrained: Pattern=going, Pattern=pretty, Pattern=to
+Turn ID=15| B | Human 2 : yes i am going to cook it for thanksgiving , the dog's are still pretty young though you have to be careful
+	Free: Pattern=going to cook, Pattern=though, Pattern=are, Pattern=the, Pattern=for thanksgiving, Pattern=to, Pattern=still pretty, Pattern=you, Pattern=yes
+	Constrained: Pattern=for, Pattern=going, Pattern=pretty, Pattern=to

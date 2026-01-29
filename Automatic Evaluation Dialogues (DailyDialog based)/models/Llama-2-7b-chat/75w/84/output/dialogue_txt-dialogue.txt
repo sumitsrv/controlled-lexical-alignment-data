@@ -1,0 +1,55 @@
+A|0| Human 1: hi , can _you_ recommend some _good_ _netflix_ _shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: of course ! _what_ type of [shows] are [you] interested in ? 
+A|3| Human 1: not [a lot] ! but [i] preparing _for _a_ good_ vacation season 🙂 [what] _is_ [white collar] about ? 
+B|4| Human 2: [white collar] [is] [a] crime drama that follows the story of peter burke , an fbi agent who [is] tasked with investigating _and_ bringing _to_ 
+A|5| Human 1: hehe ! sounds very interesting _🙂 i_ only _see_ [shows] belonging [to] few genre's .. like easy going _light_ comedy , or phychological thrillers 🙂 also some manga based series like _one punch man_ ! _love_ _it !_ 
+B|6| Human 2: ah , [i] [see] ! [white collar] [is] definitely [a good] choice [for a] [light] _and_ easy-going show . 🙂 it's 
+A|7| Human 1: which _anime_ [do you] follow ? 
+B|8| Human 2: _oh_ great ! i'm glad you're interested in [anime] as well [🙂 i] [love] [one punch man] myself ! [it] 
+A|9| Human 1: _have you_ _seen_ rick [and] morty ? 
+B|10| Human 2: yeah , i've [seen] [it !] 😃 it's [a] great show . [have] you<|im_end| 
+A|11| Human 1: [oh] nice ! [i] heard its latest season arrived last month . [i] [have] _watched_ all previous seasons . its [a] total mind bender 🙂 
+B|12| Human 2: yeah , it's definitely [a] trippy [and] thought-provoking show 🙂 [have you] [watched] any other [anime] series<| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=good, Pattern=netflix, Pattern=you, Pattern=shows
+	Constrained: 
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=a, Pattern=you
+Turn ID=2| B | Human 2 : of course ! what type of shows are you interested in ?
+	Free: Pattern=you, Pattern=what, Pattern=shows
+	Constrained: 
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=what, Pattern=white collar, Pattern=a good, Pattern=a lot, Pattern=for a, Pattern=is, Pattern=i
+	Constrained: Pattern=good, Pattern=a
+Turn ID=4| B | Human 2 : white collar is a crime drama that follows the story of peter burke , an fbi agent who is tasked with investigating and bringing to
+	Free: Pattern=and, Pattern=is, Pattern=to, Pattern=white collar, Pattern=a
+	Constrained: 
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=it !, Pattern=light, Pattern=shows, Pattern=one punch man, Pattern=love, Pattern=see, Pattern=to, Pattern=🙂 i
+	Constrained: Pattern=i, Pattern=it
+Turn ID=6| B | Human 2 : ah , i see ! white collar is definitely a good choice for a light and easy-going show . 🙂 it's
+	Free: Pattern=light, Pattern=white collar, Pattern=a good, Pattern=and, Pattern=see, Pattern=for a, Pattern=is, Pattern=i
+	Constrained: Pattern=good, Pattern=a
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=anime
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : oh great ! i'm glad you're interested in anime as well 🙂 i love one punch man myself ! it
+	Free: Pattern=love, Pattern=anime, Pattern=🙂 i, Pattern=it, Pattern=oh, Pattern=one punch man
+	Constrained: Pattern=i
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=have you, Pattern=seen, Pattern=and
+	Constrained: Pattern=have, Pattern=you
+Turn ID=10| B | Human 2 : yeah , i've seen it ! 😃 it's a great show . have you<|im_end|
+	Free: Pattern=it !, Pattern=seen, Pattern=a, Pattern=have
+	Constrained: Pattern=it
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=have, Pattern=a, Pattern=oh, Pattern=i, Pattern=watched
+	Constrained: 
+Turn ID=12| B | Human 2 : yeah , it's definitely a trippy and thought-provoking show 🙂 have you watched any other anime series<|
+	Free: Pattern=a, Pattern=and, Pattern=have you, Pattern=watched, Pattern=anime
+	Constrained: Pattern=have, Pattern=you

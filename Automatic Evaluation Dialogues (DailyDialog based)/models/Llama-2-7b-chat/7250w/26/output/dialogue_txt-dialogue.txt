@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ _mark_ . _i_ _work_ in _accounting_ 
+B|3| Human 2: [i'm] just an ai designed _to_ help users with [accounting] [work] . how can [i] assist _you_ ? [mark] can _you_ give me an example 
+A|4| Human 1: _what does_ a _fish groomer_ _do ?_ 
+B|5| Human 2: [i'm] just an ai , [i] don't have access _to_ [fish groomer] [work] . however , [what does] [accounting] involve ? [mark] 
+A|6| Human 1: _interesting_ . what's _type of_ [fish] _do_ [you] take care _of_ ? 
+B|7| Human 2: you're right [i] apologize [accounting] [work] [does] not involve [fish] grooming [mark] [what] [type of] tasks [do] accountants [do ?] <|im 
+A|8| Human 1: [i] balance _the_ books _and_ [do] _financial analysis for_ a medium sized _company_ 
+B|9| Human 2: [what does] [financial analysis] entail ? [mark] 
+A|10| Human 1: _well_ [i] actually think _about_ _pursuing photography_ , _but it's really_ _hard_ 
+B|11| Human 2: [well] [pursuing photography] is [hard] [but it's really] [interesting] [and] [you] can create something beautiful [mark] [what] [about] [financial analysis] ? [does] that help [company] 
+A|12| Human 1: thank [you] tom !! [i'm] starting by _trying_ [to] _sell_ my _pictures_ _online_ 
+B|13| Human 2: [i'm] [trying] [you] [sell] [online] [pictures] [but it's] [hard] [and] [the] money is not [really] [well] [what] [about] [financial analysis for] [company] [does] that<| 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=accounting, Pattern=mark, Pattern=i, Pattern=i'm, Pattern=work
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai designed to help users with accounting work . how can i assist you ? mark can you give me an example
+	Free: Pattern=you, Pattern=accounting, Pattern=mark, Pattern=i, Pattern=to, Pattern=i'm, Pattern=work
+	Constrained: 
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=fish groomer, Pattern=what does, Pattern=do ?
+	Constrained: Pattern=what, Pattern=do, Pattern=fish, Pattern=does
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have access to fish groomer work . however , what does accounting involve ? mark
+	Free: Pattern=fish groomer, Pattern=accounting, Pattern=mark, Pattern=i, Pattern=to, Pattern=what does, Pattern=i'm, Pattern=work
+	Constrained: Pattern=does, Pattern=fish, Pattern=what
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=of, Pattern=you, Pattern=type of, Pattern=do, Pattern=fish, Pattern=interesting
+	Constrained: Pattern=of
+Turn ID=7| B | Human 2 : you're right i apologize accounting work does not involve fish grooming mark what type of tasks do accountants do ? <|im
+	Free: Pattern=do, Pattern=accounting, Pattern=does, Pattern=mark, Pattern=work, Pattern=i, Pattern=fish, Pattern=do ?, Pattern=type of, Pattern=what
+	Constrained: Pattern=do, Pattern=of
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=company, Pattern=financial analysis for, Pattern=do, Pattern=and, Pattern=i, Pattern=the
+	Constrained: Pattern=financial analysis
+Turn ID=9| B | Human 2 : what does financial analysis entail ? mark
+	Free: Pattern=what does, Pattern=financial analysis, Pattern=mark
+	Constrained: Pattern=does, Pattern=what
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=well, Pattern=about, Pattern=i, Pattern=but it's really, Pattern=hard, Pattern=pursuing photography
+	Constrained: Pattern=but it's, Pattern=really
+Turn ID=11| B | Human 2 : well pursuing photography is hard but it's really interesting and you can create something beautiful mark what about financial analysis ? does that help company
+	Free: Pattern=company, Pattern=well, Pattern=you, Pattern=and, Pattern=about, Pattern=does, Pattern=mark, Pattern=but it's really, Pattern=what, Pattern=financial analysis, Pattern=interesting, Pattern=hard, Pattern=pursuing photography
+	Constrained: Pattern=but it's, Pattern=really
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=you, Pattern=pictures, Pattern=i'm, Pattern=online, Pattern=sell, Pattern=trying, Pattern=to
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm trying you sell online pictures but it's hard and the money is not really well what about financial analysis for company does that<|
+	Free: Pattern=company, Pattern=financial analysis for, Pattern=well, Pattern=you, Pattern=what, Pattern=but it's, Pattern=and, Pattern=pictures, Pattern=about, Pattern=does, Pattern=i'm, Pattern=online, Pattern=really, Pattern=sell, Pattern=the, Pattern=trying, Pattern=hard
+	Constrained: Pattern=financial analysis
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] anything _new_ ? 
+B|3| Human 2: _i'm_ just an ai , _i_ don't have access to [new] information unless it's _been_ released to the public<|im_ 
+A|4| Human 1: _any_ _plans_ ? 
+B|5| Human 2: _i'm_ just an ai , _i_ don't have personal [plans] _or_ experiences<|im_ 
+A|6| Human 1: that's awesome ! [i] _never been_ ! 
+B|7| Human 2: [hey] , _you're_ [never been] where ? 
+A|8| Human 1: _are you_ _a_ _food_ person , _a_ sightseeing person [or] neither ? 
+B|9| Human 2: _i'm_ just an ai , [i] don't have personal preferences [or] experiences , but [i] can assist [you] in _planning_ [a] trip [or] 
+A|10| Human 1: [i'm] [a] _food_ person [i] _think_ . _any specific_ _foods_ [you're] _planning on_ _trying_ ? 
+B|11| Human 2: [i'm] [trying] to [think] of [foods] that [you] might like in japan . do [you] have [any specific] dietary restrictions [or] preferences ? < 
+A|12| Human 1: yeah my favorite _is_ _taco fish_ 
+B|13| Human 2: [i] see , [taco fish] [is] [a] popular dish in japan . [are you] [planning on] visiting [any specific] [food] destinations while [you're] there 
+A|14| Human 1: no . only eat them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=new, Pattern=hey
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have access to new information unless it's been released to the public<|im_
+	Free: Pattern=new, Pattern=i, Pattern=i'm, Pattern=been
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=plans, Pattern=any
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal plans or experiences<|im_
+	Free: Pattern=plans, Pattern=i, Pattern=i'm, Pattern=or
+	Constrained: 
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=never been, Pattern=i
+	Constrained: Pattern=been
+Turn ID=7| B | Human 2 : hey , you're never been where ?
+	Free: Pattern=never been, Pattern=you're, Pattern=hey
+	Constrained: Pattern=been
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=are you, Pattern=food, Pattern=a, Pattern=or
+	Constrained: Pattern=you
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have personal preferences or experiences , but i can assist you in planning a trip or
+	Free: Pattern=planning, Pattern=you, Pattern=a, Pattern=i'm, Pattern=i, Pattern=or
+	Constrained: 
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=you're, Pattern=planning on, Pattern=a, Pattern=any specific, Pattern=think, Pattern=i'm, Pattern=i, Pattern=food, Pattern=trying, Pattern=foods
+	Constrained: Pattern=planning, Pattern=any
+Turn ID=11| B | Human 2 : i'm trying to think of foods that you might like in japan . do you have any specific dietary restrictions or preferences ? <
+	Free: Pattern=you, Pattern=any specific, Pattern=think, Pattern=i'm, Pattern=or, Pattern=trying, Pattern=foods
+	Constrained: Pattern=any
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=taco fish, Pattern=is
+	Constrained: 
+Turn ID=13| B | Human 2 : i see , taco fish is a popular dish in japan . are you planning on visiting any specific food destinations while you're there
+	Free: Pattern=you're, Pattern=planning on, Pattern=a, Pattern=any specific, Pattern=taco fish, Pattern=food, Pattern=are you, Pattern=is, Pattern=i
+	Constrained: Pattern=any, Pattern=you, Pattern=planning
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: 
+	Constrained: 

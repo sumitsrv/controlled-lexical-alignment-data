@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: what's _your_ _name_ ? 
+A|2| Human 1: my [name] is _pikachu_ . it’s nice _to_ meet _you_ _! what are you_ up _to_ _this_ month ? 
+B|3| Human 2: 🤖 i'm _just_ an ai _, i_ don't _have_ personal experiences _like_ _you do_ , [pikachu] ! 
+A|4| Human 1: i’m _trying to_ organize my life _and_ start _the_ _new_ _year_ ready _to_ go _! what_ about [you] ? 
+B|5| Human 2: 📅 organizing [and] planning [are] great goals [! what are you] using [to] help [you] keep track _of_ _your_ tasks [and] appointments [this] [year] 
+A|6| Human 1: [what] _do [you_ do] [to] _unwind ?_ 
+B|7| Human 2: 😅 [unwind ?] *lightning [and] thunderstorms* [what are you] [trying to] say ? <|im_end 
+A|8| Human 1: oddly enough [, i] _also_ _catch pokémon_ on my phone . [i] used [to] [do] it more , but it [just] never ends . [i] used [to] [do] it everyday . now [i] mostly _catch_ them _when_ [i] _travel somewhere_ _exotic_ . 
+B|9| Human 2: [catch pokémon] [when] [you] [travel somewhere] [new] [and] [exotic] [! what are] some _of_ [the] most interesting _or_ challenging places you've gone [to] 
+A|10| Human 1: _in the_ game [, i] use vaporeon a lot . but _i think_ [pikachu] is [the] _cutest_ , that’s why [i] changed my [name] [to] _match_ . _lately , i think _baby_ yoda_ is [the] _cutest_ _though_ . _have you seen baby yoda_ ? 
+B|11| Human 2: ooh , [baby yoda] 🤖 _that_ [cutest] ! *lightning [and] thunderstorms* [what are you] planning [to] 
+A|12| Human 1: [what] is _your favorite_ _show_ [to] _watch_ right now ? 
+B|13| Human 2: [what] [show] [do you] [watch] [the] most ? [have you seen baby yoda] [and] [pikachu] [match] yet ? [lately , i think baby] y 
+A|14| Human 1: [i] was _watching_ _cat_ rescue _videos_ on _youtube_ a lot . there sure [are] a lot [of] stray _cat babies that _get stuck_ in_ _pipes_ [and] gutters _in_ south korea . 
+B|15| Human 2: aww that's adorable [and] [also] quite funny [watching] [the] [cat] [get stuck [in] the] [pipes] [! what are] [your favorite] [videos] [you] 
+A|16| Human 1: [do you] [like] _cats_ [or] _dogs better_ ? [do you] [have] any _pets_ ? 
+B|17| Human 2: 🤖 [cats] [are] [like] [the] [cat babies that get stuck] [youtube] [videos] [and] [pets] [have] [dogs better] [though] ! [lately] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : what's your name ?
+	Free: Pattern=your, Pattern=name
+	Constrained: 
+Turn ID=2| A | Human 1 : my name is pikachu . it’s nice to meet you ! what are you up to this month ?
+	Free: Pattern=you, Pattern=name, Pattern=to, Pattern=! what are you, Pattern=pikachu, Pattern=this
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=! what, Pattern=what are you, Pattern=! what are
+Turn ID=3| B | Human 2 : 🤖 i'm just an ai , i don't have personal experiences like you do , pikachu !
+	Free: Pattern=you do, Pattern=like, Pattern=, i, Pattern=pikachu, Pattern=just, Pattern=have
+	Constrained: Pattern=do, Pattern=i, Pattern=you
+Turn ID=4| A | Human 1 : i’m trying to organize my life and start the new year ready to go ! what about you ?
+	Free: Pattern=new, Pattern=you, Pattern=and, Pattern=! what, Pattern=trying to, Pattern=year, Pattern=the, Pattern=to
+	Constrained: Pattern=to, Pattern=what
+Turn ID=5| B | Human 2 : 📅 organizing and planning are great goals ! what are you using to help you keep track of your tasks and appointments this year
+	Free: Pattern=of, Pattern=you, Pattern=and, Pattern=are, Pattern=your, Pattern=year, Pattern=to, Pattern=! what are you, Pattern=this
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=! what, Pattern=what are you, Pattern=! what are
+Turn ID=6| A | Human 1 : what do you do to unwind ?
+	Free: Pattern=what, Pattern=do you, Pattern=you do, Pattern=to, Pattern=unwind ?
+	Constrained: Pattern=do, Pattern=you
+Turn ID=7| B | Human 2 : 😅 unwind ? *lightning and thunderstorms* what are you trying to say ? <|im_end
+	Free: Pattern=what are you, Pattern=unwind ?, Pattern=trying to, Pattern=and
+	Constrained: Pattern=are, Pattern=what, Pattern=to, Pattern=you
+Turn ID=8| A | Human 1 : oddly enough , i also catch pokémon on my phone . i used to do it more , but it just never ends . i used to do it everyday . now i mostly catch them when i travel somewhere exotic .
+	Free: Pattern=just, Pattern=do, Pattern=catch pokémon, Pattern=also, Pattern=, i, Pattern=catch, Pattern=when, Pattern=to, Pattern=exotic, Pattern=travel somewhere, Pattern=i
+	Constrained: Pattern=i, Pattern=catch
+Turn ID=9| B | Human 2 : catch pokémon when you travel somewhere new and exotic ! what are some of the most interesting or challenging places you've gone to
+	Free: Pattern=you, Pattern=and, Pattern=catch pokémon, Pattern=travel somewhere, Pattern=or, Pattern=the, Pattern=when, Pattern=to, Pattern=of, Pattern=new, Pattern=! what are, Pattern=exotic
+	Constrained: Pattern=are, Pattern=what, Pattern=catch, Pattern=! what
+Turn ID=10| A | Human 1 : in the game , i use vaporeon a lot . but i think pikachu is the cutest , that’s why i changed my name to match . lately , i think baby yoda is the cutest though . have you seen baby yoda ?
+	Free: Pattern=match, Pattern=cutest, Pattern=though, Pattern=name, Pattern=in the, Pattern=lately , i think baby, Pattern=i, Pattern=baby yoda, Pattern=to, Pattern=pikachu, Pattern=the, Pattern=, i, Pattern=have you seen baby yoda, Pattern=i think
+	Constrained: Pattern=lately, Pattern=you, Pattern=have, Pattern=in, Pattern=i, Pattern=baby yoda, Pattern=i think, Pattern=the, Pattern=, i
+Turn ID=11| B | Human 2 : ooh , baby yoda 🤖 that cutest ! *lightning and thunderstorms* what are you planning to
+	Free: Pattern=cutest, Pattern=and, Pattern=what are you, Pattern=baby yoda, Pattern=to, Pattern=that
+	Constrained: Pattern=are, Pattern=what, Pattern=you
+Turn ID=12| A | Human 1 : what is your favorite show to watch right now ?
+	Free: Pattern=what, Pattern=your favorite, Pattern=to, Pattern=show, Pattern=watch
+	Constrained: Pattern=your
+Turn ID=13| B | Human 2 : what show do you watch the most ? have you seen baby yoda and pikachu match yet ? lately , i think baby y
+	Free: Pattern=match, Pattern=what, Pattern=lately , i think baby, Pattern=the, Pattern=pikachu, Pattern=show, Pattern=have you seen baby yoda, Pattern=watch, Pattern=and, Pattern=do you
+	Constrained: Pattern=lately, Pattern=you, Pattern=have, Pattern=do, Pattern=i, Pattern=baby yoda, Pattern=, i, Pattern=i think
+Turn ID=14| A | Human 1 : i was watching cat rescue videos on youtube a lot . there sure are a lot of stray cat babies that get stuck in pipes and gutters in south korea .
+	Free: Pattern=of, Pattern=watching, Pattern=pipes, Pattern=and, Pattern=are, Pattern=youtube, Pattern=in, Pattern=i, Pattern=cat babies that get stuck, Pattern=videos, Pattern=cat, Pattern=get stuck in
+	Constrained: Pattern=in, Pattern=cat, Pattern=that
+Turn ID=15| B | Human 2 : aww that's adorable and also quite funny watching the cat get stuck in the pipes ! what are your favorite videos you
+	Free: Pattern=you, Pattern=watching, Pattern=pipes, Pattern=and, Pattern=also, Pattern=the, Pattern=! what are, Pattern=videos, Pattern=cat, Pattern=get stuck in, Pattern=your favorite, Pattern=in the
+	Constrained: Pattern=what, Pattern=are, Pattern=in, Pattern=! what, Pattern=your, Pattern=the
+Turn ID=16| A | Human 1 : do you like cats or dogs better ? do you have any pets ?
+	Free: Pattern=have, Pattern=do you, Pattern=like, Pattern=cats, Pattern=dogs better, Pattern=or, Pattern=pets
+	Constrained: Pattern=do, Pattern=you
+Turn ID=17| B | Human 2 : 🤖 cats are like the cat babies that get stuck youtube videos and pets have dogs better though ! lately
+	Free: Pattern=lately, Pattern=have, Pattern=though, Pattern=and, Pattern=are, Pattern=youtube, Pattern=like, Pattern=pets, Pattern=cats, Pattern=dogs better, Pattern=videos, Pattern=cat babies that get stuck, Pattern=the
+	Constrained: Pattern=cat, Pattern=that

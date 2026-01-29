@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , _it_ _is flying_ by _quicker than_ _i_ _expected_ _. _how_ is your day going on ?_ 
+B|3| Human 2: great ! [than] [expected] [how is your day going on ?] 
+A|4| Human 1: oh , _i_ _would_ love _to twiddle_ my _thumbs_ . _you're_ so _lucky_ ! today , _i've been_ mostly attending meetings , reading _and_ writing docs , reading papers etc . 
+B|5| Human 2: i'm glad [you're] enjoying [your day] [how] _would you_ like [to twiddle] [your] [thumbs] ? _you_ _can_ use _me_ [and] [lucky] 
+A|6| Human 1: wow ! _i sometimes_ _drift off during work_ , _and see_ similar _things_ in my head . 
+B|7| Human 2: [you're] [lucky] [your day] [is flying] [quicker than] [expected] [i sometimes] [see] [things] [and] [drift off during work] [. how] _would you_ [twiddle] 
+A|8| Human 1: mostly _saving the world from mess on social media_ _. how about you ?_ 
+B|9| Human 2: [i sometimes] [see] [things] [and] [drift off during work] [. how about you ?] [you] [saving the world from mess on social media] , [twiddle] [thumbs] 
+A|10| Human 1: nice , _what_ _all_ _places_ [would you] be [going] [to] ? 
+B|11| Human 2: i'm [going] [places] [you] [would] never imagine [all] [the] [mess] [and] [what] [social media] worlds we have [twiddle] [thumbs] [saving] [from] [sometimes] [during work] 
+A|12| Human 1: [i] _just_ met someone who went diving in _australia_ . apparently , [you] cannot fly 24 hrs after [you] _dive_ , because [your] body accumulates too much _<redacted_term>_ when breathing _with_ a cylinder so , don't do _that_ ! 
+B|13| Human 2: how's [your] [dive] [<redacted_term>] [australia] 
+A|14| Human 1: that's equally _amazing_ ! [i] wish [i] _can explore_ such [places] _one day_ . it's _just_ so expensive 
+B|15| Human 2: [i've been] [places] [that] [you] [can explore] [and see] [the] [amazing] [<redacted_term>] [it] [just] [one day] wishs [sometimes] 
+A|16| Human 1: woah !... _you know_ sharing [is] caring . [you] should _share_ [that] _money_ _with_ [me] :) 
+B|17| Human 2: [you know] what's even more [amazing] ? [<redacted_term>] [with] [your] own [money] [and] [explore] [places] [that] [you] [can] [share] 
+A|18| Human 1: [you] are a kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=your day, Pattern=your, Pattern=going
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=it, Pattern=. how, Pattern=i, Pattern=is flying, Pattern=how is your day going on ?, Pattern=expected, Pattern=quicker than
+	Constrained: Pattern=how, Pattern=than, Pattern=your day going, Pattern=going, Pattern=your day, Pattern=is, Pattern=your
+Turn ID=3| B | Human 2 : great ! than expected how is your day going on ?
+	Free: Pattern=how is your day going on ?, Pattern=expected, Pattern=than
+	Constrained: Pattern=how, Pattern=your day going, Pattern=going, Pattern=your day, Pattern=is, Pattern=your
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=you're, Pattern=i've been, Pattern=and, Pattern=to twiddle, Pattern=would, Pattern=thumbs, Pattern=lucky, Pattern=i
+	Constrained: Pattern=to, Pattern=twiddle
+Turn ID=5| B | Human 2 : i'm glad you're enjoying your day how would you like to twiddle your thumbs ? you can use me and lucky
+	Free: Pattern=you're, Pattern=you, Pattern=your day, Pattern=me, Pattern=how, Pattern=and, Pattern=would you, Pattern=thumbs, Pattern=to twiddle, Pattern=can, Pattern=your, Pattern=lucky
+	Constrained: Pattern=twiddle, Pattern=you, Pattern=your, Pattern=would, Pattern=to
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=drift off during work, Pattern=and see, Pattern=i sometimes, Pattern=things
+	Constrained: Pattern=and, Pattern=during work, Pattern=i, Pattern=see, Pattern=sometimes
+Turn ID=7| B | Human 2 : you're lucky your day is flying quicker than expected i sometimes see things and drift off during work . how would you twiddle
+	Free: Pattern=you're, Pattern=twiddle, Pattern=and, Pattern=. how, Pattern=things, Pattern=would you, Pattern=i sometimes, Pattern=your day, Pattern=expected, Pattern=quicker than, Pattern=drift off during work, Pattern=lucky, Pattern=see, Pattern=is flying
+	Constrained: Pattern=you, Pattern=how, Pattern=during work, Pattern=than, Pattern=would, Pattern=sometimes, Pattern=is, Pattern=your, Pattern=i
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=saving the world from mess on social media, Pattern=. how about you ?
+	Constrained: Pattern=you, Pattern=how, Pattern=saving, Pattern=the, Pattern=. how, Pattern=from, Pattern=mess, Pattern=social media
+Turn ID=9| B | Human 2 : i sometimes see things and drift off during work . how about you ? you saving the world from mess on social media , twiddle thumbs
+	Free: Pattern=. how about you ?, Pattern=twiddle, Pattern=you, Pattern=i sometimes, Pattern=and, Pattern=things, Pattern=drift off during work, Pattern=saving the world from mess on social media, Pattern=see, Pattern=thumbs
+	Constrained: Pattern=you, Pattern=how, Pattern=during work, Pattern=i, Pattern=saving, Pattern=the, Pattern=sometimes, Pattern=. how, Pattern=from, Pattern=mess, Pattern=social media
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=going, Pattern=would you, Pattern=all, Pattern=to, Pattern=places, Pattern=what
+	Constrained: Pattern=you, Pattern=would
+Turn ID=11| B | Human 2 : i'm going places you would never imagine all the mess and what social media worlds we have twiddle thumbs saving from sometimes during work
+	Free: Pattern=twiddle, Pattern=you, Pattern=going, Pattern=and, Pattern=during work, Pattern=from, Pattern=saving, Pattern=would, Pattern=thumbs, Pattern=sometimes, Pattern=places, Pattern=what, Pattern=the, Pattern=all, Pattern=mess, Pattern=social media
+	Constrained: 
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=you, Pattern=just, Pattern=<redacted_term>, Pattern=your, Pattern=i, Pattern=dive, Pattern=australia, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=13| B | Human 2 : how's your dive <redacted_term> australia
+	Free: Pattern=<redacted_term>, Pattern=australia, Pattern=your, Pattern=dive
+	Constrained: 
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=i, Pattern=can explore, Pattern=amazing, Pattern=just, Pattern=places, Pattern=one day
+	Constrained: Pattern=can, Pattern=explore
+Turn ID=15| B | Human 2 : i've been places that you can explore and see the amazing <redacted_term> it just one day wishs sometimes
+	Free: Pattern=i've been, Pattern=you, Pattern=it, Pattern=<redacted_term>, Pattern=and see, Pattern=the, Pattern=can explore, Pattern=that, Pattern=sometimes, Pattern=amazing, Pattern=just, Pattern=places, Pattern=one day
+	Constrained: Pattern=explore, Pattern=can, Pattern=see, Pattern=and
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=money, Pattern=me, Pattern=is, Pattern=share, Pattern=you, Pattern=you know, Pattern=with, Pattern=that
+	Constrained: Pattern=you
+Turn ID=17| B | Human 2 : you know what's even more amazing ? <redacted_term> with your own money and explore places that you can share
+	Free: Pattern=money, Pattern=amazing, Pattern=places, Pattern=and, Pattern=your, Pattern=share, Pattern=you, Pattern=you know, Pattern=<redacted_term>, Pattern=can, Pattern=with, Pattern=that, Pattern=explore
+	Constrained: Pattern=you
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=you
+	Constrained: 

@@ -1,0 +1,63 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] 
+A|2| Human 1: _nice meeting you_ . _what_ _are you_ up to ? 
+B|3| Human 2: [nice meeting you] too ! 🙂 [what] can _i_ help [you] with today ? </|im_end|> </s>{ 
+A|4| Human 1: yea , same _here_ . _any_ _food_ _you're_ _craving_ _for_ ? 
+B|5| Human 2: [food] 😋 what's your favorite ? 
+A|6| Human 1: arghhh hard question ... [i] _only_ _know_ _ramen_ places _for_ _japanese food_ 🙂 
+B|7| Human 2: [you're] [japanese food] [craving] 😂 [nice] ! [ramen] is amazing [for] [any] time of _the_ day 🍜 
+A|8| Human 1: _san mateo_ to me _has the best ramen_ restaurants: _parlor_ _and dojo_ ? oh no question mark 🙂 
+B|9| Human 2: 😅 [nice] [dojo] [has the best ramen] [and] [san mateo] [parlor] [for] [food] [are you] [here] [for] [any] occasion ? <| 
+A|10| Human 1: my pleasure 🙂 do [you] live _near san mateo_ ? 
+B|11| Human 2: [near san mateo] 🙁 [and dojo] [ramen] [has the best] miso [ramen] [for] [only] $8 [you] [know] �� 
+A|12| Human 1: excellent . let me [know] _when_ [you] have tried _those_ . [i] like [parlor] better because it [has] _soft-shell crabs_ 
+B|13| Human 2: [soft-shell crabs] 🙀 [parlor] [has] [those] [and dojo] [ramen] [you] [know] [for] [when] [the] [craving] is too strong 
+A|14| Human 1: yup it's delicious ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : nice meeting you . what are you up to ?
+	Free: Pattern=nice meeting you, Pattern=are you, Pattern=what
+	Constrained: Pattern=nice, Pattern=you
+Turn ID=3| B | Human 2 : nice meeting you too ! 🙂 what can i help you with today ? </|im_end|> </s>{
+	Free: Pattern=nice meeting you, Pattern=what, Pattern=i, Pattern=you
+	Constrained: Pattern=nice, Pattern=you
+Turn ID=4| A | Human 1 : yea , same here . any food you're craving for ?
+	Free: Pattern=you're, Pattern=here, Pattern=food, Pattern=craving, Pattern=for, Pattern=any
+	Constrained: 
+Turn ID=5| B | Human 2 : food 😋 what's your favorite ?
+	Free: Pattern=food
+	Constrained: 
+Turn ID=6| A | Human 1 : arghhh hard question ... i only know ramen places for japanese food 🙂
+	Free: Pattern=only, Pattern=japanese food, Pattern=for, Pattern=ramen, Pattern=know, Pattern=i
+	Constrained: Pattern=food
+Turn ID=7| B | Human 2 : you're japanese food craving 😂 nice ! ramen is amazing for any time of the day 🍜
+	Free: Pattern=you're, Pattern=japanese food, Pattern=ramen, Pattern=the, Pattern=craving, Pattern=nice, Pattern=for, Pattern=any
+	Constrained: Pattern=food
+Turn ID=8| A | Human 1 : san mateo to me has the best ramen restaurants: parlor and dojo ? oh no question mark 🙂
+	Free: Pattern=has the best ramen, Pattern=and dojo, Pattern=san mateo, Pattern=parlor
+	Constrained: Pattern=has the best, Pattern=ramen, Pattern=dojo, Pattern=the, Pattern=and, Pattern=has
+Turn ID=9| B | Human 2 : 😅 nice dojo has the best ramen and san mateo parlor for food are you here for any occasion ? <|
+	Free: Pattern=san mateo, Pattern=has the best ramen, Pattern=here, Pattern=and, Pattern=are you, Pattern=food, Pattern=nice, Pattern=for, Pattern=any, Pattern=dojo, Pattern=parlor
+	Constrained: Pattern=you, Pattern=has the best, Pattern=has, Pattern=ramen, Pattern=the
+Turn ID=10| A | Human 1 : my pleasure 🙂 do you live near san mateo ?
+	Free: Pattern=near san mateo, Pattern=you
+	Constrained: Pattern=san mateo
+Turn ID=11| B | Human 2 : near san mateo 🙁 and dojo ramen has the best miso ramen for only $8 you know ��
+	Free: Pattern=you, Pattern=only, Pattern=has the best, Pattern=for, Pattern=ramen, Pattern=and dojo, Pattern=know, Pattern=near san mateo
+	Constrained: Pattern=san mateo, Pattern=dojo, Pattern=the, Pattern=and, Pattern=has
+Turn ID=12| A | Human 1 : excellent . let me know when you have tried those . i like parlor better because it has soft-shell crabs
+	Free: Pattern=you, Pattern=has, Pattern=i, Pattern=those, Pattern=parlor, Pattern=know, Pattern=when, Pattern=soft-shell crabs
+	Constrained: 
+Turn ID=13| B | Human 2 : soft-shell crabs 🙀 parlor has those and dojo ramen you know for when the craving is too strong
+	Free: Pattern=you, Pattern=for, Pattern=has, Pattern=ramen, Pattern=and dojo, Pattern=the, Pattern=craving, Pattern=those, Pattern=parlor, Pattern=know, Pattern=when, Pattern=soft-shell crabs
+	Constrained: Pattern=and, Pattern=dojo
+Turn ID=14| A | Human 1 : yup it's delicious !
+	Free: 
+	Constrained: 

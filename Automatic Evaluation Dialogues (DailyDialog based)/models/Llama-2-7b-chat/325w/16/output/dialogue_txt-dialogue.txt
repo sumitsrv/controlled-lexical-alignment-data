@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: great ! how _can_ _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _going_ _to_ _the bahamas_ . can't wait !!! 
+B|5| Human 2: wow , _that_ sounds like a great trip ! _are you_ [going] for business or pleasure ? 
+A|6| Human 1: oh where [are you] now ? 
+B|7| Human 2: [i'm] _on the_ beach soaking up [the] sun 
+A|8| Human 1: oh no . [i] never _seen_ this in person . is it scary ? 
+B|9| Human 2: [i'm] at [the bahamas] as _well_ . have [you] been here before ? 
+A|10| Human 1: [that] does _sound nice_ . so _what_ [are you] doing these holidays ? 
+B|11| Human 2: [you] [sound nice] and warm , that's [what] [i] like 😊 [are you] having a good _time_ ? <|im_end| 
+A|12| Human 1: [nice] [nice] . _i'm gonna_ go snorkeling yey 
+B|13| Human 2: [that] sounds like a lot of fun ! [i'm] sure you'll see some great marine life . have [you] [seen] any interesting creatures yet ? 
+A|14| Human 1: [you] [can] _stay_ [on the] _shallow_ side _i think_ . [well] hope [you] enjoy [time] with your extended family ! 
+B|15| Human 2: [i think] you're right ! [i'm gonna] try [to] [stay] [shallow] today 😊 thanks for [the] suggestion ! < 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how can i help you today ?
+	Free: Pattern=i, Pattern=you, Pattern=can
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=the bahamas, Pattern=to, Pattern=going, Pattern=i'm
+	Constrained: Pattern=the
+Turn ID=5| B | Human 2 : wow , that sounds like a great trip ! are you going for business or pleasure ?
+	Free: Pattern=are you, Pattern=that, Pattern=going
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you
+	Constrained: Pattern=you
+Turn ID=7| B | Human 2 : i'm on the beach soaking up the sun
+	Free: Pattern=on the, Pattern=the, Pattern=i'm
+	Constrained: Pattern=the
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=i, Pattern=seen
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm at the bahamas as well . have you been here before ?
+	Free: Pattern=the bahamas, Pattern=you, Pattern=i'm, Pattern=well
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=sound nice, Pattern=are you, Pattern=that, Pattern=what
+	Constrained: Pattern=nice, Pattern=you
+Turn ID=11| B | Human 2 : you sound nice and warm , that's what i like 😊 are you having a good time ? <|im_end|
+	Free: Pattern=time, Pattern=you, Pattern=what, Pattern=sound nice, Pattern=are you, Pattern=i
+	Constrained: Pattern=nice, Pattern=you
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=i'm gonna, Pattern=nice
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : that sounds like a lot of fun ! i'm sure you'll see some great marine life . have you seen any interesting creatures yet ?
+	Free: Pattern=that, Pattern=you, Pattern=seen, Pattern=i'm
+	Constrained: 
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=shallow, Pattern=time, Pattern=stay, Pattern=well, Pattern=you, Pattern=can, Pattern=on the, Pattern=i think
+	Constrained: Pattern=i, Pattern=the
+Turn ID=15| B | Human 2 : i think you're right ! i'm gonna try to stay shallow today 😊 thanks for the suggestion ! <
+	Free: Pattern=stay, Pattern=the, Pattern=to, Pattern=i think, Pattern=i'm gonna, Pattern=shallow
+	Constrained: Pattern=i, Pattern=i'm

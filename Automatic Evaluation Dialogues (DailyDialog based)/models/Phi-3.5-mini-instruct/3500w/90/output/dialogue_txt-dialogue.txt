@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: there is _sports tournament_ (badminton + _tennis_ + basketball) _organized by google_ next week . would _you_ _like_ _to_ _volunteer for_ these _events_ ? 
+B|3| Human 2: hello ! 
+A|4| Human 1: _volunteers_ _have_ _to_ book _the_ place before _the_ _event_ , send out _details_ _of the_ _event_ _to_ participants , handle _some_ _logistics_ _and_ _ensure_ everything goes smoothly . it _will_ be fun ! 
+B|5| Human 2: _volunteers for_ [sports tournament] [events] [like] _badminton ,_ [tennis] , [and] basketball [organized by google] [have] [some] important roles [to] [ensure] [the] smooth running [of the] 
+A|6| Human 1: great ! do _you_ [have] any preference [for] any [of] these [events] ? 
+B|7| Human 2: _as_ an ai _, i_ don't [volunteer for] [events] , but _i can_ certainly _help_ [you] understand [the] general roles [and] tasks that [volunteers] [like] 
+A|8| Human 1: cool ! [i] _will_ add [you] [for] [the] _event_ . [i] think its best [to] start discussing [the] format [of the] _event_ . there _are_ _a_ couple [of] other [volunteers for] [badminton [,] [i] can] connect [you] _with_ them . 
+B|9| Human 2: certainly ! here [are] [some] common [volunteer] roles [for] [sports tournament] [events] [organized by] [a] company [like] google: 
+A|10| Human 1: its next saturday . actually depending on how long we get [the] place reserved , it _may_ slip [to] sunday [as] well . 
+B|11| Human 2: [volunteers] [can] [have] [the] following key roles [and] responsibilities [for] saturday's event: 
+A|12| Human 1: true ! [the] [volunteers] [have] already sent out [some] emails [and] collected [some] funds . now , we mainly _need_ _help with the_ _logistics_ [and] _organizing_ [the] _event_ . 
+B|13| Human 2: 1 . **event coordination [and] [logistics] planning**: [volunteers for] [event] coordination [will] [help with the] [organizing] [of the] [details] 
+A|14| Human 1: perfect ! we [have] [a] _meeting today_ at 4 . 30 pm . is it fine if [i] add [you] [to] it ? 
+B|15| Human 2: certainly ! here [are] [the] [details] [for] [volunteers] [you] [may] [need] [to] attend [and] [help with] [event] coordination [and] [logistics] planning . [the] [meeting today] 
+A|16| Human 1: thanks . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : there is sports tournament (badminton + tennis + basketball) organized by google next week . would you like to volunteer for these events ?
+	Free: Pattern=volunteer for, Pattern=you, Pattern=sports tournament, Pattern=events, Pattern=like, Pattern=organized by google, Pattern=tennis, Pattern=to
+	Constrained: Pattern=for, Pattern=volunteer, Pattern=organized by
+Turn ID=3| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : volunteers have to book the place before the event , send out details of the event to participants , handle some logistics and ensure everything goes smoothly . it will be fun !
+	Free: Pattern=have, Pattern=and, Pattern=ensure, Pattern=event, Pattern=the, Pattern=to, Pattern=of the, Pattern=volunteers, Pattern=details, Pattern=logistics, Pattern=will, Pattern=some
+	Constrained: Pattern=the, Pattern=of
+Turn ID=5| B | Human 2 : volunteers for sports tournament events like badminton , tennis , and basketball organized by google have some important roles to ensure the smooth running of the
+	Free: Pattern=volunteers for, Pattern=badminton ,, Pattern=have, Pattern=sports tournament, Pattern=events, Pattern=and, Pattern=some, Pattern=ensure, Pattern=like, Pattern=the, Pattern=organized by google, Pattern=of the, Pattern=tennis, Pattern=to
+	Constrained: Pattern=for, Pattern=the, Pattern=organized by, Pattern=volunteers, Pattern=of
+Turn ID=6| A | Human 1 : great ! do you have any preference for any of these events ?
+	Free: Pattern=of, Pattern=you, Pattern=have, Pattern=for, Pattern=events
+	Constrained: 
+Turn ID=7| B | Human 2 : as an ai , i don't volunteer for events , but i can certainly help you understand the general roles and tasks that volunteers like
+	Free: Pattern=volunteers, Pattern=volunteer for, Pattern=you, Pattern=as, Pattern=events, Pattern=and, Pattern=like, Pattern=i can, Pattern=help, Pattern=the, Pattern=, i
+	Constrained: Pattern=volunteer, Pattern=i, Pattern=can, Pattern=for
+Turn ID=8| A | Human 1 : cool ! i will add you for the event . i think its best to start discussing the format of the event . there are a couple of other volunteers for badminton , i can connect you with them .
+	Free: Pattern=volunteers for, Pattern=you, Pattern=a, Pattern=for, Pattern=are, Pattern=will, Pattern=i, Pattern=event, Pattern=to, Pattern=i can, Pattern=of, Pattern=badminton ,, Pattern=the, Pattern=, i, Pattern=with, Pattern=of the
+	Constrained: Pattern=for, Pattern=can, Pattern=i, Pattern=the, Pattern=volunteers, Pattern=of
+Turn ID=9| B | Human 2 : certainly ! here are some common volunteer roles for sports tournament events organized by a company like google:
+	Free: Pattern=sports tournament, Pattern=a, Pattern=volunteer, Pattern=are, Pattern=some, Pattern=like, Pattern=organized by, Pattern=for, Pattern=events
+	Constrained: 
+Turn ID=10| A | Human 1 : its next saturday . actually depending on how long we get the place reserved , it may slip to sunday as well .
+	Free: Pattern=to, Pattern=the, Pattern=may, Pattern=as
+	Constrained: 
+Turn ID=11| B | Human 2 : volunteers can have the following key roles and responsibilities for saturday's event:
+	Free: Pattern=volunteers, Pattern=have, Pattern=for, Pattern=and, Pattern=can, Pattern=the
+	Constrained: 
+Turn ID=12| A | Human 1 : true ! the volunteers have already sent out some emails and collected some funds . now , we mainly need help with the logistics and organizing the event .
+	Free: Pattern=organizing, Pattern=have, Pattern=and, Pattern=some, Pattern=need, Pattern=event, Pattern=the, Pattern=help with the, Pattern=volunteers, Pattern=logistics
+	Constrained: Pattern=help, Pattern=with, Pattern=help with, Pattern=the
+Turn ID=13| B | Human 2 : 1 . **event coordination and logistics planning**: volunteers for event coordination will help with the organizing of the details
+	Free: Pattern=volunteers for, Pattern=organizing, Pattern=and, Pattern=will, Pattern=event, Pattern=help with the, Pattern=of the, Pattern=details, Pattern=logistics
+	Constrained: Pattern=the, Pattern=volunteers, Pattern=of, Pattern=help with, Pattern=for, Pattern=help, Pattern=with
+Turn ID=14| A | Human 1 : perfect ! we have a meeting today at 4 . 30 pm . is it fine if i add you to it ?
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=i, Pattern=meeting today, Pattern=to
+	Constrained: 
+Turn ID=15| B | Human 2 : certainly ! here are the details for volunteers you may need to attend and help with event coordination and logistics planning . the meeting today
+	Free: Pattern=you, Pattern=and, Pattern=are, Pattern=need, Pattern=event, Pattern=meeting today, Pattern=to, Pattern=volunteers, Pattern=details, Pattern=logistics, Pattern=help with, Pattern=for, Pattern=the, Pattern=may
+	Constrained: Pattern=help, Pattern=with
+Turn ID=16| A | Human 1 : thanks .
+	Free: 
+	Constrained: 

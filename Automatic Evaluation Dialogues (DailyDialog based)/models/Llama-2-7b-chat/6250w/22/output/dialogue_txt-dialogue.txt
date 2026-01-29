@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: _doing_ _great_ _! what are you looking forward to_ ? 
+B|3| Human 2: [great] question [! what are you looking forward to] [doing] this weekend ? 
+A|4| Human 1: _yay !_ _turkey_ _and_ _shopping !_ 
+B|5| Human 2: [yay] [shopping !] 💖 [you] [are] _so_ [great] at [looking forward] [and] finding fun things [to] _do_ [! what] else _can_ _i_ help [you] 
+A|6| Human 1: _yea_ me too . [i] _sometimes_ eat _noodle soups_ in _thanksgiving_ instead _haha_ 
+B|7| Human 2: [haha] [noodle soups] 🥘 [yay [!] what are you looking forward to] [doing] 
+A|8| Human 1: me neither . someone told me _that_ it depends on _the_ _stuffing_ inside _the turkey_ . _some_ _people make_ very _good_ _stuffing_ 
+B|9| Human 2: no [stuffing] 😔 [what are] [some] [good] [thanksgiving] recipes [that] [you] [haha] [people make] ? <|im_end| 
+A|10| Human 1: _yea_ . _what do you_ plan [to] _buy_ ? 
+B|11| Human 2: [the] 🐐 [turkey] [stuffing] [and] [some] yummy pies [! [what] do you] [buy] during [thanksgiving] [shopping] [haha] ? < 
+A|12| Human 1: ah cool . [so] [you] [can] _run more frequently_ ? :) 
+B|13| Human 2: [yea] [sometimes] [the turkey] [can] [make] [you] [run more frequently] 😂 [what are] [some] [good] [thanksgiving] traditions [that] [people] [haha] 
+A|14| Human 1: [yay] , all [the] best with keeping calories in check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=! what are you looking forward to, Pattern=great, Pattern=doing
+	Constrained: Pattern=you, Pattern=looking forward, Pattern=are, Pattern=! what, Pattern=are you, Pattern=what are, Pattern=to
+Turn ID=3| B | Human 2 : great question ! what are you looking forward to doing this weekend ?
+	Free: Pattern=! what are you looking forward to, Pattern=great, Pattern=doing
+	Constrained: Pattern=you, Pattern=looking forward, Pattern=are, Pattern=! what, Pattern=are you, Pattern=what are, Pattern=to
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=shopping !, Pattern=yay !, Pattern=turkey, Pattern=and
+	Constrained: Pattern=shopping, Pattern=yay
+Turn ID=5| B | Human 2 : yay shopping ! 💖 you are so great at looking forward and finding fun things to do ! what else can i help you
+	Free: Pattern=do, Pattern=looking forward, Pattern=and, Pattern=can, Pattern=! what, Pattern=to, Pattern=so, Pattern=you, Pattern=great, Pattern=are, Pattern=yay, Pattern=shopping !, Pattern=i
+	Constrained: Pattern=shopping
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=yea, Pattern=thanksgiving, Pattern=i, Pattern=haha, Pattern=noodle soups, Pattern=sometimes
+	Constrained: 
+Turn ID=7| B | Human 2 : haha noodle soups 🥘 yay ! what are you looking forward to doing
+	Free: Pattern=! what are you looking forward to, Pattern=doing, Pattern=haha, Pattern=noodle soups, Pattern=yay !
+	Constrained: Pattern=you, Pattern=looking forward, Pattern=! what, Pattern=are you, Pattern=what are, Pattern=to, Pattern=are, Pattern=yay
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=good, Pattern=people make, Pattern=stuffing, Pattern=some, Pattern=the, Pattern=the turkey, Pattern=that
+	Constrained: Pattern=the, Pattern=people, Pattern=make, Pattern=turkey
+Turn ID=9| B | Human 2 : no stuffing 😔 what are some good thanksgiving recipes that you haha people make ? <|im_end|
+	Free: Pattern=good, Pattern=people make, Pattern=you, Pattern=stuffing, Pattern=thanksgiving, Pattern=some, Pattern=that, Pattern=haha, Pattern=what are
+	Constrained: Pattern=people, Pattern=make, Pattern=are
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=what do you, Pattern=to, Pattern=yea, Pattern=buy
+	Constrained: Pattern=do, Pattern=you
+Turn ID=11| B | Human 2 : the 🐐 turkey stuffing and some yummy pies ! what do you buy during thanksgiving shopping haha ? <
+	Free: Pattern=buy, Pattern=some, Pattern=what do you, Pattern=! what, Pattern=haha, Pattern=the, Pattern=shopping, Pattern=and, Pattern=stuffing, Pattern=thanksgiving, Pattern=turkey
+	Constrained: Pattern=do, Pattern=you
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=run more frequently, Pattern=so, Pattern=can, Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : yea sometimes the turkey can make you run more frequently 😂 what are some good thanksgiving traditions that people haha
+	Free: Pattern=good, Pattern=you, Pattern=people, Pattern=run more frequently, Pattern=yea, Pattern=can, Pattern=thanksgiving, Pattern=some, Pattern=make, Pattern=the turkey, Pattern=that, Pattern=sometimes, Pattern=haha, Pattern=what are
+	Constrained: Pattern=are, Pattern=turkey, Pattern=the
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=yay, Pattern=the
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ _good ! just_ went _to_ _the_ park _to_ enjoy _the_ sun . _you ?_ 
+B|3| Human 2: [it's] going [good ! just] got back from a meeting with [the] team . how about [you ?] _what_ _have_ [you] been up [to] ? <| 
+A|4| Human 1: _haha ,_ _beach_ season is coming ! _you need_ [to] look _tan_ ! [what] did [you] do _indoors all day ?_ 
+B|5| Human 2: [haha ,] you're right ! 😅 [indoors all day ?] [you] know me , _the same_ old meetings _and_ _work_ 
+A|6| Human 1: _hahahaha_ , _that's_ _pretty_ _funny_ . ever thought _of_ bringing [your] [work] things [to] [the] _beach_ ?? 
+B|7| Human 2: you're [the] [funny] one 😂 [what] [beach] [you need] [tan] from ? hahaahh 
+A|8| Human 1: hmm i see . it _sounds like_ [you] [work] near [the] _water_ already , no ? _are_ [you] _some kind of_ _fish researcher_ ? 
+B|9| Human 2: 🤔 you're [pretty] [good] _at_ _that_ [fish researcher] joke hahaha . [just] [some] [beach] workouts _and_ fun in [the] 
+A|10| Human 1: _woah_ ! this is _very interesting_ ! i [have] honestly never heard _of_ such _kind of_ [work] . is it _dangerous_ [at] [all] ? 
+B|11| Human 2: hahaah [very] [dangerous] 😂 you're [funny] ! [woah] _that_ [sounds like] [some kind of] [water] sports or [beach] workout 
+A|12| Human 1: _hmmm_ , _yes_ i [have] heard [that] . apparently most _mountain climbers_ fall _not_ on [the] most [dangerous] routes , _but_ on [the] easier routes , when their guard is down ! [sounds like] [the same] psychological phenomenon . 
+B|13| Human 2: [hmmm] [that's] [very interesting] 😮 [but] [dangerous] [work] [like] [mountain climbers] [you] say ? [sounds] [not] [good] [hahahaha] 
+A|14| Human 1: _i'm_ [pretty] amateur ! i [like] [to] climb [at] _indoor climbing gyms_ [and] [have] never gone outside on [dangerous] routes _actually_ . ever tried it yourself ? 
+B|15| Human 2: [i'm] [actually] [pretty] scared [of] heights 😅 [but] [yes] [indoor climbing gyms] [are] a great way [to] start 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=good ! just, Pattern=you ?, Pattern=the, Pattern=to, Pattern=it's
+	Constrained: Pattern=good, Pattern=just, Pattern=you
+Turn ID=3| B | Human 2 : it's going good ! just got back from a meeting with the team . how about you ? what have you been up to ? <|
+	Free: Pattern=good ! just, Pattern=you, Pattern=have, Pattern=what, Pattern=you ?, Pattern=the, Pattern=to, Pattern=it's
+	Constrained: Pattern=good, Pattern=just, Pattern=you
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=what, Pattern=tan, Pattern=beach, Pattern=haha ,, Pattern=to, Pattern=you need, Pattern=you, Pattern=indoors all day ?
+	Constrained: Pattern=all, Pattern=you, Pattern=day
+Turn ID=5| B | Human 2 : haha , you're right ! 😅 indoors all day ? you know me , the same old meetings and work
+	Free: Pattern=and, Pattern=work, Pattern=haha ,, Pattern=the same, Pattern=you, Pattern=indoors all day ?
+	Constrained: Pattern=all, Pattern=day, Pattern=the
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=of, Pattern=beach, Pattern=work, Pattern=your, Pattern=pretty, Pattern=to, Pattern=that's, Pattern=the, Pattern=funny, Pattern=hahahaha
+	Constrained: 
+Turn ID=7| B | Human 2 : you're the funny one 😂 what beach you need tan from ? hahaahh
+	Free: Pattern=what, Pattern=tan, Pattern=beach, Pattern=the, Pattern=funny, Pattern=you need
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=you, Pattern=some kind of, Pattern=sounds like, Pattern=are, Pattern=work, Pattern=water, Pattern=the, Pattern=fish researcher
+	Constrained: Pattern=of, Pattern=kind of, Pattern=some, Pattern=sounds, Pattern=like
+Turn ID=9| B | Human 2 : 🤔 you're pretty good at that fish researcher joke hahaha . just some beach workouts and fun in the
+	Free: Pattern=good, Pattern=just, Pattern=beach, Pattern=and, Pattern=at, Pattern=some, Pattern=pretty, Pattern=the, Pattern=that, Pattern=fish researcher
+	Constrained: 
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=kind of, Pattern=work, Pattern=all, Pattern=very interesting, Pattern=of, Pattern=have, Pattern=woah, Pattern=dangerous, Pattern=at
+	Constrained: Pattern=very, Pattern=of
+Turn ID=11| B | Human 2 : hahaah very dangerous 😂 you're funny ! woah that sounds like some kind of water sports or beach workout
+	Free: Pattern=beach, Pattern=sounds like, Pattern=dangerous, Pattern=very, Pattern=water, Pattern=that, Pattern=funny, Pattern=some kind of, Pattern=woah
+	Constrained: Pattern=of, Pattern=kind of, Pattern=some, Pattern=sounds, Pattern=like
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=yes, Pattern=have, Pattern=sounds like, Pattern=dangerous, Pattern=hmmm, Pattern=mountain climbers, Pattern=the, Pattern=the same, Pattern=not, Pattern=that, Pattern=but
+	Constrained: Pattern=sounds, Pattern=like, Pattern=the
+Turn ID=13| B | Human 2 : hmmm that's very interesting 😮 but dangerous work like mountain climbers you say ? sounds not good hahahaha
+	Free: Pattern=good, Pattern=very interesting, Pattern=you, Pattern=dangerous, Pattern=hmmm, Pattern=work, Pattern=mountain climbers, Pattern=that's, Pattern=but, Pattern=hahahaha, Pattern=not, Pattern=sounds, Pattern=like
+	Constrained: Pattern=very
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=indoor climbing gyms, Pattern=have, Pattern=actually, Pattern=and, Pattern=i'm, Pattern=like, Pattern=pretty, Pattern=to, Pattern=dangerous, Pattern=at
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm actually pretty scared of heights 😅 but yes indoor climbing gyms are a great way to start
+	Free: Pattern=of, Pattern=actually, Pattern=are, Pattern=i'm, Pattern=pretty, Pattern=to, Pattern=but, Pattern=indoor climbing gyms, Pattern=yes
+	Constrained: 

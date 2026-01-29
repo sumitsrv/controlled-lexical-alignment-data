@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm_ _doing_ great _. what are you_ up to ? 
+B|3| Human 2: [i'm] just [doing] some work [. what] brings [you] here today ? 
+A|4| Human 1: oh , [i'm] enjoying a sip _of_ _coffee_ , looking _over_ _the_ ocean [. what] _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm] [reading] _the book_ 1984 _by_ george orwell [. what are you] [doing] later ? 
+A|6| Human 1: _that_ seems _like_ a _good book_ . _does_ it _have_ _good_ _tips_ on [how] to _sleep better_ ? 
+B|7| Human 2: [i'm] just an ai , _i_ don't [have] [sleep better] [tips] [like] [you] [does] _, but_ _i_ can provide [good] [over] [coffee] conversations 
+A|8| Human 1: _i read lots of papers_ [, but] _do_ poorly on books 😞 a recent [book] _that_ [i] [like] is zero to one [by] _peter thiel_ 
+B|9| Human 2: that's [good book] [, but] [i read lots of papers] [like] [tips] [how] [you] [do] [sleep better] [over] [coffee] 
+A|10| Human 1: _it's_ _about_ _startups_ , [lots of] useful principles _and_ philosophies _for innovation_ , [like] _being_ a _contrarian_ 
+B|11| Human 2: [being] [contrarian] [like] [peter thiel] [it's] [good] [for innovation] [and] [startups] [but] [what] [about] [sleep better] [tips] [that] [book] [does] not [have] ? 
+A|12| Human 1: [i] might in [the] future . [the] _philosophy_ in [the book] _also help for other things_ as well , e . g ., in _research_ , [you] might _also_ want to be [contrarian] 
+B|13| Human 2: [contrarian] [philosophy] [also help for other things] [like] [research] [and] [innovation] [but] [the book] [does] not [have] [tips] [about] [how] [you] [sleep] better<|im_ 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=how, Pattern=hi
+	Constrained: Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=. what are you, Pattern=i'm, Pattern=doing
+	Constrained: Pattern=what, Pattern=you, Pattern=are you, Pattern=. what
+Turn ID=3| B | Human 2 : i'm just doing some work . what brings you here today ?
+	Free: Pattern=. what, Pattern=you, Pattern=i'm, Pattern=doing
+	Constrained: Pattern=what
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=book, Pattern=coffee, Pattern=reading, Pattern=over, Pattern=i'm, Pattern=are you, Pattern=the, Pattern=. what
+	Constrained: Pattern=what, Pattern=you
+Turn ID=5| B | Human 2 : i'm reading the book 1984 by george orwell . what are you doing later ?
+	Free: Pattern=the book, Pattern=. what are you, Pattern=doing, Pattern=reading, Pattern=i'm, Pattern=by
+	Constrained: Pattern=you, Pattern=what, Pattern=book, Pattern=are you, Pattern=the, Pattern=. what
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=good, Pattern=have, Pattern=how, Pattern=does, Pattern=like, Pattern=that, Pattern=tips, Pattern=sleep better, Pattern=good book
+	Constrained: Pattern=good, Pattern=sleep, Pattern=book
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have sleep better tips like you does , but i can provide good over coffee conversations
+	Free: Pattern=good, Pattern=have, Pattern=coffee, Pattern=does, Pattern=over, Pattern=i'm, Pattern=i, Pattern=like, Pattern=sleep better, Pattern=tips, Pattern=you, Pattern=, but
+	Constrained: Pattern=but, Pattern=sleep
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=, but, Pattern=i read lots of papers, Pattern=i, Pattern=like, Pattern=by, Pattern=that, Pattern=peter thiel, Pattern=do, Pattern=book
+	Constrained: Pattern=but, Pattern=lots of, Pattern=i, Pattern=of
+Turn ID=9| B | Human 2 : that's good book , but i read lots of papers like tips how you do sleep better over coffee
+	Free: Pattern=do, Pattern=how, Pattern=coffee, Pattern=i read lots of papers, Pattern=over, Pattern=like, Pattern=tips, Pattern=you, Pattern=, but, Pattern=sleep better, Pattern=good book
+	Constrained: Pattern=good, Pattern=book, Pattern=but, Pattern=sleep, Pattern=of, Pattern=lots of, Pattern=i
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=for innovation, Pattern=and, Pattern=being, Pattern=about, Pattern=startups, Pattern=lots of, Pattern=it's, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=of, Pattern=innovation
+Turn ID=11| B | Human 2 : being contrarian like peter thiel it's good for innovation and startups but what about sleep better tips that book does not have ?
+	Free: Pattern=good, Pattern=have, Pattern=book, Pattern=and, Pattern=being, Pattern=about, Pattern=does, Pattern=startups, Pattern=sleep better, Pattern=tips, Pattern=peter thiel, Pattern=for innovation, Pattern=what, Pattern=contrarian, Pattern=like, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=sleep, Pattern=innovation
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=the book, Pattern=you, Pattern=research, Pattern=philosophy, Pattern=also help for other things, Pattern=i, Pattern=the, Pattern=also, Pattern=contrarian
+	Constrained: Pattern=book, Pattern=also, Pattern=the
+Turn ID=13| B | Human 2 : contrarian philosophy also help for other things like research and innovation but the book does not have tips about how you sleep better<|im_
+	Free: Pattern=sleep, Pattern=the book, Pattern=you, Pattern=have, Pattern=research, Pattern=how, Pattern=about, Pattern=does, Pattern=but, Pattern=tips, Pattern=innovation, Pattern=philosophy, Pattern=and, Pattern=also help for other things, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=book, Pattern=also, Pattern=the
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

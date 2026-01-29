@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i saw_ "the parasite . " ever _heard_ _of_ _it_ ? 
+B|3| Human 2: i'm glad _you_ liked [it] ! it's _a_ _great_ movie . [i saw] [it] _a_ few weeks ago _and_ thought _it was_ very thought-prov 
+A|4| Human 1: _my_ friend wanted to _see_ _it ._ [it] has [great] reviews on imdb [and] rotten tomatoes ! what _did you_ do _last weekend_ ? 
+B|5| Human 2: [last weekend] _was_ [great] , thanks for asking ! [i] 
+A|6| Human 1: oooo _the_ mandalorian ?!?! 
+B|7| Human 2: yeah , it's _really_ _good_ ! [i] love [the] way they incorporated star wars into [it .] [did you] [see] any _other_ _good_ shows or _movies_ 
+A|8| Human 1: lol _are_ [you] [a] big _marvel_ fan ? 
+B|9| Human 2: [marvel] _is_ definitely one [of] [my] favorites , but [i] also enjoy watching _other_ genres . have [you] _seen_ any _good_ shows lately ? <|im 
+A|10| Human 1: _i've_ only [seen] spiderman . honestly [it was] [a] little too scary [and] so [i] _don't_ think _i can_ bring myself to watch [the] [other] _marvel movies_ ! _haha_ 
+B|11| Human 2: [haha] , that's totally understandable ! [i can] definitely [see] how some [of] [the] [marvel movies] could _be_ intense . but hey , 
+A|12| Human 1: oh [really] ? to [be] honest [i] think [the] _actor_ [is] not _that_ [good] looking , so not so surprising ! [haha] 
+B|13| Human 2: [haha] , i'm sure you're right ! there [are] definitely some [actor] [that] [don't] fit [the] traditional "hot" standard , but 
+A|14| Human 1: who [is] loki ? _i've never heard that name before_ 
+B|15| Human 2: [i've never heard that name before] . [can] [you] tell me more about him ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=movies, Pattern=seen, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=it, Pattern=i saw, Pattern=last weekend, Pattern=of, Pattern=heard
+	Constrained: Pattern=i
+Turn ID=3| B | Human 2 : i'm glad you liked it ! it's a great movie . i saw it a few weeks ago and thought it was very thought-prov
+	Free: Pattern=it was, Pattern=a, Pattern=i saw, Pattern=you, Pattern=great, Pattern=it, Pattern=and
+	Constrained: Pattern=was, Pattern=i, Pattern=it
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=did you, Pattern=see, Pattern=last weekend, Pattern=my, Pattern=great, Pattern=it ., Pattern=it, Pattern=and
+	Constrained: Pattern=it, Pattern=you
+Turn ID=5| B | Human 2 : last weekend was great , thanks for asking ! i
+	Free: Pattern=last weekend, Pattern=great, Pattern=was, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the
+	Constrained: 
+Turn ID=7| B | Human 2 : yeah , it's really good ! i love the way they incorporated star wars into it . did you see any other good shows or movies
+	Free: Pattern=good, Pattern=it ., Pattern=did you, Pattern=other, Pattern=i, Pattern=really, Pattern=the, Pattern=see, Pattern=movies
+	Constrained: Pattern=it, Pattern=you
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=are, Pattern=marvel, Pattern=you, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : marvel is definitely one of my favorites , but i also enjoy watching other genres . have you seen any good shows lately ? <|im
+	Free: Pattern=good, Pattern=of, Pattern=you, Pattern=other, Pattern=marvel, Pattern=is, Pattern=i, Pattern=seen, Pattern=my
+	Constrained: 
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=it was, Pattern=a, Pattern=and, Pattern=i've, Pattern=other, Pattern=i, Pattern=haha, Pattern=the, Pattern=don't, Pattern=i can, Pattern=seen, Pattern=marvel movies
+	Constrained: Pattern=it, Pattern=can, Pattern=marvel, Pattern=i, Pattern=was, Pattern=movies
+Turn ID=11| B | Human 2 : haha , that's totally understandable ! i can definitely see how some of the marvel movies could be intense . but hey ,
+	Free: Pattern=of, Pattern=haha, Pattern=be, Pattern=the, Pattern=see, Pattern=i can, Pattern=marvel movies
+	Constrained: Pattern=movies, Pattern=i, Pattern=marvel, Pattern=can
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=good, Pattern=be, Pattern=the, Pattern=that, Pattern=actor, Pattern=is, Pattern=i, Pattern=haha, Pattern=really
+	Constrained: 
+Turn ID=13| B | Human 2 : haha , i'm sure you're right ! there are definitely some actor that don't fit the traditional "hot" standard , but
+	Free: Pattern=are, Pattern=haha, Pattern=the, Pattern=don't, Pattern=that, Pattern=actor
+	Constrained: 
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=i've never heard that name before, Pattern=is
+	Constrained: Pattern=heard, Pattern=i've, Pattern=that
+Turn ID=15| B | Human 2 : i've never heard that name before . can you tell me more about him ?
+	Free: Pattern=i've never heard that name before, Pattern=can, Pattern=you
+	Constrained: Pattern=heard, Pattern=i've, Pattern=that

@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm_ _doing_ _great_ . what [are you] up _to_ ? 
+B|3| Human 2: [i'm] just [doing] some work _, you_ know _how_ _it_ _is_ . _how_ can _i_ _help_ [you] today ? 
+A|4| Human 1: oh , [i'm] enjoying _a_ sip _of coffee_ , _looking_ over _the_ ocean . what _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm] [reading] [a] [book] _on_ [the] history [of coffee] . _it's_ really interesting . _i_ never knew there was so much [to] _it_ . < 
+A|6| Human 1: _that_ seems like [a] _good_ [book] . does [it] _have_ _good_ _tips _on how_ _to_ sleep_ better ? 
+B|7| Human 2: [i'm] just an ai , _i_ don't [have] personal preferences or [the] ability [to sleep] _, but_ _i_ can certainly provide [tips on how] 
+A|8| Human 1: [i] _read_ lots [of] papers [, but] do poorly [on] _books_ 😞 [a] recent [book] _that_ [i] like [is] zero [to] one by _peter thiel_ 
+B|9| Human 2: that's [a] [great] [book] ! [peter thiel] has [a] lot [of] [good] insights [on how to] create value _in the_ world . [have] [you] [read] 
+A|10| Human 1: _it's about_ startups , lots [of] useful principles _and_ philosophies _for_ innovation , like _being_ [a] _contrarian_ 
+B|11| Human 2: [contrarian] [good] word [for] [that] . [it's about] [being] innovative [and] [looking] at [the] world from different perspectives<|im_end 
+A|12| Human 1: [i] _might_ [in the] future . [the] philosophy [in the] [book] _also_ [help] [for] _other_ things as well , e . g ., [in] _research_ [, _you] might_ _also_ _want to_ be [contrarian] 
+B|13| Human 2: [contrarian] [it's] [also] [about] [being] open-minded [and] considering different perspectives [for] [the] [research] [you might] [want to] [read] [other] [books] [that] 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=how, Pattern=hi
+	Constrained: Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=great, Pattern=doing, Pattern=i'm, Pattern=are you, Pattern=to
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : i'm just doing some work , you know how it is . how can i help you today ?
+	Free: Pattern=you, Pattern=it, Pattern=help, Pattern=how, Pattern=doing, Pattern=i'm, Pattern=, you, Pattern=is, Pattern=i
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of coffee, Pattern=looking, Pattern=reading, Pattern=i'm, Pattern=are you, Pattern=the, Pattern=a, Pattern=book
+	Constrained: Pattern=you, Pattern=of
+Turn ID=5| B | Human 2 : i'm reading a book on the history of coffee . it's really interesting . i never knew there was so much to it . <
+	Free: Pattern=of coffee, Pattern=it, Pattern=reading, Pattern=i'm, Pattern=i, Pattern=to, Pattern=it's, Pattern=a, Pattern=book, Pattern=on, Pattern=the
+	Constrained: Pattern=of
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=have, Pattern=it, Pattern=to sleep, Pattern=that, Pattern=tips on how, Pattern=good, Pattern=on how to, Pattern=a, Pattern=book
+	Constrained: Pattern=to, Pattern=on, Pattern=how
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or the ability to sleep , but i can certainly provide tips on how
+	Free: Pattern=, but, Pattern=have, Pattern=i'm, Pattern=i, Pattern=tips on how, Pattern=to sleep, Pattern=the
+	Constrained: Pattern=to, Pattern=on, Pattern=how
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=of, Pattern=, but, Pattern=on, Pattern=books, Pattern=to, Pattern=read, Pattern=that, Pattern=peter thiel, Pattern=a, Pattern=book, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : that's a great book ! peter thiel has a lot of good insights on how to create value in the world . have you read
+	Free: Pattern=of, Pattern=have, Pattern=in the, Pattern=read, Pattern=peter thiel, Pattern=good, Pattern=on how to, Pattern=you, Pattern=great, Pattern=a, Pattern=book
+	Constrained: Pattern=how, Pattern=in, Pattern=to, Pattern=on, Pattern=the
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=of, Pattern=it's about, Pattern=a, Pattern=for, Pattern=and, Pattern=being, Pattern=contrarian
+	Constrained: Pattern=it's, Pattern=about
+Turn ID=11| B | Human 2 : contrarian good word for that . it's about being innovative and looking at the world from different perspectives<|im_end
+	Free: Pattern=good, Pattern=it's about, Pattern=and, Pattern=being, Pattern=contrarian, Pattern=the, Pattern=that, Pattern=for, Pattern=looking
+	Constrained: Pattern=it's, Pattern=about
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=research, Pattern=book, Pattern=for, Pattern=in the, Pattern=want to, Pattern=in, Pattern=, you, Pattern=i, Pattern=the, Pattern=might, Pattern=help, Pattern=other, Pattern=you might, Pattern=also, Pattern=contrarian
+	Constrained: Pattern=you, Pattern=in, Pattern=the, Pattern=to, Pattern=might
+Turn ID=13| B | Human 2 : contrarian it's also about being open-minded and considering different perspectives for the research you might want to read other books that
+	Free: Pattern=research, Pattern=for, Pattern=and, Pattern=the, Pattern=books, Pattern=read, Pattern=other, Pattern=being, Pattern=you might, Pattern=about, Pattern=want to, Pattern=also, Pattern=contrarian, Pattern=that, Pattern=it's
+	Constrained: Pattern=to, Pattern=you, Pattern=might
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

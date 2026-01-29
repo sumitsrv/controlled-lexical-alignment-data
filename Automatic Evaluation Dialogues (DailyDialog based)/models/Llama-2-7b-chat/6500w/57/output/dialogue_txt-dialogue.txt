@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , _it_ _is_ flying by quicker than _i_ expected . how _is_ [your day going] _on_ ? 
+B|3| Human 2: i'm _just_ an ai _, i_ _don't_ have [day going] . but i'm here _to_ assist _you_ _with_ any tasks or questions 
+A|4| Human 1: oh [, i] _would_ love [to] twiddle my thumbs . _you're_ so lucky ! today , _i've been_ mostly _attending meetings_ , _reading_ _and_ _writing_ _docs_ , _reading_ _papers _etc_ ._ 
+B|5| Human 2: i'm glad [your day] [is] productive 😊 _would you_ like [to] andy [papers] or [docs] _you_ _can_ also ask _me_ [to] summar 
+A|6| Human 1: _wow_ ! [i] _sometimes_ _drift off during_ _work_ , _and_ _see_ similar things in my head . 
+B|7| Human 2: [i] [see] 😅 [work] _can_ [sometimes] _be_ _a_ grind [and] _it's_ easy [to] [drift off during] [meetings] [etc .] but [it] 
+A|8| Human 1: mostly _saving _the world_ from mess on social_ media . how about [you] ? 
+B|9| Human 2: 😅 i'm _just_ [and] ai , but [you] [see] [i've been] [attending meetings] [reading] [writing] [etc] [saving the world] 
+A|10| Human 1: _nice_ , what all _places_ [would you] [be] [going] [to] ? 
+B|11| Human 2: [i've been] [going] [places] [you] wouldnt [wow] [nice] [work] andy [papers etc] [the world from mess on social] media<|im_end 
+A|12| Human 1: [i] [just] met someone who _went_ _diving_ in _australia_ . apparently , [you] cannot _fly_ 24 hrs after [you] dive , _because_ [your] body accumulates _too much_ _<redacted_term>_ when breathing [with] [a] cylinder so , [don't] do _that_ ! 
+B|13| Human 2: 😅 _that's_ hilarious [and] [you] [<redacted_term>] [australia] [diving] [went] [too] [places] [i] 
+A|14| Human 1: [that's] equally _amazing_ ! [i] wish [i] [can] explore such [places] one [day] . [it's] [just] so _expensive_ 
+B|15| Human 2: [it] [can] [be] [expensive] yes , but [you] [don't] have [to] [fly] [places] [that] [much] [because] [the world] [just] [amazing] [with] whats h here [and] 
+A|16| Human 1: woah !... [you] know sharing [is] caring . [you] should _share_ [that] _money with_ [me] :) 
+B|17| Human 2: [you're] hilarious ! [<redacted_term>] [share] [money with] andy [it] [can] [just] accumulate [too much] 
+A|18| Human 1: [you] are [a] kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=day going, Pattern=going, Pattern=your day, Pattern=day, Pattern=your
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=it, Pattern=on, Pattern=your day going, Pattern=is, Pattern=i
+	Constrained: Pattern=day going, Pattern=going, Pattern=your day, Pattern=day, Pattern=your
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have day going . but i'm here to assist you with any tasks or questions
+	Free: Pattern=you, Pattern=just, Pattern=, i, Pattern=don't, Pattern=to, Pattern=day going, Pattern=with
+	Constrained: Pattern=day, Pattern=i, Pattern=going
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=etc ., Pattern=you're, Pattern=i've been, Pattern=and, Pattern=reading, Pattern=attending meetings, Pattern=papers etc, Pattern=, i, Pattern=would, Pattern=to, Pattern=writing, Pattern=docs
+	Constrained: Pattern=papers, Pattern=etc, Pattern=i, Pattern=meetings
+Turn ID=5| B | Human 2 : i'm glad your day is productive 😊 would you like to andy papers or docs you can also ask me to summar
+	Free: Pattern=you, Pattern=your day, Pattern=me, Pattern=can, Pattern=would you, Pattern=is, Pattern=docs, Pattern=papers, Pattern=to
+	Constrained: Pattern=day, Pattern=you, Pattern=would, Pattern=your
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=drift off during, Pattern=and, Pattern=wow, Pattern=work, Pattern=i, Pattern=see, Pattern=sometimes
+	Constrained: 
+Turn ID=7| B | Human 2 : i see 😅 work can sometimes be a grind and it's easy to drift off during meetings etc . but it
+	Free: Pattern=etc ., Pattern=drift off during, Pattern=a, Pattern=can, Pattern=work, Pattern=be, Pattern=see, Pattern=to, Pattern=it's, Pattern=sometimes, Pattern=it, Pattern=and, Pattern=meetings, Pattern=i
+	Constrained: Pattern=etc
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=the world from mess on social, Pattern=saving the world, Pattern=you
+	Constrained: Pattern=on, Pattern=the world
+Turn ID=9| B | Human 2 : 😅 i'm just and ai , but you see i've been attending meetings reading writing etc saving the world
+	Free: Pattern=i've been, Pattern=you, Pattern=just, Pattern=and, Pattern=etc, Pattern=saving the world, Pattern=reading, Pattern=attending meetings, Pattern=see, Pattern=writing
+	Constrained: Pattern=the world, Pattern=meetings
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=going, Pattern=places, Pattern=nice, Pattern=would you, Pattern=be, Pattern=to
+	Constrained: Pattern=you, Pattern=would
+Turn ID=11| B | Human 2 : i've been going places you wouldnt wow nice work andy papers etc the world from mess on social media<|im_end
+	Free: Pattern=i've been, Pattern=you, Pattern=going, Pattern=places, Pattern=the world from mess on social, Pattern=nice, Pattern=wow, Pattern=work, Pattern=papers etc
+	Constrained: Pattern=papers, Pattern=etc, Pattern=on, Pattern=the world
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=diving, Pattern=you, Pattern=just, Pattern=too much, Pattern=went, Pattern=australia, Pattern=don't, Pattern=a, Pattern=because, Pattern=<redacted_term>, Pattern=fly, Pattern=your, Pattern=i, Pattern=with, Pattern=that
+	Constrained: Pattern=much, Pattern=too
+Turn ID=13| B | Human 2 : 😅 that's hilarious and you <redacted_term> australia diving went too places i
+	Free: Pattern=diving, Pattern=you, Pattern=<redacted_term>, Pattern=i, Pattern=australia, Pattern=that's, Pattern=places, Pattern=went, Pattern=and, Pattern=too
+	Constrained: 
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=places, Pattern=can, Pattern=that's, Pattern=expensive, Pattern=it's, Pattern=amazing, Pattern=just, Pattern=day, Pattern=i
+	Constrained: 
+Turn ID=15| B | Human 2 : it can be expensive yes , but you don't have to fly places that much because the world just amazing with whats h here and
+	Free: Pattern=you, Pattern=places, Pattern=because, Pattern=the world, Pattern=much, Pattern=be, Pattern=to, Pattern=amazing, Pattern=just, Pattern=it, Pattern=and, Pattern=can, Pattern=fly, Pattern=expensive, Pattern=don't, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=you, Pattern=me, Pattern=is, Pattern=share, Pattern=money with, Pattern=that
+	Constrained: Pattern=with
+Turn ID=17| B | Human 2 : you're hilarious ! <redacted_term> share money with andy it can just accumulate too much
+	Free: Pattern=you're, Pattern=just, Pattern=too much, Pattern=it, Pattern=share, Pattern=money with, Pattern=<redacted_term>, Pattern=can
+	Constrained: Pattern=much, Pattern=too, Pattern=with
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=a, Pattern=you
+	Constrained: 

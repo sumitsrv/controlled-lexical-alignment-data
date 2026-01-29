@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm_ doing well . having many _meetings_ today 🙂 
+B|3| Human 2: [i'm] glad _to_ hear that ! [meetings] can _be_ quite exhausting , but at least they're productive . _what_ kind _of_ meet 
+A|4| Human 1: [what] are _you_ up [to] ? 
+B|5| Human 2: currently , [i'm] just chatting with [you] 😊 _. i'm a_ large language model ai trained [to] generate human- 
+A|6| Human 1: we're gonna play _board games and_ will [be] eating lots [of] _food_ ! [what] about [you] ? 
+B|7| Human 2: [board games and] [food] - that sounds _like_ fun ! [i'm] just an ai , so _i_ don't have personal experiences , but i' 
+A|8| Human 1: we've been doing [games] _of thrones_ lately . _the game_ takes [a] very _long_ time _to finish_ _though_ ! 
+B|9| Human 2: oh , cool ! [game] [of thrones] is [a] great series . how [long] does [the game] typically take [to finish] ? <|im_end| 
+A|10| Human 1: [i] do [. i'm a] super _fan of_ it (not _the last season though_ haha) _. did you watch_ ? 
+B|11| Human 2: not [the last season though] haha [. did you watch] [the] series ? 
+A|12| Human 1: [i] love survivor 🙂 
+B|13| Human 2: [i'm] also [a] [fan of] [the] walking dead 😁 
+A|14| Human 1: nice ! [i] mostly [like] comedy shows [like] [the] good place [and] modern _family_ 
+B|15| Human 2: really ? [i'm a] [fan of] [family] guy [and] [the] simpsons 😂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=meetings, Pattern=i'm
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm glad to hear that ! meetings can be quite exhausting , but at least they're productive . what kind of meet
+	Free: Pattern=of, Pattern=what, Pattern=i'm, Pattern=meetings, Pattern=be, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=you, Pattern=what, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : currently , i'm just chatting with you 😊 . i'm a large language model ai trained to generate human-
+	Free: Pattern=. i'm a, Pattern=i'm, Pattern=you, Pattern=to
+	Constrained: Pattern=i'm a, Pattern=a, Pattern=i'm
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=board games and, Pattern=food, Pattern=be
+	Constrained: Pattern=games, Pattern=and
+Turn ID=7| B | Human 2 : board games and food - that sounds like fun ! i'm just an ai , so i don't have personal experiences , but i'
+	Free: Pattern=board games and, Pattern=i'm, Pattern=i, Pattern=food, Pattern=like
+	Constrained: Pattern=games, Pattern=and
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=games, Pattern=long, Pattern=though, Pattern=a, Pattern=of thrones, Pattern=the game, Pattern=to finish
+	Constrained: Pattern=to, Pattern=game, Pattern=of, Pattern=the
+Turn ID=9| B | Human 2 : oh , cool ! game of thrones is a great series . how long does the game typically take to finish ? <|im_end|
+	Free: Pattern=long, Pattern=a, Pattern=game, Pattern=of thrones, Pattern=the game, Pattern=to finish
+	Constrained: Pattern=to, Pattern=game, Pattern=of, Pattern=the
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=. i'm a, Pattern=. did you watch, Pattern=i, Pattern=the last season though, Pattern=fan of
+	Constrained: Pattern=of, Pattern=you, Pattern=though, Pattern=a, Pattern=i'm, Pattern=the, Pattern=i'm a
+Turn ID=11| B | Human 2 : not the last season though haha . did you watch the series ?
+	Free: Pattern=. did you watch, Pattern=the last season though, Pattern=the
+	Constrained: Pattern=though, Pattern=you, Pattern=the
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm also a fan of the walking dead 😁
+	Free: Pattern=fan of, Pattern=the, Pattern=a, Pattern=i'm
+	Constrained: Pattern=of
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=and, Pattern=family, Pattern=i, Pattern=like, Pattern=the
+	Constrained: 
+Turn ID=15| B | Human 2 : really ? i'm a fan of family guy and the simpsons 😂
+	Free: Pattern=and, Pattern=family, Pattern=the, Pattern=i'm a, Pattern=fan of
+	Constrained: Pattern=a, Pattern=of, Pattern=i'm

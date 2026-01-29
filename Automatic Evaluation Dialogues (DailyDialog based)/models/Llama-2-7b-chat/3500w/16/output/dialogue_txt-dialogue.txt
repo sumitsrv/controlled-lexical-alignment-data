@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: _can't_ complain , just enjoying _the_ day 
+A|4| Human 1: _i'm_ _going to _the_ bahamas_ . [can't] wait !!! 
+B|5| Human 2: wow , _that_ sounds amazing ! how _are you_ preparing for [the] trip ? 
+A|6| Human 1: oh where [are you] _now_ ? 
+B|7| Human 2: [you] [are] [now] [the bahamas] [going to the] beach and relaxing 
+A|8| Human 1: oh no . _i_ never seen this in person . _is_ it scary ? 
+B|9| Human 2: [i'm] scared [now] . _what are you_ [going to] do 
+A|10| Human 1: [that] _does_ _sound nice_ . so [what are you] doing these _holidays_ ? 
+B|11| Human 2: [you] [are] [going] [holidays] [now] [what] [does] [that] mean ? 
+A|12| Human 1: _nice_ _nice_ . _i'm gonna_ go _snorkeling_ yey 
+B|13| Human 2: [snorkeling] [is] [nice] [i'm gonna] try [that] too ! 
+A|14| Human 1: _you can stay_ on [the] shallow side _i think_ _. well hope you enjoy time _with_ your_ _extended _family_ !_ 
+B|15| Human 2: [extended family] [that] [sound nice] [i think] [you can stay] [with your] friends [. well hope you enjoy time with] yow [family !] <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : can't complain , just enjoying the day
+	Free: Pattern=can't, Pattern=the
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=going to the, Pattern=the bahamas, Pattern=can't, Pattern=i'm
+	Constrained: Pattern=going, Pattern=going to, Pattern=the
+Turn ID=5| B | Human 2 : wow , that sounds amazing ! how are you preparing for the trip ?
+	Free: Pattern=are you, Pattern=that, Pattern=the
+	Constrained: Pattern=are, Pattern=you
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you, Pattern=now
+	Constrained: Pattern=are, Pattern=you
+Turn ID=7| B | Human 2 : you are now the bahamas going to the beach and relaxing
+	Free: Pattern=the bahamas, Pattern=you, Pattern=going to the, Pattern=are, Pattern=now
+	Constrained: Pattern=going, Pattern=going to, Pattern=the
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=i, Pattern=is
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm scared now . what are you going to do
+	Free: Pattern=what are you, Pattern=going to, Pattern=now, Pattern=i'm
+	Constrained: Pattern=you, Pattern=going, Pattern=what, Pattern=are, Pattern=are you
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=holidays, Pattern=sound nice, Pattern=does, Pattern=what are you, Pattern=that
+	Constrained: Pattern=you, Pattern=what, Pattern=nice, Pattern=are, Pattern=are you
+Turn ID=11| B | Human 2 : you are going holidays now what does that mean ?
+	Free: Pattern=holidays, Pattern=you, Pattern=going, Pattern=what, Pattern=are, Pattern=does, Pattern=now, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=i'm gonna, Pattern=snorkeling, Pattern=nice
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : snorkeling is nice i'm gonna try that too !
+	Free: Pattern=i'm gonna, Pattern=nice, Pattern=is, Pattern=that, Pattern=snorkeling
+	Constrained: Pattern=i'm
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=you can stay, Pattern=extended family, Pattern=. well hope you enjoy time with, Pattern=the, Pattern=with your, Pattern=i think, Pattern=family !
+	Constrained: Pattern=i, Pattern=you
+Turn ID=15| B | Human 2 : extended family that sound nice i think you can stay with your friends . well hope you enjoy time with yow family ! <|im_end
+	Free: Pattern=you can stay, Pattern=extended family, Pattern=sound nice, Pattern=. well hope you enjoy time with, Pattern=with your, Pattern=that, Pattern=i think, Pattern=family !
+	Constrained: Pattern=nice, Pattern=i, Pattern=you

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _how_ _is_ _your_ day ? 
+A|2| Human 1: _it's good_ . _it's_ raining _a_ bit , but _i_ am _enjoying _a_ good_ _book _. how about_ you ?_ 
+B|3| Human 2: [it's good] _to_ hear _that_ you're [enjoying a] [book . how about] if [i] provide [you] with some personalized recommendations _based on_ _your_ 
+A|4| Human 1: _i'm reading the three body problem_ . _ever_ _heard_ _of_ _it_ ? 
+B|5| Human 2: [i'm reading the three body problem] too ! _it's a_ great [book .] have [you] [heard] [about] [the] sequel , [the] dark forest ? < 
+A|6| Human 1: [it's a] _sci-fi_ [book] [about] aliens _and_ [a] type _of_ virtual reality . pique [your] interest at all ? 
+B|7| Human 2: [i'm] glad [you] think _so_ ! [i] have [heard] [good] things [about] [the] [book] [and] [i'm] planning _to_ read [it] soon [. how about you ?] 
+A|8| Human 1: cool . _this_ virtual reality [is] [a] [based on] life [on] an _alien_ planet _. there_ [is] [a] _twist_ though . do [you] _want_ me [to] _spoil_ [it] _for [you_ ?] 
+B|9| Human 2: [i'm] glad [you] liked [the] [book] ! [it's] always great [to] find someone who shares [your] interests [. _there] are_ _so_ many [good] [sci-fi] 
+A|10| Human 1: [the] virtual reality [is] actually [based on] [a] real _alien civilization_ ! [and] [that] _civilization_ [is] coming [to] attack earth ! dun dun dun dunnnnnnn 
+B|11| Human 2: 😱 wtf ?! that's crazy ! [i] [want] [to] know more [about] [this] [alien civilization] [and] their motivations 
+A|12| Human 1: [there are] other _twists_ as well , [so] [i] haven't spoiled [the] whole thing ! [to] be honest [i] am not [a] fan _of_ spoilers 
+B|13| Human 2: 😅 [i'm] glad you're interested ! [the] [book] really has [a] lot [of] [twists] [and] turns [that] keep [the] reader guessing 
+A|14| Human 1: [the] audi [book] [is] _also_ very [good] ! _ever_ give those [a] _try_ ? 
+B|15| Human 2: [ever] [try] audiobooks ? [the] [book] [also] has [a good] [twist] [that] [i] won't [spoil] [for you] ! <|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how is your day ?
+	Free: Pattern=your, Pattern=how, Pattern=is
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good . it's raining a bit , but i am enjoying a good book . how about you ?
+	Free: Pattern=. how about you ?, Pattern=a, Pattern=a good, Pattern=book . how about, Pattern=i, Pattern=enjoying a, Pattern=it's good, Pattern=it's
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=you ?, Pattern=it's, Pattern=book ., Pattern=good, Pattern=a, Pattern=book
+Turn ID=3| B | Human 2 : it's good to hear that you're enjoying a book . how about if i provide you with some personalized recommendations based on your
+	Free: Pattern=you, Pattern=based on, Pattern=book . how about, Pattern=enjoying a, Pattern=that, Pattern=your, Pattern=i, Pattern=it's good, Pattern=to
+	Constrained: Pattern=how, Pattern=about, Pattern=on, Pattern=it's, Pattern=book ., Pattern=good, Pattern=a, Pattern=book
+Turn ID=4| A | Human 1 : i'm reading the three body problem . ever heard of it ?
+	Free: Pattern=i'm reading the three body problem, Pattern=it, Pattern=ever, Pattern=of, Pattern=heard
+	Constrained: Pattern=the, Pattern=i'm
+Turn ID=5| B | Human 2 : i'm reading the three body problem too ! it's a great book . have you heard about the sequel , the dark forest ? <
+	Free: Pattern=book ., Pattern=you, Pattern=i'm reading the three body problem, Pattern=about, Pattern=the, Pattern=heard, Pattern=it's a
+	Constrained: Pattern=i'm, Pattern=the, Pattern=it's, Pattern=a, Pattern=book
+Turn ID=6| A | Human 1 : it's a sci-fi book about aliens and a type of virtual reality . pique your interest at all ?
+	Free: Pattern=sci-fi, Pattern=and, Pattern=about, Pattern=your, Pattern=of, Pattern=it's a, Pattern=a, Pattern=book
+	Constrained: Pattern=a, Pattern=it's
+Turn ID=7| B | Human 2 : i'm glad you think so ! i have heard good things about the book and i'm planning to read it soon . how about you ?
+	Free: Pattern=good, Pattern=you, Pattern=book, Pattern=about, Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=so, Pattern=. how about you ?, Pattern=heard, Pattern=it, Pattern=and
+	Constrained: Pattern=you, Pattern=about, Pattern=you ?, Pattern=how
+Turn ID=8| A | Human 1 : cool . this virtual reality is a based on life on an alien planet . there is a twist though . do you want me to spoil it for you ?
+	Free: Pattern=you, Pattern=a, Pattern=alien, Pattern=it, Pattern=spoil, Pattern=for you, Pattern=is, Pattern=you ?, Pattern=on, Pattern=to, Pattern=this, Pattern=twist, Pattern=want, Pattern=based on, Pattern=. there
+	Constrained: Pattern=on, Pattern=you
+Turn ID=9| B | Human 2 : i'm glad you liked the book ! it's always great to find someone who shares your interests . there are so many good sci-fi
+	Free: Pattern=good, Pattern=there are, Pattern=book, Pattern=. there, Pattern=i'm, Pattern=your, Pattern=the, Pattern=to, Pattern=it's, Pattern=so, Pattern=you, Pattern=sci-fi
+	Constrained: 
+Turn ID=10| A | Human 1 : the virtual reality is actually based on a real alien civilization ! and that civilization is coming to attack earth ! dun dun dun dunnnnnnn
+	Free: Pattern=a, Pattern=and, Pattern=based on, Pattern=alien civilization, Pattern=is, Pattern=civilization, Pattern=the, Pattern=to, Pattern=that
+	Constrained: Pattern=civilization, Pattern=on, Pattern=alien
+Turn ID=11| B | Human 2 : 😱 wtf ?! that's crazy ! i want to know more about this alien civilization and their motivations
+	Free: Pattern=want, Pattern=and, Pattern=i, Pattern=to, Pattern=this, Pattern=about, Pattern=alien civilization
+	Constrained: Pattern=civilization, Pattern=alien
+Turn ID=12| A | Human 1 : there are other twists as well , so i haven't spoiled the whole thing ! to be honest i am not a fan of spoilers
+	Free: Pattern=of, Pattern=there are, Pattern=a, Pattern=i, Pattern=the, Pattern=to, Pattern=so, Pattern=twists
+	Constrained: 
+Turn ID=13| B | Human 2 : 😅 i'm glad you're interested ! the book really has a lot of twists and turns that keep the reader guessing
+	Free: Pattern=of, Pattern=and, Pattern=i'm, Pattern=the, Pattern=that, Pattern=twists, Pattern=a, Pattern=book
+	Constrained: 
+Turn ID=14| A | Human 1 : the audi book is also very good ! ever give those a try ?
+	Free: Pattern=good, Pattern=try, Pattern=is, Pattern=also, Pattern=ever, Pattern=the, Pattern=a, Pattern=book
+	Constrained: 
+Turn ID=15| B | Human 2 : ever try audiobooks ? the book also has a good twist that i won't spoil for you ! <|im_end|
+	Free: Pattern=twist, Pattern=book, Pattern=spoil, Pattern=for you, Pattern=i, Pattern=also, Pattern=ever, Pattern=the, Pattern=that, Pattern=a good, Pattern=try
+	Constrained: Pattern=good, Pattern=you, Pattern=a

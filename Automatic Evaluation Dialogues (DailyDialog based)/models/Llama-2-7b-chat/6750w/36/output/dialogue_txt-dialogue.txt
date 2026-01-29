@@ -1,0 +1,55 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] . this _is_ a pleasant surprise . 
+A|2| Human 1: haha ... _thanks_ ! _how_ _did _you_ like_ _the gift_ ? 
+B|3| Human 2: _i_ [did] not receive [the gift] . however , [how] can _i_ assist [you] today ? _is_ _there_ anything on your mind ? like|im_end| 
+A|4| Human 1: _hope_ _you _like_ it_ _! morning_ [is] _good_ . _busy_ _finishing_ up _stuff_ _before _the_ holidays_ . 
+B|5| Human 2: of course [! morning] [good] [holidays] [stuff] [you] [finishing] [before the] [busy] [how] [like] [gift] ! [did] [did you] receive<|im_end 
+A|6| Human 1: _yes_ 
+B|7| Human 2: [yes] . [thanks] [you like] [gift] [did] [morning] [good] [finishing] [the holidays] [stuff] [busy] [before] [you] 
+A|8| Human 1: _hawaii_ ... _looking forward_ to _warm_ _beaches_ . 
+B|9| Human 2: [hawaii] [beaches] [warm] [looking forward] [morning] [the holidays] [finishing] [stuff] [busy] [before] [you] [yes] [gift] [did] [like] thanks<|im_end 
+A|10| Human 1: _mauii_ ... _hope_ [i] _like it too_ . _never been_ _there before_ . 
+B|11| Human 2: [hope] [like it too] [there before] [never been] [mauii] [morning] [holidays] [finishing] [stuff] [busy] [before] [you] [yes] [gift] [did] [thanks] [good] [stuff] [warm] be 
+A|12| Human 1: awesome ! [thanks] for [the] tip . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi . this is a pleasant surprise .
+	Free: Pattern=hi, Pattern=is
+	Constrained: 
+Turn ID=2| A | Human 1 : haha ... thanks ! how did you like the gift ?
+	Free: Pattern=thanks, Pattern=the gift, Pattern=did you, Pattern=how, Pattern=you like
+	Constrained: Pattern=you, Pattern=did, Pattern=gift, Pattern=like, Pattern=the
+Turn ID=3| B | Human 2 : i did not receive the gift . however , how can i assist you today ? is there anything on your mind ? like|im_end|
+	Free: Pattern=the gift, Pattern=you, Pattern=there, Pattern=did, Pattern=how, Pattern=is, Pattern=i
+	Constrained: Pattern=gift, Pattern=the
+Turn ID=4| A | Human 1 : hope you like it ! morning is good . busy finishing up stuff before the holidays .
+	Free: Pattern=hope, Pattern=stuff, Pattern=the holidays, Pattern=busy, Pattern=! morning, Pattern=like it, Pattern=before the, Pattern=is, Pattern=you like, Pattern=finishing, Pattern=good
+	Constrained: Pattern=holidays, Pattern=you, Pattern=morning, Pattern=like, Pattern=the, Pattern=before
+Turn ID=5| B | Human 2 : of course ! morning good holidays stuff you finishing before the busy how like gift ! did did you receive<|im_end
+	Free: Pattern=holidays, Pattern=you, Pattern=did you, Pattern=stuff, Pattern=how, Pattern=! morning, Pattern=gift, Pattern=before the, Pattern=like, Pattern=finishing, Pattern=good, Pattern=did, Pattern=busy
+	Constrained: Pattern=you, Pattern=did, Pattern=morning, Pattern=the, Pattern=before
+Turn ID=6| A | Human 1 : yes
+	Free: Pattern=yes
+	Constrained: 
+Turn ID=7| B | Human 2 : yes . thanks you like gift did morning good finishing the holidays stuff busy before you
+	Free: Pattern=thanks, Pattern=stuff, Pattern=the holidays, Pattern=you like, Pattern=before, Pattern=finishing, Pattern=good, Pattern=you, Pattern=yes, Pattern=did, Pattern=busy, Pattern=gift, Pattern=morning
+	Constrained: Pattern=you, Pattern=like, Pattern=holidays, Pattern=the
+Turn ID=8| A | Human 1 : hawaii ... looking forward to warm beaches .
+	Free: Pattern=looking forward, Pattern=hawaii, Pattern=beaches, Pattern=warm
+	Constrained: 
+Turn ID=9| B | Human 2 : hawaii beaches warm looking forward morning the holidays finishing stuff busy before you yes gift did like thanks<|im_end
+	Free: Pattern=finishing, Pattern=stuff, Pattern=the holidays, Pattern=like, Pattern=beaches, Pattern=you, Pattern=yes, Pattern=did, Pattern=busy, Pattern=looking forward, Pattern=hawaii, Pattern=gift, Pattern=morning, Pattern=before, Pattern=warm
+	Constrained: Pattern=holidays, Pattern=the
+Turn ID=10| A | Human 1 : mauii ... hope i like it too . never been there before .
+	Free: Pattern=never been, Pattern=hope, Pattern=there before, Pattern=mauii, Pattern=like it too, Pattern=i
+	Constrained: Pattern=like it, Pattern=like, Pattern=before, Pattern=there
+Turn ID=11| B | Human 2 : hope like it too there before never been mauii morning holidays finishing stuff busy before you yes gift did thanks good stuff warm be
+	Free: Pattern=stuff, Pattern=there before, Pattern=mauii, Pattern=like it too, Pattern=finishing, Pattern=good, Pattern=thanks, Pattern=never been, Pattern=hope, Pattern=holidays, Pattern=you, Pattern=yes, Pattern=did, Pattern=busy, Pattern=gift, Pattern=morning, Pattern=before, Pattern=warm
+	Constrained: Pattern=like it, Pattern=like, Pattern=before, Pattern=there
+Turn ID=12| A | Human 1 : awesome ! thanks for the tip .
+	Free: Pattern=thanks, Pattern=the
+	Constrained: 

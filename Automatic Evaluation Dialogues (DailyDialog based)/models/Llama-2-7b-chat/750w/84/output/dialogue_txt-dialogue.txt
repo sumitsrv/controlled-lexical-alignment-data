@@ -1,0 +1,55 @@
+A|0| Human 1: hi , can _you recommend_ some _good_ _netflix_ _shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: of course ! _what_ type of [shows] are [you] interested in ? action , _comedy ,_ drama _, or_ something else ? </|im_end|><| 
+A|3| Human 1: not [a lot] ! _but_ [i] preparing _for a_ _good_ vacation _season_ 🙂 [what] _is_ [white collar] _about_ ? 
+B|4| Human 2: [white collar] [is] [a] drama _series_ [about] [a] con artist who works with the fbi _to_ catch [white collar] criminals . it's [a] 
+A|5| Human 1: hehe ! sounds _very_ interesting 🙂 [i] only see [shows] belonging [to] few genre's .. _like_ easy going _light [comedy_ [,] or] phychological thrillers 🙂 _also_ some manga based _series like one punch man_ ! love _it_ ! 
+B|6| Human 2: _oh_ cool ! [one punch man] [is] great . _have you seen_ [season] 2 of stranger things ? it's [also] [very] [good] . [but] 
+A|7| Human 1: which _anime_ [do you] follow ? 
+B|8| Human 2: [anime] [you recommend] [for a] [light comedy] [series like one punch man] ? something [like] that ? 
+A|9| Human 1: [have you seen] _rick and morty_ ? 
+B|10| Human 2: [rick and morty] [is] an adult animated science fiction [comedy] [series] created by justin roiland [and] dan harmon [for] cartoon network's adult 
+A|11| Human 1: [oh] nice ! [i] heard its latest [season] arrived last month . [i] [have] _watched all previous seasons_ . its [a] total mind bender 🙂 
+B|12| Human 2: [have you] [watched all previous seasons] of [one punch man] ? [what] [do you] [like] most [about] [it] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=you recommend, Pattern=shows, Pattern=good, Pattern=netflix
+	Constrained: Pattern=you
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=you, Pattern=a
+Turn ID=2| B | Human 2 : of course ! what type of shows are you interested in ? action , comedy , drama , or something else ? </|im_end|><|
+	Free: Pattern=you, Pattern=what, Pattern=shows, Pattern=, or, Pattern=comedy ,
+	Constrained: Pattern=comedy
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=good, Pattern=what, Pattern=white collar, Pattern=about, Pattern=season, Pattern=a lot, Pattern=for a, Pattern=but, Pattern=is, Pattern=i
+	Constrained: Pattern=for, Pattern=a
+Turn ID=4| B | Human 2 : white collar is a drama series about a con artist who works with the fbi to catch white collar criminals . it's a
+	Free: Pattern=about, Pattern=is, Pattern=to, Pattern=series, Pattern=white collar, Pattern=a
+	Constrained: 
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=shows, Pattern=it, Pattern=light comedy, Pattern=to, Pattern=series like one punch man, Pattern=very, Pattern=i, Pattern=also, Pattern=like, Pattern=, or, Pattern=comedy ,
+	Constrained: Pattern=series, Pattern=one punch man, Pattern=comedy, Pattern=like
+Turn ID=6| B | Human 2 : oh cool ! one punch man is great . have you seen season 2 of stranger things ? it's also very good . but
+	Free: Pattern=good, Pattern=have you seen, Pattern=also, Pattern=season, Pattern=but, Pattern=oh, Pattern=one punch man, Pattern=very, Pattern=is
+	Constrained: Pattern=have, Pattern=have you, Pattern=you
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=anime
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : anime you recommend for a light comedy series like one punch man ? something like that ?
+	Free: Pattern=you recommend, Pattern=light comedy, Pattern=like, Pattern=anime, Pattern=for a, Pattern=series like one punch man
+	Constrained: Pattern=you, Pattern=a, Pattern=for, Pattern=one punch man, Pattern=comedy, Pattern=like, Pattern=series
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=have you seen, Pattern=rick and morty
+	Constrained: Pattern=have, Pattern=have you, Pattern=and, Pattern=you
+Turn ID=10| B | Human 2 : rick and morty is an adult animated science fiction comedy series created by justin roiland and dan harmon for cartoon network's adult
+	Free: Pattern=for, Pattern=and, Pattern=comedy, Pattern=is, Pattern=rick and morty, Pattern=series
+	Constrained: Pattern=and
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=watched all previous seasons, Pattern=have, Pattern=a, Pattern=oh, Pattern=i, Pattern=season
+	Constrained: 
+Turn ID=12| B | Human 2 : have you watched all previous seasons of one punch man ? what do you like most about it ?
+	Free: Pattern=watched all previous seasons, Pattern=what, Pattern=about, Pattern=have you, Pattern=like, Pattern=it, Pattern=one punch man, Pattern=do you
+	Constrained: Pattern=you, Pattern=have

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , _how_ is _it_ going ? 
+A|2| Human 1: all _good_ . _planning to_ _head home_ soon . [how] about _you_ ? 
+B|3| Human 2: _i_ don't _have_ feelings or _plans , but_ i'm _here_ _and_ ready [to] assist [you] . what do [you] need help with before [you] [head home] 
+A|4| Human 1: oh ... sorry _to hear that_ . [but] after _that_ [it] will be _a_ hard earned vacation 
+B|5| Human 2: no need [to] apologize ! i'm glad [to hear] you're [planning to] take [a] well-deserved break . while _i_ can't 
+A|6| Human 1: [i] _have some_ tentative [plans , but] if _that_ doesn't pan out , will just chill at [home] . 
+B|7| Human 2: great [to hear that] [you] [have some] downtime planned . although [i] don't require rest or leisure activities , _it's_ always [good] 
+A|8| Human 1: where are [you] _based_ out of these days ? 
+B|9| Human 2: i'm phi , an ai _. i_ don't [have] [a] physical location [, but] _the_ tech [i] operate on spans globally 
+A|10| Human 1: _san_ francisco . [it's] been raining cats [and] dogs [here] since last 2-3 weeks 
+B|11| Human 2: _as_ phi , i'm [based] _in_ [a] virtual space with no physical form [, but] [i] understand [san] francisco's current weather from weather data reports 
+A|12| Human 1: [the] _flu_ has been hitting hard [as] well [. i] had several folks [in] [the] house down at one point . 
+B|13| Human 2: [as] an ai phi , [i] don't experience health [, but] [i] understand [that] [flu] outbreaks can cause concern [and] disrupt daily life 
+A|14| Human 1: yes , everyone recovered now 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : all good . planning to head home soon . how about you ?
+	Free: Pattern=good, Pattern=how, Pattern=head home, Pattern=planning to, Pattern=you
+	Constrained: Pattern=to, Pattern=home
+Turn ID=3| B | Human 2 : i don't have feelings or plans , but i'm here and ready to assist you . what do you need help with before you head home
+	Free: Pattern=you, Pattern=have, Pattern=here, Pattern=plans , but, Pattern=and, Pattern=to, Pattern=head home, Pattern=i
+	Constrained: Pattern=, but, Pattern=but, Pattern=home
+Turn ID=4| A | Human 1 : oh ... sorry to hear that . but after that it will be a hard earned vacation
+	Free: Pattern=a, Pattern=it, Pattern=to hear that, Pattern=that, Pattern=but
+	Constrained: Pattern=to hear, Pattern=that, Pattern=to
+Turn ID=5| B | Human 2 : no need to apologize ! i'm glad to hear you're planning to take a well-deserved break . while i can't
+	Free: Pattern=planning to, Pattern=a, Pattern=i, Pattern=to, Pattern=to hear
+	Constrained: Pattern=to
+Turn ID=6| A | Human 1 : i have some tentative plans , but if that doesn't pan out , will just chill at home .
+	Free: Pattern=have some, Pattern=plans , but, Pattern=i, Pattern=home, Pattern=that
+	Constrained: Pattern=, but, Pattern=but, Pattern=have
+Turn ID=7| B | Human 2 : great to hear that you have some downtime planned . although i don't require rest or leisure activities , it's always good
+	Free: Pattern=good, Pattern=have some, Pattern=you, Pattern=to hear that, Pattern=i, Pattern=it's
+	Constrained: Pattern=have, Pattern=to hear, Pattern=that, Pattern=to
+Turn ID=8| A | Human 1 : where are you based out of these days ?
+	Free: Pattern=you, Pattern=based
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm phi , an ai . i don't have a physical location , but the tech i operate on spans globally
+	Free: Pattern=, but, Pattern=have, Pattern=a, Pattern=. i, Pattern=i, Pattern=the
+	Constrained: Pattern=but, Pattern=i
+Turn ID=10| A | Human 1 : san francisco . it's been raining cats and dogs here since last 2-3 weeks
+	Free: Pattern=it's, Pattern=and, Pattern=san, Pattern=here
+	Constrained: 
+Turn ID=11| B | Human 2 : as phi , i'm based in a virtual space with no physical form , but i understand san francisco's current weather from weather data reports
+	Free: Pattern=, but, Pattern=as, Pattern=san, Pattern=in, Pattern=i, Pattern=based, Pattern=a
+	Constrained: Pattern=but
+Turn ID=12| A | Human 1 : the flu has been hitting hard as well . i had several folks in the house down at one point .
+	Free: Pattern=as, Pattern=. i, Pattern=flu, Pattern=in, Pattern=the
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : as an ai phi , i don't experience health , but i understand that flu outbreaks can cause concern and disrupt daily life
+	Free: Pattern=, but, Pattern=as, Pattern=and, Pattern=flu, Pattern=i, Pattern=that
+	Constrained: Pattern=but
+Turn ID=14| A | Human 1 : yes , everyone recovered now
+	Free: 
+	Constrained: 

@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _there_ is _sports_ tournament (badminton + _tennis_ + basketball) _organized_ by _google_ _next week_ . _would_ _you_ _like_ to volunteer _for_ these _events_ ? 
+B|3| Human 2: _there are_ [organized] sport [events] [next week] ? that sounds [like] _fun_ . 
+A|4| Human 1: _volunteers_ _have_ to book _the place_ before _the event_ , send _out_ details of _the event_ to participants , handle _some_ logistics _and_ ensure everything goes smoothly . it _will be_ [fun] ! 
+B|5| Human 2: _i_ [would] [have] [fun] [and] [will] definitely participate somehow _, _i_ think_ [the] [events] [for] [google] _are_ good . 
+A|6| Human 1: _great_ ! do _you have_ any preference [for] any of these [events] ? 
+B|7| Human 2: _well_ [the event] [you have] outlined [and] [some] others [will] include [tennis] , golf [and] _badminton_ . 
+A|8| Human 1: cool ! [i] [will] add [you] [for] [the event] _. [i_ think] _its_ _best_ to start discussing [the] format of [the event] . [there are] a couple of _other volunteers_ _for badminton_ [, i] _can_ connect [you] _with_ them . 
+B|9| Human 2: [there] [can] [be] [other volunteers] [and] [some] [are] [organized] [for] different [sports] . 
+A|10| Human 1: _its_ _next saturday_ . actually depending on how long _we_ get _the place_ reserved , it may slip to _sunday_ as [well] . 
+B|11| Human 2: [well] [the] [badminton] one [would] [be] [best] [for] [next saturday] since [its] during [sunday] 
+A|12| Human 1: true ! [the] [volunteers] _have already sent out some emails and_ collected [some] funds . now , _we_ mainly _need_ help _with the_ logistics [and] organizing [the event] . 
+B|13| Human 2: [great] . [the] [other volunteers] [will be] nice [and] [well] prepared [with the] equipment [you] [need] [for badminton] . 
+A|14| Human 1: perfect ! _we_ [have] a _meeting_ today at 4 . 30 pm . is it fine if [i] add [you] to it ? 
+B|15| Human 2: yeah [. i] know [you [have] already sent out some emails and] [we] [are] [meeting] [next saturday] but [i] just feel that [the place] [can] [be] improved . 
+A|16| Human 1: thanks . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : there is sports tournament (badminton + tennis + basketball) organized by google next week . would you like to volunteer for these events ?
+	Free: Pattern=you, Pattern=there, Pattern=like, Pattern=would, Pattern=tennis, Pattern=sports, Pattern=next week, Pattern=organized, Pattern=google, Pattern=for, Pattern=events
+	Constrained: 
+Turn ID=3| B | Human 2 : there are organized sport events next week ? that sounds like fun .
+	Free: Pattern=fun, Pattern=there are, Pattern=events, Pattern=like, Pattern=next week, Pattern=organized
+	Constrained: Pattern=are, Pattern=there
+Turn ID=4| A | Human 1 : volunteers have to book the place before the event , send out details of the event to participants , handle some logistics and ensure everything goes smoothly . it will be fun !
+	Free: Pattern=fun, Pattern=volunteers, Pattern=out, Pattern=have, Pattern=the event, Pattern=and, Pattern=will be, Pattern=the place, Pattern=some
+	Constrained: Pattern=will, Pattern=be, Pattern=the
+Turn ID=5| B | Human 2 : i would have fun and will definitely participate somehow , i think the events for google are good .
+	Free: Pattern=fun, Pattern=have, Pattern=and, Pattern=are, Pattern=will, Pattern=i, Pattern=would, Pattern=i think, Pattern=google, Pattern=for, Pattern=events, Pattern=the, Pattern=, i
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : great ! do you have any preference for any of these events ?
+	Free: Pattern=you have, Pattern=for, Pattern=great, Pattern=events
+	Constrained: Pattern=have, Pattern=you
+Turn ID=7| B | Human 2 : well the event you have outlined and some others will include tennis , golf and badminton .
+	Free: Pattern=well, Pattern=the event, Pattern=and, Pattern=badminton, Pattern=tennis, Pattern=will, Pattern=some, Pattern=you have
+	Constrained: Pattern=the, Pattern=have, Pattern=you
+Turn ID=8| A | Human 1 : cool ! i will add you for the event . i think its best to start discussing the format of the event . there are a couple of other volunteers for badminton , i can connect you with them .
+	Free: Pattern=for badminton, Pattern=its, Pattern=you, Pattern=there are, Pattern=the event, Pattern=for, Pattern=. i, Pattern=will, Pattern=i, Pattern=i think, Pattern=other volunteers, Pattern=can, Pattern=the, Pattern=, i, Pattern=with, Pattern=best
+	Constrained: Pattern=volunteers, Pattern=there, Pattern=for, Pattern=are, Pattern=i, Pattern=badminton, Pattern=the
+Turn ID=9| B | Human 2 : there can be other volunteers and some are organized for different sports .
+	Free: Pattern=there, Pattern=for, Pattern=and, Pattern=are, Pattern=some, Pattern=be, Pattern=sports, Pattern=organized, Pattern=other volunteers, Pattern=can
+	Constrained: Pattern=volunteers
+Turn ID=10| A | Human 1 : its next saturday . actually depending on how long we get the place reserved , it may slip to sunday as well .
+	Free: Pattern=its, Pattern=sunday, Pattern=the place, Pattern=we, Pattern=next saturday, Pattern=well
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : well the badminton one would be best for next saturday since its during sunday
+	Free: Pattern=its, Pattern=for, Pattern=sunday, Pattern=be, Pattern=would, Pattern=best, Pattern=next saturday, Pattern=well, Pattern=badminton, Pattern=the
+	Constrained: 
+Turn ID=12| A | Human 1 : true ! the volunteers have already sent out some emails and collected some funds . now , we mainly need help with the logistics and organizing the event .
+	Free: Pattern=volunteers, Pattern=with the, Pattern=the event, Pattern=and, Pattern=some, Pattern=need, Pattern=we, Pattern=have already sent out some emails and, Pattern=the
+	Constrained: Pattern=out, Pattern=have, Pattern=and, Pattern=some, Pattern=the, Pattern=with
+Turn ID=13| B | Human 2 : great . the other volunteers will be nice and well prepared with the equipment you need for badminton .
+	Free: Pattern=for badminton, Pattern=well, Pattern=with the, Pattern=and, Pattern=need, Pattern=the, Pattern=you, Pattern=great, Pattern=other volunteers, Pattern=will be
+	Constrained: Pattern=volunteers, Pattern=for, Pattern=will, Pattern=be, Pattern=with, Pattern=badminton, Pattern=the
+Turn ID=14| A | Human 1 : perfect ! we have a meeting today at 4 . 30 pm . is it fine if i add you to it ?
+	Free: Pattern=you, Pattern=i, Pattern=we, Pattern=meeting, Pattern=have
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah . i know you have already sent out some emails and we are meeting next saturday but i just feel that the place can be improved .
+	Free: Pattern=next saturday, Pattern=meeting, Pattern=are, Pattern=can, Pattern=you have, Pattern=i, Pattern=we, Pattern=. i, Pattern=the place, Pattern=have already sent out some emails and, Pattern=be
+	Constrained: Pattern=have, Pattern=and, Pattern=some, Pattern=i, Pattern=the, Pattern=you, Pattern=out
+Turn ID=16| A | Human 1 : thanks .
+	Free: 
+	Constrained: 

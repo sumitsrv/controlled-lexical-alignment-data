@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what are you_ up _to_ ? 
+B|3| Human 2: [you] [are] currently chatting with _me_ [what] would _you like to_ talk about ? 
+A|4| Human 1: [me] ? _just_ chilling out at _work_ . [what] _is_ _code refactoring_ ? 
+B|5| Human 2: [code refactoring] [is] the process of restructuring existing [code] [to] make _it_ more efficient , maintainable , and easier [to] understand . _it_ involves improving 
+A|6| Human 1: _haha_ , forget [it] . [what] else _do_ [you _like to] do_ beside _work_ ? 
+B|7| Human 2: [work] [is] [what] _i [like_ to do] [haha] [just] kidding , _i love_ my job ! [code refactoring] [is] _important_ because [it] helps developers optimize 
+A|8| Human 1: these [are] [important] things [to do] _in_ _life_ 😉 
+B|9| Human 2: [what are you] [life] [like] [haha] [just] kidding ! [code refactoring] [is] [important] [in] [work] because [it] keeps [code] healthy and<|im 
+A|10| Human 1: _what food_ [do] [you like to] _eat_ ? 
+B|11| Human 2: [what food] [you like] [eat] [haha] [just] kidding ! [code refactoring] [important] [work] because keep [code] healthy and<|im_end| 
+A|12| Human 1: [like] _szechuan_ or _hunan_ ? 🙂 
+B|13| Human 2: [what] [you like] [eat] [haha] [just] kidding [code refactoring] [important] [work] because keep [code] healthy and [szechuan] [hunan] [are] both popular 
+A|14| Human 1: [i like] _noodle soup like_ _pho_ or ramen . [i] _also_ _like beijing duck_ a lot ! 
+B|15| Human 2: [pho] [noodle soup [like] beijing duck] [are] [also] popular [food] [in] china [haha] ! [code refactoring] [important] [work] because keep [code] 
+A|16| Human 1: [i love] _<redacted_term>_ [in] _san mateo_ 
+B|17| Human 2: [san mateo] [is] nice place [<redacted_term>] [also] popular [food] [in] china [haha] ! [code refactoring] [important] [work] 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=what are you, Pattern=to
+	Constrained: Pattern=you, Pattern=are, Pattern=what
+Turn ID=3| B | Human 2 : you are currently chatting with me what would you like to talk about ?
+	Free: Pattern=me, Pattern=what, Pattern=are, Pattern=you, Pattern=you like to
+	Constrained: Pattern=you like, Pattern=like, Pattern=to, Pattern=you
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=just, Pattern=me, Pattern=what, Pattern=work, Pattern=is, Pattern=code refactoring
+	Constrained: Pattern=code
+Turn ID=5| B | Human 2 : code refactoring is the process of restructuring existing code to make it more efficient , maintainable , and easier to understand . it involves improving
+	Free: Pattern=code, Pattern=it, Pattern=is, Pattern=code refactoring, Pattern=to
+	Constrained: Pattern=code
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=you like to, Pattern=what, Pattern=do, Pattern=it, Pattern=haha, Pattern=like to do, Pattern=work
+	Constrained: Pattern=you, Pattern=to do, Pattern=do, Pattern=like, Pattern=you like, Pattern=to
+Turn ID=7| B | Human 2 : work is what i like to do haha just kidding , i love my job ! code refactoring is important because it helps developers optimize
+	Free: Pattern=just, Pattern=what, Pattern=it, Pattern=is, Pattern=haha, Pattern=code refactoring, Pattern=i love, Pattern=i like, Pattern=important, Pattern=like to do, Pattern=work
+	Constrained: Pattern=code, Pattern=to do, Pattern=do, Pattern=i, Pattern=like, Pattern=to
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=to do, Pattern=are, Pattern=in, Pattern=important, Pattern=life
+	Constrained: Pattern=do, Pattern=to
+Turn ID=9| B | Human 2 : what are you life like haha just kidding ! code refactoring is important in work because it keeps code healthy and<|im
+	Free: Pattern=it, Pattern=in, Pattern=code refactoring, Pattern=life, Pattern=code, Pattern=just, Pattern=important, Pattern=work, Pattern=what are you, Pattern=is, Pattern=haha, Pattern=like
+	Constrained: Pattern=are, Pattern=what, Pattern=code, Pattern=you
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=you like to, Pattern=what food, Pattern=eat, Pattern=do
+	Constrained: Pattern=you, Pattern=what, Pattern=you like, Pattern=to, Pattern=food, Pattern=like
+Turn ID=11| B | Human 2 : what food you like eat haha just kidding ! code refactoring important work because keep code healthy and<|im_end|
+	Free: Pattern=eat, Pattern=haha, Pattern=you like, Pattern=code refactoring, Pattern=code, Pattern=just, Pattern=important, Pattern=what food, Pattern=work
+	Constrained: Pattern=you, Pattern=code, Pattern=what, Pattern=food, Pattern=like
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like, Pattern=hunan, Pattern=szechuan
+	Constrained: 
+Turn ID=13| B | Human 2 : what you like eat haha just kidding code refactoring important work because keep code healthy and szechuan hunan are both popular
+	Free: Pattern=eat, Pattern=what, Pattern=are, Pattern=you like, Pattern=code refactoring, Pattern=szechuan, Pattern=code, Pattern=just, Pattern=important, Pattern=work, Pattern=haha, Pattern=hunan
+	Constrained: Pattern=like, Pattern=you, Pattern=code
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=like beijing duck, Pattern=pho, Pattern=i, Pattern=i like, Pattern=also, Pattern=noodle soup like
+	Constrained: Pattern=i, Pattern=like
+Turn ID=15| B | Human 2 : pho noodle soup like beijing duck are also popular food in china haha ! code refactoring important work because keep code
+	Free: Pattern=like beijing duck, Pattern=code, Pattern=pho, Pattern=are, Pattern=in, Pattern=code refactoring, Pattern=important, Pattern=work, Pattern=food, Pattern=noodle soup like, Pattern=also, Pattern=haha
+	Constrained: Pattern=code, Pattern=like
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=i love, Pattern=san mateo, Pattern=<redacted_term>, Pattern=in
+	Constrained: Pattern=i
+Turn ID=17| B | Human 2 : san mateo is nice place <redacted_term> also popular food in china haha ! code refactoring important work
+	Free: Pattern=san mateo, Pattern=<redacted_term>, Pattern=in, Pattern=is, Pattern=code refactoring, Pattern=important, Pattern=work, Pattern=food, Pattern=also, Pattern=haha
+	Constrained: Pattern=code
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

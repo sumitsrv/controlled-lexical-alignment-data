@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: how's your day going ? 
+A|2| Human 1: _pretty busy_ , lots of _work_ _to_ finish up . _you ?_ 
+B|3| Human 2: _i am_ _a_ [busy] bee , [work] _is_ never done ! [you ?] 
+A|4| Human 1: _a couple projects _that_ [i_ am] _trying_ _to_ finish up _before_ _thanksgiving_ 🙂 do _you have_ _any_ _fun_ _plans _for_ the_ _break_ ? 
+B|5| Human 2: [pretty busy] here too _. i have_ [a couple projects that] _i've_ been working on [for the] last 5 months but [i] haven't had [any] [break] from them 
+A|6| Human 1: _haha_ xd _so_ _what_ do _you like to_ do _for fun_ ? 
+B|7| Human 2: [haha] [you have] [the] best [plans for] [thanksgiving] , [what] are [you] having ? _i like_ reading , especially fantasy novels . i'm [so] [fun] at 
+A|8| Human 1: _cool_ ! [i've] started _to _run_ a_ bit as _well_ _not_ _long distances_ _though_ , _just [a_ couple] _miles_ 
+B|9| Human 2: i'm [just] [trying] [not] [to] get into too much [work] [for fun] [i've] [to] be [well] rested enough [for the] big [plans] [that _i] have_ planned 
+A|10| Human 1: [haha] 
+B|11| Human 2: [i am] [not] [the] biggest runner but [that] _is_ [cool] [you like to] [just] _run a few_ [miles] [for fun] . maybe [you] are going [to] [have] [a] 
+A|12| Human 1: _i like to_ do _long distances . i have [run_ a few] _marathons ._ 
+B|13| Human 2: [that] _is_ [cool] [i've] never [run] [for] [that] [long] [before] [. [i] like [to] run] [just [a] few] [miles] [to] relax and [have] an easy time . 
+A|14| Human 1: no . [not] _this_ year . _this_ [is] my half-marathon year . instead of _running_ _marathons_ , [i] _run one_ half-marathon every month . 
+B|15| Human 2: [i like] [running] [long distances . i have [run] one] half marathon [before] , _it was_ great [for] me _. it_ takes some training [though] . 
+A|16| Human 1: two days ago [. [it] was] [a] tough [one] . 
+B|17| Human 2: [i like] [running] [long distances] but [have] never been [one] [for] half [marathons .] how [was] [this] first marathon [run] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : how's your day going ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty busy , lots of work to finish up . you ?
+	Free: Pattern=pretty busy, Pattern=you ?, Pattern=to, Pattern=work
+	Constrained: Pattern=you, Pattern=busy
+Turn ID=3| B | Human 2 : i am a busy bee , work is never done ! you ?
+	Free: Pattern=i am, Pattern=work, Pattern=is, Pattern=you ?, Pattern=busy, Pattern=a
+	Constrained: Pattern=you, Pattern=i
+Turn ID=4| A | Human 1 : a couple projects that i am trying to finish up before thanksgiving 🙂 do you have any fun plans for the break ?
+	Free: Pattern=fun, Pattern=for the, Pattern=any, Pattern=a couple projects that, Pattern=thanksgiving, Pattern=you have, Pattern=i am, Pattern=plans for, Pattern=that i, Pattern=break, Pattern=trying, Pattern=before, Pattern=to
+	Constrained: Pattern=plans, Pattern=you, Pattern=have, Pattern=a couple, Pattern=a, Pattern=for, Pattern=i, Pattern=the, Pattern=that
+Turn ID=5| B | Human 2 : pretty busy here too . i have a couple projects that i've been working on for the last 5 months but i haven't had any break from them
+	Free: Pattern=for the, Pattern=. i have, Pattern=any, Pattern=a couple projects that, Pattern=i've, Pattern=pretty busy, Pattern=i, Pattern=break
+	Constrained: Pattern=have, Pattern=a couple, Pattern=for, Pattern=. i, Pattern=i, Pattern=the, Pattern=that, Pattern=i have, Pattern=busy, Pattern=a
+Turn ID=6| A | Human 1 : haha xd so what do you like to do for fun ?
+	Free: Pattern=you like to, Pattern=for fun, Pattern=what, Pattern=haha, Pattern=so
+	Constrained: Pattern=for, Pattern=fun, Pattern=to, Pattern=you
+Turn ID=7| B | Human 2 : haha you have the best plans for thanksgiving , what are you having ? i like reading , especially fantasy novels . i'm so fun at
+	Free: Pattern=fun, Pattern=you, Pattern=what, Pattern=thanksgiving, Pattern=you have, Pattern=haha, Pattern=the, Pattern=plans for, Pattern=so, Pattern=i like
+	Constrained: Pattern=plans, Pattern=you, Pattern=have, Pattern=for, Pattern=i
+Turn ID=8| A | Human 1 : cool ! i've started to run a bit as well not long distances though , just a couple miles
+	Free: Pattern=well, Pattern=a couple, Pattern=though, Pattern=cool, Pattern=just a, Pattern=i've, Pattern=run a, Pattern=to run, Pattern=not, Pattern=miles, Pattern=long distances
+	Constrained: Pattern=just, Pattern=long, Pattern=a, Pattern=run, Pattern=to
+Turn ID=9| B | Human 2 : i'm just trying not to get into too much work for fun i've to be well rested enough for the big plans that i have planned
+	Free: Pattern=for fun, Pattern=i've, Pattern=work, Pattern=to, Pattern=plans, Pattern=well, Pattern=just, Pattern=for the, Pattern=that i, Pattern=trying, Pattern=not, Pattern=i have
+	Constrained: Pattern=fun, Pattern=have, Pattern=for, Pattern=i, Pattern=the, Pattern=that
+Turn ID=10| A | Human 1 : haha
+	Free: Pattern=haha
+	Constrained: 
+Turn ID=11| B | Human 2 : i am not the biggest runner but that is cool you like to just run a few miles for fun . maybe you are going to have a
+	Free: Pattern=miles, Pattern=for fun, Pattern=a, Pattern=cool, Pattern=i am, Pattern=is, Pattern=the, Pattern=to, Pattern=run a few, Pattern=that, Pattern=not, Pattern=you, Pattern=you like to, Pattern=just, Pattern=have
+	Constrained: Pattern=fun, Pattern=you, Pattern=a, Pattern=for, Pattern=a few, Pattern=run, Pattern=i, Pattern=to, Pattern=run a
+Turn ID=12| A | Human 1 : i like to do long distances . i have run a few marathons .
+	Free: Pattern=long distances . i have run, Pattern=i like to, Pattern=run a few, Pattern=marathons .
+	Constrained: Pattern=long distances, Pattern=have, Pattern=long, Pattern=a, Pattern=a few, Pattern=i, Pattern=to, Pattern=run a, Pattern=i like, Pattern=i have, Pattern=marathons, Pattern=. i have, Pattern=. i, Pattern=run
+Turn ID=13| B | Human 2 : that is cool i've never run for that long before . i like to run just a few miles to relax and have an easy time .
+	Free: Pattern=miles, Pattern=have, Pattern=long, Pattern=cool, Pattern=a few, Pattern=i've, Pattern=is, Pattern=i like to, Pattern=to run, Pattern=that, Pattern=for, Pattern=just a, Pattern=. i, Pattern=run, Pattern=before, Pattern=to
+	Constrained: Pattern=just, Pattern=a, Pattern=run, Pattern=i, Pattern=to, Pattern=i like
+Turn ID=14| A | Human 1 : no . not this year . this is my half-marathon year . instead of running marathons , i run one half-marathon every month .
+	Free: Pattern=marathons, Pattern=run one, Pattern=running, Pattern=this, Pattern=not, Pattern=is, Pattern=i
+	Constrained: Pattern=run, Pattern=one
+Turn ID=15| B | Human 2 : i like running long distances . i have run one half marathon before , it was great for me . it takes some training though .
+	Free: Pattern=it was, Pattern=though, Pattern=for, Pattern=run one, Pattern=running, Pattern=long distances . i have run, Pattern=before, Pattern=. it, Pattern=i like
+	Constrained: Pattern=long distances, Pattern=have, Pattern=long, Pattern=. i have, Pattern=one, Pattern=i, Pattern=was, Pattern=i have, Pattern=. i, Pattern=run
+Turn ID=16| A | Human 1 : two days ago . it was a tough one .
+	Free: Pattern=it was, Pattern=. it, Pattern=a, Pattern=one
+	Constrained: Pattern=was
+Turn ID=17| B | Human 2 : i like running long distances but have never been one for half marathons . how was this first marathon run ?
+	Free: Pattern=have, Pattern=for, Pattern=one, Pattern=run, Pattern=running, Pattern=was, Pattern=this, Pattern=i like, Pattern=marathons ., Pattern=long distances
+	Constrained: Pattern=i, Pattern=long, Pattern=marathons

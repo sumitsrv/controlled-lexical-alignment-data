@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's your day _going_ ? 
+B|3| Human 2: hello , _i_ am okay _i_ guess , _i_ am _just_ tired from walking so much . how are you ? 
+A|4| Human 1: _i'm_ good ! [just] _getting ready_ _to watch_ _a_ _basketball_ game . hope your headache goes away ! 
+B|5| Human 2: it's [going] _well_ , [i'm] [getting ready] for bed now 
+A|6| Human 1: hmm , try taking some <redacted_term> ! [i'm] [going] _to_ see _the_ _warriors_ vs _. _the_ grizzlies ._ ever see _them play_ ? 
+B|7| Human 2: i've seen [them play] [the] lakers [a] few times . _i_ used [to watch] [them] alot _in_ [the] old arena 
+A|8| Human 1: haha , all [the] animal names confuse me as [well] ! who came up _with_ these naming conventions ? i'd _name_ my _team_ something more original: _the new york chairs_ ! 
+B|9| Human 2: _i_ love [the grizzlies [.] the] nba [team] right ? 
+A|10| Human 1: oh _cool_ ! _what is_ "neurips" ? 
+B|11| Human 2: _i_ love [the grizzlies] too . [what] _about_ [a] [team] [with] their [name] ? _i_ don't know , maybe [the] golden state [warriors] . 
+A|12| Human 1: oh wow ! _sounds_ fancy ! _what is_ _that_ [about] ? 
+B|13| Human 2: [the new york chairs] . [sounds] like [a] [cool] [team] [name] . [what is] _it_ _about that_ [name] [that] you love ? 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: they are [the] memphis [grizzlies] _i_ love [that] they [play] _in_ [the] most populous city _in_ [the] united states 
+A|16| Human 1: ahh ! [i] saw [a] scary _movie [about_ that] once . [it] was [about] this sentient _ai_ [in] [a] dystopian future - very very creepy . [it] was _called_ wall-e , ever heard of [it] ? 
+B|17| Human 2: [a] [movie about] [ai] ? [that] [sounds] interesting . [i] really like [the new york] knicks , [i] like [basketball] , so [the] nj nets being [called] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : hello , i am okay i guess , i am just tired from walking so much . how are you ?
+	Free: Pattern=just, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=getting ready, Pattern=just, Pattern=to watch, Pattern=a, Pattern=basketball, Pattern=i'm
+	Constrained: Pattern=to
+Turn ID=5| B | Human 2 : it's going well , i'm getting ready for bed now
+	Free: Pattern=getting ready, Pattern=going, Pattern=i'm, Pattern=well
+	Constrained: 
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=going, Pattern=the grizzlies ., Pattern=them play, Pattern=i'm, Pattern=warriors, Pattern=the, Pattern=to, Pattern=. the
+	Constrained: Pattern=grizzlies, Pattern=the, Pattern=play, Pattern=them, Pattern=the grizzlies
+Turn ID=7| B | Human 2 : i've seen them play the lakers a few times . i used to watch them alot in the old arena
+	Free: Pattern=to watch, Pattern=a, Pattern=them play, Pattern=in, Pattern=i, Pattern=the, Pattern=them
+	Constrained: Pattern=to, Pattern=them, Pattern=play
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=well, Pattern=name, Pattern=the, Pattern=the new york chairs, Pattern=team, Pattern=with
+	Constrained: Pattern=the new york, Pattern=the
+Turn ID=9| B | Human 2 : i love the grizzlies . the nba team right ?
+	Free: Pattern=the grizzlies ., Pattern=. the, Pattern=team, Pattern=i
+	Constrained: Pattern=the grizzlies, Pattern=grizzlies, Pattern=the
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=what is, Pattern=cool
+	Constrained: Pattern=what
+Turn ID=11| B | Human 2 : i love the grizzlies too . what about a team with their name ? i don't know , maybe the golden state warriors .
+	Free: Pattern=what, Pattern=a, Pattern=name, Pattern=about, Pattern=the, Pattern=team, Pattern=warriors, Pattern=i, Pattern=with, Pattern=the grizzlies
+	Constrained: Pattern=grizzlies, Pattern=the
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=what is, Pattern=that, Pattern=about, Pattern=sounds
+	Constrained: Pattern=what
+Turn ID=13| B | Human 2 : the new york chairs . sounds like a cool team name . what is it about that name that you love ?
+	Free: Pattern=what is, Pattern=a, Pattern=cool, Pattern=name, Pattern=it, Pattern=the new york chairs, Pattern=team, Pattern=that, Pattern=about that, Pattern=sounds
+	Constrained: Pattern=what, Pattern=about, Pattern=the, Pattern=the new york, Pattern=that
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : they are the memphis grizzlies i love that they play in the most populous city in the united states
+	Free: Pattern=in, Pattern=the, Pattern=play, Pattern=that, Pattern=grizzlies, Pattern=i
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=called, Pattern=a, Pattern=it, Pattern=about, Pattern=in, Pattern=ai, Pattern=i, Pattern=movie about, Pattern=about that
+	Constrained: Pattern=that, Pattern=about
+Turn ID=17| B | Human 2 : a movie about ai ? that sounds interesting . i really like the new york knicks , i like basketball , so the nj nets being called
+	Free: Pattern=called, Pattern=a, Pattern=basketball, Pattern=ai, Pattern=i, Pattern=the, Pattern=the new york, Pattern=that, Pattern=movie about, Pattern=sounds
+	Constrained: Pattern=the, Pattern=about

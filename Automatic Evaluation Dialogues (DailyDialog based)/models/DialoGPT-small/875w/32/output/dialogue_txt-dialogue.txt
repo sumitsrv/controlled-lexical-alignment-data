@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _nice _to meet you_ !_ is _this_ _your_ _first_ _time_ doing _something_ _like this_ ? 
+B|3| Human 2: _that_ it doesn't make [you] [like] [your] [time] ... [nice to meet you] 
+A|4| Human 1: _i_ _have been with_ _the_ _company_ _for_ _over_ 3 _years_ . stick _with_ _the_ same _team_ _what about_ [you] ? 
+B|5| Human 2: [what] [company] [you] [have been with] [for] [the] past [years] ? [nice] [time] [to meet you !] [what] _do_ [the] [team] think [about] [your] career plans ? 
+A|6| Human 1: [that] sounds [like] a perfect _plan_ ! 
+B|7| Human 2: [i] [like this] [plan] _. what about_ [your] [team] [you] [have been with] [for] [the] [time] so [you] _can_ learn [something] from [your] [time] [over] . 
+A|8| Human 1: let's try [something] different [. what about] <redacted_term> ? [do] [you] always _prefer_ _lunch sync_ [over] regular meeting syncs ? 
+B|9| Human 2: yes 
+A|10| Human 1: we [can] check _the menu then_ decide :) 
+B|11| Human 2: [i] [prefer] [the menu then] , but [your] options are [you] want it [over] [something] else [first] and [then] [lunch sync] ? 
+A|12| Human 1: sure . see [you] [then] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=time, Pattern=to meet you !, Pattern=your, Pattern=nice to meet you, Pattern=like this, Pattern=this, Pattern=first, Pattern=something
+	Constrained: Pattern=nice, Pattern=you, Pattern=like, Pattern=this
+Turn ID=3| B | Human 2 : that it doesn't make you like your time ... nice to meet you
+	Free: Pattern=time, Pattern=you, Pattern=your, Pattern=that, Pattern=nice to meet you, Pattern=like
+	Constrained: Pattern=you, Pattern=nice
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=company, Pattern=have been with, Pattern=you, Pattern=years, Pattern=for, Pattern=over, Pattern=i, Pattern=team, Pattern=with, Pattern=what about, Pattern=the
+	Constrained: Pattern=about, Pattern=with, Pattern=what
+Turn ID=5| B | Human 2 : what company you have been with for the past years ? nice time to meet you ! what do the team think about your career plans ?
+	Free: Pattern=company, Pattern=you, Pattern=what, Pattern=do, Pattern=years, Pattern=about, Pattern=your, Pattern=the, Pattern=team, Pattern=time, Pattern=have been with, Pattern=to meet you !, Pattern=nice, Pattern=for
+	Constrained: Pattern=you, Pattern=with
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=plan, Pattern=that, Pattern=like
+	Constrained: 
+Turn ID=7| B | Human 2 : i like this plan . what about your team you have been with for the time so you can learn something from your time over .
+	Free: Pattern=for, Pattern=can, Pattern=over, Pattern=. what about, Pattern=team, Pattern=something, Pattern=time, Pattern=have been with, Pattern=you, Pattern=plan, Pattern=your, Pattern=i, Pattern=like this, Pattern=the
+	Constrained: Pattern=what, Pattern=about, Pattern=like, Pattern=what about, Pattern=this, Pattern=with
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=you, Pattern=do, Pattern=over, Pattern=prefer, Pattern=. what about, Pattern=lunch sync, Pattern=something
+	Constrained: Pattern=what about, Pattern=about, Pattern=what
+Turn ID=9| B | Human 2 : yes
+	Free: 
+	Constrained: 
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=the menu then, Pattern=can
+	Constrained: Pattern=then, Pattern=the
+Turn ID=11| B | Human 2 : i prefer the menu then , but your options are you want it over something else first and then lunch sync ?
+	Free: Pattern=you, Pattern=the menu then, Pattern=then, Pattern=over, Pattern=lunch sync, Pattern=first, Pattern=something, Pattern=your, Pattern=prefer, Pattern=i
+	Constrained: Pattern=then, Pattern=the
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=you, Pattern=then
+	Constrained: 

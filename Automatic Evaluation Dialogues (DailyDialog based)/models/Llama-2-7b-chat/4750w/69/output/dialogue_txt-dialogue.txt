@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _how_ _was_ your _party_ last week ? 
+B|3| Human 2: i'm just an ai _and_ do _not_ _have_ personal experiences _or_ attend parties . [how] can _i_ assist _you_ today ? <|im_end 
+A|4| Human 1: _haha ... you_ ate turkeys' [or] [you] _like_ calling your bunch _turkey_ ? 
+B|5| Human 2: i'm just an ai _and_ do _not_ _have_ _a_ [turkey] _, or_ _any_ other physical entity . [how] can _i_ assist [you] today ? <| 
+A|6| Human 1: _haha ..._ thought so ! _but_ _it_ _was_ funny eitherways 
+B|7| Human 2: [how] can _i_ assist [you] today ? 
+A|8| Human 1: _did you_ cook _it_ at home [, or] _got it from outside_ ? 
+B|9| Human 2: [haha ... you] [got it from outside] 😂 [haha] [like] _a_ [turkey] 
+A|10| Human 1: nice ... [i] always find [it] hard to fit _the turkey_ _in_ my small oven . also , _we_ _are_ [not] _big_ _turkey fans_ ... so _we_ roll with _thanksgiving_ with _chicken_ 😉 
+B|11| Human 2: [got] [you] 😂 [turkey fans] [are] [the] best . [but] [chicken] [thanksgiving] _is_ _a_ great option too ! _is_ there anything else 
+A|12| Human 1: _we_ _played_ _a lot of _fun_ games_ _in our party _._ did you have any_ _fun_ _things_ [you] _did_ ? 
+B|13| Human 2: [fun games] [you] [played] [are] [the] [things] _that we_ [did] [not] [have any] [turkey fans] [in our party .] [but] [thanksgiving] [chicken] _was a_ [big] 
+A|14| Human 1: _pictionary_ [is] _fun !_ [we] [played] _office tennis_ . [in] [that we] take paper balls [and] using writing pads as rackets , two players [have] to work together to put [the] ball [in] [a] bucket kept at [a] distance . [it] [was _a] lot of fun_ . 
+B|15| Human 2: [that] sounds [like] [a lot of [fun] !] [pictionary] [and] [office tennis] [are] great [games] for [big] groups [. did you have any] other [games] [that] [the turkey] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was your party last week ?
+	Free: Pattern=how, Pattern=was, Pattern=party
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai and do not have personal experiences or attend parties . how can i assist you today ? <|im_end
+	Free: Pattern=you, Pattern=have, Pattern=how, Pattern=and, Pattern=i, Pattern=or, Pattern=not
+	Constrained: 
+Turn ID=4| A | Human 1 : haha ... you ate turkeys' or you like calling your bunch turkey ?
+	Free: Pattern=you, Pattern=turkey, Pattern=like, Pattern=or, Pattern=haha ... you
+	Constrained: Pattern=haha ..., Pattern=haha, Pattern=you
+Turn ID=5| B | Human 2 : i'm just an ai and do not have a turkey , or any other physical entity . how can i assist you today ? <|
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=how, Pattern=any, Pattern=and, Pattern=turkey, Pattern=i, Pattern=, or, Pattern=not
+	Constrained: Pattern=or
+Turn ID=6| A | Human 1 : haha ... thought so ! but it was funny eitherways
+	Free: Pattern=haha ..., Pattern=but, Pattern=it, Pattern=was
+	Constrained: Pattern=haha
+Turn ID=7| B | Human 2 : how can i assist you today ?
+	Free: Pattern=how, Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=8| A | Human 1 : did you cook it at home , or got it from outside ?
+	Free: Pattern=got it from outside, Pattern=, or, Pattern=did you, Pattern=it
+	Constrained: Pattern=you, Pattern=did, Pattern=it, Pattern=or, Pattern=got
+Turn ID=9| B | Human 2 : haha ... you got it from outside 😂 haha like a turkey
+	Free: Pattern=a, Pattern=turkey, Pattern=got it from outside, Pattern=haha ... you, Pattern=haha, Pattern=like
+	Constrained: Pattern=haha ..., Pattern=you, Pattern=it, Pattern=haha, Pattern=got
+Turn ID=10| A | Human 1 : nice ... i always find it hard to fit the turkey in my small oven . also , we are not big turkey fans ... so we roll with thanksgiving with chicken 😉
+	Free: Pattern=it, Pattern=are, Pattern=thanksgiving, Pattern=in, Pattern=i, Pattern=we, Pattern=big, Pattern=chicken, Pattern=not, Pattern=the turkey, Pattern=turkey fans
+	Constrained: Pattern=the, Pattern=turkey
+Turn ID=11| B | Human 2 : got you 😂 turkey fans are the best . but chicken thanksgiving is a great option too ! is there anything else
+	Free: Pattern=you, Pattern=a, Pattern=are, Pattern=thanksgiving, Pattern=is, Pattern=the, Pattern=turkey fans, Pattern=got, Pattern=chicken, Pattern=but
+	Constrained: Pattern=turkey
+Turn ID=12| A | Human 1 : we played a lot of fun games in our party . did you have any fun things you did ?
+	Free: Pattern=. did you have any, Pattern=fun, Pattern=you, Pattern=did, Pattern=fun games, Pattern=things, Pattern=we, Pattern=a lot of fun, Pattern=played, Pattern=in our party .
+	Constrained: Pattern=fun, Pattern=any, Pattern=have any, Pattern=in, Pattern=party, Pattern=you, Pattern=games, Pattern=have, Pattern=did you, Pattern=did, Pattern=a
+Turn ID=13| B | Human 2 : fun games you played are the things that we did not have any turkey fans in our party . but thanksgiving chicken was a big
+	Free: Pattern=you, Pattern=did, Pattern=was a, Pattern=turkey fans, Pattern=played, Pattern=not, Pattern=are, Pattern=have any, Pattern=fun games, Pattern=thanksgiving, Pattern=things, Pattern=big, Pattern=the, Pattern=chicken, Pattern=that we, Pattern=in our party ., Pattern=but
+	Constrained: Pattern=fun, Pattern=games, Pattern=have, Pattern=a, Pattern=any, Pattern=turkey, Pattern=in, Pattern=party, Pattern=we, Pattern=was, Pattern=that
+Turn ID=14| A | Human 1 : pictionary is fun ! we played office tennis . in that we take paper balls and using writing pads as rackets , two players have to work together to put the ball in a bucket kept at a distance . it was a lot of fun .
+	Free: Pattern=have, Pattern=a, Pattern=office tennis, Pattern=was a, Pattern=in, Pattern=pictionary, Pattern=is, Pattern=we, Pattern=the, Pattern=a lot of fun, Pattern=played, Pattern=it, Pattern=and, Pattern=fun !, Pattern=that we
+	Constrained: Pattern=fun, Pattern=a, Pattern=we, Pattern=was, Pattern=that
+Turn ID=15| B | Human 2 : that sounds like a lot of fun ! pictionary and office tennis are great games for big groups . did you have any other games that the turkey
+	Free: Pattern=. did you have any, Pattern=games, Pattern=office tennis, Pattern=and, Pattern=are, Pattern=pictionary, Pattern=like, Pattern=big, Pattern=fun !, Pattern=that, Pattern=the turkey, Pattern=a lot of fun
+	Constrained: Pattern=fun, Pattern=you, Pattern=any, Pattern=have any, Pattern=turkey, Pattern=the, Pattern=have, Pattern=did you, Pattern=did, Pattern=a

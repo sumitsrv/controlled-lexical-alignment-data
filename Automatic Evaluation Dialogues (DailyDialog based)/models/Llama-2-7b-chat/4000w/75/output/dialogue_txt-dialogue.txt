@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: _it's_ on _the_ screen ! _i don't_ recall _meeting_ [you] . do _you _have_ a_ sense of where _we met_ ? 
+B|3| Human 2: ah , [i] see ! [it's] possible [we met] online . _i'm_ just an ai , [i don't] [have] personal experiences or mem 
+A|4| Human 1: did [we] _dance_ together perchance ? 
+B|5| Human 2: [it's] possible , _but_ [i don't] [have] [the] ability _to_ [dance] . _i'm_ just [a] computer program designed _to_ assist [you] _in_ conversational 
+A|6| Human 1: _lol_ . were [you] _schwasty_ ? 
+B|7| Human 2: [lol] , _i'm_ just an ai _. [i_ don't] [have] [the] ability _to_ [schwasty] 😂 . it sounds 
+A|8| Human 1: [i'm] [a] _cardiologist_ [in] _palo alto_ [. i] _have a private practice_ _. you_ ? 
+B|9| Human 2: [i'm] just an ai , so [you] [don't] [have a private practice] 😅 . it was nice [meeting] you<| 
+A|10| Human 1: _i'm not sure_ _i know_ _what that is_ . 
+B|11| Human 2: [i'm not sure] [what that is] 🤔 [. you] can tell me more about [palo alto] and your [practice] if you' 
+A|12| Human 1: [lol] . _not to_ be _elitist_ [but] ... _that's_ [a] _real job_ ? 
+B|13| Human 2: [lol] [that's] [what] [i] thought [but] [i know] [not to] [elitist] [real job] like [you have] [practice] [cardiologist] [palo alto] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=you, Pattern=i, Pattern=met
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=you, Pattern=have a, Pattern=we met, Pattern=you have, Pattern=the, Pattern=it's, Pattern=meeting, Pattern=i don't
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=we, Pattern=don't, Pattern=i, Pattern=met
+Turn ID=3| B | Human 2 : ah , i see ! it's possible we met online . i'm just an ai , i don't have personal experiences or mem
+	Free: Pattern=we met, Pattern=i'm, Pattern=i, Pattern=it's, Pattern=i don't, Pattern=have
+	Constrained: Pattern=i, Pattern=met, Pattern=don't, Pattern=we
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=dance, Pattern=we
+	Constrained: 
+Turn ID=5| B | Human 2 : it's possible , but i don't have the ability to dance . i'm just a computer program designed to assist you in conversational
+	Free: Pattern=you, Pattern=a, Pattern=in, Pattern=i'm, Pattern=dance, Pattern=the, Pattern=to, Pattern=i don't, Pattern=have, Pattern=it's, Pattern=but
+	Constrained: Pattern=i, Pattern=don't
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=lol, Pattern=schwasty, Pattern=you
+	Constrained: 
+Turn ID=7| B | Human 2 : lol , i'm just an ai . i don't have the ability to schwasty 😂 . it sounds
+	Free: Pattern=schwasty, Pattern=lol, Pattern=. i, Pattern=i'm, Pattern=the, Pattern=to, Pattern=i don't, Pattern=have
+	Constrained: Pattern=i, Pattern=don't
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=have a private practice, Pattern=a, Pattern=. i, Pattern=in, Pattern=cardiologist, Pattern=. you, Pattern=i'm, Pattern=palo alto
+	Constrained: Pattern=you, Pattern=have a, Pattern=a, Pattern=i, Pattern=have, Pattern=practice
+Turn ID=9| B | Human 2 : i'm just an ai , so you don't have a private practice 😅 . it was nice meeting you<|
+	Free: Pattern=have a private practice, Pattern=you, Pattern=meeting, Pattern=i'm, Pattern=don't
+	Constrained: Pattern=have, Pattern=a, Pattern=practice, Pattern=have a
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=i'm not sure, Pattern=what that is, Pattern=i know
+	Constrained: Pattern=what, Pattern=i, Pattern=i'm
+Turn ID=11| B | Human 2 : i'm not sure what that is 🤔 . you can tell me more about palo alto and your practice if you'
+	Free: Pattern=practice, Pattern=what that is, Pattern=i'm not sure, Pattern=. you, Pattern=palo alto
+	Constrained: Pattern=you, Pattern=i'm, Pattern=what
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=a, Pattern=elitist, Pattern=not to, Pattern=that's, Pattern=but, Pattern=lol, Pattern=real job
+	Constrained: Pattern=to
+Turn ID=13| B | Human 2 : lol that's what i thought but i know not to elitist real job like you have practice cardiologist palo alto
+	Free: Pattern=what, Pattern=elitist, Pattern=you have, Pattern=not to, Pattern=palo alto, Pattern=i, Pattern=cardiologist, Pattern=that's, Pattern=but, Pattern=lol, Pattern=real job, Pattern=practice, Pattern=i know
+	Constrained: Pattern=have, Pattern=i, Pattern=to, Pattern=you

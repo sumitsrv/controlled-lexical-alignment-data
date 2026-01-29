@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: what's _your_ _name_ ? 
+A|2| Human 1: my [name] is _pikachu_ . it’s nice _to_ meet _you_ ! _what are you_ up _to_ _this month ?_ 
+B|3| Human 2: [what are you] interested _in_ [this month ?] 
+A|4| Human 1: i’m _trying to_ organize my _life_ _and_ _start the new year_ ready _to_ go ! _what about you ?_ 
+B|5| Human 2: _i_ will [start the] [year] with _a_ [month] _of_ [pikachu] [and] [new] [life] _. i_ will _do_ _a lot of_ organizing 
+A|6| Human 1: [what] [do] [you] [do] _to unwind_ ? 
+B|7| Human 2: _i_ [start the new year] [trying [to] unwind] [and] relax . [what about you ?] 
+A|8| Human 1: _oddly enough_ , [i] also _catch_ _pokémon_ _on_ my _phone_ [. i] _used to_ _do it_ _more_ , _but_ _it_ _just_ never ends [. i] _used to_ _do it_ everyday . _now_ [i] mostly _catch them_ _when_ [i] travel somewhere exotic . 
+B|9| Human 2: [oddly enough] [when] [you] [used to] [catch them] [on] [the] [phone] [but] don't [do it] much [more] ? [what] _changed_ ? 
+A|10| Human 1: [in] _the game_ , [i] use vaporeon [a lot] _. but_ [i] think [pikachu] is [the] cutest , that’s why [i] [changed] my [name] [to] match . lately , [i] think baby yoda is [the] cutest though . _have you seen_ baby yoda ? 
+B|11| Human 2: [have you seen] [the] [pokémon] _show_ [pikachu] _that_ [just] aired [on] [the game] ? it's amazing . 
+A|12| Human 1: [what] is [your] favorite [show] [to] watch _right _now_ ?_ 
+B|13| Human 2: [what] [game] [are you] playing [now ?] 
+A|14| Human 1: [i] _was_ watching _cat_ rescue _videos_ [on] youtube [a lot] . there sure [are] [a lot of] _stray_ _cat_ _babies_ [that] get _stuck_ [in] pipes [and] gutters [in] south korea . 
+B|15| Human 2: [oddly enough] [that] [was] [the] [show] [and] [game] [pikachu] [right now] [. but] [babies] arent all [that] appealing 
+A|16| Human 1: [do] [you] _like cats_ or dogs _better_ ? [do] [you] [have] any _pets_ ? 
+B|17| Human 2: [i] [like cats] [better] , [that] [show] [was] [the] best [and] [you] [are] [right] [i] [have] [seen] all [the] [videos] [about] [stray] [pets] [now] [and] [that] [cat] [stuck] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : what's your name ?
+	Free: Pattern=your, Pattern=name
+	Constrained: 
+Turn ID=2| A | Human 1 : my name is pikachu . it’s nice to meet you ! what are you up to this month ?
+	Free: Pattern=you, Pattern=what are you, Pattern=to, Pattern=pikachu, Pattern=name, Pattern=this month ?
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=are you, Pattern=month
+Turn ID=3| B | Human 2 : what are you interested in this month ?
+	Free: Pattern=what are you, Pattern=this month ?, Pattern=in
+	Constrained: Pattern=you, Pattern=what, Pattern=are, Pattern=are you, Pattern=month
+Turn ID=4| A | Human 1 : i’m trying to organize my life and start the new year ready to go ! what about you ?
+	Free: Pattern=start the new year, Pattern=and, Pattern=trying to, Pattern=to, Pattern=life, Pattern=what about you ?
+	Constrained: Pattern=new, Pattern=you, Pattern=what, Pattern=about, Pattern=year, Pattern=the, Pattern=to, Pattern=start the
+Turn ID=5| B | Human 2 : i will start the year with a month of pikachu and new life . i will do a lot of organizing
+	Free: Pattern=and, Pattern=. i, Pattern=i, Pattern=start the, Pattern=pikachu, Pattern=life, Pattern=a lot of, Pattern=of, Pattern=new, Pattern=do, Pattern=a, Pattern=year, Pattern=month
+	Constrained: Pattern=of, Pattern=a, Pattern=i, Pattern=the, Pattern=a lot
+Turn ID=6| A | Human 1 : what do you do to unwind ?
+	Free: Pattern=to unwind, Pattern=you, Pattern=do, Pattern=what
+	Constrained: Pattern=to
+Turn ID=7| B | Human 2 : i start the new year trying to unwind and relax . what about you ?
+	Free: Pattern=to unwind, Pattern=start the new year, Pattern=and, Pattern=i, Pattern=trying to, Pattern=what about you ?
+	Constrained: Pattern=new, Pattern=you, Pattern=what, Pattern=about, Pattern=year, Pattern=the, Pattern=to, Pattern=start the
+Turn ID=8| A | Human 1 : oddly enough , i also catch pokémon on my phone . i used to do it more , but it just never ends . i used to do it everyday . now i mostly catch them when i travel somewhere exotic .
+	Free: Pattern=used to, Pattern=more, Pattern=just, Pattern=it, Pattern=. i, Pattern=oddly enough, Pattern=i, Pattern=do it, Pattern=on, Pattern=catch, Pattern=now, Pattern=but, Pattern=catch them, Pattern=phone, Pattern=pokémon, Pattern=when
+	Constrained: Pattern=do, Pattern=it, Pattern=i, Pattern=catch, Pattern=to
+Turn ID=9| B | Human 2 : oddly enough when you used to catch them on the phone but don't do it much more ? what changed ?
+	Free: Pattern=used to, Pattern=more, Pattern=you, Pattern=oddly enough, Pattern=do it, Pattern=when, Pattern=but, Pattern=catch them, Pattern=phone, Pattern=what, Pattern=on, Pattern=changed, Pattern=the
+	Constrained: Pattern=do, Pattern=it, Pattern=to, Pattern=catch
+Turn ID=10| A | Human 1 : in the game , i use vaporeon a lot . but i think pikachu is the cutest , that’s why i changed my name to match . lately , i think baby yoda is the cutest though . have you seen baby yoda ?
+	Free: Pattern=have you seen, Pattern=name, Pattern=in, Pattern=i, Pattern=the game, Pattern=. but, Pattern=pikachu, Pattern=changed, Pattern=the, Pattern=a lot, Pattern=to
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=game, Pattern=the, Pattern=seen, Pattern=but
+Turn ID=11| B | Human 2 : have you seen the pokémon show pikachu that just aired on the game ? it's amazing .
+	Free: Pattern=just, Pattern=have you seen, Pattern=the game, Pattern=pokémon, Pattern=pikachu, Pattern=show, Pattern=that, Pattern=on, Pattern=the
+	Constrained: Pattern=you, Pattern=have, Pattern=game, Pattern=the, Pattern=seen
+Turn ID=12| A | Human 1 : what is your favorite show to watch right now ?
+	Free: Pattern=what, Pattern=now ?, Pattern=your, Pattern=to, Pattern=right now, Pattern=show
+	Constrained: Pattern=right, Pattern=now
+Turn ID=13| B | Human 2 : what game are you playing now ?
+	Free: Pattern=now ?, Pattern=are you, Pattern=game, Pattern=what
+	Constrained: Pattern=are, Pattern=you, Pattern=now
+Turn ID=14| A | Human 1 : i was watching cat rescue videos on youtube a lot . there sure are a lot of stray cat babies that get stuck in pipes and gutters in south korea .
+	Free: Pattern=a lot of, Pattern=cat, Pattern=and, Pattern=are, Pattern=in, Pattern=i, Pattern=on, Pattern=a lot, Pattern=was, Pattern=babies, Pattern=stuck, Pattern=stray, Pattern=that, Pattern=videos
+	Constrained: Pattern=a, Pattern=a lot, Pattern=of
+Turn ID=15| B | Human 2 : oddly enough that was the show and game pikachu right now . but babies arent all that appealing
+	Free: Pattern=game, Pattern=and, Pattern=oddly enough, Pattern=. but, Pattern=the, Pattern=pikachu, Pattern=show, Pattern=that, Pattern=babies, Pattern=right now, Pattern=was
+	Constrained: Pattern=but, Pattern=right, Pattern=now
+Turn ID=16| A | Human 1 : do you like cats or dogs better ? do you have any pets ?
+	Free: Pattern=you, Pattern=have, Pattern=like cats, Pattern=do, Pattern=pets, Pattern=better
+	Constrained: 
+Turn ID=17| B | Human 2 : i like cats better , that show was the best and you are right i have seen all the videos about stray pets now and that cat stuck
+	Free: Pattern=right, Pattern=you, Pattern=have, Pattern=like cats, Pattern=cat, Pattern=and, Pattern=are, Pattern=about, Pattern=i, Pattern=pets, Pattern=better, Pattern=the, Pattern=was, Pattern=now, Pattern=stuck, Pattern=stray, Pattern=show, Pattern=seen, Pattern=that, Pattern=videos
+	Constrained: 

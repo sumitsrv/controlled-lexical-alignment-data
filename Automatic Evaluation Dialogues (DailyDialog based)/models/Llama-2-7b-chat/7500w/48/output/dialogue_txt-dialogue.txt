@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm_ good . [how are you] _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] well , thanks _for_ asking ! [how] can _i_ assist [you] [today ?] 
+A|4| Human 1: [i] _was_ _flying_ my _kite_ [today] in _the_ sunshine ! _what_ _did you have for_ _lunch_ ? 
+B|5| Human 2: [i'm] just _an_ ai and don't [have] [the] ability to eat _or_ consume _any_ food , so [lunch] [was] not [for] me [what] 
+A|6| Human 1: oh _that_ is _great !_ _i love seafood_ - _especially shellfish_ ! 
+B|7| Human 2: what's [you have] [lunch] [today] [was] [great !] [how are] [the] [kite] [flying] adventures going [for] [you] [i love] [that] [seafood] shell 
+A|8| Human 1: oh _nice_ ! is it _hard_ ? 
+B|9| Human 2: what's [the] hardest part _of_ [flying] [kite] [i love seafood] [especially shellfish] [that] [was] [great] [lunch] [today] [did you have for] 
+A|10| Human 1: oh wow , [you] _sound like_ [an] _expert_ ! [have] [you] done this before ? 
+B|11| Human 2: [i'm] just [an] ai , [i] can [expert] [shellfish] [the] [hard] part 
+A|12| Human 1: _haha_ , [you] _really_ [have] done your research [i] _suppose_ ! ever done _any other kind_ [of] _fishing_ [or] _hunting_ ? 
+B|13| Human 2: [fishing] [hunting] [you have] [nice] [shellfish] [lunch] [today] [did] [that] [any other kind] [really] [sound like] [expert] [haha] suppose<|im_end| 
+A|14| Human 1: _ahh , would you consider yourself_ [an] _outdoorsy type_ [of] _person_ ? 
+B|15| Human 2: [ahh , would you consider yourself] [person] [outdoorsy type] [fishing] [hunting] [really] [sound] [expert] [haha] [suppose] [the] hardest part [shellfish] l 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=how are, Pattern=you, Pattern=how
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=how are you, Pattern=today ?, Pattern=i'm, Pattern=doing
+	Constrained: Pattern=how are, Pattern=you, Pattern=how, Pattern=today
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking ! how can i assist you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=for, Pattern=i'm, Pattern=i, Pattern=how, Pattern=doing
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=what, Pattern=today, Pattern=flying, Pattern=did you have for, Pattern=i, Pattern=lunch, Pattern=was, Pattern=kite, Pattern=the
+	Constrained: Pattern=you, Pattern=have, Pattern=did, Pattern=for, Pattern=you have
+Turn ID=5| B | Human 2 : i'm just an ai and don't have the ability to eat or consume any food , so lunch was not for me what
+	Free: Pattern=have, Pattern=what, Pattern=an, Pattern=i'm, Pattern=lunch, Pattern=or, Pattern=the, Pattern=was, Pattern=for, Pattern=any
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=i love seafood, Pattern=especially shellfish, Pattern=great !, Pattern=that
+	Constrained: Pattern=great, Pattern=i, Pattern=seafood, Pattern=i love, Pattern=shellfish
+Turn ID=7| B | Human 2 : what's you have lunch today was great ! how are the kite flying adventures going for you i love that seafood shell
+	Free: Pattern=you, Pattern=today, Pattern=for, Pattern=flying, Pattern=you have, Pattern=great !, Pattern=seafood, Pattern=was, Pattern=i love, Pattern=that, Pattern=how are, Pattern=lunch, Pattern=kite, Pattern=the
+	Constrained: Pattern=have, Pattern=how, Pattern=i, Pattern=you, Pattern=great
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: Pattern=nice, Pattern=hard
+	Constrained: 
+Turn ID=9| B | Human 2 : what's the hardest part of flying kite i love seafood especially shellfish that was great lunch today did you have for
+	Free: Pattern=of, Pattern=great, Pattern=i love seafood, Pattern=today, Pattern=flying, Pattern=did you have for, Pattern=especially shellfish, Pattern=lunch, Pattern=was, Pattern=that, Pattern=kite, Pattern=the
+	Constrained: Pattern=you, Pattern=have, Pattern=did, Pattern=for, Pattern=you have, Pattern=i, Pattern=seafood, Pattern=i love, Pattern=shellfish
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=have, Pattern=an, Pattern=expert, Pattern=sound like, Pattern=you
+	Constrained: Pattern=sound
+Turn ID=11| B | Human 2 : i'm just an ai , i can expert shellfish the hard part
+	Free: Pattern=an, Pattern=i'm, Pattern=i, Pattern=the, Pattern=hard, Pattern=expert, Pattern=shellfish
+	Constrained: 
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=of, Pattern=you, Pattern=have, Pattern=fishing, Pattern=i, Pattern=or, Pattern=suppose, Pattern=hunting, Pattern=any other kind, Pattern=haha, Pattern=really
+	Constrained: Pattern=any
+Turn ID=13| B | Human 2 : fishing hunting you have nice shellfish lunch today did that any other kind really sound like expert haha suppose<|im_end|
+	Free: Pattern=sound like, Pattern=nice, Pattern=fishing, Pattern=you have, Pattern=expert, Pattern=hunting, Pattern=any other kind, Pattern=did, Pattern=today, Pattern=haha, Pattern=lunch, Pattern=really, Pattern=shellfish, Pattern=that
+	Constrained: Pattern=any, Pattern=have, Pattern=you, Pattern=sound
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=of, Pattern=an, Pattern=person, Pattern=outdoorsy type, Pattern=ahh , would you consider yourself
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : ahh , would you consider yourself person outdoorsy type fishing hunting really sound expert haha suppose the hardest part shellfish l
+	Free: Pattern=fishing, Pattern=person, Pattern=sound, Pattern=suppose, Pattern=the, Pattern=expert, Pattern=outdoorsy type, Pattern=shellfish, Pattern=haha, Pattern=really, Pattern=hunting, Pattern=ahh , would you consider yourself
+	Constrained: Pattern=you

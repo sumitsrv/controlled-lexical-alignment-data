@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! what's up ??? 
+A|2| Human 1: nothing much _, how_ _you_ doin ? 
+B|3| Human 2: hello [how] _do you_ _do_ , friendo 
+A|4| Human 1: oh wow ! _sounds like _fun_ !_ when _was the last time_ _you had_ seen _this friend_ ? 
+B|5| Human 2: yup [you] are [the] [friend] who [was the last time] [this] happened 
+A|6| Human 1: ohh okay . i [was] going to _say_ if _it_ _had been_ _a_ _long_ [time] maybe it'd be awkward ... 
+B|7| Human 2: [you] [say] [you [had] been] [this friend] _for_ [the last time] [, how] [long] [was] [it] [like] [a] year 
+A|8| Human 1: oh really ? has [a] lot changed in _your_ life _recently_ ? 
+B|9| Human 2: nah you're [the] [friend] who [was] [recently] [this friend] 
+A|10| Human 1: ahhh _sounds exciting_ indeed ! my life _is_ pretty bland . i [like] routine , but sometimes i wish i [had] _more_ [time] [for] _adventures_ ! 
+B|11| Human 2: yay [for] [more] [adventures] 
+A|12| Human 1: _hmmmm_ . i really want to try _bull riding_ . [do you] _have_ any interest in _that ?_ 
+B|13| Human 2: awww [you] . [hmmmm] [sounds exciting] [have] [fun !] 
+A|14| Human 1: sure ! _what_ does _your saturday look like_ ? 
+B|15| Human 2: [hmmmm] [sounds like fun] [you] know anything about [bull riding] ? [what] [is] [your saturday look like] [for] [that ?] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there ! what's up ???
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nothing much , how you doin ?
+	Free: Pattern=, how, Pattern=you
+	Constrained: Pattern=how
+Turn ID=3| B | Human 2 : hello how do you do , friendo
+	Free: Pattern=do you, Pattern=do, Pattern=how
+	Constrained: Pattern=do, Pattern=you
+Turn ID=4| A | Human 1 : oh wow ! sounds like fun ! when was the last time you had seen this friend ?
+	Free: Pattern=you had, Pattern=sounds like fun, Pattern=was the last time, Pattern=fun !, Pattern=this friend
+	Constrained: Pattern=time, Pattern=like, Pattern=had, Pattern=the, Pattern=friend, Pattern=was, Pattern=this, Pattern=you, Pattern=the last time
+Turn ID=5| B | Human 2 : yup you are the friend who was the last time this happened
+	Free: Pattern=you, Pattern=the, Pattern=friend, Pattern=was the last time, Pattern=this
+	Constrained: Pattern=was, Pattern=the last time, Pattern=time, Pattern=the
+Turn ID=6| A | Human 1 : ohh okay . i was going to say if it had been a long time maybe it'd be awkward ...
+	Free: Pattern=time, Pattern=long, Pattern=a, Pattern=it, Pattern=say, Pattern=was, Pattern=had been
+	Constrained: Pattern=had
+Turn ID=7| B | Human 2 : you say you had been this friend for the last time , how long was it like a year
+	Free: Pattern=you had, Pattern=long, Pattern=a, Pattern=for, Pattern=it, Pattern=say, Pattern=like, Pattern=, how, Pattern=was, Pattern=this friend, Pattern=had been, Pattern=you, Pattern=the last time
+	Constrained: Pattern=time, Pattern=you, Pattern=how, Pattern=had, Pattern=the, Pattern=friend, Pattern=this
+Turn ID=8| A | Human 1 : oh really ? has a lot changed in your life recently ?
+	Free: Pattern=your, Pattern=a, Pattern=recently
+	Constrained: 
+Turn ID=9| B | Human 2 : nah you're the friend who was recently this friend
+	Free: Pattern=the, Pattern=friend, Pattern=was, Pattern=this friend, Pattern=recently
+	Constrained: Pattern=friend, Pattern=this
+Turn ID=10| A | Human 1 : ahhh sounds exciting indeed ! my life is pretty bland . i like routine , but sometimes i wish i had more time for adventures !
+	Free: Pattern=time, Pattern=more, Pattern=for, Pattern=sounds exciting, Pattern=is, Pattern=like, Pattern=had, Pattern=adventures
+	Constrained: 
+Turn ID=11| B | Human 2 : yay for more adventures
+	Free: Pattern=adventures, Pattern=more, Pattern=for
+	Constrained: 
+Turn ID=12| A | Human 1 : hmmmm . i really want to try bull riding . do you have any interest in that ?
+	Free: Pattern=have, Pattern=do you, Pattern=bull riding, Pattern=that ?, Pattern=hmmmm
+	Constrained: Pattern=do, Pattern=you
+Turn ID=13| B | Human 2 : awww you . hmmmm sounds exciting have fun !
+	Free: Pattern=you, Pattern=have, Pattern=sounds exciting, Pattern=hmmmm, Pattern=fun !
+	Constrained: 
+Turn ID=14| A | Human 1 : sure ! what does your saturday look like ?
+	Free: Pattern=your saturday look like, Pattern=what
+	Constrained: Pattern=your, Pattern=like
+Turn ID=15| B | Human 2 : hmmmm sounds like fun you know anything about bull riding ? what is your saturday look like for that ?
+	Free: Pattern=you, Pattern=what, Pattern=for, Pattern=your saturday look like, Pattern=sounds like fun, Pattern=bull riding, Pattern=that ?, Pattern=hmmmm, Pattern=is
+	Constrained: Pattern=like, Pattern=your

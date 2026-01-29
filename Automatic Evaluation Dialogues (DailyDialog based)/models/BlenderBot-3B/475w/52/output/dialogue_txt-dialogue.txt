@@ -1,0 +1,67 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: hello , how _are_ _you_ doing today ? 
+A|2| Human 1: _i heard_ _they are giving out_ _some_ _goodies_ _in_ microkitchen . 
+B|3| Human 2: hey , [they are giving out] [goodies] _, [i_ heard] [some] [are] _for a_ special event on my birthday but _it_ may not be _for_ many people . 
+A|4| Human 1: _i guess_ _its_ [a] jacket ! very _much needed_ _that_ _in the cold_ 🙂 
+B|5| Human 2: [hi] , [its] [cold] [out] here _. [i_ guess] [they are giving out] [goodies] _for the_ hurricane [that] hit us . 
+A|6| Human 1: _sure_ hate [it] ! limits _our_ ability _to_ go [out] _even_ [for a] _walk_ _! its_ _good_ [that] we don't _get_ _to_ suffer extreme _cold weather_ ! 
+B|7| Human 2: [sure] [that] [the [cold] weather] is [for] [good] _and_ [our] health [! its] [even] [much needed] _to get_ outdoors [to] [walk] [in] [some] places 
+A|8| Human 1: oh _nice_ ! _where did you live_ before ? 
+B|9| Human 2: [where did you live] [that] was hit _by_ [the] hurricane ? 
+A|10| Human 1: _new york_ ! _nice_ ! best _place_ [to] [live] 🙂 .. _right_ , except [for [the] cold] ! 
+B|11| Human 2: [i] [live] [in the] outskirts _of_ [new york] but we're not [that] [cold] [right] now , [it] was [nice] [for] me _to get_ [a] bit _of_ 
+A|12| Human 1: anyways [, [i] guess] we _should_ _better hurry_ up [to get] [the] [goodies] [. i] remember last time [they] ran [out] [of] [it] . 
+B|13| Human 2: [i] [live] [in the cold] [place] [that] [should] [get] [some] snow [. [i] guess] [i] [better hurry] . 
+A|14| Human 1: [the] one [in] [our] _floor_ [. i] _will get_ [by] _your_ desk [and] we _can_ [walk] _there_ . 
+B|15| Human 2: [the] hurricane [will get] [there] [and] [your] [floor] [can] still be [cold] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you doing today ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i heard they are giving out some goodies in microkitchen .
+	Free: Pattern=goodies, Pattern=they are giving out, Pattern=i heard, Pattern=some, Pattern=in
+	Constrained: Pattern=are, Pattern=they, Pattern=i, Pattern=out
+Turn ID=3| B | Human 2 : hey , they are giving out goodies , i heard some are for a special event on my birthday but it may not be for many people .
+	Free: Pattern=goodies, Pattern=they are giving out, Pattern=it, Pattern=are, Pattern=some, Pattern=, i, Pattern=for a, Pattern=i heard, Pattern=for
+	Constrained: Pattern=out, Pattern=they, Pattern=a, Pattern=for, Pattern=are, Pattern=i
+Turn ID=4| A | Human 1 : i guess its a jacket ! very much needed that in the cold 🙂
+	Free: Pattern=its, Pattern=a, Pattern=in the cold, Pattern=i guess, Pattern=much needed, Pattern=that
+	Constrained: Pattern=in the, Pattern=cold, Pattern=in, Pattern=i, Pattern=the, Pattern=the cold
+Turn ID=5| B | Human 2 : hi , its cold out here . i guess they are giving out goodies for the hurricane that hit us .
+	Free: Pattern=out, Pattern=for the, Pattern=they are giving out, Pattern=hi, Pattern=i guess, Pattern=that, Pattern=its, Pattern=goodies, Pattern=cold, Pattern=. i
+	Constrained: Pattern=out, Pattern=they, Pattern=for, Pattern=are, Pattern=i, Pattern=the
+Turn ID=6| A | Human 1 : sure hate it ! limits our ability to go out even for a walk ! its good that we don't get to suffer extreme cold weather !
+	Free: Pattern=good, Pattern=out, Pattern=even, Pattern=our, Pattern=it, Pattern=walk, Pattern=sure, Pattern=to, Pattern=for a, Pattern=get, Pattern=cold weather, Pattern=! its, Pattern=that
+	Constrained: Pattern=for, Pattern=a, Pattern=cold, Pattern=its
+Turn ID=7| B | Human 2 : sure that the cold weather is for good and our health ! its even much needed to get outdoors to walk in some places
+	Free: Pattern=good, Pattern=even, Pattern=some, Pattern=in, Pattern=walk, Pattern=sure, Pattern=much needed, Pattern=the cold, Pattern=to, Pattern=cold weather, Pattern=our, Pattern=for, Pattern=and, Pattern=to get, Pattern=! its, Pattern=that
+	Constrained: Pattern=its, Pattern=cold, Pattern=the, Pattern=to, Pattern=get
+Turn ID=8| A | Human 1 : oh nice ! where did you live before ?
+	Free: Pattern=where did you live, Pattern=nice
+	Constrained: Pattern=you, Pattern=live
+Turn ID=9| B | Human 2 : where did you live that was hit by the hurricane ?
+	Free: Pattern=where did you live, Pattern=that, Pattern=the, Pattern=by
+	Constrained: Pattern=you, Pattern=live
+Turn ID=10| A | Human 1 : new york ! nice ! best place to live 🙂 .. right , except for the cold !
+	Free: Pattern=right, Pattern=for the, Pattern=new york, Pattern=nice, Pattern=live, Pattern=the cold, Pattern=to, Pattern=place
+	Constrained: Pattern=the, Pattern=for, Pattern=cold
+Turn ID=11| B | Human 2 : i live in the outskirts of new york but we're not that cold right now , it was nice for me to get a bit of
+	Free: Pattern=a, Pattern=new york, Pattern=cold, Pattern=i, Pattern=that, Pattern=right, Pattern=of, Pattern=nice, Pattern=for, Pattern=it, Pattern=to get, Pattern=live, Pattern=in the
+	Constrained: Pattern=in, Pattern=to, Pattern=get, Pattern=the
+Turn ID=12| A | Human 1 : anyways , i guess we should better hurry up to get the goodies . i remember last time they ran out of it .
+	Free: Pattern=goodies, Pattern=of, Pattern=out, Pattern=better hurry, Pattern=. i, Pattern=i guess, Pattern=should, Pattern=they, Pattern=it, Pattern=to get, Pattern=the, Pattern=, i
+	Constrained: Pattern=i, Pattern=to, Pattern=get
+Turn ID=13| B | Human 2 : i live in the cold place that should get some snow . i guess i better hurry .
+	Free: Pattern=should, Pattern=live, Pattern=better hurry, Pattern=some, Pattern=i, Pattern=i guess, Pattern=place, Pattern=get, Pattern=that, Pattern=. i, Pattern=in the cold
+	Constrained: Pattern=in the, Pattern=cold, Pattern=in, Pattern=i, Pattern=the, Pattern=the cold
+Turn ID=14| A | Human 1 : the one in our floor . i will get by your desk and we can walk there .
+	Free: Pattern=there, Pattern=and, Pattern=can, Pattern=. i, Pattern=in, Pattern=the, Pattern=will get, Pattern=by, Pattern=our, Pattern=floor, Pattern=your, Pattern=walk
+	Constrained: Pattern=get, Pattern=i
+Turn ID=15| B | Human 2 : the hurricane will get there and your floor can still be cold .
+	Free: Pattern=there, Pattern=floor, Pattern=and, Pattern=can, Pattern=cold, Pattern=your, Pattern=the, Pattern=will get
+	Constrained: Pattern=get

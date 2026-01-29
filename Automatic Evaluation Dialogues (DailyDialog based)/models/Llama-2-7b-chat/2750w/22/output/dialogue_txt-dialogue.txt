@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: doing _great _!_ _what are_ you looking forward to_ ? 
+B|3| Human 2: [great !] is there anything [you] need help _with_ ? 
+A|4| Human 1: _yay_ ! turkey _and_ _shopping_ ! 
+B|5| Human 2: [yay] [shopping] 🛍️ [what are you looking forward to] buying ? 
+A|6| Human 1: _yea_ me _too ._ i sometimes eat _noodle soups_ in _thanksgiving_ instead haha 
+B|7| Human 2: [noodle soups] ? yum [! what are] your favorite [noodle] soup flavors ? 
+A|8| Human 1: me neither . someone told me _that_ it depends on the _stuffing_ inside the turkey . _some_ people make very _good stuffing_ 
+B|9| Human 2: [stuffing] 🍞 yum [! what are] [some] [good stuffing] ideas for [thanksgiving] ? 
+A|10| Human 1: _yea_ _. what_ do _you plan_ [to] buy ? 
+B|11| Human 2: [yea] [noodle soups] [and] [stuffing] [are] [good] [too [.] what] about [you] ? have [you plan] anything ? <|im_end| 
+A|12| Human 1: ah _cool_ . so [you] can _run_ more frequently ? :) 
+B|13| Human 2: [yea] [that] would be [cool] 😄 [what are you] planing [to] [run] for [thanksgiving] ? 
+A|14| Human 1: [yay] , all the best [with] keeping calories in check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=what are you looking forward to, Pattern=! what are, Pattern=great !
+	Constrained: Pattern=you, Pattern=are, Pattern=to, Pattern=are you, Pattern=what are you
+Turn ID=3| B | Human 2 : great ! is there anything you need help with ?
+	Free: Pattern=great !, Pattern=with, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=yay, Pattern=shopping, Pattern=and
+	Constrained: 
+Turn ID=5| B | Human 2 : yay shopping 🛍️ what are you looking forward to buying ?
+	Free: Pattern=what are you looking forward to, Pattern=yay, Pattern=shopping
+	Constrained: Pattern=you, Pattern=are, Pattern=to, Pattern=are you, Pattern=what are you
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=noodle soups, Pattern=too ., Pattern=thanksgiving, Pattern=yea
+	Constrained: Pattern=noodle
+Turn ID=7| B | Human 2 : noodle soups ? yum ! what are your favorite noodle soup flavors ?
+	Free: Pattern=! what are, Pattern=noodle soups, Pattern=noodle
+	Constrained: Pattern=are, Pattern=noodle
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=good stuffing, Pattern=that, Pattern=stuffing, Pattern=some
+	Constrained: Pattern=good, Pattern=stuffing
+Turn ID=9| B | Human 2 : stuffing 🍞 yum ! what are some good stuffing ideas for thanksgiving ?
+	Free: Pattern=good stuffing, Pattern=stuffing, Pattern=thanksgiving, Pattern=some, Pattern=! what are
+	Constrained: Pattern=are, Pattern=stuffing, Pattern=good
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=you plan, Pattern=. what, Pattern=to, Pattern=yea
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : yea noodle soups and stuffing are good too . what about you ? have you plan anything ? <|im_end|
+	Free: Pattern=good, Pattern=you, Pattern=noodle soups, Pattern=. what, Pattern=you plan, Pattern=and, Pattern=stuffing, Pattern=are, Pattern=too ., Pattern=yea
+	Constrained: Pattern=you, Pattern=noodle
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=cool, Pattern=you, Pattern=run
+	Constrained: 
+Turn ID=13| B | Human 2 : yea that would be cool 😄 what are you planing to run for thanksgiving ?
+	Free: Pattern=cool, Pattern=yea, Pattern=what are you, Pattern=to, Pattern=that, Pattern=thanksgiving, Pattern=run
+	Constrained: Pattern=are, Pattern=you, Pattern=are you
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=yay, Pattern=with
+	Constrained: 

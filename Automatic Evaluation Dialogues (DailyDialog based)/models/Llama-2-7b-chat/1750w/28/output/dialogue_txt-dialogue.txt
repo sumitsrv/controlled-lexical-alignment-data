@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ ? 
+A|2| Human 1: _i'm_ _great_ , thanks _. i_ just ate _a_ delicious _breakfast ,_ _which_ always sets _the day_ up right . 
+B|3| Human 2: [i'm] glad _to_ hear _that_ ! [breakfast] _is_ definitely [the] most important meal _of [the_ day] . did _you_ _have_ anything interesting planned for today ? < 
+A|4| Human 1: _i_ had _eggs and hash browns_ . way less healthier than your apple , [i'm] afraid ! 
+B|5| Human 2: ah , [i] see ! [eggs and hash browns] _are_ [a] [great] [breakfast] choice . they're both high _in_ protein [which] can help keep _you_ full [and] 
+A|6| Human 1: ha , _that's_ true . if [you] _could_ only _eat_ _one_ _food_ _forever ,_ _what would_ _it_ _be_ ? 
+B|7| Human 2: hmmm ... [that's] [a] tough [one] [. i] [would] _have_ _to say_ pizza ! [i] [could] [eat] [it] for [breakfast ,] lunch , [and] 
+A|8| Human 1: _yeah ,_ turning orange [would] _be a_ drawback ! [that] turns my mind [to] nutrition _so_ [i] suddenly want [to say] _soylent_ or [one] [of] those _other_ "complete foods" , [which] _i think_ defeats [the] purpose [of _the] question_ . [i'm] [in] [a] muddle ! 
+B|9| Human 2: [yeah ,] [i] can see [that] ! [soylent] [and] [other] complete foods [would] definitely solve [the question] [of] [what] [to] [eat] [forever ,] but they're 
+A|10| Human 1: brilliant [. i] love [it] . 
+B|11| Human 2: [i think] you'd [be a] [great] [food] critic ! [so] [what would] [the] ultimate [breakfast] [be] for [you] ? 
+A|12| Human 1: [that] depends . [what] sort [of] [food] do [you] feel like ? 
+B|13| Human 2: i'd _have_ [to say] [a] hearty bowl [of] oatmeal with nuts , fruit , [and] [a] drizzle [of] honey 
+A|14| Human 1: oh , too easy ! try [the] green hut , they [have] franchises everywhere . all their [food] [is] green [and] [the] plates [are] green too . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i just ate a delicious breakfast , which always sets the day up right .
+	Free: Pattern=a, Pattern=. i, Pattern=i'm, Pattern=the day, Pattern=which, Pattern=great, Pattern=breakfast ,
+	Constrained: Pattern=the, Pattern=i, Pattern=breakfast
+Turn ID=3| B | Human 2 : i'm glad to hear that ! breakfast is definitely the most important meal of the day . did you have anything interesting planned for today ? <
+	Free: Pattern=you, Pattern=have, Pattern=breakfast, Pattern=i'm, Pattern=is, Pattern=the day, Pattern=the, Pattern=to, Pattern=of the, Pattern=that
+	Constrained: Pattern=the, Pattern=of
+Turn ID=4| A | Human 1 : i had eggs and hash browns . way less healthier than your apple , i'm afraid !
+	Free: Pattern=eggs and hash browns, Pattern=i'm, Pattern=i
+	Constrained: Pattern=and
+Turn ID=5| B | Human 2 : ah , i see ! eggs and hash browns are a great breakfast choice . they're both high in protein which can help keep you full and
+	Free: Pattern=a, Pattern=and, Pattern=are, Pattern=in, Pattern=i, Pattern=which, Pattern=you, Pattern=great, Pattern=eggs and hash browns, Pattern=breakfast
+	Constrained: Pattern=and
+Turn ID=6| A | Human 1 : ha , that's true . if you could only eat one food forever , what would it be ?
+	Free: Pattern=forever ,, Pattern=you, Pattern=eat, Pattern=what would, Pattern=it, Pattern=one, Pattern=food, Pattern=be, Pattern=that's, Pattern=could
+	Constrained: Pattern=would, Pattern=what
+Turn ID=7| B | Human 2 : hmmm ... that's a tough one . i would have to say pizza ! i could eat it for breakfast , lunch , and
+	Free: Pattern=breakfast ,, Pattern=have, Pattern=eat, Pattern=a, Pattern=. i, Pattern=i, Pattern=that's, Pattern=would, Pattern=could, Pattern=it, Pattern=and, Pattern=to say, Pattern=one
+	Constrained: Pattern=to, Pattern=i, Pattern=breakfast
+Turn ID=8| A | Human 1 : yeah , turning orange would be a drawback ! that turns my mind to nutrition so i suddenly want to say soylent or one of those other "complete foods" , which i think defeats the purpose of the question . i'm in a muddle !
+	Free: Pattern=of, Pattern=the question, Pattern=yeah ,, Pattern=a, Pattern=other, Pattern=in, Pattern=i, Pattern=the, Pattern=would, Pattern=to, Pattern=which, Pattern=to say, Pattern=one, Pattern=be a, Pattern=i'm, Pattern=soylent, Pattern=of the, Pattern=that, Pattern=so, Pattern=i think
+	Constrained: Pattern=of, Pattern=a, Pattern=i, Pattern=be, Pattern=the, Pattern=to
+Turn ID=9| B | Human 2 : yeah , i can see that ! soylent and other complete foods would definitely solve the question of what to eat forever , but they're
+	Free: Pattern=forever ,, Pattern=of, Pattern=the question, Pattern=eat, Pattern=and, Pattern=other, Pattern=soylent, Pattern=i, Pattern=would, Pattern=to, Pattern=that, Pattern=yeah ,, Pattern=what
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : brilliant . i love it .
+	Free: Pattern=. i, Pattern=it
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i think you'd be a great food critic ! so what would the ultimate breakfast be for you ?
+	Free: Pattern=what would, Pattern=breakfast, Pattern=be a, Pattern=food, Pattern=be, Pattern=the, Pattern=you, Pattern=great, Pattern=so, Pattern=i think
+	Constrained: Pattern=what, Pattern=a, Pattern=i, Pattern=be, Pattern=would
+Turn ID=12| A | Human 1 : that depends . what sort of food do you feel like ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=food, Pattern=that
+	Constrained: 
+Turn ID=13| B | Human 2 : i'd have to say a hearty bowl of oatmeal with nuts , fruit , and a drizzle of honey
+	Free: Pattern=of, Pattern=have, Pattern=a, Pattern=and, Pattern=to say
+	Constrained: Pattern=to
+Turn ID=14| A | Human 1 : oh , too easy ! try the green hut , they have franchises everywhere . all their food is green and the plates are green too .
+	Free: Pattern=have, Pattern=and, Pattern=are, Pattern=is, Pattern=food, Pattern=the
+	Constrained: 

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's your day _going_ ? 
+B|3| Human 2: hey there ! 
+A|4| Human 1: _i'm_ good ! _just_ _getting ready_ _to_ watch _a_ _basketball_ _game_ . hope your _headache_ goes away ! 
+B|5| Human 2: [i'm] [getting ready] too . [just] finishing [a] [game] _of_ [basketball] _i_ _was_ playing . 
+A|6| Human 1: hmm , _try taking some_ <redacted_term> ! _i'm _going to_ see_ _the_ warriors vs _. the_ grizzlies . ever _see them play_ ? 
+B|7| Human 2: _i_ [try taking some] [headache] medicine [to [see] them play] and [i'm going to] [the] [game] too . 
+A|8| Human 1: haha , _all_ [the] animal _names_ confuse me as well ! _who_ _came_ up with these naming conventions ? i'd _name_ my _team_ something more original: _the new york_ chairs ! 
+B|9| Human 2: [i'm] sure [the] [names] [all] seem strange [to] an outsider . [who] knows , [the] [game] [came] first _in_ 1891 and [the] [name] [basketball] wasn 
+A|10| Human 1: oh cool ! _what is_ "neurips" ? 
+B|11| Human 2: _i_ [see] . [what is] [the] [game] you are [going to see] [. the] [name] [came] from [the new york] giants . 
+A|12| Human 1: oh wow ! sounds fancy ! _what is that_ _about_ ? 
+B|13| Human 2: [the] [name] [is] neurips [is] [a] [team] [that] _was_ founded _in_ 2009 by [the] ceo , ian gaymer . it's 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: [what is that] ? _i_ am not really sure . 
+A|16| Human 1: ahh ! [i] saw [a] scary movie _about_ [that] once . it [was] _about_ this _sentient_ ai [in] [a] dystopian _future_ - very very creepy . it [was] called wall-e , ever heard [of] it ? 
+B|17| Human 2: neurips [was] founded [in] 2005 . [a] [sentient] robot [that] can think [about] [what] [the] [future] may be like , and learns 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=getting ready, Pattern=just, Pattern=a, Pattern=game, Pattern=i'm, Pattern=to, Pattern=basketball, Pattern=headache
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm getting ready too . just finishing a game of basketball i was playing .
+	Free: Pattern=getting ready, Pattern=of, Pattern=just, Pattern=a, Pattern=game, Pattern=basketball, Pattern=i'm, Pattern=i, Pattern=was
+	Constrained: 
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=see them play, Pattern=try taking some, Pattern=going to see, Pattern=the, Pattern=. the, Pattern=i'm going to
+	Constrained: Pattern=to see, Pattern=going, Pattern=i'm, Pattern=the, Pattern=see, Pattern=to
+Turn ID=7| B | Human 2 : i try taking some headache medicine to see them play and i'm going to the game too .
+	Free: Pattern=to see, Pattern=game, Pattern=headache, Pattern=see them play, Pattern=try taking some, Pattern=i, Pattern=the, Pattern=i'm going to
+	Constrained: Pattern=to, Pattern=see, Pattern=i'm, Pattern=going
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=came, Pattern=who, Pattern=name, Pattern=the new york, Pattern=team, Pattern=names, Pattern=the, Pattern=all
+	Constrained: Pattern=the
+Turn ID=9| B | Human 2 : i'm sure the names all seem strange to an outsider . who knows , the game came first in 1891 and the name basketball wasn
+	Free: Pattern=came, Pattern=who, Pattern=game, Pattern=in, Pattern=i'm, Pattern=to, Pattern=names, Pattern=basketball, Pattern=name, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=what is
+	Constrained: Pattern=is, Pattern=what
+Turn ID=11| B | Human 2 : i see . what is the game you are going to see . the name came from the new york giants .
+	Free: Pattern=what is, Pattern=came, Pattern=game, Pattern=name, Pattern=going to see, Pattern=i, Pattern=the, Pattern=. the, Pattern=see, Pattern=the new york
+	Constrained: Pattern=to see, Pattern=going, Pattern=what, Pattern=is, Pattern=the, Pattern=see, Pattern=to
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=what is that, Pattern=about
+	Constrained: Pattern=is, Pattern=what, Pattern=what is, Pattern=that
+Turn ID=13| B | Human 2 : the name is neurips is a team that was founded in 2009 by the ceo , ian gaymer . it's
+	Free: Pattern=a, Pattern=name, Pattern=in, Pattern=is, Pattern=the, Pattern=was, Pattern=team, Pattern=that
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : what is that ? i am not really sure .
+	Free: Pattern=what is that, Pattern=i
+	Constrained: Pattern=is, Pattern=what, Pattern=what is, Pattern=that
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=of, Pattern=a, Pattern=about, Pattern=in, Pattern=i, Pattern=future, Pattern=was, Pattern=that, Pattern=sentient
+	Constrained: 
+Turn ID=17| B | Human 2 : neurips was founded in 2005 . a sentient robot that can think about what the future may be like , and learns
+	Free: Pattern=what, Pattern=a, Pattern=about, Pattern=in, Pattern=future, Pattern=the, Pattern=was, Pattern=that, Pattern=sentient
+	Constrained: 

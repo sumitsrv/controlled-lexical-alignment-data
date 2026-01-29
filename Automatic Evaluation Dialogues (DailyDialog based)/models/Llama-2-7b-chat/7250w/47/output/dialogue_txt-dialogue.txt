@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: _i'm_ _just_ an ai , _i_ don't have feelings or experiences , but _i'm_ here _to_ help with any questions or tasks _you_ 
+A|4| Human 1: [i'm] good [i'm] good . _what's_ getting [you] _down_ ? 
+B|5| Human 2: [i'm] _just_ an ai , _i_ don't have personal experiences or emotions , so _i_ can't really feel [down] or upset 
+A|6| Human 1: [i'm] thinking _of_ going _to visit_ my _family_ . how _about_ [you] ? 
+B|7| Human 2: [i'm] _just_ an ai , _i_ don't have [family] or personal relationships , so _i_ can't [visit] anyone<|im_end 
+A|8| Human 1: they're _in new york ._ how _about_ yours ? 
+B|9| Human 2: [i'm] _just_ an ai , _i_ don't have [family] or personal relationships , so _i_ don't have _a_ [new york] location [to visit] 
+A|10| Human 1: ahh _what_ _city_ ? _i've_ _visited_ india before . 
+B|11| Human 2: [what's] [your] favorite [city] [you] [visited] ? 
+A|12| Human 1: hyderabad ! _and_ bangalore ! great food _in_ both _cities_ ! _is_ it still _hot_ _this_ _time of year_ ? 
+B|13| Human 2: [i'm] _just_ an ai [and] do not have personal experiences or memories , so _i_ cannot [visit] [cities] or experience [hot] weather<|im_ 
+A|14| Human 1: yes . [i] _was_ actually [just] [there] [a] few weeks ago for _thanksgiving_ [and] got _to see_ the first snow _of_ the season ! ever _been_ [to] [new york] ? 
+B|15| Human 2: [i've] [been] [just] [about] everywhere [there] [is] [to see] [and] do [in new york .] [what] [time of year] [was] [this] [thanksgiving] ? <|im 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have feelings or experiences , but i'm here to help with any questions or tasks you
+	Free: Pattern=you, Pattern=just, Pattern=i'm, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=down, Pattern=i'm, Pattern=what's, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal experiences or emotions , so i can't really feel down or upset
+	Free: Pattern=just, Pattern=down, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=of, Pattern=you, Pattern=i'm, Pattern=to visit, Pattern=about, Pattern=family
+	Constrained: Pattern=to, Pattern=visit
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have family or personal relationships , so i can't visit anyone<|im_end
+	Free: Pattern=just, Pattern=family, Pattern=i'm, Pattern=i, Pattern=visit
+	Constrained: 
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=in new york ., Pattern=about
+	Constrained: Pattern=in, Pattern=new york
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have family or personal relationships , so i don't have a new york location to visit
+	Free: Pattern=just, Pattern=a, Pattern=new york, Pattern=family, Pattern=i'm, Pattern=i, Pattern=to visit
+	Constrained: Pattern=to, Pattern=visit
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=what, Pattern=city, Pattern=i've, Pattern=visited
+	Constrained: 
+Turn ID=11| B | Human 2 : what's your favorite city you visited ?
+	Free: Pattern=city, Pattern=you, Pattern=your, Pattern=what's, Pattern=visited
+	Constrained: 
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=and, Pattern=time of year, Pattern=in, Pattern=is, Pattern=this, Pattern=hot, Pattern=cities
+	Constrained: Pattern=of
+Turn ID=13| B | Human 2 : i'm just an ai and do not have personal experiences or memories , so i cannot visit cities or experience hot weather<|im_
+	Free: Pattern=just, Pattern=and, Pattern=i'm, Pattern=i, Pattern=visit, Pattern=hot, Pattern=cities
+	Constrained: 
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=of, Pattern=to see, Pattern=just, Pattern=there, Pattern=a, Pattern=new york, Pattern=and, Pattern=thanksgiving, Pattern=i, Pattern=to, Pattern=been, Pattern=was
+	Constrained: Pattern=to
+Turn ID=15| B | Human 2 : i've been just about everywhere there is to see and do in new york . what time of year was this thanksgiving ? <|im
+	Free: Pattern=to see, Pattern=just, Pattern=and, Pattern=i've, Pattern=time of year, Pattern=is, Pattern=in new york ., Pattern=this, Pattern=what, Pattern=there, Pattern=about, Pattern=thanksgiving, Pattern=been, Pattern=was
+	Constrained: Pattern=in, Pattern=to, Pattern=of, Pattern=new york

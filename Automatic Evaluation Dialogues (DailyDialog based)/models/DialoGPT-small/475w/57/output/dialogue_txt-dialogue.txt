@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , it _is_ flying by quicker than _i_ expected _. how is_ [your day going] on ? 
+B|3| Human 2: _oh_ okay , i'm glad _you're_ okay ! 
+A|4| Human 1: [oh] _, i_ would love to twiddle my thumbs _. you're so lucky !_ _today_ _, i've been_ mostly attending meetings , _reading_ _and_ writing docs , _reading_ papers etc . 
+B|5| Human 2: [oh] okay [, i've been] [going] for two hours [and] [reading] [your] other stuff [. you're so lucky !] [how] _are_ _you_ doing [today] ? 
+A|6| Human 1: wow ! _i_ _sometimes drift_ off during _work_ , [and] _see_ similar things in my head . 
+B|7| Human 2: no [, i] [work] [and] [sometimes drift] 
+A|8| Human 1: mostly saving _the world_ _from_ mess on social media _. _how_ about_ [you] ? 
+B|9| Human 2: hey [you] [. how is] [the world] [and] [your day going] ? 
+A|10| Human 1: nice , what _all_ _places_ would [you] be [going] to ? 
+B|11| Human 2: hey _it's_ [you] [i] [see] [all] [the] [places] [i] _should_ go [from] 
+A|12| Human 1: [i] just met someone who went diving in australia . apparently , [you] cannot _fly_ 24 hrs after [you] dive , because _your body accumulates_ _too much_ <redacted_term> when breathing _with_ a _cylinder_ [so] , _don't_ do _that_ ! 
+B|13| Human 2: maby [you] [don't] [fly] [much] [and] [that] [your body accumulates] [the] [cylinder] [too much] ... 
+A|14| Human 1: that's equally amazing ! [i] wish _i can_ explore such [places] one [day] . [it's] just [so] expensive 
+B|15| Human 2: [how about] 
+A|16| Human 1: woah !... [you] know sharing [is] caring . [you] [should] _share_ [that] money _with_ me :) 
+B|17| Human 2: [i can] [share] [with] [you] 
+A|18| Human 1: [you] [are] a kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=your, Pattern=going, Pattern=day
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=your day going, Pattern=. how is, Pattern=i, Pattern=is
+	Constrained: Pattern=going, Pattern=how, Pattern=. how, Pattern=day, Pattern=is, Pattern=your
+Turn ID=3| B | Human 2 : oh okay , i'm glad you're okay !
+	Free: Pattern=you're, Pattern=oh
+	Constrained: 
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=today, Pattern=reading, Pattern=, i, Pattern=. you're so lucky !, Pattern=, i've been, Pattern=and, Pattern=oh
+	Constrained: Pattern=you're, Pattern=so, Pattern=i
+Turn ID=5| B | Human 2 : oh okay , i've been going for two hours and reading your other stuff . you're so lucky ! how are you doing today ?
+	Free: Pattern=you, Pattern=going, Pattern=today, Pattern=how, Pattern=are, Pattern=reading, Pattern=your, Pattern=. you're so lucky !, Pattern=, i've been, Pattern=and, Pattern=oh
+	Constrained: Pattern=you're, Pattern=so
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=and, Pattern=work, Pattern=i, Pattern=see, Pattern=sometimes drift
+	Constrained: 
+Turn ID=7| B | Human 2 : no , i work and sometimes drift
+	Free: Pattern=sometimes drift, Pattern=, i, Pattern=work, Pattern=and
+	Constrained: Pattern=i
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=you, Pattern=. how, Pattern=from, Pattern=how about, Pattern=the world
+	Constrained: Pattern=the, Pattern=how
+Turn ID=9| B | Human 2 : hey you . how is the world and your day going ?
+	Free: Pattern=you, Pattern=and, Pattern=the world, Pattern=. how is, Pattern=your day going
+	Constrained: Pattern=going, Pattern=how, Pattern=. how, Pattern=the, Pattern=day, Pattern=is, Pattern=your
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=places, Pattern=you, Pattern=all, Pattern=going
+	Constrained: 
+Turn ID=11| B | Human 2 : hey it's you i see all the places i should go from
+	Free: Pattern=you, Pattern=from, Pattern=i, Pattern=see, Pattern=it's, Pattern=should, Pattern=places, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=you, Pattern=cylinder, Pattern=too much, Pattern=fly, Pattern=i, Pattern=don't, Pattern=so, Pattern=your body accumulates, Pattern=with, Pattern=that
+	Constrained: Pattern=much, Pattern=your
+Turn ID=13| B | Human 2 : maby you don't fly much and that your body accumulates the cylinder too much ...
+	Free: Pattern=you, Pattern=cylinder, Pattern=too much, Pattern=and, Pattern=fly, Pattern=much, Pattern=the, Pattern=don't, Pattern=that, Pattern=your body accumulates
+	Constrained: Pattern=much, Pattern=your
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=places, Pattern=i can, Pattern=it's, Pattern=so, Pattern=day, Pattern=i
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : how about
+	Free: Pattern=how about
+	Constrained: Pattern=how
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=you, Pattern=should, Pattern=is, Pattern=share, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=17| B | Human 2 : i can share with you
+	Free: Pattern=i can, Pattern=you, Pattern=share, Pattern=with
+	Constrained: Pattern=i
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=you, Pattern=are
+	Constrained: 

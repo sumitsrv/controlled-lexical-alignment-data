@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how_ _is_ _the_ _youtube _video_ creation_ _going_ ? 
+B|3| Human 2: [the] [video creation] [is] [going] _well_ , [how] may _i_ help _you_ today ? </s>tube_start: 
+A|4| Human 1: whoa ! looking forward to listening to it _. what softewares_ [you] _use for_ it ? 
+B|5| Human 2: [for] [video creation] , we [use] _a_ combination ofa nda and davinci resolve [. what] about [you] ? who [softewares] _do you_ 
+A|6| Human 1: oh _cool ! _what_ sort of_ _music_ [do you] _compose_ ? 
+B|7| Human 2: [compose] [music] [for] [youtube video] soundtrack [. what softewares] doyou [use for] that ? 
+A|8| Human 1: _nice_ .... _you are a_ _rockstar_ ! 😉 
+B|9| Human 2: so [you are a] [music] [compose] [rockstar] [nice] ... [what sort of] [video] content [do] yo [creation] [for] [youtube] ? <|im_end| 
+A|10| Human 1: _yeah_ .... [i] _play_ bit [of] _guitar_ . just _got_ my _first monitor_ _this_ week 
+B|11| Human 2: [cool ! what] [are] [you] [first monitor] ? 
+A|12| Human 1: _yes_ , [the] bar _chords_ [are] _the worst_ . it _took_ me several _months_ to _play them well_ . [i] _still_ can't _play them_ [for] [a] _long time_ _though_ 
+B|13| Human 2: [yeah] ... [long time] listener [first] [time] caller' [you] [got] [this] _can_ [compose] [music] [for] [the] [rockstar] [though] [yes] [still] [play them well] [chords] [took] 
+A|14| Human 1: _that's_ _true_ . it's _like_ [the] alphabets in [a] language . _once_ [you] _know them_ , _you can pretty much write_ word 
+B|15| Human 2: [yeah] [true] [that's] [the worst] [though] [you can pretty much write] words [like] [guitar] [once] [know them] [chords] [took] [months] [play] [well] [still] [got] [long time] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how is the youtube video creation going ?
+	Free: Pattern=going, Pattern=how, Pattern=video creation, Pattern=youtube video, Pattern=is, Pattern=the
+	Constrained: Pattern=creation, Pattern=video, Pattern=youtube
+Turn ID=3| B | Human 2 : the video creation is going well , how may i help you today ? </s>tube_start:
+	Free: Pattern=well, Pattern=you, Pattern=going, Pattern=how, Pattern=video creation, Pattern=the, Pattern=is, Pattern=i
+	Constrained: Pattern=creation, Pattern=video
+Turn ID=4| A | Human 1 : whoa ! looking forward to listening to it . what softewares you use for it ?
+	Free: Pattern=. what softewares, Pattern=use for, Pattern=you
+	Constrained: Pattern=for, Pattern=use, Pattern=. what, Pattern=softewares
+Turn ID=5| B | Human 2 : for video creation , we use a combination ofa nda and davinci resolve . what about you ? who softewares do you
+	Free: Pattern=you, Pattern=a, Pattern=softewares, Pattern=. what, Pattern=for, Pattern=video creation, Pattern=do you, Pattern=use
+	Constrained: Pattern=do, Pattern=creation, Pattern=you, Pattern=video
+Turn ID=6| A | Human 1 : oh cool ! what sort of music do you compose ?
+	Free: Pattern=do you, Pattern=cool ! what, Pattern=compose, Pattern=music, Pattern=what sort of
+	Constrained: Pattern=do, Pattern=you, Pattern=of
+Turn ID=7| B | Human 2 : compose music for youtube video soundtrack . what softewares doyou use for that ?
+	Free: Pattern=. what softewares, Pattern=for, Pattern=use for, Pattern=youtube video, Pattern=compose, Pattern=music
+	Constrained: Pattern=video, Pattern=for, Pattern=use, Pattern=softewares, Pattern=youtube, Pattern=. what
+Turn ID=8| A | Human 1 : nice .... you are a rockstar ! 😉
+	Free: Pattern=you are a, Pattern=rockstar, Pattern=nice
+	Constrained: Pattern=you, Pattern=are, Pattern=a
+Turn ID=9| B | Human 2 : so you are a music compose rockstar nice ... what sort of video content do yo creation for youtube ? <|im_end|
+	Free: Pattern=rockstar, Pattern=video, Pattern=do, Pattern=youtube, Pattern=compose, Pattern=music, Pattern=what sort of, Pattern=nice, Pattern=for, Pattern=you are a, Pattern=creation
+	Constrained: Pattern=are, Pattern=a, Pattern=you, Pattern=of
+Turn ID=10| A | Human 1 : yeah .... i play bit of guitar . just got my first monitor this week
+	Free: Pattern=of, Pattern=yeah, Pattern=i, Pattern=play, Pattern=guitar, Pattern=got, Pattern=first monitor, Pattern=this
+	Constrained: Pattern=first
+Turn ID=11| B | Human 2 : cool ! what are you first monitor ?
+	Free: Pattern=cool ! what, Pattern=first monitor, Pattern=you, Pattern=are
+	Constrained: Pattern=first
+Turn ID=12| A | Human 1 : yes , the bar chords are the worst . it took me several months to play them well . i still can't play them for a long time though
+	Free: Pattern=a, Pattern=for, Pattern=are, Pattern=play them well, Pattern=i, Pattern=the, Pattern=took, Pattern=chords, Pattern=yes, Pattern=months, Pattern=though, Pattern=the worst, Pattern=long time, Pattern=play them, Pattern=still
+	Constrained: Pattern=time, Pattern=well, Pattern=the, Pattern=play, Pattern=play them
+Turn ID=13| B | Human 2 : yeah ... long time listener first time caller' you got this can compose music for the rockstar though yes still play them well chords took
+	Free: Pattern=time, Pattern=rockstar, Pattern=though, Pattern=for, Pattern=yeah, Pattern=can, Pattern=play them well, Pattern=long time, Pattern=first, Pattern=still, Pattern=you, Pattern=chords, Pattern=yes, Pattern=compose, Pattern=the, Pattern=got, Pattern=music, Pattern=took, Pattern=this
+	Constrained: Pattern=play, Pattern=well, Pattern=play them, Pattern=time
+Turn ID=14| A | Human 1 : that's true . it's like the alphabets in a language . once you know them , you can pretty much write word
+	Free: Pattern=you, Pattern=once, Pattern=a, Pattern=like, Pattern=true, Pattern=know them, Pattern=you can pretty much write, Pattern=that's, Pattern=the
+	Constrained: Pattern=you, Pattern=can
+Turn ID=15| B | Human 2 : yeah true that's the worst though you can pretty much write words like guitar once know them chords took months play well still got long time
+	Free: Pattern=well, Pattern=chords, Pattern=yeah, Pattern=like, Pattern=true, Pattern=that's, Pattern=know them, Pattern=play, Pattern=took, Pattern=you can pretty much write, Pattern=still, Pattern=months, Pattern=though, Pattern=once, Pattern=the worst, Pattern=long time, Pattern=guitar, Pattern=got
+	Constrained: Pattern=you, Pattern=the, Pattern=can, Pattern=time

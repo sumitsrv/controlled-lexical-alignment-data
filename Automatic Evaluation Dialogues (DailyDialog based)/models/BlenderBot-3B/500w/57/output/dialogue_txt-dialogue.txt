@@ -1,0 +1,79 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _your day going_ ? 
+A|2| Human 1: okayish , _it_ is flying by quicker than _i_ expected _. how_ is [your day going] _on_ ? 
+B|3| Human 2: [it] was great [. how] was [your day] ? 
+A|4| Human 1: oh , _i would love to_ _twiddle my thumbs_ . you're so lucky ! today , _i've been_ _mostly_ _attending meetings_ , _reading_ _and_ writing docs , _reading_ papers etc . 
+B|5| Human 2: [i've been] [going] okay , _just_ playing _with_ [my] pets [and] [attending meetings] [mostly] . hows [your day going] ? 
+A|6| Human 1: wow _! i_ _sometimes_ drift off _during_ _work_ , _and see_ _similar_ _things_ in [my] head . 
+B|7| Human 2: [i've been] doing _a_ lot of [reading] _. you_ [and] [i] [work] [similar] schedules . _do_ _you_ [sometimes] [see] [things] [during] [your] [reading] ? 
+A|8| Human 1: [mostly] saving _the_ _world_ _from_ mess _on_ social media [. how] _about_ [you] ? 
+B|9| Human 2: [i] [see] [things] [during] [the] [day] [sometimes] . [mostly] [i] [twiddle my thumbs] [and] read [about] [world] events [mostly] _because_ [i] [work] [from] home lol 
+A|10| Human 1: nice , _what_ _all_ places _would_ [you] _be_ _going to_ ? 
+B|11| Human 2: [i] [love] [going] [the] [the] beach [and] playing _with_ [the] dogs [all] [day] _, you_ [see] [things] [from] [the] ocean [to] [the] mountains , _it's_ _a_ 
+A|12| Human 1: [i] [just] met someone who went _diving_ in australia . apparently [, you] cannot fly 24 hrs after [you] _dive_ , [because] [your] body accumulates _too much_ <redacted_term> _when_ breathing [with] [a] cylinder so , don't [do] _that_ ! 
+B|13| Human 2: [i] am [going to] [the] beach [with] [my] honey [all] [day] [too] [because] [i] [love] [that] [and] _you are_ [just] [about] always [on] [your] phone [when] _you are_ 
+A|14| Human 1: _that's_ equally _amazing ! i_ wish [i] can explore _such_ places _one day_ . [it's] [just] so expensive 
+B|15| Human 2: [that's] [amazing ! [i] would love to] [dive] [one day] [and see] [that] [much] [diving] action ! [it's] [such] [a] wonderful form of recreation 
+A|16| Human 1: woah !... [you] _know_ sharing is caring [. you] should share [that] money [with] me :) 
+B|17| Human 2: [i] [know] [what] [you] mean [and] [that] can't [be] [too much] fun 
+A|18| Human 1: [you are] [a] kind soul ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=your day, Pattern=your, Pattern=going, Pattern=day
+Turn ID=2| A | Human 1 : okayish , it is flying by quicker than i expected . how is your day going on ?
+	Free: Pattern=it, Pattern=. how, Pattern=i, Pattern=on, Pattern=your day going
+	Constrained: Pattern=your day, Pattern=your, Pattern=going, Pattern=day
+Turn ID=3| B | Human 2 : it was great . how was your day ?
+	Free: Pattern=. how, Pattern=your day, Pattern=it
+	Constrained: Pattern=your, Pattern=day
+Turn ID=4| A | Human 1 : oh , i would love to twiddle my thumbs . you're so lucky ! today , i've been mostly attending meetings , reading and writing docs , reading papers etc .
+	Free: Pattern=i've been, Pattern=i would love to, Pattern=and, Pattern=reading, Pattern=attending meetings, Pattern=mostly, Pattern=twiddle my thumbs
+	Constrained: Pattern=love, Pattern=i, Pattern=would, Pattern=to, Pattern=my
+Turn ID=5| B | Human 2 : i've been going okay , just playing with my pets and attending meetings mostly . hows your day going ?
+	Free: Pattern=i've been, Pattern=and, Pattern=attending meetings, Pattern=mostly, Pattern=my, Pattern=with, Pattern=your day going, Pattern=going, Pattern=just
+	Constrained: Pattern=your day, Pattern=your, Pattern=going, Pattern=day
+Turn ID=6| A | Human 1 : wow ! i sometimes drift off during work , and see similar things in my head .
+	Free: Pattern=! i, Pattern=things, Pattern=similar, Pattern=work, Pattern=and see, Pattern=during, Pattern=my, Pattern=sometimes
+	Constrained: Pattern=i, Pattern=see, Pattern=and
+Turn ID=7| B | Human 2 : i've been doing a lot of reading . you and i work similar schedules . do you sometimes see things during your reading ?
+	Free: Pattern=i've been, Pattern=you, Pattern=and, Pattern=things, Pattern=see, Pattern=during, Pattern=sometimes, Pattern=do, Pattern=a, Pattern=reading, Pattern=similar, Pattern=. you, Pattern=work, Pattern=your, Pattern=i
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : mostly saving the world from mess on social media . how about you ?
+	Free: Pattern=you, Pattern=about, Pattern=mostly, Pattern=world, Pattern=. how, Pattern=from, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=9| B | Human 2 : i see things during the day sometimes . mostly i twiddle my thumbs and read about world events mostly because i work from home lol
+	Free: Pattern=because, Pattern=and, Pattern=from, Pattern=work, Pattern=mostly, Pattern=the, Pattern=see, Pattern=about, Pattern=things, Pattern=day, Pattern=i, Pattern=twiddle my thumbs, Pattern=during, Pattern=world, Pattern=sometimes
+	Constrained: Pattern=my
+Turn ID=10| A | Human 1 : nice , what all places would you be going to ?
+	Free: Pattern=going to, Pattern=you, Pattern=what, Pattern=be, Pattern=all, Pattern=would
+	Constrained: Pattern=to, Pattern=going
+Turn ID=11| B | Human 2 : i love going the the beach and playing with the dogs all day , you see things from the ocean to the mountains , it's a
+	Free: Pattern=going, Pattern=a, Pattern=and, Pattern=from, Pattern=things, Pattern=love, Pattern=, you, Pattern=see, Pattern=to, Pattern=day, Pattern=i, Pattern=the, Pattern=all, Pattern=with, Pattern=it's
+	Constrained: Pattern=you
+Turn ID=12| A | Human 1 : i just met someone who went diving in australia . apparently , you cannot fly 24 hrs after you dive , because your body accumulates too much <redacted_term> when breathing with a cylinder so , don't do that !
+	Free: Pattern=diving, Pattern=you, Pattern=just, Pattern=too much, Pattern=, you, Pattern=dive, Pattern=when, Pattern=do, Pattern=a, Pattern=because, Pattern=your, Pattern=i, Pattern=with, Pattern=that
+	Constrained: Pattern=too, Pattern=you, Pattern=much
+Turn ID=13| B | Human 2 : i am going to the beach with my honey all day too because i love that and you are just about always on your phone when you are
+	Free: Pattern=going to, Pattern=just, Pattern=because, Pattern=about, Pattern=you are, Pattern=love, Pattern=when, Pattern=my, Pattern=and, Pattern=too, Pattern=day, Pattern=your, Pattern=i, Pattern=on, Pattern=the, Pattern=all, Pattern=with, Pattern=that
+	Constrained: Pattern=to, Pattern=going, Pattern=you
+Turn ID=14| A | Human 1 : that's equally amazing ! i wish i can explore such places one day . it's just so expensive
+	Free: Pattern=amazing ! i, Pattern=just, Pattern=one day, Pattern=such, Pattern=i, Pattern=that's, Pattern=it's
+	Constrained: Pattern=! i, Pattern=i, Pattern=day
+Turn ID=15| B | Human 2 : that's amazing ! i would love to dive one day and see that much diving action ! it's such a wonderful form of recreation
+	Free: Pattern=amazing ! i, Pattern=diving, Pattern=i would love to, Pattern=one day, Pattern=a, Pattern=such, Pattern=and see, Pattern=that's, Pattern=dive, Pattern=much, Pattern=that, Pattern=it's
+	Constrained: Pattern=love, Pattern=to, Pattern=and, Pattern=! i, Pattern=day, Pattern=i, Pattern=would, Pattern=see
+Turn ID=16| A | Human 1 : woah !... you know sharing is caring . you should share that money with me :)
+	Free: Pattern=you, Pattern=know, Pattern=. you, Pattern=with, Pattern=that
+	Constrained: Pattern=you
+Turn ID=17| B | Human 2 : i know what you mean and that can't be too much fun
+	Free: Pattern=you, Pattern=too much, Pattern=what, Pattern=and, Pattern=know, Pattern=i, Pattern=be, Pattern=that
+	Constrained: Pattern=too, Pattern=much
+Turn ID=18| A | Human 1 : you are a kind soul !
+	Free: Pattern=you are, Pattern=a
+	Constrained: Pattern=you

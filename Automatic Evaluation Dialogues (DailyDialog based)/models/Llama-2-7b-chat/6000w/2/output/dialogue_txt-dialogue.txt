@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! what's up ??? 
+A|2| Human 1: nothing much , how _you_ doin ? 
+B|3| Human 2: 😊 great ! _is_ there anything you'd _like_ _to_ chat about or ask ? i'm here _to_ help ! �� 
+A|4| Human 1: _oh wow_ ! _sounds like_ _fun_ ! when _was_ _the_ _last time_ _you_ had seen _this friend_ ? 
+B|5| Human 2: 🤔 let me check ... *checks calendar* hmm , [last time] _i_ saw [this friend] [was] [like] ... *counting* 
+A|6| Human 1: ohh okay . [i] [was] going [to] say if it had _been_ a _long time_ maybe it'd be _awkward_ ... 
+B|7| Human 2: 😂 _but_ it's not [awkward] at all ! it's great [to] see [you] [friend] ! <|im_end| 
+A|8| Human 1: _oh_ _really_ ? has a lot _changed_ in _your_ _life_ _recently ?_ 
+B|9| Human 2: [oh wow] it's [been] 20 years since [you] [last] saw [your] [friend] ?! _that_ [long time] [really] [changed] things huh ? <| 
+A|10| Human 1: _ahhh_ _sounds_ _exciting_ indeed ! _my_ _life_ [is] _pretty_ bland . [i] [like] routine , [but] _sometimes_ [i] wish [i] had more [time] _for_ _adventures_ ! 
+B|11| Human 2: [oh wow] [time] [really] flies [sometimes] huh ? so [your] friend's [life] [sounds like] it's [been] [pretty] [exciting] [this] [last] 
+A|12| Human 1: _hmmmm ._ [i] [really] want [to] try bull riding . _do _you_ have_ _any_ interest in [that] ? 
+B|13| Human 2: [hmmmm .] [that] [sounds] [really] [fun] [but] [pretty] risky [life] [you have] there 😅 [any] [adventures] [for] [you] [recently ?] <|im 
+A|14| Human 1: sure _! what_ does [your] _saturday_ look [like] ? 
+B|15| Human 2: [ahhh] [saturday] ❤️ that's [my] favorite day of [the] week btw [! what] [do you] [like] [to] [do] on [your] satur 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there ! what's up ???
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nothing much , how you doin ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=3| B | Human 2 : 😊 great ! is there anything you'd like to chat about or ask ? i'm here to help ! ��
+	Free: Pattern=like, Pattern=to, Pattern=is
+	Constrained: 
+Turn ID=4| A | Human 1 : oh wow ! sounds like fun ! when was the last time you had seen this friend ?
+	Free: Pattern=fun, Pattern=you, Pattern=sounds like, Pattern=the, Pattern=was, Pattern=this friend, Pattern=last time, Pattern=oh wow
+	Constrained: Pattern=time, Pattern=oh, Pattern=last, Pattern=friend, Pattern=this, Pattern=sounds, Pattern=like
+Turn ID=5| B | Human 2 : 🤔 let me check ... *checks calendar* hmm , last time i saw this friend was like ... *counting*
+	Free: Pattern=last time, Pattern=i, Pattern=like, Pattern=was, Pattern=this friend
+	Constrained: Pattern=this, Pattern=last, Pattern=friend, Pattern=time
+Turn ID=6| A | Human 1 : ohh okay . i was going to say if it had been a long time maybe it'd be awkward ...
+	Free: Pattern=long time, Pattern=i, Pattern=to, Pattern=awkward, Pattern=been, Pattern=was
+	Constrained: Pattern=time
+Turn ID=7| B | Human 2 : 😂 but it's not awkward at all ! it's great to see you friend ! <|im_end|
+	Free: Pattern=you, Pattern=friend, Pattern=to, Pattern=awkward, Pattern=but
+	Constrained: 
+Turn ID=8| A | Human 1 : oh really ? has a lot changed in your life recently ?
+	Free: Pattern=recently ?, Pattern=oh, Pattern=your, Pattern=really, Pattern=changed, Pattern=life
+	Constrained: 
+Turn ID=9| B | Human 2 : oh wow it's been 20 years since you last saw your friend ?! that long time really changed things huh ? <|
+	Free: Pattern=you, Pattern=oh wow, Pattern=long time, Pattern=your, Pattern=really, Pattern=last, Pattern=changed, Pattern=friend, Pattern=been, Pattern=that
+	Constrained: Pattern=time, Pattern=oh
+Turn ID=10| A | Human 1 : ahhh sounds exciting indeed ! my life is pretty bland . i like routine , but sometimes i wish i had more time for adventures !
+	Free: Pattern=time, Pattern=for, Pattern=exciting, Pattern=pretty, Pattern=adventures, Pattern=my, Pattern=sometimes, Pattern=ahhh, Pattern=is, Pattern=i, Pattern=sounds, Pattern=like, Pattern=life, Pattern=but
+	Constrained: 
+Turn ID=11| B | Human 2 : oh wow time really flies sometimes huh ? so your friend's life sounds like it's been pretty exciting this last
+	Free: Pattern=time, Pattern=sounds like, Pattern=oh wow, Pattern=exciting, Pattern=your, Pattern=really, Pattern=been, Pattern=this, Pattern=life, Pattern=sometimes, Pattern=last, Pattern=pretty
+	Constrained: Pattern=sounds, Pattern=like, Pattern=oh
+Turn ID=12| A | Human 1 : hmmmm . i really want to try bull riding . do you have any interest in that ?
+	Free: Pattern=any, Pattern=do you, Pattern=you have, Pattern=hmmmm ., Pattern=i, Pattern=really, Pattern=to, Pattern=that
+	Constrained: Pattern=do, Pattern=you
+Turn ID=13| B | Human 2 : hmmmm . that sounds really fun but pretty risky life you have there 😅 any adventures for you recently ? <|im
+	Free: Pattern=fun, Pattern=you, Pattern=recently ?, Pattern=you have, Pattern=hmmmm ., Pattern=pretty, Pattern=adventures, Pattern=for, Pattern=any, Pattern=really, Pattern=sounds, Pattern=life, Pattern=that, Pattern=but
+	Constrained: Pattern=you
+Turn ID=14| A | Human 1 : sure ! what does your saturday look like ?
+	Free: Pattern=! what, Pattern=like, Pattern=saturday, Pattern=your
+	Constrained: 
+Turn ID=15| B | Human 2 : ahhh saturday ❤️ that's my favorite day of the week btw ! what do you like to do on your satur
+	Free: Pattern=do, Pattern=do you, Pattern=saturday, Pattern=! what, Pattern=your, Pattern=like, Pattern=the, Pattern=to, Pattern=my, Pattern=ahhh
+	Constrained: Pattern=do, Pattern=you

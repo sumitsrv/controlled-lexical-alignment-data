@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey ,_ _how_ are _you_ doing ? 
+A|2| Human 1: _i'm_ _great_ , thanks . _i'm_ getting ready _for_ _a_ _skydiving_ lesson . 
+B|3| Human 2: wow , that's exciting ! [skydiving] can be [a] thrilling experience . what made _you_ decide _to_ try _it_ out ? <| 
+A|4| Human 1: right near my home town: _seville_ , spain . 
+B|5| Human 2: oh , [great] ! [seville] is [a] beautiful city . i've always wanted _to_ visit there _. do you_ _have_ _any_ advice [for] someone who is thinking 
+A|6| Human 1: yes . _i'm_ feeling [a] little trepidatious _. have you_ done [it] _before_ ? 
+B|7| Human 2: many times [before] _, and_ [i'm] confident you'll [have] [a] [great] experience . just _make_ sure _to_ listen _to the_ instructors _and_ follow their safety 
+A|8| Human 1: _haha_ thanks ! _have you_ _tried_ [any] _extreme sports_ ? 
+B|9| Human 2: _as_ [a] matter _of_ fact , _i_ [have] [tried] [skydiving] [before] . _it's_ an adrenaline rush like no other [. have you] 
+A|10| Human 1: white water rafting , _definitely_ ! [as] [for] _skiing ,_ that depends on [how] fast [you] _go_ [. do you] ski [a] lot ? 
+B|11| Human 2: [i'm] [definitely] [a] _beginner_ when [it] comes _to_ [skiing _,] so_ _i_ [go] at [a] slow pace _and_ take [it] easy . but [for] [extreme sports] enthus 
+A|12| Human 1: [i] [tried] [skiing] once [, and] by [the] end [of] [the] [beginner] class [i] was able [to] [make] [it] down [a] baby-sized slope . [i] was very proud [of] myself . 
+B|13| Human 2: [haha] that's cool ! [beginner] classes are [great] [for] learning [and] building confidence . what other [sports] [do you] enjoy ? <|im_end| 
+A|14| Human 1: [hey [,] so] long [as] [you] get [to the] bottom , [it's] all good ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you doing ?
+	Free: Pattern=hey ,, Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i'm getting ready for a skydiving lesson .
+	Free: Pattern=great, Pattern=a, Pattern=for, Pattern=i'm, Pattern=skydiving
+	Constrained: 
+Turn ID=3| B | Human 2 : wow , that's exciting ! skydiving can be a thrilling experience . what made you decide to try it out ? <|
+	Free: Pattern=you, Pattern=a, Pattern=it, Pattern=skydiving, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : right near my home town: seville , spain .
+	Free: Pattern=seville
+	Constrained: 
+Turn ID=5| B | Human 2 : oh , great ! seville is a beautiful city . i've always wanted to visit there . do you have any advice for someone who is thinking
+	Free: Pattern=great, Pattern=have, Pattern=a, Pattern=seville, Pattern=to, Pattern=for, Pattern=. do you, Pattern=any
+	Constrained: Pattern=do you, Pattern=you
+Turn ID=6| A | Human 1 : yes . i'm feeling a little trepidatious . have you done it before ?
+	Free: Pattern=it, Pattern=i'm, Pattern=before, Pattern=a, Pattern=. have you
+	Constrained: Pattern=have you, Pattern=have, Pattern=you
+Turn ID=7| B | Human 2 : many times before , and i'm confident you'll have a great experience . just make sure to listen to the instructors and follow their safety
+	Free: Pattern=great, Pattern=have, Pattern=a, Pattern=to the, Pattern=and, Pattern=i'm, Pattern=make, Pattern=before, Pattern=, and, Pattern=to
+	Constrained: Pattern=to, Pattern=the, Pattern=and
+Turn ID=8| A | Human 1 : haha thanks ! have you tried any extreme sports ?
+	Free: Pattern=any, Pattern=have you, Pattern=haha, Pattern=extreme sports, Pattern=tried
+	Constrained: Pattern=have, Pattern=you, Pattern=sports
+Turn ID=9| B | Human 2 : as a matter of fact , i have tried skydiving before . it's an adrenaline rush like no other . have you
+	Free: Pattern=of, Pattern=i, Pattern=tried, Pattern=skydiving, Pattern=before, Pattern=it's, Pattern=as, Pattern=have, Pattern=a, Pattern=. have you
+	Constrained: Pattern=have you, Pattern=have, Pattern=you
+Turn ID=10| A | Human 1 : white water rafting , definitely ! as for skiing , that depends on how fast you go . do you ski a lot ?
+	Free: Pattern=you, Pattern=as, Pattern=go, Pattern=a, Pattern=how, Pattern=definitely, Pattern=skiing ,, Pattern=for, Pattern=. do you
+	Constrained: Pattern=do you, Pattern=skiing, Pattern=you
+Turn ID=11| B | Human 2 : i'm definitely a beginner when it comes to skiing , so i go at a slow pace and take it easy . but for extreme sports enthus
+	Free: Pattern=go, Pattern=a, Pattern=for, Pattern=beginner, Pattern=i'm, Pattern=i, Pattern=, so, Pattern=it, Pattern=and, Pattern=extreme sports, Pattern=definitely, Pattern=skiing ,, Pattern=to
+	Constrained: Pattern=skiing, Pattern=sports
+Turn ID=12| A | Human 1 : i tried skiing once , and by the end of the beginner class i was able to make it down a baby-sized slope . i was very proud of myself .
+	Free: Pattern=of, Pattern=a, Pattern=it, Pattern=beginner, Pattern=the, Pattern=make, Pattern=i, Pattern=skiing, Pattern=tried, Pattern=, and, Pattern=to
+	Constrained: Pattern=and
+Turn ID=13| B | Human 2 : haha that's cool ! beginner classes are great for learning and building confidence . what other sports do you enjoy ? <|im_end|
+	Free: Pattern=great, Pattern=for, Pattern=beginner, Pattern=haha, Pattern=sports, Pattern=and, Pattern=do you
+	Constrained: Pattern=you
+Turn ID=14| A | Human 1 : hey , so long as you get to the bottom , it's all good !
+	Free: Pattern=you, Pattern=as, Pattern=to the, Pattern=, so, Pattern=it's, Pattern=hey ,
+	Constrained: Pattern=to, Pattern=the

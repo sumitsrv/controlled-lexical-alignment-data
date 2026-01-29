@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] _anything new ?_ 
+B|3| Human 2: well , _i'm_ [new] around here ! 😊 how about _you_ ? 
+A|4| Human 1: _any _plans_ ?_ 
+B|5| Human 2: [plans ?] 🤔 _i'm_ just an ai , _i_ don't have personal [plans] like humans do , but _i'm_ 
+A|6| Human 1: _that's awesome _!_ i_ never been ! 
+B|7| Human 2: [that's awesome !] 😎 [any plans] to learn [anything new ?] 
+A|8| Human 1: _are_ [you] _a_ _food_ _person_ , _a_ sightseeing _person_ or _neither_ ? 
+B|9| Human 2: 🤔 [neither] , _i'm a_ language [person] [! i] love learning [new] languages and talking to people 
+A|10| Human 1: [i'm a] _food_ [person] _i think_ . [any] specific _foods_ _you're_ _planning on trying_ ? 
+B|11| Human 2: [i'm] [planning on trying] [foods] that [you] [think] [are] the best in paris ! [any] recommendations ? 
+A|12| Human 1: yeah my favorite is _taco_ _fish_ 
+B|13| Human 2: 😅 [i think] [you're] [trying] to [food] [fish] [taco] in paris ! [are] they [any] good ? [any] other recommendations ? < 
+A|14| Human 1: no . only eat them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=anything new ?, Pattern=hey
+	Constrained: Pattern=new
+Turn ID=3| B | Human 2 : well , i'm new around here ! 😊 how about you ?
+	Free: Pattern=new, Pattern=you, Pattern=i'm
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=plans ?, Pattern=any plans
+	Constrained: Pattern=plans, Pattern=any
+Turn ID=5| B | Human 2 : plans ? 🤔 i'm just an ai , i don't have personal plans like humans do , but i'm
+	Free: Pattern=plans ?, Pattern=plans, Pattern=i, Pattern=i'm
+	Constrained: Pattern=plans
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=that's awesome !, Pattern=! i
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : that's awesome ! 😎 any plans to learn anything new ?
+	Free: Pattern=that's awesome !, Pattern=anything new ?, Pattern=any plans
+	Constrained: Pattern=any, Pattern=plans, Pattern=new
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=neither, Pattern=you, Pattern=a, Pattern=are, Pattern=person, Pattern=food
+	Constrained: 
+Turn ID=9| B | Human 2 : 🤔 neither , i'm a language person ! i love learning new languages and talking to people
+	Free: Pattern=! i, Pattern=person, Pattern=i'm a, Pattern=new, Pattern=neither
+	Constrained: Pattern=i, Pattern=i'm, Pattern=a
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=any, Pattern=person, Pattern=food, Pattern=i'm a, Pattern=foods, Pattern=i think, Pattern=you're, Pattern=planning on trying
+	Constrained: Pattern=a, Pattern=think, Pattern=i'm, Pattern=i, Pattern=trying
+Turn ID=11| B | Human 2 : i'm planning on trying foods that you think are the best in paris ! any recommendations ?
+	Free: Pattern=planning on trying, Pattern=you, Pattern=any, Pattern=are, Pattern=think, Pattern=i'm, Pattern=foods
+	Constrained: Pattern=trying
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=fish, Pattern=taco
+	Constrained: 
+Turn ID=13| B | Human 2 : 😅 i think you're trying to food fish taco in paris ! are they any good ? any other recommendations ? <
+	Free: Pattern=you're, Pattern=any, Pattern=are, Pattern=food, Pattern=fish, Pattern=trying, Pattern=i think, Pattern=taco
+	Constrained: Pattern=i, Pattern=think
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: 
+	Constrained: 

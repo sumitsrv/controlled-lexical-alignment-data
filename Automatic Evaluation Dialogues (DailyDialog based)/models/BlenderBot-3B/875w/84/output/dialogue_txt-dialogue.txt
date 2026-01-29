@@ -1,0 +1,55 @@
+A|0| Human 1: hi , _can_ _you_ _recommend_ _some_ _good_ _netflix shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: _i_ [recommend] [netflix shows] , [you] [can] start watching at _season_ _one_ of the [good] place . this show _is_ from [netflix] 
+A|3| Human 1: _not_ [a lot] ! _but_ [i] preparing _for_ _a good_ vacation [season] 🙂 _what_ [is] [white collar] _about_ ? 
+B|4| Human 2: [not] [about] me , [but] [for] [you] , [white collar] [is] [a] show [about] [a good] lawyer who [can] make [a lot] of money . [what] [shows] _do you_ 
+A|5| Human 1: hehe ! sounds _very_ interesting 🙂 [i] only _see_ [shows] belonging to few genre's .. _like_ easy going light _comedy_ , or phychological thrillers 🙂 also _some_ manga based _series like_ [one] punch _man !_ _love_ it ! 
+B|6| Human 2: _oh_ [man !] [what] [shows] _do you_ [like] on [netflix] then ? [white collar] [is] [about] [some] [one] who [is] [good] at being [a] genius _and_ [very] 
+A|7| Human 1: which _anime_ [do you] follow ? 
+B|8| Human 2: [i] [love] [comedy] [series like] freaks _and_ geeks . [what] [about] [you] ? 
+A|9| Human 1: _have you seen rick and morty ?_ 
+B|10| Human 2: mainly [comedy] [series] [and] [anime] [shows] [about] people's lives , [like] [some] [you] [see] on adult swim . [have you seen] any lately ? 
+A|11| Human 1: [oh] nice ! [i] heard _its_ latest [season] arrived last month . _i have watched all_ previous seasons . _its_ [a] total mind bender 🙂 
+B|12| Human 2: [i have watched all] of [season] 3 [and] [its] my favorite [one] yet [have you seen rick and morty ?] [its] [very] [good] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=good, Pattern=netflix shows, Pattern=you, Pattern=can, Pattern=some, Pattern=recommend
+	Constrained: Pattern=shows, Pattern=netflix
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=a, Pattern=you
+Turn ID=2| B | Human 2 : i recommend netflix shows , you can start watching at season one of the good place . this show is from netflix
+	Free: Pattern=good, Pattern=netflix shows, Pattern=you, Pattern=netflix, Pattern=one, Pattern=can, Pattern=recommend, Pattern=season, Pattern=is, Pattern=i
+	Constrained: Pattern=shows, Pattern=netflix
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=what, Pattern=white collar, Pattern=a good, Pattern=for, Pattern=about, Pattern=season, Pattern=a lot, Pattern=but, Pattern=not, Pattern=is, Pattern=i
+	Constrained: Pattern=good, Pattern=a
+Turn ID=4| B | Human 2 : not about me , but for you , white collar is a show about a good lawyer who can make a lot of money . what shows do you
+	Free: Pattern=you, Pattern=what, Pattern=for, Pattern=do you, Pattern=can, Pattern=about, Pattern=is, Pattern=a lot, Pattern=but, Pattern=not, Pattern=white collar, Pattern=a, Pattern=shows, Pattern=a good
+	Constrained: Pattern=good, Pattern=a, Pattern=you
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=man !, Pattern=shows, Pattern=series like, Pattern=some, Pattern=love, Pattern=like, Pattern=see, Pattern=one, Pattern=comedy, Pattern=very, Pattern=i
+	Constrained: Pattern=series, Pattern=like
+Turn ID=6| B | Human 2 : oh man ! what shows do you like on netflix then ? white collar is about some one who is good at being a genius and very
+	Free: Pattern=good, Pattern=man !, Pattern=netflix, Pattern=what, Pattern=shows, Pattern=one, Pattern=about, Pattern=some, Pattern=like, Pattern=white collar, Pattern=a, Pattern=and, Pattern=oh, Pattern=do you, Pattern=very, Pattern=is
+	Constrained: Pattern=you
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=anime
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : i love comedy series like freaks and geeks . what about you ?
+	Free: Pattern=you, Pattern=what, Pattern=and, Pattern=comedy, Pattern=love, Pattern=i, Pattern=about, Pattern=series like
+	Constrained: Pattern=series, Pattern=like
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=have you seen rick and morty ?
+	Constrained: Pattern=and, Pattern=you, Pattern=have you seen
+Turn ID=10| B | Human 2 : mainly comedy series and anime shows about people's lives , like some you see on adult swim . have you seen any lately ?
+	Free: Pattern=you, Pattern=have you seen, Pattern=shows, Pattern=and, Pattern=comedy, Pattern=about, Pattern=some, Pattern=like, Pattern=see, Pattern=anime, Pattern=series
+	Constrained: Pattern=you
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=its, Pattern=i have watched all, Pattern=a, Pattern=oh, Pattern=i, Pattern=season
+	Constrained: Pattern=i
+Turn ID=12| B | Human 2 : i have watched all of season 3 and its my favorite one yet have you seen rick and morty ? its very good
+	Free: Pattern=good, Pattern=its, Pattern=have you seen rick and morty ?, Pattern=i have watched all, Pattern=and, Pattern=one, Pattern=very, Pattern=season
+	Constrained: Pattern=i, Pattern=and, Pattern=you, Pattern=have you seen

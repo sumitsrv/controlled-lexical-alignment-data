@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: nice _to_ _meet_ _you_ ! is _this_ _your_ first time doing something _like_ _this_ ? 
+B|3| Human 2: hello ! i'm phi , an ai language model . _i_ don't [meet] people in _the_ traditional sense , so [this] interaction isn' 
+A|4| Human 1: _i have_ been _with the_ _company_ _for_ _over 3 years_ . stick _with the_ same team _what about_ _you_ ? 
+B|5| Human 2: [i] don't [have] personal experiences or [company] memberships _like a_ human [with] [over 3 years] of service . [i] exist [to] assist [you] [with] [your] questions 
+A|6| Human 1: _that sounds [like_ a] perfect _plan_ ! 
+B|7| Human 2: [that sounds like] an efficient [plan] [for] our conversation . while [i have] no personal experiences or [company] memberships , i'm here [with the] latest information and 
+A|8| Human 1: _let's try_ something _different_ _. what about <redacted_term>_ ? do [you] _always_ prefer lunch sync [over] regular meeting syncs ? 
+B|9| Human 2: apologies [for] [the] confusion . [let's] refine [your] question [with] [a] [different] approach [. what about <redacted_term>] [like] 
+A|10| Human 1: we can check [the] _menu_ _then_ decide :) 
+B|11| Human 2: i'm sorry [for] [the] misunderstanding . [let's try] again [with] [a] [different] inquiry [then] [. what about] [menu] preferences [like] [you] [have] [always] 
+A|12| Human 1: sure . see [you] [then] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=you, Pattern=meet, Pattern=your, Pattern=like, Pattern=to, Pattern=this
+	Constrained: 
+Turn ID=3| B | Human 2 : hello ! i'm phi , an ai language model . i don't meet people in the traditional sense , so this interaction isn'
+	Free: Pattern=meet, Pattern=the, Pattern=this, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=company, Pattern=you, Pattern=with the, Pattern=for, Pattern=over 3 years, Pattern=what about, Pattern=i have
+	Constrained: Pattern=have, Pattern=over, Pattern=i, Pattern=the, Pattern=with
+Turn ID=5| B | Human 2 : i don't have personal experiences or company memberships like a human with over 3 years of service . i exist to assist you with your questions
+	Free: Pattern=company, Pattern=like a, Pattern=you, Pattern=have, Pattern=over 3 years, Pattern=to, Pattern=with, Pattern=your, Pattern=i
+	Constrained: Pattern=a, Pattern=over, Pattern=like
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=that sounds like, Pattern=like a, Pattern=plan
+	Constrained: Pattern=a, Pattern=like
+Turn ID=7| B | Human 2 : that sounds like an efficient plan for our conversation . while i have no personal experiences or company memberships , i'm here with the latest information and
+	Free: Pattern=company, Pattern=plan, Pattern=with the, Pattern=for, Pattern=that sounds like, Pattern=i have
+	Constrained: Pattern=have, Pattern=i, Pattern=like, Pattern=the, Pattern=with
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=always, Pattern=you, Pattern=let's try, Pattern=over, Pattern=different, Pattern=. what about <redacted_term>
+	Constrained: Pattern=. what about, Pattern=let's, Pattern=what about
+Turn ID=9| B | Human 2 : apologies for the confusion . let's refine your question with a different approach . what about <redacted_term> like
+	Free: Pattern=a, Pattern=for, Pattern=your, Pattern=like, Pattern=the, Pattern=let's, Pattern=with, Pattern=different, Pattern=. what about <redacted_term>
+	Constrained: Pattern=. what about, Pattern=what about
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=then, Pattern=the, Pattern=menu
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm sorry for the misunderstanding . let's try again with a different inquiry then . what about menu preferences like you have always
+	Free: Pattern=different, Pattern=always, Pattern=you, Pattern=have, Pattern=for, Pattern=menu, Pattern=let's try, Pattern=like, Pattern=. what about, Pattern=the, Pattern=with, Pattern=then, Pattern=a
+	Constrained: Pattern=what about, Pattern=let's
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=then, Pattern=you
+	Constrained: 

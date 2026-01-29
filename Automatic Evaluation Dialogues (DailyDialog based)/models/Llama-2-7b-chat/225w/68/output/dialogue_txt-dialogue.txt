@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , whats _up_ ? 
+A|2| Human 1: _i_ was not able _to_ attend _the_ lectures _last_ week _. can you_ _help_ _me_ understand _some concepts_ ? 
+B|3| Human 2: _of_ _course_ , i'd _be_ happy [to] [help] [you] catch _up_ ! [can you] please provide [some] details about [the] [concepts] [you] need [help] _with_ ? <| 
+A|4| Human 1: _i_ was not able [to] figure out [the] _last_ few _slides ._ _i think_ _its_ _best to_ discuss this _in person_ . _do_ _you have_ _time_ _right_ now ? 
+B|5| Human 2: [i] apologize , _but_ i'm _a_ large language model , [i] don't [have] [the] ability [to] meet [in person] or see _your_ [slides .] 
+A|6| Human 1: no problem ! _sure_ . _we_ _still_ [have] plenty [of] _time_ _for_ [the] test . anyways , how's [your] preparation _going_ ? 
+B|7| Human 2: [sure] ! let's get started [. can you] tell [me] what [you have] covered so far ? </s>t [the] [concepts] and topics _that_ [we] discussed [last] [time] 
+A|8| Human 1: _same_ feeling _here !_ [but] _i think_ [the] syllabus _may_ not [that] _tough_ . _you may_ [be] able [to] _cover_ it [up] over [the] _weekend ._ 
+B|9| Human 2: you're [right] _! [i_ think] [we] [can] [cover] [the] basics [in] _a_ [weekend .] [but] [you may] [still] want [to] review [some concepts] and formulas just 
+A|10| Human 1: true ! this _will_ _be a_ very hectic november [! i] _do_ like [the] [course] content though _. its_ very much [up] [to] date [with] _latest_ research _findings ._ 
+B|11| Human 2: [same] [here !] i'm [still] trying [to] wrap my head around [the] [latest] [findings [.] its] really exciting [to] learn about [the] new developments [in] 
+A|12| Human 1: thats pretty cool [! i] hope [you] _do_ well next week . 
+B|13| Human 2: thanks [! i] [will] [do] my [best to] stay on top [of] [the] coursework [. its] [going] [to] [be a] [tough] month [but] i'm excited [for] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , whats up ?
+	Free: Pattern=up
+	Constrained: 
+Turn ID=2| A | Human 1 : i was not able to attend the lectures last week . can you help me understand some concepts ?
+	Free: Pattern=me, Pattern=. can you, Pattern=i, Pattern=last, Pattern=to, Pattern=help, Pattern=some concepts, Pattern=the
+	Constrained: Pattern=you, Pattern=can, Pattern=some, Pattern=can you, Pattern=concepts
+Turn ID=3| B | Human 2 : of course , i'd be happy to help you catch up ! can you please provide some details about the concepts you need help with ? <|
+	Free: Pattern=of, Pattern=you, Pattern=some, Pattern=course, Pattern=be, Pattern=the, Pattern=can you, Pattern=up, Pattern=to, Pattern=concepts, Pattern=help, Pattern=with
+	Constrained: Pattern=you, Pattern=can
+Turn ID=4| A | Human 1 : i was not able to figure out the last few slides . i think its best to discuss this in person . do you have time right now ?
+	Free: Pattern=do, Pattern=you have, Pattern=best to, Pattern=i, Pattern=last, Pattern=the, Pattern=to, Pattern=slides ., Pattern=i think, Pattern=its, Pattern=time, Pattern=in person, Pattern=right
+	Constrained: Pattern=you, Pattern=have, Pattern=in, Pattern=i, Pattern=to
+Turn ID=5| B | Human 2 : i apologize , but i'm a large language model , i don't have the ability to meet in person or see your slides .
+	Free: Pattern=in person, Pattern=have, Pattern=a, Pattern=the, Pattern=to, Pattern=slides ., Pattern=but, Pattern=your, Pattern=i
+	Constrained: Pattern=in
+Turn ID=6| A | Human 1 : no problem ! sure . we still have plenty of time for the test . anyways , how's your preparation going ?
+	Free: Pattern=time, Pattern=of, Pattern=for, Pattern=your, Pattern=we, Pattern=sure, Pattern=the, Pattern=still, Pattern=going, Pattern=have
+	Constrained: 
+Turn ID=7| B | Human 2 : sure ! let's get started . can you tell me what you have covered so far ? </s>t the concepts and topics that we discussed last time
+	Free: Pattern=time, Pattern=me, Pattern=. can you, Pattern=you have, Pattern=we, Pattern=last, Pattern=sure, Pattern=the, Pattern=concepts, Pattern=that
+	Constrained: Pattern=can you, Pattern=you, Pattern=can, Pattern=have
+Turn ID=8| A | Human 1 : same feeling here ! but i think the syllabus may not that tough . you may be able to cover it up over the weekend .
+	Free: Pattern=here !, Pattern=you may, Pattern=cover, Pattern=tough, Pattern=be, Pattern=same, Pattern=i think, Pattern=the, Pattern=may, Pattern=to, Pattern=weekend ., Pattern=up, Pattern=that, Pattern=but
+	Constrained: Pattern=you, Pattern=i, Pattern=may
+Turn ID=9| B | Human 2 : you're right ! i think we can cover the basics in a weekend . but you may still want to review some concepts and formulas just
+	Free: Pattern=a, Pattern=cover, Pattern=! i, Pattern=can, Pattern=in, Pattern=we, Pattern=but, Pattern=i think, Pattern=still, Pattern=right, Pattern=you may, Pattern=some concepts, Pattern=the, Pattern=weekend ., Pattern=to
+	Constrained: Pattern=you, Pattern=some, Pattern=i, Pattern=may, Pattern=concepts
+Turn ID=10| A | Human 1 : true ! this will be a very hectic november ! i do like the course content though . its very much up to date with latest research findings .
+	Free: Pattern=latest, Pattern=do, Pattern=. its, Pattern=! i, Pattern=will, Pattern=be a, Pattern=course, Pattern=the, Pattern=up, Pattern=to, Pattern=findings ., Pattern=with
+	Constrained: Pattern=be, Pattern=i, Pattern=a, Pattern=its
+Turn ID=11| B | Human 2 : same here ! i'm still trying to wrap my head around the latest findings . its really exciting to learn about the new developments in
+	Free: Pattern=here !, Pattern=latest, Pattern=. its, Pattern=in, Pattern=the, Pattern=same, Pattern=to, Pattern=findings ., Pattern=still
+	Constrained: Pattern=its
+Turn ID=12| A | Human 1 : thats pretty cool ! i hope you do well next week .
+	Free: Pattern=! i, Pattern=do, Pattern=you
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : thanks ! i will do my best to stay on top of the coursework . its going to be a tough month but i'm excited for
+	Free: Pattern=of, Pattern=going, Pattern=do, Pattern=! i, Pattern=will, Pattern=be a, Pattern=the, Pattern=to, Pattern=but, Pattern=. its, Pattern=for, Pattern=tough, Pattern=best to
+	Constrained: Pattern=its, Pattern=a, Pattern=i, Pattern=be, Pattern=to

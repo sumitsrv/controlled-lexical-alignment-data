@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ ? 
+A|2| Human 1: _i'm_ _great_ , thanks . _i_ _just ate_ a _delicious_ _breakfast_ , which always sets _the day_ up _right ._ 
+B|3| Human 2: _you_ look [great] ! [i'm] [just] glad you're [the] _only_ [day] out _of [the_ day] [right] ? 
+A|4| Human 1: _i had _eggs_ and hash browns_ . way less healthier than _your_ apple , _i'm afraid_ ! 
+B|5| Human 2: [i'm] [delicious] [and] [i had eggs] [breakfast] [and] [just ate] [hash browns] [right .] 
+A|6| Human 1: ha , that's _true_ . if [you] _could_ [only] _eat_ _one_ _food_ forever , what would it be ? 
+B|7| Human 2: no [food] [could] [eat] [your] [eggs and hash browns] [right _.] [i'm_ afraid] you're [the] [one] [true] omn 
+A|8| Human 1: yeah , turning orange would be a drawback ! that turns my mind to nutrition so [i] suddenly _want_ to say soylent or [one] [of] those other "complete foods" , which [i] think defeats [the] purpose [of the] question [. i'm] in a muddle ! 
+B|9| Human 2: [you] [eat] . 
+A|10| Human 1: brilliant . _i love_ it . 
+B|11| Human 2: [i love] 
+A|12| Human 1: that depends . what sort [of] [food] do [you] _feel like_ ? 
+B|13| Human 2: [i] [feel like] [you] [want] [the] same [food] [i love] . 
+A|14| Human 1: oh , too easy ! try [the] green hut , they have franchises everywhere . all their [food] is green [and] [the] plates [are] green too . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i just ate a delicious breakfast , which always sets the day up right .
+	Free: Pattern=great, Pattern=breakfast, Pattern=just ate, Pattern=i, Pattern=i'm, Pattern=right ., Pattern=the day, Pattern=delicious
+	Constrained: Pattern=just, Pattern=day, Pattern=right, Pattern=the
+Turn ID=3| B | Human 2 : you look great ! i'm just glad you're the only day out of the day right ?
+	Free: Pattern=right, Pattern=i'm, Pattern=day, Pattern=the day, Pattern=the, Pattern=of the, Pattern=you, Pattern=great, Pattern=only, Pattern=just
+	Constrained: Pattern=the, Pattern=day, Pattern=of
+Turn ID=4| A | Human 1 : i had eggs and hash browns . way less healthier than your apple , i'm afraid !
+	Free: Pattern=eggs and hash browns, Pattern=i had eggs, Pattern=i'm afraid, Pattern=your
+	Constrained: Pattern=hash browns, Pattern=i, Pattern=and, Pattern=i'm
+Turn ID=5| B | Human 2 : i'm delicious and i had eggs breakfast and just ate hash browns right .
+	Free: Pattern=i had eggs, Pattern=hash browns, Pattern=breakfast, Pattern=and, Pattern=just ate, Pattern=delicious, Pattern=i'm, Pattern=right .
+	Constrained: Pattern=just, Pattern=i, Pattern=right
+Turn ID=6| A | Human 1 : ha , that's true . if you could only eat one food forever , what would it be ?
+	Free: Pattern=you, Pattern=only, Pattern=eat, Pattern=one, Pattern=food, Pattern=true, Pattern=could
+	Constrained: 
+Turn ID=7| B | Human 2 : no food could eat your eggs and hash browns right . i'm afraid you're the one true omn
+	Free: Pattern=eat, Pattern=one, Pattern=i'm afraid, Pattern=right ., Pattern=your, Pattern=food, Pattern=true, Pattern=the, Pattern=could, Pattern=eggs and hash browns, Pattern=. i'm
+	Constrained: Pattern=hash browns, Pattern=and, Pattern=right, Pattern=i'm
+Turn ID=8| A | Human 1 : yeah , turning orange would be a drawback ! that turns my mind to nutrition so i suddenly want to say soylent or one of those other "complete foods" , which i think defeats the purpose of the question . i'm in a muddle !
+	Free: Pattern=of, Pattern=want, Pattern=. i'm, Pattern=one, Pattern=i, Pattern=the, Pattern=of the
+	Constrained: Pattern=the, Pattern=i'm, Pattern=of
+Turn ID=9| B | Human 2 : you eat .
+	Free: Pattern=eat, Pattern=you
+	Constrained: 
+Turn ID=10| A | Human 1 : brilliant . i love it .
+	Free: Pattern=i love
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i love
+	Free: Pattern=i love
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : that depends . what sort of food do you feel like ?
+	Free: Pattern=feel like, Pattern=food, Pattern=you, Pattern=of
+	Constrained: 
+Turn ID=13| B | Human 2 : i feel like you want the same food i love .
+	Free: Pattern=want, Pattern=you, Pattern=i, Pattern=food, Pattern=the, Pattern=feel like, Pattern=i love
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : oh , too easy ! try the green hut , they have franchises everywhere . all their food is green and the plates are green too .
+	Free: Pattern=are, Pattern=the, Pattern=food, Pattern=and
+	Constrained: 

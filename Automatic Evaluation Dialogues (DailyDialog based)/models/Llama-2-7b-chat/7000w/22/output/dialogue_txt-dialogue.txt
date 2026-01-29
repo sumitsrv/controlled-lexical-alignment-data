@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: _doing great_ ! _what_ [are you] looking forward _to_ ? 
+B|3| Human 2: i'm [doing great] as well ! 😊 [what] _can_ _i_ help [you] _with_ today ? 
+A|4| Human 1: yay ! _turkey_ _and_ _shopping_ ! 
+B|5| Human 2: 🛍️ [shopping] is [great] , _you can_ find _some_ really nice [and] unique gifts for your friends [and] family . �� 
+A|6| Human 1: _yea_ me _too_ . [i] sometimes _eat_ _noodle soups_ in _thanksgiving_ instead _haha_ 
+B|7| Human 2: 😂 [noodle soups] [are] [great] [too] ! [thanksgiving] is a time for [eat] [and] spend time _with_ loved ones , [you] 
+A|8| Human 1: me neither . someone told me that it depends on _the stuffing_ _inside the_ _turkey_ . _some people make very_ _good stuffing_ 
+B|9| Human 2: [yea] [noodle soups] [are] [good] [too] 🌨 _what do you_ [make] [inside [the] stuffing] [turkey] ? [some people make very] y 
+A|10| Human 1: [yea] . [what do _you] plan to buy_ ? 
+B|11| Human 2: [yea] [stuffing] [and] [eat] [good] [turkey] _with_ [noodle soups] [haha] [you plan to buy] [what] ? [inside] the<|im_end 
+A|12| Human 1: ah cool . so [you can] _run_ _more_ frequently ? :) 
+B|13| Human 2: [yea] [the] [more] [you] [run] [the] [more] [good stuffing] [and] [turkey] [inside] [haha] [buy] [what] ? [can] y 
+A|14| Human 1: yay , all [the] best [with] keeping calories in check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=doing great, Pattern=are you, Pattern=what, Pattern=to
+	Constrained: Pattern=are, Pattern=you, Pattern=great
+Turn ID=3| B | Human 2 : i'm doing great as well ! 😊 what can i help you with today ?
+	Free: Pattern=what, Pattern=can, Pattern=i, Pattern=with, Pattern=you, Pattern=doing great
+	Constrained: Pattern=great
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=and, Pattern=shopping, Pattern=turkey
+	Constrained: 
+Turn ID=5| B | Human 2 : 🛍️ shopping is great , you can find some really nice and unique gifts for your friends and family . ��
+	Free: Pattern=great, Pattern=and, Pattern=you can, Pattern=some, Pattern=shopping
+	Constrained: Pattern=you, Pattern=can
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=eat, Pattern=too, Pattern=yea, Pattern=thanksgiving, Pattern=i, Pattern=haha, Pattern=noodle soups
+	Constrained: 
+Turn ID=7| B | Human 2 : 😂 noodle soups are great too ! thanksgiving is a time for eat and spend time with loved ones , you
+	Free: Pattern=eat, Pattern=are, Pattern=thanksgiving, Pattern=noodle soups, Pattern=with, Pattern=you, Pattern=great, Pattern=and, Pattern=too
+	Constrained: 
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=good stuffing, Pattern=the stuffing, Pattern=inside the, Pattern=turkey, Pattern=some people make very
+	Constrained: Pattern=good, Pattern=stuffing, Pattern=inside, Pattern=some, Pattern=make, Pattern=the
+Turn ID=9| B | Human 2 : yea noodle soups are good too 🌨 what do you make inside the stuffing turkey ? some people make very y
+	Free: Pattern=good, Pattern=inside the, Pattern=turkey, Pattern=what do you, Pattern=make, Pattern=some people make very, Pattern=noodle soups, Pattern=too, Pattern=the stuffing, Pattern=are, Pattern=yea
+	Constrained: Pattern=you, Pattern=what, Pattern=stuffing, Pattern=inside, Pattern=some, Pattern=make, Pattern=the
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=you plan to buy, Pattern=what do you, Pattern=yea
+	Constrained: Pattern=what, Pattern=buy, Pattern=to, Pattern=you
+Turn ID=11| B | Human 2 : yea stuffing and eat good turkey with noodle soups haha you plan to buy what ? inside the<|im_end
+	Free: Pattern=good, Pattern=eat, Pattern=what, Pattern=turkey, Pattern=haha, Pattern=noodle soups, Pattern=and, Pattern=stuffing, Pattern=inside, Pattern=yea, Pattern=with, Pattern=you plan to buy
+	Constrained: Pattern=buy, Pattern=to, Pattern=you
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=you can, Pattern=more, Pattern=run
+	Constrained: Pattern=you, Pattern=can
+Turn ID=13| B | Human 2 : yea the more you run the more good stuffing and turkey inside haha buy what ? can y
+	Free: Pattern=you, Pattern=what, Pattern=buy, Pattern=and, Pattern=can, Pattern=haha, Pattern=the, Pattern=good stuffing, Pattern=more, Pattern=inside, Pattern=yea, Pattern=turkey, Pattern=run
+	Constrained: Pattern=stuffing, Pattern=good
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=the, Pattern=with
+	Constrained: 

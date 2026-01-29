@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there how's it _going_ 
+A|2| Human 1: all good , _you ?_ 
+B|3| Human 2: _that's_ great _to_ hear ! _is_ there anything you'd like _to_ chat _about_ or ask me ? i'm here _to_ help _with_ any questions 
+A|4| Human 1: _how_ has that _been_ [going] ? 
+B|5| Human 2: great , thank [you] _for_ asking ! i've [been] doing well and helping users _with_ their inquiries . [how] _about_ [you ?] <|im 
+A|6| Human 1: [that's] too bad hopefully _with practice_ it'll get _better_ what [about] the doggy paddle _haha_ 
+B|7| Human 2: [haha] [that's] _funny_ ! _yes_ , [with practice] , it definitely gets [better] . let me know if [you] have any other questions or topics 
+A|8| Human 1: corgi belly _flop_ _compilation_ - _cute_ [funny] _dogs_ corgi _flop_ _<redacted_link>_ 
+B|9| Human 2: 🐶 [cute] dog [flop] moments [compilation] ! [<redacted_link>] 
+A|10| Human 1: _from a high enough distance_ , _yes ?_ 
+B|11| Human 2: 😂 [dogs] [flop] [funny] moments [<redacted_link>] [from a high enough distance] [yes ?] <|im 
+A|12| Human 1: _no_ so far _sadly_ [you ?] [a] _relative_ [is] coming [to] visit [for] _thanksgiving_ though 
+B|13| Human 2: 🎉 [that's] great ! have _fun_ [with] your [relative] during [thanksgiving] ! [<redacted_link>] _fun_ 
+A|14| Human 1: [that's] _still pretty_ [fun] _are_ [you] [going] [to] cook the turkey yourself ? 
+B|15| Human 2: [no] [sadly] my cooking skills [are] [still pretty] basic 😅<redacted_link> [you ?] <|im 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there how's it going
+	Free: Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : all good , you ?
+	Free: Pattern=you ?
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : that's great to hear ! is there anything you'd like to chat about or ask me ? i'm here to help with any questions
+	Free: Pattern=about, Pattern=is, Pattern=that's, Pattern=to, Pattern=with
+	Constrained: 
+Turn ID=4| A | Human 1 : how has that been going ?
+	Free: Pattern=how, Pattern=been, Pattern=going
+	Constrained: 
+Turn ID=5| B | Human 2 : great , thank you for asking ! i've been doing well and helping users with their inquiries . how about you ? <|im
+	Free: Pattern=you, Pattern=how, Pattern=for, Pattern=about, Pattern=you ?, Pattern=been, Pattern=with
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : that's too bad hopefully with practice it'll get better what about the doggy paddle haha
+	Free: Pattern=about, Pattern=haha, Pattern=that's, Pattern=better, Pattern=with practice
+	Constrained: Pattern=with
+Turn ID=7| B | Human 2 : haha that's funny ! yes , with practice , it definitely gets better . let me know if you have any other questions or topics
+	Free: Pattern=haha, Pattern=that's, Pattern=funny, Pattern=you, Pattern=yes, Pattern=better, Pattern=with practice
+	Constrained: Pattern=with
+Turn ID=8| A | Human 1 : corgi belly flop compilation - cute funny dogs corgi flop <redacted_link>
+	Free: Pattern=cute, Pattern=compilation, Pattern=dogs, Pattern=flop, Pattern=<redacted_link>, Pattern=funny
+	Constrained: 
+Turn ID=9| B | Human 2 : 🐶 cute dog flop moments compilation ! <redacted_link>
+	Free: Pattern=<redacted_link>, Pattern=cute, Pattern=compilation, Pattern=flop
+	Constrained: 
+Turn ID=10| A | Human 1 : from a high enough distance , yes ?
+	Free: Pattern=from a high enough distance, Pattern=yes ?
+	Constrained: Pattern=yes, Pattern=a
+Turn ID=11| B | Human 2 : 😂 dogs flop funny moments <redacted_link> from a high enough distance yes ? <|im
+	Free: Pattern=yes ?, Pattern=dogs, Pattern=flop, Pattern=from a high enough distance, Pattern=<redacted_link>, Pattern=funny
+	Constrained: Pattern=yes, Pattern=a
+Turn ID=12| A | Human 1 : no so far sadly you ? a relative is coming to visit for thanksgiving though
+	Free: Pattern=no, Pattern=a, Pattern=sadly, Pattern=for, Pattern=thanksgiving, Pattern=is, Pattern=you ?, Pattern=to, Pattern=relative
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : 🎉 that's great ! have fun with your relative during thanksgiving ! <redacted_link> fun
+	Free: Pattern=fun, Pattern=thanksgiving, Pattern=that's, Pattern=<redacted_link>, Pattern=with, Pattern=relative
+	Constrained: 
+Turn ID=14| A | Human 1 : that's still pretty fun are you going to cook the turkey yourself ?
+	Free: Pattern=fun, Pattern=you, Pattern=going, Pattern=are, Pattern=that's, Pattern=to, Pattern=still pretty
+	Constrained: 
+Turn ID=15| B | Human 2 : no sadly my cooking skills are still pretty basic 😅<redacted_link> you ? <|im
+	Free: Pattern=no, Pattern=sadly, Pattern=are, Pattern=you ?, Pattern=still pretty
+	Constrained: Pattern=you

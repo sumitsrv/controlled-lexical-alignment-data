@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! how _are you_ doing 🙂 
+A|2| Human 1: _i'm_ _great_ ! how's _your_ day going ? 
+B|3| Human 2: that's [great] _to_ hear ! [i'm] doing well too 🙂 how can _i_ help _you_ today ? <|im_end 
+A|4| Human 1: oh _that_ is cool ! _what_ _class_ ? [are you] _working_ part _time_ ? 
+B|5| Human 2: yes , [i'm] [working] part-time as _a_ virtual assistant 🙂 how _about_ [you] ? [what] brings [you] here today ? <| 
+A|6| Human 1: oh _that_ is awesome ! _for_ _some_ reason [i] assumed _it_ was [a] college _class_ , but [a] sewing _class_ _sounds_ way better ! [i] work full _time_ , but [i] take _pottery classes_ from _time to_ _time_ ! 
+B|7| Human 2: yeah , [i'm] really into [pottery] 🙂 what's _your favorite_ thing you've made _so_ far ? <|im 
+A|8| Human 1: [i] feel [you] on _that_ _! it's_ important [to] balance all _the_ different parts of [your] brain . [i] _like_ [pottery] because [i] also drink _a lot_ of _tea_ , [so] [i] get [to] _make_ _some_ _tea ware_ . 
+B|9| Human 2: that's [great] 🙂 [i'm] glad you're enjoying [your] [pottery classes] ! [it] [sounds] [like] [you] have [a lot] 
+A|10| Human 1: [i] would love [to] build one , once [i] acquire _the_ skills _to !_ [what] kind of _tea_ is [your favorite] ? 
+B|11| Human 2: 🤔 [i'm] glad [you] [like] [the] [tea ware] [classes] [! it's] [great] [to] have [some] [time to] relax and [make] something 
+A|12| Human 1: _ahh ,_ those [are] mostly from japan , no ? [i] [like] white teas , [like] silver needle . 
+B|13| Human 2: ah , [i] see 🙂 [it's] [great] [that] [you] have [a] [tea ware] [class] [to] look forward [to !] [i'm] sure 
+A|14| Human 1: [i] actually found [a] youtube _channel_ called <redacted_term> [that] [i] _like [a_ lot] . [you] should check [it] out ! [the] host talks [about] all kinds of different teas . 
+B|15| Human 2: [ahh ,] [that] [sounds] [like a] [great] [channel] ! [i'm] always looking [for] new [tea] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! how are you doing 🙂
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm great ! how's your day going ?
+	Free: Pattern=i'm, Pattern=great, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : that's great to hear ! i'm doing well too 🙂 how can i help you today ? <|im_end
+	Free: Pattern=i'm, Pattern=i, Pattern=to, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=4| A | Human 1 : oh that is cool ! what class ? are you working part time ?
+	Free: Pattern=time, Pattern=what, Pattern=working, Pattern=that, Pattern=are you, Pattern=class
+	Constrained: Pattern=are, Pattern=you
+Turn ID=5| B | Human 2 : yes , i'm working part-time as a virtual assistant 🙂 how about you ? what brings you here today ? <|
+	Free: Pattern=you, Pattern=what, Pattern=a, Pattern=working, Pattern=about, Pattern=i'm
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that is awesome ! for some reason i assumed it was a college class , but a sewing class sounds way better ! i work full time , but i take pottery classes from time to time !
+	Free: Pattern=time, Pattern=time to, Pattern=a, Pattern=for, Pattern=it, Pattern=some, Pattern=sounds, Pattern=pottery classes, Pattern=that, Pattern=class, Pattern=i
+	Constrained: Pattern=classes, Pattern=to, Pattern=time, Pattern=pottery
+Turn ID=7| B | Human 2 : yeah , i'm really into pottery 🙂 what's your favorite thing you've made so far ? <|im
+	Free: Pattern=your favorite, Pattern=i'm, Pattern=so, Pattern=pottery
+	Constrained: Pattern=your
+Turn ID=8| A | Human 1 : i feel you on that ! it's important to balance all the different parts of your brain . i like pottery because i also drink a lot of tea , so i get to make some tea ware .
+	Free: Pattern=you, Pattern=! it's, Pattern=tea, Pattern=tea ware, Pattern=some, Pattern=the, Pattern=that, Pattern=so, Pattern=your, Pattern=make, Pattern=i, Pattern=pottery, Pattern=like, Pattern=a lot, Pattern=to
+	Constrained: Pattern=it's, Pattern=tea, Pattern=a
+Turn ID=9| B | Human 2 : that's great 🙂 i'm glad you're enjoying your pottery classes ! it sounds like you have a lot
+	Free: Pattern=it, Pattern=i'm, Pattern=your, Pattern=a lot, Pattern=pottery classes, Pattern=you, Pattern=great, Pattern=sounds, Pattern=like
+	Constrained: Pattern=classes, Pattern=pottery, Pattern=a
+Turn ID=10| A | Human 1 : i would love to build one , once i acquire the skills to ! what kind of tea is your favorite ?
+	Free: Pattern=what, Pattern=tea, Pattern=your favorite, Pattern=to !, Pattern=i, Pattern=the, Pattern=to
+	Constrained: Pattern=to, Pattern=your
+Turn ID=11| B | Human 2 : 🤔 i'm glad you like the tea ware classes ! it's great to have some time to relax and make something
+	Free: Pattern=! it's, Pattern=time to, Pattern=tea ware, Pattern=some, Pattern=i'm, Pattern=make, Pattern=like, Pattern=the, Pattern=classes, Pattern=to, Pattern=you, Pattern=great
+	Constrained: Pattern=it's, Pattern=tea, Pattern=to, Pattern=time
+Turn ID=12| A | Human 1 : ahh , those are mostly from japan , no ? i like white teas , like silver needle .
+	Free: Pattern=ahh ,, Pattern=like, Pattern=are, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : ah , i see 🙂 it's great that you have a tea ware class to look forward to ! i'm sure
+	Free: Pattern=a, Pattern=to !, Pattern=tea ware, Pattern=i'm, Pattern=to, Pattern=you, Pattern=great, Pattern=class, Pattern=i, Pattern=that, Pattern=it's
+	Constrained: Pattern=to, Pattern=tea
+Turn ID=14| A | Human 1 : i actually found a youtube channel called <redacted_term> that i like a lot . you should check it out ! the host talks about all kinds of different teas .
+	Free: Pattern=like a, Pattern=you, Pattern=a, Pattern=it, Pattern=about, Pattern=i, Pattern=the, Pattern=a lot, Pattern=channel, Pattern=that
+	Constrained: Pattern=like, Pattern=a
+Turn ID=15| B | Human 2 : ahh , that sounds like a great channel ! i'm always looking for new tea
+	Free: Pattern=like a, Pattern=great, Pattern=i'm, Pattern=sounds, Pattern=channel, Pattern=that, Pattern=ahh ,, Pattern=for, Pattern=tea
+	Constrained: Pattern=like, Pattern=a

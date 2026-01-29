@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i_ am good . _how are you ?_ ：） 
+B|3| Human 2: goodbye ... [how are you ?] 
+A|4| Human 1: _i_ am _busy_ . _a_ lot of work . what [are you] working on ? 
+B|5| Human 2: why [you] so [busy] ? is that why _you are_ so bad at drawing ? what's the excuse ? 
+A|6| Human 1: _i_ am working on _a_ new _classifier ._ 
+B|7| Human 2: that is not the same thing as [a] [classifier .] 
+A|8| Human 1: [a] new [classifier] for hate speech _. which_ research topic catches your eyes _most_ ? 
+B|9| Human 2: [i] have [a] feeling this question will be answered in the upcoming episodes [. which] [classifier] is the [most] important ? 
+A|10| Human 1: nice ! do [you] refer to work or anything else ? 
+B|11| Human 2: [i] got [a] job ! 
+A|12| Human 1: [you are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you ?, Pattern=i
+	Constrained: Pattern=you, Pattern=are you, Pattern=how are you
+Turn ID=3| B | Human 2 : goodbye ... how are you ?
+	Free: Pattern=how are you ?
+	Constrained: Pattern=you, Pattern=are you, Pattern=how are you
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=are you, Pattern=a, Pattern=i, Pattern=busy
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : why you so busy ? is that why you are so bad at drawing ? what's the excuse ?
+	Free: Pattern=you are, Pattern=you, Pattern=busy
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=classifier ., Pattern=a, Pattern=i
+	Constrained: Pattern=classifier
+Turn ID=7| B | Human 2 : that is not the same thing as a classifier .
+	Free: Pattern=classifier ., Pattern=a
+	Constrained: Pattern=classifier
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=. which, Pattern=classifier, Pattern=most, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : i have a feeling this question will be answered in the upcoming episodes . which classifier is the most important ?
+	Free: Pattern=a, Pattern=. which, Pattern=i, Pattern=classifier, Pattern=most
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=11| B | Human 2 : i got a job !
+	Free: Pattern=a, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=you are
+	Constrained: Pattern=you

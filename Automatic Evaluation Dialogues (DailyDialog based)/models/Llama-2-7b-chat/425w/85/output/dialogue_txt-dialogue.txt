@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! 
+A|2| Human 1: how's life ? 
+B|3| Human 2: great , thanks ! how _about you ?_ 
+A|4| Human 1: lol which _cafe_ ? let me guess _. _<redacted_term>_ ?_ 
+B|5| Human 2: no , [<redacted_term>] _is_ actually a really cool [cafe] . they _have_ amazing coffee and pastries . _you_ should 
+A|6| Human 1: what [is] your favoriate cuisine ? my favorite _food is_ _chinese_ . what [about you ?] 
+B|7| Human 2: [chinese] [food is] great ! i'm a big fan _of_ dim sum too . _have_ [you] _tried_ [<redacted_term> ?] they 
+A|8| Human 1: hmm [you] like _spicy food_ . nice 
+B|9| Human 2: [spicy [food] is] great for _the_ immune system [. <redacted_term>] 🚀🧖‍ 
+A|10| Human 1: _i would recommend_ _hunan impression_ which _has_ _very good_ _hunan_ cruisine . not sure if [you] [have] [tried] it or not 
+B|11| Human 2: [hunan impression] [is] [very good] ! [i would recommend] trying their [spicy] noodles . 👍 <|im_end| 
+A|12| Human 1: _yeah_ [of] course [the] fun fact [is] that [the] owner [of] [<redacted_term>] used to run [<redacted_term>] 
+B|13| Human 2: [yeah] that's true [the] [<redacted_term>] [has] a [very good] reputation for its [spicy] food<|im_ 
+A|14| Human 1: same former owner ?? 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's life ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how about you ?
+	Free: Pattern=about you ?
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : lol which cafe ? let me guess . <redacted_term> ?
+	Free: Pattern=<redacted_term> ?, Pattern=. <redacted_term>, Pattern=cafe
+	Constrained: Pattern=<redacted_term>
+Turn ID=5| B | Human 2 : no , <redacted_term> is actually a really cool cafe . they have amazing coffee and pastries . you should
+	Free: Pattern=cafe, Pattern=you, Pattern=have, Pattern=<redacted_term>, Pattern=is
+	Constrained: 
+Turn ID=6| A | Human 1 : what is your favoriate cuisine ? my favorite food is chinese . what about you ?
+	Free: Pattern=about you ?, Pattern=food is, Pattern=is, Pattern=chinese
+	Constrained: Pattern=you, Pattern=is
+Turn ID=7| B | Human 2 : chinese food is great ! i'm a big fan of dim sum too . have you tried <redacted_term> ? they
+	Free: Pattern=<redacted_term> ?, Pattern=of, Pattern=you, Pattern=have, Pattern=chinese, Pattern=tried, Pattern=food is
+	Constrained: Pattern=is, Pattern=<redacted_term>
+Turn ID=8| A | Human 1 : hmm you like spicy food . nice
+	Free: Pattern=spicy food, Pattern=you
+	Constrained: Pattern=spicy
+Turn ID=9| B | Human 2 : spicy food is great for the immune system . <redacted_term> 🚀🧖‍
+	Free: Pattern=food is, Pattern=. <redacted_term>, Pattern=spicy food, Pattern=the
+	Constrained: Pattern=spicy, Pattern=is, Pattern=<redacted_term>
+Turn ID=10| A | Human 1 : i would recommend hunan impression which has very good hunan cruisine . not sure if you have tried it or not
+	Free: Pattern=you, Pattern=have, Pattern=i would recommend, Pattern=has, Pattern=hunan, Pattern=tried, Pattern=very good, Pattern=hunan impression
+	Constrained: Pattern=hunan
+Turn ID=11| B | Human 2 : hunan impression is very good ! i would recommend trying their spicy noodles . 👍 <|im_end|
+	Free: Pattern=spicy, Pattern=i would recommend, Pattern=is, Pattern=very good, Pattern=hunan impression
+	Constrained: Pattern=hunan
+Turn ID=12| A | Human 1 : yeah of course the fun fact is that the owner of <redacted_term> used to run <redacted_term>
+	Free: Pattern=of, Pattern=yeah, Pattern=<redacted_term>, Pattern=is, Pattern=the
+	Constrained: 
+Turn ID=13| B | Human 2 : yeah that's true the <redacted_term> has a very good reputation for its spicy food<|im_
+	Free: Pattern=spicy, Pattern=<redacted_term>, Pattern=the, Pattern=very good, Pattern=yeah, Pattern=has
+	Constrained: 
+Turn ID=14| A | Human 1 : same former owner ?? 🙂
+	Free: 
+	Constrained: 

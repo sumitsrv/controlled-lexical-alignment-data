@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your day going_ ? 
+B|3| Human 2: _i'm_ an _ai_ , so _i_ don't have feelings or [day] experiences , but _i'm_ fully operational and _ready to_ help you 
+A|4| Human 1: [i'm] _good_ _! just_ getting [ready to] _watch_ _a_ _basketball game_ . hope _your headache_ goes _away_ ! 
+B|5| Human 2: [i'm] [ready to] assist you _in_ [basketball game] preparation [! just] like [headache] [away] , [your day going] good—i can't experience emot 
+A|6| Human 1: hmm , try taking _some_ <redacted_term> ! [i'm] [going] [to] _see_ _the_ warriors vs . _the_ grizzlies . ever _see_ them _play_ ? 
+B|7| Human 2: [i'm] [ready to] process [the] [game] details , [watch] player statistics , or provide play-by-plays . [just] let _me_ know [your headache] [away] 
+A|8| Human 1: haha , _all_ [the] animal names confuse [me] as well ! who came up _with_ these naming conventions ? i'd _name_ my _team_ _something_ _more_ original: [the] _new york chairs_ ! 
+B|9| Human 2: [i'm] [all] [good] [with] [the] [team] [name] [new york chairs] , [ready to] [play] [some] basketballs _in_ [your] head [game] [! just] pass [me] [the] stats 
+A|10| Human 1: oh _cool_ ! what _is_ "neurips" ? 
+B|11| Human 2: _i_ [see] where [the] playful banter's [going] ! neurips isn't [something] basketball-related , [more] like [a] term from [the] 
+A|12| Human 1: oh wow ! sounds fancy ! what _is_ that _about_ ? 
+B|13| Human 2: neurips [is] [the] conference on neural information processing systems . it's [all] [about] advancing [the] state _of_ artificial intelligence , [with] research 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: yes , that's right ! machine learning . neurips [is] [the] go-to conference where [some] _of_ [the] coolest minds present [about] deep 
+A|16| Human 1: ahh ! [i] saw [a] scary movie [about] that once . it _was_ [about] this sentient [ai] [in] [a] _dystopian future_ - very very _creepy_ . it _was_ called _wall-e_ , ever heard [of] it ? 
+B|17| Human 2: [i'm] [all] [about] movie-themed [dystopian future] scares ! [wall-e] [was] [cool] [with] [the] floating [creepy] robots 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your day going
+	Constrained: Pattern=day, Pattern=going, Pattern=your
+Turn ID=3| B | Human 2 : i'm an ai , so i don't have feelings or day experiences , but i'm fully operational and ready to help you
+	Free: Pattern=ready to, Pattern=i'm, Pattern=ai, Pattern=day, Pattern=i
+	Constrained: Pattern=to
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=good, Pattern=ready to, Pattern=your headache, Pattern=i'm, Pattern=! just, Pattern=basketball game, Pattern=watch, Pattern=away, Pattern=a
+	Constrained: Pattern=just, Pattern=game, Pattern=headache, Pattern=your, Pattern=to
+Turn ID=5| B | Human 2 : i'm ready to assist you in basketball game preparation ! just like headache away , your day going good—i can't experience emot
+	Free: Pattern=ready to, Pattern=away, Pattern=headache, Pattern=in, Pattern=i'm, Pattern=! just, Pattern=basketball game, Pattern=your day going
+	Constrained: Pattern=game, Pattern=to, Pattern=going, Pattern=just, Pattern=day, Pattern=your
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=going, Pattern=some, Pattern=i'm, Pattern=the, Pattern=see, Pattern=to, Pattern=play
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm ready to process the game details , watch player statistics , or provide play-by-plays . just let me know your headache away
+	Free: Pattern=me, Pattern=away, Pattern=game, Pattern=your headache, Pattern=i'm, Pattern=the, Pattern=watch, Pattern=ready to, Pattern=just
+	Constrained: Pattern=to, Pattern=your, Pattern=headache
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=more, Pattern=me, Pattern=name, Pattern=new york chairs, Pattern=team, Pattern=with, Pattern=something, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm all good with the team name new york chairs , ready to play some basketballs in your head game ! just pass me the stats
+	Free: Pattern=good, Pattern=ready to, Pattern=me, Pattern=game, Pattern=name, Pattern=some, Pattern=in, Pattern=i'm, Pattern=your, Pattern=! just, Pattern=play, Pattern=new york chairs, Pattern=team, Pattern=with, Pattern=the, Pattern=all
+	Constrained: Pattern=to, Pattern=just
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=cool, Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : i see where the playful banter's going ! neurips isn't something basketball-related , more like a term from the
+	Free: Pattern=more, Pattern=going, Pattern=a, Pattern=i, Pattern=the, Pattern=see, Pattern=something
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=about, Pattern=is
+	Constrained: 
+Turn ID=13| B | Human 2 : neurips is the conference on neural information processing systems . it's all about advancing the state of artificial intelligence , with research
+	Free: Pattern=of, Pattern=about, Pattern=is, Pattern=with, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : yes , that's right ! machine learning . neurips is the go-to conference where some of the coolest minds present about deep
+	Free: Pattern=of, Pattern=about, Pattern=some, Pattern=is, Pattern=the
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=of, Pattern=a, Pattern=about, Pattern=ai, Pattern=i, Pattern=creepy, Pattern=was, Pattern=wall-e, Pattern=dystopian future, Pattern=in
+	Constrained: 
+Turn ID=17| B | Human 2 : i'm all about movie-themed dystopian future scares ! wall-e was cool with the floating creepy robots
+	Free: Pattern=cool, Pattern=about, Pattern=dystopian future, Pattern=i'm, Pattern=creepy, Pattern=was, Pattern=wall-e, Pattern=with, Pattern=the, Pattern=all
+	Constrained: 

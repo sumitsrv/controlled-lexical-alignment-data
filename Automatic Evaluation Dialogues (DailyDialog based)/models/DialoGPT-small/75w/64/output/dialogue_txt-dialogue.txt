@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm doing well_ . having many meetings _today_ 🙂 
+B|3| Human 2: hello guys ! [i'm doing well] [today] ! what's your daily routine ? 
+A|4| Human 1: _what are you up to ?_ 
+B|5| Human 2: [i'm doing] great [today] , how [are you] [doing] yesterday ? 
+A|6| Human 1: we're _gonna_ play _board_ games _and_ will _be_ eating lots _of_ food ! _what about you ?_ 
+B|7| Human 2: hello [and] welcome !! [what are you] [doing] [today] ?? [and] [what about you ?] 
+A|8| Human 1: we've been [doing] games _of thrones_ lately . _the_ _game_ takes _a_ very long time _to_ finish though ! 
+B|9| Human 2: hello [and] welcome !! [what are you up to ?] what's your favourite [board] [game] ? 
+A|10| Human 1: _i_ do . [i'm] _a_ super fan _of_ it (not _the_ last season though haha) . did [you] _watch_ ? 
+B|11| Human 2: [i] [watch] too ! [i'm] [gonna] [be] [doing] [a] lot [of] [game] [of thrones] tonight . 
+A|12| Human 1: _i love_ _survivor_ 🙂 
+B|13| Human 2: yes yes , [i'm] [gonna] [be] [doing] [the] [survivor] series tonight . 
+A|14| Human 1: nice ! [i] mostly _like_ comedy _shows like_ [the] good _place_ [and] modern _family_ 
+B|15| Human 2: [i'm] going [to] [be] [the] guy in [the] red [and] [the] yellow , [i love] [shows like] [survivor] , [the] [place] , [and] [family] guy . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=i'm doing well, Pattern=today
+	Constrained: Pattern=i'm, Pattern=doing, Pattern=i'm doing
+Turn ID=3| B | Human 2 : hello guys ! i'm doing well today ! what's your daily routine ?
+	Free: Pattern=i'm doing well, Pattern=today
+	Constrained: Pattern=i'm, Pattern=doing, Pattern=i'm doing
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=what are you up to ?
+	Constrained: Pattern=what are you, Pattern=are you, Pattern=to, Pattern=you
+Turn ID=5| B | Human 2 : i'm doing great today , how are you doing yesterday ?
+	Free: Pattern=i'm doing, Pattern=are you, Pattern=today, Pattern=doing
+	Constrained: Pattern=i'm, Pattern=you, Pattern=doing
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=of, Pattern=board, Pattern=gonna, Pattern=and, Pattern=be, Pattern=what about you ?
+	Constrained: Pattern=you
+Turn ID=7| B | Human 2 : hello and welcome !! what are you doing today ?? and what about you ?
+	Free: Pattern=today, Pattern=doing, Pattern=and, Pattern=what are you, Pattern=what about you ?
+	Constrained: Pattern=you, Pattern=are you
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=a, Pattern=of thrones, Pattern=the, Pattern=to, Pattern=doing, Pattern=game
+	Constrained: Pattern=of
+Turn ID=9| B | Human 2 : hello and welcome !! what are you up to ? what's your favourite board game ?
+	Free: Pattern=what are you up to ?, Pattern=board, Pattern=game, Pattern=and
+	Constrained: Pattern=what are you, Pattern=are you, Pattern=to, Pattern=you
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=of, Pattern=you, Pattern=a, Pattern=i'm, Pattern=i, Pattern=the, Pattern=watch
+	Constrained: 
+Turn ID=11| B | Human 2 : i watch too ! i'm gonna be doing a lot of game of thrones tonight .
+	Free: Pattern=of, Pattern=a, Pattern=gonna, Pattern=i, Pattern=be, Pattern=watch, Pattern=doing, Pattern=game, Pattern=i'm, Pattern=of thrones
+	Constrained: Pattern=of
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=i love, Pattern=survivor
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : yes yes , i'm gonna be doing the survivor series tonight .
+	Free: Pattern=doing, Pattern=gonna, Pattern=i'm, Pattern=be, Pattern=the, Pattern=survivor
+	Constrained: 
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=and, Pattern=family, Pattern=i, Pattern=like, Pattern=the, Pattern=place, Pattern=shows like
+	Constrained: Pattern=like
+Turn ID=15| B | Human 2 : i'm going to be the guy in the red and the yellow , i love shows like survivor , the place , and family guy .
+	Free: Pattern=and, Pattern=family, Pattern=i'm, Pattern=be, Pattern=the, Pattern=to, Pattern=i love, Pattern=shows like, Pattern=survivor, Pattern=place
+	Constrained: Pattern=i, Pattern=like

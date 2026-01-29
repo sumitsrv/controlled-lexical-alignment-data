@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! 
+A|2| Human 1: how's _life_ ? 
+B|3| Human 2: great ! how may _i_ help _you_ today ? </s>04-26 15:33:44 . 143 
+A|4| Human 1: _lol_ which _cafe_ ? let me guess . _<redacted_term>_ ? 
+B|5| Human 2: 04-26 15:33:45 . 030 [<redacted_term>] [cafe] 
+A|6| Human 1: what _is_ _your_ favoriate _cuisine_ ? my _favorite_ _food is_ _chinese_ . what about [you] ? 
+B|7| Human 2: [lol] you're so funny ! [chinese] [food is] [life] ! [<redacted_term>] [cafe] [is] _the_ best place 
+A|8| Human 1: hmm [you] _like_ _spicy food_ . nice 
+B|9| Human 2: what's [your] [favorite] [spicy food] ? [chinese] [cuisine] [is] known for its [spicy] dishes [like] kung pao chicken and map 
+A|10| Human 1: [i] _would_ _recommend_ _hunan impression_ which _has very good_ _hunan_ cruisine . _not_ sure if [you] _have_ _tried_ _it_ or _not_ 
+B|11| Human 2: no , [i] [have] [not] [tried] [hunan impression] [would] [you] [recommend] [it] ? [<redacted_term>] [cafe] [has very good] 
+A|12| Human 1: _yeah_ of course [the] _fun_ fact [is] that [the] owner of [<redacted_term>] used to run [<redacted_term>] 
+B|13| Human 2: [yeah] that's [fun] [<redacted_term>] [has very good] [food] [you] [would] [not] regret 
+A|14| Human 1: same former owner ?? 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's life ?
+	Free: Pattern=life
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how may i help you today ? </s>04-26 15:33:44 . 143
+	Free: Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : lol which cafe ? let me guess . <redacted_term> ?
+	Free: Pattern=lol, Pattern=<redacted_term>, Pattern=cafe
+	Constrained: 
+Turn ID=5| B | Human 2 : 04-26 15:33:45 . 030 <redacted_term> cafe
+	Free: Pattern=<redacted_term>, Pattern=cafe
+	Constrained: 
+Turn ID=6| A | Human 1 : what is your favoriate cuisine ? my favorite food is chinese . what about you ?
+	Free: Pattern=you, Pattern=cuisine, Pattern=favorite, Pattern=chinese, Pattern=food is, Pattern=is, Pattern=your
+	Constrained: Pattern=is, Pattern=food
+Turn ID=7| B | Human 2 : lol you're so funny ! chinese food is life ! <redacted_term> cafe is the best place
+	Free: Pattern=lol, Pattern=cafe, Pattern=<redacted_term>, Pattern=chinese, Pattern=is, Pattern=the, Pattern=food is, Pattern=life
+	Constrained: Pattern=is, Pattern=food
+Turn ID=8| A | Human 1 : hmm you like spicy food . nice
+	Free: Pattern=spicy food, Pattern=like, Pattern=you
+	Constrained: Pattern=spicy, Pattern=food
+Turn ID=9| B | Human 2 : what's your favorite spicy food ? chinese cuisine is known for its spicy dishes like kung pao chicken and map
+	Free: Pattern=spicy, Pattern=cuisine, Pattern=favorite, Pattern=chinese, Pattern=like, Pattern=spicy food, Pattern=is, Pattern=your
+	Constrained: Pattern=spicy, Pattern=food
+Turn ID=10| A | Human 1 : i would recommend hunan impression which has very good hunan cruisine . not sure if you have tried it or not
+	Free: Pattern=you, Pattern=have, Pattern=it, Pattern=has very good, Pattern=recommend, Pattern=i, Pattern=hunan, Pattern=tried, Pattern=would, Pattern=hunan impression, Pattern=not
+	Constrained: Pattern=hunan
+Turn ID=11| B | Human 2 : no , i have not tried hunan impression would you recommend it ? <redacted_term> cafe has very good
+	Free: Pattern=cafe, Pattern=you, Pattern=have, Pattern=it, Pattern=<redacted_term>, Pattern=has very good, Pattern=recommend, Pattern=i, Pattern=tried, Pattern=would, Pattern=hunan impression, Pattern=not
+	Constrained: Pattern=hunan
+Turn ID=12| A | Human 1 : yeah of course the fun fact is that the owner of <redacted_term> used to run <redacted_term>
+	Free: Pattern=fun, Pattern=yeah, Pattern=<redacted_term>, Pattern=is, Pattern=the
+	Constrained: 
+Turn ID=13| B | Human 2 : yeah that's fun <redacted_term> has very good food you would not regret
+	Free: Pattern=fun, Pattern=you, Pattern=yeah, Pattern=<redacted_term>, Pattern=has very good, Pattern=food, Pattern=would, Pattern=not
+	Constrained: 
+Turn ID=14| A | Human 1 : same former owner ?? 🙂
+	Free: 
+	Constrained: 

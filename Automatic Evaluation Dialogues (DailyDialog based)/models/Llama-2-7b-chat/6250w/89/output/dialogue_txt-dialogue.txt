@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's week so far ? 
+B|3| Human 2: it's _going_ well , thanks ! i'm just an ai 🤖 helping users _like_ _you_ with their requests . � 
+A|4| Human 1: _same_ . [going] _to_ catch up on my _reading_ ! do _you have a_ feast planned ? 
+B|5| Human 2: 🤔 i'm just an ai , _i_ don't [have] personal plans or feasts , but i'm here [to] 
+A|6| Human 1: _something deeply hidden_ by _sean_ carroll _<redacted_link>_ 
+B|7| Human 2: 📚 [reading] _is_ great , [you have a] good taste ! [<redacted_link>] carroll's book _is_ 
+A|8| Human 1: largely _scifi how about you ?_ 
+B|9| Human 2: 🤔 [same] here ! [<redacted_link>] carroll's book [about] [scifi] , [how about you ?] 
+A|10| Human 1: [i] haven't _what_ [is] _it_ [about] ? 
+B|11| Human 2: [sean] carroll's [something deeply hidden] [<redacted_link>] [about] [scifi how about you ?] [what] [have] 
+A|12| Human 1: [how] do _the survivors_ _survive such_ [a] _thing_ ? 
+B|13| Human 2: [survive such] [thing] [how] [the survivors] [<redacted_link>] [scifi] [about] [how about you] what's your favorite 
+A|14| Human 1: _sounds like_ [a] tv _show_ [i] _watched_ 
+B|15| Human 2: [how about you] what's [like] [show] [sounds like] [<redacted_link>] [watched] [how] [survive such] [thing] [scifi] the< 
+A|16| Human 1: _can't_ quite _remember_ . [something] [about] [survivors] [going] [to] _live_ in _space_ 
+B|17| Human 2: [space] [survivors] [sounds like] [something] [can't] [remember] [about] [the] [show] [scifi] [live] [how about you] what's your favorite [thing] [about] [it] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : it's going well , thanks ! i'm just an ai 🤖 helping users like you with their requests . �
+	Free: Pattern=going, Pattern=you, Pattern=like
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going, Pattern=you have a, Pattern=reading, Pattern=same, Pattern=to
+	Constrained: Pattern=a, Pattern=have, Pattern=you
+Turn ID=5| B | Human 2 : 🤔 i'm just an ai , i don't have personal plans or feasts , but i'm here to
+	Free: Pattern=to, Pattern=i, Pattern=have
+	Constrained: 
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=something deeply hidden, Pattern=<redacted_link>, Pattern=sean
+	Constrained: Pattern=something
+Turn ID=7| B | Human 2 : 📚 reading is great , you have a good taste ! <redacted_link> carroll's book is
+	Free: Pattern=you have a, Pattern=<redacted_link>, Pattern=is, Pattern=reading
+	Constrained: Pattern=a, Pattern=have, Pattern=you
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=scifi how about you ?
+	Constrained: Pattern=you, Pattern=how about you, Pattern=how, Pattern=about, Pattern=scifi, Pattern=how about you ?
+Turn ID=9| B | Human 2 : 🤔 same here ! <redacted_link> carroll's book about scifi , how about you ?
+	Free: Pattern=about, Pattern=<redacted_link>, Pattern=how about you ?, Pattern=same, Pattern=scifi
+	Constrained: Pattern=how about you, Pattern=you, Pattern=about, Pattern=how
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=what, Pattern=it, Pattern=about, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : sean carroll's something deeply hidden <redacted_link> about scifi how about you ? what have
+	Free: Pattern=have, Pattern=what, Pattern=something deeply hidden, Pattern=scifi how about you ?, Pattern=about, Pattern=sean, Pattern=<redacted_link>
+	Constrained: Pattern=you, Pattern=how about you, Pattern=how, Pattern=about, Pattern=scifi, Pattern=how about you ?, Pattern=something
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=a, Pattern=how, Pattern=survive such, Pattern=the survivors, Pattern=thing
+	Constrained: Pattern=the, Pattern=survivors
+Turn ID=13| B | Human 2 : survive such thing how the survivors <redacted_link> scifi about how about you what's your favorite
+	Free: Pattern=how about you, Pattern=how, Pattern=about, Pattern=survive such, Pattern=scifi, Pattern=<redacted_link>, Pattern=the survivors, Pattern=thing
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=the, Pattern=survivors
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=a, Pattern=sounds like, Pattern=i, Pattern=watched, Pattern=show
+	Constrained: Pattern=like
+Turn ID=15| B | Human 2 : how about you what's like show sounds like <redacted_link> watched how survive such thing scifi the<
+	Free: Pattern=how about you, Pattern=how, Pattern=sounds like, Pattern=survive such, Pattern=like, Pattern=watched, Pattern=thing, Pattern=scifi, Pattern=<redacted_link>, Pattern=show
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=like
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=remember, Pattern=going, Pattern=live, Pattern=can't, Pattern=to, Pattern=about, Pattern=space, Pattern=survivors, Pattern=something
+	Constrained: 
+Turn ID=17| B | Human 2 : space survivors sounds like something can't remember about the show scifi live how about you what's your favorite thing about it ?
+	Free: Pattern=remember, Pattern=how about you, Pattern=sounds like, Pattern=it, Pattern=live, Pattern=can't, Pattern=scifi, Pattern=show, Pattern=about, Pattern=space, Pattern=thing, Pattern=the, Pattern=survivors, Pattern=something
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=like

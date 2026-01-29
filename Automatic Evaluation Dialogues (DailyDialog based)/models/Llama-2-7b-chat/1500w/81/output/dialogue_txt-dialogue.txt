@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ came back from _a_ _ski_ trip 
+B|3| Human 2: _oh_ , _cool !_ skiing is so much fun _! do you_ have [a] favorite resort ? 
+A|4| Human 1: _i_ slammed onto an _ice wall_ , _but_ _i_ got better _and_ _turning_ after _that_ _haha_ 
+B|5| Human 2: [haha] [that] sounds like [a] fun experience ! [ice wall] _can_ be quite challenging [but] [great] for improving [turning] skills ! what _do you_ _think_ _of_ 
+A|6| Human 1: [oh] [cool [!] do _you] know_ any _french_ _? i_ used _to_ take _french_ _in_ high school [but] basically forgot _most of_ it 
+B|7| Human 2: [most of] our skiers [know] [french] [and] you'll need [to] communicate with them 
+A|8| Human 1: _did you_ go anywhere else _in montreal_ ? 
+B|9| Human 2: [did [you] know] [that] [montreal] is also known for its underground city ? it's [a] 3-kilometer network [of] tunnels [and] 
+A|10| Human 1: [oh] [cool !] _i've_ _always_ wanted [to] attend _the_ olympics as [a] viewer [of] _course_ _i_ watch _a lot_ [of] _olympic_ figure skating on youtube 
+B|11| Human 2: [i've] skied [the] [olympic] slalom [course] [in montreal] [a lot] [and] it's [always] [a] [great] [ski] experience<|im_end| 
+A|12| Human 1: _barely_ _i_ don't [think] _i_ [can] , [in] conscience , call it [that] _i_ kind [of] _just_ pull myself along [the] sides 
+B|13| Human 2: [i've] skied [the] [olympic] slalom [course] [in montreal] [a lot] [and] it's [always] [a] [great] [ski] experience . [barely] [can] 
+A|14| Human 1: are [you] good at _<redacted_term>_ ? 
+B|15| Human 2: [did [you] know] [that] [<redacted_term>] has 10 [olympic] medals [? i] [think] that's [just] incredible< 
+A|16| Human 1: okay ! it was nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=a, Pattern=great, Pattern=just, Pattern=ski
+	Constrained: 
+Turn ID=3| B | Human 2 : oh , cool ! skiing is so much fun ! do you have a favorite resort ?
+	Free: Pattern=! do you, Pattern=cool !, Pattern=a, Pattern=oh
+	Constrained: Pattern=do you, Pattern=you
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=ice wall, Pattern=and, Pattern=i, Pattern=haha, Pattern=turning, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=5| B | Human 2 : haha that sounds like a fun experience ! ice wall can be quite challenging but great for improving turning skills ! what do you think of
+	Free: Pattern=great, Pattern=a, Pattern=do you, Pattern=can, Pattern=think, Pattern=haha, Pattern=turning, Pattern=ice wall, Pattern=of, Pattern=that, Pattern=but
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=? i, Pattern=you know, Pattern=oh, Pattern=most of, Pattern=in, Pattern=french, Pattern=! do you, Pattern=to, Pattern=cool !, Pattern=but
+	Constrained: Pattern=of, Pattern=you, Pattern=do you, Pattern=know, Pattern=i
+Turn ID=7| B | Human 2 : most of our skiers know french and you'll need to communicate with them
+	Free: Pattern=and, Pattern=most of, Pattern=know, Pattern=french, Pattern=to
+	Constrained: Pattern=of
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you, Pattern=in montreal
+	Constrained: Pattern=you, Pattern=montreal, Pattern=in
+Turn ID=9| B | Human 2 : did you know that montreal is also known for its underground city ? it's a 3-kilometer network of tunnels and
+	Free: Pattern=of, Pattern=you know, Pattern=did you, Pattern=a, Pattern=montreal, Pattern=and, Pattern=that
+	Constrained: Pattern=you, Pattern=know
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=of, Pattern=always, Pattern=a, Pattern=olympic, Pattern=oh, Pattern=i've, Pattern=the, Pattern=cool !, Pattern=course, Pattern=i, Pattern=a lot, Pattern=to
+	Constrained: Pattern=a
+Turn ID=11| B | Human 2 : i've skied the olympic slalom course in montreal a lot and it's always a great ski experience<|im_end|
+	Free: Pattern=ski, Pattern=always, Pattern=great, Pattern=a, Pattern=olympic, Pattern=and, Pattern=i've, Pattern=in montreal, Pattern=course, Pattern=the, Pattern=a lot
+	Constrained: Pattern=a, Pattern=montreal, Pattern=in
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=just, Pattern=can, Pattern=i, Pattern=the, Pattern=that, Pattern=barely, Pattern=think, Pattern=in
+	Constrained: 
+Turn ID=13| B | Human 2 : i've skied the olympic slalom course in montreal a lot and it's always a great ski experience . barely can
+	Free: Pattern=ski, Pattern=always, Pattern=great, Pattern=a, Pattern=olympic, Pattern=and, Pattern=i've, Pattern=can, Pattern=in montreal, Pattern=course, Pattern=the, Pattern=a lot, Pattern=barely
+	Constrained: Pattern=a, Pattern=montreal, Pattern=in
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=you, Pattern=<redacted_term>
+	Constrained: 
+Turn ID=15| B | Human 2 : did you know that <redacted_term> has 10 olympic medals ? i think that's just incredible<
+	Free: Pattern=? i, Pattern=you know, Pattern=olympic, Pattern=<redacted_term>, Pattern=think, Pattern=that, Pattern=just, Pattern=did you
+	Constrained: Pattern=you, Pattern=i, Pattern=know
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=you, Pattern=to
+	Constrained: 

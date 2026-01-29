@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! how _are you_ doing 🙂 
+A|2| Human 1: _i'm_ _great_ ! how's _your_ day going ? 
+B|3| Human 2: [i'm] doing [great] 😊 how can _i_ assist _you_ today ? 
+A|4| Human 1: oh _that_ _is_ cool ! what class ? [are you] _working_ _part time_ ? 
+B|5| Human 2: ah 🤔 [i'm] just an ai , _i_ don't have personal experiences or _work_ [part time] 😅 
+A|6| Human 1: oh _that_ _is_ _awesome_ ! for some reason [i] assumed _it_ was _a_ college class , _but_ _a_ sewing class _sounds_ _way_ better ! [i] [work] full [time] , _but_ [i] take _pottery_ classes from [time] to [time] ! 
+B|7| Human 2: 🎨 what's _your favorite_ [pottery] you've made ? how do [you] _like_ [working] with clay ? <|im_ 
+A|8| Human 1: [i] feel [you] on _that_ _! it's_ important to balance _all_ _the_ _different_ _parts of_ [your] brain . [i] [like] _pottery because_ [i] _also_ drink _a lot _of_ tea_ , so [i] get to _make_ some _tea ware_ . 
+B|9| Human 2: that's [awesome] 👍 how do [you] [make] [tea ware] ? [it] [sounds] _like [a lot_ of] [work] [but] [also] really rewarding< 
+A|10| Human 1: [i] would _love_ to build _one_ , once [i] acquire _the_ skills to ! what kind _of _tea_ is_ [your favorite] ? 
+B|11| Human 2: 🤖 [i'm] glad [you] [like] [the] [tea ware] [! it's] _actually_ [one] [of] my [favorite] [parts of] [pottery because] [it] 
+A|12| Human 1: _ahh ,_ those [are] mostly from japan , no ? [i] [like] _white_ _teas_ , [like] silver needle . 
+B|13| Human 2: [ahh ,] [white] [tea is] [also] [one] [of] my [favorite] types 🙂 what's [your favorite] [part] _about_ [working] with clay ? < 
+A|14| Human 1: [i] [actually] found [a] youtube channel called <redacted_term> _that_ [i] [like a lot] . [you] should check [it] out ! [the] host talks [about] _all_ _kinds of_ _different_ _teas_ . 
+B|15| Human 2: you're [teas] [are] lovely 😍 [i] [love] [the] [way] [you] can [make] [different] [kinds [of] [tea] ware] [that] [all] look unique 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! how are you doing 🙂
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm great ! how's your day going ?
+	Free: Pattern=great, Pattern=i'm, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm doing great 😊 how can i assist you today ?
+	Free: Pattern=great, Pattern=i, Pattern=i'm, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : oh that is cool ! what class ? are you working part time ?
+	Free: Pattern=working, Pattern=that, Pattern=part time, Pattern=are you, Pattern=is
+	Constrained: Pattern=are, Pattern=you, Pattern=part, Pattern=time
+Turn ID=5| B | Human 2 : ah 🤔 i'm just an ai , i don't have personal experiences or work part time 😅
+	Free: Pattern=part time, Pattern=i, Pattern=work, Pattern=i'm
+	Constrained: Pattern=part, Pattern=time
+Turn ID=6| A | Human 1 : oh that is awesome ! for some reason i assumed it was a college class , but a sewing class sounds way better ! i work full time , but i take pottery classes from time to time !
+	Free: Pattern=time, Pattern=a, Pattern=it, Pattern=work, Pattern=awesome, Pattern=is, Pattern=i, Pattern=pottery, Pattern=sounds, Pattern=that, Pattern=way, Pattern=but
+	Constrained: 
+Turn ID=7| B | Human 2 : 🎨 what's your favorite pottery you've made ? how do you like working with clay ? <|im_
+	Free: Pattern=you, Pattern=your favorite, Pattern=working, Pattern=pottery, Pattern=like
+	Constrained: Pattern=favorite, Pattern=your
+Turn ID=8| A | Human 1 : i feel you on that ! it's important to balance all the different parts of your brain . i like pottery because i also drink a lot of tea , so i get to make some tea ware .
+	Free: Pattern=different, Pattern=a lot of, Pattern=you, Pattern=! it's, Pattern=tea ware, Pattern=parts of, Pattern=pottery because, Pattern=that, Pattern=your, Pattern=make, Pattern=i, Pattern=also, Pattern=like, Pattern=of tea, Pattern=the, Pattern=all
+	Constrained: Pattern=a, Pattern=pottery, Pattern=of
+Turn ID=9| B | Human 2 : that's awesome 👍 how do you make tea ware ? it sounds like a lot of work but also really rewarding<
+	Free: Pattern=a lot of, Pattern=you, Pattern=it, Pattern=tea ware, Pattern=work, Pattern=make, Pattern=like a lot, Pattern=awesome, Pattern=but, Pattern=also, Pattern=sounds
+	Constrained: Pattern=a, Pattern=like, Pattern=of
+Turn ID=10| A | Human 1 : i would love to build one , once i acquire the skills to ! what kind of tea is your favorite ?
+	Free: Pattern=love, Pattern=i, Pattern=tea is, Pattern=your favorite, Pattern=one, Pattern=of tea, Pattern=the
+	Constrained: Pattern=your, Pattern=is, Pattern=favorite, Pattern=of
+Turn ID=11| B | Human 2 : 🤖 i'm glad you like the tea ware ! it's actually one of my favorite parts of pottery because it
+	Free: Pattern=of, Pattern=you, Pattern=! it's, Pattern=actually, Pattern=it, Pattern=tea ware, Pattern=parts of, Pattern=i'm, Pattern=like, Pattern=the, Pattern=pottery because, Pattern=favorite, Pattern=one
+	Constrained: Pattern=pottery, Pattern=of
+Turn ID=12| A | Human 1 : ahh , those are mostly from japan , no ? i like white teas , like silver needle .
+	Free: Pattern=ahh ,, Pattern=are, Pattern=i, Pattern=like, Pattern=white, Pattern=teas
+	Constrained: 
+Turn ID=13| B | Human 2 : ahh , white tea is also one of my favorite types 🙂 what's your favorite part about working with clay ? <
+	Free: Pattern=of, Pattern=ahh ,, Pattern=working, Pattern=about, Pattern=also, Pattern=tea is, Pattern=favorite, Pattern=your favorite, Pattern=one, Pattern=part, Pattern=white
+	Constrained: Pattern=is, Pattern=favorite, Pattern=your
+Turn ID=14| A | Human 1 : i actually found a youtube channel called <redacted_term> that i like a lot . you should check it out ! the host talks about all kinds of different teas .
+	Free: Pattern=different, Pattern=you, Pattern=it, Pattern=about, Pattern=i, Pattern=like a lot, Pattern=teas, Pattern=kinds of, Pattern=that, Pattern=actually, Pattern=a, Pattern=the, Pattern=all
+	Constrained: Pattern=a, Pattern=like, Pattern=of
+Turn ID=15| B | Human 2 : you're teas are lovely 😍 i love the way you can make different kinds of tea ware that all look unique
+	Free: Pattern=different, Pattern=you, Pattern=are, Pattern=tea ware, Pattern=love, Pattern=teas, Pattern=kinds of, Pattern=make, Pattern=i, Pattern=of tea, Pattern=the, Pattern=all, Pattern=that, Pattern=way
+	Constrained: Pattern=of

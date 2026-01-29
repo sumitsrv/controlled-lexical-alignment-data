@@ -1,0 +1,87 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: how's _it_ going ? 
+A|2| Human 1: _i'm_ _so_ sleepy _today !_ 
+B|3| Human 2: how's _it_ going [today] 
+A|4| Human 1: yeah _was working all night on a homework_ 
+B|5| Human 2: hey _i_ [was working all night on a homework] [today !] 
+A|6| Human 1: _biology_ . _i'm gonna be_ [a] doc someday ha 
+B|7| Human 2: [i'm gonna be] [working all night on a homework] _i_ [was] given by [a] lab . [biology] or biochemistry ? 
+A|8| Human 1: no _high school_ actually _haha_ 
+B|9| Human 2: oh _i_ _thought_ [all] [high] schoolers worked hard [working] jobs [haha] 
+A|10| Human 1: [i] wanna [be] _a brain surgeon_ !! 
+B|11| Human 2: [i'm gonna be] [working] at _an_ old [school] [high school] [today] [haha] 
+A|12| Human 1: kind _of_ _i think_ 
+B|13| Human 2: [so] [i'm] _not_ [a brain surgeon] [haha] , [so] _you_ [think] [i] work at _an_ old [school] [high school] ? 
+A|14| Human 1: is that something _you can practice_ ? 
+B|15| Human 2: [i think] [you can practice] _it_ [all] day if [you] want 
+A|16| Human 1: [i] _honestly_ [thought] _it was_ _one of those things you have to_ [be] born with ... [not] that [you] shouldn't _try though_ ! 
+B|17| Human 2: [it was] [honestly] [one of those things you have to] [try though] [i think] . 
+A|18| Human 1: maybe its [a] little _too_ early [to] _even_ [be] thinking _about_ this . just _aim_ _for med school_ _and_ enjoy _the_ journey ! 
+B|19| Human 2: [not] [too] far [and] [was] [the] [aim] , [i] [even] [have] [about] 30 [things] [to] _do_ [for med school] 
+A|20| Human 1: what other subjects [do] [you] enjoy ? [try] [to] keep [an] open mind ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : how's it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm so sleepy today !
+	Free: Pattern=today !, Pattern=i'm, Pattern=so
+	Constrained: Pattern=today
+Turn ID=3| B | Human 2 : how's it going today
+	Free: Pattern=it, Pattern=today
+	Constrained: 
+Turn ID=4| A | Human 1 : yeah was working all night on a homework
+	Free: Pattern=was working all night on a homework
+	Constrained: Pattern=a, Pattern=working all night on a homework, Pattern=working, Pattern=all, Pattern=was
+Turn ID=5| B | Human 2 : hey i was working all night on a homework today !
+	Free: Pattern=was working all night on a homework, Pattern=today !, Pattern=i
+	Constrained: Pattern=working all night on a homework, Pattern=working, Pattern=all, Pattern=was, Pattern=today, Pattern=a
+Turn ID=6| A | Human 1 : biology . i'm gonna be a doc someday ha
+	Free: Pattern=i'm gonna be, Pattern=a, Pattern=biology
+	Constrained: Pattern=i'm, Pattern=be
+Turn ID=7| B | Human 2 : i'm gonna be working all night on a homework i was given by a lab . biology or biochemistry ?
+	Free: Pattern=biology, Pattern=a, Pattern=working all night on a homework, Pattern=i, Pattern=was, Pattern=i'm gonna be
+	Constrained: Pattern=a, Pattern=working, Pattern=i'm, Pattern=be, Pattern=all
+Turn ID=8| A | Human 1 : no high school actually haha
+	Free: Pattern=high school, Pattern=haha
+	Constrained: Pattern=school, Pattern=high
+Turn ID=9| B | Human 2 : oh i thought all high schoolers worked hard working jobs haha
+	Free: Pattern=high, Pattern=working, Pattern=i, Pattern=haha, Pattern=all, Pattern=thought
+	Constrained: 
+Turn ID=10| A | Human 1 : i wanna be a brain surgeon !!
+	Free: Pattern=a brain surgeon, Pattern=i, Pattern=be
+	Constrained: Pattern=a
+Turn ID=11| B | Human 2 : i'm gonna be working at an old school high school today haha
+	Free: Pattern=today, Pattern=an, Pattern=working, Pattern=high school, Pattern=haha, Pattern=school, Pattern=i'm gonna be
+	Constrained: Pattern=school, Pattern=be, Pattern=high, Pattern=i'm
+Turn ID=12| A | Human 1 : kind of i think
+	Free: Pattern=i think, Pattern=of
+	Constrained: Pattern=i, Pattern=think
+Turn ID=13| B | Human 2 : so i'm not a brain surgeon haha , so you think i work at an old school high school ?
+	Free: Pattern=you, Pattern=a brain surgeon, Pattern=an, Pattern=think, Pattern=i, Pattern=haha, Pattern=school, Pattern=so, Pattern=not, Pattern=high school, Pattern=i'm
+	Constrained: Pattern=school, Pattern=a, Pattern=high
+Turn ID=14| A | Human 1 : is that something you can practice ?
+	Free: Pattern=you can practice
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : i think you can practice it all day if you want
+	Free: Pattern=you, Pattern=it, Pattern=you can practice, Pattern=all, Pattern=i think
+	Constrained: Pattern=i, Pattern=you, Pattern=think
+Turn ID=16| A | Human 1 : i honestly thought it was one of those things you have to be born with ... not that you shouldn't try though !
+	Free: Pattern=it was, Pattern=you, Pattern=try though, Pattern=i, Pattern=be, Pattern=one of those things you have to, Pattern=not, Pattern=thought, Pattern=honestly
+	Constrained: Pattern=of, Pattern=you, Pattern=have, Pattern=try, Pattern=it, Pattern=things, Pattern=to, Pattern=was
+Turn ID=17| B | Human 2 : it was honestly one of those things you have to try though i think .
+	Free: Pattern=it was, Pattern=try though, Pattern=honestly, Pattern=one of those things you have to, Pattern=i think
+	Constrained: Pattern=of, Pattern=you, Pattern=have, Pattern=try, Pattern=it, Pattern=things, Pattern=think, Pattern=i, Pattern=to, Pattern=was
+Turn ID=18| A | Human 1 : maybe its a little too early to even be thinking about this . just aim for med school and enjoy the journey !
+	Free: Pattern=a, Pattern=about, Pattern=aim, Pattern=be, Pattern=the, Pattern=to, Pattern=even, Pattern=for med school, Pattern=and, Pattern=too
+	Constrained: Pattern=school
+Turn ID=19| B | Human 2 : not too far and was the aim , i even have about 30 things to do for med school
+	Free: Pattern=have, Pattern=do, Pattern=the, Pattern=to, Pattern=was, Pattern=not, Pattern=even, Pattern=for med school, Pattern=and, Pattern=too, Pattern=about, Pattern=things, Pattern=aim, Pattern=i
+	Constrained: Pattern=school
+Turn ID=20| A | Human 1 : what other subjects do you enjoy ? try to keep an open mind !
+	Free: Pattern=you, Pattern=do, Pattern=to, Pattern=an, Pattern=try
+	Constrained: 

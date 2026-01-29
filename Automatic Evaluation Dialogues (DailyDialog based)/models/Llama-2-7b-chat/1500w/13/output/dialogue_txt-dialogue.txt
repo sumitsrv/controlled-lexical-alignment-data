@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i saw_ _"the_ parasite . " ever heard _of it ?_ 
+B|3| Human 2: it's _on_ _my_ list _! what did you_ _think_ [of it ?] 
+A|4| Human 1: [my] friend wanted to _see_ [it] . [it] has _great_ reviews [on] imdb _and_ rotten tomatoes _! what did you do_ _last weekend_ ? 
+B|5| Human 2: well , [i] watched ["the] [last] [of] us" series [last weekend] . _the_ story [and] characters _are_ _really_ [great] [! what did you do] ? < 
+A|6| Human 1: oooo [the] mandalorian ?!?! 
+B|7| Human 2: [what] _a_ [great] show ! [the] [last] episode _was_ [on] [the] edge [of] [my] seat ! [do] [you] have _a_ favorite character ? [i] like baby yoda [and] 
+A|8| Human 1: lol _are you_ [a] _big_ _marvel fan_ ? 
+B|9| Human 2: [marvel fan] [big] time ! [i saw] [the] [last] episode [of] [the] _loki_ series [and] [i] loved [it] [! what did you] _think_ [of it ?] [are you] 
+A|10| Human 1: i've only [seen] spiderman . honestly [it] [was] [a] little too _scary_ [and] so [i] don't [think] _i can_ bring myself to watch [the] other _marvel movies_ ! _haha_ 
+B|11| Human 2: [i can] [see] why you'd [think] _that_ ! [marvel movies] [can] _be_ intense [and] [scary] at times , but they also have inspiring messages 
+A|12| Human 1: oh [really] ? to [be] honest _i think the actor_ _is_ _not_ [that] _good looking_ , so _not_ so surprising ! _haha_ 
+B|13| Human 2: [i think the actor] playing _loki_ [is] [really] [good looking] ! but [i can] [see] how [you] might [not] find him appealing<|im_end 
+A|14| Human 1: who [is] [loki] ? i've never heard [that] _name_ before 
+B|15| Human 2: [loki] [is] [the] [name] or [the actor] [that] [i think] [was] [good looking] [haha] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=seen, Pattern=movies, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=of it ?, Pattern=last weekend, Pattern=i saw, Pattern="the
+	Constrained: Pattern=last, Pattern=i, Pattern=of, Pattern=it
+Turn ID=3| B | Human 2 : it's on my list ! what did you think of it ?
+	Free: Pattern=of it ?, Pattern=think, Pattern=on, Pattern=my, Pattern=! what did you
+	Constrained: Pattern=what, Pattern=it, Pattern=you, Pattern=of
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=great, Pattern=! what did you do, Pattern=on, Pattern=see, Pattern=last weekend, Pattern=my, Pattern=it, Pattern=and
+	Constrained: Pattern=you, Pattern=what, Pattern=do, Pattern=last, Pattern=! what did you
+Turn ID=5| B | Human 2 : well , i watched "the last of us" series last weekend . the story and characters are really great ! what did you do ? <
+	Free: Pattern=of, Pattern=great, Pattern=and, Pattern="the, Pattern=i, Pattern=really, Pattern=last, Pattern=the, Pattern=last weekend, Pattern=! what did you do, Pattern=are
+	Constrained: Pattern=you, Pattern=what, Pattern=do, Pattern=last, Pattern=! what did you
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the
+	Constrained: 
+Turn ID=7| B | Human 2 : what a great show ! the last episode was on the edge of my seat ! do you have a favorite character ? i like baby yoda and
+	Free: Pattern=of, Pattern=what, Pattern=and, Pattern=i, Pattern=last, Pattern=was, Pattern=my, Pattern=you, Pattern=great, Pattern=do, Pattern=a, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=are you, Pattern=marvel fan, Pattern=big, Pattern=a
+	Constrained: Pattern=are, Pattern=you
+Turn ID=9| B | Human 2 : marvel fan big time ! i saw the last episode of the loki series and i loved it ! what did you think of it ? are you
+	Free: Pattern=marvel fan, Pattern=of, Pattern=of it ?, Pattern=think, Pattern=last, Pattern=! what did you, Pattern=loki, Pattern=it, Pattern=and, Pattern=are you, Pattern=i, Pattern=i saw, Pattern=big, Pattern=the
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=it, Pattern=are, Pattern=i
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=scary, Pattern=a, Pattern=think, Pattern=i, Pattern=haha, Pattern=the, Pattern=was, Pattern=i can, Pattern=seen, Pattern=marvel movies, Pattern=it, Pattern=and
+	Constrained: Pattern=can, Pattern=i, Pattern=movies
+Turn ID=11| B | Human 2 : i can see why you'd think that ! marvel movies can be intense and scary at times , but they also have inspiring messages
+	Free: Pattern=scary, Pattern=and, Pattern=can, Pattern=think, Pattern=be, Pattern=see, Pattern=i can, Pattern=that, Pattern=marvel movies
+	Constrained: Pattern=can, Pattern=i, Pattern=movies
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=i think the actor, Pattern=good looking, Pattern=is, Pattern=be, Pattern=that, Pattern=not, Pattern=haha, Pattern=really
+	Constrained: Pattern=good, Pattern=think, Pattern=i, Pattern=the, Pattern=the actor, Pattern=i think
+Turn ID=13| B | Human 2 : i think the actor playing loki is really good looking ! but i can see how you might not find him appealing<|im_end
+	Free: Pattern=you, Pattern=i think the actor, Pattern=good looking, Pattern=is, Pattern=really, Pattern=see, Pattern=i can, Pattern=loki, Pattern=not
+	Constrained: Pattern=good, Pattern=can, Pattern=think, Pattern=i, Pattern=the, Pattern=the actor, Pattern=i think
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=that, Pattern=loki, Pattern=is, Pattern=name
+	Constrained: 
+Turn ID=15| B | Human 2 : loki is the name or the actor that i think was good looking haha
+	Free: Pattern=name, Pattern=good looking, Pattern=is, Pattern=haha, Pattern=the, Pattern=was, Pattern=the actor, Pattern=that, Pattern=i think, Pattern=loki
+	Constrained: Pattern=good, Pattern=i, Pattern=think, Pattern=the

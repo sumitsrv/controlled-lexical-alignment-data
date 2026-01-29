@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _how_ _is_ _your_ day ? 
+A|2| Human 1: _it's_ _good_ _. it's_ raining _a_ bit _, but_ _i_ am enjoying _a_ _good_ _book_ _. how about_ _you_ ? 
+B|3| Human 2: _i'm_ [good] , thanks ! [it's] nice _to_ have [you] here [. how about] we chat [about] something interesting ? <|im_end| 
+A|4| Human 1: [i'm] reading _the_ three body problem . _ever_ _heard of _it_ ?_ 
+B|5| Human 2: [i'm] afraid _i haven't_ [heard of it] . could [you] tell _me_ more [about] [it ?] 
+A|6| Human 1: _it's a_ sci-fi _book_ [about] _aliens and_ _a_ type [of] _virtual reality_ . pique [your] interest at _all_ ? 
+B|7| Human 2: [i'm] glad you're interested ! [it's a] _very_ thought-provoking [book] [and] has gotten rave reviews . [i] think [it] 
+A|8| Human 1: cool . this _virtual _reality_ is_ [a] _based on life on_ an alien _planet_ . _there_ [is] [a] twist though . do [you] _want_ [me] [to] spoil [it] _for_ [you] ? 
+B|9| Human 2: [it's] [about] [the] [aliens and] their [planet] being [based on life on] mars [, but] 800 years ago ! [there] [you] go [for] spo 
+A|10| Human 1: [the] _virtual _reality_ is actually_ [based on] _a real_ alien civilization ! _and that_ civilization [is] coming [to] attack earth ! dun dun dun dunnnnnnn 
+B|11| Human 2: [and] [the] [book] explores [the] idea [that] [reality is actually] [virtual] [and that] [all] [of] [your] experiences _are_ being simulated [. [it's] [a] real] page 
+A|12| Human 1: [there] [are] other _twists_ as well , so [i haven't] spoiled [the] whole thing ! [to] be honest [i] am not [a] fan [of] spoilers 
+B|13| Human 2: [the] [twists] [are] [the] [real] magic [of] [the] [book] [and] [i] [want] [you] [to] experience them [for] yourself [. it's] well-written [and] has [a] great 
+A|14| Human 1: [the] audi [book] [is] _also_ [very] [good] ! _ever give those a try ?_ 
+B|15| Human 2: [ever give those a try ?] [the] [book] has [also] explores [the] concept [of] [reality] [and] [virtual reality] which [i] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how is your day ?
+	Free: Pattern=is, Pattern=how, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good . it's raining a bit , but i am enjoying a good book . how about you ?
+	Free: Pattern=good, Pattern=. it's, Pattern=. how about, Pattern=i, Pattern=it's, Pattern=you, Pattern=, but, Pattern=a, Pattern=book
+	Constrained: Pattern=it's, Pattern=how, Pattern=about
+Turn ID=3| B | Human 2 : i'm good , thanks ! it's nice to have you here . how about we chat about something interesting ? <|im_end|
+	Free: Pattern=good, Pattern=you, Pattern=about, Pattern=. how about, Pattern=i'm, Pattern=to, Pattern=it's
+	Constrained: Pattern=about, Pattern=how
+Turn ID=4| A | Human 1 : i'm reading the three body problem . ever heard of it ?
+	Free: Pattern=it ?, Pattern=heard of it, Pattern=i'm, Pattern=ever, Pattern=the
+	Constrained: Pattern=of, Pattern=it
+Turn ID=5| B | Human 2 : i'm afraid i haven't heard of it . could you tell me more about it ?
+	Free: Pattern=you, Pattern=me, Pattern=it ?, Pattern=heard of it, Pattern=about, Pattern=i'm, Pattern=i haven't
+	Constrained: Pattern=it, Pattern=i, Pattern=of
+Turn ID=6| A | Human 1 : it's a sci-fi book about aliens and a type of virtual reality . pique your interest at all ?
+	Free: Pattern=about, Pattern=your, Pattern=aliens and, Pattern=all, Pattern=virtual reality, Pattern=of, Pattern=it's a, Pattern=a, Pattern=book
+	Constrained: Pattern=a, Pattern=and, Pattern=reality, Pattern=virtual, Pattern=it's
+Turn ID=7| B | Human 2 : i'm glad you're interested ! it's a very thought-provoking book and has gotten rave reviews . i think it
+	Free: Pattern=it's a, Pattern=book, Pattern=i'm, Pattern=it, Pattern=and, Pattern=very, Pattern=i
+	Constrained: Pattern=a, Pattern=it's
+Turn ID=8| A | Human 1 : cool . this virtual reality is a based on life on an alien planet . there is a twist though . do you want me to spoil it for you ?
+	Free: Pattern=want, Pattern=you, Pattern=based on life on, Pattern=there, Pattern=a, Pattern=for, Pattern=it, Pattern=planet, Pattern=is, Pattern=to, Pattern=virtual reality, Pattern=me, Pattern=reality is
+	Constrained: Pattern=is, Pattern=virtual, Pattern=reality, Pattern=based on
+Turn ID=9| B | Human 2 : it's about the aliens and their planet being based on life on mars , but 800 years ago ! there you go for spo
+	Free: Pattern=based on life on, Pattern=there, Pattern=for, Pattern=about, Pattern=planet, Pattern=aliens and, Pattern=the, Pattern=it's, Pattern=you, Pattern=, but
+	Constrained: Pattern=and, Pattern=based on
+Turn ID=10| A | Human 1 : the virtual reality is actually based on a real alien civilization ! and that civilization is coming to attack earth ! dun dun dun dunnnnnnn
+	Free: Pattern=based on, Pattern=reality is actually, Pattern=is, Pattern=the, Pattern=a real, Pattern=to, Pattern=and that, Pattern=virtual reality
+	Constrained: Pattern=reality is, Pattern=a, Pattern=and, Pattern=is, Pattern=reality, Pattern=virtual, Pattern=that, Pattern=real
+Turn ID=11| B | Human 2 : and the book explores the idea that reality is actually virtual and that all of your experiences are being simulated . it's a real page
+	Free: Pattern=. it's, Pattern=book, Pattern=and, Pattern=are, Pattern=reality is actually, Pattern=your, Pattern=a real, Pattern=virtual, Pattern=and that, Pattern=that, Pattern=of, Pattern=it's a, Pattern=the, Pattern=all
+	Constrained: Pattern=reality is, Pattern=a, Pattern=and, Pattern=is, Pattern=reality, Pattern=real, Pattern=that, Pattern=it's
+Turn ID=12| A | Human 1 : there are other twists as well , so i haven't spoiled the whole thing ! to be honest i am not a fan of spoilers
+	Free: Pattern=of, Pattern=there, Pattern=a, Pattern=are, Pattern=i, Pattern=the, Pattern=to, Pattern=i haven't, Pattern=twists
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : the twists are the real magic of the book and i want you to experience them for yourself . it's well-written and has a great
+	Free: Pattern=of, Pattern=want, Pattern=you, Pattern=. it's, Pattern=for, Pattern=and, Pattern=are, Pattern=i, Pattern=the, Pattern=to, Pattern=a, Pattern=book, Pattern=real, Pattern=twists
+	Constrained: Pattern=it's
+Turn ID=14| A | Human 1 : the audi book is also very good ! ever give those a try ?
+	Free: Pattern=good, Pattern=ever give those a try ?, Pattern=book, Pattern=also, Pattern=the, Pattern=very, Pattern=is
+	Constrained: Pattern=a, Pattern=ever
+Turn ID=15| B | Human 2 : ever give those a try ? the book has also explores the concept of reality and virtual reality which i
+	Free: Pattern=of, Pattern=ever give those a try ?, Pattern=book, Pattern=and, Pattern=i, Pattern=also, Pattern=reality, Pattern=the, Pattern=virtual reality
+	Constrained: Pattern=a, Pattern=virtual, Pattern=reality, Pattern=ever

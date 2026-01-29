@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted _to_ _know_ _if_ [you] _and the_ _kids_ _would_ want _to_ join us _for_ _disneyland_ _trip_ around _christmas_ ? 
+B|3| Human 2: [disneyland] _is_ [the] best _. _i_ would_ go every [trip] [for] [you] [if] _i_ could . 
+A|4| Human 1: tentative _plan_ [is] _to_ _drive_ _to_ la on 23rd _and_ _then_ stay at [the] disney _resort_ [for] 2 nights [. i] heard _christmas eve_ _they_ _have_ loads _of_ _fun_ events . 
+B|5| Human 2: _we_ [would] love [to] _but_ [have] [to] [plan] [for] [the] [christmas eve] [resort] [trip] now - [they] _are_ all booked up ! 
+A|6| Human 1: _great idea _!_ i_ will probably do [the] same . _surprise_ _surprise_ .... traffic _might be_ _a_ _little_ harsh . 
+B|7| Human 2: [great idea !] [disneyland] [might be] [the] best [resort] [! i] [know] it [would] [be] [fun] [for] [christmas] . [is] _your_ whole family going ? 
+A|8| Human 1: good point [. i] am not _sure_ _about_ _that_ . let me inquire _about_ _that_ . [if] not , _then_ [we] _can_ _look for_ an _airbnb_ closeby . does _that_ _work_ ? 
+B|9| Human 2: [i] [sure] hope [that] [the] [drive] [can] [work] _but_ i'll [look for] [airbnb] in tampa . 
+A|10| Human 1: [but] [i would] _think_ everything [is] closed on [christmas eve] 
+B|11| Human 2: yes [that] [might] [work] better [for] [sure] ! it [would] [surprise] them [and the] [eve] [can] [be] [christmas] [but] [then] [you] [have] [a] night in [disneyland] ! 
+A|12| Human 1: [sure] , [i] _can take_ [a] lead on [that] _. what_ [are] [you] _getting_ [for] [your] <redacted_term> _year_ old _this time_ ? 
+B|13| Human 2: no , [but] [your] [kids] [might] [think] [that] too [and] [you] [can take] them [the] [year] after , [this time] [of] [the] [year] [is] [getting] close [to] [christmas] . 
+A|14| Human 1: likewise . my son [is] crazy _about_ legos . 
+B|15| Human 2: [i] [think] [this] [year] [are] [the] [little] boys going [to] [be] so excited [about] [getting] [that] lego batman set [they] like [. what] [would] [you] [think] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=you, Pattern=know, Pattern=trip, Pattern=christmas, Pattern=would, Pattern=to, Pattern=disneyland, Pattern=for, Pattern=and the, Pattern=kids, Pattern=if
+	Constrained: Pattern=the, Pattern=and
+Turn ID=3| B | Human 2 : disneyland is the best . i would go every trip for you if i could .
+	Free: Pattern=you, Pattern=for, Pattern=if, Pattern=. i, Pattern=trip, Pattern=the, Pattern=i would, Pattern=disneyland, Pattern=is, Pattern=i
+	Constrained: Pattern=i, Pattern=would
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=of, Pattern=have, Pattern=they, Pattern=then, Pattern=for, Pattern=and, Pattern=. i, Pattern=resort, Pattern=is, Pattern=the, Pattern=to, Pattern=fun, Pattern=drive, Pattern=plan, Pattern=christmas eve
+	Constrained: Pattern=christmas, Pattern=i, Pattern=eve
+Turn ID=5| B | Human 2 : we would love to but have to plan for the christmas eve resort trip now - they are all booked up !
+	Free: Pattern=have, Pattern=they, Pattern=for, Pattern=are, Pattern=resort, Pattern=we, Pattern=trip, Pattern=the, Pattern=would, Pattern=to, Pattern=but, Pattern=plan, Pattern=christmas eve
+	Constrained: Pattern=christmas, Pattern=eve
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=the, Pattern=might be, Pattern=little, Pattern=great idea !, Pattern=a, Pattern=! i, Pattern=surprise
+	Constrained: Pattern=be, Pattern=might, Pattern=i
+Turn ID=7| B | Human 2 : great idea ! disneyland might be the best resort ! i know it would be fun for christmas . is your whole family going ?
+	Free: Pattern=fun, Pattern=might be, Pattern=great idea !, Pattern=for, Pattern=! i, Pattern=resort, Pattern=know, Pattern=be, Pattern=would, Pattern=disneyland, Pattern=is, Pattern=your, Pattern=christmas, Pattern=the
+	Constrained: Pattern=be, Pattern=might, Pattern=i
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=look for, Pattern=then, Pattern=if, Pattern=can, Pattern=work, Pattern=we, Pattern=sure, Pattern=airbnb, Pattern=that, Pattern=about, Pattern=. i
+	Constrained: Pattern=i, Pattern=for
+Turn ID=9| B | Human 2 : i sure hope that the drive can work but i'll look for airbnb in tampa .
+	Free: Pattern=drive, Pattern=look for, Pattern=can, Pattern=work, Pattern=i, Pattern=sure, Pattern=the, Pattern=airbnb, Pattern=that, Pattern=but
+	Constrained: Pattern=for
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=christmas eve, Pattern=think, Pattern=is, Pattern=i would, Pattern=but
+	Constrained: Pattern=christmas, Pattern=i, Pattern=would, Pattern=eve
+Turn ID=11| B | Human 2 : yes that might work better for sure ! it would surprise them and the eve can be christmas but then you have a night in disneyland !
+	Free: Pattern=you, Pattern=have, Pattern=surprise, Pattern=can, Pattern=work, Pattern=eve, Pattern=christmas, Pattern=would, Pattern=might, Pattern=disneyland, Pattern=then, Pattern=a, Pattern=for, Pattern=and the, Pattern=sure, Pattern=be, Pattern=that, Pattern=but
+	Constrained: Pattern=the, Pattern=and
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=this time, Pattern=you, Pattern=a, Pattern=for, Pattern=are, Pattern=. what, Pattern=that, Pattern=your, Pattern=i, Pattern=sure, Pattern=year, Pattern=can take, Pattern=getting
+	Constrained: Pattern=this, Pattern=can
+Turn ID=13| B | Human 2 : no , but your kids might think that too and you can take them the year after , this time of the year is getting close to christmas .
+	Free: Pattern=this time, Pattern=of, Pattern=you, Pattern=and, Pattern=kids, Pattern=think, Pattern=year, Pattern=to, Pattern=might, Pattern=is, Pattern=your, Pattern=christmas, Pattern=the, Pattern=that, Pattern=but, Pattern=can take, Pattern=getting
+	Constrained: Pattern=this, Pattern=can
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: Pattern=is, Pattern=about
+	Constrained: 
+Turn ID=15| B | Human 2 : i think this year are the little boys going to be so excited about getting that lego batman set they like . what would you think ?
+	Free: Pattern=you, Pattern=are, Pattern=about, Pattern=think, Pattern=i, Pattern=the, Pattern=would, Pattern=to, Pattern=. what, Pattern=this, Pattern=that, Pattern=getting, Pattern=they, Pattern=little, Pattern=year, Pattern=be
+	Constrained: 

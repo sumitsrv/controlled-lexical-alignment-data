@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm doing well_ . _having_ many _meetings_ _today 🙂_ 
+B|3| Human 2: [i'm] glad _to_ hear that 😊 . would _you_ _like_ me _to_ take notes for your [meetings] ? <|im_end 
+A|4| Human 1: what _are_ [you] up [to] ? 
+B|5| Human 2: [i'm doing well] [today 🙂] . thanks for asking ! 
+A|6| Human 1: we're gonna play _board games_ _and_ will _be_ eating _lots of_ food ! what about [you] ? 
+B|7| Human 2: [i'm] glad you're [having] fun [today] 😊 . [board games] [are] _a_ great way [to] relax [and] have fun with friends 
+A|8| Human 1: we've _been doing_ _games of thrones_ lately . _the_ game takes [a] _very_ _long_ time [to] finish _though_ ! 
+B|9| Human 2: you're right 😅 [games of thrones] can [be] quite [long] [and] time-consuming , but it's [lots of] 
+A|10| Human 1: _i_ do . [i'm] [a] _super fan_ [of] _it_ (not _the last season though_ haha) . did [you] _watch_ ? 
+B|11| Human 2: haha 😂 i've [been] meaning [to] [watch] [the last season though] . [i] heard [it] was [very] controversial<|im_ 
+A|12| Human 1: _i love_ _survivor_ 🙂 
+B|13| Human 2: [survivor] 😎 i've [been doing] [the] [super fan] mode [though] . it's [very] challenging haha<|im 
+A|14| Human 1: nice ! [i] mostly [like] comedy shows [like] _the good place_ [and] modern family 
+B|15| Human 2: [the good place] is [the] bomb haha , [i love] [the] humor [and] [the] characters [are] [super] funny 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=i'm doing well, Pattern=today 🙂, Pattern=meetings, Pattern=having
+	Constrained: Pattern=today, Pattern=i'm
+Turn ID=3| B | Human 2 : i'm glad to hear that 😊 . would you like me to take notes for your meetings ? <|im_end
+	Free: Pattern=you, Pattern=i'm, Pattern=meetings, Pattern=like, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=you, Pattern=are, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm doing well today 🙂 . thanks for asking !
+	Free: Pattern=i'm doing well, Pattern=today 🙂
+	Constrained: Pattern=today, Pattern=i'm
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=you, Pattern=board games, Pattern=and, Pattern=lots of, Pattern=be
+	Constrained: Pattern=of
+Turn ID=7| B | Human 2 : i'm glad you're having fun today 😊 . board games are a great way to relax and have fun with friends
+	Free: Pattern=and, Pattern=are, Pattern=having, Pattern=i'm, Pattern=to, Pattern=today, Pattern=board games, Pattern=a
+	Constrained: 
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=long, Pattern=though, Pattern=a, Pattern=been doing, Pattern=very, Pattern=the, Pattern=games of thrones, Pattern=to
+	Constrained: Pattern=of, Pattern=been
+Turn ID=9| B | Human 2 : you're right 😅 games of thrones can be quite long and time-consuming , but it's lots of
+	Free: Pattern=long, Pattern=and, Pattern=lots of, Pattern=be, Pattern=games of thrones
+	Constrained: Pattern=of
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=of, Pattern=you, Pattern=a, Pattern=it, Pattern=i'm, Pattern=i, Pattern=the last season though, Pattern=watch, Pattern=super fan
+	Constrained: Pattern=super, Pattern=though, Pattern=the
+Turn ID=11| B | Human 2 : haha 😂 i've been meaning to watch the last season though . i heard it was very controversial<|im_
+	Free: Pattern=it, Pattern=the last season though, Pattern=to, Pattern=been, Pattern=watch, Pattern=very, Pattern=i
+	Constrained: Pattern=the, Pattern=though
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=i love, Pattern=survivor
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : survivor 😎 i've been doing the super fan mode though . it's very challenging haha<|im
+	Free: Pattern=though, Pattern=been doing, Pattern=very, Pattern=the, Pattern=survivor, Pattern=super fan
+	Constrained: Pattern=super, Pattern=been
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=the good place, Pattern=i, Pattern=like, Pattern=and
+	Constrained: Pattern=the
+Turn ID=15| B | Human 2 : the good place is the bomb haha , i love the humor and the characters are super funny
+	Free: Pattern=the good place, Pattern=and, Pattern=are, Pattern=the, Pattern=i love, Pattern=super
+	Constrained: Pattern=i, Pattern=the

@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm doing well_ . _having_ _many_ _meetings_ today 🙂 
+B|3| Human 2: [i'm] glad _to_ hear that 🙂 [meetings] can _be_ busy , but it's important _to_ stay productive _and_ focused 
+A|4| Human 1: what _are_ _you_ up [to] ? 
+B|5| Human 2: [i'm] just [doing] some maintenance tasks _and_ ensuring that all _the_ bots [are] working [well] 🙂 <|im_end| 
+A|6| Human 1: we're gonna _play_ _board games and_ _will_ [be] eating lots _of_ _food_ ! what _about_ _you_ ? 
+B|7| Human 2: [i'm] glad you're [having] fun 🙂 [board games and] [food] [are] always great ways [to] unwind [and] relax after [meetings] 
+A|8| Human 1: we've been [doing] _games of thrones lately_ . _the game takes_ a _very_ long _time_ [to] _finish_ _though_ ! 
+B|9| Human 2: [i'm doing well] 🙂 [the game takes] [time] [and] [you] [will] [finish] [games of thrones lately] [are] we [play] [games of] 
+A|10| Human 1: _i_ do . [i'm] a _super fan_ [of] it (not _the last season_ _though_ haha) . _did_ _you watch_ ? 
+B|11| Human 2: [i] [did] [watch] [the last season] 🙂 [very] exciting [and] [many] [game] [will] [finish] [lately] haha [super fan] [games] [thrones] [you] 
+A|12| Human 1: [i] love _survivor_ 🙂 
+B|13| Human 2: 😂 [i'm] [very] excited [about] [the] [season] finale [though] haha [game] [will] [finish] [lately] [you watch] [last] [super fan] [games] thron 
+A|14| Human 1: _nice_ ! [i] mostly _like_ comedy _shows_ _like the_ good place [and] modern family 
+B|15| Human 2: 😂 [and] [super fan] [games] [like [the] game] [of thrones] [and] [survivor] haha [nice] [shows] [you watch] [last season] [games] th 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=i'm doing well, Pattern=meetings, Pattern=having, Pattern=many
+	Constrained: Pattern=i'm, Pattern=doing, Pattern=well
+Turn ID=3| B | Human 2 : i'm glad to hear that 🙂 meetings can be busy , but it's important to stay productive and focused
+	Free: Pattern=and, Pattern=i'm, Pattern=meetings, Pattern=be, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=to, Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just doing some maintenance tasks and ensuring that all the bots are working well 🙂 <|im_end|
+	Free: Pattern=well, Pattern=doing, Pattern=and, Pattern=are, Pattern=i'm, Pattern=the
+	Constrained: 
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=of, Pattern=you, Pattern=board games and, Pattern=about, Pattern=will, Pattern=food, Pattern=be, Pattern=play
+	Constrained: Pattern=and, Pattern=games
+Turn ID=7| B | Human 2 : i'm glad you're having fun 🙂 board games and food are always great ways to unwind and relax after meetings
+	Free: Pattern=are, Pattern=having, Pattern=i'm, Pattern=meetings, Pattern=food, Pattern=to, Pattern=and, Pattern=board games and
+	Constrained: Pattern=and, Pattern=games
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=finish, Pattern=time, Pattern=though, Pattern=doing, Pattern=games of thrones lately, Pattern=very, Pattern=the game takes, Pattern=to
+	Constrained: Pattern=lately, Pattern=games, Pattern=game, Pattern=of thrones, Pattern=games of, Pattern=the game, Pattern=the, Pattern=thrones, Pattern=of
+Turn ID=9| B | Human 2 : i'm doing well 🙂 the game takes time and you will finish games of thrones lately are we play games of
+	Free: Pattern=finish, Pattern=time, Pattern=you, Pattern=games of thrones lately, Pattern=and, Pattern=are, Pattern=will, Pattern=games of, Pattern=the game takes, Pattern=play, Pattern=i'm doing well
+	Constrained: Pattern=lately, Pattern=well, Pattern=games, Pattern=games of, Pattern=the game, Pattern=the, Pattern=thrones, Pattern=of, Pattern=doing, Pattern=game, Pattern=i'm, Pattern=of thrones
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=of, Pattern=the last season, Pattern=though, Pattern=did, Pattern=i'm, Pattern=i, Pattern=you watch, Pattern=super fan
+	Constrained: Pattern=you, Pattern=last, Pattern=season, Pattern=the, Pattern=watch, Pattern=last season
+Turn ID=11| B | Human 2 : i did watch the last season 🙂 very exciting and many game will finish lately haha super fan games thrones you
+	Free: Pattern=thrones, Pattern=the last season, Pattern=many, Pattern=did, Pattern=game, Pattern=and, Pattern=will, Pattern=finish, Pattern=lately, Pattern=you, Pattern=games, Pattern=very, Pattern=i, Pattern=watch, Pattern=super fan
+	Constrained: Pattern=the, Pattern=last season, Pattern=season, Pattern=last
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=survivor, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : 😂 i'm very excited about the season finale though haha game will finish lately you watch last super fan games thron
+	Free: Pattern=games, Pattern=though, Pattern=game, Pattern=about, Pattern=will, Pattern=i'm, Pattern=very, Pattern=last, Pattern=the, Pattern=super fan, Pattern=finish, Pattern=lately, Pattern=season, Pattern=you watch
+	Constrained: Pattern=watch, Pattern=you
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=shows, Pattern=nice, Pattern=and, Pattern=i, Pattern=like, Pattern=like the
+	Constrained: Pattern=like, Pattern=the
+Turn ID=15| B | Human 2 : 😂 and super fan games like the game of thrones and survivor haha nice shows you watch last season games th
+	Free: Pattern=games, Pattern=shows, Pattern=nice, Pattern=and, Pattern=of thrones, Pattern=the game, Pattern=you watch, Pattern=like the, Pattern=survivor, Pattern=super fan, Pattern=last season
+	Constrained: Pattern=you, Pattern=game, Pattern=like, Pattern=last, Pattern=season, Pattern=the, Pattern=watch, Pattern=thrones, Pattern=of

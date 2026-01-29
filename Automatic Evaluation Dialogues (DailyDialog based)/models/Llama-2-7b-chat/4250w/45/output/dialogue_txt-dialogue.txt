@@ -1,0 +1,75 @@
+A|0| Human 1: hi 
+B|1| Human 2: _i_ was _talking_ to _robot_ _all_ the time:) 
+A|2| Human 1: _haha ._ what _are_ _you_ _talking about_ ? 
+B|3| Human 2: i'm [talking about] [you] [are] now able to talk to _me_ _like a_ real person ! [haha] 
+A|4| Human 1: ok . who's _your favorite group_ 
+B|5| Human 2: you're [talking] to _me_ [about] [favorite group] [haha .] my apologies for the confusion earlier . i'm just an ai and _do_ 
+A|6| Human 1: _why not ?_ 
+B|7| Human 2: [why not ?] [you] [are] [talking about] [favorite group] [haha .] what's [your favorite group] ? 
+A|8| Human 1: _hahaha_ 
+B|9| Human 2: [you] [are] funny [hahaha] . what's [your favorite group] ? 
+A|10| Human 1: _john_ mayer:) \ 
+B|11| Human 2: [john] mayer: [hahaha] wow you're so funny ! what's [your favorite group] ? <|im_end 
+A|12| Human 1: what is _mellow style_ 
+B|13| Human 2: [mellow style] [hahaha] what's [your favorite group] ? 
+A|14| Human 1: _umm_ _yes_ he _has some but not all_ 
+B|15| Human 2: what's [mellow style] [hahaha] [yes] [john] mayer [has some but not all] of them [are] his favorite<|im_end 
+A|16| Human 1: [yes] [i] [do] . _you act like a robot_ how [about] [me] ? am [i] _like a robot_ ? 
+B|17| Human 2: [umm] [you act like a robot] [hahaha] what's [your favorite group] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : i was talking to robot all the time:)
+	Free: Pattern=robot, Pattern=all, Pattern=talking, Pattern=i
+	Constrained: 
+Turn ID=2| A | Human 1 : haha . what are you talking about ?
+	Free: Pattern=haha ., Pattern=talking about, Pattern=are, Pattern=you
+	Constrained: Pattern=haha, Pattern=talking, Pattern=about
+Turn ID=3| B | Human 2 : i'm talking about you are now able to talk to me like a real person ! haha
+	Free: Pattern=you, Pattern=me, Pattern=are, Pattern=haha, Pattern=like a, Pattern=talking about
+	Constrained: Pattern=talking, Pattern=about
+Turn ID=4| A | Human 1 : ok . who's your favorite group
+	Free: Pattern=your favorite group
+	Constrained: Pattern=favorite group
+Turn ID=5| B | Human 2 : you're talking to me about favorite group haha . my apologies for the confusion earlier . i'm just an ai and do
+	Free: Pattern=haha ., Pattern=me, Pattern=do, Pattern=talking, Pattern=about, Pattern=favorite group
+	Constrained: Pattern=haha
+Turn ID=6| A | Human 1 : why not ?
+	Free: Pattern=why not ?
+	Constrained: 
+Turn ID=7| B | Human 2 : why not ? you are talking about favorite group haha . what's your favorite group ?
+	Free: Pattern=talking about, Pattern=haha ., Pattern=you, Pattern=are, Pattern=favorite group, Pattern=your favorite group, Pattern=why not ?
+	Constrained: Pattern=favorite group, Pattern=talking, Pattern=haha, Pattern=about
+Turn ID=8| A | Human 1 : hahaha
+	Free: Pattern=hahaha
+	Constrained: 
+Turn ID=9| B | Human 2 : you are funny hahaha . what's your favorite group ?
+	Free: Pattern=your favorite group, Pattern=hahaha, Pattern=are, Pattern=you
+	Constrained: Pattern=favorite group
+Turn ID=10| A | Human 1 : john mayer:) \
+	Free: Pattern=john
+	Constrained: 
+Turn ID=11| B | Human 2 : john mayer: hahaha wow you're so funny ! what's your favorite group ? <|im_end
+	Free: Pattern=your favorite group, Pattern=john, Pattern=hahaha
+	Constrained: Pattern=favorite group
+Turn ID=12| A | Human 1 : what is mellow style
+	Free: Pattern=mellow style
+	Constrained: 
+Turn ID=13| B | Human 2 : mellow style hahaha what's your favorite group ?
+	Free: Pattern=your favorite group, Pattern=mellow style, Pattern=hahaha
+	Constrained: Pattern=favorite group
+Turn ID=14| A | Human 1 : umm yes he has some but not all
+	Free: Pattern=has some but not all, Pattern=umm, Pattern=yes
+	Constrained: Pattern=all
+Turn ID=15| B | Human 2 : what's mellow style hahaha yes john mayer has some but not all of them are his favorite<|im_end
+	Free: Pattern=hahaha, Pattern=john, Pattern=yes, Pattern=has some but not all, Pattern=are, Pattern=mellow style
+	Constrained: Pattern=all
+Turn ID=16| A | Human 1 : yes i do . you act like a robot how about me ? am i like a robot ?
+	Free: Pattern=you act like a robot, Pattern=yes, Pattern=me, Pattern=do, Pattern=like a robot, Pattern=about, Pattern=i
+	Constrained: Pattern=like a robot, Pattern=you, Pattern=like a, Pattern=robot
+Turn ID=17| B | Human 2 : umm you act like a robot hahaha what's your favorite group ?
+	Free: Pattern=you act like a robot, Pattern=your favorite group, Pattern=hahaha, Pattern=umm
+	Constrained: Pattern=like a, Pattern=you, Pattern=like a robot, Pattern=favorite group, Pattern=robot

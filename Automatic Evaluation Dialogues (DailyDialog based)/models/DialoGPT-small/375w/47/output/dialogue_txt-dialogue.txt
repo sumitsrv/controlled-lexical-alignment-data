@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's _your_ _day_ _going_ ? 
+B|3| Human 2: that's _a_ nice [day] _for_ _a_ cactus . 
+A|4| Human 1: _i'm_ good _i'm_ good . _what's_ _getting you down_ ? 
+B|5| Human 2: not that [i'm] [getting you down] _to_ [your] level but [what's] [going] on _in_ [your] life ? 
+A|6| Human 1: [i'm] thinking _of_ _going to_ visit my _family_ _. how about you ?_ 
+B|7| Human 2: nope [i'm] [down] [to] [family] [about] _a_ month . 
+A|8| Human 1: they're [in] _new york . how about_ yours ? 
+B|9| Human 2: [i'm] [going _to] [new york_ [. how about] you ?] i'll _see_ [you] on _the_ [day] ? 
+A|10| Human 1: ahh what city ? i've visited _india_ before . 
+B|11| Human 2: haha [i'm] [going to] [india] . [new york] _is_ awesome 
+A|12| Human 1: _hyderabad_ ! _and_ bangalore ! great food [in] both cities ! [is] it _still_ hot _this time of year_ ? 
+B|13| Human 2: [india] [this time of year] [and] [i'm] [going to] [hyderabad] . i'd say [india] 
+A|14| Human 1: yes . _i was_ actually just [there] [a] few weeks ago _for thanksgiving and_ _got_ [to] [see] [the] first snow [of] [the] season ! ever been [to new york] ? 
+B|15| Human 2: [i was] [there] [for thanksgiving and] [i] [still] [got] cold . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your, Pattern=going, Pattern=day
+	Constrained: 
+Turn ID=3| B | Human 2 : that's a nice day for a cactus .
+	Free: Pattern=a, Pattern=day, Pattern=for
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=getting you down, Pattern=what's, Pattern=i'm
+	Constrained: Pattern=down, Pattern=you
+Turn ID=5| B | Human 2 : not that i'm getting you down to your level but what's going on in your life ?
+	Free: Pattern=going, Pattern=in, Pattern=i'm, Pattern=what's, Pattern=to, Pattern=getting you down, Pattern=your
+	Constrained: Pattern=down, Pattern=you
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=going to, Pattern=family, Pattern=i'm, Pattern=. how about you ?, Pattern=of
+	Constrained: Pattern=going, Pattern=about, Pattern=to, Pattern=you
+Turn ID=7| B | Human 2 : nope i'm down to family about a month .
+	Free: Pattern=a, Pattern=down, Pattern=i'm, Pattern=to, Pattern=about, Pattern=family
+	Constrained: 
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=new york . how about, Pattern=in
+	Constrained: Pattern=about, Pattern=new york
+Turn ID=9| B | Human 2 : i'm going to new york . how about you ? i'll see you on the day ?
+	Free: Pattern=going to, Pattern=. how about you ?, Pattern=you, Pattern=to new york, Pattern=i'm, Pattern=day, Pattern=new york . how about, Pattern=the, Pattern=see
+	Constrained: Pattern=you, Pattern=going, Pattern=new york, Pattern=about, Pattern=to
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=india
+	Constrained: 
+Turn ID=11| B | Human 2 : haha i'm going to india . new york is awesome
+	Free: Pattern=going to, Pattern=india, Pattern=new york, Pattern=i'm, Pattern=is
+	Constrained: Pattern=to, Pattern=going
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=this time of year, Pattern=and, Pattern=in, Pattern=is, Pattern=hyderabad, Pattern=still
+	Constrained: Pattern=of
+Turn ID=13| B | Human 2 : india this time of year and i'm going to hyderabad . i'd say india
+	Free: Pattern=going to, Pattern=india, Pattern=this time of year, Pattern=and, Pattern=i'm, Pattern=hyderabad
+	Constrained: Pattern=going, Pattern=to, Pattern=of
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=i was, Pattern=of, Pattern=a, Pattern=to new york, Pattern=the, Pattern=see, Pattern=got, Pattern=to, Pattern=for thanksgiving and, Pattern=there
+	Constrained: Pattern=new york, Pattern=for, Pattern=and, Pattern=i, Pattern=to
+Turn ID=15| B | Human 2 : i was there for thanksgiving and i still got cold .
+	Free: Pattern=i was, Pattern=i, Pattern=got, Pattern=still, Pattern=for thanksgiving and, Pattern=there
+	Constrained: Pattern=for, Pattern=i, Pattern=and

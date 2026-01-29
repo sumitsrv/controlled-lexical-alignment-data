@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , how _are you_ _doing_ ! 
+A|2| Human 1: _i'm doing well ._ _what_ [are you] up _to_ ? 
+B|3| Human 2: [i'm doing well] ! _i_ just found out my dog has _a_ uti - i've had him for 7 years now _so you_ think _i_ 
+A|4| Human 1: wow , _that's_ impressive _. i_ _already_ gave up on cleaning _emails_ long ago 
+B|5| Human 2: [i'm doing well [.] i] hope [you] [are] feeling better about [emails] . [i'm] [already] in _that_ position 
+A|6| Human 1: _yea_ , [a] little bit , _but it's_ okay 🙂 _what_ _do_ [you] _enjoy doing_ _outside_ _work_ ? 
+B|7| Human 2: [i] [enjoy doing] [work] [outside] . [it's] [what] [i'm] paid for . [you] [are] [a] butcher ? 
+A|8| Human 1: ah _cool_ . [so you] _like_ action _movies_ ? 
+B|9| Human 2: [i] [do] [like] _movies [but_ it's] [cool] _that_ [you] [work] [outside] . [are you] [a] truck driver too ? 
+A|10| Human 1: [what] happened _there_ ? [i] watched bits of _terminators_ [movies but] _never_ [a] full one 
+B|11| Human 2: [i] [like] _it_ [but] [i] [work] [there] for [a] month and [never] _want to_ [do] _that_ again . [terminators] [are] awesome [movies] ! 
+A|12| Human 1: _haha_ sure . by _the_ time , [i] _get_ [to] it; [i] _will_ forget _the_ details , only knowing [that] [it's] _touching_ at _the end_ 
+B|13| Human 2: [yea] [that's] [what] [work] is [like] , _it_ [touching] [you] [but] [will] [never] [get] [there] [haha] 
+A|14| Human 1: oh _no_ , [so] _it's not_ _happy_ _ending_ ? 
+B|15| Human 2: [no] [but] _it_ [touching] [you] [will] [not] [get] [there] [that's] [the] worst part . [the] [ending] is [happy] and [the end] [never] comes 
+A|16| Human 1: _then_ [i] [want to] watch [it] ! [you] didn't spoil much 🙂 
+B|17| Human 2: [haha] [you] [will] [it's not] [that] bad [then] ! 
+A|18| Human 1: thanks ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you doing !
+	Free: Pattern=are you, Pattern=hi, Pattern=doing
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing well . what are you up to ?
+	Free: Pattern=i'm doing well ., Pattern=are you, Pattern=to, Pattern=what
+	Constrained: Pattern=you, Pattern=doing, Pattern=are, Pattern=i'm, Pattern=i'm doing well
+Turn ID=3| B | Human 2 : i'm doing well ! i just found out my dog has a uti - i've had him for 7 years now so you think i
+	Free: Pattern=i'm doing well, Pattern=so you, Pattern=i, Pattern=a
+	Constrained: Pattern=so, Pattern=you, Pattern=doing, Pattern=i'm
+Turn ID=4| A | Human 1 : wow , that's impressive . i already gave up on cleaning emails long ago
+	Free: Pattern=. i, Pattern=already, Pattern=that's, Pattern=emails
+	Constrained: Pattern=i
+Turn ID=5| B | Human 2 : i'm doing well . i hope you are feeling better about emails . i'm already in that position
+	Free: Pattern=you, Pattern=i'm doing well ., Pattern=are, Pattern=. i, Pattern=emails, Pattern=i'm, Pattern=already, Pattern=that
+	Constrained: Pattern=i'm doing well, Pattern=i, Pattern=doing, Pattern=i'm
+Turn ID=6| A | Human 1 : yea , a little bit , but it's okay 🙂 what do you enjoy doing outside work ?
+	Free: Pattern=you, Pattern=what, Pattern=but it's, Pattern=yea, Pattern=work, Pattern=outside, Pattern=enjoy doing, Pattern=do, Pattern=a
+	Constrained: Pattern=it's, Pattern=but, Pattern=doing
+Turn ID=7| B | Human 2 : i enjoy doing work outside . it's what i'm paid for . you are a butcher ?
+	Free: Pattern=you, Pattern=what, Pattern=a, Pattern=are, Pattern=enjoy doing, Pattern=it's, Pattern=i'm, Pattern=work, Pattern=outside, Pattern=i
+	Constrained: Pattern=doing
+Turn ID=8| A | Human 1 : ah cool . so you like action movies ?
+	Free: Pattern=so you, Pattern=like, Pattern=movies, Pattern=cool
+	Constrained: Pattern=you, Pattern=so
+Turn ID=9| B | Human 2 : i do like movies but it's cool that you work outside . are you a truck driver too ?
+	Free: Pattern=you, Pattern=work, Pattern=like, Pattern=movies but, Pattern=that, Pattern=do, Pattern=a, Pattern=cool, Pattern=but it's, Pattern=are you, Pattern=outside, Pattern=i
+	Constrained: Pattern=you, Pattern=are, Pattern=movies, Pattern=it's, Pattern=but
+Turn ID=10| A | Human 1 : what happened there ? i watched bits of terminators movies but never a full one
+	Free: Pattern=a, Pattern=movies but, Pattern=terminators, Pattern=what, Pattern=there, Pattern=never, Pattern=i
+	Constrained: Pattern=movies, Pattern=but
+Turn ID=11| B | Human 2 : i like it but i work there for a month and never want to do that again . terminators are awesome movies !
+	Free: Pattern=it, Pattern=are, Pattern=want to, Pattern=work, Pattern=like, Pattern=movies, Pattern=terminators, Pattern=there, Pattern=do, Pattern=a, Pattern=never, Pattern=i, Pattern=that, Pattern=but
+	Constrained: Pattern=to
+Turn ID=12| A | Human 1 : haha sure . by the time , i get to it; i will forget the details , only knowing that it's touching at the end
+	Free: Pattern=will, Pattern=i, Pattern=haha, Pattern=the, Pattern=the end, Pattern=to, Pattern=touching, Pattern=get, Pattern=that, Pattern=it's
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : yea that's what work is like , it touching you but will never get there haha
+	Free: Pattern=you, Pattern=it, Pattern=yea, Pattern=will, Pattern=work, Pattern=never, Pattern=that's, Pattern=touching, Pattern=get, Pattern=but, Pattern=what, Pattern=there, Pattern=haha, Pattern=like
+	Constrained: 
+Turn ID=14| A | Human 1 : oh no , so it's not happy ending ?
+	Free: Pattern=it's not, Pattern=ending, Pattern=so, Pattern=happy, Pattern=no
+	Constrained: Pattern=it's, Pattern=not
+Turn ID=15| B | Human 2 : no but it touching you will not get there that's the worst part . the ending is happy and the end never comes
+	Free: Pattern=you, Pattern=it, Pattern=will, Pattern=never, Pattern=the end, Pattern=touching, Pattern=get, Pattern=not, Pattern=happy, Pattern=no, Pattern=there, Pattern=that's, Pattern=the, Pattern=ending, Pattern=but
+	Constrained: Pattern=the
+Turn ID=16| A | Human 1 : then i want to watch it ! you didn't spoil much 🙂
+	Free: Pattern=you, Pattern=then, Pattern=it, Pattern=want to, Pattern=i
+	Constrained: Pattern=to
+Turn ID=17| B | Human 2 : haha you will it's not that bad then !
+	Free: Pattern=you, Pattern=then, Pattern=will, Pattern=haha, Pattern=it's not, Pattern=that
+	Constrained: Pattern=it's, Pattern=not
+Turn ID=18| A | Human 1 : thanks !
+	Free: 
+	Constrained: 

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello . how's your week coming along ? 
+A|2| Human 1: _it's_ _great_ , _thanks_ . _i'm trying to_ learn how _to make_ _croissants_ . 
+B|3| Human 2: [i'm] [great] [thanks] _, i_ just got in from shopping _, i_ love croquettes _and_ [i'm trying [to] make] my own 
+A|4| Human 1: _i've_ _done them_ once or twice _so_ far , _but_ _they_ _haven't_ _been_ _flakey_ enough . [i'm trying to] figure out why _. what kind_ _of_ _cookies_ _have_ _you_ _made_ ? 
+B|5| Human 2: [i've] [made] _a_ few [croissants] [but] [haven't] [done them] in quite _a_ bit . are [you] [trying [to] make] [them] _with_ [flakey] 
+A|6| Human 1: ah , good thought , [thanks] ! 
+B|7| Human 2: [i'm trying] . [they] [have] [been] tough [to make] [but] [i'm] getting _the_ hang [of] _it [._ what kind] were [they] ? 
+A|8| Human 1: now _that_ is [a] good idea . i'll give [it] [a] _try_ next _time_ . would [you] say _you _have_ a sweet tooth_ ? 
+B|9| Human 2: [i'm trying [to] make] [them] _with_ [a sweet] cookie [that] [you have] _not_ [been] able [to] [try] before . [it's] [made] _with_ almond fl 
+A|10| Human 1: some _people_ don't ! [but] yeah , me _too_ [, _i] think_ i'd _eat_ pastries _all_ [the] _time_ if [i] could _get_ away [with] [it .] 
+B|11| Human 2: [i think] [i] [have a sweet tooth] [that] can't be satisfied [with] [the] [cookies] [i] [eat] sometimes . [but] [you] know [all] [people] [get] those cra 
+A|12| Human 1: wow ! _the last time i_ paid attention [to] [that] sort [of] stuff _was_ _when_ <redacted_term> _was_ being marketed as [a] fat substitute , [and] caused [all] sorts [of] crazy _stomach_ upsets . 
+B|13| Human 2: [i] do [too] [and] [that] [was] [the last time i] ate sugar . [it] messed [with] my [stomach] . [so] [when] [i] [try] [to make] [sweet] potato fries 
+A|14| Human 1: ah , maybe that's [the] solution [i] need [to] enjoy sweets [and] [not] feel guilty 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello . how's your week coming along ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : it's great , thanks . i'm trying to learn how to make croissants .
+	Free: Pattern=thanks, Pattern=great, Pattern=i'm trying to, Pattern=to make, Pattern=croissants, Pattern=it's
+	Constrained: Pattern=i'm trying, Pattern=to, Pattern=trying to, Pattern=i'm
+Turn ID=3| B | Human 2 : i'm great thanks , i just got in from shopping , i love croquettes and i'm trying to make my own
+	Free: Pattern=thanks, Pattern=great, Pattern=and, Pattern=i'm trying to, Pattern=i'm, Pattern=to make, Pattern=, i
+	Constrained: Pattern=i'm trying, Pattern=i'm, Pattern=i, Pattern=trying to, Pattern=to
+Turn ID=4| A | Human 1 : i've done them once or twice so far , but they haven't been flakey enough . i'm trying to figure out why . what kind of cookies have you made ?
+	Free: Pattern=of, Pattern=you, Pattern=have, Pattern=made, Pattern=they, Pattern=cookies, Pattern=i'm trying to, Pattern=done them, Pattern=been, Pattern=but, Pattern=flakey, Pattern=i've, Pattern=haven't, Pattern=so, Pattern=. what kind
+	Constrained: Pattern=i'm trying, Pattern=i'm, Pattern=trying to, Pattern=to, Pattern=them
+Turn ID=5| B | Human 2 : i've made a few croissants but haven't done them in quite a bit . are you trying to make them with flakey
+	Free: Pattern=you, Pattern=made, Pattern=a, Pattern=flakey, Pattern=i've, Pattern=haven't, Pattern=trying to, Pattern=to make, Pattern=done them, Pattern=croissants, Pattern=with, Pattern=them, Pattern=but
+	Constrained: Pattern=to, Pattern=them
+Turn ID=6| A | Human 1 : ah , good thought , thanks !
+	Free: Pattern=thanks
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm trying . they have been tough to make but i'm getting the hang of it . what kind were they ?
+	Free: Pattern=of, Pattern=it ., Pattern=have, Pattern=they, Pattern=i'm trying, Pattern=i'm, Pattern=to make, Pattern=the, Pattern=been, Pattern=but, Pattern=. what kind
+	Constrained: Pattern=it, Pattern=to, Pattern=i'm
+Turn ID=8| A | Human 1 : now that is a good idea . i'll give it a try next time . would you say you have a sweet tooth ?
+	Free: Pattern=time, Pattern=you, Pattern=a, Pattern=try, Pattern=it, Pattern=you have, Pattern=have a sweet tooth, Pattern=that
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=sweet, Pattern=a sweet
+Turn ID=9| B | Human 2 : i'm trying to make them with a sweet cookie that you have not been able to try before . it's made with almond fl
+	Free: Pattern=made, Pattern=try, Pattern=you have, Pattern=i'm trying to, Pattern=to make, Pattern=a sweet, Pattern=to, Pattern=been, Pattern=not, Pattern=with, Pattern=it's, Pattern=them, Pattern=that
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=i'm trying, Pattern=trying to, Pattern=to, Pattern=sweet, Pattern=i'm
+Turn ID=10| A | Human 1 : some people don't ! but yeah , me too , i think i'd eat pastries all the time if i could get away with it .
+	Free: Pattern=time, Pattern=it ., Pattern=people, Pattern=eat, Pattern=too, Pattern=i, Pattern=get, Pattern=i think, Pattern=the, Pattern=, i, Pattern=all, Pattern=with, Pattern=but
+	Constrained: Pattern=i, Pattern=it
+Turn ID=11| B | Human 2 : i think i have a sweet tooth that can't be satisfied with the cookies i eat sometimes . but you know all people get those cra
+	Free: Pattern=you, Pattern=people, Pattern=eat, Pattern=cookies, Pattern=i, Pattern=have a sweet tooth, Pattern=get, Pattern=i think, Pattern=the, Pattern=all, Pattern=with, Pattern=that, Pattern=but
+	Constrained: Pattern=have, Pattern=a, Pattern=sweet, Pattern=i, Pattern=a sweet
+Turn ID=12| A | Human 1 : wow ! the last time i paid attention to that sort of stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts of crazy stomach upsets .
+	Free: Pattern=of, Pattern=a, Pattern=and, Pattern=when, Pattern=to, Pattern=was, Pattern=stomach, Pattern=that, Pattern=the last time i, Pattern=all
+	Constrained: Pattern=i, Pattern=time, Pattern=the
+Turn ID=13| B | Human 2 : i do too and that was the last time i ate sugar . it messed with my stomach . so when i try to make sweet potato fries
+	Free: Pattern=try, Pattern=sweet, Pattern=i, Pattern=to make, Pattern=the last time i, Pattern=when, Pattern=was, Pattern=stomach, Pattern=so, Pattern=it, Pattern=and, Pattern=too, Pattern=with, Pattern=that
+	Constrained: Pattern=i, Pattern=to, Pattern=time, Pattern=the
+Turn ID=14| A | Human 1 : ah , maybe that's the solution i need to enjoy sweets and not feel guilty 🙂
+	Free: Pattern=and, Pattern=i, Pattern=the, Pattern=to, Pattern=not
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! how _are you_ doing 🙂 
+A|2| Human 1: _i'm great_ ! _how's your day_ _going_ ? 
+B|3| Human 2: [i'm great] _so_ far ! just got done [going] hiking , and _you_ ? 
+A|4| Human 1: oh _that_ _is_ cool ! _what_ class ? [are you] _working_ _part time_ ? 
+B|5| Human 2: [i'm] [going] _to_ school [part time] now _that _i_ work full time_ . [what] _about_ [you] ? [how's your day] ? 
+A|6| Human 1: oh [that] _is_ awesome ! _for_ _some_ reason [i] assumed it _was_ _a_ _college_ class _, but_ _a_ _sewing_ class sounds _way_ better ! [i work full time] _, but_ [i] _take_ _pottery classes_ _from_ [time] [to] [time] ! 
+B|7| Human 2: [i'm] not [working] [full time] [but] [was] [part] _of_ [some] [college] [classes] [that] [take] place around [work] _so_ _it's_ pretty much _the_ same thing haha 
+A|8| Human 1: [i] feel [you] on [that] ! [it's] important [to] balance all [the] _different_ parts [of] [your] brain . _i like_ _pottery_ _because_ [i] also _drink_ _a_ lot [of] _tea_ , [so] [i] _get_ [to] _make_ [some] _tea_ ware . 
+B|9| Human 2: yes [i] am in [college] and taking [pottery classes] too . [it's] [part time] [because] [some] [work full time] and [sewing] [is] [the] [way] [i] relax . 
+A|10| Human 1: [i] _would_ _love_ [to] build _one_ , _once_ [i] acquire [the] skills [to] ! _what kind_ [of] _tea_ [is] [your] favorite ? 
+B|11| Human 2: [i] [love] [pottery] [but] [the] [classes] [that] [are] [once] [a] month or twice [a] month [get] too expensive , [you] [drink] too much lol . 
+A|12| Human 1: ahh , those [are] mostly _from_ japan , no ? _i like_ white _teas_ , _like_ silver needle . 
+B|13| Human 2: [i like] green [tea] [the] most . [it's] [the] [one] [that] tastes [the] freshest and [the] best [for] [you] . [what kind] [would] [you] [make] ? 
+A|14| Human 1: [i] _actually_ found [a] youtube channel called <redacted_term> [that [i] like] [a] lot . [you] should check it out ! [the] host talks [about] all kinds [of] _different_ _teas_ . 
+B|15| Human 2: [you] [are] [actually] right [, but] [some] [teas] [from] [different] countries [like] [tea] [that] [you] [get] in [the] us . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! how are you doing 🙂
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm great ! how's your day going ?
+	Free: Pattern=how's your day, Pattern=i'm great, Pattern=going
+	Constrained: Pattern=your, Pattern=i'm
+Turn ID=3| B | Human 2 : i'm great so far ! just got done going hiking , and you ?
+	Free: Pattern=i'm great, Pattern=you, Pattern=so, Pattern=going
+	Constrained: Pattern=i'm
+Turn ID=4| A | Human 1 : oh that is cool ! what class ? are you working part time ?
+	Free: Pattern=what, Pattern=working, Pattern=that, Pattern=part time, Pattern=are you, Pattern=is
+	Constrained: Pattern=part, Pattern=are, Pattern=you, Pattern=time
+Turn ID=5| B | Human 2 : i'm going to school part time now that i work full time . what about you ? how's your day ?
+	Free: Pattern=you, Pattern=going, Pattern=what, Pattern=about, Pattern=i'm, Pattern=i work full time, Pattern=that i, Pattern=to, Pattern=part time, Pattern=how's your day
+	Constrained: Pattern=time, Pattern=work, Pattern=part, Pattern=that, Pattern=work full time, Pattern=full time, Pattern=your, Pattern=i
+Turn ID=6| A | Human 1 : oh that is awesome ! for some reason i assumed it was a college class , but a sewing class sounds way better ! i work full time , but i take pottery classes from time to time !
+	Free: Pattern=time, Pattern=, but, Pattern=college, Pattern=sewing, Pattern=a, Pattern=for, Pattern=from, Pattern=some, Pattern=i work full time, Pattern=take, Pattern=to, Pattern=is, Pattern=i, Pattern=pottery classes, Pattern=was, Pattern=that, Pattern=way
+	Constrained: Pattern=time, Pattern=work, Pattern=i, Pattern=pottery, Pattern=classes, Pattern=but, Pattern=work full time, Pattern=full time
+Turn ID=7| B | Human 2 : i'm not working full time but was part of some college classes that take place around work so it's pretty much the same thing haha
+	Free: Pattern=college, Pattern=working, Pattern=some, Pattern=classes, Pattern=was, Pattern=so, Pattern=full time, Pattern=of, Pattern=i'm, Pattern=work, Pattern=the, Pattern=take, Pattern=part, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=time
+Turn ID=8| A | Human 1 : i feel you on that ! it's important to balance all the different parts of your brain . i like pottery because i also drink a lot of tea , so i get to make some tea ware .
+	Free: Pattern=different, Pattern=you, Pattern=tea, Pattern=some, Pattern=pottery, Pattern=the, Pattern=to, Pattern=get, Pattern=of, Pattern=drink, Pattern=a, Pattern=because, Pattern=your, Pattern=make, Pattern=i, Pattern=that, Pattern=it's, Pattern=so, Pattern=i like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=9| B | Human 2 : yes i am in college and taking pottery classes too . it's part time because some work full time and sewing is the way i relax .
+	Free: Pattern=work full time, Pattern=college, Pattern=sewing, Pattern=because, Pattern=some, Pattern=the, Pattern=pottery classes, Pattern=part time, Pattern=is, Pattern=i, Pattern=it's, Pattern=way
+	Constrained: Pattern=time, Pattern=full time, Pattern=work, Pattern=pottery, Pattern=part, Pattern=classes
+Turn ID=10| A | Human 1 : i would love to build one , once i acquire the skills to ! what kind of tea is your favorite ?
+	Free: Pattern=of, Pattern=once, Pattern=tea, Pattern=one, Pattern=what kind, Pattern=love, Pattern=the, Pattern=would, Pattern=to, Pattern=is, Pattern=your, Pattern=i
+	Constrained: Pattern=what
+Turn ID=11| B | Human 2 : i love pottery but the classes that are once a month or twice a month get too expensive , you drink too much lol .
+	Free: Pattern=drink, Pattern=you, Pattern=once, Pattern=a, Pattern=are, Pattern=love, Pattern=i, Pattern=pottery, Pattern=the, Pattern=classes, Pattern=get, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : ahh , those are mostly from japan , no ? i like white teas , like silver needle .
+	Free: Pattern=are, Pattern=from, Pattern=like, Pattern=teas, Pattern=i like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=13| B | Human 2 : i like green tea the most . it's the one that tastes the freshest and the best for you . what kind would you make ?
+	Free: Pattern=you, Pattern=one, Pattern=what kind, Pattern=make, Pattern=the, Pattern=would, Pattern=i like, Pattern=for, Pattern=tea, Pattern=that, Pattern=it's
+	Constrained: Pattern=like, Pattern=i, Pattern=what
+Turn ID=14| A | Human 1 : i actually found a youtube channel called <redacted_term> that i like a lot . you should check it out ! the host talks about all kinds of different teas .
+	Free: Pattern=different, Pattern=of, Pattern=you, Pattern=about, Pattern=i, Pattern=the, Pattern=that i, Pattern=teas, Pattern=i like, Pattern=actually, Pattern=a
+	Constrained: Pattern=like, Pattern=that, Pattern=i
+Turn ID=15| B | Human 2 : you are actually right , but some teas from different countries like tea that you get in the us .
+	Free: Pattern=different, Pattern=actually, Pattern=tea, Pattern=are, Pattern=from, Pattern=some, Pattern=like, Pattern=the, Pattern=teas, Pattern=get, Pattern=that, Pattern=you, Pattern=, but
+	Constrained: Pattern=but

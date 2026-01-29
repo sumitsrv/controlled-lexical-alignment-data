@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how was _your_ weekend ? 
+A|2| Human 1: _pretty_ _good_ . _just_ went _to_ _church and_ hangout with _friends_ 
+B|3| Human 2: that sounds great ! [church and] [friends] are important for maintaining [good] mental health . _did _you_ have_ _any_ interesting experiences this weekend ? <|im_ 
+A|4| Human 1: [did you] do _anything_ ? 
+B|5| Human 2: [anything] interesting ? [did you] learn something new ? <|im_ 
+A|6| Human 1: yum yum yum no only [good] old _oily frier_ 
+B|7| Human 2: [oily frier] ? [did you] mean "oily fryer" ? <|im_ 
+A|8| Human 1: do [you have] one at [your] home or _were_ [you] at a _friends place_ ? 
+B|9| Human 2: [you] [were] [just] curious about [your] [friends place] [and] wanted [to] know if they [have] one<|im_ 
+A|10| Human 1: _i'm_ going [to] impersonate a _pumpkin_ 
+B|11| Human 2: [pumpkin] [you] [were] [just] curious about [your] [friends place] [and] wanted [to] know if they [have] one<|im_ 
+A|12| Human 1: _i'm pretty unique person_ 
+B|13| Human 2: [i'm pretty unique person] [and] i don't [have] [friends place] 
+A|14| Human 1: [any] other hobbies besides _air_ frying _everything_ ? 🙂 
+B|15| Human 2: [i'm pretty unique person] [and] i don't [have] [friends place] [to] [air] fry [everything] 😔<|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how was your weekend ?
+	Free: Pattern=hi !, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . just went to church and hangout with friends
+	Free: Pattern=good, Pattern=just, Pattern=church and, Pattern=friends, Pattern=pretty, Pattern=to
+	Constrained: Pattern=and
+Turn ID=3| B | Human 2 : that sounds great ! church and friends are important for maintaining good mental health . did you have any interesting experiences this weekend ? <|im_
+	Free: Pattern=good, Pattern=did you, Pattern=any, Pattern=church and, Pattern=you have, Pattern=friends
+	Constrained: Pattern=you, Pattern=have, Pattern=and
+Turn ID=4| A | Human 1 : did you do anything ?
+	Free: Pattern=did you, Pattern=anything
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : anything interesting ? did you learn something new ? <|im_
+	Free: Pattern=did you, Pattern=anything
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : yum yum yum no only good old oily frier
+	Free: Pattern=oily frier, Pattern=good
+	Constrained: 
+Turn ID=7| B | Human 2 : oily frier ? did you mean "oily fryer" ? <|im_
+	Free: Pattern=oily frier, Pattern=did you
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : do you have one at your home or were you at a friends place ?
+	Free: Pattern=you, Pattern=friends place, Pattern=you have, Pattern=your, Pattern=were
+	Constrained: Pattern=friends, Pattern=you, Pattern=have
+Turn ID=9| B | Human 2 : you were just curious about your friends place and wanted to know if they have one<|im_
+	Free: Pattern=you, Pattern=friends place, Pattern=and, Pattern=your, Pattern=to, Pattern=were, Pattern=just, Pattern=have
+	Constrained: Pattern=friends
+Turn ID=10| A | Human 1 : i'm going to impersonate a pumpkin
+	Free: Pattern=to, Pattern=i'm, Pattern=pumpkin
+	Constrained: 
+Turn ID=11| B | Human 2 : pumpkin you were just curious about your friends place and wanted to know if they have one<|im_
+	Free: Pattern=you, Pattern=friends place, Pattern=and, Pattern=your, Pattern=to, Pattern=pumpkin, Pattern=were, Pattern=just, Pattern=have
+	Constrained: Pattern=friends
+Turn ID=12| A | Human 1 : i'm pretty unique person
+	Free: Pattern=i'm pretty unique person
+	Constrained: Pattern=pretty, Pattern=i'm
+Turn ID=13| B | Human 2 : i'm pretty unique person and i don't have friends place
+	Free: Pattern=i'm pretty unique person, Pattern=friends place, Pattern=have, Pattern=and
+	Constrained: Pattern=pretty, Pattern=friends, Pattern=i'm
+Turn ID=14| A | Human 1 : any other hobbies besides air frying everything ? 🙂
+	Free: Pattern=air, Pattern=any, Pattern=everything
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm pretty unique person and i don't have friends place to air fry everything 😔<|im_end|
+	Free: Pattern=air, Pattern=have, Pattern=i'm pretty unique person, Pattern=friends place, Pattern=and, Pattern=everything, Pattern=to
+	Constrained: Pattern=pretty, Pattern=friends, Pattern=i'm

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _week_ so _far ?_ 
+B|3| Human 2: great ! _how_ can _i_ help _you_ today ? </s>s' [week] [far ?] 
+A|4| Human 1: _same_ . _going_ to catch _up on_ my _reading_ ! _do you_ _have_ a _feast planned ?_ 
+B|5| Human 2: [reading] [you] say ? 🧐 [have] [you] tried our new [feast planned ?] 🍴 it's paw-some 
+A|6| Human 1: _something_ deeply hidden by sean carroll _<redacted_link>_ 
+B|7| Human 2: 🤔 [reading] [you] say ? [have] [you] read [<redacted_link>] it's paw-some<| 
+A|8| Human 1: _largely_ _scifi_ _how about you ?_ 
+B|9| Human 2: [same] 😺 catching [up on] [<redacted_link>] [how about you ?] 
+A|10| Human 1: [i] haven't _what is it about_ ? 
+B|11| Human 2: it's [about] [how] [have] [you] been [<redacted_link>] catching [up on] [scifi] [largely] [reading] [what is it about] 
+A|12| Human 1: _how do_ _the_ _survivors_ _survive such_ a _thing_ ? 
+B|13| Human 2: [what] [about] [the] [<redacted_link>] [how [do] you] [survive such] [thing] [how] [have] [you] been [reading] [scifi] [largely] catching 
+A|14| Human 1: _sounds like_ a tv _show_ [i] watched 
+B|15| Human 2: what's [the] [show] [about] [how] [survivors] [<redacted_link>] [how] [have] [you] [survive such] [thing] catching [up] 
+A|16| Human 1: can't _quite_ remember . _something_ [about] [survivors] _going_ to _live_ in _space_ 
+B|17| Human 2: [sounds like] [quite] [the] [show] [going] [live] [space] [how about you] [survive] [something] [how] [have] [you] been catching [scifi] [largely] [reading] what's [it about] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: Pattern=far ?, Pattern=week
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how can i help you today ? </s>s' week far ?
+	Free: Pattern=you, Pattern=week, Pattern=how, Pattern=i, Pattern=far ?
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=do you, Pattern=up on, Pattern=reading, Pattern=same, Pattern=feast planned ?, Pattern=going, Pattern=have
+	Constrained: Pattern=you, Pattern=up
+Turn ID=5| B | Human 2 : reading you say ? 🧐 have you tried our new feast planned ? 🍴 it's paw-some
+	Free: Pattern=feast planned ?, Pattern=you, Pattern=reading, Pattern=have
+	Constrained: 
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=something, Pattern=<redacted_link>
+	Constrained: 
+Turn ID=7| B | Human 2 : 🤔 reading you say ? have you read <redacted_link> it's paw-some<|
+	Free: Pattern=you, Pattern=reading, Pattern=have, Pattern=<redacted_link>
+	Constrained: 
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you ?, Pattern=scifi, Pattern=largely
+	Constrained: Pattern=how about you, Pattern=you, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : same 😺 catching up on <redacted_link> how about you ?
+	Free: Pattern=how about you ?, Pattern=up on, Pattern=<redacted_link>, Pattern=same
+	Constrained: Pattern=you, Pattern=how about you, Pattern=how, Pattern=about, Pattern=up
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=what is it about, Pattern=i
+	Constrained: Pattern=it about, Pattern=about, Pattern=what
+Turn ID=11| B | Human 2 : it's about how have you been <redacted_link> catching up on scifi largely reading what is it about
+	Free: Pattern=you, Pattern=have, Pattern=how, Pattern=up on, Pattern=about, Pattern=reading, Pattern=scifi, Pattern=<redacted_link>, Pattern=what is it about, Pattern=largely
+	Constrained: Pattern=what, Pattern=up, Pattern=it about, Pattern=about
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=how do, Pattern=survive such, Pattern=survivors, Pattern=thing, Pattern=the
+	Constrained: Pattern=how, Pattern=survive
+Turn ID=13| B | Human 2 : what about the <redacted_link> how do you survive such thing how have you been reading scifi largely catching
+	Free: Pattern=you, Pattern=have, Pattern=what, Pattern=how, Pattern=do you, Pattern=about, Pattern=reading, Pattern=how do, Pattern=survive such, Pattern=scifi, Pattern=<redacted_link>, Pattern=largely, Pattern=thing, Pattern=the
+	Constrained: Pattern=you, Pattern=how, Pattern=survive
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=sounds like, Pattern=show, Pattern=i
+	Constrained: 
+Turn ID=15| B | Human 2 : what's the show about how survivors <redacted_link> how have you survive such thing catching up
+	Free: Pattern=you, Pattern=have, Pattern=how, Pattern=about, Pattern=survive such, Pattern=show, Pattern=survivors, Pattern=thing, Pattern=the, Pattern=<redacted_link>, Pattern=up
+	Constrained: Pattern=survive
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=going, Pattern=live, Pattern=quite, Pattern=about, Pattern=space, Pattern=survivors, Pattern=something
+	Constrained: 
+Turn ID=17| B | Human 2 : sounds like quite the show going live space how about you survive something how have you been catching scifi largely reading what's it about
+	Free: Pattern=survive, Pattern=you, Pattern=how, Pattern=sounds like, Pattern=live, Pattern=space, Pattern=reading, Pattern=quite, Pattern=the, Pattern=scifi, Pattern=it about, Pattern=show, Pattern=going, Pattern=have, Pattern=how about you, Pattern=something, Pattern=largely
+	Constrained: Pattern=you, Pattern=how, Pattern=about

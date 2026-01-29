@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are_ _you_ ? 
+A|2| Human 1: _pretty_ _good_ _. i_ just drank this new _hint water ._ so _good_ 
+B|3| Human 2: oh , nice ! [hint water] can be really refreshing . what flavor _was_ it ? 
+A|4| Human 1: _watermelon_ 
+B|5| Human 2: ah , [watermelon] is _a_ great choice . it's _a good_ source _of_ hydration and also has _some_ natural sweetness . have 
+A|6| Human 1: _i_ see . _yeah_ [some] [are] _pretty_ _strange_ 
+B|7| Human 2: [yeah] , sometimes they can be _a_ bit [strange] . but [some] people really enjoy the unique taste _of_ [hint water .] did _you_ try it ? <|im 
+A|8| Human 1: lol _i_ tried this _tangerine walnut icecream_ _that_ [was] super _weird_ 
+B|9| Human 2: [yeah] , [some] flavors can be [pretty] [weird] . but hey , being different is what makes life interesting , right ? <|im_end| 
+A|10| Human 1: _that_ _sounds pretty_ tasty _actually_ 
+B|11| Human 2: [yeah] , [tangerine walnut icecream] [sounds pretty] [weird] . but hey , if you're into [that] , go for it ! </ 
+A|12| Human 1: do [you] want to get [some] [of] [that] [icecream] together [some] time . show me [a good] place 
+B|13| Human 2: [actually] , [icecream] isn't really my thing [. i] prefer savory foods . but [you] go ahead and enjoy [that] [tangerine] wal 
+A|14| Human 1: lol 
+B|15| Human 2: [you] gotta try it ! </ 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . i just drank this new hint water . so good
+	Free: Pattern=hint water ., Pattern=. i, Pattern=good, Pattern=pretty
+	Constrained: Pattern=hint water, Pattern=i
+Turn ID=3| B | Human 2 : oh , nice ! hint water can be really refreshing . what flavor was it ?
+	Free: Pattern=hint water, Pattern=was
+	Constrained: 
+Turn ID=4| A | Human 1 : watermelon
+	Free: Pattern=watermelon
+	Constrained: 
+Turn ID=5| B | Human 2 : ah , watermelon is a great choice . it's a good source of hydration and also has some natural sweetness . have
+	Free: Pattern=of, Pattern=a, Pattern=a good, Pattern=some, Pattern=watermelon
+	Constrained: Pattern=a, Pattern=good
+Turn ID=6| A | Human 1 : i see . yeah some are pretty strange
+	Free: Pattern=strange, Pattern=yeah, Pattern=are, Pattern=some, Pattern=i, Pattern=pretty
+	Constrained: 
+Turn ID=7| B | Human 2 : yeah , sometimes they can be a bit strange . but some people really enjoy the unique taste of hint water . did you try it ? <|im
+	Free: Pattern=of, Pattern=you, Pattern=strange, Pattern=a, Pattern=yeah, Pattern=some, Pattern=hint water .
+	Constrained: Pattern=hint water
+Turn ID=8| A | Human 1 : lol i tried this tangerine walnut icecream that was super weird
+	Free: Pattern=i, Pattern=was, Pattern=that, Pattern=weird, Pattern=tangerine walnut icecream
+	Constrained: Pattern=icecream, Pattern=tangerine
+Turn ID=9| B | Human 2 : yeah , some flavors can be pretty weird . but hey , being different is what makes life interesting , right ? <|im_end|
+	Free: Pattern=weird, Pattern=yeah, Pattern=pretty, Pattern=some
+	Constrained: 
+Turn ID=10| A | Human 1 : that sounds pretty tasty actually
+	Free: Pattern=sounds pretty, Pattern=that, Pattern=actually
+	Constrained: Pattern=pretty
+Turn ID=11| B | Human 2 : yeah , tangerine walnut icecream sounds pretty weird . but hey , if you're into that , go for it ! </
+	Free: Pattern=sounds pretty, Pattern=that, Pattern=yeah, Pattern=weird, Pattern=tangerine walnut icecream
+	Constrained: Pattern=icecream, Pattern=tangerine, Pattern=pretty
+Turn ID=12| A | Human 1 : do you want to get some of that icecream together some time . show me a good place
+	Free: Pattern=of, Pattern=you, Pattern=a good, Pattern=that, Pattern=icecream, Pattern=some
+	Constrained: Pattern=a, Pattern=good
+Turn ID=13| B | Human 2 : actually , icecream isn't really my thing . i prefer savory foods . but you go ahead and enjoy that tangerine wal
+	Free: Pattern=you, Pattern=actually, Pattern=. i, Pattern=icecream, Pattern=that, Pattern=tangerine
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : lol
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : you gotta try it ! </
+	Free: Pattern=you
+	Constrained: 

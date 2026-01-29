@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 
+A|2| Human 1: _what_ _are_ _you_ up _to_ ? 
+B|3| Human 2: _just_ got home from _work _._ i_ _do_ not feel good today though . 
+A|4| Human 1: me ? [just] chilling out _at_ [work .] _what_ _is_ _code refactoring_ ? 
+B|5| Human 2: _i_ [work] [at] _a_ [code refactoring] company . we [are] basically _like_ _a_ translator for developers and maintainer . we [are] helping [to] fix bugs _in_ 
+A|6| Human 1: _haha_ , forget _it_ . _what_ else _do you _like_ to_ [do] beside [work] ? 
+B|7| Human 2: [haha] ! [code refactoring] [you] [are] [what] [work] on [like] altering the [code] _. i_ am [just] relaxing , _i_ can not stay [to] long 
+A|8| Human 1: these [are] _important_ _things_ [to] [do] [in] life 😉 
+B|9| Human 2: oh , [like] [you] [are] [in] the software development field ? that does sound [important] ! _i_ [just] [do] basic data entry [work] , lol . but hey , [what] 
+A|10| Human 1: [what] _food_ _do you _like_ to_ eat ? 
+B|11| Human 2: _i [like_ to] [work] as _a_ developer [in] the [food] industry _or_ as _a_ bartender . 
+A|12| Human 1: _like szechuan_ [or] _hunan_ ? 🙂 
+B|13| Human 2: _i like_ [things] [like szechuan] cuisine _. i_ think [food] has _a_ cultural significance [to] china , so _i [like_ to] 
+A|14| Human 1: [i like] _noodle_ _soup_ _like pho_ [or] ramen [. i] _also_ [like] beijing duck [a] lot ! 
+B|15| Human 2: [szechuan] [food] [is] so good ! [it] [is] [also] known as [hunan] [food] and [is] [a] special regional [food] that comes from beij 
+A|16| Human 1: [i] love <redacted_term> _in san_ mateo 
+B|17| Human 2: [do you [like] pho] [soup] ? [it] was created [in san] fran and [noodle] soups [are] my favorite 
+A|18| Human 1: yes , [you] should ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : what are you up to ?
+	Free: Pattern=are, Pattern=to, Pattern=you, Pattern=what
+	Constrained: 
+Turn ID=3| B | Human 2 : just got home from work . i do not feel good today though .
+	Free: Pattern=work ., Pattern=. i, Pattern=do, Pattern=just
+	Constrained: Pattern=work, Pattern=i
+Turn ID=4| A | Human 1 : me ? just chilling out at work . what is code refactoring ?
+	Free: Pattern=just, Pattern=what, Pattern=at, Pattern=is, Pattern=code refactoring, Pattern=work .
+	Constrained: Pattern=work, Pattern=code
+Turn ID=5| B | Human 2 : i work at a code refactoring company . we are basically like a translator for developers and maintainer . we are helping to fix bugs in
+	Free: Pattern=a, Pattern=are, Pattern=at, Pattern=in, Pattern=work, Pattern=i, Pattern=like, Pattern=code refactoring, Pattern=to
+	Constrained: Pattern=code
+Turn ID=6| A | Human 1 : haha , forget it . what else do you like to do beside work ?
+	Free: Pattern=what, Pattern=do, Pattern=it, Pattern=work, Pattern=haha, Pattern=like to, Pattern=do you like
+	Constrained: Pattern=do, Pattern=like, Pattern=to, Pattern=you
+Turn ID=7| B | Human 2 : haha ! code refactoring you are what work on like altering the code . i am just relaxing , i can not stay to long
+	Free: Pattern=you, Pattern=what, Pattern=are, Pattern=. i, Pattern=work, Pattern=i, Pattern=code refactoring, Pattern=to, Pattern=code, Pattern=just, Pattern=haha, Pattern=like
+	Constrained: Pattern=i, Pattern=code
+Turn ID=8| A | Human 1 : these are important things to do in life 😉
+	Free: Pattern=do, Pattern=are, Pattern=things, Pattern=in, Pattern=important, Pattern=to
+	Constrained: 
+Turn ID=9| B | Human 2 : oh , like you are in the software development field ? that does sound important ! i just do basic data entry work , lol . but hey , what
+	Free: Pattern=you, Pattern=just, Pattern=what, Pattern=do, Pattern=are, Pattern=in, Pattern=i, Pattern=like, Pattern=important, Pattern=work
+	Constrained: 
+Turn ID=10| A | Human 1 : what food do you like to eat ?
+	Free: Pattern=do you like, Pattern=like to, Pattern=food, Pattern=what
+	Constrained: Pattern=do, Pattern=like, Pattern=to, Pattern=you
+Turn ID=11| B | Human 2 : i like to work as a developer in the food industry or as a bartender .
+	Free: Pattern=a, Pattern=in, Pattern=work, Pattern=food, Pattern=or, Pattern=like to, Pattern=i like
+	Constrained: Pattern=like, Pattern=to, Pattern=i
+Turn ID=12| A | Human 1 : like szechuan or hunan ? 🙂
+	Free: Pattern=like szechuan, Pattern=hunan, Pattern=or
+	Constrained: Pattern=like, Pattern=szechuan
+Turn ID=13| B | Human 2 : i like things like szechuan cuisine . i think food has a cultural significance to china , so i like to
+	Free: Pattern=a, Pattern=food, Pattern=like szechuan, Pattern=like to, Pattern=to, Pattern=i like, Pattern=. i, Pattern=things
+	Constrained: Pattern=like, Pattern=to, Pattern=i, Pattern=szechuan
+Turn ID=14| A | Human 1 : i like noodle soup like pho or ramen . i also like beijing duck a lot !
+	Free: Pattern=a, Pattern=. i, Pattern=noodle, Pattern=or, Pattern=i like, Pattern=soup, Pattern=like pho, Pattern=also, Pattern=like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=15| B | Human 2 : szechuan food is so good ! it is also known as hunan food and is a special regional food that comes from beij
+	Free: Pattern=a, Pattern=it, Pattern=is, Pattern=szechuan, Pattern=also, Pattern=hunan, Pattern=food
+	Constrained: 
+Turn ID=16| A | Human 1 : i love <redacted_term> in san mateo
+	Free: Pattern=in san, Pattern=i
+	Constrained: Pattern=in
+Turn ID=17| B | Human 2 : do you like pho soup ? it was created in san fran and noodle soups are my favorite
+	Free: Pattern=in san, Pattern=it, Pattern=are, Pattern=noodle, Pattern=do you like, Pattern=soup, Pattern=like pho
+	Constrained: Pattern=in, Pattern=do, Pattern=you, Pattern=like
+Turn ID=18| A | Human 1 : yes , you should !
+	Free: Pattern=you
+	Constrained: 

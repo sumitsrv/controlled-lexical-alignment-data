@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , how is _it_ going ? 
+A|2| Human 1: pretty _great_ _. i just_ won _a_ pingpong _game _._ what_ _about you ?_ 
+B|3| Human 2: that's [great] _to_ hear ! _i'm_ doing well too [. i just] finished [a] project _for_ [a] client . how [about you ?] [what] have [you] 
+A|4| Human 1: _no_ , very rarely _. it's_ kind _of_ amazing _that_ [i] won _, but_ [i'm] still taking credit [for] [it] . 
+B|5| Human 2: (laughs) well , congratulations on _your_ win ! [it's] always [great] _to_ achieve something [you] weren't sure [you] 
+A|6| Human 1: _haha_ thank [you] _, i_ guess _i'm just_ [a] natural . what's [your] favourite _game_ ? 
+B|7| Human 2: [i'm just] an ai [, _i] don't_ have personal preferences or feelings [, but] [i] can play [a] wide range [of] games [. what] 
+A|8| Human 1: what's _racquetball_ _like_ ? from context clues , [i'm] guessing _that_ [it] involves hitting _a ball_ _with a racquet_ 
+B|9| Human 2: ah [, i] see ! yeah , [racquetball] is [a] _fun_ [game [.] it's] [like] [a] combination [of] ping pong _and_ handball . [you] 
+A|10| Human 1: wow ! [a] _cage_ match ! does [it] get physical ? 
+B|11| Human 2: [haha] , [no] [cage] matches here ! [racquetball] is _a sport_ played [with a racquet] _and_ [a ball] . the objective is _to_ hit 
+A|12| Human 1: _that_ sounds [fun] [. i] think [of] tennis itself as being really athletic [and] tiring , so [i don't] think [it's] [a _sport] for_ me , though ! 
+B|13| Human 2: [i] can understand [that] . [racquetball] is [a] [great] [sport for] improving hand-eye coordination [and] reaction time [. it's] also 
+A|14| Human 1: [what] [a] good idea , i'd love [to] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty great . i just won a pingpong game . what about you ?
+	Free: Pattern=great, Pattern=a, Pattern=. i just, Pattern=game ., Pattern=about you ?, Pattern=. what
+	Constrained: Pattern=you, Pattern=what, Pattern=game, Pattern=. i, Pattern=i
+Turn ID=3| B | Human 2 : that's great to hear ! i'm doing well too . i just finished a project for a client . how about you ? what have you
+	Free: Pattern=what, Pattern=a, Pattern=for, Pattern=. i just, Pattern=i'm, Pattern=about you ?, Pattern=to, Pattern=you, Pattern=great
+	Constrained: Pattern=i, Pattern=you, Pattern=. i
+Turn ID=4| A | Human 1 : no , very rarely . it's kind of amazing that i won , but i'm still taking credit for it .
+	Free: Pattern=of, Pattern=, but, Pattern=for, Pattern=it, Pattern=i'm, Pattern=i, Pattern=that, Pattern=no, Pattern=. it's
+	Constrained: Pattern=it's
+Turn ID=5| B | Human 2 : (laughs) well , congratulations on your win ! it's always great to achieve something you weren't sure you
+	Free: Pattern=your, Pattern=to, Pattern=it's, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=6| A | Human 1 : haha thank you , i guess i'm just a natural . what's your favourite game ?
+	Free: Pattern=you, Pattern=a, Pattern=game, Pattern=i'm just, Pattern=your, Pattern=haha, Pattern=, i
+	Constrained: Pattern=i'm, Pattern=i
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or feelings , but i can play a wide range of games . what
+	Free: Pattern=of, Pattern=, but, Pattern=i don't, Pattern=a, Pattern=i'm just, Pattern=i, Pattern=, i, Pattern=. what
+	Constrained: Pattern=what, Pattern=i'm, Pattern=i
+Turn ID=8| A | Human 1 : what's racquetball like ? from context clues , i'm guessing that it involves hitting a ball with a racquet
+	Free: Pattern=racquetball, Pattern=it, Pattern=a ball, Pattern=i'm, Pattern=like, Pattern=with a racquet, Pattern=that
+	Constrained: Pattern=a
+Turn ID=9| B | Human 2 : ah , i see ! yeah , racquetball is a fun game . it's like a combination of ping pong and handball . you
+	Free: Pattern=fun, Pattern=of, Pattern=you, Pattern=racquetball, Pattern=. it's, Pattern=a, Pattern=and, Pattern=like, Pattern=game ., Pattern=, i
+	Constrained: Pattern=game, Pattern=i, Pattern=it's
+Turn ID=10| A | Human 1 : wow ! a cage match ! does it get physical ?
+	Free: Pattern=a, Pattern=it, Pattern=cage
+	Constrained: 
+Turn ID=11| B | Human 2 : haha , no cage matches here ! racquetball is a sport played with a racquet and a ball . the objective is to hit
+	Free: Pattern=racquetball, Pattern=and, Pattern=a ball, Pattern=a sport, Pattern=haha, Pattern=to, Pattern=with a racquet, Pattern=no, Pattern=cage
+	Constrained: Pattern=a
+Turn ID=12| A | Human 1 : that sounds fun . i think of tennis itself as being really athletic and tiring , so i don't think it's a sport for me , though !
+	Free: Pattern=fun, Pattern=of, Pattern=i don't, Pattern=and, Pattern=sport for, Pattern=. i, Pattern=a sport, Pattern=that, Pattern=it's
+	Constrained: Pattern=for, Pattern=a, Pattern=i
+Turn ID=13| B | Human 2 : i can understand that . racquetball is a great sport for improving hand-eye coordination and reaction time . it's also
+	Free: Pattern=great, Pattern=racquetball, Pattern=. it's, Pattern=a, Pattern=and, Pattern=i, Pattern=sport for, Pattern=that
+	Constrained: Pattern=for, Pattern=it's
+Turn ID=14| A | Human 1 : what a good idea , i'd love to !
+	Free: Pattern=to, Pattern=what, Pattern=a
+	Constrained: 

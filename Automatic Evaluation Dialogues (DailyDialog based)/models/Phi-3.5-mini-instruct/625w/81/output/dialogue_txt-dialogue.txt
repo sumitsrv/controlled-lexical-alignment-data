@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great_ ! _just_ came _back_ from _a ski trip_ 
+B|3| Human 2: _that_ sounds exciting ! [ski] trips _can_ be _a lot of_ fun . which [ski] resort _did you go_ _to_ , _and_ what _did you_ enjoy _the_ _most_ 
+A|4| Human 1: _i_ slammed onto _an_ _ice wall _,_ but_ _i_ got better _and turning_ _after that_ haha 
+B|5| Human 2: that's quite _the_ adventure ! [ice] climbing [and turning] [back] [after that] sounds like quite _the_ workout . _was_ _it_ your first [ice wall ,] 
+A|6| Human 1: oh _cool_ ! do _you know any_ _french_ ? _i_ used [to] _take_ _french_ _in_ high school _but_ basically forgot [most] [of] [it] 
+B|7| Human 2: it's impressive [that] [you] _can_ apply [french] phrases [and] then [take] [a ski trip] with [ice wall] climbing mixed [in] ! it's [great] 
+A|8| Human 1: [did you go] anywhere else [in] _montreal_ ? 
+B|9| Human 2: no other [ski] trips yet [, but] [montreal] has so many [cool] places [to] explore . i'm still learning [french] though , [you know any] helpful 
+A|10| Human 1: oh [cool] ! i've _always wanted to_ attend [the] olympics _as_ [a] viewer [of] course _i_ _watch_ [a lot of] olympic _figure skating_ on youtube 
+B|11| Human 2: i'm glad [you] enjoyed [the] [ice wall] climbing ! if you've [always wanted to] [watch] [figure skating] , it's [an] exciting 
+A|12| Human 1: barely _i_ _don't_ think _i can_ , [in] conscience , call [it] [that] _i_ kind [of] _just_ pull _myself_ along [the] sides 
+B|13| Human 2: i'm [just] [a] language model [and] [don't] engage [in] activities [myself] . [but] that's absolutely right ! [as] for [figure skating] , 
+A|14| Human 1: are [you] good at _<redacted_term>_ ? 
+B|15| Human 2: i'm phi , [i can] help [you] with [the] [<redacted_term>] [of] [figure skating] if you're asking 
+A|16| Human 1: okay ! [it] [was] nice talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=a ski trip, Pattern=great, Pattern=back, Pattern=just
+	Constrained: Pattern=ski, Pattern=a
+Turn ID=3| B | Human 2 : that sounds exciting ! ski trips can be a lot of fun . which ski resort did you go to , and what did you enjoy the most
+	Free: Pattern=ski, Pattern=a lot of, Pattern=did you, Pattern=did you go, Pattern=and, Pattern=can, Pattern=most, Pattern=the, Pattern=to, Pattern=that
+	Constrained: Pattern=a, Pattern=did you, Pattern=of, Pattern=you
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=and turning, Pattern=, but, Pattern=an, Pattern=i, Pattern=ice wall ,, Pattern=after that
+	Constrained: Pattern=ice wall, Pattern=ice, Pattern=and, Pattern=that, Pattern=but
+Turn ID=5| B | Human 2 : that's quite the adventure ! ice climbing and turning back after that sounds like quite the workout . was it your first ice wall ,
+	Free: Pattern=and turning, Pattern=ice, Pattern=it, Pattern=back, Pattern=the, Pattern=ice wall ,, Pattern=after that, Pattern=was
+	Constrained: Pattern=ice, Pattern=and, Pattern=that, Pattern=ice wall
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=of, Pattern=cool, Pattern=you know any, Pattern=it, Pattern=in, Pattern=most, Pattern=take, Pattern=to, Pattern=but, Pattern=french, Pattern=i
+	Constrained: Pattern=you
+Turn ID=7| B | Human 2 : it's impressive that you can apply french phrases and then take a ski trip with ice wall climbing mixed in ! it's great
+	Free: Pattern=ice wall, Pattern=and, Pattern=can, Pattern=in, Pattern=french, Pattern=a ski trip, Pattern=take, Pattern=that, Pattern=you, Pattern=great
+	Constrained: Pattern=ski, Pattern=ice, Pattern=a
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=did you go, Pattern=in, Pattern=montreal
+	Constrained: Pattern=did you, Pattern=you
+Turn ID=9| B | Human 2 : no other ski trips yet , but montreal has so many cool places to explore . i'm still learning french though , you know any helpful
+	Free: Pattern=ski, Pattern=, but, Pattern=you know any, Pattern=french, Pattern=to, Pattern=cool, Pattern=montreal
+	Constrained: Pattern=but, Pattern=you
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=always wanted to, Pattern=as, Pattern=a, Pattern=cool, Pattern=figure skating, Pattern=i, Pattern=the, Pattern=watch, Pattern=a lot of, Pattern=of
+	Constrained: Pattern=a, Pattern=of, Pattern=to
+Turn ID=11| B | Human 2 : i'm glad you enjoyed the ice wall climbing ! if you've always wanted to watch figure skating , it's an exciting
+	Free: Pattern=always wanted to, Pattern=ice wall, Pattern=you, Pattern=an, Pattern=figure skating, Pattern=the, Pattern=watch
+	Constrained: Pattern=to, Pattern=ice
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=of, Pattern=just, Pattern=it, Pattern=in, Pattern=i, Pattern=the, Pattern=don't, Pattern=that, Pattern=myself, Pattern=i can
+	Constrained: Pattern=i, Pattern=can
+Turn ID=13| B | Human 2 : i'm just a language model and don't engage in activities myself . but that's absolutely right ! as for figure skating ,
+	Free: Pattern=a, Pattern=and, Pattern=figure skating, Pattern=in, Pattern=don't, Pattern=myself, Pattern=but, Pattern=as, Pattern=just
+	Constrained: 
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=<redacted_term>, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm phi , i can help you with the <redacted_term> of figure skating if you're asking
+	Free: Pattern=of, Pattern=you, Pattern=the, Pattern=i can, Pattern=<redacted_term>, Pattern=figure skating
+	Constrained: Pattern=i, Pattern=can
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=to, Pattern=it, Pattern=was, Pattern=you
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ doing today ? 
+A|2| Human 1: _i_ heard _they are giving out some_ _goodies_ in _microkitchen_ . 
+B|3| Human 2: ah , [microkitchen] ! yes , [they are giving out some] great snacks _and_ drinks _there ._ 😋 _can_ [i] help _you_ 
+A|4| Human 1: [i] guess _its_ _a_ jacket ! very much needed _that_ in _the cold_ 🙂 
+B|5| Human 2: ah _, i_ see ! 😊 yes , jackets [are] always [a] _good_ idea , especially during [the cold] winter months . but microk 
+A|6| Human 1: _sure_ hate _it_ ! limits our ability _to_ go [out] even _for_ [a] walk _! _its_ good that_ _we_ don't _get_ _to_ suffer extreme _cold weather_ ! 
+B|7| Human 2: 😊 [its good that] _you_ [are] taking [the [cold] weather] seriously ! yes , [its] important [to] stay warm _and_ cozy during this _time_ _of_ 
+A|8| Human 1: oh nice ! _where did you_ live before ? 
+B|9| Human 2: i'm glad [you] [are] taking [the [cold] weather] seriously [! its] important [to] stay warm _and_ cozy during this _time_ _of_ year . [where did you] 
+A|10| Human 1: _new york_ ! nice ! best place [to] live 🙂 .. _right_ , except _for [the_ cold] ! 
+B|11| Human 2: 😂 [right] ! [new york] _can_ [get] [cold] , but [its good] [to] have [some] warm layers [for the] winter season ! <|im_ 
+A|12| Human 1: anyways [, i] guess _we_ should better hurry up [to] _get the_ _goodies_ . [i] remember last [time] [they] ran [out] [of] _it_ . 
+B|13| Human 2: 😅 [goodies] ? what do [you] mean ? 
+A|14| Human 1: [the] one in our floor . [i] will [get] by your desk _and we can_ walk [there .] 
+B|15| Human 2: [sure] , [that] sounds [good] ! let me [get the] items [and we can] head [out] together . [where] is [it] located ? <|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you doing today ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i heard they are giving out some goodies in microkitchen .
+	Free: Pattern=they are giving out some, Pattern=microkitchen, Pattern=i, Pattern=goodies
+	Constrained: Pattern=are, Pattern=they, Pattern=out, Pattern=some
+Turn ID=3| B | Human 2 : ah , microkitchen ! yes , they are giving out some great snacks and drinks there . 😋 can i help you
+	Free: Pattern=microkitchen, Pattern=and, Pattern=can, Pattern=there ., Pattern=i, Pattern=you, Pattern=they are giving out some
+	Constrained: Pattern=are, Pattern=they, Pattern=out, Pattern=some
+Turn ID=4| A | Human 1 : i guess its a jacket ! very much needed that in the cold 🙂
+	Free: Pattern=its, Pattern=a, Pattern=i, Pattern=the cold, Pattern=that
+	Constrained: Pattern=the, Pattern=cold
+Turn ID=5| B | Human 2 : ah , i see ! 😊 yes , jackets are always a good idea , especially during the cold winter months . but microk
+	Free: Pattern=good, Pattern=a, Pattern=are, Pattern=, i, Pattern=the cold
+	Constrained: Pattern=i, Pattern=the, Pattern=cold
+Turn ID=6| A | Human 1 : sure hate it ! limits our ability to go out even for a walk ! its good that we don't get to suffer extreme cold weather !
+	Free: Pattern=out, Pattern=a, Pattern=for, Pattern=it, Pattern=we, Pattern=sure, Pattern=its good that, Pattern=to, Pattern=get, Pattern=! its, Pattern=cold weather
+	Constrained: Pattern=good, Pattern=its, Pattern=its good, Pattern=cold, Pattern=that
+Turn ID=7| B | Human 2 : 😊 its good that you are taking the cold weather seriously ! yes , its important to stay warm and cozy during this time of
+	Free: Pattern=of, Pattern=you, Pattern=and, Pattern=are, Pattern=its good that, Pattern=the cold, Pattern=to, Pattern=cold weather, Pattern=its, Pattern=time
+	Constrained: Pattern=good, Pattern=its, Pattern=its good, Pattern=cold, Pattern=the, Pattern=that
+Turn ID=8| A | Human 1 : oh nice ! where did you live before ?
+	Free: Pattern=where did you
+	Constrained: Pattern=you, Pattern=where
+Turn ID=9| B | Human 2 : i'm glad you are taking the cold weather seriously ! its important to stay warm and cozy during this time of year . where did you
+	Free: Pattern=time, Pattern=of, Pattern=you, Pattern=and, Pattern=are, Pattern=where did you, Pattern=the cold, Pattern=to, Pattern=! its, Pattern=cold weather
+	Constrained: Pattern=its, Pattern=you, Pattern=cold, Pattern=where, Pattern=the
+Turn ID=10| A | Human 1 : new york ! nice ! best place to live 🙂 .. right , except for the cold !
+	Free: Pattern=right, Pattern=for the, Pattern=new york, Pattern=the cold, Pattern=to
+	Constrained: Pattern=the, Pattern=cold, Pattern=for
+Turn ID=11| B | Human 2 : 😂 right ! new york can get cold , but its good to have some warm layers for the winter season ! <|im_
+	Free: Pattern=for the, Pattern=new york, Pattern=can, Pattern=cold, Pattern=some, Pattern=to, Pattern=get, Pattern=right, Pattern=its good
+	Constrained: Pattern=for, Pattern=good, Pattern=its, Pattern=the
+Turn ID=12| A | Human 1 : anyways , i guess we should better hurry up to get the goodies . i remember last time they ran out of it .
+	Free: Pattern=of, Pattern=out, Pattern=they, Pattern=it, Pattern=i, Pattern=we, Pattern=, i, Pattern=to, Pattern=get the, Pattern=goodies, Pattern=time
+	Constrained: Pattern=get, Pattern=i, Pattern=the
+Turn ID=13| B | Human 2 : 😅 goodies ? what do you mean ?
+	Free: Pattern=you, Pattern=goodies
+	Constrained: 
+Turn ID=14| A | Human 1 : the one in our floor . i will get by your desk and we can walk there .
+	Free: Pattern=and we can, Pattern=there ., Pattern=i, Pattern=the, Pattern=get
+	Constrained: Pattern=and, Pattern=we, Pattern=can
+Turn ID=15| B | Human 2 : sure , that sounds good ! let me get the items and we can head out together . where is it located ? <|im_end|
+	Free: Pattern=good, Pattern=and we can, Pattern=out, Pattern=it, Pattern=where, Pattern=sure, Pattern=that, Pattern=get the
+	Constrained: Pattern=and, Pattern=can, Pattern=we, Pattern=the, Pattern=get

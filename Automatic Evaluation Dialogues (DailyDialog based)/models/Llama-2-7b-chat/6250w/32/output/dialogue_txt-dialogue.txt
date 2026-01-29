@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _nice_ to meet _you_ ! _is_ _this_ your _first time_ _doing_ _something_ _like_ _this_ ? 
+B|3| Human 2: yes , [this] [is] my [first time] . how _can_ [you] help me ? 
+A|4| Human 1: i _have been _with_ the_ company _for over 3 years_ . stick _with the same team_ _what about_ [you] ? 
+B|5| Human 2: [nice] ! [what] [team] _do you_ work [with] ? 
+A|6| Human 1: _that sounds like a perfect plan !_ 
+B|7| Human 2: [what about] [the] [team] [you] [have been with] [for over 3 years] ? [that sounds like a perfect plan !] 
+A|8| Human 1: _let's_ try _something_ different . _what about <redacted_term>_ ? [do you] always prefer _lunch sync over_ regular meeting syncs ? 
+B|9| Human 2: that's [something] [you] [have been] [doing] [for over 3 years] [with the same team] ? [what about <redacted_term>] l 
+A|10| Human 1: we [can] _check the menu then decide_ :) 
+B|11| Human 2: [that sounds like a] [plan !] [let's] [check the menu then decide] [<redacted_term>] [can] [you] [lunch sync over] 
+A|12| Human 1: sure . see [you] [then] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=you, Pattern=doing, Pattern=nice, Pattern=first time, Pattern=is, Pattern=like, Pattern=this, Pattern=something
+	Constrained: 
+Turn ID=3| B | Human 2 : yes , this is my first time . how can you help me ?
+	Free: Pattern=you, Pattern=first time, Pattern=can, Pattern=is, Pattern=this
+	Constrained: 
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=have been with, Pattern=you, Pattern=with the, Pattern=with the same team, Pattern=what about, Pattern=for over 3 years
+	Constrained: Pattern=with the, Pattern=what, Pattern=have been, Pattern=the, Pattern=team, Pattern=with
+Turn ID=5| B | Human 2 : nice ! what team do you work with ?
+	Free: Pattern=what, Pattern=nice, Pattern=do you, Pattern=team, Pattern=with
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=that sounds like a perfect plan !
+	Constrained: Pattern=that sounds like a, Pattern=plan !, Pattern=like
+Turn ID=7| B | Human 2 : what about the team you have been with for over 3 years ? that sounds like a perfect plan !
+	Free: Pattern=have been with, Pattern=you, Pattern=that sounds like a perfect plan !, Pattern=for over 3 years, Pattern=team, Pattern=what about, Pattern=the
+	Constrained: Pattern=what, Pattern=have been, Pattern=that sounds like a, Pattern=plan !, Pattern=like, Pattern=with
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=what about <redacted_term>, Pattern=do you, Pattern=lunch sync over, Pattern=let's, Pattern=something
+	Constrained: Pattern=<redacted_term>, Pattern=you, Pattern=what about, Pattern=what
+Turn ID=9| B | Human 2 : that's something you have been doing for over 3 years with the same team ? what about <redacted_term> l
+	Free: Pattern=with the same team, Pattern=doing, Pattern=have been, Pattern=for over 3 years, Pattern=something, Pattern=you, Pattern=what about <redacted_term>
+	Constrained: Pattern=with the, Pattern=what, Pattern=<redacted_term>, Pattern=team, Pattern=with, Pattern=what about, Pattern=the
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=check the menu then decide, Pattern=can
+	Constrained: Pattern=the, Pattern=then
+Turn ID=11| B | Human 2 : that sounds like a plan ! let's check the menu then decide <redacted_term> can you lunch sync over
+	Free: Pattern=you, Pattern=lunch sync over, Pattern=that sounds like a, Pattern=plan !, Pattern=check the menu then decide, Pattern=let's, Pattern=<redacted_term>, Pattern=can
+	Constrained: Pattern=like, Pattern=then, Pattern=the
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=you, Pattern=then
+	Constrained: 

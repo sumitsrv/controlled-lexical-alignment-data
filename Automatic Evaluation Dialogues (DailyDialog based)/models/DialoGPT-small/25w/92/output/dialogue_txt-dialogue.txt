@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: it's good ! just went to _the_ park to enjoy _the sun_ . you ? 
+B|3| Human 2: oh hey ! how's _it_ goin ? 
+A|4| Human 1: haha , _beach_ season _is_ coming ! you need to look tan ! _what_ did you do indoors all [day] ? 
+B|5| Human 2: how's [beach] ? how's [the sun] _and_ [sun] ? 
+A|6| Human 1: hahahaha , that's pretty funny . ever thought _of_ bringing [your] _work_ things to _the beach_ ?? 
+B|7| Human 2: well _i_ was _on [the_ beach] doing _that_ 
+A|8| Human 1: hmm [i] _see_ . [it] sounds like you _work near the water_ already , no ? are you some _kind of_ fish researcher ? 
+B|9| Human 2: [i] [work near the water] _at_ dawn _on_ a rainy [day] , _this is_ [the] first time we [see] _this_ [kind of] thing . 
+A|10| Human 1: woah ! [this _is] very interesting_ ! [i] have honestly never heard [of] such [kind of] [work] . [is] [it] _dangerous_ [at] all ? 
+B|11| Human 2: [this] [work] [is very interesting] . 
+A|12| Human 1: hmmm , yes [i] have heard [that] . apparently most mountain climbers fall not [on the] most _dangerous_ routes , but [on the] easier routes , when their guard [is] down ! sounds like [the] same psychological phenomenon . 
+B|13| Human 2: [this is] [dangerous] . 
+A|14| Human 1: i'm pretty amateur ! [i] like to _climb_ [at] indoor climbing gyms [and] have never gone outside [on] [dangerous] routes actually . ever tried [it] yourself ? 
+B|15| Human 2: [what] [kind of] [climb] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=the sun, Pattern=the
+	Constrained: Pattern=sun, Pattern=the
+Turn ID=3| B | Human 2 : oh hey ! how's it goin ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=day, Pattern=beach, Pattern=is, Pattern=what
+	Constrained: 
+Turn ID=5| B | Human 2 : how's beach ? how's the sun and sun ?
+	Free: Pattern=the sun, Pattern=sun, Pattern=beach, Pattern=and
+	Constrained: Pattern=sun, Pattern=the
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=the beach, Pattern=your, Pattern=work, Pattern=of
+	Constrained: Pattern=beach, Pattern=the
+Turn ID=7| B | Human 2 : well i was on the beach doing that
+	Free: Pattern=the beach, Pattern=on the, Pattern=that, Pattern=i
+	Constrained: Pattern=beach, Pattern=on, Pattern=the
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=kind of, Pattern=it, Pattern=i, Pattern=see, Pattern=work near the water
+	Constrained: Pattern=work, Pattern=of, Pattern=the
+Turn ID=9| B | Human 2 : i work near the water at dawn on a rainy day , this is the first time we see this kind of thing .
+	Free: Pattern=kind of, Pattern=this is, Pattern=at, Pattern=see, Pattern=day, Pattern=i, Pattern=on, Pattern=the, Pattern=this, Pattern=work near the water
+	Constrained: Pattern=of, Pattern=work, Pattern=is, Pattern=the, Pattern=this
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=of, Pattern=kind of, Pattern=this is, Pattern=it, Pattern=is very interesting, Pattern=work, Pattern=dangerous, Pattern=at, Pattern=is, Pattern=i
+	Constrained: Pattern=this, Pattern=is, Pattern=of
+Turn ID=11| B | Human 2 : this work is very interesting .
+	Free: Pattern=is very interesting, Pattern=this, Pattern=work
+	Constrained: Pattern=is
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=dangerous, Pattern=that, Pattern=is, Pattern=i, Pattern=on the, Pattern=the
+	Constrained: Pattern=on, Pattern=the
+Turn ID=13| B | Human 2 : this is dangerous .
+	Free: Pattern=this is, Pattern=dangerous
+	Constrained: Pattern=this, Pattern=is
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=climb, Pattern=i, Pattern=on, Pattern=it, Pattern=and, Pattern=dangerous, Pattern=at
+	Constrained: 
+Turn ID=15| B | Human 2 : what kind of climb ?
+	Free: Pattern=kind of, Pattern=what, Pattern=climb
+	Constrained: Pattern=of

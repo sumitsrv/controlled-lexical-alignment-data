@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's_ _good !_ _i_ spent most _of_ it watching _horse racing_ . _how_ _about_ _yourself_ ? 
+B|3| Human 2: _oh_ , [good !] 🐴 horses are so majestic and beautiful . did _you_ learn anything _new_ [about] them today ? <| 
+A|4| Human 1: _i_ _actually_ like _to_ put down _some_ money , _but_ _i_ wouldn't call it my _favorite_ part , since _i_ usually lose it ... haha . catching up _with friends_ is _great_ _! how long had_ it [been ?] 
+B|5| Human 2: aha _, i_ see ! 😅 [it's] [great] _that_ you're enjoying [yourself] [with friends] [! how long had] _you_ [been] 
+A|6| Human 1: _i'm thinking of going deep sea fishing . ever tried that before ?_ 
+B|7| Human 2: [i'm] [going deep sea fishing] _soon_ , [actually] ! 🏞️ [how] are _you_ enjoying [horse racing] ? _have_ _you_ [been] [to] 
+A|8| Human 1: just once ! [i] got _super_ [sea] sick .. haha [have] _any_ _fun_ weekend plans [yourself] ? 
+B|9| Human 2: [i'm thinking of going deep sea fishing . ever tried that before ?] 
+A|10| Human 1: [oh] _very_ cool . [i] hear _its_ nice _over there_ . _do you_ go often ? 
+B|11| Human 2: yeah , [its] [super] [fun] [but] [you] gotta be prepared for [any] weather condition 🌊 what's your [favorite] [fishing] spot ? < 
+A|12| Human 1: [new] york is _the_ top [of] my list because my family lives _there_ ! as far as _the_ city itself though ... [i] _think_ _i'd_ _prefer_ someplace outside _of the_ us , like _tokyo_ . _what about you_ ? 
+B|13| Human 2: [tokyo] 🌟 [i'd] love [to] visit [there] someday ! [what] [do you] [think] [about] [the] food [over there] ? [do you] [prefer] 
+A|14| Human 1: [oh] _i've_ never [been] ! it is such an iconic place [, i] [have] [to] make [the] time [to] get [there] [soon] . 
+B|15| Human 2: [i've] [tried] [some] [of the] local cuisine , [its] [very] rich and diverse ! 🍜 [what about you] , [have] [you] [tried] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=of, Pattern=how, Pattern=about, Pattern=horse racing, Pattern=yourself, Pattern=it's, Pattern=good !, Pattern=i
+	Constrained: 
+Turn ID=3| B | Human 2 : oh , good ! 🐴 horses are so majestic and beautiful . did you learn anything new about them today ? <|
+	Free: Pattern=new, Pattern=you, Pattern=oh, Pattern=about, Pattern=good !
+	Constrained: 
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=with friends, Pattern=great, Pattern=actually, Pattern=favorite, Pattern=to, Pattern=but, Pattern=been ?, Pattern=some, Pattern=! how long had, Pattern=i
+	Constrained: Pattern=been, Pattern=how
+Turn ID=5| B | Human 2 : aha , i see ! 😅 it's great that you're enjoying yourself with friends ! how long had you been
+	Free: Pattern=with friends, Pattern=! how long had, Pattern=, i, Pattern=been, Pattern=yourself, Pattern=you, Pattern=great, Pattern=that, Pattern=it's
+	Constrained: Pattern=i, Pattern=how
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=i'm thinking of going deep sea fishing . ever tried that before ?
+	Constrained: Pattern=of, Pattern=fishing, Pattern=going deep sea fishing, Pattern=tried, Pattern=that, Pattern=sea, Pattern=i'm
+Turn ID=7| B | Human 2 : i'm going deep sea fishing soon , actually ! 🏞️ how are you enjoying horse racing ? have you been to
+	Free: Pattern=you, Pattern=have, Pattern=actually, Pattern=how, Pattern=going deep sea fishing, Pattern=horse racing, Pattern=to, Pattern=been, Pattern=i'm, Pattern=soon
+	Constrained: Pattern=sea, Pattern=fishing
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=fun, Pattern=have, Pattern=any, Pattern=sea, Pattern=i, Pattern=yourself, Pattern=super
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=i'm thinking of going deep sea fishing . ever tried that before ?
+	Constrained: Pattern=of, Pattern=fishing, Pattern=going deep sea fishing, Pattern=tried, Pattern=that, Pattern=sea, Pattern=i'm
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=its, Pattern=over there, Pattern=oh, Pattern=do you, Pattern=very, Pattern=i
+	Constrained: Pattern=there, Pattern=you
+Turn ID=11| B | Human 2 : yeah , its super fun but you gotta be prepared for any weather condition 🌊 what's your favorite fishing spot ? <
+	Free: Pattern=you, Pattern=any, Pattern=fishing, Pattern=favorite, Pattern=its, Pattern=fun, Pattern=super, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=i'd, Pattern=there, Pattern=think, Pattern=tokyo, Pattern=the, Pattern=what about you, Pattern=of the, Pattern=of, Pattern=new, Pattern=prefer, Pattern=i
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=about, Pattern=the
+Turn ID=13| B | Human 2 : tokyo 🌟 i'd love to visit there someday ! what do you think about the food over there ? do you prefer
+	Free: Pattern=i'd, Pattern=do you, Pattern=over there, Pattern=about, Pattern=think, Pattern=prefer, Pattern=tokyo, Pattern=the, Pattern=to, Pattern=what, Pattern=there
+	Constrained: Pattern=there, Pattern=you
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=have, Pattern=there, Pattern=oh, Pattern=i've, Pattern=soon, Pattern=to, Pattern=been, Pattern=the, Pattern=, i
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : i've tried some of the local cuisine , its very rich and diverse ! 🍜 what about you , have you tried
+	Free: Pattern=its, Pattern=you, Pattern=have, Pattern=i've, Pattern=some, Pattern=very, Pattern=tried, Pattern=what about you, Pattern=of the
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=about, Pattern=the

@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how_ _was the_ trip last weekend ? 
+B|3| Human 2: i'm phi , an ai language model , so _i_ don't travel or _have_ personal experiences . but _i_ can help _you_ recall [the] 
+A|4| Human 1: nice , _what_ all _places_ _did you_ _cover_ ? 
+B|5| Human 2: _i_ apologize _for the_ confusion . i'm phi , _a_ microsoft language model , _and_ _i_ don't [cover] [places] . however _, i_ can 
+A|6| Human 1: [i] am actually attending _cooking_ _classes_ over [the] weekends . 
+B|7| Human 2: [how] interesting ! [what] [classes] [did you] attend _and_ [what] [was the] [cooking] technique taught ? <|end|><|assistant|> apologies _for the_ misunderstanding . as phi , 
+A|8| Human 1: true ! they started _with_ _some basic zucchini_ based _dish_ . we _may try cooking_ _some_ italian _dish_ _later this week_ . 
+B|9| Human 2: [how] about [some basic zucchini] [dish] [you] [may try cooking] [later this week] ? here are [the] recipes [with] techniques: 
+A|10| Human 1: nice ! [i] hope to volunteer to cook _for the team_ _in_ our next _team offsite_ :) 
+B|11| Human 2: [i] understand you're interested [in] [cooking] [zucchini] dishes [for the [team] offsite] . here are [some basic] recipes [with] techniques [for] 
+A|12| Human 1: sure [, i] _will_ love to invite [you] [and] _your family_ [for] [a] _meal_ over [the] holidays . [have] [you] guys made any other plans ? 
+B|13| Human 2: absolutely , [cooking] [with] [zucchini] [for the [team] offsite] [will] be [a] delightful [and] inviting [meal] ! [have] [your family] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=was the, Pattern=how
+	Constrained: Pattern=the
+Turn ID=3| B | Human 2 : i'm phi , an ai language model , so i don't travel or have personal experiences . but i can help you recall the
+	Free: Pattern=i, Pattern=the, Pattern=have, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=did you, Pattern=cover, Pattern=what, Pattern=places
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i apologize for the confusion . i'm phi , a microsoft language model , and i don't cover places . however , i can
+	Free: Pattern=for the, Pattern=places, Pattern=a, Pattern=cover, Pattern=and, Pattern=i, Pattern=, i
+	Constrained: Pattern=i, Pattern=the, Pattern=for
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=i, Pattern=cooking, Pattern=classes, Pattern=the
+	Constrained: 
+Turn ID=7| B | Human 2 : how interesting ! what classes did you attend and what was the cooking technique taught ? <|end|><|assistant|> apologies for the misunderstanding . as phi ,
+	Free: Pattern=what, Pattern=how, Pattern=and, Pattern=cooking, Pattern=was the, Pattern=classes, Pattern=did you, Pattern=for the
+	Constrained: Pattern=the, Pattern=you, Pattern=for
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=may try cooking, Pattern=with, Pattern=some basic zucchini, Pattern=dish, Pattern=some, Pattern=later this week
+	Constrained: Pattern=cooking, Pattern=some basic, Pattern=some, Pattern=zucchini
+Turn ID=9| B | Human 2 : how about some basic zucchini dish you may try cooking later this week ? here are the recipes with techniques:
+	Free: Pattern=you, Pattern=how, Pattern=may try cooking, Pattern=the, Pattern=with, Pattern=some basic zucchini, Pattern=dish, Pattern=later this week
+	Constrained: Pattern=cooking, Pattern=some basic, Pattern=some, Pattern=zucchini
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=for the team, Pattern=team offsite, Pattern=i, Pattern=in
+	Constrained: Pattern=the, Pattern=for the, Pattern=for
+Turn ID=11| B | Human 2 : i understand you're interested in cooking zucchini dishes for the team offsite . here are some basic recipes with techniques for
+	Free: Pattern=some basic, Pattern=for, Pattern=cooking, Pattern=in, Pattern=i, Pattern=for the team, Pattern=zucchini, Pattern=team offsite, Pattern=with
+	Constrained: Pattern=some, Pattern=the, Pattern=for the, Pattern=for
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=will, Pattern=for, Pattern=meal, Pattern=and, Pattern=your family, Pattern=the, Pattern=, i
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : absolutely , cooking with zucchini for the team offsite will be a delightful and inviting meal ! have your family
+	Free: Pattern=have, Pattern=a, Pattern=meal, Pattern=cooking, Pattern=will, Pattern=for the team, Pattern=zucchini, Pattern=team offsite, Pattern=with, Pattern=and, Pattern=your family
+	Constrained: Pattern=the, Pattern=for the, Pattern=for

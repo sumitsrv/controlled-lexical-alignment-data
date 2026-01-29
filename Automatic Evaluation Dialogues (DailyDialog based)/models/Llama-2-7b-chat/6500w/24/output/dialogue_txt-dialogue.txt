@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] _anything new_ ? 
+B|3| Human 2: not really , just responding to some messages 
+A|4| Human 1: _any_ _plans ?_ 
+B|5| Human 2: well , _i'm_ just an ai , _i_ don't have [plans] in the classical sense 
+A|6| Human 1: _that's_ _awesome_ ! [i] never _been_ ! 
+B|7| Human 2: anyways , how's [been] your day ? [anything new] _or_ exciting ? 
+A|8| Human 1: are _you_ a _food_ _person ,_ a _sightseeing_ _person_ [or] neither ? 
+B|9| Human 2: [that's] very broad ! [person ,] [sightseeing] 
+A|10| Human 1: [i'm] a _food_ [person] _i think_ . _any specific_ _foods_ you're _planning on trying_ ? 
+B|11| Human 2: [i'm] [planning on trying] that [new] [food] truck [you] told me about they have [awesome] tacos and burritos ! <|im 
+A|12| Human 1: yeah my _favorite_ is _taco fish_ 
+B|13| Human 2: [taco fish] [that's] cool [you] have [favorite] [food] truck [i think] [trying] [new] [foods] [person] [any specific] [plans ?] <|im_end 
+A|14| Human 1: no . only eat them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=anything new, Pattern=hey
+	Constrained: Pattern=new
+Turn ID=3| B | Human 2 : not really , just responding to some messages
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=plans ?, Pattern=any
+	Constrained: Pattern=plans
+Turn ID=5| B | Human 2 : well , i'm just an ai , i don't have plans in the classical sense
+	Free: Pattern=i, Pattern=i'm, Pattern=plans
+	Constrained: 
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=i, Pattern=that's, Pattern=been, Pattern=awesome
+	Constrained: 
+Turn ID=7| B | Human 2 : anyways , how's been your day ? anything new or exciting ?
+	Free: Pattern=anything new, Pattern=or, Pattern=been
+	Constrained: Pattern=new
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=you, Pattern=person ,, Pattern=sightseeing, Pattern=person, Pattern=food, Pattern=or
+	Constrained: Pattern=person
+Turn ID=9| B | Human 2 : that's very broad ! person , sightseeing
+	Free: Pattern=person ,, Pattern=that's, Pattern=sightseeing
+	Constrained: Pattern=person
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=planning on trying, Pattern=any specific, Pattern=person, Pattern=i'm, Pattern=food, Pattern=foods, Pattern=i think
+	Constrained: Pattern=any, Pattern=trying, Pattern=i
+Turn ID=11| B | Human 2 : i'm planning on trying that new food truck you told me about they have awesome tacos and burritos ! <|im
+	Free: Pattern=you, Pattern=i'm, Pattern=food, Pattern=awesome, Pattern=new, Pattern=planning on trying
+	Constrained: Pattern=trying
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=taco fish, Pattern=favorite
+	Constrained: 
+Turn ID=13| B | Human 2 : taco fish that's cool you have favorite food truck i think trying new foods person any specific plans ? <|im_end
+	Free: Pattern=new, Pattern=plans ?, Pattern=you, Pattern=any specific, Pattern=taco fish, Pattern=favorite, Pattern=person, Pattern=food, Pattern=that's, Pattern=trying, Pattern=foods, Pattern=i think
+	Constrained: Pattern=any, Pattern=i, Pattern=plans
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: 
+	Constrained: 

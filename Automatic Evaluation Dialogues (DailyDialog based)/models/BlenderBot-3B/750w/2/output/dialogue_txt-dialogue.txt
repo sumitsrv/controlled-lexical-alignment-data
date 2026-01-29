@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! what's up ??? 
+A|2| Human 1: _nothing much _,_ how_ _you_ doin ? 
+B|3| Human 2: [nothing much ,] _do you_ _like_ _to_ garden ? 
+A|4| Human 1: _oh_ wow ! sounds _like fun_ ! when _was_ _the last time you had seen this friend ?_ 
+B|5| Human 2: hello [friend] [, how] are [you] doing [this] evening ? [nothing much] [had] [fun] [last time] , _do you_ [like] [the] outdoors as [much] as _i_ 
+A|6| Human 1: ohh _okay_ . [i] _was_ _going to say_ if _it had _been_ a long time_ maybe it'd _be_ _awkward_ ... 
+B|7| Human 2: [oh] [okay] [was] [you] [going to say] [how] [long] [it had been] [the last time you had seen this friend ?] 
+A|8| Human 1: [oh] _really_ ? has _a lot_ _changed_ _in_ _your_ life _recently ?_ 
+B|9| Human 2: [it] [changed] [really] [recently] actually . it's [been a long time] since [i] [last] [seen this friend] of mine . we [had] [a lot] of [fun] together back [in] 
+A|10| Human 1: ahhh sounds exciting indeed ! my life _is_ pretty bland . [i] [like] routine _, _but_ sometimes_ [i] wish [i] [had] _more_ [time] _for_ _adventures_ ! 
+B|11| Human 2: [i] _do_ [like] [going] [adventures] [but sometimes] [it] [is] [awkward] [for] me [to] go [to] some places [, but] [i] am [more] confident [the last time] [was] [last] year 
+A|12| Human 1: hmmmm . [i] [really] want [to] try bull riding . [do _you] have_ _any_ interest [in] _that_ ? 
+B|13| Human 2: ahh [that] [is] [really] cool [for] [you] [but] [adventures] [sometimes] can [be] [time] consuming , [have] [you] considered taking [any] [recently ?] 
+A|14| Human 1: _sure_ ! _what_ _does_ _your_ saturday _look like_ ? 
+B|15| Human 2: [sure] , [it] [does] [look [like] fun] [but] [you have] [to] wear [your] bullsuit [for] [that] [i] would think . [what] [time] did [you] [last] see [your] [friend] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there ! what's up ???
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nothing much , how you doin ?
+	Free: Pattern=nothing much ,, Pattern=, how, Pattern=you
+	Constrained: Pattern=nothing much, Pattern=how, Pattern=much
+Turn ID=3| B | Human 2 : nothing much , do you like to garden ?
+	Free: Pattern=nothing much ,, Pattern=do you, Pattern=to, Pattern=like
+	Constrained: Pattern=do, Pattern=you, Pattern=much, Pattern=nothing much
+Turn ID=4| A | Human 1 : oh wow ! sounds like fun ! when was the last time you had seen this friend ?
+	Free: Pattern=the last time you had seen this friend ?, Pattern=like fun, Pattern=was, Pattern=oh
+	Constrained: Pattern=last time, Pattern=like, Pattern=the, Pattern=friend, Pattern=seen this friend, Pattern=this, Pattern=fun, Pattern=time, Pattern=you, Pattern=the last time, Pattern=last, Pattern=had
+Turn ID=5| B | Human 2 : hello friend , how are you doing this evening ? nothing much had fun last time , do you like the outdoors as much as i
+	Free: Pattern=fun, Pattern=you, Pattern=do you, Pattern=last time, Pattern=i, Pattern=like, Pattern=friend, Pattern=had, Pattern=much, Pattern=, how, Pattern=the, Pattern=nothing much, Pattern=this
+	Constrained: Pattern=time, Pattern=you, Pattern=do, Pattern=how, Pattern=last, Pattern=much
+Turn ID=6| A | Human 1 : ohh okay . i was going to say if it had been a long time maybe it'd be awkward ...
+	Free: Pattern=going to say, Pattern=been a long time, Pattern=i, Pattern=be, Pattern=was, Pattern=okay, Pattern=it had been, Pattern=awkward
+	Constrained: Pattern=time, Pattern=going, Pattern=long, Pattern=it, Pattern=had, Pattern=to
+Turn ID=7| B | Human 2 : oh okay was you going to say how long it had been the last time you had seen this friend ?
+	Free: Pattern=you, Pattern=the last time you had seen this friend ?, Pattern=long, Pattern=how, Pattern=oh, Pattern=going to say, Pattern=was, Pattern=it had been, Pattern=okay
+	Constrained: Pattern=time, Pattern=going, Pattern=it, Pattern=last time, Pattern=the, Pattern=friend, Pattern=to, Pattern=seen this friend, Pattern=this, Pattern=you, Pattern=the last time, Pattern=last, Pattern=had
+Turn ID=8| A | Human 1 : oh really ? has a lot changed in your life recently ?
+	Free: Pattern=recently ?, Pattern=oh, Pattern=in, Pattern=your, Pattern=really, Pattern=changed, Pattern=a lot
+	Constrained: Pattern=recently
+Turn ID=9| B | Human 2 : it changed really recently actually . it's been a long time since i last seen this friend of mine . we had a lot of fun together back in
+	Free: Pattern=fun, Pattern=it, Pattern=i, Pattern=really, Pattern=changed, Pattern=a lot, Pattern=seen this friend, Pattern=recently, Pattern=been a long time, Pattern=in, Pattern=last, Pattern=had
+	Constrained: Pattern=this, Pattern=friend, Pattern=long, Pattern=time
+Turn ID=10| A | Human 1 : ahhh sounds exciting indeed ! my life is pretty bland . i like routine , but sometimes i wish i had more time for adventures !
+	Free: Pattern=time, Pattern=more, Pattern=, but, Pattern=but sometimes, Pattern=for, Pattern=like, Pattern=had, Pattern=adventures, Pattern=is, Pattern=i
+	Constrained: Pattern=but, Pattern=sometimes
+Turn ID=11| B | Human 2 : i do like going adventures but sometimes it is awkward for me to go to some places , but i am more confident the last time was last year
+	Free: Pattern=more, Pattern=going, Pattern=but sometimes, Pattern=do, Pattern=for, Pattern=it, Pattern=like, Pattern=last, Pattern=adventures, Pattern=to, Pattern=was, Pattern=awkward, Pattern=the last time, Pattern=, but, Pattern=is, Pattern=i
+	Constrained: Pattern=time, Pattern=last time, Pattern=last, Pattern=the, Pattern=but, Pattern=sometimes
+Turn ID=12| A | Human 1 : hmmmm . i really want to try bull riding . do you have any interest in that ?
+	Free: Pattern=any, Pattern=do you, Pattern=you have, Pattern=in, Pattern=i, Pattern=really, Pattern=to, Pattern=that
+	Constrained: Pattern=have, Pattern=you, Pattern=do
+Turn ID=13| B | Human 2 : ahh that is really cool for you but adventures sometimes can be time consuming , have you considered taking any recently ?
+	Free: Pattern=time, Pattern=you, Pattern=is, Pattern=really, Pattern=be, Pattern=adventures, Pattern=sometimes, Pattern=recently ?, Pattern=have, Pattern=for, Pattern=any, Pattern=that, Pattern=but
+	Constrained: Pattern=recently
+Turn ID=14| A | Human 1 : sure ! what does your saturday look like ?
+	Free: Pattern=what, Pattern=does, Pattern=your, Pattern=look like, Pattern=sure
+	Constrained: Pattern=like
+Turn ID=15| B | Human 2 : sure , it does look like fun but you have to wear your bullsuit for that i would think . what time did you last see your friend
+	Free: Pattern=time, Pattern=you, Pattern=what, Pattern=for, Pattern=sure, Pattern=friend, Pattern=to, Pattern=it, Pattern=like fun, Pattern=does, Pattern=you have, Pattern=your, Pattern=i, Pattern=last, Pattern=look like, Pattern=that, Pattern=but
+	Constrained: Pattern=fun, Pattern=have, Pattern=you, Pattern=like

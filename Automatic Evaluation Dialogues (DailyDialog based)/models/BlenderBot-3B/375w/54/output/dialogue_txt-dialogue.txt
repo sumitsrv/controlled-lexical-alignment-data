@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , how is _it_ going ? 
+A|2| Human 1: pretty _great_ . _i_ _just_ _won_ _a_ _pingpong game_ . _what_ _about you_ ? 
+B|3| Human 2: [what] is [pingpong _game] ?_ 
+A|4| Human 1: no , _very_ rarely _. it's_ kind of amazing _that i won_ , _but_ _i'm still taking credit for_ [it] . 
+B|5| Human 2: [i'm still taking credit for] the [pingpong] [that i won] [but] [you] know [it's] [just] one [game] ! [what] else [about you] today ? 
+A|6| Human 1: haha thank [you] , [i] guess [i'm] [just] _a_ natural . what's _your favourite [game_ ?] 
+B|7| Human 2: [i'm] [very] well [. it's] [just] [that] [you] said [your favourite game] was [pingpong] [but] there's also tabletennis _and_ [a] few 
+A|8| Human 1: what's racquetball _like_ ? from context clues , _i'm guessing_ [that] _it involves hitting a ball _with a_ racquet_ 
+B|9| Human 2: [i'm] not [that] [great] [with] [it] [but] [it's] [very] _fun_ _to_ play . [it involves hitting a ball with a] paddle _and_ using [your] racqu 
+A|10| Human 1: wow ! [a] _cage match_ ! does [it] _get_ _physical_ ? 
+B|11| Human 2: [i'm guessing] that's [a] [game] [you] play . [you] [get] the [ball] in the net [with a racquet] [like] [a] _tennis_ racket 
+A|12| Human 1: [that] _sounds_ [fun] . _i think_ of [tennis] itself as _being_ _really_ athletic [and] tiring , so [i] don't _think_ [it's] [a] sport [for] me , though ! 
+B|13| Human 2: [it] is [physical] [and] [fun] [but] [i think] [cage match] [sounds] [like] [it] would [get] [really] violent [for] [being] played [just] [with [a] ball] 
+A|14| Human 1: [what] [a] good idea , i'd love [to] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty great . i just won a pingpong game . what about you ?
+	Free: Pattern=won, Pattern=great, Pattern=just, Pattern=what, Pattern=a, Pattern=about you, Pattern=i, Pattern=pingpong game
+	Constrained: Pattern=pingpong, Pattern=you, Pattern=game
+Turn ID=3| B | Human 2 : what is pingpong game ?
+	Free: Pattern=pingpong game, Pattern=game ?, Pattern=what
+	Constrained: Pattern=pingpong, Pattern=game
+Turn ID=4| A | Human 1 : no , very rarely . it's kind of amazing that i won , but i'm still taking credit for it .
+	Free: Pattern=that i won, Pattern=. it's, Pattern=it, Pattern=very, Pattern=i'm still taking credit for, Pattern=but
+	Constrained: Pattern=won, Pattern=for, Pattern=i'm, Pattern=i, Pattern=that, Pattern=it's
+Turn ID=5| B | Human 2 : i'm still taking credit for the pingpong that i won but you know it's just one game ! what else about you today ?
+	Free: Pattern=you, Pattern=just, Pattern=that i won, Pattern=what, Pattern=game, Pattern=about you, Pattern=pingpong, Pattern=i'm still taking credit for, Pattern=it's, Pattern=but
+	Constrained: Pattern=won, Pattern=you, Pattern=for, Pattern=i'm, Pattern=i, Pattern=that
+Turn ID=6| A | Human 1 : haha thank you , i guess i'm just a natural . what's your favourite game ?
+	Free: Pattern=you, Pattern=just, Pattern=a, Pattern=your favourite game, Pattern=i'm, Pattern=i, Pattern=game ?
+	Constrained: Pattern=your, Pattern=game
+Turn ID=7| B | Human 2 : i'm very well . it's just that you said your favourite game was pingpong but there's also tabletennis and a few
+	Free: Pattern=you, Pattern=just, Pattern=. it's, Pattern=a, Pattern=your favourite game, Pattern=and, Pattern=i'm, Pattern=very, Pattern=pingpong, Pattern=that, Pattern=but
+	Constrained: Pattern=your, Pattern=it's, Pattern=game
+Turn ID=8| A | Human 1 : what's racquetball like ? from context clues , i'm guessing that it involves hitting a ball with a racquet
+	Free: Pattern=it involves hitting a ball with a, Pattern=like, Pattern=with a racquet, Pattern=that, Pattern=i'm guessing
+	Constrained: Pattern=it, Pattern=a ball, Pattern=i'm, Pattern=ball, Pattern=with, Pattern=with a, Pattern=a
+Turn ID=9| B | Human 2 : i'm not that great with it but it's very fun to play . it involves hitting a ball with a paddle and using your racqu
+	Free: Pattern=fun, Pattern=great, Pattern=it involves hitting a ball with a, Pattern=i'm, Pattern=to, Pattern=it, Pattern=and, Pattern=very, Pattern=your, Pattern=with, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=it, Pattern=a ball, Pattern=ball, Pattern=with, Pattern=with a, Pattern=a
+Turn ID=10| A | Human 1 : wow ! a cage match ! does it get physical ?
+	Free: Pattern=a, Pattern=it, Pattern=cage match, Pattern=physical, Pattern=get
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm guessing that's a game you play . you get the ball in the net with a racquet like a tennis racket
+	Free: Pattern=you, Pattern=a, Pattern=game, Pattern=like, Pattern=with a racquet, Pattern=get, Pattern=i'm guessing, Pattern=ball, Pattern=tennis
+	Constrained: Pattern=with a, Pattern=a, Pattern=with, Pattern=i'm
+Turn ID=12| A | Human 1 : that sounds fun . i think of tennis itself as being really athletic and tiring , so i don't think it's a sport for me , though !
+	Free: Pattern=fun, Pattern=a, Pattern=for, Pattern=and, Pattern=being, Pattern=think, Pattern=i, Pattern=tennis, Pattern=i think, Pattern=really, Pattern=sounds, Pattern=that, Pattern=it's
+	Constrained: Pattern=i, Pattern=think
+Turn ID=13| B | Human 2 : it is physical and fun but i think cage match sounds like it would get really violent for being played just with a ball
+	Free: Pattern=fun, Pattern=just, Pattern=with a, Pattern=for, Pattern=cage match, Pattern=physical, Pattern=get, Pattern=but, Pattern=i think, Pattern=it, Pattern=and, Pattern=being, Pattern=a ball, Pattern=really, Pattern=sounds, Pattern=like
+	Constrained: Pattern=a, Pattern=think, Pattern=i, Pattern=ball, Pattern=with
+Turn ID=14| A | Human 1 : what a good idea , i'd love to !
+	Free: Pattern=to, Pattern=what, Pattern=a
+	Constrained: 

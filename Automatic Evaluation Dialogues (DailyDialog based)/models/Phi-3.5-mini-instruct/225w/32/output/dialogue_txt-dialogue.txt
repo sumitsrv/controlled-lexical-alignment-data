@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: nice _to_ meet _you_ ! is _this_ _your_ _first time_ doing something like _this_ ? 
+B|3| Human 2: hello ! no , [this] isn't my [first time] communicating _with_ [you] . i'm phi , microsoft's ai language model , 
+A|4| Human 1: _i_ _have_ been [with] _the company_ _for_ _over_ 3 _years ._ stick [with] _the_ same _team_ what about [you] ? 
+B|5| Human 2: [i] appreciate [the] [time] you've spent [with] [your] [team] and [the company] [over] [the] [years .] [i] don't [have] _a_ physical presence or personal experience , 
+A|6| Human 1: that sounds like [a] perfect plan ! 
+B|7| Human 2: thank [you] [for] [your] kind words . though [i] don't [have] personal experiences , i'm here 24/7 [to] provide [the] assistance [you] 
+A|8| Human 1: _let's_ try something different . what about <redacted_term> ? do [you] always prefer _lunch sync_ [over] regular _meeting_ _syncs_ ? 
+B|9| Human 2: i'm phi , microsoft's language model , and [i] don't [have] preferences or [lunch sync] routines . however , if 
+A|10| Human 1: we can check _the menu_ then decide :) 
+B|11| Human 2: understood , phi . [let's] say [you] [have] [a] scenario where [the menu] [for] [a] [meeting] [lunch] [syncs] [with] [your] preferences [for] d 
+A|12| Human 1: sure . see [you] then ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=you, Pattern=first time, Pattern=your, Pattern=to, Pattern=this
+	Constrained: Pattern=time
+Turn ID=3| B | Human 2 : hello ! no , this isn't my first time communicating with you . i'm phi , microsoft's ai language model ,
+	Free: Pattern=first time, Pattern=this, Pattern=you, Pattern=with
+	Constrained: Pattern=time
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=you, Pattern=have, Pattern=years ., Pattern=for, Pattern=over, Pattern=i, Pattern=the, Pattern=the company, Pattern=team, Pattern=with
+	Constrained: Pattern=the
+Turn ID=5| B | Human 2 : i appreciate the time you've spent with your team and the company over the years . i don't have a physical presence or personal experience ,
+	Free: Pattern=time, Pattern=have, Pattern=years ., Pattern=a, Pattern=over, Pattern=the, Pattern=the company, Pattern=team, Pattern=with, Pattern=your, Pattern=i
+	Constrained: Pattern=the
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=a
+	Constrained: 
+Turn ID=7| B | Human 2 : thank you for your kind words . though i don't have personal experiences , i'm here 24/7 to provide the assistance you
+	Free: Pattern=you, Pattern=have, Pattern=for, Pattern=the, Pattern=to, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=you, Pattern=over, Pattern=lunch sync, Pattern=let's, Pattern=meeting, Pattern=syncs
+	Constrained: Pattern=lunch
+Turn ID=9| B | Human 2 : i'm phi , microsoft's language model , and i don't have preferences or lunch sync routines . however , if
+	Free: Pattern=lunch sync, Pattern=have, Pattern=i
+	Constrained: Pattern=lunch
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=the menu
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : understood , phi . let's say you have a scenario where the menu for a meeting lunch syncs with your preferences for d
+	Free: Pattern=you, Pattern=a, Pattern=for, Pattern=your, Pattern=lunch, Pattern=let's, Pattern=the menu, Pattern=with, Pattern=meeting, Pattern=syncs, Pattern=have
+	Constrained: Pattern=the
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=you
+	Constrained: 

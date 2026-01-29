@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! tell me something _about_ _the_ holiday season ? 
+A|2| Human 1: _are you talking about thanksgiving ?_ _i_ plan to _do_ plenty of shopping _here ._ _do _you_ have_ _any_ _plans_ ? 
+B|3| Human 2: [are you talking about thanksgiving ?] it's _not_ actually _a_ holiday [here .] _is_ there anything else _i can_ help [you] _with_ ? < 
+A|4| Human 1: _sounds great !_ _you need_ [not] wait _for_ [thanksgiving] _for_ pumpkin pie 🙂 
+B|5| Human 2: 🙂 [i] see , thanks [for] letting me know ! [are you] looking [for] [any] other information [about] _the_ holiday season ? <<|im 
+A|6| Human 1: true _! i think_ [thanksgiving] [is] _more_ [about] sharing . so [you] _may_ end up sharing [the] pie _with _the_ whole_ _family_ :p 
+B|7| Human 2: 🙂 [sounds] _like_ [you have] [thanksgiving] covered ! [do [you] need] [any] [more] help [with the] holiday season ? <<|im 
+A|8| Human 1: stuffing ! yes please _! i_ wonder what _would_ be [the] excitement levels _for christmas then_ :) 
+B|9| Human 2: 🎄 [sounds great [!] i think] [you have] [the whole] [christmas] covered [then] ! [would] [you] _like_ [any] [more] information [about] [the] holiday 
+A|10| Human 1: [like] everything _that_ has [a] _discount tag !_ .. _kidding_ [! i] normally [do] _some_ research _for the_ prices , _and_ mostly buy _clothes_ _and_ electronics . 
+B|11| Human 2: ah , [kidding] [about] [the] [discount tag !] [sounds] [like] [you have] [some] solid [plans] [for christmas then] ! [are] there [any] other things 
+A|12| Human 1: [i] bought [the] best suit ever [for] [a] price _that may scare you_ 🙂 
+B|13| Human 2: [and] [some] [more] [clothes] [for the] [family] [that may scare you] [more] 🙂 
+A|14| Human 1: hehe , sure [! [i] can] share [some] links [with] [you] later . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! tell me something about the holiday season ?
+	Free: Pattern=about, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : are you talking about thanksgiving ? i plan to do plenty of shopping here . do you have any plans ?
+	Free: Pattern=plans, Pattern=do, Pattern=any, Pattern=do you, Pattern=you have, Pattern=i, Pattern=here ., Pattern=are you talking about thanksgiving ?
+	Constrained: Pattern=you, Pattern=do, Pattern=are, Pattern=are you, Pattern=about, Pattern=thanksgiving
+Turn ID=3| B | Human 2 : are you talking about thanksgiving ? it's not actually a holiday here . is there anything else i can help you with ? <
+	Free: Pattern=you, Pattern=a, Pattern=is, Pattern=here ., Pattern=i can, Pattern=are you talking about thanksgiving ?, Pattern=with, Pattern=not
+	Constrained: Pattern=you, Pattern=are, Pattern=about, Pattern=thanksgiving, Pattern=are you, Pattern=i
+Turn ID=4| A | Human 1 : sounds great ! you need not wait for thanksgiving for pumpkin pie 🙂
+	Free: Pattern=for, Pattern=thanksgiving, Pattern=sounds great !, Pattern=not, Pattern=you need
+	Constrained: Pattern=sounds, Pattern=you
+Turn ID=5| B | Human 2 : 🙂 i see , thanks for letting me know ! are you looking for any other information about the holiday season ? <<|im
+	Free: Pattern=about, Pattern=the, Pattern=for, Pattern=any, Pattern=are you, Pattern=i
+	Constrained: Pattern=are, Pattern=you
+Turn ID=6| A | Human 1 : true ! i think thanksgiving is more about sharing . so you may end up sharing the pie with the whole family :p
+	Free: Pattern=more, Pattern=you, Pattern=with the, Pattern=! i think, Pattern=is, Pattern=the whole, Pattern=about, Pattern=thanksgiving, Pattern=family, Pattern=the, Pattern=may
+	Constrained: Pattern=! i, Pattern=i, Pattern=with, Pattern=the
+Turn ID=7| B | Human 2 : 🙂 sounds like you have thanksgiving covered ! do you need any more help with the holiday season ? <<|im
+	Free: Pattern=more, Pattern=with the, Pattern=any, Pattern=do you, Pattern=thanksgiving, Pattern=you have, Pattern=you need, Pattern=sounds, Pattern=like
+	Constrained: Pattern=do, Pattern=you, Pattern=with, Pattern=the
+Turn ID=8| A | Human 1 : stuffing ! yes please ! i wonder what would be the excitement levels for christmas then :)
+	Free: Pattern=for christmas then, Pattern=! i, Pattern=the, Pattern=would
+	Constrained: Pattern=for, Pattern=christmas, Pattern=i, Pattern=then
+Turn ID=9| B | Human 2 : 🎄 sounds great ! i think you have the whole christmas covered then ! would you like any more information about the holiday
+	Free: Pattern=more, Pattern=you, Pattern=then, Pattern=any, Pattern=about, Pattern=you have, Pattern=! i think, Pattern=sounds great !, Pattern=would, Pattern=the whole, Pattern=like, Pattern=christmas, Pattern=the
+	Constrained: Pattern=you, Pattern=! i, Pattern=i, Pattern=sounds, Pattern=the
+Turn ID=10| A | Human 1 : like everything that has a discount tag ! .. kidding ! i normally do some research for the prices , and mostly buy clothes and electronics .
+	Free: Pattern=kidding, Pattern=for the, Pattern=some, Pattern=discount tag !, Pattern=like, Pattern=clothes, Pattern=that, Pattern=do, Pattern=a, Pattern=and, Pattern=! i
+	Constrained: Pattern=the, Pattern=i, Pattern=for
+Turn ID=11| B | Human 2 : ah , kidding about the discount tag ! sounds like you have some solid plans for christmas then ! are there any other things
+	Free: Pattern=plans, Pattern=kidding, Pattern=any, Pattern=are, Pattern=about, Pattern=discount tag !, Pattern=the, Pattern=for christmas then, Pattern=some, Pattern=you have, Pattern=sounds, Pattern=like
+	Constrained: Pattern=for, Pattern=christmas, Pattern=you, Pattern=then
+Turn ID=12| A | Human 1 : i bought the best suit ever for a price that may scare you 🙂
+	Free: Pattern=a, Pattern=for, Pattern=that may scare you, Pattern=i, Pattern=the
+	Constrained: Pattern=that, Pattern=you, Pattern=may
+Turn ID=13| B | Human 2 : and some more clothes for the family that may scare you more 🙂
+	Free: Pattern=more, Pattern=for the, Pattern=and, Pattern=that may scare you, Pattern=family, Pattern=some, Pattern=clothes
+	Constrained: Pattern=you, Pattern=for, Pattern=that, Pattern=the, Pattern=may
+Turn ID=14| A | Human 1 : hehe , sure ! i can share some links with you later .
+	Free: Pattern=you, Pattern=! i, Pattern=some, Pattern=i can, Pattern=with
+	Constrained: Pattern=i

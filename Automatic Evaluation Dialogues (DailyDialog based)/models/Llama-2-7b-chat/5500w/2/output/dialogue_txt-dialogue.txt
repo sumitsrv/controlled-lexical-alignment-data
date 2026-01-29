@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! what's up ??? 
+A|2| Human 1: nothing much _, how_ _you_ _doin_ ? 
+B|3| Human 2: 😊 [doin] great [, how] can _i_ help [you] today ? 
+A|4| Human 1: _oh_ _wow_ ! sounds _like_ fun ! when _was_ _the_ _last_ _time_ _you had_ _seen_ this _friend_ ? 
+B|5| Human 2: [friend] [you] [last] [seen] [was] [like] 10 years ago . [time] flies ! [how] _do you_ keep _in_ touch ? <|im_end| 
+A|6| Human 1: _ohh okay ._ [i] [was] going to say if _it_ _had_ _been_ a _long time maybe_ _it'd_ be _awkward ..._ 
+B|7| Human 2: [ohh okay .] [it'd] [been] [long time maybe] [it] [was] [awkward ...] [how] _do you_ [like] [the] new snapchat update ? <| 
+A|8| Human 1: _oh really_ ? _has_ a _lot changed_ [in] _your_ _life_ _recently_ ? 
+B|9| Human 2: [oh really] [lot changed] [recently] [life] [has] [your] [friend] [been] active on snapchat lately ? <| 
+A|10| Human 1: ahhh sounds _exciting indeed_ ! my [life] is pretty bland . [i] [like] routine , but sometimes [i] _wish_ [i] _had more time for adventures_ ! 
+B|11| Human 2: [ohh] [wow] [wish] [you [had] more time for adventures] [exciting indeed] [lot changed] [recently] [life] [your] [friend] [been] active snapchat lately ah 
+A|12| Human 1: _hmmmm_ . [i] [really] _want_ to _try bull riding_ . [do you] have any _interest_ [in] _that_ ? 
+B|13| Human 2: [hmmmm] [want] [try bull riding] [interest] [that] ah [really] [exciting indeed] [lot changed] [recently] [life] [your] [friend] [been] active snapchat lately ah 
+A|14| Human 1: _sure_ ! _what_ _does_ [your] _saturday look like_ ? 
+B|15| Human 2: [saturday look like] ah [sure] [what] [your] [does] [indeed] [lot changed] [recently] [life] [your] [friend] [been] active snapchat lately ah<|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there ! what's up ???
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nothing much , how you doin ?
+	Free: Pattern=, how, Pattern=you, Pattern=doin
+	Constrained: Pattern=how
+Turn ID=3| B | Human 2 : 😊 doin great , how can i help you today ?
+	Free: Pattern=, how, Pattern=you, Pattern=doin, Pattern=i
+	Constrained: Pattern=how
+Turn ID=4| A | Human 1 : oh wow ! sounds like fun ! when was the last time you had seen this friend ?
+	Free: Pattern=time, Pattern=you had, Pattern=oh, Pattern=wow, Pattern=like, Pattern=last, Pattern=the, Pattern=friend, Pattern=was, Pattern=seen
+	Constrained: Pattern=had, Pattern=you
+Turn ID=5| B | Human 2 : friend you last seen was like 10 years ago . time flies ! how do you keep in touch ? <|im_end|
+	Free: Pattern=time, Pattern=you, Pattern=how, Pattern=do you, Pattern=in, Pattern=like, Pattern=last, Pattern=friend, Pattern=was, Pattern=seen
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : ohh okay . i was going to say if it had been a long time maybe it'd be awkward ...
+	Free: Pattern=awkward ..., Pattern=it, Pattern=i, Pattern=long time maybe, Pattern=it'd, Pattern=ohh okay ., Pattern=had, Pattern=been, Pattern=was
+	Constrained: Pattern=ohh, Pattern=time
+Turn ID=7| B | Human 2 : ohh okay . it'd been long time maybe it was awkward ... how do you like the new snapchat update ? <|
+	Free: Pattern=awkward ..., Pattern=how, Pattern=like, Pattern=ohh okay ., Pattern=long time maybe, Pattern=the, Pattern=it'd, Pattern=it, Pattern=do you, Pattern=been, Pattern=was
+	Constrained: Pattern=ohh, Pattern=time, Pattern=you
+Turn ID=8| A | Human 1 : oh really ? has a lot changed in your life recently ?
+	Free: Pattern=lot changed, Pattern=has, Pattern=oh really, Pattern=in, Pattern=your, Pattern=life, Pattern=recently
+	Constrained: Pattern=really, Pattern=oh
+Turn ID=9| B | Human 2 : oh really lot changed recently life has your friend been active on snapchat lately ? <|
+	Free: Pattern=lot changed, Pattern=has, Pattern=oh really, Pattern=your, Pattern=friend, Pattern=been, Pattern=life, Pattern=recently
+	Constrained: Pattern=really, Pattern=oh
+Turn ID=10| A | Human 1 : ahhh sounds exciting indeed ! my life is pretty bland . i like routine , but sometimes i wish i had more time for adventures !
+	Free: Pattern=wish, Pattern=i, Pattern=like, Pattern=had more time for adventures, Pattern=life, Pattern=exciting indeed
+	Constrained: Pattern=had, Pattern=time, Pattern=indeed
+Turn ID=11| B | Human 2 : ohh wow wish you had more time for adventures exciting indeed lot changed recently life your friend been active snapchat lately ah
+	Free: Pattern=lot changed, Pattern=you had, Pattern=wow, Pattern=wish, Pattern=your, Pattern=ohh, Pattern=had more time for adventures, Pattern=friend, Pattern=been, Pattern=life, Pattern=recently, Pattern=exciting indeed
+	Constrained: Pattern=had, Pattern=you, Pattern=time, Pattern=indeed
+Turn ID=12| A | Human 1 : hmmmm . i really want to try bull riding . do you have any interest in that ?
+	Free: Pattern=want, Pattern=really, Pattern=that, Pattern=do you, Pattern=interest, Pattern=try bull riding, Pattern=in, Pattern=hmmmm, Pattern=i
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : hmmmm want try bull riding interest that ah really exciting indeed lot changed recently life your friend been active snapchat lately ah
+	Free: Pattern=want, Pattern=lot changed, Pattern=interest, Pattern=try bull riding, Pattern=really, Pattern=friend, Pattern=been, Pattern=hmmmm, Pattern=your, Pattern=life, Pattern=that, Pattern=recently, Pattern=exciting indeed
+	Constrained: Pattern=indeed
+Turn ID=14| A | Human 1 : sure ! what does your saturday look like ?
+	Free: Pattern=what, Pattern=saturday look like, Pattern=does, Pattern=your, Pattern=sure
+	Constrained: Pattern=like
+Turn ID=15| B | Human 2 : saturday look like ah sure what your does indeed lot changed recently life your friend been active snapchat lately ah<|im_end|
+	Free: Pattern=lot changed, Pattern=what, Pattern=saturday look like, Pattern=does, Pattern=your, Pattern=sure, Pattern=been, Pattern=life, Pattern=recently, Pattern=friend, Pattern=indeed
+	Constrained: Pattern=like

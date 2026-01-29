@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm_ _doing_ well . having many _meetings_ _today_ 🙂 
+B|3| Human 2: [i'm] glad _to_ hear that ! [meetings] can _be_ quite exhausting , but at least they're productive . _what_ kind _of_ meet 
+A|4| Human 1: [what] _are_ _you_ up [to] ? 
+B|5| Human 2: [i'm] just here [to] help [you] with any questions or tasks [you] may have . [what] kind _of_ questions _do_ [you] have [today] ? <|im 
+A|6| Human 1: we're gonna play _board games and_ will [be] eating _lots _of_ _food_ !_ _what about you ?_ 
+B|7| Human 2: [i'm] glad you're excited [about] [board games and] [food !] 😊 [are] there any specific [board games] or types [of food] [you] 
+A|8| Human 1: _we've been doing_ [games] [of] thrones _lately ._ _the game_ takes _a_ _very_ long time [to] finish _though_ ! 
+B|9| Human 2: 🤠 [we've been doing] [lots of] different [board games and] [food] [lately .] [what about you ?] [are] there any new [games] or 
+A|10| Human 1: _i_ [do] . _i'm a_ _super _fan_ of it_ (not _the_ _last season_ _though_ haha) _. did you watch_ ? 
+B|11| Human 2: 😅 [i'm] not [the] biggest [fan of it] [lately] since [i] don't [watch] tv [and] haha [super fan] [though] [you] 
+A|12| Human 1: [i] love _survivor_ 🙂 
+B|13| Human 2: [i'm] not [very] _good_ at [the game] [though] haha [. did you watch] [survivor] [last season] ? 
+A|14| Human 1: _nice !_ [i] mostly like comedy shows like _the good place_ [and] modern family 
+B|15| Human 2: [nice !] [i'm a] [fan of] [the good place] too ! have [you] watched [the] new [season] [of] stranger things ? <|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=meetings, Pattern=today, Pattern=i'm, Pattern=doing
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm glad to hear that ! meetings can be quite exhausting , but at least they're productive . what kind of meet
+	Free: Pattern=of, Pattern=what, Pattern=i'm, Pattern=meetings, Pattern=be, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=are, Pattern=you, Pattern=to, Pattern=what
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just here to help you with any questions or tasks you may have . what kind of questions do you have today ? <|im
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=i'm, Pattern=to, Pattern=do, Pattern=today
+	Constrained: 
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=food !, Pattern=board games and, Pattern=lots of, Pattern=of food, Pattern=be, Pattern=what about you ?
+	Constrained: Pattern=of, Pattern=what, Pattern=board games, Pattern=and, Pattern=about, Pattern=food, Pattern=you, Pattern=games
+Turn ID=7| B | Human 2 : i'm glad you're excited about board games and food ! 😊 are there any specific board games or types of food you
+	Free: Pattern=you, Pattern=food !, Pattern=board games, Pattern=board games and, Pattern=are, Pattern=about, Pattern=i'm, Pattern=of food
+	Constrained: Pattern=of, Pattern=games, Pattern=board games, Pattern=and, Pattern=food
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=of, Pattern=games, Pattern=though, Pattern=a, Pattern=lately ., Pattern=very, Pattern=to, Pattern=we've been doing, Pattern=the game
+	Constrained: Pattern=lately, Pattern=doing, Pattern=the
+Turn ID=9| B | Human 2 : 🤠 we've been doing lots of different board games and food lately . what about you ? are there any new games or
+	Free: Pattern=games, Pattern=are, Pattern=lots of, Pattern=food, Pattern=we've been doing, Pattern=what about you ?, Pattern=lately ., Pattern=board games and
+	Constrained: Pattern=lately, Pattern=of, Pattern=what, Pattern=board games, Pattern=doing, Pattern=and, Pattern=about, Pattern=you, Pattern=games
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=fan of it, Pattern=though, Pattern=do, Pattern=. did you watch, Pattern=i, Pattern=the, Pattern=i'm a, Pattern=super fan, Pattern=last season
+	Constrained: Pattern=of, Pattern=you, Pattern=a, Pattern=i'm, Pattern=season, Pattern=fan of, Pattern=watch
+Turn ID=11| B | Human 2 : 😅 i'm not the biggest fan of it lately since i don't watch tv and haha super fan though you
+	Free: Pattern=lately, Pattern=you, Pattern=fan of it, Pattern=though, Pattern=and, Pattern=i'm, Pattern=i, Pattern=the, Pattern=watch, Pattern=super fan
+	Constrained: Pattern=fan of, Pattern=of
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=i, Pattern=survivor
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm not very good at the game though haha . did you watch survivor last season ?
+	Free: Pattern=good, Pattern=though, Pattern=. did you watch, Pattern=i'm, Pattern=very, Pattern=the game, Pattern=survivor, Pattern=last season
+	Constrained: Pattern=watch, Pattern=season, Pattern=you, Pattern=the
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=the good place, Pattern=nice !, Pattern=i, Pattern=and
+	Constrained: Pattern=the, Pattern=good
+Turn ID=15| B | Human 2 : nice ! i'm a fan of the good place too ! have you watched the new season of stranger things ? <|im_end
+	Free: Pattern=of, Pattern=you, Pattern=the good place, Pattern=season, Pattern=the, Pattern=i'm a, Pattern=nice !, Pattern=fan of
+	Constrained: Pattern=good, Pattern=of, Pattern=a, Pattern=i'm, Pattern=the

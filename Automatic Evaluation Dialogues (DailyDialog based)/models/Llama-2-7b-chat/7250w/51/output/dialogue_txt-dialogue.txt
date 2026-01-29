@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's good_ _! i_ spent most of _it_ watching _horse racing_ _. how about_ _yourself ?_ 
+B|3| Human 2: [it's good] _to_ _hear_ _that_ ! [horse racing] _is_ a fascinating sport [. how _about] you ?_ _do you_ _have any_ _favorite_ [horse] races or 
+A|4| Human 1: _i_ _actually_ like [to] put down some money , but _i_ _wouldn't call it_ _my_ _favorite part_ , _since i_ usually lose _it_ ... _haha_ . _catching up _with_ friends_ [is] _great_ ! [how] long _had_ _it_ [been ?] 
+B|5| Human 2: ah _, i_ see ! [it's] [great] _that_ you're enjoying [yourself] [with friends] ! [catching up with] old [friends] can be _very_ 
+A|6| Human 1: _i'm_ _thinking_ of _going_ _deep sea fishing_ . ever _tried_ [that] _before_ ? 
+B|7| Human 2: [it's] [great] [that] [fishing] [is] [going] well [deep sea fishing] [i] [had] [tried] [before] butt [wouldn't call it] [favorite part] [since i] 
+A|8| Human 1: _just once ! i got super sea sick_ .. _haha [have_ any] _fun weekend plans yourself ?_ 
+B|9| Human 2: [i'm] [actually] [thinking] [about] [going] [to] [that] _new_ [got] [great] reviews [sea sick] [haha have] [fun weekend plans yourself ?] <|im_end 
+A|10| Human 1: oh [very] _cool_ . [i] _hear its_ _nice over_ _there_ . [do you] go _often_ ? 
+B|11| Human 2: [actually] [just once ! i got super sea sick] [haha] [there] [nice over] [cool] [hear its] [often] [very] you'd [fun weekend plans yourself ?] [any] 
+A|12| Human 1: [new] york [is] _the top_ of _my list_ because _my_ family lives [there] ! as far as _the_ city _itself though_ ... _i think_ i'd prefer someplace outside of _the_ us , like _tokyo_ . what [about you ?] 
+B|13| Human 2: [i'm] [actually] [thinking] [about] [going] [there] next [weekend] ! what's [the top] attraction [you] [think] [is] a must see [there] ? [tokyo] [itself though] 
+A|14| Human 1: oh i've never [been] ! [it] [is] _such_ an _iconic place_ [, i] _have to_ _make_ [the] _time_ [to] _get there soon_ . 
+B|15| Human 2: [i think] [the] [tokyo] sky tree would [have to] [top] [my list] [though] ! [its] [such] [iconic place] [get there soon] [make] [time] [you] [haha] [nice over] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=. how about, Pattern=yourself ?, Pattern=horse racing, Pattern=it's good, Pattern=it, Pattern=! i
+	Constrained: Pattern=horse, Pattern=how, Pattern=about, Pattern=i, Pattern=yourself, Pattern=it's
+Turn ID=3| B | Human 2 : it's good to hear that ! horse racing is a fascinating sport . how about you ? do you have any favorite horse races or
+	Free: Pattern=horse, Pattern=do you, Pattern=. how about, Pattern=is, Pattern=horse racing, Pattern=hear, Pattern=about you ?, Pattern=that, Pattern=favorite, Pattern=have any, Pattern=it's good, Pattern=to
+	Constrained: Pattern=horse, Pattern=you, Pattern=how, Pattern=any, Pattern=about, Pattern=it's
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=with friends, Pattern=great, Pattern=actually, Pattern=how, Pattern=it, Pattern=wouldn't call it, Pattern=been ?, Pattern=favorite part, Pattern=had, Pattern=my, Pattern=is, Pattern=i, Pattern=haha, Pattern=since i, Pattern=catching up with, Pattern=to
+	Constrained: Pattern=it, Pattern=favorite, Pattern=i, Pattern=friends, Pattern=been
+Turn ID=5| B | Human 2 : ah , i see ! it's great that you're enjoying yourself with friends ! catching up with old friends can be very
+	Free: Pattern=with friends, Pattern=great, Pattern=very, Pattern=friends, Pattern=, i, Pattern=catching up with, Pattern=yourself, Pattern=that, Pattern=it's
+	Constrained: Pattern=i, Pattern=friends
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=going, Pattern=thinking, Pattern=deep sea fishing, Pattern=i'm, Pattern=tried, Pattern=before, Pattern=that
+	Constrained: Pattern=fishing
+Turn ID=7| B | Human 2 : it's great that fishing is going well deep sea fishing i had tried before butt wouldn't call it favorite part since i
+	Free: Pattern=great, Pattern=going, Pattern=fishing, Pattern=deep sea fishing, Pattern=wouldn't call it, Pattern=favorite part, Pattern=since i, Pattern=before, Pattern=is, Pattern=i, Pattern=had, Pattern=tried, Pattern=that, Pattern=it's
+	Constrained: Pattern=favorite, Pattern=fishing, Pattern=i, Pattern=it
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=just once ! i got super sea sick, Pattern=fun weekend plans yourself ?, Pattern=have any, Pattern=haha have
+	Constrained: Pattern=any, Pattern=! i, Pattern=sea sick, Pattern=weekend, Pattern=yourself ?, Pattern=i, Pattern=haha, Pattern=got, Pattern=yourself
+Turn ID=9| B | Human 2 : i'm actually thinking about going to that new got great reviews sea sick haha have fun weekend plans yourself ? <|im_end
+	Free: Pattern=haha have, Pattern=new, Pattern=great, Pattern=going, Pattern=fun weekend plans yourself ?, Pattern=sea sick, Pattern=about, Pattern=i'm, Pattern=got, Pattern=to, Pattern=that, Pattern=thinking, Pattern=actually
+	Constrained: Pattern=yourself, Pattern=haha, Pattern=yourself ?, Pattern=weekend
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=there, Pattern=nice over, Pattern=cool, Pattern=often, Pattern=hear its, Pattern=do you, Pattern=very, Pattern=i
+	Constrained: Pattern=its, Pattern=hear, Pattern=you
+Turn ID=11| B | Human 2 : actually just once ! i got super sea sick haha there nice over cool hear its often very you'd fun weekend plans yourself ? any
+	Free: Pattern=there, Pattern=cool, Pattern=hear its, Pattern=haha, Pattern=often, Pattern=nice over, Pattern=actually, Pattern=any, Pattern=fun weekend plans yourself ?, Pattern=very, Pattern=just once ! i got super sea sick
+	Constrained: Pattern=its, Pattern=! i, Pattern=sea sick, Pattern=weekend, Pattern=yourself ?, Pattern=i, Pattern=hear, Pattern=got, Pattern=yourself
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=new, Pattern=there, Pattern=itself though, Pattern=is, Pattern=the, Pattern=about you ?, Pattern=the top, Pattern=my, Pattern=i think, Pattern=tokyo, Pattern=my list
+	Constrained: Pattern=you, Pattern=though, Pattern=about, Pattern=think, Pattern=the, Pattern=my, Pattern=top, Pattern=i
+Turn ID=13| B | Human 2 : i'm actually thinking about going there next weekend ! what's the top attraction you think is a must see there ? tokyo itself though
+	Free: Pattern=you, Pattern=going, Pattern=there, Pattern=weekend, Pattern=think, Pattern=i'm, Pattern=is, Pattern=tokyo, Pattern=the top, Pattern=thinking, Pattern=actually, Pattern=about, Pattern=itself though
+	Constrained: Pattern=the, Pattern=though, Pattern=top
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=it, Pattern=such, Pattern=have to, Pattern=to, Pattern=been, Pattern=iconic place, Pattern=time, Pattern=get there soon, Pattern=is, Pattern=make, Pattern=the, Pattern=, i
+	Constrained: Pattern=i, Pattern=to, Pattern=there
+Turn ID=15| B | Human 2 : i think the tokyo sky tree would have to top my list though ! its such iconic place get there soon make time you haha nice over
+	Free: Pattern=you, Pattern=though, Pattern=nice over, Pattern=such, Pattern=the, Pattern=have to, Pattern=iconic place, Pattern=i think, Pattern=its, Pattern=time, Pattern=get there soon, Pattern=top, Pattern=make, Pattern=haha, Pattern=tokyo, Pattern=my list
+	Constrained: Pattern=there, Pattern=think, Pattern=i, Pattern=to, Pattern=my

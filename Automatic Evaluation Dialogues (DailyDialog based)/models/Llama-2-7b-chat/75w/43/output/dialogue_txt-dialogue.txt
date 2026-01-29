@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there ! 
+A|2| Human 1: _are_ _you_ participating _in_ _the_ _mentorship_ program this cycle ? 
+B|3| Human 2: yes , _i_ am ! how about [you] ? 
+A|4| Human 1: either _of_ them ... [i] find _mentorship_ overall pretty useful 
+B|5| Human 2: [i] completely agree ! [mentorship] can _be_ _very_ helpful [in] navigating [the] startup ecosystem , especially for new founders or those just starting 
+A|6| Human 1: [i] signed up this time _to_ [be] _a_ mentee . [i] _have_ got _a good mentor_ . 
+B|7| Human 2: that's _great !_ having [a good mentor] can make [a] big difference [in] your progress 
+A|8| Human 1: _yeah_ ... [i] certainly prefer 1:1 _as well_ , but sometimes it [good] _to_ hear other _peer_ perspective _as well_ . 
+B|9| Human 2: [yeah] , that's definitely true . [peer] [mentorship] can also [be] _very_ valuable [in] sharing experiences _and_ learnings<|im_end| 
+A|10| Human 1: [great _!] what_ sort _of_ _things_ do [you] _plan to mentor on_ ? 
+B|11| Human 2: [i] [plan to mentor on] general startup tips _and_ tricks , [as well] [as] sharing _my_ experience [on] how [to] navigate [the] startup ecosystem<| 
+A|12| Human 1: [very] cool . [i] _have been working on_ [my] _communication skills_ _with_ [my] [mentor] this cycle 
+B|13| Human 2: ah , [communication skills] [are] definitely important [! what] [are] some [of] [the] [things] [you] [have been working on] [with] your [mentor] ? <|im_end| 
+A|14| Human 1: going [good] . [in] [the] last session , everyone had [to] actually prepare [and] give [a] presentation . pretty serious stuff 😉 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : are you participating in the mentorship program this cycle ?
+	Free: Pattern=you, Pattern=are, Pattern=mentorship, Pattern=in, Pattern=the
+	Constrained: 
+Turn ID=3| B | Human 2 : yes , i am ! how about you ?
+	Free: Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : either of them ... i find mentorship overall pretty useful
+	Free: Pattern=i, Pattern=of, Pattern=mentorship
+	Constrained: 
+Turn ID=5| B | Human 2 : i completely agree ! mentorship can be very helpful in navigating the startup ecosystem , especially for new founders or those just starting
+	Free: Pattern=mentorship, Pattern=in, Pattern=be, Pattern=the, Pattern=very, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i signed up this time to be a mentee . i have got a good mentor .
+	Free: Pattern=have, Pattern=a, Pattern=i, Pattern=be, Pattern=to, Pattern=a good mentor
+	Constrained: Pattern=good, Pattern=a, Pattern=mentor
+Turn ID=7| B | Human 2 : that's great ! having a good mentor can make a big difference in your progress
+	Free: Pattern=a good mentor, Pattern=great !, Pattern=in, Pattern=a
+	Constrained: Pattern=good, Pattern=a, Pattern=mentor
+Turn ID=8| A | Human 1 : yeah ... i certainly prefer 1:1 as well , but sometimes it good to hear other peer perspective as well .
+	Free: Pattern=good, Pattern=yeah, Pattern=peer, Pattern=i, Pattern=as well, Pattern=to
+	Constrained: Pattern=as
+Turn ID=9| B | Human 2 : yeah , that's definitely true . peer mentorship can also be very valuable in sharing experiences and learnings<|im_end|
+	Free: Pattern=mentorship, Pattern=in, Pattern=be, Pattern=yeah, Pattern=and, Pattern=very, Pattern=peer
+	Constrained: 
+Turn ID=10| A | Human 1 : great ! what sort of things do you plan to mentor on ?
+	Free: Pattern=plan to mentor on, Pattern=of, Pattern=you, Pattern=things, Pattern=great !, Pattern=! what
+	Constrained: Pattern=mentor, Pattern=to, Pattern=on
+Turn ID=11| B | Human 2 : i plan to mentor on general startup tips and tricks , as well as sharing my experience on how to navigate the startup ecosystem<|
+	Free: Pattern=plan to mentor on, Pattern=as, Pattern=and, Pattern=i, Pattern=my, Pattern=on, Pattern=the, Pattern=as well, Pattern=to
+	Constrained: Pattern=mentor, Pattern=to, Pattern=on, Pattern=as
+Turn ID=12| A | Human 1 : very cool . i have been working on my communication skills with my mentor this cycle
+	Free: Pattern=communication skills, Pattern=mentor, Pattern=have been working on, Pattern=my, Pattern=with, Pattern=very, Pattern=i
+	Constrained: Pattern=on, Pattern=have
+Turn ID=13| B | Human 2 : ah , communication skills are definitely important ! what are some of the things you have been working on with your mentor ? <|im_end|
+	Free: Pattern=communication skills, Pattern=you, Pattern=are, Pattern=things, Pattern=! what, Pattern=have been working on, Pattern=the, Pattern=with, Pattern=mentor, Pattern=of
+	Constrained: Pattern=on, Pattern=have
+Turn ID=14| A | Human 1 : going good . in the last session , everyone had to actually prepare and give a presentation . pretty serious stuff 😉
+	Free: Pattern=good, Pattern=a, Pattern=and, Pattern=in, Pattern=the, Pattern=to
+	Constrained: 

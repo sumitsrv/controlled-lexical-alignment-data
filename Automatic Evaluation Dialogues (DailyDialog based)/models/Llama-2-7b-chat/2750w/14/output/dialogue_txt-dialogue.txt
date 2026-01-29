@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _just_ chillin' . _how_ _are_ _you_ ? 
+B|3| Human 2: _i'm_ doing well , thank [you] for asking ! _it's_ nice _to_ hear from [you] . 😊 [how] can _i_ help [you] 
+A|4| Human 1: do _anything_ interesting _today_ ? 
+B|5| Human 2: _not_ [today] , [just] helping people 😊 is there [anything] you'd like _to_ talk about or ask ? <|im_end| 
+A|6| Human 1: oh _that's cool ! i_ actually went [to] an _amusement park_ _and_ went _on_ my first _roller coaster_ ! 
+B|7| Human 2: [that's] great ! 🎢 [roller] coasters [are] really fun [and] exciting ! [how] _did_ [you] feel during [and] after _the_ 
+A|8| Human 1: _it_ was _scary_ ! _it_ was actually _kingda ka_ , [the] world's tallest _roller coaster_ . ever heard _of_ _it_ ? 
+B|9| Human 2: [kingda ka] [that's cool ! i] would love [to] go _on that_ [roller coaster] someday 😊 it' 
+A|10| Human 1: oh wow _! _i'm_ not_ [on that] level _yet_ , _but _i_ understand the appeal_ . [are] [you] an adrenaline junkie at all ? 
+B|11| Human 2: [i'm not] [that] extreme [yet] [but i] 🤔 [the appeal] [of] [roller] coasters [and] [how] [it] can<|im_ 
+A|12| Human 1: _same [!_ i] guess [the] [roller coaster] wasn't so bad because [i] trust [the] engineering haha 
+B|13| Human 2: [i understand the appeal] [but] [i'm not] a fan [of] [amusement park] rides [that] [are] too [scary] or intense haha<| 
+A|14| Human 1: maybe [not] so much at [the] time , [but i] am _glad_ [i] _did it_ _now_ [that] [it's] done , _know_ what [i] mean ? 
+B|15| Human 2: [same [!] i'm] [glad] [you] [did it] [and] [that] [now] [you] [know] [the appeal] 😊 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : just chillin' . how are you ?
+	Free: Pattern=how, Pattern=you, Pattern=are, Pattern=just
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm doing well , thank you for asking ! it's nice to hear from you . 😊 how can i help you
+	Free: Pattern=you, Pattern=how, Pattern=i'm, Pattern=i, Pattern=to, Pattern=it's
+	Constrained: 
+Turn ID=4| A | Human 1 : do anything interesting today ?
+	Free: Pattern=anything, Pattern=today
+	Constrained: 
+Turn ID=5| B | Human 2 : not today , just helping people 😊 is there anything you'd like to talk about or ask ? <|im_end|
+	Free: Pattern=just, Pattern=today, Pattern=anything, Pattern=to, Pattern=not
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that's cool ! i actually went to an amusement park and went on my first roller coaster !
+	Free: Pattern=amusement park, Pattern=and, Pattern=roller coaster, Pattern=that's cool ! i, Pattern=on, Pattern=to
+	Constrained: Pattern=that's, Pattern=roller, Pattern=! i, Pattern=i
+Turn ID=7| B | Human 2 : that's great ! 🎢 roller coasters are really fun and exciting ! how did you feel during and after the
+	Free: Pattern=you, Pattern=did, Pattern=how, Pattern=and, Pattern=are, Pattern=roller, Pattern=that's, Pattern=the
+	Constrained: 
+Turn ID=8| A | Human 1 : it was scary ! it was actually kingda ka , the world's tallest roller coaster . ever heard of it ?
+	Free: Pattern=of, Pattern=scary, Pattern=it, Pattern=roller coaster, Pattern=the, Pattern=kingda ka
+	Constrained: Pattern=roller
+Turn ID=9| B | Human 2 : kingda ka that's cool ! i would love to go on that roller coaster someday 😊 it'
+	Free: Pattern=on that, Pattern=roller coaster, Pattern=that's cool ! i, Pattern=kingda ka, Pattern=to
+	Constrained: Pattern=! i, Pattern=roller, Pattern=i, Pattern=that, Pattern=on, Pattern=that's
+Turn ID=10| A | Human 1 : oh wow ! i'm not on that level yet , but i understand the appeal . are you an adrenaline junkie at all ?
+	Free: Pattern=you, Pattern=on that, Pattern=but i, Pattern=i'm not, Pattern=are, Pattern=i understand the appeal, Pattern=! i'm, Pattern=yet
+	Constrained: Pattern=the appeal, Pattern=i'm, Pattern=i, Pattern=not, Pattern=on, Pattern=the, Pattern=that, Pattern=but
+Turn ID=11| B | Human 2 : i'm not that extreme yet but i 🤔 the appeal of roller coasters and how it can<|im_
+	Free: Pattern=of, Pattern=the appeal, Pattern=but i, Pattern=how, Pattern=roller, Pattern=yet, Pattern=that, Pattern=it, Pattern=and, Pattern=i'm not
+	Constrained: Pattern=i'm, Pattern=i, Pattern=the, Pattern=but, Pattern=not
+Turn ID=12| A | Human 1 : same ! i guess the roller coaster wasn't so bad because i trust the engineering haha
+	Free: Pattern=same !, Pattern=! i, Pattern=roller coaster, Pattern=i, Pattern=the
+	Constrained: Pattern=roller, Pattern=i
+Turn ID=13| B | Human 2 : i understand the appeal but i'm not a fan of amusement park rides that are too scary or intense haha<|
+	Free: Pattern=amusement park, Pattern=of, Pattern=scary, Pattern=i'm not, Pattern=are, Pattern=i understand the appeal, Pattern=that, Pattern=but
+	Constrained: Pattern=the appeal, Pattern=i'm, Pattern=i, Pattern=the, Pattern=not
+Turn ID=14| A | Human 1 : maybe not so much at the time , but i am glad i did it now that it's done , know what i mean ?
+	Free: Pattern=but i, Pattern=glad, Pattern=know, Pattern=i, Pattern=now, Pattern=not, Pattern=did it, Pattern=the, Pattern=that, Pattern=it's
+	Constrained: Pattern=but, Pattern=did, Pattern=it, Pattern=i
+Turn ID=15| B | Human 2 : same ! i'm glad you did it and that now you know the appeal 😊
+	Free: Pattern=the appeal, Pattern=and, Pattern=glad, Pattern=know, Pattern=did it, Pattern=! i'm, Pattern=now, Pattern=that, Pattern=you, Pattern=same !
+	Constrained: Pattern=it, Pattern=did, Pattern=i'm, Pattern=the

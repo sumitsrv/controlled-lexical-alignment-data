@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ good . [how are you] ? ：） 
+B|3| Human 2: hello ! i'm phi , an ai , so [i] don't have feelings , but i'm fully operational and ready _to_ 
+A|4| Human 1: _i am_ busy . a lot of _work_ . _what are you working on ?_ 
+B|5| Human 2: [i] [work] continuously _to_ provide [you] with assistance ! [what are you working on ?] maybe [i] can help streamline _your_ tasks _or_ provide information _to_ make things 
+A|6| Human 1: _i am working on_ a _new_ _classifier_ . 
+B|7| Human 2: that's fantastic . if [you] have any [new] data , algorithms , _or_ insights about [classifier] systems , feel free _to_ share . [i] can 
+A|8| Human 1: a [new] [classifier] _for_ hate speech _. which_ _research_ _topic_ catches [your] eyes most ? 
+B|9| Human 2: [i am working on] [research] [for] [classifier] systems , especially those that [are] efficient and can handle large-scale data [. which] [topic] in this area [you] find 
+A|10| Human 1: nice ! do [you] _refer to work_ [or] anything else ? 
+B|11| Human 2: [i] [refer to work] [you] might consider exploring [for] [your] [research] . 
+A|12| Human 1: [you] [are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=i am
+	Constrained: Pattern=are, Pattern=i, Pattern=you
+Turn ID=3| B | Human 2 : hello ! i'm phi , an ai , so i don't have feelings , but i'm fully operational and ready to
+	Free: Pattern=to, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=what are you working on ?, Pattern=i am, Pattern=work
+	Constrained: Pattern=are, Pattern=i, Pattern=you
+Turn ID=5| B | Human 2 : i work continuously to provide you with assistance ! what are you working on ? maybe i can help streamline your tasks or provide information to make things
+	Free: Pattern=you, Pattern=what are you working on ?, Pattern=work, Pattern=or, Pattern=to, Pattern=your, Pattern=i
+	Constrained: Pattern=are, Pattern=you
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=i am working on, Pattern=new, Pattern=classifier
+	Constrained: Pattern=i am, Pattern=i
+Turn ID=7| B | Human 2 : that's fantastic . if you have any new data , algorithms , or insights about classifier systems , feel free to share . i can
+	Free: Pattern=new, Pattern=you, Pattern=i, Pattern=to, Pattern=classifier, Pattern=or
+	Constrained: 
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=new, Pattern=research, Pattern=for, Pattern=. which, Pattern=your, Pattern=classifier, Pattern=topic
+	Constrained: 
+Turn ID=9| B | Human 2 : i am working on research for classifier systems , especially those that are efficient and can handle large-scale data . which topic in this area you find
+	Free: Pattern=you, Pattern=research, Pattern=for, Pattern=are, Pattern=. which, Pattern=classifier, Pattern=i am working on, Pattern=topic
+	Constrained: Pattern=i am, Pattern=i
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=refer to work, Pattern=you, Pattern=or
+	Constrained: Pattern=to, Pattern=work
+Turn ID=11| B | Human 2 : i refer to work you might consider exploring for your research .
+	Free: Pattern=you, Pattern=for, Pattern=research, Pattern=refer to work, Pattern=your, Pattern=i
+	Constrained: Pattern=to, Pattern=work
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=you, Pattern=are
+	Constrained: 

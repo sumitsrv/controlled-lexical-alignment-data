@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how_ _was the_ _trip last weekend ?_ 
+B|3| Human 2: it [was] great ! [how] about _you_ ? 
+A|4| Human 1: nice , _what_ _all_ _places_ _did you_ cover ? 
+B|5| Human 2: _we_ covered [the] usual [places] like golden gate park _and_ fisherman's wharf . [did you] do anything [trip last weekend ?] <|im 
+A|6| Human 1: i am actually attending _cooking classes_ over [the] weekends . 
+B|7| Human 2: [what] [was the] [cooking classes] [all] about ? [did you] enjoy it ? <|im 
+A|8| Human 1: true ! they started _with _some_ basic zucchini based dish_ . [we] may _try_ [cooking] _some italian_ _dish later this week_ . 
+B|9| Human 2: [cooking classes] [some basic zucchini based [dish] later this week] sounds like _a_ fun plan ! [did you] [try] _any_ new recipes [last] 
+A|10| Human 1: nice ! i hope to volunteer to cook _for_ [the] team in our next team offsite :) 
+B|11| Human 2: [cooking classes] [some basic zucchini based [dish] later this week] sounds like _a_ fun plan ! [did you] [try] _any_ new recipes [last] 
+A|12| Human 1: _sure ,_ i will love to invite [you] [and] your family _for_ [a] meal over [the] holidays _. have you_ guys made [any] _other_ _plans_ ? 
+B|13| Human 2: [sure ,] [the] [cooking classes] were [all] about [basic] [and] intermediate dishes [with [some] italian] [and] [other] cuisines [. have you] [any] [plans] [for] [this] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=trip last weekend ?, Pattern=was the, Pattern=how
+	Constrained: Pattern=last, Pattern=was, Pattern=the
+Turn ID=3| B | Human 2 : it was great ! how about you ?
+	Free: Pattern=was, Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=did you, Pattern=all, Pattern=what, Pattern=places
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : we covered the usual places like golden gate park and fisherman's wharf . did you do anything trip last weekend ? <|im
+	Free: Pattern=did you, Pattern=places, Pattern=and, Pattern=we, Pattern=trip last weekend ?, Pattern=the
+	Constrained: Pattern=last, Pattern=you
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=cooking classes, Pattern=the
+	Constrained: Pattern=cooking
+Turn ID=7| B | Human 2 : what was the cooking classes all about ? did you enjoy it ? <|im
+	Free: Pattern=did you, Pattern=what, Pattern=cooking classes, Pattern=was the, Pattern=all
+	Constrained: Pattern=you, Pattern=was, Pattern=cooking, Pattern=the
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=dish later this week, Pattern=some basic zucchini based dish, Pattern=try, Pattern=we, Pattern=with some, Pattern=some italian, Pattern=cooking
+	Constrained: Pattern=this, Pattern=basic
+Turn ID=9| B | Human 2 : cooking classes some basic zucchini based dish later this week sounds like a fun plan ! did you try any new recipes last
+	Free: Pattern=try, Pattern=any, Pattern=cooking classes, Pattern=last, Pattern=dish later this week, Pattern=did you, Pattern=some basic zucchini based dish, Pattern=a
+	Constrained: Pattern=this, Pattern=cooking, Pattern=basic, Pattern=you
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=for, Pattern=the
+	Constrained: 
+Turn ID=11| B | Human 2 : cooking classes some basic zucchini based dish later this week sounds like a fun plan ! did you try any new recipes last
+	Free: Pattern=try, Pattern=any, Pattern=cooking classes, Pattern=last, Pattern=dish later this week, Pattern=did you, Pattern=some basic zucchini based dish, Pattern=a
+	Constrained: Pattern=this, Pattern=cooking, Pattern=basic, Pattern=you
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=plans, Pattern=you, Pattern=and, Pattern=other, Pattern=the, Pattern=sure ,, Pattern=a, Pattern=. have you, Pattern=for, Pattern=any
+	Constrained: Pattern=you
+Turn ID=13| B | Human 2 : sure , the cooking classes were all about basic and intermediate dishes with some italian and other cuisines . have you any plans for this
+	Free: Pattern=plans, Pattern=. have you, Pattern=and, Pattern=cooking classes, Pattern=basic, Pattern=sure ,, Pattern=this, Pattern=with some, Pattern=for, Pattern=any, Pattern=some italian, Pattern=other, Pattern=the, Pattern=all
+	Constrained: Pattern=you, Pattern=cooking

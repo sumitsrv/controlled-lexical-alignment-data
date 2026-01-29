@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's week so far ? 
+B|3| Human 2: great , thanks ! _how_ can _i_ help _you_ today ? </s>03-15 11:06:21 . 18 
+A|4| Human 1: same . _going to_ catch up _on _my_ reading_ ! do [you] _have a_ feast planned ? 
+B|5| Human 2: we're just [going to] [have a] small dinner with _the_ family . nothing too elaborate . _how about you ?_ </s>03-15 
+A|6| Human 1: something deeply hidden by _sean_ carroll _<redacted_link>_ 
+B|7| Human 2: hah , i'm currently [reading] <redacted_book> ! [sean] carroll's book _is_ [on my] list though 
+A|8| Human 1: _largely scifi how about you ?_ 
+B|9| Human 2: _i_ [have] _quite_ [a] few _in_ [my reading] list , but lately , i've been [<redacted_link>] [about] ai 
+A|10| Human 1: [i] haven't what [is] it [about] ? 
+B|11| Human 2:  
+A|12| Human 1: [how] do _the survivors_ survive such [a] thing ? 
+B|13| Human 2: [the survivors] are [largely scifi how about you ?] 
+A|14| Human 1: sounds _like_ [a] tv _show i_ watched 
+B|15| Human 2: [like] [the] [show] 6 feet under 
+A|16| Human 1: can't [quite] remember . something _about survivors going to live_ [in] _space_ 
+B|17| Human 2: you're close ! [the] [show i] was thinking of [is] [space] travelers [about survivors going to live] [on] [a] spaceship<| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you today ? </s>03-15 11:06:21 . 18
+	Free: Pattern=you, Pattern=how, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=going to, Pattern=you, Pattern=have a, Pattern=on my, Pattern=my reading
+	Constrained: Pattern=have, Pattern=reading, Pattern=a, Pattern=on
+Turn ID=5| B | Human 2 : we're just going to have a small dinner with the family . nothing too elaborate . how about you ? </s>03-15
+	Free: Pattern=how about you ?, Pattern=going to, Pattern=have a, Pattern=the
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=how, Pattern=about
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=sean, Pattern=<redacted_link>
+	Constrained: 
+Turn ID=7| B | Human 2 : hah , i'm currently reading <redacted_book> ! sean carroll's book is on my list though
+	Free: Pattern=on my, Pattern=sean, Pattern=is, Pattern=reading
+	Constrained: Pattern=on
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=largely scifi how about you ?
+	Constrained: Pattern=how about you ?, Pattern=you, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : i have quite a few in my reading list , but lately , i've been <redacted_link> about ai
+	Free: Pattern=have, Pattern=a, Pattern=about, Pattern=in, Pattern=i, Pattern=quite, Pattern=<redacted_link>, Pattern=my reading
+	Constrained: Pattern=reading
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=about, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : 
+	Free: 
+	Constrained: 
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=the survivors, Pattern=a, Pattern=how
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : the survivors are largely scifi how about you ?
+	Free: Pattern=largely scifi how about you ?, Pattern=the survivors
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=the, Pattern=how about you ?
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=show i, Pattern=a, Pattern=like
+	Constrained: Pattern=i, Pattern=show
+Turn ID=15| B | Human 2 : like the show 6 feet under
+	Free: Pattern=the, Pattern=like, Pattern=show
+	Constrained: 
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=about survivors going to live, Pattern=space, Pattern=in, Pattern=quite
+	Constrained: Pattern=going to, Pattern=about
+Turn ID=17| B | Human 2 : you're close ! the show i was thinking of is space travelers about survivors going to live on a spaceship<|
+	Free: Pattern=show i, Pattern=about survivors going to live, Pattern=a, Pattern=space, Pattern=is, Pattern=on, Pattern=the
+	Constrained: Pattern=show, Pattern=i, Pattern=going to, Pattern=about

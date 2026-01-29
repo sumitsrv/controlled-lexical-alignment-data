@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: there is sports tournament (badminton + tennis + basketball) organized by google next week . would _you_ _like_ _to volunteer for_ these _events_ ? 
+B|3| Human 2: i'm just an ai _and_ _do_ not _have_ _the_ ability [to volunteer for] [events] or make decisions _on_ behalf _of_ users . however , 
+A|4| Human 1: _volunteers have_ [to] book [the] _place_ before _the event_ , send out _details of the event_ [to] participants , _handle_ _some_ _logistics_ [and] _ensure everything goes smoothly ._ it _will be_ fun ! 
+B|5| Human 2: _i will_ [ensure] that [the] [details of the event] _are_ conveyed [to] [you] [and] [handle] _any_ [logistics] that _you have_ requested [for] . please let me know _if_ 
+A|6| Human 1: _great !_ [do] [you have] [any] preference [for] [any] [of] these [events] ? 
+B|7| Human 2: [volunteers have] [the] option [to] choose [any] [event] they [like] [and] [will be] able [to] [handle] [logistics] [for] that _event ._ please let me know _if_ 
+A|8| Human 1: _cool_ _! i will_ add [you] _for the event ._ _i think its best to_ start _discussing_ _the format_ [of _the event] ._ there [are] _a_ couple [of] _other_ [volunteers] [for] badminton , [i] _can_ _connect_ _you with_ them . 
+B|9| Human 2: [great [!] [i] think its best to] _have a_ [format] [for the event] [and] [discussing] [will] [ensure everything goes smoothly .] [can] [you] [connect] me [with] [other] volunte 
+A|10| Human 1: [its] next saturday . actually depending [on] _how long_ we _get_ [the] _place reserved_ , it _may_ slip [to] sunday as _well_ . 
+B|11| Human 2: [great [!] i will] [get] back [to] [you _with] the_ [details] [and] [logistics] [for the event .] [its best to] _have a_ [place reserved] [well] in advance [to] [ensure] 
+A|12| Human 1: true ! [the] [volunteers have] already sent out _some_ emails [and] collected _some_ funds . _now_ , we _mainly_ need help [with _the] logistics_ [and] _organizing_ [the event .] 
+B|13| Human 2: [great !] [now] that [the format] [and] [logistics] [are] being discussed , [can] [you] tell me [how long] [will] [the event] [may] last ? <|im_end 
+A|14| Human 1: perfect ! we [have a] _meeting_ today at 4 . 30 pm . is it fine [if] [i] add [you] [to] it ? 
+B|15| Human 2: [cool] . [the] [meeting] [will] [have] 4 [volunteers] [and] [some] [other] [organizing] team members . [its] [mainly] [for [the] logistics] discussion [and] finalization [of] 
+A|16| Human 1: thanks . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : there is sports tournament (badminton + tennis + basketball) organized by google next week . would you like to volunteer for these events ?
+	Free: Pattern=to volunteer for, Pattern=you, Pattern=events, Pattern=like
+	Constrained: Pattern=to, Pattern=for
+Turn ID=3| B | Human 2 : i'm just an ai and do not have the ability to volunteer for events or make decisions on behalf of users . however ,
+	Free: Pattern=of, Pattern=have, Pattern=do, Pattern=events, Pattern=and, Pattern=to volunteer for, Pattern=on, Pattern=the
+	Constrained: Pattern=to, Pattern=for
+Turn ID=4| A | Human 1 : volunteers have to book the place before the event , send out details of the event to participants , handle some logistics and ensure everything goes smoothly . it will be fun !
+	Free: Pattern=logistics, Pattern=volunteers have, Pattern=ensure everything goes smoothly ., Pattern=the event, Pattern=and, Pattern=will be, Pattern=some, Pattern=details of the event, Pattern=the, Pattern=to, Pattern=place, Pattern=handle
+	Constrained: Pattern=have, Pattern=the event, Pattern=will, Pattern=ensure, Pattern=event, Pattern=the, Pattern=of the event, Pattern=volunteers, Pattern=of, Pattern=details
+Turn ID=5| B | Human 2 : i will ensure that the details of the event are conveyed to you and handle any logistics that you have requested for . please let me know if
+	Free: Pattern=logistics, Pattern=you, Pattern=and, Pattern=you have, Pattern=ensure, Pattern=details of the event, Pattern=the, Pattern=to, Pattern=for, Pattern=any, Pattern=are, Pattern=if, Pattern=i will, Pattern=handle
+	Constrained: Pattern=you, Pattern=have, Pattern=the event, Pattern=will, Pattern=i, Pattern=event, Pattern=the, Pattern=of the event, Pattern=of, Pattern=details
+Turn ID=6| A | Human 1 : great ! do you have any preference for any of these events ?
+	Free: Pattern=of, Pattern=do, Pattern=you have, Pattern=great !, Pattern=for, Pattern=any, Pattern=events
+	Constrained: Pattern=have, Pattern=you
+Turn ID=7| B | Human 2 : volunteers have the option to choose any event they like and will be able to handle logistics for that event . please let me know if
+	Free: Pattern=logistics, Pattern=volunteers have, Pattern=and, Pattern=if, Pattern=will be, Pattern=event ., Pattern=the, Pattern=to, Pattern=handle, Pattern=for, Pattern=any, Pattern=like, Pattern=event
+	Constrained: Pattern=have, Pattern=event, Pattern=will, Pattern=volunteers
+Turn ID=8| A | Human 1 : cool ! i will add you for the event . i think its best to start discussing the format of the event . there are a couple of other volunteers for badminton , i can connect you with them .
+	Free: Pattern=the format, Pattern=you, Pattern=a, Pattern=cool, Pattern=for, Pattern=i, Pattern=i think its best to, Pattern=of the event, Pattern=volunteers, Pattern=connect, Pattern=of, Pattern=are, Pattern=you with, Pattern=other, Pattern=can, Pattern=the event ., Pattern=discussing, Pattern=! i will, Pattern=for the event .
+	Constrained: Pattern=its, Pattern=of, Pattern=you, Pattern=for the, Pattern=the event, Pattern=for, Pattern=! i, Pattern=event ., Pattern=i, Pattern=event, Pattern=the, Pattern=to, Pattern=i will, Pattern=with, Pattern=for the event, Pattern=its best to, Pattern=format, Pattern=the event ., Pattern=will
+Turn ID=9| B | Human 2 : great ! i think its best to have a format for the event and discussing will ensure everything goes smoothly . can you connect me with other volunte
+	Free: Pattern=connect, Pattern=you, Pattern=great !, Pattern=with, Pattern=ensure everything goes smoothly ., Pattern=have a, Pattern=and, Pattern=! i, Pattern=other, Pattern=can, Pattern=format, Pattern=will, Pattern=discussing, Pattern=for the event, Pattern=i think its best to
+	Constrained: Pattern=its, Pattern=for, Pattern=its best to, Pattern=ensure, Pattern=i, Pattern=event, Pattern=the, Pattern=to, Pattern=have, Pattern=for the, Pattern=the event, Pattern=a
+Turn ID=10| A | Human 1 : its next saturday . actually depending on how long we get the place reserved , it may slip to sunday as well .
+	Free: Pattern=its, Pattern=well, Pattern=how long, Pattern=place reserved, Pattern=to, Pattern=get, Pattern=on, Pattern=the, Pattern=may
+	Constrained: Pattern=place
+Turn ID=11| B | Human 2 : great ! i will get back to you with the details and logistics for the event . its best to have a place reserved well in advance to ensure
+	Free: Pattern=well, Pattern=with the, Pattern=have a, Pattern=and, Pattern=you with, Pattern=its best to, Pattern=great !, Pattern=ensure, Pattern=place reserved, Pattern=to, Pattern=get, Pattern=details, Pattern=logistics, Pattern=! i will, Pattern=for the event .
+	Constrained: Pattern=its, Pattern=you, Pattern=for, Pattern=! i, Pattern=event ., Pattern=i, Pattern=event, Pattern=the, Pattern=to, Pattern=place, Pattern=i will, Pattern=with, Pattern=for the event, Pattern=have, Pattern=for the, Pattern=the event, Pattern=a, Pattern=the event ., Pattern=will
+Turn ID=12| A | Human 1 : true ! the volunteers have already sent out some emails and collected some funds . now , we mainly need help with the logistics and organizing the event .
+	Free: Pattern=organizing, Pattern=now, Pattern=with the, Pattern=volunteers have, Pattern=and, Pattern=the logistics, Pattern=the event ., Pattern=some, Pattern=the, Pattern=mainly
+	Constrained: Pattern=have, Pattern=the event, Pattern=event ., Pattern=event, Pattern=the, Pattern=with, Pattern=volunteers, Pattern=logistics
+Turn ID=13| B | Human 2 : great ! now that the format and logistics are being discussed , can you tell me how long will the event may last ? <|im_end
+	Free: Pattern=the format, Pattern=logistics, Pattern=you, Pattern=and, Pattern=are, Pattern=can, Pattern=will, Pattern=great !, Pattern=may, Pattern=now, Pattern=the event, Pattern=how long
+	Constrained: Pattern=the, Pattern=event, Pattern=format
+Turn ID=14| A | Human 1 : perfect ! we have a meeting today at 4 . 30 pm . is it fine if i add you to it ?
+	Free: Pattern=you, Pattern=meeting, Pattern=have a, Pattern=if, Pattern=i, Pattern=to
+	Constrained: Pattern=have, Pattern=a
+Turn ID=15| B | Human 2 : cool . the meeting will have 4 volunteers and some other organizing team members . its mainly for the logistics discussion and finalization of
+	Free: Pattern=its, Pattern=organizing, Pattern=cool, Pattern=other, Pattern=volunteers, Pattern=of, Pattern=meeting, Pattern=have, Pattern=for the, Pattern=and, Pattern=the logistics, Pattern=will, Pattern=some, Pattern=the, Pattern=mainly
+	Constrained: Pattern=for, Pattern=the, Pattern=logistics
+Turn ID=16| A | Human 1 : thanks .
+	Free: 
+	Constrained: 

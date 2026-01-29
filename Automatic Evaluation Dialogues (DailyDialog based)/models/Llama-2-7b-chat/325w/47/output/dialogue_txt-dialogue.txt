@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's your day _going_ ? 
+B|3| Human 2: _great_ , thanks _for_ asking ! _how_ can _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _good_ _i'm_ _good_ . what's getting [you] down ? 
+B|5| Human 2: everything's [going] well , thanks _for_ asking ! _how about you ?_ 
+A|6| Human 1: _i'm thinking_ _of _going_ to visit my family_ _. how about you ?_ 
+B|7| Human 2: [i'm] glad you're feeling [good] ! _what_ do [you] think [about] [going to] _the_ beach _this_ weekend ? 
+A|8| Human 1: they're _in new york . how about_ yours ? 
+B|9| Human 2: [i'm thinking] [about] [going to visit my family] [in new york [. how about] you ?] 
+A|10| Human 1: ahh [what] _city_ ? _i've visited india_ _before_ . 
+B|11| Human 2: [i've visited india] too ! [what] made [you] think [of going] _there_ ? 
+A|12| Human 1: _hyderabad_ ! _and bangalore_ ! [great] food [in] _both_ cities ! is it still hot [this] time [of] year ? 
+B|13| Human 2: [i'm] _just_ an ai [and] don't have personal experiences , but _i_ can tell [you] that [hyderabad] [and bangalore] are [both] 
+A|14| Human 1: yes . [i] was actually [just] [there] _a_ few weeks ago [for] thanksgiving [and] got [to] see [the] first snow [of] [the] season ! ever _been to new york_ ? 
+B|15| Human 2: [i've] [been to new york] [before] ! it's [a] [great] [city] . [what] brings [you] [there] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks for asking ! how can i help you today ?
+	Free: Pattern=how, Pattern=for, Pattern=i, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=i'm, Pattern=you, Pattern=good
+	Constrained: 
+Turn ID=5| B | Human 2 : everything's going well , thanks for asking ! how about you ?
+	Free: Pattern=how about you ?, Pattern=going, Pattern=for
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=going to visit my family, Pattern=. how about you ?, Pattern=i'm thinking, Pattern=of going
+	Constrained: Pattern=going to, Pattern=of, Pattern=you, Pattern=going, Pattern=how, Pattern=about, Pattern=i'm, Pattern=to, Pattern=how about you ?
+Turn ID=7| B | Human 2 : i'm glad you're feeling good ! what do you think about going to the beach this weekend ?
+	Free: Pattern=you, Pattern=what, Pattern=about, Pattern=i'm, Pattern=the, Pattern=this, Pattern=going to, Pattern=good
+	Constrained: Pattern=to, Pattern=going
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=in new york . how about
+	Constrained: Pattern=how, Pattern=about, Pattern=in
+Turn ID=9| B | Human 2 : i'm thinking about going to visit my family in new york . how about you ?
+	Free: Pattern=. how about you ?, Pattern=in new york . how about, Pattern=going to visit my family, Pattern=about, Pattern=i'm thinking
+	Constrained: Pattern=going to, Pattern=you, Pattern=going, Pattern=how, Pattern=about, Pattern=in, Pattern=i'm, Pattern=to, Pattern=how about you ?
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=i've visited india, Pattern=before, Pattern=what, Pattern=city
+	Constrained: Pattern=i've
+Turn ID=11| B | Human 2 : i've visited india too ! what made you think of going there ?
+	Free: Pattern=you, Pattern=of going, Pattern=i've visited india, Pattern=what, Pattern=there
+	Constrained: Pattern=going, Pattern=i've, Pattern=of
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=of, Pattern=great, Pattern=and bangalore, Pattern=in, Pattern=both, Pattern=hyderabad, Pattern=this
+	Constrained: Pattern=and
+Turn ID=13| B | Human 2 : i'm just an ai and don't have personal experiences , but i can tell you that hyderabad and bangalore are both
+	Free: Pattern=you, Pattern=just, Pattern=and, Pattern=and bangalore, Pattern=i, Pattern=hyderabad, Pattern=i'm, Pattern=both
+	Constrained: Pattern=and
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=of, Pattern=just, Pattern=there, Pattern=a, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=to, Pattern=been to new york
+	Constrained: Pattern=to
+Turn ID=15| B | Human 2 : i've been to new york before ! it's a great city . what brings you there ?
+	Free: Pattern=city, Pattern=a, Pattern=i've, Pattern=before, Pattern=been to new york, Pattern=you, Pattern=great, Pattern=what, Pattern=there
+	Constrained: Pattern=to

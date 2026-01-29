@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _what_ is your favorite holiday ? 
+A|2| Human 1: _one_ where _i_ _get _to_ meet_ lots _of_ _different_ _people_ . 
+B|3| Human 2: sure , that can be _a_ great way [to meet] new [people] ! have _you_ ever been [to] _a_ [different] country for _a_ holiday ? <|im 
+A|4| Human 1: hard [to] keep [a] count . maybe 25 . 
+B|5| Human 2: 25 [different] countries , _that's_ impressive ! _what_ _was_ your favorite destination ? 
+A|6| Human 1: _i_ _think_ it [was] _australia_ 
+B|7| Human 2: [australia] [was] [one] [of] my favorites too ! _what_ did _you_ [think] [of] _the_ [people] _and_ _the_ food ? 
+A|8| Human 1: not _really_ . [the] interactions _are usually short-lived_ but _it's_ _fascinating to learn_ where [people] _are_ coming _from_ [and] [what] matters [to] _them_ 
+B|9| Human 2: ah , [i] see [what] you're saying ! [it's] [really] _interesting_ [to learn] [from] [people] [and] [get to] know [them] better , [and] it' 
+A|10| Human 1: _what do you mean ?_ 
+B|11| Human 2: [it's] [really] [fascinating to learn] [from] [people] [and] [get to] know [them] better- [what do you mean ?] <|im_end| 
+A|12| Human 1: _wow ! that's interesting , borderline spooky_ 
+B|13| Human 2: [wow ! that's interesting , borderline spooky] [the] conversations [are usually short-lived] [and] [you] don't [really] [get] 
+A|14| Human 1: so , [do _you] do_ treasure hunting often ? 
+B|15| Human 2: [wow] , you're [really] good at this ! is this [what] [you do] all day ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : what is your favorite holiday ?
+	Free: Pattern=what
+	Constrained: 
+Turn ID=2| A | Human 1 : one where i get to meet lots of different people .
+	Free: Pattern=different, Pattern=of, Pattern=people, Pattern=one, Pattern=i, Pattern=to meet, Pattern=get to
+	Constrained: Pattern=to, Pattern=get
+Turn ID=3| B | Human 2 : sure , that can be a great way to meet new people ! have you ever been to a different country for a holiday ? <|im
+	Free: Pattern=to meet, Pattern=different, Pattern=you, Pattern=people, Pattern=a, Pattern=to
+	Constrained: Pattern=to
+Turn ID=4| A | Human 1 : hard to keep a count . maybe 25 .
+	Free: Pattern=a, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : 25 different countries , that's impressive ! what was your favorite destination ?
+	Free: Pattern=different, Pattern=what, Pattern=was, Pattern=that's
+	Constrained: 
+Turn ID=6| A | Human 1 : i think it was australia
+	Free: Pattern=i, Pattern=australia, Pattern=think, Pattern=was
+	Constrained: 
+Turn ID=7| B | Human 2 : australia was one of my favorites too ! what did you think of the people and the food ?
+	Free: Pattern=of, Pattern=you, Pattern=people, Pattern=what, Pattern=and, Pattern=one, Pattern=think, Pattern=australia, Pattern=the, Pattern=was
+	Constrained: 
+Turn ID=8| A | Human 1 : not really . the interactions are usually short-lived but it's fascinating to learn where people are coming from and what matters to them
+	Free: Pattern=people, Pattern=what, Pattern=and, Pattern=are, Pattern=from, Pattern=really, Pattern=the, Pattern=to, Pattern=are usually short-lived, Pattern=fascinating to learn, Pattern=them, Pattern=it's
+	Constrained: Pattern=to, Pattern=to learn, Pattern=are
+Turn ID=9| B | Human 2 : ah , i see what you're saying ! it's really interesting to learn from people and get to know them better , and it'
+	Free: Pattern=get to, Pattern=people, Pattern=what, Pattern=and, Pattern=from, Pattern=i, Pattern=really, Pattern=interesting, Pattern=to learn, Pattern=them, Pattern=it's
+	Constrained: Pattern=to, Pattern=get
+Turn ID=10| A | Human 1 : what do you mean ?
+	Free: Pattern=what do you mean ?
+	Constrained: Pattern=you, Pattern=what, Pattern=do you
+Turn ID=11| B | Human 2 : it's really fascinating to learn from people and get to know them better- what do you mean ? <|im_end|
+	Free: Pattern=get to, Pattern=people, Pattern=fascinating to learn, Pattern=and, Pattern=from, Pattern=really, Pattern=what do you mean ?, Pattern=them, Pattern=it's
+	Constrained: Pattern=you, Pattern=what, Pattern=do you, Pattern=get, Pattern=to learn, Pattern=to
+Turn ID=12| A | Human 1 : wow ! that's interesting , borderline spooky
+	Free: Pattern=wow ! that's interesting , borderline spooky
+	Constrained: Pattern=wow, Pattern=interesting, Pattern=that's
+Turn ID=13| B | Human 2 : wow ! that's interesting , borderline spooky the conversations are usually short-lived and you don't really get
+	Free: Pattern=you, Pattern=are usually short-lived, Pattern=wow ! that's interesting , borderline spooky, Pattern=and, Pattern=really, Pattern=the, Pattern=get
+	Constrained: Pattern=are, Pattern=wow, Pattern=interesting, Pattern=that's
+Turn ID=14| A | Human 1 : so , do you do treasure hunting often ?
+	Free: Pattern=you do, Pattern=do you
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : wow , you're really good at this ! is this what you do all day ?
+	Free: Pattern=you do, Pattern=what, Pattern=really, Pattern=wow
+	Constrained: Pattern=you

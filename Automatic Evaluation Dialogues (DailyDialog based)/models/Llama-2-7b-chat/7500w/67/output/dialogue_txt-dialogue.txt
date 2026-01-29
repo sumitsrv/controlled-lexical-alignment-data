@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey ,_ _how_ are _you_ doing ? 
+A|2| Human 1: _i'm_ _great_ , _thanks_ . _i'm_ getting ready _for_ _a _skydiving_ lesson ._ 
+B|3| Human 2: [great] ! [i'm] sure you'll _have_ _a lot_ _of_ fun _. do you_ _have_ _any_ questions [for] me ? <|im_end| 
+A|4| Human 1: right near my home town: _seville_ , spain . 
+B|5| Human 2: [seville] is [a] [great] city ! [i'm] sure you'll enjoy your [skydiving lesson] there . is there anything else you'd 
+A|6| Human 1: _yes_ . _i'm feeling a little trepidatious_ _. have you done it before ?_ 
+B|7| Human 2: [yes] , [i'm] [a skydiving] enthusiast [. have you done it before ?] 
+A|8| Human 1: _haha_ _thanks_ _! have you tried any extreme_ sports ? 
+B|9| Human 2: [yes] , [i'm feeling a little trepidatious] [before] each [skydiving lesson .] [thanks] [for] listening [! have you tried any extreme] 
+A|10| Human 1: white water _rafting_ , _definitely_ ! as [for] _skiing_ , that depends on _how fast_ [you] go [. do you] ski [a lot] ? 
+B|11| Human 2: [haha] that's [definitely] [fast] ! _i tried skiing_ [for] _the_ first time last winter . [you] should [definitely] try [skydiving] ! [how] [do] 
+A|12| Human 1: [i tried skiing] once , _and_ by _the end of the_ beginner class [i] was able to make [it] down [a] baby-sized slope . [i] was _very_ proud [of] myself . 
+B|13| Human 2: that's [very] brave [of] [you] ! [i'm] [definitely] trying [skydiving] [and] [rafting] [before] [the end of the] year- [how fast] 
+A|14| Human 1: [hey ,] so long as [you] get to [the] bottom , it's all good ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you doing ?
+	Free: Pattern=hey ,, Pattern=you, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i'm getting ready for a skydiving lesson .
+	Free: Pattern=thanks, Pattern=great, Pattern=for, Pattern=i'm, Pattern=skydiving lesson ., Pattern=a skydiving
+	Constrained: Pattern=skydiving, Pattern=a, Pattern=skydiving lesson
+Turn ID=3| B | Human 2 : great ! i'm sure you'll have a lot of fun . do you have any questions for me ? <|im_end|
+	Free: Pattern=of, Pattern=great, Pattern=have, Pattern=i'm, Pattern=a lot, Pattern=for, Pattern=. do you, Pattern=any
+	Constrained: Pattern=do, Pattern=a, Pattern=you
+Turn ID=4| A | Human 1 : right near my home town: seville , spain .
+	Free: Pattern=seville
+	Constrained: 
+Turn ID=5| B | Human 2 : seville is a great city ! i'm sure you'll enjoy your skydiving lesson there . is there anything else you'd
+	Free: Pattern=great, Pattern=a, Pattern=seville, Pattern=skydiving lesson, Pattern=i'm
+	Constrained: Pattern=skydiving
+Turn ID=6| A | Human 1 : yes . i'm feeling a little trepidatious . have you done it before ?
+	Free: Pattern=. have you done it before ?, Pattern=i'm feeling a little trepidatious, Pattern=yes
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=it, Pattern=i'm, Pattern=before
+Turn ID=7| B | Human 2 : yes , i'm a skydiving enthusiast . have you done it before ?
+	Free: Pattern=. have you done it before ?, Pattern=a skydiving, Pattern=i'm, Pattern=yes
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=it, Pattern=skydiving, Pattern=before
+Turn ID=8| A | Human 1 : haha thanks ! have you tried any extreme sports ?
+	Free: Pattern=! have you tried any extreme, Pattern=haha, Pattern=thanks
+	Constrained: Pattern=any, Pattern=have, Pattern=you
+Turn ID=9| B | Human 2 : yes , i'm feeling a little trepidatious before each skydiving lesson . thanks for listening ! have you tried any extreme
+	Free: Pattern=thanks, Pattern=yes, Pattern=for, Pattern=! have you tried any extreme, Pattern=i'm feeling a little trepidatious, Pattern=skydiving lesson ., Pattern=before
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=any, Pattern=skydiving lesson, Pattern=i'm, Pattern=skydiving
+Turn ID=10| A | Human 1 : white water rafting , definitely ! as for skiing , that depends on how fast you go . do you ski a lot ?
+	Free: Pattern=you, Pattern=how fast, Pattern=rafting, Pattern=a lot, Pattern=for, Pattern=. do you, Pattern=skiing, Pattern=definitely
+	Constrained: Pattern=you, Pattern=how, Pattern=fast, Pattern=do, Pattern=a
+Turn ID=11| B | Human 2 : haha that's definitely fast ! i tried skiing for the first time last winter . you should definitely try skydiving ! how do
+	Free: Pattern=i tried skiing, Pattern=you, Pattern=do, Pattern=how, Pattern=for, Pattern=haha, Pattern=definitely, Pattern=skydiving, Pattern=the, Pattern=fast
+	Constrained: Pattern=skiing, Pattern=i
+Turn ID=12| A | Human 1 : i tried skiing once , and by the end of the beginner class i was able to make it down a baby-sized slope . i was very proud of myself .
+	Free: Pattern=i tried skiing, Pattern=a, Pattern=the end of the, Pattern=of, Pattern=it, Pattern=and, Pattern=very, Pattern=i
+	Constrained: Pattern=skiing, Pattern=i, Pattern=of, Pattern=the
+Turn ID=13| B | Human 2 : that's very brave of you ! i'm definitely trying skydiving and rafting before the end of the year- how fast
+	Free: Pattern=you, Pattern=and, Pattern=how fast, Pattern=i'm, Pattern=very, Pattern=definitely, Pattern=skydiving, Pattern=rafting, Pattern=before, Pattern=the end of the, Pattern=of
+	Constrained: Pattern=how, Pattern=fast, Pattern=of, Pattern=the
+Turn ID=14| A | Human 1 : hey , so long as you get to the bottom , it's all good !
+	Free: Pattern=hey ,, Pattern=you, Pattern=the
+	Constrained: 

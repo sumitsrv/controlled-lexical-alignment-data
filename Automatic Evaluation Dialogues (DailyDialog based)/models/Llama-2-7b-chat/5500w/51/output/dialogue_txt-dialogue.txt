@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's_ good ! i spent most _of_ _it_ _watching horse racing_ . _how about yourself ?_ 
+B|3| Human 2: that's interesting ! 🐴 [how about] [watching horse racing] [yourself ?] _do you_ _have_ a _favorite_ [horse] or race ? <|im_ 
+A|4| Human 1: i _actually_ _like_ _to_ put down _some_ money _, but_ i wouldn't call _it_ my [favorite] part , _since_ i usually lose _it_ ... haha . _catching up with friends_ _is great_ _! how long had it [been_ ?] 
+B|5| Human 2: 🤗 [it's] [great] _that_ you're [catching up with friends] [! how long had it been] [since] _you_ last saw [some] [of] 
+A|6| Human 1: _i'm_ thinking [of] _going_ deep sea _fishing_ . ever tried [that] _before_ ? 
+B|7| Human 2: [i'm] _just_ _an_ ai 🤖 [, but] [fishing] [is] [actually] a [great] way [to] relax and enjoy [some] _time_ [with friends] ! 
+A|8| Human 1: [just] once ! i got super sea sick .. haha [have] _any fun_ _weekend_ _plans_ [yourself ?] 
+B|9| Human 2: [i'm] [actually] [going] [to] a concert [with] [some] [friends] [that] [weekend] 🎉 [have] [fun] [! [how] about yourself ?] [any] [plans] ? [it] 
+A|10| Human 1: oh very cool . i hear its _nice_ over _there_ . [do you] go often ? 
+B|11| Human 2: [i'm] [actually] [going] [with friends] [that] [weekend] too ! [nice] [it's] [been] [great] [catching up with] [you] ! [have] [fun] at _the_ concert 
+A|12| Human 1: _new york_ [is] _the top of_ my _list_ _because_ my _family lives_ _there_ ! as far as [the] _city_ itself _though_ ... i _think_ _i'd_ prefer someplace outside [of] [the] us , _like_ _tokyo_ . what [about] [you] ? 
+B|13| Human 2: [tokyo] [is great] [city] [i'd] love [to] visit [there] [some] day . [have] [you] [plans] [any fun] things [like] [the top of] [list] [though] [because] [family lives] 
+A|14| Human 1: oh _i've_ never [been] ! [it] [is] such [an] iconic _place_ , i [have] [to] _make_ [the] [time] [to] _get_ [there] _soon_ . 
+B|15| Human 2: [i've] [been] [there] [before] [the top] [list] [get] [some] [family] [time] [with] [great] [place] [have] [fun] [make] [plans] [soon] [you] [think] [about] [new york] [city] ! [have] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=of, Pattern=it, Pattern=how about yourself ?, Pattern=watching horse racing, Pattern=it's
+	Constrained: Pattern=about, Pattern=yourself ?, Pattern=horse, Pattern=how about
+Turn ID=3| B | Human 2 : that's interesting ! 🐴 how about watching horse racing yourself ? do you have a favorite horse or race ? <|im_
+	Free: Pattern=horse, Pattern=have, Pattern=do you, Pattern=favorite, Pattern=yourself ?, Pattern=how about, Pattern=watching horse racing
+	Constrained: Pattern=horse, Pattern=you, Pattern=about
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=is great, Pattern=, but, Pattern=actually, Pattern=it, Pattern=like, Pattern=catching up with friends, Pattern=to, Pattern=! how long had it been, Pattern=favorite, Pattern=since, Pattern=been ?, Pattern=some
+	Constrained: Pattern=with friends, Pattern=great, Pattern=it, Pattern=friends, Pattern=catching up with, Pattern=been, Pattern=with, Pattern=is, Pattern=! how
+Turn ID=5| B | Human 2 : 🤗 it's great that you're catching up with friends ! how long had it been since you last saw some of
+	Free: Pattern=of, Pattern=since, Pattern=some, Pattern=catching up with friends, Pattern=! how long had it been, Pattern=you, Pattern=great, Pattern=that, Pattern=it's
+	Constrained: Pattern=with friends, Pattern=it, Pattern=! how, Pattern=friends, Pattern=catching up with, Pattern=been, Pattern=with
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=of, Pattern=going, Pattern=fishing, Pattern=i'm, Pattern=before, Pattern=that
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm just an ai 🤖 , but fishing is actually a great way to relax and enjoy some time with friends !
+	Free: Pattern=just, Pattern=actually, Pattern=an, Pattern=fishing, Pattern=some, Pattern=i'm, Pattern=is, Pattern=to, Pattern=with friends, Pattern=time, Pattern=great, Pattern=, but
+	Constrained: Pattern=with, Pattern=friends
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=plans, Pattern=weekend, Pattern=yourself ?, Pattern=any fun, Pattern=just, Pattern=have
+	Constrained: Pattern=fun, Pattern=any
+Turn ID=9| B | Human 2 : i'm actually going to a concert with some friends that weekend 🎉 have fun ! how about yourself ? any plans ? it
+	Free: Pattern=fun, Pattern=plans, Pattern=actually, Pattern=any, Pattern=it, Pattern=weekend, Pattern=some, Pattern=i'm, Pattern=! how, Pattern=friends, Pattern=how about yourself ?, Pattern=to, Pattern=going, Pattern=have, Pattern=with, Pattern=that
+	Constrained: Pattern=about, Pattern=yourself ?, Pattern=how about
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=do you, Pattern=nice, Pattern=there
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : i'm actually going with friends that weekend too ! nice it's been great catching up with you ! have fun at the concert
+	Free: Pattern=actually, Pattern=nice, Pattern=weekend, Pattern=i'm, Pattern=the, Pattern=catching up with, Pattern=been, Pattern=fun, Pattern=with friends, Pattern=you, Pattern=great, Pattern=going, Pattern=have, Pattern=that, Pattern=it's
+	Constrained: Pattern=with, Pattern=friends
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=city, Pattern=of, Pattern=you, Pattern=because, Pattern=new york, Pattern=about, Pattern=think, Pattern=is, Pattern=the, Pattern=list, Pattern=family lives, Pattern=the top of, Pattern=i'd, Pattern=though, Pattern=there, Pattern=tokyo, Pattern=like
+	Constrained: Pattern=the top, Pattern=of, Pattern=family, Pattern=the
+Turn ID=13| B | Human 2 : tokyo is great city i'd love to visit there some day . have you plans any fun things like the top of list though because family lives
+	Free: Pattern=city, Pattern=you, Pattern=because, Pattern=some, Pattern=list, Pattern=to, Pattern=family lives, Pattern=any fun, Pattern=plans, Pattern=is great, Pattern=the top of, Pattern=i'd, Pattern=have, Pattern=though, Pattern=there, Pattern=tokyo, Pattern=like
+	Constrained: Pattern=fun, Pattern=of, Pattern=great, Pattern=any, Pattern=family, Pattern=is, Pattern=the, Pattern=the top
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=time, Pattern=have, Pattern=there, Pattern=an, Pattern=it, Pattern=i've, Pattern=soon, Pattern=the, Pattern=to, Pattern=get, Pattern=is, Pattern=make, Pattern=been, Pattern=place
+	Constrained: 
+Turn ID=15| B | Human 2 : i've been there before the top list get some family time with great place have fun make plans soon you think about new york city ! have
+	Free: Pattern=city, Pattern=plans, Pattern=have, Pattern=there, Pattern=new york, Pattern=i've, Pattern=some, Pattern=think, Pattern=soon, Pattern=make, Pattern=list, Pattern=before, Pattern=the top, Pattern=get, Pattern=with, Pattern=fun, Pattern=time, Pattern=you, Pattern=great, Pattern=about, Pattern=family, Pattern=been, Pattern=place
+	Constrained: Pattern=the

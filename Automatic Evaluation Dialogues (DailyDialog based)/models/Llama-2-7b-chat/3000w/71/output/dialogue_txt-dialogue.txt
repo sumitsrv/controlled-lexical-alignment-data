@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how’s _your day_ _going ?_ 
+A|2| Human 1: bruhhhhhh !!!!! 
+B|3| Human 2: 😅 sorry , _i_ couldn't understand _what_ _you_ said . is there anything else you'd like _to_ talk about ? <| 
+A|4| Human 1: [i] _was_ screaming _in_ agony upon recounting my [day] . 
+B|5| Human 2: 😆 oh _no_ ! _what_ happened ? do _you_ want _to_ talk about it ? <| 
+A|6| Human 1: _a_ _project_ _i've been working on for some months got shelved_ . so _i'm_ _a_ _mix_ of _helpless_ , _sad_ , _and_ _angry_ . 
+B|7| Human 2: [i've been working on for some months got shelved] [and] [helpless] [sad] [angry] [mix] 
+A|8| Human 1: lol . would [you] _say that to someone who lost a loved one_ - or [some] similar circumstance ? 
+B|9| Human 2: [i'm] just llama [a] simple chatbot trained by meta ai , [i] cannot [say that to someone who lost a loved one] . 
+A|10| Human 1: [no] worries _. was_ pulling [your] leg . [i] forgot [to] ask _how [your_ _day] was [going_ ?] 
+B|11| Human 2: [i'm] just llama [going] [for] [a] walk [and] [lost] [in] thought [. was] [day was going] [how your] [project] [got shelved] [sad] [angry] 
+A|12| Human 1: lol . _what are your choices_ ? [i'm] trying _out_ keto ! _it's_ pretty _tiring_ . 
+B|13| Human 2: [it's] [tiring] [and] [i] [lost] 5 kgs ! [what are your choices] [for] [working] [out] after [that] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how’s your day going ?
+	Free: Pattern=your day, Pattern=going ?
+	Constrained: Pattern=going, Pattern=your, Pattern=day
+Turn ID=2| A | Human 1 : bruhhhhhh !!!!!
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : 😅 sorry , i couldn't understand what you said . is there anything else you'd like to talk about ? <|
+	Free: Pattern=i, Pattern=you, Pattern=to, Pattern=what
+	Constrained: 
+Turn ID=4| A | Human 1 : i was screaming in agony upon recounting my day .
+	Free: Pattern=i, Pattern=was, Pattern=in, Pattern=day
+	Constrained: 
+Turn ID=5| B | Human 2 : 😆 oh no ! what happened ? do you want to talk about it ? <|
+	Free: Pattern=you, Pattern=to, Pattern=no, Pattern=what
+	Constrained: 
+Turn ID=6| A | Human 1 : a project i've been working on for some months got shelved . so i'm a mix of helpless , sad , and angry .
+	Free: Pattern=mix, Pattern=sad, Pattern=a, Pattern=i've been working on for some months got shelved, Pattern=helpless, Pattern=i'm, Pattern=project, Pattern=and, Pattern=angry
+	Constrained: Pattern=working, Pattern=got shelved, Pattern=for, Pattern=some
+Turn ID=7| B | Human 2 : i've been working on for some months got shelved and helpless sad angry mix
+	Free: Pattern=mix, Pattern=sad, Pattern=i've been working on for some months got shelved, Pattern=helpless, Pattern=and, Pattern=angry
+	Constrained: Pattern=working, Pattern=got shelved, Pattern=for, Pattern=some
+Turn ID=8| A | Human 1 : lol . would you say that to someone who lost a loved one - or some similar circumstance ?
+	Free: Pattern=say that to someone who lost a loved one, Pattern=you, Pattern=some
+	Constrained: Pattern=a, Pattern=to, Pattern=lost, Pattern=that
+Turn ID=9| B | Human 2 : i'm just llama a simple chatbot trained by meta ai , i cannot say that to someone who lost a loved one .
+	Free: Pattern=say that to someone who lost a loved one, Pattern=i, Pattern=a, Pattern=i'm
+	Constrained: Pattern=a, Pattern=to, Pattern=lost, Pattern=that
+Turn ID=10| A | Human 1 : no worries . was pulling your leg . i forgot to ask how your day was going ?
+	Free: Pattern=your day, Pattern=no, Pattern=going ?, Pattern=how your, Pattern=day was going, Pattern=. was, Pattern=to, Pattern=your, Pattern=i
+	Constrained: Pattern=your, Pattern=going, Pattern=was, Pattern=day
+Turn ID=11| B | Human 2 : i'm just llama going for a walk and lost in thought . was day was going how your project got shelved sad angry
+	Free: Pattern=sad, Pattern=lost, Pattern=going, Pattern=a, Pattern=for, Pattern=in, Pattern=day was going, Pattern=got shelved, Pattern=. was, Pattern=project, Pattern=and, Pattern=angry, Pattern=i'm, Pattern=how your
+	Constrained: Pattern=going, Pattern=was, Pattern=day, Pattern=your
+Turn ID=12| A | Human 1 : lol . what are your choices ? i'm trying out keto ! it's pretty tiring .
+	Free: Pattern=out, Pattern=tiring, Pattern=what are your choices, Pattern=i'm, Pattern=it's
+	Constrained: Pattern=your, Pattern=what
+Turn ID=13| B | Human 2 : it's tiring and i lost 5 kgs ! what are your choices for working out after that ?
+	Free: Pattern=for, Pattern=working, Pattern=what are your choices, Pattern=i, Pattern=out, Pattern=lost, Pattern=tiring, Pattern=and, Pattern=that, Pattern=it's
+	Constrained: Pattern=your, Pattern=what

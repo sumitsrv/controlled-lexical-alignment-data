@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , _how_ is _it_ going ? 
+A|2| Human 1: all _good_ . planning _to_ head _home_ soon _. how about_ _you ?_ 
+B|3| Human 2: great ! [how] far is [home] from [you ?] 
+A|4| Human 1: oh ... sorry _to_ hear _that_ . but _after that_ [it] _will_ be _a_ _hard earned vacation_ 
+B|5| Human 2: ah , _i_ see . _well_ , _in_ [that] case [you] can take [a] [vacation] [after] _the_ [home] coming ceremony [. how about] we plan [a] trip for [you] 
+A|6| Human 1: [i] _have_ some tentative _plans_ , but if [that] doesn't pan _out_ , _will just chill at home_ . 
+B|7| Human 2: that's [good] too . [just chill] [out] [after] [a] long [vacation] [you] must [have] _had_ 
+A|8| Human 1: _where are you based out of these days ?_ 
+B|9| Human 2: [where are you based out of these days ?] </s>t [will just chill at home] [after that] [hard earned vacation] . how's your [plans] 
+A|10| Human 1: _san francisco_ . it's _been raining_ cats _and_ dogs _here_ _since last_ _2-3 weeks_ 
+B|11| Human 2: [2-3 weeks] [raining] [here] _in_ [san francisco] [and] you're [vacation] [plans] [are] [at home] ? [it] must [have] [been] really [hard earned] [that] 
+A|12| Human 1: [the] flu _has been_ hitting [hard] as [well] . [i] [had] several folks [in] [the] house down [at] one point . 
+B|13| Human 2: [san francisco] [has [been] raining] [hard] [since last] 2 [weeks] [and] you're [vacation] [plans] [are] [to] [chill at home] ? [it] must [have] 
+A|14| Human 1: yes , everyone recovered now 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=how, Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : all good . planning to head home soon . how about you ?
+	Free: Pattern=good, Pattern=. how about, Pattern=you ?, Pattern=to, Pattern=home
+	Constrained: Pattern=you, Pattern=how
+Turn ID=3| B | Human 2 : great ! how far is home from you ?
+	Free: Pattern=you ?, Pattern=home, Pattern=how
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : oh ... sorry to hear that . but after that it will be a hard earned vacation
+	Free: Pattern=a, Pattern=it, Pattern=hard earned vacation, Pattern=will, Pattern=that, Pattern=to, Pattern=after that
+	Constrained: Pattern=hard earned, Pattern=vacation, Pattern=after, Pattern=hard, Pattern=that
+Turn ID=5| B | Human 2 : ah , i see . well , in that case you can take a vacation after the home coming ceremony . how about we plan a trip for you
+	Free: Pattern=well, Pattern=you, Pattern=a, Pattern=vacation, Pattern=after, Pattern=. how about, Pattern=in, Pattern=i, Pattern=the, Pattern=home, Pattern=that
+	Constrained: Pattern=how
+Turn ID=6| A | Human 1 : i have some tentative plans , but if that doesn't pan out , will just chill at home .
+	Free: Pattern=plans, Pattern=out, Pattern=have, Pattern=will just chill at home, Pattern=i, Pattern=that
+	Constrained: Pattern=at home, Pattern=chill at home, Pattern=at, Pattern=will, Pattern=just chill, Pattern=home
+Turn ID=7| B | Human 2 : that's good too . just chill out after a long vacation you must have had
+	Free: Pattern=good, Pattern=have, Pattern=a, Pattern=vacation, Pattern=after, Pattern=had, Pattern=just chill, Pattern=you, Pattern=out
+	Constrained: 
+Turn ID=8| A | Human 1 : where are you based out of these days ?
+	Free: Pattern=where are you based out of these days ?
+	Constrained: Pattern=are, Pattern=out, Pattern=you
+Turn ID=9| B | Human 2 : where are you based out of these days ? </s>t will just chill at home after that hard earned vacation . how's your plans
+	Free: Pattern=plans, Pattern=will just chill at home, Pattern=hard earned vacation, Pattern=where are you based out of these days ?, Pattern=after that
+	Constrained: Pattern=hard earned, Pattern=at home, Pattern=are, Pattern=at, Pattern=after, Pattern=will, Pattern=just chill, Pattern=hard, Pattern=home, Pattern=that, Pattern=you, Pattern=out, Pattern=chill at home, Pattern=vacation
+Turn ID=10| A | Human 1 : san francisco . it's been raining cats and dogs here since last 2-3 weeks
+	Free: Pattern=here, Pattern=and, Pattern=since last, Pattern=san francisco, Pattern=been raining, Pattern=2-3 weeks
+	Constrained: Pattern=weeks, Pattern=raining, Pattern=been
+Turn ID=11| B | Human 2 : 2-3 weeks raining here in san francisco and you're vacation plans are at home ? it must have been really hard earned that
+	Free: Pattern=hard earned, Pattern=plans, Pattern=have, Pattern=are, Pattern=in, Pattern=san francisco, Pattern=been, Pattern=that, Pattern=2-3 weeks, Pattern=here, Pattern=at home, Pattern=raining, Pattern=vacation, Pattern=it, Pattern=and
+	Constrained: Pattern=hard, Pattern=weeks, Pattern=home, Pattern=at
+Turn ID=12| A | Human 1 : the flu has been hitting hard as well . i had several folks in the house down at one point .
+	Free: Pattern=well, Pattern=has been, Pattern=at, Pattern=in, Pattern=i, Pattern=had, Pattern=the, Pattern=hard
+	Constrained: Pattern=been
+Turn ID=13| B | Human 2 : san francisco has been raining hard since last 2 weeks and you're vacation plans are to chill at home ? it must have
+	Free: Pattern=plans, Pattern=have, Pattern=are, Pattern=since last, Pattern=weeks, Pattern=san francisco, Pattern=hard, Pattern=chill at home, Pattern=vacation, Pattern=it, Pattern=and, Pattern=has been, Pattern=been raining, Pattern=to
+	Constrained: Pattern=at home, Pattern=raining, Pattern=at, Pattern=been, Pattern=home
+Turn ID=14| A | Human 1 : yes , everyone recovered now
+	Free: 
+	Constrained: 

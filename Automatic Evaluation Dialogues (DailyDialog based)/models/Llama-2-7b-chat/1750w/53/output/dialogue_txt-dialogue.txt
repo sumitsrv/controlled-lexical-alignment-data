@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: how's your day going ? 
+A|2| Human 1: pretty busy , lots of _work_ _to_ finish up . _you ?_ 
+B|3| Human 2: i'm doing _well_ , thanks _for_ asking ! it's always nice [to] _have_ _a_ chat with someone . how can _i_ help [you] today ? < 
+A|4| Human 1: [a] couple _projects_ _that_ [i] am _trying to_ finish up _before_ _thanksgiving_ 🙂 _do you have any_ fun _plans_ [for] _the_ break ? 
+B|5| Human 2: ah , [thanksgiving] [plans] ! 😊 _well_ , i'm _just_ an ai _, i_ don't [have] personal experiences , 
+A|6| Human 1: _haha_ xd so _what_ _do you_ _like to_ _do_ [for] fun ? 
+B|7| Human 2: 🤔 hmm , _well_ _, _i_ like to_ help people with their [work] and [projects] , 
+A|8| Human 1: cool ! _i've_ started _to _run_ a_ bit as [well] _not_ long distances _though_ , [just] [a] couple miles 
+B|9| Human 2: 🏃‍♀️ ah _, i_ see ! _running_ can be [a] great way [to] stay active and relieve stress . [do you have] 
+A|10| Human 1: _haha_ 
+B|11| Human 2: 😂 [well] [i've] tried [that] [before] , but i'm [not] [the] best at _it_ [haha] [what] about [you ?] <| 
+A|12| Human 1: [i like to] [do] long distances _. _i have_ run a few_ marathons . 
+B|13| Human 2: wow that's impressive ! [i have run a few] 5ks [though] [haha] 
+A|14| Human 1: no . [not] this year . this is my half-marathon year . instead of [running] marathons [, i] [run] _one_ half-marathon every _month_ . 
+B|15| Human 2: 😅 that's awesome ! i'm [just] [trying [to] run] consistently and stay healthy . [do you have any] tips [for] 
+A|16| Human 1: _two days ago . it was a tough one ._ 
+B|17| Human 2: [two days ago . it was a tough one [.] i have] [a] few- [month] old [running] app [that] has helped [a] lot [though] ! �� 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : how's your day going ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty busy , lots of work to finish up . you ?
+	Free: Pattern=you ?, Pattern=work, Pattern=to
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking ! it's always nice to have a chat with someone . how can i help you today ? <
+	Free: Pattern=well, Pattern=you, Pattern=have, Pattern=a, Pattern=for, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : a couple projects that i am trying to finish up before thanksgiving 🙂 do you have any fun plans for the break ?
+	Free: Pattern=plans, Pattern=a, Pattern=for, Pattern=projects, Pattern=thanksgiving, Pattern=i, Pattern=trying to, Pattern=the, Pattern=do you have any, Pattern=before, Pattern=that
+	Constrained: Pattern=you, Pattern=have, Pattern=do, Pattern=do you, Pattern=do you have, Pattern=to
+Turn ID=5| B | Human 2 : ah , thanksgiving plans ! 😊 well , i'm just an ai , i don't have personal experiences ,
+	Free: Pattern=thanksgiving, Pattern=, i, Pattern=plans, Pattern=well, Pattern=just, Pattern=have
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : haha xd so what do you like to do for fun ?
+	Free: Pattern=what, Pattern=do, Pattern=for, Pattern=do you, Pattern=haha, Pattern=like to
+	Constrained: Pattern=you, Pattern=do, Pattern=to
+Turn ID=7| B | Human 2 : 🤔 hmm , well , i like to help people with their work and projects ,
+	Free: Pattern=well, Pattern=projects, Pattern=work, Pattern=, i, Pattern=i like to
+	Constrained: Pattern=like to, Pattern=i, Pattern=to
+Turn ID=8| A | Human 1 : cool ! i've started to run a bit as well not long distances though , just a couple miles
+	Free: Pattern=well, Pattern=just, Pattern=though, Pattern=a, Pattern=i've, Pattern=run a, Pattern=to run, Pattern=not
+	Constrained: Pattern=a, Pattern=run, Pattern=to
+Turn ID=9| B | Human 2 : 🏃‍♀️ ah , i see ! running can be a great way to stay active and relieve stress . do you have
+	Free: Pattern=a, Pattern=running, Pattern=, i, Pattern=do you have, Pattern=to
+	Constrained: Pattern=you, Pattern=have, Pattern=do, Pattern=do you, Pattern=i
+Turn ID=10| A | Human 1 : haha
+	Free: Pattern=haha
+	Constrained: 
+Turn ID=11| B | Human 2 : 😂 well i've tried that before , but i'm not the best at it haha what about you ? <|
+	Free: Pattern=well, Pattern=what, Pattern=it, Pattern=i've, Pattern=haha, Pattern=you ?, Pattern=the, Pattern=before, Pattern=that, Pattern=not
+	Constrained: Pattern=you
+Turn ID=12| A | Human 1 : i like to do long distances . i have run a few marathons .
+	Free: Pattern=i have run a few, Pattern=. i have, Pattern=i like to, Pattern=do
+	Constrained: Pattern=have, Pattern=a, Pattern=run, Pattern=i, Pattern=like to, Pattern=to, Pattern=run a
+Turn ID=13| B | Human 2 : wow that's impressive ! i have run a few 5ks though haha
+	Free: Pattern=i have run a few, Pattern=though, Pattern=haha
+	Constrained: Pattern=have, Pattern=a, Pattern=run, Pattern=i, Pattern=run a
+Turn ID=14| A | Human 1 : no . not this year . this is my half-marathon year . instead of running marathons , i run one half-marathon every month .
+	Free: Pattern=one, Pattern=run, Pattern=running, Pattern=month, Pattern=, i, Pattern=not
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : 😅 that's awesome ! i'm just trying to run consistently and stay healthy . do you have any tips for
+	Free: Pattern=just, Pattern=for, Pattern=trying to, Pattern=do you have any, Pattern=to run
+	Constrained: Pattern=you, Pattern=have, Pattern=do, Pattern=do you, Pattern=run, Pattern=do you have, Pattern=to
+Turn ID=16| A | Human 1 : two days ago . it was a tough one .
+	Free: Pattern=two days ago . it was a tough one .
+	Constrained: Pattern=it, Pattern=a, Pattern=one
+Turn ID=17| B | Human 2 : two days ago . it was a tough one . i have a few- month old running app that has helped a lot though ! ��
+	Free: Pattern=a, Pattern=two days ago . it was a tough one ., Pattern=running, Pattern=month, Pattern=that, Pattern=. i have, Pattern=though
+	Constrained: Pattern=have, Pattern=a, Pattern=it, Pattern=one, Pattern=i

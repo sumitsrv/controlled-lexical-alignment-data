@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: _how's_ week so far ? 
+B|3| Human 2: it's _going_ well , thanks ! just helping customers _like_ _you_ 😊 _how about you ?_ 
+A|4| Human 1: _same_ . [going] _to_ catch up on my _reading_ ! _do you_ _have_ a _feast planned_ ? 
+B|5| Human 2: 🤔 i'm just an ai , _i_ don't [have] personal plans or [feast planned] . but i'm here 
+A|6| Human 1: something deeply hidden by sean carroll _<redacted_link>_ 
+B|7| Human 2: 📚 [same] here ! [reading] [<redacted_link>] right now . [how's] _it_ [going] ? <|im 
+A|8| Human 1: largely _scifi_ [how about you ?] 
+B|9| Human 2: 🤖 [same] here ! i'm [reading] [<redacted_link>] [about] _the_ [scifi] subgenre [you] mentioned 
+A|10| Human 1: [i] haven't _what_ _is_ [it] [about] ? 
+B|11| Human 2: it's [about] [how] [scifi] can be used [to] explore complex philosophical [<redacted_link>] [how] interesting ! i' 
+A|12| Human 1: [how] _do_ _the survivors_ survive such a thing ? 
+B|13| Human 2: [the] [scifi] _about survivors_ [<redacted_link>] [how's] your [reading] experience ? <|im_end| 
+A|14| Human 1: _sounds like_ a tv _show_ [i] _watched_ 
+B|15| Human 2: [the] [show] [you] [watched] [sounds like] [<redacted_link>] what's [the] [scifi] [show] [about] survivors<|im 
+A|16| Human 1: can't quite remember . something [about _survivors] going_ [to] live in space 
+B|17| Human 2: [sounds like] [the] [show] you're thinking [about] [is] [<redacted_link>] [what] [do you] think [about] [the [survivors] going] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's week so far ?
+	Free: Pattern=how's
+	Constrained: 
+Turn ID=3| B | Human 2 : it's going well , thanks ! just helping customers like you 😊 how about you ?
+	Free: Pattern=how about you ?, Pattern=like, Pattern=going, Pattern=you
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=4| A | Human 1 : same . going to catch up on my reading ! do you have a feast planned ?
+	Free: Pattern=feast planned, Pattern=do you, Pattern=reading, Pattern=same, Pattern=to, Pattern=going, Pattern=have
+	Constrained: Pattern=do, Pattern=you
+Turn ID=5| B | Human 2 : 🤔 i'm just an ai , i don't have personal plans or feast planned . but i'm here
+	Free: Pattern=feast planned, Pattern=i, Pattern=have
+	Constrained: 
+Turn ID=6| A | Human 1 : something deeply hidden by sean carroll <redacted_link>
+	Free: Pattern=<redacted_link>
+	Constrained: 
+Turn ID=7| B | Human 2 : 📚 same here ! reading <redacted_link> right now . how's it going ? <|im
+	Free: Pattern=going, Pattern=it, Pattern=reading, Pattern=how's, Pattern=same, Pattern=<redacted_link>
+	Constrained: 
+Turn ID=8| A | Human 1 : largely scifi how about you ?
+	Free: Pattern=how about you ?, Pattern=scifi
+	Constrained: Pattern=you, Pattern=about, Pattern=how
+Turn ID=9| B | Human 2 : 🤖 same here ! i'm reading <redacted_link> about the scifi subgenre you mentioned
+	Free: Pattern=you, Pattern=about, Pattern=reading, Pattern=the, Pattern=<redacted_link>, Pattern=same, Pattern=scifi
+	Constrained: 
+Turn ID=10| A | Human 1 : i haven't what is it about ?
+	Free: Pattern=what, Pattern=it, Pattern=about, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : it's about how scifi can be used to explore complex philosophical <redacted_link> how interesting ! i'
+	Free: Pattern=how, Pattern=about, Pattern=scifi, Pattern=<redacted_link>, Pattern=to
+	Constrained: 
+Turn ID=12| A | Human 1 : how do the survivors survive such a thing ?
+	Free: Pattern=the survivors, Pattern=how, Pattern=do
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : the scifi about survivors <redacted_link> how's your reading experience ? <|im_end|
+	Free: Pattern=about survivors, Pattern=reading, Pattern=how's, Pattern=the, Pattern=scifi, Pattern=<redacted_link>
+	Constrained: Pattern=about
+Turn ID=14| A | Human 1 : sounds like a tv show i watched
+	Free: Pattern=sounds like, Pattern=i, Pattern=watched, Pattern=show
+	Constrained: Pattern=like
+Turn ID=15| B | Human 2 : the show you watched sounds like <redacted_link> what's the scifi show about survivors<|im
+	Free: Pattern=you, Pattern=sounds like, Pattern=about, Pattern=watched, Pattern=the, Pattern=scifi, Pattern=<redacted_link>, Pattern=show
+	Constrained: Pattern=like
+Turn ID=16| A | Human 1 : can't quite remember . something about survivors going to live in space
+	Free: Pattern=about survivors, Pattern=survivors going, Pattern=to
+	Constrained: Pattern=going, Pattern=about
+Turn ID=17| B | Human 2 : sounds like the show you're thinking about is <redacted_link> what do you think about the survivors going
+	Free: Pattern=what, Pattern=sounds like, Pattern=do you, Pattern=about, Pattern=survivors going, Pattern=is, Pattern=<redacted_link>, Pattern=show, Pattern=the survivors, Pattern=the
+	Constrained: Pattern=you, Pattern=going, Pattern=do, Pattern=like, Pattern=the

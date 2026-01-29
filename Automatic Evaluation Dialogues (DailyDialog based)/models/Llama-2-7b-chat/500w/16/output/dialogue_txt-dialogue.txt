@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: great , thank _you_ ! how _can_ _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _going to the bahamas_ . can't wait !!! 
+B|5| Human 2: that's great ! how _does_ [the bahamas] compare [to] other destinations you've visited ? 
+A|6| Human 1: oh where _are you_ _now ?_ 
+B|7| Human 2: [i'm] sorry , [you] [are] [going to the bahamas] [now ?] 
+A|8| Human 1: oh no . [i] never seen _this in person_ . _is_ it scary ? 
+B|9| Human 2: [i'm] scared [to] death of sharks . _can_ [you] imagine [this in person] ? 
+A|10| Human 1: that [does] sound _nice_ . so _what are you doing_ these holidays ? 
+B|11| Human 2: [you] [are] [going to the bahamas] ? that's quite a [nice] holiday destination . [what are you doing] there ? <|im_ 
+A|12| Human 1: [nice] [nice] . [i'm] gonna _go_ _snorkeling_ yey 
+B|13| Human 2: [snorkeling] [is] a great way [to] see [the] marine life up close . [are you] [going to] [go] _on_ a boat tour or rent some gear ? 
+A|14| Human 1: [you] [can] stay [on] [the] shallow side [i] think . well hope [you] enjoy time with your extended family ! 
+B|15| Human 2: </s> 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thank you ! how can i help you today ?
+	Free: Pattern=i, Pattern=can, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=going to the bahamas, Pattern=i'm
+	Constrained: Pattern=going to, Pattern=the bahamas, Pattern=going, Pattern=the, Pattern=to
+Turn ID=5| B | Human 2 : that's great ! how does the bahamas compare to other destinations you've visited ?
+	Free: Pattern=the bahamas, Pattern=to, Pattern=does
+	Constrained: Pattern=the
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you, Pattern=now ?
+	Constrained: Pattern=you, Pattern=are
+Turn ID=7| B | Human 2 : i'm sorry , you are going to the bahamas now ?
+	Free: Pattern=you, Pattern=going to the bahamas, Pattern=now ?, Pattern=are, Pattern=i'm
+	Constrained: Pattern=going to, Pattern=the bahamas, Pattern=going, Pattern=the, Pattern=to
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=this in person, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm scared to death of sharks . can you imagine this in person ?
+	Free: Pattern=you, Pattern=can, Pattern=i'm, Pattern=to, Pattern=this in person
+	Constrained: 
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=what are you doing, Pattern=nice, Pattern=does
+	Constrained: Pattern=are, Pattern=are you, Pattern=you
+Turn ID=11| B | Human 2 : you are going to the bahamas ? that's quite a nice holiday destination . what are you doing there ? <|im_
+	Free: Pattern=you, Pattern=going to the bahamas, Pattern=nice, Pattern=are, Pattern=what are you doing
+	Constrained: Pattern=going to, Pattern=the bahamas, Pattern=you, Pattern=going, Pattern=are, Pattern=are you, Pattern=the, Pattern=to
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=i'm, Pattern=nice, Pattern=go, Pattern=snorkeling
+	Constrained: 
+Turn ID=13| B | Human 2 : snorkeling is a great way to see the marine life up close . are you going to go on a boat tour or rent some gear ?
+	Free: Pattern=going to, Pattern=go, Pattern=to, Pattern=snorkeling, Pattern=are you, Pattern=is, Pattern=on, Pattern=the
+	Constrained: Pattern=to, Pattern=going, Pattern=you, Pattern=are
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=you, Pattern=can, Pattern=i, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=15| B | Human 2 : </s>
+	Free: 
+	Constrained: 

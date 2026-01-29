@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: _it's good_ ! _how_ _is_ your _day_ ? 
+B|3| Human 2: [it's good] _, but_ my wife [is] sick . i'm getting her fluids now _to_ treat her illness . [how] _are you_ ? 
+A|4| Human 1: _yes ,_ _the darkness_ _can be_ _a_ bit _depressing ._ this weekend _i went rock climbing_ ! _it was great !_ [how] _about yourself ?_ 
+B|5| Human 2: [it was great _!] [i_ went rock climbing] [the] [day] after [the] storm [was] [about] _to_ hit , [it's] [a] [good] workout 
+A|6| Human 1: oh _nice_ ! _what_ _movie_ ? 
+B|7| Human 2: [it was] [the] last [movie] _i saw_ [about] [a] year before [i went] _to_ sleep ! [it's] called [the] wolf _of_ wall street 
+A|8| Human 1: hahah _yes ,_ they _all_ look [the] same [! _i] saw that_ _very_ same [movie] over thanksgiving break . lots [of] twists _and_ _turns_ ! 
+B|9| Human 2: [i saw that] [movie] _too_ [and] loved [the darkness] _. it was very_ [depressing .] [what] [about yourself ?] 
+A|10| Human 1: hmm [good] question . evening runs _can be_ fun [, but] _it can be_ [a] little _scary_ _when_ [it's] _dark_ _out_ ! 
+B|11| Human 2: haha , that's awesome ! [and] [yes] [it can be] [scary] _too_ [when] [the] [day] [turns] [dark] [and] [all] [the] _lights_ go [out] [but] [i saw] [a] [movie] [about] 
+A|12| Human 1: [yes] ! i've been [to] australia [. it was very] nice; [i] regret _not_ [going] _to see_ [the] southern [lights] . me personally , [i] like _winter_ . [but] _i'd prefer_ [it] [to] [be] _more_ brief _than_ [it] actually [is] _here_ ... where [are you] _from_ originally ? 
+B|13| Human 2: [i] [can] [not] wait [to see] [it] ! [but] [the] [lights] [are] off [and] [the] [lights] [are] [out] [from] [here] . [yes ,] [darkness] [is] [more] [scary] 
+A|14| Human 1: ahh me [too] ! [you] should definitely try [to] visit australia at least once ! 
+B|15| Human 2: [yes] [i'd prefer] [the] [winter] [too] [but] [the darkness] [was] [nice] [and] [you] [can] [see] [more] stars [than] [here] . australia's [are] [very] [scary] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=going, Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=it's good, Pattern=how, Pattern=is, Pattern=day
+	Constrained: Pattern=good, Pattern=it's
+Turn ID=3| B | Human 2 : it's good , but my wife is sick . i'm getting her fluids now to treat her illness . how are you ?
+	Free: Pattern=, but, Pattern=how, Pattern=are you, Pattern=is, Pattern=it's good, Pattern=to
+	Constrained: Pattern=good, Pattern=you, Pattern=are, Pattern=it's, Pattern=but
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=about yourself ?, Pattern=the darkness, Pattern=it was great !, Pattern=i went rock climbing, Pattern=yes ,, Pattern=depressing ., Pattern=a, Pattern=how, Pattern=can be
+	Constrained: Pattern=yes, Pattern=it, Pattern=can, Pattern=about, Pattern=i, Pattern=be, Pattern=the, Pattern=i went, Pattern=was, Pattern=darkness, Pattern=it was
+Turn ID=5| B | Human 2 : it was great ! i went rock climbing the day after the storm was about to hit , it's a good workout
+	Free: Pattern=good, Pattern=i went rock climbing, Pattern=a, Pattern=! i, Pattern=about, Pattern=day, Pattern=it was great !, Pattern=the, Pattern=to, Pattern=was, Pattern=it's
+	Constrained: Pattern=it was, Pattern=it, Pattern=i, Pattern=i went, Pattern=was
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=nice, Pattern=movie, Pattern=what
+	Constrained: 
+Turn ID=7| B | Human 2 : it was the last movie i saw about a year before i went to sleep ! it's called the wolf of wall street
+	Free: Pattern=it was, Pattern=of, Pattern=a, Pattern=movie, Pattern=about, Pattern=i went, Pattern=to, Pattern=it's, Pattern=i saw, Pattern=the
+	Constrained: Pattern=i, Pattern=was, Pattern=it
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=of, Pattern=yes ,, Pattern=movie, Pattern=turns, Pattern=i saw that, Pattern=very, Pattern=and, Pattern=! i, Pattern=the, Pattern=all
+	Constrained: Pattern=yes, Pattern=i saw, Pattern=i
+Turn ID=9| B | Human 2 : i saw that movie too and loved the darkness . it was very depressing . what about yourself ?
+	Free: Pattern=what, Pattern=depressing ., Pattern=movie, Pattern=i saw that, Pattern=the darkness, Pattern=about yourself ?, Pattern=. it was very, Pattern=and, Pattern=too
+	Constrained: Pattern=it, Pattern=about, Pattern=was, Pattern=darkness, Pattern=it was, Pattern=very, Pattern=i, Pattern=i saw, Pattern=the
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=good, Pattern=scary, Pattern=it can be, Pattern=a, Pattern=can be, Pattern=when, Pattern=it's, Pattern=out, Pattern=, but, Pattern=dark
+	Constrained: Pattern=can be, Pattern=it, Pattern=can, Pattern=be, Pattern=but
+Turn ID=11| B | Human 2 : haha , that's awesome ! and yes it can be scary too when the day turns dark and all the lights go out but i saw a movie about
+	Free: Pattern=scary, Pattern=it can be, Pattern=a, Pattern=lights, Pattern=movie, Pattern=turns, Pattern=about, Pattern=day, Pattern=when, Pattern=but, Pattern=out, Pattern=dark, Pattern=yes, Pattern=and, Pattern=too, Pattern=i saw, Pattern=the, Pattern=all
+	Constrained: Pattern=can be, Pattern=it, Pattern=can, Pattern=i, Pattern=be
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=more, Pattern=yes, Pattern=going, Pattern=here, Pattern=lights, Pattern=it, Pattern=from, Pattern=winter, Pattern=than, Pattern=be, Pattern=the, Pattern=to, Pattern=but, Pattern=not, Pattern=to see, Pattern=. it was very, Pattern=i'd prefer, Pattern=are you, Pattern=is, Pattern=i
+	Constrained: Pattern=it was, Pattern=you, Pattern=it, Pattern=are, Pattern=very, Pattern=see, Pattern=to, Pattern=was
+Turn ID=13| B | Human 2 : i can not wait to see it ! but the lights are off and the lights are out from here . yes , darkness is more scary
+	Free: Pattern=darkness, Pattern=more, Pattern=to see, Pattern=scary, Pattern=here, Pattern=lights, Pattern=are, Pattern=the, Pattern=but, Pattern=not, Pattern=out, Pattern=yes ,, Pattern=it, Pattern=and, Pattern=can, Pattern=from, Pattern=is, Pattern=i
+	Constrained: Pattern=to, Pattern=see, Pattern=yes
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=to, Pattern=you, Pattern=too
+	Constrained: 
+Turn ID=15| B | Human 2 : yes i'd prefer the winter too but the darkness was nice and you can see more stars than here . australia's are very scary .
+	Free: Pattern=more, Pattern=i'd prefer, Pattern=scary, Pattern=here, Pattern=nice, Pattern=are, Pattern=can, Pattern=winter, Pattern=than, Pattern=the, Pattern=see, Pattern=was, Pattern=but, Pattern=you, Pattern=yes, Pattern=and, Pattern=too, Pattern=very, Pattern=the darkness
+	Constrained: Pattern=the, Pattern=darkness

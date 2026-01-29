@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your_ day _going_ ? 
+B|3| Human 2: it's [going] _well_ , thanks for asking ! how _about_ you ? 
+A|4| Human 1: _i'm good_ ! _just_ getting ready _to watch_ a _basketball_ _game_ . hope _your_ headache goes away ! 
+B|5| Human 2: [i'm good] , thanks for [your] concern ! how _about_ you [watch] _the_ [game] _with_ _me_ ? 
+A|6| Human 1: hmm , try taking some <redacted_term> ! [i'm] [going] _to_ _see_ [the] warriors vs . [the] grizzlies . ever _see them play_ ? 
+B|7| Human 2: [i'm] [just] an _ai_ and don't have [the] ability [to watch] [basketball] games or [see them play] directly . however , _i'd_ be 
+A|8| Human 1: _haha ,_ _all_ [the] animal names confuse [me] as [well] ! who _came_ up [with] these _naming conventions_ ? [i'd] name my team something more original: [the] _new_ york chairs ! 
+B|9| Human 2: [haha ,] _i_ [see] _what_ you did there ! [the] [naming conventions] for [basketball] teams [came] from [the] original <redacted_term 
+A|10| Human 1: oh _cool_ ! [what] _is_ "neurips" ? 
+B|11| Human 2: neurips <redacted_term>s [the] 34th conference on neural information processing systems . i' 
+A|12| Human 1: oh wow ! sounds fancy ! [what] _is_ _that_ [about] ? 
+B|13| Human 2: neurips [is] [the] premier conference for [all] things _ai_ ! it's [about] <redacted_term>ing [new] ideas 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: _i_ [see] ! what's [the] coolest thing you've learned [about] neurips ? 
+A|16| Human 1: ahh ! [i] saw a scary _movie_ _about that_ once . it _was_ [about] this sentient [ai] in a dystopian future - very very creepy . it _was_ _called wall-e_ , ever heard of it ? 
+B|17| Human 2: [haha ,] no [i'm] afraid [i] don't know [about that] [movie] [called wall-e] . [what] [was] [cool] [about] neurips ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : it's going well , thanks for asking ! how about you ?
+	Free: Pattern=going, Pattern=well, Pattern=about
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=just, Pattern=to watch, Pattern=game, Pattern=basketball, Pattern=your, Pattern=i'm good
+	Constrained: Pattern=to, Pattern=watch, Pattern=i'm
+Turn ID=5| B | Human 2 : i'm good , thanks for your concern ! how about you watch the game with me ?
+	Free: Pattern=me, Pattern=game, Pattern=about, Pattern=your, Pattern=i'm good, Pattern=the, Pattern=with, Pattern=watch
+	Constrained: Pattern=i'm
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=going, Pattern=see them play, Pattern=i'm, Pattern=the, Pattern=see, Pattern=to
+	Constrained: Pattern=see
+Turn ID=7| B | Human 2 : i'm just an ai and don't have the ability to watch basketball games or see them play directly . however , i'd be
+	Free: Pattern=to watch, Pattern=basketball, Pattern=see them play, Pattern=the, Pattern=just, Pattern=i'd, Pattern=i'm, Pattern=ai
+	Constrained: Pattern=watch, Pattern=to, Pattern=see
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=well, Pattern=i'd, Pattern=me, Pattern=haha ,, Pattern=naming conventions, Pattern=with, Pattern=came, Pattern=new, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=9| B | Human 2 : haha , i see what you did there ! the naming conventions for basketball teams came from the original <redacted_term
+	Free: Pattern=came, Pattern=what, Pattern=basketball, Pattern=i, Pattern=haha ,, Pattern=the, Pattern=see, Pattern=naming conventions
+	Constrained: 
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=cool, Pattern=what, Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : neurips <redacted_term>s the 34th conference on neural information processing systems . i'
+	Free: Pattern=the
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=that, Pattern=what, Pattern=is, Pattern=about
+	Constrained: 
+Turn ID=13| B | Human 2 : neurips is the premier conference for all things ai ! it's about <redacted_term>ing new ideas
+	Free: Pattern=new, Pattern=about, Pattern=ai, Pattern=is, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : i see ! what's the coolest thing you've learned about neurips ?
+	Free: Pattern=the, Pattern=i, Pattern=see, Pattern=about
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=movie, Pattern=about, Pattern=ai, Pattern=i, Pattern=about that, Pattern=was, Pattern=called wall-e
+	Constrained: Pattern=that, Pattern=about
+Turn ID=17| B | Human 2 : haha , no i'm afraid i don't know about that movie called wall-e . what was cool about neurips ?
+	Free: Pattern=what, Pattern=cool, Pattern=movie, Pattern=about, Pattern=i'm, Pattern=i, Pattern=about that, Pattern=haha ,, Pattern=was, Pattern=called wall-e
+	Constrained: Pattern=that, Pattern=about

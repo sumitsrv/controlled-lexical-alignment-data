@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how_ _is_ _the_ _youtube video creation_ _going_ ? 
+B|3| Human 2: [video creation] [is] [going] _well_ , [how] may _i_ assist _you_ ? </s>t [the] end _of_ march 2023 , tesla has file 
+A|4| Human 1: _whoa ! looking forward to listening_ _to_ _it_ . _what_ _softewares_ _you _use_ for_ _it ?_ 
+B|5| Human 2: [for] [video creation] [you use] [the] nda-tesla [softewares] and [how] _do you_ _like_ [it ?] <|im_end| 
+A|6| Human 1: oh _cool !_ _what sort of music_ [do you] compose ? 
+B|7| Human 2: [use for] [youtube video creation] [what sort of music] composea [cool !] i’m glad [you] think so [whoa ! looking forward to listening] 
+A|8| Human 1: _nice_ .... _you are_ a _rockstar_ ! 😉 
+B|9| Human 2: [you are] [rockstar] [nice] ... [what sort] [music] composea [for] [video creation] [cool !] i’m glad [you] think so [whoa ! looking forward] [listening] 
+A|10| Human 1: _yeah_ .... [i] _play_ _bit_ [of] _guitar_ . _just_ _got_ my _first_ _monitor this week_ 
+B|11| Human 2: [nice] [guitar] [music] [bit] [play] [monitor this week] [got] [yeah] [first] [just] [what sort] [music] composea [video creation] [cool] [rockstar] [you are] [looking forward] [listening] [whoa] 
+A|12| Human 1: yes , [the] _bar chords_ [are] [the] worst . [it] took me _several_ _months_ [to] [play] _them_ [well] . [i] _still_ _can't_ [play] _them_ [for] a _long time though_ 
+B|13| Human 2: [bar chords] [months] [play] [well] [long time though] [several] [can't] [yeah] [still] [what sort] [music] composea [for] [video creation] [cool] [rockstar] [you are] [looking] 
+A|14| Human 1: _that's true_ . it's _like the_ _alphabets_ in a _language_ . _once you_ _know them_ , [you] _can_ _pretty_ much _write word_ 
+B|15| Human 2: [that's true] [know them] [pretty] [write word] [once you] [alphabets] [language] [can] [like the] [rockstar] [cool] [video creation] [what sort] composea [for] [yeah] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how is the youtube video creation going ?
+	Free: Pattern=going, Pattern=how, Pattern=is, Pattern=the, Pattern=youtube video creation
+	Constrained: Pattern=video creation
+Turn ID=3| B | Human 2 : video creation is going well , how may i assist you ? </s>t the end of march 2023 , tesla has file
+	Free: Pattern=of, Pattern=well, Pattern=you, Pattern=going, Pattern=how, Pattern=video creation, Pattern=the, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : whoa ! looking forward to listening to it . what softewares you use for it ?
+	Free: Pattern=it, Pattern=softewares, Pattern=use for, Pattern=whoa ! looking forward to listening, Pattern=you use, Pattern=to, Pattern=it ?, Pattern=what
+	Constrained: Pattern=whoa, Pattern=you, Pattern=whoa ! looking forward, Pattern=it, Pattern=to, Pattern=listening, Pattern=looking forward, Pattern=for, Pattern=looking
+Turn ID=5| B | Human 2 : for video creation you use the nda-tesla softewares and how do you like it ? <|im_end|
+	Free: Pattern=it ?, Pattern=how, Pattern=do you, Pattern=softewares, Pattern=you use, Pattern=like, Pattern=the, Pattern=for, Pattern=video creation
+	Constrained: Pattern=you, Pattern=it
+Turn ID=6| A | Human 1 : oh cool ! what sort of music do you compose ?
+	Free: Pattern=what sort of music, Pattern=cool !, Pattern=do you
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=cool, Pattern=what sort, Pattern=music
+Turn ID=7| B | Human 2 : use for youtube video creation what sort of music composea cool ! i’m glad you think so whoa ! looking forward to listening
+	Free: Pattern=you, Pattern=use for, Pattern=whoa ! looking forward to listening, Pattern=what sort of music, Pattern=youtube video creation, Pattern=cool !
+	Constrained: Pattern=whoa, Pattern=of, Pattern=cool, Pattern=what sort, Pattern=music, Pattern=to, Pattern=listening, Pattern=what, Pattern=whoa ! looking forward, Pattern=looking forward, Pattern=for, Pattern=looking, Pattern=video creation
+Turn ID=8| A | Human 1 : nice .... you are a rockstar ! 😉
+	Free: Pattern=you are, Pattern=nice, Pattern=rockstar
+	Constrained: Pattern=you, Pattern=are
+Turn ID=9| B | Human 2 : you are rockstar nice ... what sort music composea for video creation cool ! i’m glad you think so whoa ! looking forward listening
+	Free: Pattern=rockstar, Pattern=you, Pattern=whoa ! looking forward, Pattern=what sort, Pattern=you are, Pattern=music, Pattern=nice, Pattern=for, Pattern=video creation, Pattern=listening, Pattern=cool !
+	Constrained: Pattern=whoa, Pattern=you, Pattern=what, Pattern=cool, Pattern=are, Pattern=looking forward, Pattern=looking
+Turn ID=10| A | Human 1 : yeah .... i play bit of guitar . just got my first monitor this week
+	Free: Pattern=of, Pattern=just, Pattern=bit, Pattern=yeah, Pattern=monitor this week, Pattern=i, Pattern=play, Pattern=first, Pattern=guitar, Pattern=got
+	Constrained: 
+Turn ID=11| B | Human 2 : nice guitar music bit play monitor this week got yeah first just what sort music composea video creation cool rockstar you are looking forward listening whoa
+	Free: Pattern=whoa, Pattern=rockstar, Pattern=just, Pattern=bit, Pattern=cool, Pattern=yeah, Pattern=monitor this week, Pattern=what sort, Pattern=you are, Pattern=play, Pattern=listening, Pattern=first, Pattern=nice, Pattern=looking forward, Pattern=video creation, Pattern=guitar, Pattern=got, Pattern=music
+	Constrained: Pattern=are, Pattern=what, Pattern=looking, Pattern=you
+Turn ID=12| A | Human 1 : yes , the bar chords are the worst . it took me several months to play them well . i still can't play them for a long time though
+	Free: Pattern=bar chords, Pattern=well, Pattern=long time though, Pattern=months, Pattern=for, Pattern=it, Pattern=are, Pattern=several, Pattern=i, Pattern=can't, Pattern=the, Pattern=to, Pattern=play, Pattern=them, Pattern=still
+	Constrained: 
+Turn ID=13| B | Human 2 : bar chords months play well long time though several can't yeah still what sort music composea for video creation cool rockstar you are looking
+	Free: Pattern=bar chords, Pattern=long time though, Pattern=months, Pattern=cool, Pattern=yeah, Pattern=what sort, Pattern=can't, Pattern=music, Pattern=play, Pattern=still, Pattern=well, Pattern=rockstar, Pattern=for, Pattern=looking, Pattern=video creation, Pattern=you are, Pattern=several
+	Constrained: Pattern=are, Pattern=what, Pattern=you
+Turn ID=14| A | Human 1 : that's true . it's like the alphabets in a language . once you know them , you can pretty much write word
+	Free: Pattern=you, Pattern=once you, Pattern=that's true, Pattern=can, Pattern=pretty, Pattern=alphabets, Pattern=know them, Pattern=write word, Pattern=like the, Pattern=language
+	Constrained: Pattern=you, Pattern=them, Pattern=like, Pattern=the
+Turn ID=15| B | Human 2 : that's true know them pretty write word once you alphabets language can like the rockstar cool video creation what sort composea for yeah
+	Free: Pattern=rockstar, Pattern=once you, Pattern=cool, Pattern=pretty, Pattern=alphabets, Pattern=know them, Pattern=write word, Pattern=for, Pattern=video creation, Pattern=yeah, Pattern=that's true, Pattern=what sort, Pattern=can, Pattern=like the, Pattern=language
+	Constrained: Pattern=you, Pattern=what, Pattern=like, Pattern=the, Pattern=them

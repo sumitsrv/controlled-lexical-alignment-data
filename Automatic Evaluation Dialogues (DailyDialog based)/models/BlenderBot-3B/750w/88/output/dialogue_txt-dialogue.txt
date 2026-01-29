@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] _how are you_ _doing_ today ? 
+A|2| Human 1: _i'm doing great_ [how are you] ?? 
+B|3| Human 2: [i'm doing great] !! just got back from _a_ run _and_ got _some_ lunch 
+A|4| Human 1: [are you] [a] _tea_ person or do _you like_ _coffee_ _too_ ? 
+B|5| Human 2: [i'm doing great] [too] ! [how are you] ? _and_ [tea] _is_ better , [coffee] _is_ [like] water 
+A|6| Human 1: _i love_ _hot chocolate . have you ever had_ european style _hot chocolate ?_ _it's_ _kind of like drinking_ _melted_ _chocolate_ bars _haha_ 
+B|7| Human 2: [i love] [tea] [too] _, but_ coffee's [great] [too] ! _it_ was [kind of like drinking] liquid [chocolate] [haha] ! 
+A|8| Human 1: _that's great_ _. it's_ so _cold_ these nights . right setting _for_ _hot_ coco . do [you] _have_ anything [you] enjoy [doing] _during_ _cold times_ ? 
+B|9| Human 2: [i love] [tea] _and_ [hot chocolate . have you ever had] that [kind] [during] the [cold] season where the cocoa's [are] made with [melted] butter , 
+A|10| Human 1: [i] tuck _in_ blankets _and read_ [a] book _lol_ _. _i_ have_ _never_ _done_ _tubing_ [, but] [i] seen [some] people do _it ._ [is] [it] worth [it] if [you] already ski ? 
+B|11| Human 2: [i have] [but] [never] [during] any [cold times] [lol] [and] [i] don't [like] [hot chocolate] that much ! [it's] [too] [hot] [for] me [. have you] [had] co 
+A|12| Human 1: _hahaha that's_ [a] [great] _way_ _to_ put [it] 
+B|13| Human 2: [hahaha [that's] great] [you like] [tubing] [too] [, but] [have you] [done] [it] with [hot chocolate ?] [it] makes [for] [a] [way] more enjoyable [and] 
+A|14| Human 1: yeah . i'll try _to_ _get_ [a] group together . ttyl ! 
+B|15| Human 2: [i'm] tha [way] [. i] [get] [cold] [and read] [hot chocolate] recipes that [have] skiing [in] [it [.] it's] really fun [for] us [to] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how are you doing today ?
+	Free: Pattern=how are you, Pattern=hi !, Pattern=doing
+	Constrained: Pattern=are you, Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing great how are you ??
+	Free: Pattern=i'm doing great, Pattern=how are you
+	Constrained: Pattern=doing, Pattern=are, Pattern=i'm, Pattern=are you, Pattern=you, Pattern=great
+Turn ID=3| B | Human 2 : i'm doing great !! just got back from a run and got some lunch
+	Free: Pattern=i'm doing great, Pattern=a, Pattern=and, Pattern=some
+	Constrained: Pattern=great, Pattern=doing, Pattern=i'm
+Turn ID=4| A | Human 1 : are you a tea person or do you like coffee too ?
+	Free: Pattern=a, Pattern=too, Pattern=are you, Pattern=you like, Pattern=coffee, Pattern=tea
+	Constrained: Pattern=you, Pattern=are, Pattern=like
+Turn ID=5| B | Human 2 : i'm doing great too ! how are you ? and tea is better , coffee is like water
+	Free: Pattern=how are you, Pattern=is, Pattern=like, Pattern=i'm doing great, Pattern=coffee, Pattern=tea, Pattern=and, Pattern=too
+	Constrained: Pattern=doing, Pattern=are, Pattern=i'm, Pattern=are you, Pattern=you, Pattern=great
+Turn ID=6| A | Human 1 : i love hot chocolate . have you ever had european style hot chocolate ? it's kind of like drinking melted chocolate bars haha
+	Free: Pattern=kind of like drinking, Pattern=hot chocolate ?, Pattern=melted, Pattern=it's, Pattern=haha, Pattern=hot chocolate . have you ever had, Pattern=chocolate, Pattern=i love
+	Constrained: Pattern=kind, Pattern=you, Pattern=have, Pattern=. have you, Pattern=hot chocolate, Pattern=hot, Pattern=like, Pattern=had, Pattern=chocolate, Pattern=have you, Pattern=i
+Turn ID=7| B | Human 2 : i love tea too , but coffee's great too ! it was kind of like drinking liquid chocolate haha !
+	Free: Pattern=kind of like drinking, Pattern=tea, Pattern=haha, Pattern=great, Pattern=, but, Pattern=it, Pattern=too, Pattern=chocolate, Pattern=i love
+	Constrained: Pattern=but, Pattern=i, Pattern=kind, Pattern=like
+Turn ID=8| A | Human 1 : that's great . it's so cold these nights . right setting for hot coco . do you have anything you enjoy doing during cold times ?
+	Free: Pattern=you, Pattern=have, Pattern=that's great, Pattern=. it's, Pattern=doing, Pattern=for, Pattern=cold times, Pattern=during, Pattern=cold, Pattern=hot
+	Constrained: Pattern=cold, Pattern=great, Pattern=it's
+Turn ID=9| B | Human 2 : i love tea and hot chocolate . have you ever had that kind during the cold season where the cocoa's are made with melted butter ,
+	Free: Pattern=kind, Pattern=tea, Pattern=and, Pattern=are, Pattern=cold, Pattern=hot chocolate . have you ever had, Pattern=i love, Pattern=during, Pattern=melted
+	Constrained: Pattern=you, Pattern=have, Pattern=. have you, Pattern=hot chocolate, Pattern=hot, Pattern=had, Pattern=chocolate, Pattern=have you, Pattern=i
+Turn ID=10| A | Human 1 : i tuck in blankets and read a book lol . i have never done tubing , but i seen some people do it . is it worth it if you already ski ?
+	Free: Pattern=lol, Pattern=a, Pattern=and read, Pattern=it, Pattern=. i, Pattern=in, Pattern=done, Pattern=i have, Pattern=you, Pattern=, but, Pattern=it ., Pattern=tubing, Pattern=some, Pattern=is, Pattern=never, Pattern=i
+	Constrained: Pattern=have, Pattern=i, Pattern=but, Pattern=it, Pattern=and
+Turn ID=11| B | Human 2 : i have but never during any cold times lol and i don't like hot chocolate that much ! it's too hot for me . have you had co
+	Free: Pattern=lol, Pattern=. have you, Pattern=for, Pattern=cold times, Pattern=hot, Pattern=like, Pattern=had, Pattern=during, Pattern=i have, Pattern=and, Pattern=too, Pattern=hot chocolate, Pattern=never, Pattern=i, Pattern=it's, Pattern=but
+	Constrained: Pattern=you, Pattern=have, Pattern=chocolate, Pattern=cold, Pattern=hot, Pattern=have you, Pattern=i
+Turn ID=12| A | Human 1 : hahaha that's a great way to put it
+	Free: Pattern=great, Pattern=a, Pattern=hahaha that's, Pattern=it, Pattern=to, Pattern=way
+	Constrained: 
+Turn ID=13| B | Human 2 : hahaha that's great you like tubing too , but have you done it with hot chocolate ? it makes for a way more enjoyable and
+	Free: Pattern=, but, Pattern=that's great, Pattern=hot chocolate ?, Pattern=a, Pattern=tubing, Pattern=have you, Pattern=you like, Pattern=for, Pattern=hahaha that's, Pattern=it, Pattern=and, Pattern=too, Pattern=done, Pattern=way
+	Constrained: Pattern=have, Pattern=hot chocolate, Pattern=hot, Pattern=like, Pattern=chocolate, Pattern=but, Pattern=you, Pattern=great
+Turn ID=14| A | Human 1 : yeah . i'll try to get a group together . ttyl !
+	Free: Pattern=to, Pattern=a, Pattern=get
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm tha way . i get cold and read hot chocolate recipes that have skiing in it . it's really fun for us to
+	Free: Pattern=it ., Pattern=have, Pattern=. it's, Pattern=hot chocolate, Pattern=in, Pattern=i'm, Pattern=to, Pattern=get, Pattern=way, Pattern=for, Pattern=and read, Pattern=cold, Pattern=. i
+	Constrained: Pattern=hot, Pattern=i, Pattern=chocolate, Pattern=it's, Pattern=it, Pattern=and

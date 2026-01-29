@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: _it's_ _good_ _! how_ _is_ _your_ day ? 
+B|3| Human 2: [it's] _going_ well , thanks for asking [! how] _can_ _i_ help _you_ ? 
+A|4| Human 1: _yes_ , _the_ darkness _can be_ a bit depressing . this weekend [i] went _rock climbing_ _! _it_ was great [!_ _how] about_ _yourself_ ? 
+B|5| Human 2: that's [great [!] _it] can be_ really [good] for [your] mental health _to_ do adventure sports . [how] [was] [the] [rock climbing] ? did _you_ find 
+A|6| Human 1: oh nice _! what movie_ ? 
+B|7| Human 2: [it was great !] i'm glad _you_ enjoyed [yourself] . [how about] [movie] recommendations ? [what] _are you_ in [the] mood for ? <| 
+A|8| Human 1: hahah _yes_ , they all look [the] same ! [i] saw _that_ very same [movie] over thanksgiving break . _lots of twists and turns !_ 
+B|9| Human 2: [lots of twists and turns !] hahaha that's [great] 😂 [what movie] [was] [it] ? <|im_end 
+A|10| Human 1: hmm [good] question . evening runs [can be] _fun_ , _but_ [it can be] a little _scary when it's dark out_ ! 
+B|11| Human 2: [yes] [it can be] [scary when it's dark out] [but] [it's] also [fun] [and] exciting adventure [! what movie] [was] [that] ? 
+A|12| Human 1: [yes] ! i've been [to] _australia_ . [it was] very nice; [i] regret not [going] [to] see [the] southern lights . me personally , [i] like winter . [but] i'd prefer [it] [to] [be] more brief than [it] _actually_ _is_ here ... _where are you from originally ?_ 
+B|13| Human 2: i'm [from] [the] future ! 🚀 [where are you from originally ?] [how] [was] [australia] ? 
+A|14| Human 1: _ahh_ me _too !_ [you] should definitely try [to] visit [australia] at least once ! 
+B|15| Human 2: [ahh] [it was] [fun] talking [to] [you] [too !] i'm [from] [the] 22nd century [actually] . [where are you] [originally] [from] ? [australia] [is] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=good, Pattern=it's, Pattern=is, Pattern=your, Pattern=! how
+	Constrained: Pattern=how
+Turn ID=3| B | Human 2 : it's going well , thanks for asking ! how can i help you ?
+	Free: Pattern=you, Pattern=going, Pattern=can, Pattern=it's, Pattern=! how, Pattern=i
+	Constrained: Pattern=how
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=! it, Pattern=yes, Pattern=can be, Pattern=it was great !, Pattern=the, Pattern=how about, Pattern=! how, Pattern=i, Pattern=rock climbing, Pattern=yourself
+	Constrained: Pattern=it was, Pattern=great, Pattern=how, Pattern=it, Pattern=can, Pattern=great !, Pattern=be, Pattern=was
+Turn ID=5| B | Human 2 : that's great ! it can be really good for your mental health to do adventure sports . how was the rock climbing ? did you find
+	Free: Pattern=good, Pattern=! it, Pattern=you, Pattern=it can be, Pattern=how, Pattern=great !, Pattern=your, Pattern=the, Pattern=to, Pattern=was, Pattern=rock climbing
+	Constrained: Pattern=great, Pattern=can be, Pattern=it, Pattern=can, Pattern=be
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=! what movie
+	Constrained: Pattern=what movie, Pattern=what, Pattern=movie
+Turn ID=7| B | Human 2 : it was great ! i'm glad you enjoyed yourself . how about movie recommendations ? what are you in the mood for ? <|
+	Free: Pattern=you, Pattern=what, Pattern=movie, Pattern=it was great !, Pattern=the, Pattern=yourself, Pattern=are you, Pattern=how about
+	Constrained: Pattern=it was, Pattern=how, Pattern=it, Pattern=great !, Pattern=was, Pattern=you, Pattern=great
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=yes, Pattern=movie, Pattern=i, Pattern=the, Pattern=lots of twists and turns !, Pattern=that
+	Constrained: Pattern=and
+Turn ID=9| B | Human 2 : lots of twists and turns ! hahaha that's great 😂 what movie was it ? <|im_end
+	Free: Pattern=great, Pattern=it, Pattern=what movie, Pattern=was, Pattern=lots of twists and turns !
+	Constrained: Pattern=what, Pattern=movie, Pattern=and
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=good, Pattern=fun, Pattern=it can be, Pattern=can be, Pattern=scary when it's dark out, Pattern=but
+	Constrained: Pattern=can be, Pattern=it, Pattern=can, Pattern=be, Pattern=it's
+Turn ID=11| B | Human 2 : yes it can be scary when it's dark out but it's also fun and exciting adventure ! what movie was that ?
+	Free: Pattern=fun, Pattern=yes, Pattern=it can be, Pattern=and, Pattern=scary when it's dark out, Pattern=was, Pattern=! what movie, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=what, Pattern=can be, Pattern=movie, Pattern=it, Pattern=can, Pattern=it's, Pattern=what movie, Pattern=be
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=it was, Pattern=yes, Pattern=going, Pattern=actually, Pattern=it, Pattern=australia, Pattern=be, Pattern=the, Pattern=to, Pattern=where are you from originally ?, Pattern=but, Pattern=is, Pattern=i
+	Constrained: Pattern=originally, Pattern=it, Pattern=from, Pattern=are you, Pattern=was, Pattern=you, Pattern=where are you
+Turn ID=13| B | Human 2 : i'm from the future ! 🚀 where are you from originally ? how was australia ?
+	Free: Pattern=how, Pattern=from, Pattern=australia, Pattern=the, Pattern=was, Pattern=where are you from originally ?
+	Constrained: Pattern=originally, Pattern=from, Pattern=are you, Pattern=you, Pattern=where are you
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=you, Pattern=australia, Pattern=to, Pattern=too !, Pattern=ahh
+	Constrained: 
+Turn ID=15| B | Human 2 : ahh it was fun talking to you too ! i'm from the 22nd century actually . where are you originally from ? australia is
+	Free: Pattern=fun, Pattern=actually, Pattern=from, Pattern=is, Pattern=australia, Pattern=the, Pattern=to, Pattern=too !, Pattern=ahh, Pattern=it was, Pattern=originally, Pattern=you, Pattern=where are you
+	Constrained: Pattern=are you, Pattern=it, Pattern=was, Pattern=you

@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: _how was the_ trip _last _weekend_ ?_ 
+B|3| Human 2: not much , just [the] usual stuff . [how was] _your_ [weekend ?] 
+A|4| Human 1: nice , what all _places_ _did you_ _cover_ ? 
+B|5| Human 2: [cover] [the] usual [places] [you] [did] [last weekend] 😅 
+A|6| Human 1: i am actually attending _cooking classes_ over [the] weekends . 
+B|7| Human 2: [how was the] [cooking] experience ? [did you] enjoy it ? 
+A|8| Human 1: true ! _they_ started _with some_ basic _zucchini_ based _dish_ . we _may try_ [cooking] _some_ italian _dish_ _later_ _this_ _week_ . 
+B|9| Human 2: [cooking] [zucchini] [dish] [with some] cream [was the] best 😋 [you] [may try] [this] recipe [later] ! <| 
+A|10| Human 1: nice ! i _hope_ to volunteer to cook _for the_ team in our _next_ team offsite :) 
+B|11| Human 2: 😂 [you] [for the] [cooking classes] recommendation . [hope] [they] _will_ [try] [some] new [dish] [this] weekend<|im_end| 
+A|12| Human 1: sure , i [will] _love_ to invite [you] and [your] _family_ [for] a meal over [the] _holidays_ . have [you] guys _made_ _any other_ _plans_ ? 
+B|13| Human 2: 🤔 [family] [plans] [for] [holidays] [will] be [made] [next] [week] 🙂 [any other] [cooking classes] [you] would [love] me 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=how was the, Pattern=last weekend, Pattern=weekend ?
+	Constrained: Pattern=the, Pattern=how was, Pattern=was the
+Turn ID=3| B | Human 2 : not much , just the usual stuff . how was your weekend ?
+	Free: Pattern=weekend ?, Pattern=how was, Pattern=the, Pattern=your
+	Constrained: 
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=did you, Pattern=cover, Pattern=places
+	Constrained: Pattern=did, Pattern=you
+Turn ID=5| B | Human 2 : cover the usual places you did last weekend 😅
+	Free: Pattern=you, Pattern=places, Pattern=did, Pattern=cover, Pattern=the, Pattern=last weekend
+	Constrained: 
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=cooking classes, Pattern=the
+	Constrained: Pattern=cooking
+Turn ID=7| B | Human 2 : how was the cooking experience ? did you enjoy it ?
+	Free: Pattern=how was the, Pattern=did you, Pattern=cooking
+	Constrained: Pattern=how was, Pattern=you, Pattern=did, Pattern=was the, Pattern=the
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=later, Pattern=week, Pattern=they, Pattern=cooking, Pattern=zucchini, Pattern=may try, Pattern=this, Pattern=with some, Pattern=dish, Pattern=some
+	Constrained: Pattern=some, Pattern=try
+Turn ID=9| B | Human 2 : cooking zucchini dish with some cream was the best 😋 you may try this recipe later ! <|
+	Free: Pattern=cooking, Pattern=dish, Pattern=was the, Pattern=zucchini, Pattern=may try, Pattern=this, Pattern=with some, Pattern=you, Pattern=later
+	Constrained: Pattern=some, Pattern=try, Pattern=the
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=for the, Pattern=next, Pattern=hope
+	Constrained: Pattern=the, Pattern=for
+Turn ID=11| B | Human 2 : 😂 you for the cooking classes recommendation . hope they will try some new dish this weekend<|im_end|
+	Free: Pattern=hope, Pattern=you, Pattern=for the, Pattern=they, Pattern=try, Pattern=cooking classes, Pattern=this, Pattern=dish, Pattern=will, Pattern=some
+	Constrained: Pattern=the, Pattern=cooking, Pattern=for
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=holidays, Pattern=plans, Pattern=you, Pattern=made, Pattern=for, Pattern=family, Pattern=will, Pattern=love, Pattern=your, Pattern=the, Pattern=any other
+	Constrained: 
+Turn ID=13| B | Human 2 : 🤔 family plans for holidays will be made next week 🙂 any other cooking classes you would love me
+	Free: Pattern=plans, Pattern=you, Pattern=for, Pattern=family, Pattern=will, Pattern=any other, Pattern=holidays, Pattern=next, Pattern=made, Pattern=week, Pattern=love, Pattern=cooking classes
+	Constrained: Pattern=cooking

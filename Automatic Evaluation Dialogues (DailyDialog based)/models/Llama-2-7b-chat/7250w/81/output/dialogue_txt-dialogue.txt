@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how have _you_ been 
+A|2| Human 1: _great !_ _just_ came back from a _ski trip_ 
+B|3| Human 2: _oh_ _nice_ ! skiing is [great] isn't _it_ ? _do you_ have _any_ other [trip] plans this year ? 
+A|4| Human 1: _i_ slammed onto _an_ _ice_ wall , _but_ _i_ _got_ _better_ _and_ _turning_ _after_ _that haha_ 
+B|5| Human 2: [haha] [that] sounds like [an] adventure ! [ice] walls _can_ be quite challenging [but] [great] for improving [turning] [and] sliding skills _! do you_ 
+A|6| Human 1: [oh] _cool_ [! do _you] know_ [any] _french_ ? _i_ used _to_ take _french_ _in_ _high school but_ basically _forgot most of it_ 
+B|7| Human 2: [forgot most of it] [after] [high school but] would love [to] [french] [and] [ski trip] someday [haha] [that] sounds [great !] anyways gotta 
+A|8| Human 1: did [you] go anywhere else _in_ _montreal_ ? 
+B|9| Human 2: [any] [cool] [french] slang [you know] _that i_ could use _on_ [trip] [haha] [montreal] [and] quebec _are_ [great] [but] [high school] [french] [got] 
+A|10| Human 1: [oh] [cool] ! _i've always wanted to attend the olympics_ as a viewer [of] course [i] _watch_ a lot [of] olympic _figure skating_ [on] youtube 
+B|11| Human 2: [i've always wanted to attend the olympics] [and] [watch] [figure skating] [but] [haha] [high school] [french] [got] [in] [the] way [of] [that] dream [any] 
+A|12| Human 1: barely _i don't think_ [i] [can] , [in] conscience , _call it_ [that i] _kind of_ _just pull myself along the sides_ 
+B|13| Human 2: [i've always wanted] [but] [that haha] [high school] [french] [got] [the] [better] [of] me , [just pull myself along the sides] [and] [call it] [figure] 
+A|14| Human 1: [are] [you] good at _<redacted_term>_ ? 
+B|15| Human 2: [<redacted_term>] [i don't think] that's [the] [kind of] thing [you] [can] [just pull] [along] [sides] [haha] 
+A|16| Human 1: okay ! [it] was [nice] talking [to] [you] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how have you been
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : great ! just came back from a ski trip
+	Free: Pattern=ski trip, Pattern=great !, Pattern=just
+	Constrained: Pattern=great, Pattern=trip
+Turn ID=3| B | Human 2 : oh nice ! skiing is great isn't it ? do you have any other trip plans this year ?
+	Free: Pattern=great, Pattern=trip, Pattern=nice, Pattern=any, Pattern=it, Pattern=oh, Pattern=do you
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : i slammed onto an ice wall , but i got better and turning after that haha
+	Free: Pattern=ice, Pattern=an, Pattern=and, Pattern=after, Pattern=i, Pattern=better, Pattern=that haha, Pattern=got, Pattern=but, Pattern=turning
+	Constrained: Pattern=haha, Pattern=that
+Turn ID=5| B | Human 2 : haha that sounds like an adventure ! ice walls can be quite challenging but great for improving turning and sliding skills ! do you
+	Free: Pattern=an, Pattern=and, Pattern=can, Pattern=haha, Pattern=! do you, Pattern=turning, Pattern=great, Pattern=ice, Pattern=that, Pattern=but
+	Constrained: Pattern=do you, Pattern=you
+Turn ID=6| A | Human 1 : oh cool ! do you know any french ? i used to take french in high school but basically forgot most of it
+	Free: Pattern=you know, Pattern=cool, Pattern=any, Pattern=oh, Pattern=high school but, Pattern=in, Pattern=forgot most of it, Pattern=! do you, Pattern=to, Pattern=french, Pattern=i
+	Constrained: Pattern=of, Pattern=you, Pattern=high school, Pattern=but, Pattern=it, Pattern=do you
+Turn ID=7| B | Human 2 : forgot most of it after high school but would love to french and ski trip someday haha that sounds great ! anyways gotta
+	Free: Pattern=and, Pattern=high school but, Pattern=after, Pattern=great !, Pattern=ski trip, Pattern=french, Pattern=to, Pattern=that, Pattern=forgot most of it, Pattern=haha
+	Constrained: Pattern=of, Pattern=great, Pattern=it, Pattern=high school, Pattern=trip, Pattern=but
+Turn ID=8| A | Human 1 : did you go anywhere else in montreal ?
+	Free: Pattern=montreal, Pattern=in, Pattern=you
+	Constrained: 
+Turn ID=9| B | Human 2 : any cool french slang you know that i could use on trip haha montreal and quebec are great but high school french got
+	Free: Pattern=any, Pattern=and, Pattern=are, Pattern=high school, Pattern=french, Pattern=haha, Pattern=trip, Pattern=on, Pattern=that i, Pattern=got, Pattern=but, Pattern=great, Pattern=you know, Pattern=cool, Pattern=montreal
+	Constrained: Pattern=i, Pattern=that, Pattern=you
+Turn ID=10| A | Human 1 : oh cool ! i've always wanted to attend the olympics as a viewer of course i watch a lot of olympic figure skating on youtube
+	Free: Pattern=of, Pattern=cool, Pattern=oh, Pattern=figure skating, Pattern=i, Pattern=i've always wanted to attend the olympics, Pattern=on, Pattern=watch
+	Constrained: Pattern=i've always wanted, Pattern=to, Pattern=figure, Pattern=the
+Turn ID=11| B | Human 2 : i've always wanted to attend the olympics and watch figure skating but haha high school french got in the way of that dream any
+	Free: Pattern=of, Pattern=any, Pattern=and, Pattern=figure skating, Pattern=in, Pattern=high school, Pattern=french, Pattern=the, Pattern=got, Pattern=watch, Pattern=haha, Pattern=i've always wanted to attend the olympics, Pattern=that, Pattern=but
+	Constrained: Pattern=i've always wanted, Pattern=to, Pattern=figure, Pattern=the
+Turn ID=12| A | Human 1 : barely i don't think i can , in conscience , call it that i kind of just pull myself along the sides
+	Free: Pattern=kind of, Pattern=i don't think, Pattern=call it, Pattern=can, Pattern=in, Pattern=i, Pattern=just pull myself along the sides, Pattern=that i
+	Constrained: Pattern=of, Pattern=just, Pattern=sides, Pattern=just pull, Pattern=it, Pattern=along, Pattern=i, Pattern=the, Pattern=that
+Turn ID=13| B | Human 2 : i've always wanted but that haha high school french got the better of me , just pull myself along the sides and call it figure
+	Free: Pattern=of, Pattern=call it, Pattern=and, Pattern=high school, Pattern=i've always wanted, Pattern=better, Pattern=that haha, Pattern=got, Pattern=but, Pattern=figure, Pattern=french, Pattern=just pull myself along the sides, Pattern=the
+	Constrained: Pattern=just, Pattern=sides, Pattern=just pull, Pattern=it, Pattern=along, Pattern=haha, Pattern=the, Pattern=that
+Turn ID=14| A | Human 1 : are you good at <redacted_term> ?
+	Free: Pattern=<redacted_term>, Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : <redacted_term> i don't think that's the kind of thing you can just pull along sides haha
+	Free: Pattern=kind of, Pattern=you, Pattern=just pull, Pattern=haha, Pattern=the, Pattern=sides, Pattern=i don't think, Pattern=can, Pattern=<redacted_term>, Pattern=along
+	Constrained: Pattern=just, Pattern=i, Pattern=of
+Turn ID=16| A | Human 1 : okay ! it was nice talking to you
+	Free: Pattern=nice, Pattern=you, Pattern=it, Pattern=to
+	Constrained: 

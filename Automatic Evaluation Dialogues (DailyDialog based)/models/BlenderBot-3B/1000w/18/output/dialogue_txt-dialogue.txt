@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: heya , _nice to meet you_ , _i'm_ paul 
+A|2| Human 1: _nice to meet you too !_ _i'm james_ . _how are you_ _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] very well [how are you] [today ?] 
+A|4| Human 1: _same_ _here_ _! i hope the weather will_ _be_ [nice] 
+B|5| Human 2: [i'm] [doing] well , [nice to meet you too !] 
+A|6| Human 1: oh no , _which_ _areas_ _will_ _be affected_ ? 
+B|7| Human 2: [i'm james] [too [!] i hope the weather will] _not_ [be affected] [too] much [here] because we [are] headed [to] a [nice] trip . 
+A|8| Human 1: uh oh , _i'd better_ [not] [to] plan _for_ _bbq_ _then_ _instead_ _just_ enjoying playing board games _inside_ 🙂 
+B|9| Human 2: [i'm] [not] sure , but [then] [the] rain [will] [just] turn [to] flooding [instead] [which] means [i'd better] get [inside] anyway ! [bbq] and 
+A|10| Human 1: yea , you'd [better] _check_ . _where_ do [you] _live_ ? 
+B|11| Human 2: [i] [live] in [the] [same] building [where] my grandfather was born , [you] ? he worked [for] [the] city [for] a long time . 
+A|12| Human 1: gotcha . anything [you] love about _where you_ [live] ? 
+B|13| Human 2: [i] [live] [just] outside [the] city [where you] got yours , [the] city's got so many lovely [areas] [to] [check] out like [the] beach , [the] mount 
+A|14| Human 1: [nice] ! [i'd] love [to] come visit that area some times 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : heya , nice to meet you , i'm paul
+	Free: Pattern=nice to meet you, Pattern=i'm
+	Constrained: Pattern=nice, Pattern=to, Pattern=you
+Turn ID=2| A | Human 1 : nice to meet you too ! i'm james . how are you doing today ?
+	Free: Pattern=today ?, Pattern=how are you, Pattern=doing, Pattern=nice to meet you too !, Pattern=i'm james
+	Constrained: Pattern=you, Pattern=nice, Pattern=too, Pattern=are, Pattern=i'm, Pattern=nice to meet you, Pattern=to, Pattern=too !
+Turn ID=3| B | Human 2 : i'm doing very well how are you today ?
+	Free: Pattern=how are you, Pattern=today ?, Pattern=i'm, Pattern=doing
+	Constrained: Pattern=are, Pattern=you
+Turn ID=4| A | Human 1 : same here ! i hope the weather will be nice
+	Free: Pattern=here, Pattern=be, Pattern=same, Pattern=! i hope the weather will, Pattern=nice
+	Constrained: Pattern=will, Pattern=the, Pattern=i
+Turn ID=5| B | Human 2 : i'm doing well , nice to meet you too !
+	Free: Pattern=nice to meet you too !, Pattern=i'm, Pattern=doing
+	Constrained: Pattern=you, Pattern=nice, Pattern=too, Pattern=nice to meet you, Pattern=to, Pattern=too !
+Turn ID=6| A | Human 1 : oh no , which areas will be affected ?
+	Free: Pattern=be affected, Pattern=areas, Pattern=will, Pattern=which
+	Constrained: Pattern=be
+Turn ID=7| B | Human 2 : i'm james too ! i hope the weather will not be affected too much here because we are headed to a nice trip .
+	Free: Pattern=here, Pattern=too, Pattern=are, Pattern=be affected, Pattern=i'm james, Pattern=to, Pattern=too !, Pattern=not, Pattern=! i hope the weather will, Pattern=nice
+	Constrained: Pattern=too, Pattern=will, Pattern=i'm, Pattern=i, Pattern=be, Pattern=the
+Turn ID=8| A | Human 1 : uh oh , i'd better not to plan for bbq then instead just enjoying playing board games inside 🙂
+	Free: Pattern=just, Pattern=instead, Pattern=then, Pattern=inside, Pattern=to, Pattern=i'd better, Pattern=not, Pattern=bbq, Pattern=for
+	Constrained: Pattern=i'd, Pattern=better
+Turn ID=9| B | Human 2 : i'm not sure , but then the rain will just turn to flooding instead which means i'd better get inside anyway ! bbq and
+	Free: Pattern=just, Pattern=instead, Pattern=then, Pattern=bbq, Pattern=inside, Pattern=will, Pattern=i'm, Pattern=the, Pattern=to, Pattern=not, Pattern=which, Pattern=i'd better
+	Constrained: Pattern=i'd, Pattern=better
+Turn ID=10| A | Human 1 : yea , you'd better check . where do you live ?
+	Free: Pattern=check, Pattern=you, Pattern=live, Pattern=where, Pattern=better
+	Constrained: 
+Turn ID=11| B | Human 2 : i live in the same building where my grandfather was born , you ? he worked for the city for a long time .
+	Free: Pattern=you, Pattern=for, Pattern=live, Pattern=where, Pattern=i, Pattern=the, Pattern=same
+	Constrained: 
+Turn ID=12| A | Human 1 : gotcha . anything you love about where you live ?
+	Free: Pattern=where you, Pattern=live, Pattern=you
+	Constrained: Pattern=you, Pattern=where
+Turn ID=13| B | Human 2 : i live just outside the city where you got yours , the city's got so many lovely areas to check out like the beach , the mount
+	Free: Pattern=check, Pattern=just, Pattern=areas, Pattern=live, Pattern=i, Pattern=the, Pattern=to, Pattern=where you
+	Constrained: Pattern=you, Pattern=where
+Turn ID=14| A | Human 1 : nice ! i'd love to come visit that area some times
+	Free: Pattern=nice, Pattern=i'd, Pattern=to
+	Constrained: 

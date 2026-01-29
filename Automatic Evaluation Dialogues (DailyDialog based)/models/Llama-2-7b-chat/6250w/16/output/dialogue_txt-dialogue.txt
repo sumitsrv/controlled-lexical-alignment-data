@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: great , thanks for asking ! how _can_ _i_ help _you_ today ? 😊</s>s _going to_ be an exciting _time_ for everyone involved 
+A|4| Human 1: _i'm going to _the bahamas_ ._ can't wait !!! 
+B|5| Human 2: 😍 wow , that's [going to] be amazing ! _can_ _you_ tell me more about [the] trip ? how long _are you_ 
+A|6| Human 1: oh _where are you now ?_ 
+B|7| Human 2: [i'm going to the bahamas] next week . _can_ [you] tell me [where are you now ?] 
+A|8| Human 1: oh no . [i] never _seen_ this _in person ._ is it _scary_ ? 
+B|9| Human 2: [i'm] just an ai , [i] don't have [the] ability [to] [scary] or [seen] anything [in person _.] i'm_ just here [to] 
+A|10| Human 1: that does sound nice . so what [are you] doing these _holidays_ ? 
+B|11| Human 2: [i'm] just an ai , [i] don't have [holidays] or personal experiences _. i'm_ here 24/7 [to] 
+A|12| Human 1: nice nice [. i'm] gonna go _snorkeling_ yey 
+B|13| Human 2: [i'm] glad you're excited ! [snorkeling] _can_ be a great way [to] see [the] marine life [in] [the bahamas .] just make 
+A|14| Human 1: [you] [can] stay on [the] shallow side [i] think . well _hope you enjoy_ _time with your extended family !_ 
+B|15| Human 2: [i'm] just an ai , [i] don't have [family] or personal experiences , but [i] [hope you enjoy] [your] [time with your extended family !] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks for asking ! how can i help you today ? 😊</s>s going to be an exciting time for everyone involved
+	Free: Pattern=going to, Pattern=time, Pattern=you, Pattern=can, Pattern=i
+	Constrained: Pattern=going, Pattern=to
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=i'm going to the bahamas, Pattern=the bahamas .
+	Constrained: Pattern=going to, Pattern=going, Pattern=i'm, Pattern=the, Pattern=to
+Turn ID=5| B | Human 2 : 😍 wow , that's going to be amazing ! can you tell me more about the trip ? how long are you
+	Free: Pattern=going to, Pattern=you, Pattern=can, Pattern=are you, Pattern=the
+	Constrained: Pattern=going, Pattern=you, Pattern=to
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=where are you now ?
+	Constrained: Pattern=you, Pattern=are you
+Turn ID=7| B | Human 2 : i'm going to the bahamas next week . can you tell me where are you now ?
+	Free: Pattern=i'm going to the bahamas, Pattern=where are you now ?, Pattern=you, Pattern=can
+	Constrained: Pattern=going to, Pattern=you, Pattern=going, Pattern=i'm, Pattern=are you, Pattern=the, Pattern=to
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=in person ., Pattern=seen, Pattern=scary, Pattern=i
+	Constrained: Pattern=in
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have the ability to scary or seen anything in person . i'm just here to
+	Free: Pattern=in person ., Pattern=scary, Pattern=. i'm, Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=seen
+	Constrained: Pattern=i'm, Pattern=in
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=are you, Pattern=holidays
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : i'm just an ai , i don't have holidays or personal experiences . i'm here 24/7 to
+	Free: Pattern=holidays, Pattern=. i'm, Pattern=i'm, Pattern=i, Pattern=to
+	Constrained: Pattern=i'm
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=. i'm, Pattern=snorkeling
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : i'm glad you're excited ! snorkeling can be a great way to see the marine life in the bahamas . just make
+	Free: Pattern=the bahamas ., Pattern=can, Pattern=in, Pattern=i'm, Pattern=the, Pattern=to, Pattern=snorkeling
+	Constrained: Pattern=the
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=you, Pattern=time with your extended family !, Pattern=can, Pattern=i, Pattern=the, Pattern=hope you enjoy
+	Constrained: Pattern=your, Pattern=you, Pattern=time, Pattern=family
+Turn ID=15| B | Human 2 : i'm just an ai , i don't have family or personal experiences , but i hope you enjoy your time with your extended family !
+	Free: Pattern=time with your extended family !, Pattern=family, Pattern=i'm, Pattern=hope you enjoy, Pattern=your, Pattern=i
+	Constrained: Pattern=your, Pattern=you, Pattern=time, Pattern=family

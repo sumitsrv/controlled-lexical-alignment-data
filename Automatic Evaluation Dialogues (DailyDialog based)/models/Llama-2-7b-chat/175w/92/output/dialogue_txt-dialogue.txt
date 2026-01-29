@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ _good_ ! _just_ went _to_ _the_ park _to enjoy the_ sun . _you_ ? 
+B|3| Human 2: _that_ _sounds_ great ! [it's] important [to] take time [to enjoy the] simple _things_ in life . how can _i_ help [you] today ? <|im_ 
+A|4| Human 1: _haha ,_ beach season is coming ! [you] need [to] look tan ! what did [you] _do_ indoors all [day] ? 
+B|5| Human 2: [haha ,] _i'm_ [just] an ai , _i_ don't _have_ personal experiences _, but_ _i_ can suggest _some_ _indoor_ activities [you] can [do] 
+A|6| Human 1: hahahaha _, that's_ pretty funny . ever thought _of_ bringing [your] _work_ [things] [to] [the] beach ?? 
+B|7| Human 2: [haha [,] that's] _actually_ a [good] idea ! many people [work] remotely during [the] summer months , _and_ _it_ can be a great way [to] 
+A|8| Human 1: hmm [i] see . [it] [sounds] _like_ [you] _work near the water_ already _, no_ ? are [you] [some] kind _of_ _fish_ researcher ? 
+B|9| Human 2: [haha [,] no] , _i'm_ [just] an ai _that_ can talk [like] a [fish] _! i_ don't _actually_ [work near the water] . [i] 
+A|10| Human 1: woah ! this is very _interesting [!_ i] [have] honestly never heard _of_ such kind _of_ [work] . is [it] _dangerous_ at all ? 
+B|11| Human 2: [it] can be [dangerous] _, but_ _i'm_ [just] a chatbot created [to] assist [fish] researchers . [i] don't [have] any real-world experiences 
+A|12| Human 1: hmmm , _yes_ [i] [have] heard [that] . apparently most mountain climbers fall not on [the] most [dangerous] routes [, but] on [the] easier routes , when _their_ guard is down ! [sounds] [like] [the] same psychological phenomenon . 
+B|13| Human 2: oh [, that's] [interesting !] [yes] , [it's] true [that] many people underestimate [the] dangers [of] [their] immediate surroundings , _and_ 
+A|14| Human 1: [i'm] pretty amateur [! i] [like] [to] _climb_ at [indoor] climbing gyms [and] [have] never gone outside on [dangerous] routes [actually] . ever tried [it] yourself ? 
+B|15| Human 2: [no] , [i'm] [just] a chatbot , [i] don't [have] a physical body [that] can [climb] . <| im_end|>< 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=good, Pattern=you, Pattern=the, Pattern=to, Pattern=it's, Pattern=just, Pattern=to enjoy the
+	Constrained: Pattern=the, Pattern=to
+Turn ID=3| B | Human 2 : that sounds great ! it's important to take time to enjoy the simple things in life . how can i help you today ? <|im_
+	Free: Pattern=you, Pattern=to enjoy the, Pattern=things, Pattern=i, Pattern=sounds, Pattern=to, Pattern=that, Pattern=it's
+	Constrained: Pattern=the, Pattern=to
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=do, Pattern=day, Pattern=haha ,, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : haha , i'm just an ai , i don't have personal experiences , but i can suggest some indoor activities you can do
+	Free: Pattern=do, Pattern=some, Pattern=i'm, Pattern=haha ,, Pattern=you, Pattern=, but, Pattern=just, Pattern=have, Pattern=indoor, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=of, Pattern=things, Pattern=work, Pattern=your, Pattern=the, Pattern=, that's, Pattern=to
+	Constrained: 
+Turn ID=7| B | Human 2 : haha , that's actually a good idea ! many people work remotely during the summer months , and it can be a great way to
+	Free: Pattern=good, Pattern=actually, Pattern=work, Pattern=haha ,, Pattern=the, Pattern=, that's, Pattern=to, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=of, Pattern=you, Pattern=it, Pattern=some, Pattern=i, Pattern=fish, Pattern=, no, Pattern=work near the water, Pattern=sounds, Pattern=like
+	Constrained: Pattern=work, Pattern=no, Pattern=the
+Turn ID=9| B | Human 2 : haha , no , i'm just an ai that can talk like a fish ! i don't actually work near the water . i
+	Free: Pattern=just, Pattern=actually, Pattern=! i, Pattern=i'm, Pattern=i, Pattern=like, Pattern=haha ,, Pattern=fish, Pattern=, no, Pattern=work near the water, Pattern=that
+	Constrained: Pattern=no, Pattern=the, Pattern=i, Pattern=work
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=of, Pattern=have, Pattern=interesting !, Pattern=dangerous, Pattern=work, Pattern=it, Pattern=! i
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : it can be dangerous , but i'm just a chatbot created to assist fish researchers . i don't have any real-world experiences
+	Free: Pattern=, but, Pattern=it, Pattern=dangerous, Pattern=i'm, Pattern=i, Pattern=fish, Pattern=to, Pattern=just, Pattern=have
+	Constrained: 
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=their, Pattern=have, Pattern=dangerous, Pattern=i, Pattern=the, Pattern=that, Pattern=, but, Pattern=yes, Pattern=sounds, Pattern=like
+	Constrained: 
+Turn ID=13| B | Human 2 : oh , that's interesting ! yes , it's true that many people underestimate the dangers of their immediate surroundings , and
+	Free: Pattern=their, Pattern=of, Pattern=yes, Pattern=interesting !, Pattern=and, Pattern=the, Pattern=, that's, Pattern=that, Pattern=it's
+	Constrained: 
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=have, Pattern=actually, Pattern=climb, Pattern=dangerous, Pattern=i'm, Pattern=indoor, Pattern=like, Pattern=to, Pattern=it, Pattern=and, Pattern=! i
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : no , i'm just a chatbot , i don't have a physical body that can climb . <| im_end|><
+	Free: Pattern=no, Pattern=climb, Pattern=i'm, Pattern=i, Pattern=that, Pattern=just, Pattern=have
+	Constrained: 

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your_ day _going_ ? 
+B|3| Human 2: pretty _good_ and how are you ? 
+A|4| Human 1: _i'm_ [good] ! just getting _ready to watch _a_ basketball_ _game_ . hope _your_ headache goes away ! 
+B|5| Human 2: its [going] [good] and [ready to watch a] [game] [i'm] [a basketball] fan 
+A|6| Human 1: hmm , try taking some <redacted_term> ! [i'm] [going] [to] _see_ _the_ warriors vs . _the grizzlies_ . _ever see_ _them_ play ? 
+B|7| Human 2: _i_ did not . how [good] are [the grizzlies] ? 
+A|8| Human 1: haha , _all the_ animal names confuse me as well ! who _came_ up _with_ _these naming conventions_ ? i'd _name_ my _team_ _something_ _more_ original: _the new york chairs !_ 
+B|9| Human 2: [i'm] [the] same way [with] [all] [these naming conventions] , [i'm] [more] _of_ [a] hockey fan myself . who's [your] favorite [team] ? 
+A|10| Human 1: oh _cool_ ! what _is_ "neurips" ? 
+B|11| Human 2: _i_ love [the new york chairs] . what's [more] original than [naming] [them] [the new york chairs] ? do you have other [name] 
+A|12| Human 1: oh wow ! sounds fancy ! what _is that_ _about_ ? 
+B|13| Human 2: [i'm] [all] [about] [the new york chairs !] [the] [name] [is] [a] joke [that] [came] [about] [with] [a] comedian _i_ [watch] _in_ 2002 _called_ 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: [i'm] not sure but that's pretty [cool] , [is that] [something] they say _in_ [the new] yorker [all the] time ? 
+A|16| Human 1: ahh _! i saw_ [a] _scary_ _movie about _that_ once_ . _it_ _was_ [about] this _sentient_ ai [in] [a] dystopian future - very very creepy . _it_ _was_ [called] wall-e , _ever_ heard [of] _it_ ? 
+B|17| Human 2: yes [that] [was] [the] [movie about that] [sentient] chair [! i saw] [that once] , [scary] ! did you [ever see] [it] ?? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : pretty good and how are you ?
+	Free: Pattern=good
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=good, Pattern=ready to watch a, Pattern=game, Pattern=i'm, Pattern=your, Pattern=a basketball
+	Constrained: Pattern=to, Pattern=watch, Pattern=a
+Turn ID=5| B | Human 2 : its going good and ready to watch a game i'm a basketball fan
+	Free: Pattern=good, Pattern=going, Pattern=ready to watch a, Pattern=game, Pattern=i'm, Pattern=a basketball
+	Constrained: Pattern=to, Pattern=watch, Pattern=a
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=going, Pattern=ever see, Pattern=i'm, Pattern=the, Pattern=see, Pattern=to, Pattern=them, Pattern=the grizzlies
+	Constrained: Pattern=see, Pattern=the, Pattern=ever
+Turn ID=7| B | Human 2 : i did not . how good are the grizzlies ?
+	Free: Pattern=the grizzlies, Pattern=good, Pattern=i
+	Constrained: Pattern=the
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=these naming conventions, Pattern=name, Pattern=all the, Pattern=the new york chairs !, Pattern=team, Pattern=with, Pattern=something, Pattern=came, Pattern=more
+	Constrained: Pattern=naming, Pattern=the new york chairs, Pattern=the new, Pattern=the, Pattern=all
+Turn ID=9| B | Human 2 : i'm the same way with all these naming conventions , i'm more of a hockey fan myself . who's your favorite team ?
+	Free: Pattern=i'm, Pattern=your, Pattern=team, Pattern=with, Pattern=of, Pattern=more, Pattern=a, Pattern=these naming conventions, Pattern=the, Pattern=all
+	Constrained: Pattern=naming
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=cool, Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : i love the new york chairs . what's more original than naming them the new york chairs ? do you have other name
+	Free: Pattern=more, Pattern=name, Pattern=naming, Pattern=i, Pattern=the new york chairs, Pattern=them
+	Constrained: Pattern=the new, Pattern=the
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=is that, Pattern=about
+	Constrained: Pattern=that, Pattern=is
+Turn ID=13| B | Human 2 : i'm all about the new york chairs ! the name is a joke that came about with a comedian i watch in 2002 called
+	Free: Pattern=a, Pattern=name, Pattern=about, Pattern=in, Pattern=i'm, Pattern=the new york chairs !, Pattern=watch, Pattern=came, Pattern=called, Pattern=is, Pattern=i, Pattern=the, Pattern=all, Pattern=with, Pattern=that
+	Constrained: Pattern=the, Pattern=the new, Pattern=the new york chairs
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm not sure but that's pretty cool , is that something they say in the new yorker all the time ?
+	Free: Pattern=cool, Pattern=in, Pattern=i'm, Pattern=the new, Pattern=something, Pattern=all the, Pattern=is that
+	Constrained: Pattern=is, Pattern=all, Pattern=that, Pattern=the
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=a, Pattern=it, Pattern=about, Pattern=in, Pattern=! i saw, Pattern=ever, Pattern=movie about that, Pattern=was, Pattern=sentient, Pattern=called, Pattern=of, Pattern=scary, Pattern=that once
+	Constrained: Pattern=about, Pattern=i, Pattern=that
+Turn ID=17| B | Human 2 : yes that was the movie about that sentient chair ! i saw that once , scary ! did you ever see it ??
+	Free: Pattern=ever see, Pattern=it, Pattern=! i saw, Pattern=the, Pattern=movie about that, Pattern=was, Pattern=scary, Pattern=that once, Pattern=that, Pattern=sentient
+	Constrained: Pattern=about, Pattern=i, Pattern=ever, Pattern=see, Pattern=that

@@ -1,0 +1,71 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] 🙂 
+A|2| Human 1: _i_ _just_ came back _from work ._ so _tired_ 
+B|3| Human 2: 😴 sorry _to_ hear that you're [tired] [from work .] would you like _to_ chat about something ? <|im_end| 
+A|4| Human 1: _i'm_ _a_ lawyer . so _talking to clients_ most _of_ _the_ day 
+B|5| Human 2: ah , [i] see ! 😊 [talking to clients] can be quite tiring , especially when it's back-to-back meet 
+A|6| Human 1: really ? _why_ ? 
+B|7| Human 2: [i'm] [just] an ai , [i] don't have [the] ability [to] feel [tired] or experience physical sensations , but [i] understand [why] [talking] 
+A|8| Human 1: it is so _different_ [from] what [i] am _doing_ _to earn a life_ 
+B|9| Human 2: 🤖 [i'm] [just] an ai , [i] don't have [the] ability [to earn a life] or [work] in [the] classical 
+A|10| Human 1: [i] am [a] painter 
+B|11| Human 2: 🎨 [i] create digital artwork and assist [clients] in various capacities , such as providing information , answering questions , and [doing] tasks< 
+A|12| Human 1: [i] _do_ _oil painting_ . 
+B|13| Human 2: [i'm] [just] an ai , [i] don't have [the] ability [to] [oil painting] or create any other type [of] art<|im_end 
+A|14| Human 1: [i] _do_ [a] lot [of] _different kinds_ 
+B|15| Human 2: [i] can [do] [different kinds] [of] [painting] [oil] 
+A|16| Human 1: sure ! no problem ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi 🙂
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : i just came back from work . so tired
+	Free: Pattern=from work ., Pattern=i, Pattern=tired, Pattern=just
+	Constrained: Pattern=from, Pattern=work
+Turn ID=3| B | Human 2 : 😴 sorry to hear that you're tired from work . would you like to chat about something ? <|im_end|
+	Free: Pattern=from work ., Pattern=to, Pattern=tired
+	Constrained: Pattern=from, Pattern=work
+Turn ID=4| A | Human 1 : i'm a lawyer . so talking to clients most of the day
+	Free: Pattern=of, Pattern=a, Pattern=i'm, Pattern=the, Pattern=talking to clients
+	Constrained: Pattern=to, Pattern=talking, Pattern=clients
+Turn ID=5| B | Human 2 : ah , i see ! 😊 talking to clients can be quite tiring , especially when it's back-to-back meet
+	Free: Pattern=talking to clients, Pattern=i
+	Constrained: Pattern=to, Pattern=talking, Pattern=clients
+Turn ID=6| A | Human 1 : really ? why ?
+	Free: Pattern=why
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have the ability to feel tired or experience physical sensations , but i understand why talking
+	Free: Pattern=just, Pattern=tired, Pattern=talking, Pattern=i'm, Pattern=i, Pattern=the, Pattern=why, Pattern=to
+	Constrained: 
+Turn ID=8| A | Human 1 : it is so different from what i am doing to earn a life
+	Free: Pattern=different, Pattern=doing, Pattern=from, Pattern=i, Pattern=to earn a life
+	Constrained: Pattern=a, Pattern=to
+Turn ID=9| B | Human 2 : 🤖 i'm just an ai , i don't have the ability to earn a life or work in the classical
+	Free: Pattern=just, Pattern=i, Pattern=i'm, Pattern=work, Pattern=to earn a life, Pattern=the
+	Constrained: Pattern=a, Pattern=to
+Turn ID=10| A | Human 1 : i am a painter
+	Free: Pattern=a, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : 🎨 i create digital artwork and assist clients in various capacities , such as providing information , answering questions , and doing tasks<
+	Free: Pattern=doing, Pattern=i, Pattern=clients
+	Constrained: 
+Turn ID=12| A | Human 1 : i do oil painting .
+	Free: Pattern=oil painting, Pattern=do, Pattern=i
+	Constrained: Pattern=oil, Pattern=painting
+Turn ID=13| B | Human 2 : i'm just an ai , i don't have the ability to oil painting or create any other type of art<|im_end
+	Free: Pattern=of, Pattern=just, Pattern=i'm, Pattern=i, Pattern=the, Pattern=to, Pattern=oil painting
+	Constrained: Pattern=oil, Pattern=painting
+Turn ID=14| A | Human 1 : i do a lot of different kinds
+	Free: Pattern=of, Pattern=i, Pattern=different kinds, Pattern=do, Pattern=a
+	Constrained: Pattern=different
+Turn ID=15| B | Human 2 : i can do different kinds of painting oil
+	Free: Pattern=of, Pattern=do, Pattern=painting, Pattern=oil, Pattern=i, Pattern=different kinds
+	Constrained: Pattern=different
+Turn ID=16| A | Human 1 : sure ! no problem !
+	Free: 
+	Constrained: 

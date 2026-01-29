@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how's your day going ?_ 
+B|3| Human 2: i'm [going] _to_ go eat some chinese food _now ._ 
+A|4| Human 1: ehhh so-so . my moped broke down on _the_ way [to] _work_ this morning _and i_ am in _the_ shop getting it fixed ... 
+B|5| Human 2: i'm so tired [and i] _work today_ . [how's your day going ?] 
+A|6| Human 1: _the_ mechanic _is_ trying [to] figure _that_ out [now .] apparently [i] wasn't supposed [to] be using _diesel_ lol . 
+B|7| Human 2: it's [diesel] _but_ [the] engine [that] runs [is] not . 
+A|8| Human 1: okay sounds good . would _you_ be able [to] pick me up by [the] way , if they don't finish up _here_ in time ? did _you_ _drive_ [to] [work today] ? 
+B|9| Human 2: yes , [you] 
+A|10| Human 1: [that] should be _fine_ [i] think . did [you] _catch the warriors_ game last night _btw_ ? 
+B|11| Human 2: sure , i'll [drive] home [today] [and] [catch the warriors] games tonight . it's been [fine] [here] [btw] 
+A|12| Human 1: haha [i] appreciate [your] faith , [but] _their record_ thus far [is] hard [to] _refute_ ! 
+B|13| Human 2: [you] can't [refute] [their record] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=how's your day going ?
+	Constrained: Pattern=your, Pattern=going
+Turn ID=3| B | Human 2 : i'm going to go eat some chinese food now .
+	Free: Pattern=now ., Pattern=to, Pattern=going
+	Constrained: 
+Turn ID=4| A | Human 1 : ehhh so-so . my moped broke down on the way to work this morning and i am in the shop getting it fixed ...
+	Free: Pattern=and i, Pattern=to, Pattern=work, Pattern=the
+	Constrained: Pattern=i, Pattern=and
+Turn ID=5| B | Human 2 : i'm so tired and i work today . how's your day going ?
+	Free: Pattern=how's your day going ?, Pattern=work today, Pattern=and i
+	Constrained: Pattern=going, Pattern=today, Pattern=and, Pattern=work, Pattern=your, Pattern=i
+Turn ID=6| A | Human 1 : the mechanic is trying to figure that out now . apparently i wasn't supposed to be using diesel lol .
+	Free: Pattern=diesel, Pattern=now ., Pattern=the, Pattern=to, Pattern=that, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : it's diesel but the engine that runs is not .
+	Free: Pattern=diesel, Pattern=is, Pattern=the, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=8| A | Human 1 : okay sounds good . would you be able to pick me up by the way , if they don't finish up here in time ? did you drive to work today ?
+	Free: Pattern=drive, Pattern=you, Pattern=here, Pattern=the, Pattern=work today, Pattern=to
+	Constrained: Pattern=work, Pattern=today
+Turn ID=9| B | Human 2 : yes , you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=10| A | Human 1 : that should be fine i think . did you catch the warriors game last night btw ?
+	Free: Pattern=fine, Pattern=i, Pattern=that, Pattern=btw, Pattern=you, Pattern=catch the warriors
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : sure , i'll drive home today and catch the warriors games tonight . it's been fine here btw
+	Free: Pattern=drive, Pattern=catch the warriors, Pattern=fine, Pattern=here, Pattern=today, Pattern=and, Pattern=btw
+	Constrained: Pattern=the
+Turn ID=12| A | Human 1 : haha i appreciate your faith , but their record thus far is hard to refute !
+	Free: Pattern=to, Pattern=but, Pattern=their record, Pattern=refute, Pattern=is, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : you can't refute their record
+	Free: Pattern=their record, Pattern=refute, Pattern=you
+	Constrained: 

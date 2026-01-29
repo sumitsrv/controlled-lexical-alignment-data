@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how _are you_ ? 
+A|2| Human 1: _doing_ _great ! what are you looking forward to_ ? 
+B|3| Human 2: [great ! what are you looking forward to] [doing] ? 
+A|4| Human 1: _yay_ ! _turkey_ _and_ _shopping !_ 
+B|5| Human 2: [yay] [shopping [!] what are you looking forward to] buying ? 
+A|6| Human 1: _yea_ me too _. i_ sometimes eat _noodle_ soups in thanksgiving instead _haha_ 
+B|7| Human 2: [haha] that's interesting _. what do you_ think is _the best_ [noodle] soup recipe ? 
+A|8| Human 1: me neither . someone told me _that_ _it_ depends on _the stuffing_ _inside the turkey_ _. some people make_ very good _stuffing_ 
+B|9| Human 2: [yea] that's true [. some people make] [the stuffing] _with_ bread [and] vegetables , while others [make] [it] _with_ meat [and] sausages< 
+A|10| Human 1: [yea] [. what do you] plan _to buy_ ? 
+B|11| Human 2: i'm not sure yet [. i] want [to buy] something [that] [i] [and] my family will enjoy 
+A|12| Human 1: ah cool . so [you] can _run more_ frequently ? :) 
+B|13| Human 2: [yea] that's true [. some people] enjoy [the] [run more] [inside the turkey] 
+A|14| Human 1: [yay] , all [the best] [with] keeping calories in check ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=are you
+	Constrained: Pattern=you
+Turn ID=2| A | Human 1 : doing great ! what are you looking forward to ?
+	Free: Pattern=great ! what are you looking forward to, Pattern=doing
+	Constrained: Pattern=are you, Pattern=you, Pattern=! what are you looking forward to
+Turn ID=3| B | Human 2 : great ! what are you looking forward to doing ?
+	Free: Pattern=great ! what are you looking forward to, Pattern=doing
+	Constrained: Pattern=are you, Pattern=you, Pattern=! what are you looking forward to
+Turn ID=4| A | Human 1 : yay ! turkey and shopping !
+	Free: Pattern=shopping !, Pattern=turkey, Pattern=yay, Pattern=and
+	Constrained: 
+Turn ID=5| B | Human 2 : yay shopping ! what are you looking forward to buying ?
+	Free: Pattern=! what are you looking forward to, Pattern=shopping !, Pattern=yay
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=6| A | Human 1 : yea me too . i sometimes eat noodle soups in thanksgiving instead haha
+	Free: Pattern=. i, Pattern=yea, Pattern=noodle, Pattern=haha
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : haha that's interesting . what do you think is the best noodle soup recipe ?
+	Free: Pattern=. what do you, Pattern=the best, Pattern=noodle, Pattern=haha
+	Constrained: Pattern=you, Pattern=the
+Turn ID=8| A | Human 1 : me neither . someone told me that it depends on the stuffing inside the turkey . some people make very good stuffing
+	Free: Pattern=inside the turkey, Pattern=. some people make, Pattern=that, Pattern=it, Pattern=stuffing, Pattern=the stuffing
+	Constrained: Pattern=. some people, Pattern=stuffing, Pattern=turkey, Pattern=make, Pattern=the
+Turn ID=9| B | Human 2 : yea that's true . some people make the stuffing with bread and vegetables , while others make it with meat and sausages<
+	Free: Pattern=. some people make, Pattern=yea, Pattern=make, Pattern=with, Pattern=it, Pattern=and, Pattern=the stuffing
+	Constrained: Pattern=make, Pattern=. some people, Pattern=stuffing, Pattern=the
+Turn ID=10| A | Human 1 : yea . what do you plan to buy ?
+	Free: Pattern=. what do you, Pattern=to buy, Pattern=yea
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : i'm not sure yet . i want to buy something that i and my family will enjoy
+	Free: Pattern=and, Pattern=. i, Pattern=i, Pattern=to buy, Pattern=that
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : ah cool . so you can run more frequently ? :)
+	Free: Pattern=run more, Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : yea that's true . some people enjoy the run more inside the turkey
+	Free: Pattern=. some people, Pattern=run more, Pattern=inside the turkey, Pattern=yea, Pattern=the
+	Constrained: Pattern=turkey, Pattern=the
+Turn ID=14| A | Human 1 : yay , all the best with keeping calories in check !
+	Free: Pattern=the best, Pattern=yay, Pattern=with
+	Constrained: Pattern=the

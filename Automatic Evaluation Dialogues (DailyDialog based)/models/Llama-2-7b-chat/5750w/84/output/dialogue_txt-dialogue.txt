@@ -1,0 +1,55 @@
+A|0| Human 1: hi , _can_ _you_ _recommend some good_ _netflix_ _shows_ ? 
+B|1| Human 2: _i_ really enjoyed _white collar_ on [netflix] _do you_ watch _a lot_ of tv [shows] 
+B|2| Human 2: of course ! 📺 _what_ type of [shows] are [you] interested in ? action , _comedy ,_ drama _, or_ something else ? <|im 
+A|3| Human 1: not [a lot] ! _but_ [i] preparing _for a_ _good_ vacation season 🙂 [what] _is_ [white collar] _about_ ? 
+B|4| Human 2: 🤔 [white collar] [is] [a] crime drama _series_ [about] an fbi agent _and_ [a] [white collar] criminal who team up _to_ solve complex 
+A|5| Human 1: hehe ! sounds very interesting 🙂 [i] only see [shows] belonging [to] few genre's .. _like_ easy going _light [comedy_ [,] or] _phychological thrillers_ 🙂 _also some_ manga _based_ [series] _like_ one punch man ! love _it !_ 
+B|6| Human 2: got [it !] 📺 here are [some] recommendations [based] on your genre preferences: 
+A|7| Human 1: which _anime_ [do you] _follow_ ? 
+B|8| Human 2: i'm an ai 🤖 , [i] don't [follow] [anime] [shows] , [but] [you] [can] [recommend some good] [light comedy] [series] 
+A|9| Human 1: _have you seen_ _rick and morty ?_ 
+B|10| Human 2: [rick and morty] 🤯 [is] an awesome [series] [for] [light comedy] genre [and] [also some] [phychological thrillers] [like] bojack h 
+A|11| Human 1: oh nice ! [i] heard its latest season arrived last month . [i] _have_ watched _all_ previous seasons . its [a] total _mind bender_ 🙂 
+B|12| Human 2: [what] other recommendations [do you] [have] [like] [rick and morty ?] i'm [all] [for a] [mind bender] [comedy] [series] . [have you seen] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi , can you recommend some good netflix shows ?
+	Free: Pattern=you, Pattern=netflix, Pattern=shows, Pattern=can, Pattern=recommend some good
+	Constrained: Pattern=good, Pattern=some
+Turn ID=1| B | Human 2 : i really enjoyed white collar on netflix do you watch a lot of tv shows
+	Free: Pattern=netflix, Pattern=white collar, Pattern=shows, Pattern=do you, Pattern=i, Pattern=a lot
+	Constrained: Pattern=you, Pattern=a
+Turn ID=2| B | Human 2 : of course ! 📺 what type of shows are you interested in ? action , comedy , drama , or something else ? <|im
+	Free: Pattern=you, Pattern=what, Pattern=shows, Pattern=, or, Pattern=comedy ,
+	Constrained: Pattern=comedy
+Turn ID=3| A | Human 1 : not a lot ! but i preparing for a good vacation season 🙂 what is white collar about ?
+	Free: Pattern=good, Pattern=what, Pattern=white collar, Pattern=about, Pattern=a lot, Pattern=for a, Pattern=but, Pattern=is, Pattern=i
+	Constrained: Pattern=for, Pattern=a
+Turn ID=4| B | Human 2 : 🤔 white collar is a crime drama series about an fbi agent and a white collar criminal who team up to solve complex
+	Free: Pattern=and, Pattern=about, Pattern=is, Pattern=to, Pattern=series, Pattern=white collar, Pattern=a
+	Constrained: 
+Turn ID=5| A | Human 1 : hehe ! sounds very interesting 🙂 i only see shows belonging to few genre's .. like easy going light comedy , or phychological thrillers 🙂 also some manga based series like one punch man ! love it !
+	Free: Pattern=it !, Pattern=based, Pattern=shows, Pattern=light comedy, Pattern=phychological thrillers, Pattern=i, Pattern=like, Pattern=to, Pattern=series, Pattern=also some, Pattern=, or, Pattern=comedy ,
+	Constrained: Pattern=comedy, Pattern=some
+Turn ID=6| B | Human 2 : got it ! 📺 here are some recommendations based on your genre preferences:
+	Free: Pattern=it !, Pattern=based, Pattern=some
+	Constrained: 
+Turn ID=7| A | Human 1 : which anime do you follow ?
+	Free: Pattern=do you, Pattern=follow, Pattern=anime
+	Constrained: Pattern=you
+Turn ID=8| B | Human 2 : i'm an ai 🤖 , i don't follow anime shows , but you can recommend some good light comedy series
+	Free: Pattern=you, Pattern=shows, Pattern=i, Pattern=recommend some good, Pattern=anime, Pattern=series, Pattern=but, Pattern=follow, Pattern=can, Pattern=light comedy
+	Constrained: Pattern=good, Pattern=comedy, Pattern=some
+Turn ID=9| A | Human 1 : have you seen rick and morty ?
+	Free: Pattern=rick and morty ?, Pattern=have you seen
+	Constrained: Pattern=have, Pattern=rick and morty, Pattern=and, Pattern=you
+Turn ID=10| B | Human 2 : rick and morty 🤯 is an awesome series for light comedy genre and also some phychological thrillers like bojack h
+	Free: Pattern=for, Pattern=and, Pattern=light comedy, Pattern=phychological thrillers, Pattern=is, Pattern=series, Pattern=also some, Pattern=like, Pattern=rick and morty
+	Constrained: Pattern=comedy, Pattern=some, Pattern=and
+Turn ID=11| A | Human 1 : oh nice ! i heard its latest season arrived last month . i have watched all previous seasons . its a total mind bender 🙂
+	Free: Pattern=have, Pattern=a, Pattern=mind bender, Pattern=i, Pattern=all
+	Constrained: 
+Turn ID=12| B | Human 2 : what other recommendations do you have like rick and morty ? i'm all for a mind bender comedy series . have you seen
+	Free: Pattern=have, Pattern=what, Pattern=do you, Pattern=comedy, Pattern=mind bender, Pattern=like, Pattern=all, Pattern=for a, Pattern=series, Pattern=rick and morty ?, Pattern=have you seen
+	Constrained: Pattern=you, Pattern=have, Pattern=a, Pattern=for, Pattern=and, Pattern=rick and morty

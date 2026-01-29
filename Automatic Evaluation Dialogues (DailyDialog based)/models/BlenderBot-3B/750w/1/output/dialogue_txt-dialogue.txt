@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my _friends_ _are_ _gonna_ visit me _this weekend ._ _we might_ go _hiking_ ! 
+B|3| Human 2: _that_ sounds fun . what [are] _you_ and _your_ [friends] planning _to_ do [this weekend] ? 
+A|4| Human 1: _should be_ _very sunny_ ! [you] ? 
+B|5| Human 2: it's [gonna] [be] _a_ [very sunny] [weekend] and [we might] play volleyball all _day_ . 
+A|6| Human 1: 😐 _hope you_ _get your_ work done [very] soon ! [a] _bug free weekend_ ! 
+B|7| Human 2: oh [you] [are] _going_ [hiking] and [bug free weekend] as well ? [should be] good weather _for_ _the_ outdoors [this weekend .] 
+A|8| Human 1: _i_ am _going to_ diablo ! 
+B|9| Human 2: [going to] see _the_ new star wars movies . 
+A|10| Human 1: hours _drive_ from here . _still_ in bay area 
+B|11| Human 2: [are] [you] [going to] [get your] [friends] together and [drive] down [to] santa rosa where _it_ is set _for_ _the_ [weekend] ? 
+A|12| Human 1: actually no idea _, but it will_ _take_ _the entire day for that_ . 
+B|13| Human 2: [i] [hope you] have [the entire day for that] [, but it will] [still] [take] [a] long [drive] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=the, Pattern=for, Pattern=weekend
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=gonna, Pattern=are, Pattern=this weekend ., Pattern=friends, Pattern=hiking, Pattern=we might
+	Constrained: Pattern=this weekend, Pattern=weekend
+Turn ID=3| B | Human 2 : that sounds fun . what are you and your friends planning to do this weekend ?
+	Free: Pattern=are, Pattern=your, Pattern=friends, Pattern=to, Pattern=that, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=weekend
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=very sunny, Pattern=should be, Pattern=you
+	Constrained: Pattern=very, Pattern=be
+Turn ID=5| B | Human 2 : it's gonna be a very sunny weekend and we might play volleyball all day .
+	Free: Pattern=very sunny, Pattern=a, Pattern=gonna, Pattern=weekend, Pattern=day, Pattern=be, Pattern=we might
+	Constrained: Pattern=very
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=get your, Pattern=a, Pattern=bug free weekend, Pattern=hope you, Pattern=very
+	Constrained: Pattern=you, Pattern=your, Pattern=weekend
+Turn ID=7| B | Human 2 : oh you are going hiking and bug free weekend as well ? should be good weather for the outdoors this weekend .
+	Free: Pattern=you, Pattern=going, Pattern=should be, Pattern=for, Pattern=are, Pattern=the, Pattern=hiking, Pattern=bug free weekend, Pattern=this weekend .
+	Constrained: Pattern=weekend, Pattern=this weekend, Pattern=be
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=going to, Pattern=i
+	Constrained: Pattern=going, Pattern=to
+Turn ID=9| B | Human 2 : going to see the new star wars movies .
+	Free: Pattern=going to, Pattern=the
+	Constrained: Pattern=going, Pattern=to
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=still, Pattern=drive
+	Constrained: 
+Turn ID=11| B | Human 2 : are you going to get your friends together and drive down to santa rosa where it is set for the weekend ?
+	Free: Pattern=going to, Pattern=you, Pattern=for, Pattern=it, Pattern=are, Pattern=weekend, Pattern=friends, Pattern=the, Pattern=to, Pattern=get your, Pattern=drive
+	Constrained: Pattern=your, Pattern=going, Pattern=to
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=the entire day for that, Pattern=, but it will, Pattern=take
+	Constrained: Pattern=for, Pattern=it, Pattern=day, Pattern=the, Pattern=that
+Turn ID=13| B | Human 2 : i hope you have the entire day for that , but it will still take a long drive .
+	Free: Pattern=drive, Pattern=a, Pattern=hope you, Pattern=i, Pattern=take, Pattern=the entire day for that, Pattern=, but it will, Pattern=still
+	Constrained: Pattern=you, Pattern=for, Pattern=it, Pattern=day, Pattern=the, Pattern=that

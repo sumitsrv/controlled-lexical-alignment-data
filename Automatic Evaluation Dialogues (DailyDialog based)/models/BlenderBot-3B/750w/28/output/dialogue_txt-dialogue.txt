@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ ? 
+A|2| Human 1: _i'm_ great , thanks . _i just ate_ _a_ _delicious_ _breakfast_ , _which always sets the day_ up _right_ . 
+B|3| Human 2: [i just ate] [breakfast] [which always sets the day] [right] for me _, too_ ! _what_ did _you_ _have_ ? 
+A|4| Human 1: _i had_ eggs _and_ hash browns . way less _healthier than_ _your_ _apple_ , _i'm_ afraid ! 
+B|5| Human 2: [i had] [a] brownie [and] coffee [just] _like_ usual ... [which always sets the day] [right] 
+A|6| Human 1: ha , _that's_ true . if [you] could _only_ _eat_ one _food_ forever , [what] _would_ it be ? 
+B|7| Human 2: [i] [would] [eat] [food] [that's] [healthier than] [what] [i'm] eating [right] now [and] [you] ? 
+A|8| Human 1: yeah , turning orange [would] be [a] drawback ! _that_ turns _my_ mind _to_ nutrition _so_ [i] suddenly want _to_ say soylent or one of _those_ other "complete foods" , [which] [i] think defeats [the] purpose of [the] question . [i'm] in [a] muddle ! 
+B|9| Human 2: [i] [would] [eat] [my] mother's [apple] muffins [which] _are_ [the] [only] [food] [that] has [always] looked [and] tasted [right] [to] me . [so] [delicious] ! 
+A|10| Human 1: brilliant . _i love_ it . 
+B|11| Human 2: [i love] [apple] muffins , what's [your] favorite ? 
+A|12| Human 1: [that] depends . [what] sort of [food] do [you] feel [like] ? 
+B|13| Human 2: [i love] muffins . [that's] [the] [food] [that] keeps me going through [those] days . what's [your] favorite [food] [you] [like] [to] [eat] 
+A|14| Human 1: oh [, too] easy ! try [the] green hut , they [have] franchises everywhere . all their [food] is green [and] [the] plates [are] green [too] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i just ate a delicious breakfast , which always sets the day up right .
+	Free: Pattern=which always sets the day, Pattern=right, Pattern=a, Pattern=breakfast, Pattern=i'm, Pattern=delicious, Pattern=i just ate
+	Constrained: Pattern=always, Pattern=just, Pattern=i, Pattern=the, Pattern=which
+Turn ID=3| B | Human 2 : i just ate breakfast which always sets the day right for me , too ! what did you have ?
+	Free: Pattern=which always sets the day, Pattern=right, Pattern=you, Pattern=have, Pattern=what, Pattern=breakfast, Pattern=, too, Pattern=i just ate
+	Constrained: Pattern=always, Pattern=just, Pattern=too, Pattern=i, Pattern=the, Pattern=which
+Turn ID=4| A | Human 1 : i had eggs and hash browns . way less healthier than your apple , i'm afraid !
+	Free: Pattern=and, Pattern=apple, Pattern=healthier than, Pattern=i'm, Pattern=i had, Pattern=your
+	Constrained: Pattern=i
+Turn ID=5| B | Human 2 : i had a brownie and coffee just like usual ... which always sets the day right
+	Free: Pattern=which always sets the day, Pattern=right, Pattern=just, Pattern=a, Pattern=and, Pattern=i had, Pattern=like
+	Constrained: Pattern=i, Pattern=which, Pattern=always, Pattern=the
+Turn ID=6| A | Human 1 : ha , that's true . if you could only eat one food forever , what would it be ?
+	Free: Pattern=you, Pattern=only, Pattern=eat, Pattern=what, Pattern=food, Pattern=that's, Pattern=would
+	Constrained: 
+Turn ID=7| B | Human 2 : i would eat food that's healthier than what i'm eating right now and you ?
+	Free: Pattern=right, Pattern=you, Pattern=eat, Pattern=what, Pattern=and, Pattern=healthier than, Pattern=i'm, Pattern=i, Pattern=food, Pattern=that's, Pattern=would
+	Constrained: 
+Turn ID=8| A | Human 1 : yeah , turning orange would be a drawback ! that turns my mind to nutrition so i suddenly want to say soylent or one of those other "complete foods" , which i think defeats the purpose of the question . i'm in a muddle !
+	Free: Pattern=a, Pattern=i'm, Pattern=i, Pattern=the, Pattern=would, Pattern=to, Pattern=those, Pattern=that, Pattern=so, Pattern=which, Pattern=my
+	Constrained: 
+Turn ID=9| B | Human 2 : i would eat my mother's apple muffins which are the only food that has always looked and tasted right to me . so delicious !
+	Free: Pattern=right, Pattern=always, Pattern=only, Pattern=eat, Pattern=and, Pattern=are, Pattern=apple, Pattern=i, Pattern=the, Pattern=would, Pattern=to, Pattern=that, Pattern=so, Pattern=delicious, Pattern=food, Pattern=which, Pattern=my
+	Constrained: 
+Turn ID=10| A | Human 1 : brilliant . i love it .
+	Free: Pattern=i love
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i love apple muffins , what's your favorite ?
+	Free: Pattern=i love, Pattern=your, Pattern=apple
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : that depends . what sort of food do you feel like ?
+	Free: Pattern=you, Pattern=what, Pattern=that, Pattern=food, Pattern=like
+	Constrained: 
+Turn ID=13| B | Human 2 : i love muffins . that's the food that keeps me going through those days . what's your favorite food you like to eat
+	Free: Pattern=you, Pattern=eat, Pattern=your, Pattern=to, Pattern=those, Pattern=i love, Pattern=that, Pattern=food, Pattern=like, Pattern=that's, Pattern=the
+	Constrained: Pattern=i
+Turn ID=14| A | Human 1 : oh , too easy ! try the green hut , they have franchises everywhere . all their food is green and the plates are green too .
+	Free: Pattern=have, Pattern=are, Pattern=the, Pattern=and, Pattern=too, Pattern=, too, Pattern=food
+	Constrained: Pattern=too

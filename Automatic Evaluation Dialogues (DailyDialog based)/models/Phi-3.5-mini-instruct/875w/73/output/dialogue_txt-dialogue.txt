@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: hello ! _as_ an _ai_ , _i_ don't experience days , but _i'm_ fully operational and _ready to_ assist you _with_ [your] questions or 
+A|4| Human 1: [i'm] good _! just_ getting [ready to] _watch_ _a_ _basketball game_ . hope _your headache_ goes away ! 
+B|5| Human 2: [i'm] [ready to] help _with_ [basketball game] info , [watch] schedules , player stats , or anything else you need [! just] like [your headache] hopefully 
+A|6| Human 1: hmm , try taking some <redacted_term> ! [i'm] going [to] see _the_ warriors vs _. the_ grizzlies . ever see them play ? 
+B|7| Human 2: [i'm] here and [ready to] provide [the] [basketball game] information you need [! just] let _me_ know [the] details or if there's [a] specific question on 
+A|8| Human 1: _haha ,_ _all the_ animal names confuse [me] [as] well ! who came up [with] these naming conventions ? i'd _name_ my _team_ something _more_ original: _the new york chairs_ ! 
+B|9| Human 2: [i'm] [ready to] provide [all the] latest [basketball game] updates and information ! let's [name] [your] [team] [the new york chairs] [with] pride ! 
+A|10| Human 1: oh cool ! what _is_ "neurips" ? 
+B|11| Human 2: [i'm] sorry , but neurips might refer [to] [the] conference on neural information processing systems , which [is] [a] conference focused on neural 
+A|12| Human 1: oh wow ! sounds fancy ! what [is] _that_ _about_ ? 
+B|13| Human 2: neurips refers [to] [the] conference on neural information processing systems . it's an annual event [that] focuses on [the] latest research _in_ 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: yes , [the] neurips conference , short for neural information processing systems , [is] indeed [about] machine learning (ml) among other topics . 
+A|16| Human 1: ahh ! [i] saw [a] scary _movie_ [about] [that] once . it _was_ [about] this sentient [ai] [in] [a] dystopian future - very very creepy . it _was_ called _wall-e ,_ ever heard of it ? 
+B|17| Human 2: [haha ,] [i'm] glad [the] [movie] [was] [more] [about] [wall-e ,] [the] lovable robot from 2008 disney [movie] [. the] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : hello ! as an ai , i don't experience days , but i'm fully operational and ready to assist you with your questions or
+	Free: Pattern=with, Pattern=as, Pattern=ready to, Pattern=i'm, Pattern=ai, Pattern=your, Pattern=i
+	Constrained: Pattern=to
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=ready to, Pattern=a, Pattern=your headache, Pattern=i'm, Pattern=! just, Pattern=basketball game, Pattern=watch
+	Constrained: Pattern=your, Pattern=to
+Turn ID=5| B | Human 2 : i'm ready to help with basketball game info , watch schedules , player stats , or anything else you need ! just like your headache hopefully
+	Free: Pattern=ready to, Pattern=your headache, Pattern=i'm, Pattern=! just, Pattern=basketball game, Pattern=with, Pattern=watch
+	Constrained: Pattern=your, Pattern=to
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=. the, Pattern=i'm, Pattern=to, Pattern=the
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : i'm here and ready to provide the basketball game information you need ! just let me know the details or if there's a specific question on
+	Free: Pattern=ready to, Pattern=me, Pattern=a, Pattern=i'm, Pattern=! just, Pattern=the, Pattern=basketball game
+	Constrained: Pattern=to
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=more, Pattern=as, Pattern=me, Pattern=name, Pattern=haha ,, Pattern=all the, Pattern=the new york chairs, Pattern=team, Pattern=with
+	Constrained: Pattern=the
+Turn ID=9| B | Human 2 : i'm ready to provide all the latest basketball game updates and information ! let's name your team the new york chairs with pride !
+	Free: Pattern=ready to, Pattern=name, Pattern=i'm, Pattern=your, Pattern=all the, Pattern=team, Pattern=with, Pattern=basketball game, Pattern=the new york chairs
+	Constrained: Pattern=to, Pattern=the
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=is
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm sorry , but neurips might refer to the conference on neural information processing systems , which is a conference focused on neural
+	Free: Pattern=a, Pattern=i'm, Pattern=is, Pattern=the, Pattern=to
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=that, Pattern=is, Pattern=about
+	Constrained: 
+Turn ID=13| B | Human 2 : neurips refers to the conference on neural information processing systems . it's an annual event that focuses on the latest research in
+	Free: Pattern=that, Pattern=to, Pattern=the, Pattern=in
+	Constrained: 
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : yes , the neurips conference , short for neural information processing systems , is indeed about machine learning (ml) among other topics .
+	Free: Pattern=is, Pattern=the, Pattern=about
+	Constrained: 
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=a, Pattern=movie, Pattern=about, Pattern=in, Pattern=i, Pattern=was, Pattern=that, Pattern=wall-e ,, Pattern=ai
+	Constrained: 
+Turn ID=17| B | Human 2 : haha , i'm glad the movie was more about wall-e , the lovable robot from 2008 disney movie . the
+	Free: Pattern=more, Pattern=movie, Pattern=about, Pattern=haha ,, Pattern=the, Pattern=was, Pattern=. the, Pattern=wall-e ,, Pattern=i'm
+	Constrained: Pattern=the

@@ -1,0 +1,35 @@
+A|0| Human 1: hi . 
+B|1| Human 2: helloooooo ! 
+A|2| Human 1: _how are _you_ ?_ _how_ is your day ? 
+B|3| Human 2: hello . well , it was _good_ . [you ?] did [you] go to school _today_ ? 
+A|4| Human 1: _i'm_ dressed very wel [today] so _i_ feel [good] ! i've been _reading a lot about_ _the_ _psychology_ _of positive outlook_ . 
+B|5| Human 2: [i'm] [good] . [how are you] doing [today] ? [i] am [reading a lot about] [psychology] in school too 
+A|6| Human 1: yes . blue is [a] tranquil colour . _it's a good_ metaphor . do [you] have [good] advice for _positivity_ ? 
+B|7| Human 2: [it's a good] thing because [i'm] [reading] [the] same as [you] [today] [about] [positivity] , [it's] called [the] power [of positive outlook] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi .
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : helloooooo !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how are you ? how is your day ?
+	Free: Pattern=how are you, Pattern=you ?, Pattern=how
+	Constrained: Pattern=how, Pattern=you
+Turn ID=3| B | Human 2 : hello . well , it was good . you ? did you go to school today ?
+	Free: Pattern=you ?, Pattern=today, Pattern=good, Pattern=you
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : i'm dressed very wel today so i feel good ! i've been reading a lot about the psychology of positive outlook .
+	Free: Pattern=good, Pattern=today, Pattern=reading a lot about, Pattern=psychology, Pattern=i'm, Pattern=i, Pattern=the, Pattern=of positive outlook
+	Constrained: Pattern=reading, Pattern=a, Pattern=about
+Turn ID=5| B | Human 2 : i'm good . how are you doing today ? i am reading a lot about psychology in school too
+	Free: Pattern=good, Pattern=reading a lot about, Pattern=psychology, Pattern=i'm, Pattern=i, Pattern=how are you, Pattern=today
+	Constrained: Pattern=you, Pattern=a, Pattern=how, Pattern=about, Pattern=reading
+Turn ID=6| A | Human 1 : yes . blue is a tranquil colour . it's a good metaphor . do you have good advice for positivity ?
+	Free: Pattern=good, Pattern=you, Pattern=a, Pattern=it's a good, Pattern=positivity
+	Constrained: Pattern=it's, Pattern=good, Pattern=a
+Turn ID=7| B | Human 2 : it's a good thing because i'm reading the same as you today about positivity , it's called the power of positive outlook
+	Free: Pattern=you, Pattern=today, Pattern=about, Pattern=reading, Pattern=i'm, Pattern=the, Pattern=it's a good, Pattern=positivity, Pattern=it's, Pattern=of positive outlook
+	Constrained: Pattern=good, Pattern=a, Pattern=it's

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i saw_ "the parasite . " ever _heard_ _of_ _it ?_ 
+B|3| Human 2: _oh_ , _really ?_ [i] [heard] _it was a_ hit . _the_ plot _was_ quite unique , didn't _you_ _think_ ? <|im_end| 
+A|4| Human 1: my friend _wanted to see_ [it] . [it] has _great_ reviews on imdb _and_ rotten tomatoes _! what did you_ do _last weekend_ ? 
+B|5| Human 2: [i saw] _the_ [last] jedi [last weekend] . i'm _a big_ _fan_ [of] _the_ franchise [and] thought _it was_ [great] . [what did you] 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: [what did you] _think_ [of] [the] ending ? [i] [wanted to see] more [of] [the mandalorian] [and] [the] child ! <|im_end| 
+A|8| Human 1: _lol_ are [you] [a big] _marvel fan_ ? 
+B|9| Human 2: [lol] [marvel fan] here [! what did you] _think_ [of] [the] latest thor movie ? 
+A|10| Human 1: i've only [seen] _spiderman_ . honestly [it was a] little _too_ _scary_ [and] so [i] _don't_ [think] [i] can bring myself [to] _watch the other marvel movies_ ! haha 
+B|11| Human 2: _i think_ you'll _be_ fine 😊 [watch the other marvel movies] [and] [don't] worry [too] much about [scary] scenes ha 
+A|12| Human 1: [oh] [really ?] [to] [be] honest _i think the actor_ _is_ not _that_ [good] _looking_ , so not so surprising ! haha 
+B|13| Human 2: [i think the actor] [that] plays [spiderman] [is] [really] [great] [looking] 😍 have [you] [seen] any [movies] with him in [it ?] < 
+A|14| Human 1: who [is] _loki_ ? i've never [heard] [that] _name_ before 
+B|15| Human 2: [i think] [loki] [is] [the] [name] [of] [the other] superhero [that] appears in [the] [marvel movies] 🤔 haha<|im 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=movies, Pattern=you, Pattern=seen
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=it ?, Pattern=i saw, Pattern=last weekend, Pattern=of, Pattern=heard
+	Constrained: Pattern=last, Pattern=i, Pattern=it
+Turn ID=3| B | Human 2 : oh , really ? i heard it was a hit . the plot was quite unique , didn't you think ? <|im_end|
+	Free: Pattern=heard, Pattern=you, Pattern=think, Pattern=i, Pattern=the, Pattern=it was a, Pattern=was, Pattern=oh, Pattern=really ?
+	Constrained: Pattern=it, Pattern=was, Pattern=it was, Pattern=really
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=great, Pattern=wanted to see, Pattern=last weekend, Pattern=! what did you, Pattern=it, Pattern=and
+	Constrained: Pattern=what did you, Pattern=last, Pattern=to, Pattern=you
+Turn ID=5| B | Human 2 : i saw the last jedi last weekend . i'm a big fan of the franchise and thought it was great . what did you
+	Free: Pattern=it was, Pattern=fan, Pattern=of, Pattern=great, Pattern=and, Pattern=last weekend, Pattern=what did you, Pattern=last, Pattern=a big, Pattern=i saw, Pattern=the
+	Constrained: Pattern=you, Pattern=it, Pattern=i, Pattern=last, Pattern=was
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : what did you think of the ending ? i wanted to see more of the mandalorian and the child ! <|im_end|
+	Free: Pattern=of, Pattern=and, Pattern=i, Pattern=what did you, Pattern=the mandalorian, Pattern=think, Pattern=wanted to see, Pattern=the
+	Constrained: Pattern=the, Pattern=to, Pattern=you
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=marvel fan, Pattern=a big, Pattern=lol, Pattern=you
+	Constrained: Pattern=fan
+Turn ID=9| B | Human 2 : lol marvel fan here ! what did you think of the latest thor movie ?
+	Free: Pattern=marvel fan, Pattern=think, Pattern=the, Pattern=! what did you, Pattern=of, Pattern=lol
+	Constrained: Pattern=what did you, Pattern=fan, Pattern=you
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=think, Pattern=i, Pattern=spiderman, Pattern=to, Pattern=seen, Pattern=scary, Pattern=watch the other marvel movies, Pattern=and, Pattern=too, Pattern=it was a, Pattern=don't
+	Constrained: Pattern=it was, Pattern=it, Pattern=the other, Pattern=the, Pattern=was, Pattern=movies, Pattern=marvel movies
+Turn ID=11| B | Human 2 : i think you'll be fine 😊 watch the other marvel movies and don't worry too much about scary scenes ha
+	Free: Pattern=be, Pattern=don't, Pattern=i think, Pattern=scary, Pattern=watch the other marvel movies, Pattern=and, Pattern=too
+	Constrained: Pattern=i, Pattern=the, Pattern=movies, Pattern=marvel movies, Pattern=the other, Pattern=think
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=good, Pattern=i think the actor, Pattern=looking, Pattern=is, Pattern=be, Pattern=to, Pattern=that, Pattern=oh, Pattern=really ?
+	Constrained: Pattern=think, Pattern=i, Pattern=really, Pattern=the, Pattern=i think
+Turn ID=13| B | Human 2 : i think the actor that plays spiderman is really great looking 😍 have you seen any movies with him in it ? <
+	Free: Pattern=it ?, Pattern=i think the actor, Pattern=looking, Pattern=is, Pattern=really, Pattern=spiderman, Pattern=that, Pattern=you, Pattern=great, Pattern=seen, Pattern=movies
+	Constrained: Pattern=it, Pattern=think, Pattern=i, Pattern=the, Pattern=i think
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=heard, Pattern=name, Pattern=is, Pattern=that, Pattern=loki
+	Constrained: 
+Turn ID=15| B | Human 2 : i think loki is the name of the other superhero that appears in the marvel movies 🤔 haha<|im
+	Free: Pattern=of, Pattern=name, Pattern=the other, Pattern=is, Pattern=the, Pattern=that, Pattern=marvel movies, Pattern=i think, Pattern=loki
+	Constrained: Pattern=i, Pattern=movies, Pattern=think, Pattern=the

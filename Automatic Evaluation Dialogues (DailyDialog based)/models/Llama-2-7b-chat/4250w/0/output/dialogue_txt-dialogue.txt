@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _what_ is your favorite holiday ? 
+A|2| Human 1: _one where_ _i_ _get_ _to_ _meet lots of different people_ . 
+B|3| Human 2: that sounds like _a_ great time ! have _you_ ever visited _the_ _where people_ [meet lots of different people] ? 
+A|4| Human 1: hard _to_ _keep_ [a] _count_ . maybe 25 . 
+B|5| Human 2: _wow_ , 25 [different] holidays _! that's_ incredible ! what's _the_ [one _where] people_ [keep] _the_ [count] ? <| 
+A|6| Human 1: _i_ think _it_ _was_ _australia_ 
+B|7| Human 2: yes , [australia] ! that [one] [was] [a] lot [of] fun . [i] got [to] try [lots of different] foods _and_ drinks , _and_ [meet] [people] _from_ 
+A|8| Human 1: _not really_ . _the interactions are usually short-lived but it's_ _fascinating_ _to learn where people are coming from and what matters to_ them 
+B|9| Human 2: [fascinating] [and] sometimes [it's] [really] heart-warming [to] see [people] [coming from] [different] backgrounds [but] have similar interests [and] goals [are] [what] 
+A|10| Human 1: [what] do _you mean ?_ 
+B|11| Human 2: [people] [from] [different] cultures [but] [are] passionate about something [and] [really] [get] [it] , [you] know- [it's] like having [a] connection with them<| 
+A|12| Human 1: [wow] [! that's] _interesting_ , borderline _spooky_ 
+B|13| Human 2: [spooky] [you mean ?] [the interactions are usually short-lived but it's] [interesting] [to learn where people are coming from and what matters to] 
+A|14| Human 1: so , do [you] do treasure hunting often ? 
+B|15| Human 2: [not really] , [but it's] [interesting] [to] see [what] [people are] looking for [and] how they go about [it] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : what is your favorite holiday ?
+	Free: Pattern=what
+	Constrained: 
+Turn ID=2| A | Human 1 : one where i get to meet lots of different people .
+	Free: Pattern=one where, Pattern=i, Pattern=to, Pattern=meet lots of different people, Pattern=get
+	Constrained: Pattern=different, Pattern=of, Pattern=people, Pattern=one, Pattern=meet, Pattern=lots of different
+Turn ID=3| B | Human 2 : that sounds like a great time ! have you ever visited the where people meet lots of different people ?
+	Free: Pattern=you, Pattern=a, Pattern=where people, Pattern=the, Pattern=meet lots of different people
+	Constrained: Pattern=different, Pattern=of, Pattern=people, Pattern=meet, Pattern=lots of different
+Turn ID=4| A | Human 1 : hard to keep a count . maybe 25 .
+	Free: Pattern=a, Pattern=to, Pattern=keep, Pattern=count
+	Constrained: 
+Turn ID=5| B | Human 2 : wow , 25 different holidays ! that's incredible ! what's the one where people keep the count ? <|
+	Free: Pattern=different, Pattern=keep, Pattern=where people, Pattern=wow, Pattern=one where, Pattern=count, Pattern=the, Pattern=! that's
+	Constrained: Pattern=people, Pattern=one
+Turn ID=6| A | Human 1 : i think it was australia
+	Free: Pattern=was, Pattern=it, Pattern=australia, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : yes , australia ! that one was a lot of fun . i got to try lots of different foods and drinks , and meet people from
+	Free: Pattern=of, Pattern=people, Pattern=a, Pattern=and, Pattern=one, Pattern=from, Pattern=meet, Pattern=i, Pattern=to, Pattern=was, Pattern=lots of different, Pattern=australia
+	Constrained: Pattern=of, Pattern=different
+Turn ID=8| A | Human 1 : not really . the interactions are usually short-lived but it's fascinating to learn where people are coming from and what matters to them
+	Free: Pattern=to learn where people are coming from and what matters to, Pattern=the interactions are usually short-lived but it's, Pattern=not really, Pattern=fascinating
+	Constrained: Pattern=people, Pattern=what, Pattern=but it's, Pattern=where people, Pattern=and, Pattern=are, Pattern=from, Pattern=really, Pattern=the, Pattern=coming from, Pattern=to, Pattern=it's, Pattern=people are, Pattern=but
+Turn ID=9| B | Human 2 : fascinating and sometimes it's really heart-warming to see people coming from different backgrounds but have similar interests and goals are what
+	Free: Pattern=different, Pattern=people, Pattern=what, Pattern=and, Pattern=are, Pattern=really, Pattern=coming from, Pattern=to, Pattern=it's, Pattern=but, Pattern=fascinating
+	Constrained: Pattern=from
+Turn ID=10| A | Human 1 : what do you mean ?
+	Free: Pattern=you mean ?, Pattern=what
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : people from different cultures but are passionate about something and really get it , you know- it's like having a connection with them<|
+	Free: Pattern=different, Pattern=you, Pattern=people, Pattern=a, Pattern=are, Pattern=from, Pattern=really, Pattern=get, Pattern=it, Pattern=and, Pattern=it's, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : wow ! that's interesting , borderline spooky
+	Free: Pattern=! that's, Pattern=spooky, Pattern=interesting, Pattern=wow
+	Constrained: 
+Turn ID=13| B | Human 2 : spooky you mean ? the interactions are usually short-lived but it's interesting to learn where people are coming from and what matters to
+	Free: Pattern=the interactions are usually short-lived but it's, Pattern=to learn where people are coming from and what matters to, Pattern=spooky, Pattern=interesting, Pattern=you mean ?
+	Constrained: Pattern=you, Pattern=people, Pattern=what, Pattern=but it's, Pattern=where people, Pattern=and, Pattern=are, Pattern=from, Pattern=the, Pattern=coming from, Pattern=to, Pattern=it's, Pattern=people are, Pattern=but
+Turn ID=14| A | Human 1 : so , do you do treasure hunting often ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : not really , but it's interesting to see what people are looking for and how they go about it
+	Free: Pattern=what, Pattern=interesting, Pattern=to, Pattern=people are, Pattern=not really, Pattern=but it's, Pattern=it, Pattern=and
+	Constrained: Pattern=people, Pattern=are, Pattern=really, Pattern=it's, Pattern=but

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm_ _good_ . [how are you] _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] well , thank [you] ! [how] can _i_ help [you] [today ?] 
+A|4| Human 1: [i] was flying my kite [today] in the sunshine ! _what did you have for lunch_ ? 
+B|5| Human 2: [i] [did] [have] some [lunch] [today] , but [i'm] just _an_ ai and don't [have] personal experiences _or_ feelings _like_ humans do . [i] 
+A|6| Human 1: oh that is great ! [i] love seafood - especially shellfish ! 
+B|7| Human 2: [what did you have for lunch] [today ?] 
+A|8| Human 1: oh nice ! is it hard ? 
+B|9| Human 2: [i'm] just _an_ ai , [i] don't [have] personal experiences _or_ feelings , but [i] can help [you] with _any_ questions _or_ tasks [you] may 
+A|10| Human 1: oh wow _, you_ sound [like] [an] expert _! have you_ done this _before ?_ 
+B|11| Human 2: [i'm] just [an] ai , [i] don't [have] personal experiences _or_ feelings [like] [you] do , but [i'm] happy to help answer _your_ 
+A|12| Human 1: haha _, you_ _really_ [have] done [your] research [i] suppose ! _ever_ done _any other kind of fishing_ [or] _hunting_ ? 
+B|13| Human 2: well [, [you] have] a [good] [fishing] spot there [! have you] tried [any other kind of fishing] [before ?] 
+A|14| Human 1: _ahh ,_ would [you] consider yourself [an] outdoorsy type [of] person ? 
+B|15| Human 2: [ahh ,] [i] see ! well , [hunting] can be a [really] rewarding experience too [! have you] [ever] tried [any other kind of] outdoor adventure 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=how, Pattern=you
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=how are you, Pattern=doing, Pattern=i'm, Pattern=today ?, Pattern=good
+	Constrained: Pattern=today, Pattern=how, Pattern=you
+Turn ID=3| B | Human 2 : i'm doing well , thank you ! how can i help you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=i'm, Pattern=i, Pattern=how, Pattern=doing
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=what did you have for lunch, Pattern=i, Pattern=today
+	Constrained: Pattern=you, Pattern=have, Pattern=did, Pattern=you have, Pattern=lunch
+Turn ID=5| B | Human 2 : i did have some lunch today , but i'm just an ai and don't have personal experiences or feelings like humans do . i
+	Free: Pattern=have, Pattern=an, Pattern=i'm, Pattern=i, Pattern=or, Pattern=did, Pattern=today, Pattern=lunch, Pattern=like
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : what did you have for lunch today ?
+	Free: Pattern=what did you have for lunch, Pattern=today ?
+	Constrained: Pattern=you, Pattern=have, Pattern=you have, Pattern=lunch, Pattern=did, Pattern=today
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: 
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm just an ai , i don't have personal experiences or feelings , but i can help you with any questions or tasks you may
+	Free: Pattern=you, Pattern=have, Pattern=an, Pattern=any, Pattern=i'm, Pattern=i, Pattern=or
+	Constrained: 
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=an, Pattern=! have you, Pattern=, you, Pattern=like, Pattern=before ?
+	Constrained: Pattern=have, Pattern=you
+Turn ID=11| B | Human 2 : i'm just an ai , i don't have personal experiences or feelings like you do , but i'm happy to help answer your
+	Free: Pattern=you, Pattern=have, Pattern=an, Pattern=i'm, Pattern=like, Pattern=or, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=have, Pattern=any other kind of fishing, Pattern=, you, Pattern=really, Pattern=or, Pattern=ever, Pattern=hunting, Pattern=your, Pattern=i
+	Constrained: Pattern=of, Pattern=any other kind of, Pattern=you, Pattern=any, Pattern=fishing
+Turn ID=13| B | Human 2 : well , you have a good fishing spot there ! have you tried any other kind of fishing before ?
+	Free: Pattern=good, Pattern=any other kind of fishing, Pattern=fishing, Pattern=you have, Pattern=! have you, Pattern=, you, Pattern=before ?
+	Constrained: Pattern=of, Pattern=any other kind of, Pattern=you, Pattern=have, Pattern=any, Pattern=fishing
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=ahh ,, Pattern=of, Pattern=an, Pattern=you
+	Constrained: 
+Turn ID=15| B | Human 2 : ahh , i see ! well , hunting can be a really rewarding experience too ! have you ever tried any other kind of outdoor adventure
+	Free: Pattern=any other kind of, Pattern=ahh ,, Pattern=! have you, Pattern=i, Pattern=really, Pattern=ever, Pattern=hunting
+	Constrained: Pattern=any, Pattern=have, Pattern=of, Pattern=you

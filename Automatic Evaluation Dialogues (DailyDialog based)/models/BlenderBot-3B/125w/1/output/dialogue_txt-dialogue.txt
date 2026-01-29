@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: my friends _are_ _gonna_ visit me _this weekend ._ we might go _hiking_ ! 
+B|3| Human 2: not really . just [gonna] relax [this weekend .] 
+A|4| Human 1: should _be_ very sunny ! _you_ ? 
+B|5| Human 2: nice , [are] [you] looking forward _to_ [hiking] then ? 
+A|6| Human 1: 😐 _hope you_ get _your_ _work_ done very soon ! _a_ bug free _weekend !_ 
+B|7| Human 2: have fun [this [weekend] !] _i am_ looking forward _to_ _going_ [hiking] . 
+A|8| Human 1: [i am] [going] [to] diablo ! 
+B|9| Human 2: have fun , i'll [be] busy all [weekend] [hiking] _the_ appalachian trail 
+A|10| Human 1: hours _drive_ _from_ here . still in bay area 
+B|11| Human 2: [i] [hope you] enjoy [your] [drive] ! 
+A|12| Human 1: actually no idea , but it _will_ take [the] entire _day_ [for] that . 
+B|13| Human 2: that's [a] long [drive] ! [the] [day] [will] surely fly by [for] [you] though ! [i] [hope you] enjoy [the] time off [from] [work] or school 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=the, Pattern=for, Pattern=weekend
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=this weekend ., Pattern=hiking, Pattern=gonna, Pattern=are
+	Constrained: Pattern=this weekend, Pattern=weekend
+Turn ID=3| B | Human 2 : not really . just gonna relax this weekend .
+	Free: Pattern=this weekend ., Pattern=gonna
+	Constrained: Pattern=this weekend, Pattern=weekend
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=be, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : nice , are you looking forward to hiking then ?
+	Free: Pattern=to, Pattern=hiking, Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=a, Pattern=hope you, Pattern=work, Pattern=your, Pattern=weekend !
+	Constrained: Pattern=weekend, Pattern=you
+Turn ID=7| B | Human 2 : have fun this weekend ! i am looking forward to going hiking .
+	Free: Pattern=this weekend, Pattern=going, Pattern=i am, Pattern=hiking, Pattern=weekend !, Pattern=to
+	Constrained: Pattern=i, Pattern=weekend
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=i am, Pattern=to, Pattern=going
+	Constrained: Pattern=i
+Turn ID=9| B | Human 2 : have fun , i'll be busy all weekend hiking the appalachian trail
+	Free: Pattern=the, Pattern=be, Pattern=hiking, Pattern=weekend
+	Constrained: 
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=from, Pattern=drive
+	Constrained: 
+Turn ID=11| B | Human 2 : i hope you enjoy your drive !
+	Free: Pattern=hope you, Pattern=i, Pattern=drive, Pattern=your
+	Constrained: Pattern=you
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=the, Pattern=for, Pattern=will, Pattern=day
+	Constrained: 
+Turn ID=13| B | Human 2 : that's a long drive ! the day will surely fly by for you though ! i hope you enjoy the time off from work or school
+	Free: Pattern=drive, Pattern=you, Pattern=a, Pattern=for, Pattern=from, Pattern=will, Pattern=hope you, Pattern=work, Pattern=the, Pattern=day, Pattern=i
+	Constrained: Pattern=you

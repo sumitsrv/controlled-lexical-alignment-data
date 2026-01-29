@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _, have_ _you_ seen any _good_ _movies_ _lately_ ? 
+A|2| Human 1: _i_ watched _a_ few [lately] , but nothing _is_ _as_ [good] _as_ _avatar_ . _what's your favorite_ ? 
+B|3| Human 2: ah , [avatar] [is] [a] classic ! _what_ _do you_ think about _the_ live-action remakes _of_ disney _movies ?_ <|im_end| 
+A|4| Human 1: it's [a] science-fiction _movie with_ beautiful landscape [of] _an_ imaginary nature _with_ non-human creatures . people figured out [a] way _to_ join _that_ nature through [avatar] transformation . [the] _movie_ ends _with a_ meaningful story [of] how human behaviors , e . g ., cutting trees [, have] affected nature 
+B|5| Human 2: ah _, i_ see ! yes , [avatar] [is] definitely [a] visually stunning [movie [with] a] powerful message about [the] importance [of] respecting _and_ preserving 
+A|6| Human 1: _yea_ . [what] else [do you] _like_ _to do_ beside [movies ?] 
+B|7| Human 2: i'm just [an] ai _, i_ don't [have] personal preferences _or_ hobbies [like] humans [do] [movies] ! [what's] 
+A|8| Human 1: _i enjoy_ _eating_ 🙂 
+B|9| Human 2: lol ! [yea] [eating] [is] important for us [as] well 😊 [what's your favorite] [movie] genre ? <|im_ 
+A|10| Human 1: [i] will [have] _to_ bake _some_ soon [and] let [you] know . [what] _types of_ _food_ [do you] [like] _to eat ?_ 
+B|11| Human 2: 🤔 [food] [and] baking are [some] [of] my [favorite] things [to do] in my free time ! [i enjoy] experimenting [with] new recipes 
+A|12| Human 1: noodle soup [is] delicious ! [do you] make homemade noodle soup [or] [do you] prefer [to] go out ? 
+B|13| Human 2: 🤔 [that] sounds [like] so much fun ! [what] are [you] [favorite] [types of] noodles [to eat ?] <|im_end| 
+A|14| Human 1: _same_ ! even though [i] bake [, i] cannot cook 
+B|15| Human 2: 😂 [same] here ! baking [is] definitely my strong suit 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , have you seen any good movies lately ?
+	Free: Pattern=you, Pattern=, have, Pattern=movies, Pattern=lately, Pattern=good
+	Constrained: Pattern=have
+Turn ID=2| A | Human 1 : i watched a few lately , but nothing is as good as avatar . what's your favorite ?
+	Free: Pattern=as, Pattern=a, Pattern=what's your favorite, Pattern=avatar, Pattern=lately, Pattern=good, Pattern=is, Pattern=i
+	Constrained: Pattern=what's, Pattern=favorite
+Turn ID=3| B | Human 2 : ah , avatar is a classic ! what do you think about the live-action remakes of disney movies ? <|im_end|
+	Free: Pattern=of, Pattern=what, Pattern=a, Pattern=movies ?, Pattern=do you, Pattern=is, Pattern=the, Pattern=avatar
+	Constrained: Pattern=do, Pattern=you, Pattern=movies
+Turn ID=4| A | Human 1 : it's a science-fiction movie with beautiful landscape of an imaginary nature with non-human creatures . people figured out a way to join that nature through avatar transformation . the movie ends with a meaningful story of how human behaviors , e . g ., cutting trees , have affected nature
+	Free: Pattern=of, Pattern=an, Pattern=movie, Pattern=movie with, Pattern=the, Pattern=, have, Pattern=with a, Pattern=a, Pattern=avatar, Pattern=to, Pattern=with, Pattern=that
+	Constrained: Pattern=a, Pattern=movie, Pattern=have, Pattern=with
+Turn ID=5| B | Human 2 : ah , i see ! yes , avatar is definitely a visually stunning movie with a powerful message about the importance of respecting and preserving
+	Free: Pattern=of, Pattern=and, Pattern=movie with, Pattern=is, Pattern=avatar, Pattern=with a, Pattern=a, Pattern=the, Pattern=, i
+	Constrained: Pattern=a, Pattern=i, Pattern=movie, Pattern=with
+Turn ID=6| A | Human 1 : yea . what else do you like to do beside movies ?
+	Free: Pattern=to do, Pattern=what, Pattern=movies ?, Pattern=do you, Pattern=yea, Pattern=like
+	Constrained: Pattern=do, Pattern=to, Pattern=you, Pattern=movies
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or hobbies like humans do movies ! what's
+	Free: Pattern=have, Pattern=do, Pattern=an, Pattern=or, Pattern=, i, Pattern=movies, Pattern=what's, Pattern=like
+	Constrained: Pattern=i
+Turn ID=8| A | Human 1 : i enjoy eating 🙂
+	Free: Pattern=i enjoy, Pattern=eating
+	Constrained: Pattern=i
+Turn ID=9| B | Human 2 : lol ! yea eating is important for us as well 😊 what's your favorite movie genre ? <|im_
+	Free: Pattern=eating, Pattern=as, Pattern=movie, Pattern=yea, Pattern=what's your favorite, Pattern=is
+	Constrained: Pattern=what's, Pattern=favorite
+Turn ID=10| A | Human 1 : i will have to bake some soon and let you know . what types of food do you like to eat ?
+	Free: Pattern=you, Pattern=have, Pattern=what, Pattern=some, Pattern=i, Pattern=to, Pattern=to eat ?, Pattern=types of, Pattern=and, Pattern=do you, Pattern=food, Pattern=like
+	Constrained: Pattern=do, Pattern=of, Pattern=to, Pattern=you
+Turn ID=11| B | Human 2 : 🤔 food and baking are some of my favorite things to do in my free time ! i enjoy experimenting with new recipes
+	Free: Pattern=of, Pattern=to do, Pattern=favorite, Pattern=some, Pattern=food, Pattern=with, Pattern=and, Pattern=i enjoy
+	Constrained: Pattern=do, Pattern=to, Pattern=i
+Turn ID=12| A | Human 1 : noodle soup is delicious ! do you make homemade noodle soup or do you prefer to go out ?
+	Free: Pattern=do you, Pattern=to, Pattern=is, Pattern=or
+	Constrained: Pattern=do, Pattern=you
+Turn ID=13| B | Human 2 : 🤔 that sounds like so much fun ! what are you favorite types of noodles to eat ? <|im_end|
+	Free: Pattern=you, Pattern=what, Pattern=favorite, Pattern=like, Pattern=that, Pattern=to eat ?, Pattern=types of
+	Constrained: Pattern=to, Pattern=of
+Turn ID=14| A | Human 1 : same ! even though i bake , i cannot cook
+	Free: Pattern=, i, Pattern=i, Pattern=same
+	Constrained: Pattern=i
+Turn ID=15| B | Human 2 : 😂 same here ! baking is definitely my strong suit
+	Free: Pattern=is, Pattern=same
+	Constrained: 

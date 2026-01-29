@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: how was the _trip_ last weekend ? 
+B|3| Human 2: i'm just an ai _and_ do not _have_ personal experiences or memories , so _i_ cannot provide information about _a_ [trip] that _i_ _did_ not attend 
+A|4| Human 1: nice , _what_ all _places_ [did] _you_ cover ? 
+B|5| Human 2: i'm just an ai _and_ do not _have_ personal experiences or memories , so _i_ cannot provide information about [places] that _i_ [did] not visit< 
+A|6| Human 1: _i am_ actually attending _cooking_ classes over the weekends . 
+B|7| Human 2: oh , that sounds great ! [what] kind of dishes are [you] learning _to_ make ? 
+A|8| Human 1: true ! they started _with_ _some_ basic zucchini based dish . we may try _cooking_ _some_ italian dish later this week . 
+B|9| Human 2: that's so cool ! i'm _sure_ you're having _a_ lot of fun learning new recipes _and_ [cooking] techniques . do [you] _have_ 
+A|10| Human 1: nice _! i_ hope [to] volunteer [to] cook _for_ the team in our next team offsite :) 
+B|11| Human 2: [i am] looking forward [to] it [! i] think it _will_ be _a_ great opportunity [for] us [to] bond _and_ create [some] delicious food together . <|im 
+A|12| Human 1: [sure] , _i will_ love [to] invite [you] [and] your _family_ [for] [a] meal over the holidays . [have] [you] guys made _any_ other plans ? 
+B|13| Human 2: that sounds great [! [i] will] [have] [to] check [with] my [family] [and] see [what] dates work best [for] us . do [you] [have] [any] favorite holiday recipes 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=trip
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm just an ai and do not have personal experiences or memories , so i cannot provide information about a trip that i did not attend
+	Free: Pattern=have, Pattern=and, Pattern=i, Pattern=trip, Pattern=did, Pattern=a
+	Constrained: 
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=did, Pattern=places, Pattern=you, Pattern=what
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai and do not have personal experiences or memories , so i cannot provide information about places that i did not visit<
+	Free: Pattern=have, Pattern=places, Pattern=did, Pattern=and, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=i am, Pattern=cooking
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : oh , that sounds great ! what kind of dishes are you learning to make ?
+	Free: Pattern=to, Pattern=you, Pattern=what
+	Constrained: 
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=with, Pattern=some, Pattern=cooking
+	Constrained: 
+Turn ID=9| B | Human 2 : that's so cool ! i'm sure you're having a lot of fun learning new recipes and cooking techniques . do you have
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=and, Pattern=cooking, Pattern=sure
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=! i, Pattern=for, Pattern=to
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i am looking forward to it ! i think it will be a great opportunity for us to bond and create some delicious food together . <|im
+	Free: Pattern=a, Pattern=for, Pattern=i am, Pattern=to, Pattern=and, Pattern=! i, Pattern=will, Pattern=some
+	Constrained: Pattern=i
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=and, Pattern=family, Pattern=sure, Pattern=to, Pattern=i will, Pattern=for, Pattern=any
+	Constrained: Pattern=will, Pattern=i
+Turn ID=13| B | Human 2 : that sounds great ! i will have to check with my family and see what dates work best for us . do you have any favorite holiday recipes
+	Free: Pattern=you, Pattern=have, Pattern=what, Pattern=family, Pattern=to, Pattern=i will, Pattern=with, Pattern=for, Pattern=any, Pattern=and, Pattern=! i
+	Constrained: Pattern=will, Pattern=i

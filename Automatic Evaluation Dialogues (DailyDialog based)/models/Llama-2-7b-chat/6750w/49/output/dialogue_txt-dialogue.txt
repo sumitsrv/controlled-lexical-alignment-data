@@ -1,0 +1,67 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] _there_ 
+A|2| Human 1: how's your day _going_ ? 
+B|3| Human 2: great , thanks for asking ! how _can_ _i_ help _you_ today ? 
+A|4| Human 1: _haha_ _are you_ _looking forward to the weekend_ ? 
+B|5| Human 2: of course ! weekends [are] [the] best time [to] relax _and_ recharge . how about [you] ? 
+A|6| Human 1: oh _wow_ _! are you_ _going to watch_ _it_ _live_ ? or _watch_ _it_ on tv ? 
+B|7| Human 2: [wow] [you] [are] _so_ energetic [haha] _i'm_ [looking forward to the weekend] too ! _i'm_ [going to watch] some mov 
+A|8| Human 1: oh , _the sharks_ ??? hokey is _actually_ _really fun_ _live !_ although , _it_ [can] _be_ a little violent .. [haha] 
+B|9| Human 2: [haha] [really] ? _i'm_ [actually] [going to watch] [the sharks] game [live] tomorrow [! are you] excited ? <|im_end| 
+A|10| Human 1: [you] might _like the_ ufc [haha] . [i] [actually] have a jiu jitsu _tournament_ coming _up_ [so] _this weekend_ [i] _will be_ _training_ ! 
+B|11| Human 2: [haha] [actually] jiujitsu tournaments [are] [really fun] [to watch] [live !] [you] [can] see [the] techniques _and_ strategies [up] close [haha] 
+A|12| Human 1: it's _just_ been a little over a year . [i'm] still _pretty_ amateur , _but_ [i] figured [i] should _give_ _competing_ a _try_ [and] _just_ put _myself_ _out_ [there] . 
+B|13| Human 2: [i'm] [actually] [just] [really] [competing] [this weekend] [and] [going to] [try] [out] [like the] jiu-jitsu tournaments [it] [will be] 
+A|14| Human 1: _yeah_ , as long as [i] do not pass [out] , [i] [will] consider that a win ! 
+B|15| Human 2: [yeah] that's [pretty] cool [you] [are] [competing] [this weekend] [i'm] [just] [training] [but] [will] [watch] [the] [tournament] [and] [give] [it] [try] [out] [myself] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there
+	Free: Pattern=hi, Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks for asking ! how can i help you today ?
+	Free: Pattern=i, Pattern=you, Pattern=can
+	Constrained: 
+Turn ID=4| A | Human 1 : haha are you looking forward to the weekend ?
+	Free: Pattern=looking forward to the weekend, Pattern=are you, Pattern=haha
+	Constrained: Pattern=are, Pattern=the, Pattern=to, Pattern=you
+Turn ID=5| B | Human 2 : of course ! weekends are the best time to relax and recharge . how about you ?
+	Free: Pattern=you, Pattern=and, Pattern=are, Pattern=the, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : oh wow ! are you going to watch it live ? or watch it on tv ?
+	Free: Pattern=going to watch, Pattern=it, Pattern=! are you, Pattern=watch, Pattern=live, Pattern=wow
+	Constrained: Pattern=going to, Pattern=you, Pattern=going, Pattern=to watch, Pattern=are, Pattern=are you, Pattern=to, Pattern=watch
+Turn ID=7| B | Human 2 : wow you are so energetic haha i'm looking forward to the weekend too ! i'm going to watch some mov
+	Free: Pattern=you, Pattern=going to watch, Pattern=i'm, Pattern=haha, Pattern=looking forward to the weekend, Pattern=so, Pattern=are, Pattern=wow
+	Constrained: Pattern=going to, Pattern=going, Pattern=to watch, Pattern=the, Pattern=to, Pattern=watch
+Turn ID=8| A | Human 1 : oh , the sharks ??? hokey is actually really fun live ! although , it can be a little violent .. haha
+	Free: Pattern=the sharks, Pattern=actually, Pattern=it, Pattern=can, Pattern=really fun, Pattern=haha, Pattern=live !, Pattern=be
+	Constrained: Pattern=live, Pattern=really, Pattern=the
+Turn ID=9| B | Human 2 : haha really ? i'm actually going to watch the sharks game live tomorrow ! are you excited ? <|im_end|
+	Free: Pattern=the sharks, Pattern=actually, Pattern=going to watch, Pattern=live, Pattern=i'm, Pattern=! are you, Pattern=haha, Pattern=really
+	Constrained: Pattern=going to, Pattern=you, Pattern=going, Pattern=to watch, Pattern=are, Pattern=are you, Pattern=the, Pattern=to, Pattern=watch
+Turn ID=10| A | Human 1 : you might like the ufc haha . i actually have a jiu jitsu tournament coming up so this weekend i will be training !
+	Free: Pattern=training, Pattern=actually, Pattern=will be, Pattern=i, Pattern=haha, Pattern=up, Pattern=like the, Pattern=tournament, Pattern=so, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=be, Pattern=the, Pattern=will
+Turn ID=11| B | Human 2 : haha actually jiujitsu tournaments are really fun to watch live ! you can see the techniques and strategies up close haha
+	Free: Pattern=you, Pattern=to watch, Pattern=actually, Pattern=and, Pattern=are, Pattern=can, Pattern=really fun, Pattern=haha, Pattern=live !, Pattern=the, Pattern=up
+	Constrained: Pattern=watch, Pattern=to, Pattern=live, Pattern=really
+Turn ID=12| A | Human 1 : it's just been a little over a year . i'm still pretty amateur , but i figured i should give competing a try and just put myself out there .
+	Free: Pattern=out, Pattern=just, Pattern=competing, Pattern=there, Pattern=try, Pattern=and, Pattern=give, Pattern=i'm, Pattern=i, Pattern=pretty, Pattern=myself, Pattern=but
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm actually just really competing this weekend and going to try out like the jiu-jitsu tournaments it will be
+	Free: Pattern=going to, Pattern=just, Pattern=competing, Pattern=actually, Pattern=try, Pattern=will be, Pattern=i'm, Pattern=really, Pattern=like the, Pattern=this weekend, Pattern=out, Pattern=it, Pattern=and
+	Constrained: Pattern=going, Pattern=will, Pattern=be, Pattern=the, Pattern=to
+Turn ID=14| A | Human 1 : yeah , as long as i do not pass out , i will consider that a win !
+	Free: Pattern=out, Pattern=yeah, Pattern=i, Pattern=will
+	Constrained: 
+Turn ID=15| B | Human 2 : yeah that's pretty cool you are competing this weekend i'm just training but will watch the tournament and give it try out myself
+	Free: Pattern=competing, Pattern=try, Pattern=will, Pattern=i'm, Pattern=pretty, Pattern=the, Pattern=myself, Pattern=watch, Pattern=this weekend, Pattern=you, Pattern=out, Pattern=training, Pattern=just, Pattern=and, Pattern=it, Pattern=yeah, Pattern=are, Pattern=give, Pattern=but, Pattern=tournament
+	Constrained: 

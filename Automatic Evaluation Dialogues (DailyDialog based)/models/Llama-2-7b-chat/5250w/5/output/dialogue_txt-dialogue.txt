@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey _, how_ _are_ _you_ ? 
+A|2| Human 1: _i'm_ a bit sad _. i_ miss my cat . 
+B|3| Human 2: oh , [i'm] _so_ sorry _to_ hear that . 🐱 cats _are_ amazing companions _, and_ it's understandable 
+A|4| Human 1: posters _is_ a _great idea_ . [so] far i've _just_ tried _banging_ her _catfood dish_ [and] shouting her name . anyway [, how] _is_ your _day_ _going_ [so] far ? 
+B|5| Human 2: [day] [is] [going] [great] , 😊 [i'm] [just] an ai [and] [i] _don't_ have [catfood dish] [banging] 
+A|6| Human 1: if [you] could go anywhere on _vacation_ , _where_ _would_ [you] go ? 
+B|7| Human 2: [i'm] [just] an ai [and] [vacation] [would] be [great idea] since [i] _don't_ have [catfood dish] [banging] anywhere< 
+A|8| Human 1: [i] heard _there_ [are] rainforests in southeast asia _where _you_ _can_ _zipline from tree_ to tree_ . 
+B|9| Human 2: [i] [can zipline from tree] [tree] [and] [catfood dish] [banging] [there] would've been [great] idea<|im_end 
+A|10| Human 1: [i] _won't lie_ , it sounds scary . [i'm] _scared_ _right_ _now_ [just] thinking _about_ it . 
+B|11| Human 2: [i'm] [just] [scared] [and] [won't lie] [about] [zipline from tree to tree] [there] [would] [banging] [catfood dish] 
+A|12| Human 1: if [there] _isn't one_ , [you] should _invent_ it [, and] _then_ _make_ _millions_ 
+B|13| Human 2: [from tree] there's [zipline] [and] [banging] [catfood] [right] [where you] [are] [now] [isn't one] [invent] [millions] [just] [scared] 
+A|14| Human 1: ha ! _don't drink and zipline_ , _mate !_ 
+B|15| Human 2: [don't drink and zipline] [mate !] </s>s [you can] [make] [from] [one] [tree] [are] limitless [. i] [just] invented [millions] [then] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=, how, Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm a bit sad . i miss my cat .
+	Free: Pattern=. i, Pattern=i'm
+	Constrained: Pattern=i
+Turn ID=3| B | Human 2 : oh , i'm so sorry to hear that . 🐱 cats are amazing companions , and it's understandable
+	Free: Pattern=are, Pattern=i'm, Pattern=so, Pattern=, and, Pattern=to
+	Constrained: Pattern=and
+Turn ID=4| A | Human 1 : posters is a great idea . so far i've just tried banging her catfood dish and shouting her name . anyway , how is your day going so far ?
+	Free: Pattern=banging, Pattern=and, Pattern=great idea, Pattern=, how, Pattern=catfood dish, Pattern=so, Pattern=going, Pattern=just, Pattern=day, Pattern=is
+	Constrained: Pattern=catfood, Pattern=great
+Turn ID=5| B | Human 2 : day is going great , 😊 i'm just an ai and i don't have catfood dish banging
+	Free: Pattern=banging, Pattern=great, Pattern=and, Pattern=i'm, Pattern=don't, Pattern=catfood dish, Pattern=going, Pattern=just, Pattern=day, Pattern=is, Pattern=i
+	Constrained: Pattern=catfood
+Turn ID=6| A | Human 1 : if you could go anywhere on vacation , where would you go ?
+	Free: Pattern=would, Pattern=where, Pattern=you, Pattern=vacation
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm just an ai and vacation would be great idea since i don't have catfood dish banging anywhere<
+	Free: Pattern=banging, Pattern=just, Pattern=vacation, Pattern=and, Pattern=i'm, Pattern=i, Pattern=great idea, Pattern=catfood dish, Pattern=would, Pattern=don't
+	Constrained: Pattern=great, Pattern=catfood
+Turn ID=8| A | Human 1 : i heard there are rainforests in southeast asia where you can zipline from tree to tree .
+	Free: Pattern=there, Pattern=are, Pattern=you can, Pattern=i, Pattern=zipline from tree to tree, Pattern=where you, Pattern=can zipline from tree
+	Constrained: Pattern=from, Pattern=where, Pattern=zipline, Pattern=you, Pattern=tree, Pattern=from tree, Pattern=to
+Turn ID=9| B | Human 2 : i can zipline from tree tree and catfood dish banging there would've been great idea<|im_end
+	Free: Pattern=banging, Pattern=there, Pattern=and, Pattern=i, Pattern=catfood dish, Pattern=can zipline from tree, Pattern=great, Pattern=tree
+	Constrained: Pattern=tree, Pattern=from, Pattern=catfood, Pattern=from tree, Pattern=zipline
+Turn ID=10| A | Human 1 : i won't lie , it sounds scary . i'm scared right now just thinking about it .
+	Free: Pattern=right, Pattern=just, Pattern=i'm, Pattern=i, Pattern=scared, Pattern=now, Pattern=about, Pattern=won't lie
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm just scared and won't lie about zipline from tree to tree there would banging catfood dish
+	Free: Pattern=banging, Pattern=just, Pattern=there, Pattern=and, Pattern=i'm, Pattern=would, Pattern=catfood dish, Pattern=about, Pattern=won't lie, Pattern=zipline from tree to tree, Pattern=scared
+	Constrained: Pattern=tree, Pattern=from, Pattern=catfood, Pattern=zipline, Pattern=from tree, Pattern=to
+Turn ID=12| A | Human 1 : if there isn't one , you should invent it , and then make millions
+	Free: Pattern=you, Pattern=there, Pattern=then, Pattern=millions, Pattern=invent, Pattern=make, Pattern=isn't one, Pattern=, and
+	Constrained: Pattern=one, Pattern=and
+Turn ID=13| B | Human 2 : from tree there's zipline and banging catfood right where you are now isn't one invent millions just scared
+	Free: Pattern=banging, Pattern=right, Pattern=just, Pattern=millions, Pattern=and, Pattern=catfood, Pattern=isn't one, Pattern=zipline, Pattern=are, Pattern=invent, Pattern=from tree, Pattern=scared, Pattern=where you, Pattern=now
+	Constrained: Pattern=one, Pattern=from, Pattern=where, Pattern=you, Pattern=tree
+Turn ID=14| A | Human 1 : ha ! don't drink and zipline , mate !
+	Free: Pattern=don't drink and zipline, Pattern=mate !
+	Constrained: Pattern=zipline, Pattern=don't, Pattern=and
+Turn ID=15| B | Human 2 : don't drink and zipline mate ! </s>s you can make from one tree are limitless . i just invented millions then
+	Free: Pattern=tree, Pattern=just, Pattern=then, Pattern=don't drink and zipline, Pattern=millions, Pattern=. i, Pattern=make, Pattern=are, Pattern=one, Pattern=mate !, Pattern=you can, Pattern=from
+	Constrained: Pattern=you, Pattern=and, Pattern=i, Pattern=don't, Pattern=zipline

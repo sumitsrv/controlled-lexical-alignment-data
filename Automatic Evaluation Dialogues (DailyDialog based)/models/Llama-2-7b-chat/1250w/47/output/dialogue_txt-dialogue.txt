@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's _your_ day _going_ ? 
+B|3| Human 2: _great_ ! _how_ can _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _good_ _i'm_ _good_ _. what's_ getting [you] down ? 
+B|5| Human 2: [i'm] here _to_ help [you] with any questions or problems [you] might have [. what's] [going] on ? 
+A|6| Human 1: [i'm] _thinking_ _of_ [going] _to visit_ my _family_ _. how about you_ ? 
+B|7| Human 2: [i'm] _just_ an ai model , [i'm] not able [to visit] places or have personal experiences [. how about you] tell me [about] [your] [family] 
+A|8| Human 1: _they're_ in _new york_ [. how about] yours ? 
+B|9| Human 2: [they're] always [good] [to] talk [to] . [i'm] happy you're [thinking] [about] visiting them . _what_ are [your] plans ? <|im 
+A|10| Human 1: _ahh_ [what] _city_ ? _i've visited_ _india_ _before_ . 
+B|11| Human 2: [i've visited] [new york] [before] too ! it's _a_ _great_ [city] with lots [of] culture _and_ history . [what] do [you] think [about] visiting [india] 
+A|12| Human 1: _hyderabad_ ! _and bangalore_ ! [great] food in _both_ _cities_ ! is it _still_ hot this _time of year_ ? 
+B|13| Human 2: [ahh] _i_ _see_ ! [hyderabad] [and bangalore] are [both] [great] [cities] with _a_ lot [of] history [and] culture . [and] _yes_ , [india] can [still] 
+A|14| Human 1: [yes] . [i] was actually [just] [there] [a] few weeks ago for thanksgiving [and] got [to] [see] _the_ first snow [of] _the_ season ! ever been [to] [new york] ? 
+B|15| Human 2: [new york] [and] [india] [both] have [the] same amount [of] snowfall , 0 inches per [year] . [what] [time of year] are [you] planning [to visit] hyder 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your, Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! how can i help you today ?
+	Free: Pattern=how, Pattern=great, Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=. what's, Pattern=good, Pattern=i'm, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm here to help you with any questions or problems you might have . what's going on ?
+	Free: Pattern=you, Pattern=going, Pattern=. what's, Pattern=i'm, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=going, Pattern=thinking, Pattern=family, Pattern=i'm, Pattern=to visit, Pattern=. how about you, Pattern=of
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=. how about, Pattern=to
+Turn ID=7| B | Human 2 : i'm just an ai model , i'm not able to visit places or have personal experiences . how about you tell me about your family
+	Free: Pattern=. how about you, Pattern=just, Pattern=i'm, Pattern=your, Pattern=to visit, Pattern=about, Pattern=family
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=. how about, Pattern=to
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=. how about, Pattern=new york, Pattern=they're
+	Constrained: Pattern=how, Pattern=about
+Turn ID=9| B | Human 2 : they're always good to talk to . i'm happy you're thinking about visiting them . what are your plans ? <|im
+	Free: Pattern=good, Pattern=what, Pattern=thinking, Pattern=i'm, Pattern=your, Pattern=to, Pattern=about, Pattern=they're
+	Constrained: 
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=city, Pattern=i've visited, Pattern=india, Pattern=what, Pattern=before, Pattern=ahh
+	Constrained: 
+Turn ID=11| B | Human 2 : i've visited new york before too ! it's a great city with lots of culture and history . what do you think about visiting india
+	Free: Pattern=city, Pattern=i've visited, Pattern=what, Pattern=a, Pattern=new york, Pattern=and, Pattern=about, Pattern=before, Pattern=of, Pattern=india, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=great, Pattern=cities, Pattern=both, Pattern=hyderabad, Pattern=still, Pattern=and bangalore, Pattern=time of year
+	Constrained: Pattern=year, Pattern=of, Pattern=and
+Turn ID=13| B | Human 2 : ahh i see ! hyderabad and bangalore are both great cities with a lot of history and culture . and yes , india can still
+	Free: Pattern=a, Pattern=and, Pattern=cities, Pattern=and bangalore, Pattern=both, Pattern=i, Pattern=hyderabad, Pattern=see, Pattern=of, Pattern=india, Pattern=great, Pattern=yes, Pattern=ahh, Pattern=still
+	Constrained: Pattern=and
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=of, Pattern=yes, Pattern=just, Pattern=there, Pattern=a, Pattern=new york, Pattern=and, Pattern=i, Pattern=the, Pattern=see, Pattern=to
+	Constrained: 
+Turn ID=15| B | Human 2 : new york and india both have the same amount of snowfall , 0 inches per year . what time of year are you planning to visit hyder
+	Free: Pattern=you, Pattern=what, Pattern=new york, Pattern=and, Pattern=time of year, Pattern=both, Pattern=year, Pattern=the, Pattern=to visit, Pattern=of, Pattern=india
+	Constrained: Pattern=year, Pattern=to, Pattern=of

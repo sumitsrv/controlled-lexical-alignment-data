@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's _your_ day going ? 
+B|3| Human 2: i'm phi , an artificial intelligence , so _i_ _don't_ have feelings or days _, but_ i'm _here_ _and_ ready _to_ help _you_ 
+A|4| Human 1: ehhh so-so . my _moped_ broke down on _the_ way [to] work this morning [and] [i] am in _the_ shop getting _it_ fixed ... 
+B|5| Human 2: _that_ does sound frustrating ! while [i] can't help fix [your] [moped] , [i] can certainly try [to] assist with whatever _you_ need . _if_ 
+A|6| Human 1: _the_ mechanic _is_ trying [to] figure [that] out now . apparently [i] wasn't supposed [to] be _using_ _diesel_ lol . 
+B|7| Human 2: it's _good_ [to] have [that] information . _if_ [diesel] [is] not [the] correct fuel for [your] [moped] , [using] [it] could indeed cause serious damage . 
+A|8| Human 1: okay sounds [good] . would [you] be able [to] _pick_ me _up_ by [the] way _, if_ they [don't] finish _up_ [here] in time ? _did you_ _drive_ [to] work today ? 
+B|9| Human 2: i'm phi [the] ai , so [i] [don't] [drive] or [pick] people [up] . however [, if] you're looking [to] arrange 
+A|10| Human 1: [that] should be fine [i] think _. did you_ catch [the] warriors _game_ _last_ night btw ? 
+B|11| Human 2: i'm phi [the] assistant , so [i] [don't] have personal experiences or watch games . _but_ [i] can find [the] [game] stats or updates 
+A|12| Human 1: haha [i] appreciate [your] faith [, but] _their_ _record_ thus far [is] hard [to] refute ! 
+B|13| Human 2: absolutely , [the] warriors' [record] [is] indeed impressive [. did you] want [the] current stats or a recap of [their] [last] [game] ? <|end|> 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm phi , an artificial intelligence , so i don't have feelings or days , but i'm here and ready to help you
+	Free: Pattern=here, Pattern=and, Pattern=i, Pattern=don't, Pattern=to, Pattern=you, Pattern=, but
+	Constrained: Pattern=but
+Turn ID=4| A | Human 1 : ehhh so-so . my moped broke down on the way to work this morning and i am in the shop getting it fixed ...
+	Free: Pattern=moped, Pattern=i, Pattern=the, Pattern=to, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=5| B | Human 2 : that does sound frustrating ! while i can't help fix your moped , i can certainly try to assist with whatever you need . if
+	Free: Pattern=moped, Pattern=you, Pattern=if, Pattern=to, Pattern=that, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : the mechanic is trying to figure that out now . apparently i wasn't supposed to be using diesel lol .
+	Free: Pattern=using, Pattern=diesel, Pattern=the, Pattern=to, Pattern=that, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=7| B | Human 2 : it's good to have that information . if diesel is not the correct fuel for your moped , using it could indeed cause serious damage .
+	Free: Pattern=using, Pattern=diesel, Pattern=it, Pattern=if, Pattern=the, Pattern=to, Pattern=that, Pattern=good, Pattern=moped, Pattern=is, Pattern=your
+	Constrained: 
+Turn ID=8| A | Human 1 : okay sounds good . would you be able to pick me up by the way , if they don't finish up here in time ? did you drive to work today ?
+	Free: Pattern=good, Pattern=drive, Pattern=you, Pattern=did you, Pattern=here, Pattern=, if, Pattern=the, Pattern=don't, Pattern=up, Pattern=to, Pattern=pick
+	Constrained: Pattern=if, Pattern=you
+Turn ID=9| B | Human 2 : i'm phi the ai , so i don't drive or pick people up . however , if you're looking to arrange
+	Free: Pattern=drive, Pattern=, if, Pattern=i, Pattern=the, Pattern=don't, Pattern=up, Pattern=to, Pattern=pick
+	Constrained: Pattern=if
+Turn ID=10| A | Human 1 : that should be fine i think . did you catch the warriors game last night btw ?
+	Free: Pattern=. did you, Pattern=game, Pattern=i, Pattern=last, Pattern=the, Pattern=that
+	Constrained: Pattern=did you, Pattern=you
+Turn ID=11| B | Human 2 : i'm phi the assistant , so i don't have personal experiences or watch games . but i can find the game stats or updates
+	Free: Pattern=game, Pattern=i, Pattern=the, Pattern=don't, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : haha i appreciate your faith , but their record thus far is hard to refute !
+	Free: Pattern=their, Pattern=, but, Pattern=record, Pattern=to, Pattern=is, Pattern=your, Pattern=i
+	Constrained: Pattern=but
+Turn ID=13| B | Human 2 : absolutely , the warriors' record is indeed impressive . did you want the current stats or a recap of their last game ? <|end|>
+	Free: Pattern=their, Pattern=. did you, Pattern=game, Pattern=record, Pattern=is, Pattern=last, Pattern=the
+	Constrained: Pattern=did you, Pattern=you

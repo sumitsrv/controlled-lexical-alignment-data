@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] there _! it's_ _a_ lovely _day_ _to_ chat _with_ _you_ 
+A|2| Human 1: isn't _it_ _just_ ! _what are you_ up [to] _today ?_ 
+B|3| Human 2: _i'm_ [just] here [to] chat _with_ [you] and help _with_ any questions or queries [you] may _have_ _. what_ _can_ _i_ assist [you] _with_ [today ?] <| 
+A|4| Human 1: _oh ,_ excellent ! [what] does _your_ _son_ _like_ [to] do for fun ? 
+B|5| Human 2: that's very kind _of_ [you] [to] ask ! as _a_ virtual assistant _, i don't have_ _a_ [son] , but _i'm_ here [to] help 
+A|6| Human 1: [i'm] taking [a] fake sick [day] from work so _i can_ go [to] _the movies ._ 
+B|7| Human 2: [i] see ! well _, i_ hope [you] _have_ [a] great time at [the movies _.] [what are_ you] planning [to] watch ? <|im_end| 
+A|8| Human 1: [just] by myself _. i_ love seeing [movies] by myself , [it's] [the] best . 
+B|9| Human 2: ah _, [i_ can] understand that . sometimes [it's] nice [to] _have_ some alone time [to] [just] relax and enjoy [a] _movie_ _. what's your favorite_ 
+A|10| Human 1: exactly . exactly ! plus [, i don't have] [to] share [the] popcorn [with] anyone [. what's your _favorite] movie_ ? 
+B|11| Human 2: [oh [,] i don't have] [a] [favorite movie] [. i] [just] [like] watching [movies] in general _. what_ about [you] ? <|im_end| 
+A|12| Human 1: get out [of] town [! it's] _avatar_ too [. what are] [the] odds !? 
+B|13| Human 2: haha , nice ! yeah , [avatar] is definitely [a] great [movie] . [have] [you] seen [it] in 3d ? [it's] definitely worth [the] 
+A|14| Human 1: yes . can't wait for [the] sequels . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi there ! it's a lovely day to chat with you
+	Free: Pattern=you, Pattern=! it's, Pattern=a, Pattern=hi, Pattern=day, Pattern=to, Pattern=with
+	Constrained: Pattern=it's
+Turn ID=2| A | Human 1 : isn't it just ! what are you up to today ?
+	Free: Pattern=today ?, Pattern=just, Pattern=it, Pattern=what are you, Pattern=to
+	Constrained: Pattern=what, Pattern=you
+Turn ID=3| B | Human 2 : i'm just here to chat with you and help with any questions or queries you may have . what can i assist you with today ? <|
+	Free: Pattern=today ?, Pattern=you, Pattern=can, Pattern=i'm, Pattern=i, Pattern=to, Pattern=. what, Pattern=with, Pattern=just, Pattern=have
+	Constrained: Pattern=what
+Turn ID=4| A | Human 1 : oh , excellent ! what does your son like to do for fun ?
+	Free: Pattern=what, Pattern=your, Pattern=like, Pattern=son, Pattern=to, Pattern=oh ,
+	Constrained: 
+Turn ID=5| B | Human 2 : that's very kind of you to ask ! as a virtual assistant , i don't have a son , but i'm here to help
+	Free: Pattern=of, Pattern=you, Pattern=a, Pattern=, i don't have, Pattern=i'm, Pattern=son, Pattern=to
+	Constrained: Pattern=have, Pattern=, i, Pattern=i
+Turn ID=6| A | Human 1 : i'm taking a fake sick day from work so i can go to the movies .
+	Free: Pattern=the movies ., Pattern=a, Pattern=i'm, Pattern=day, Pattern=to, Pattern=i can
+	Constrained: Pattern=i, Pattern=movies, Pattern=can, Pattern=the
+Turn ID=7| B | Human 2 : i see ! well , i hope you have a great time at the movies . what are you planning to watch ? <|im_end|
+	Free: Pattern=you, Pattern=have, Pattern=the movies ., Pattern=a, Pattern=. what are, Pattern=, i, Pattern=to, Pattern=what are you, Pattern=i
+	Constrained: Pattern=you, Pattern=what, Pattern=i, Pattern=the, Pattern=. what, Pattern=movies
+Turn ID=8| A | Human 1 : just by myself . i love seeing movies by myself , it's the best .
+	Free: Pattern=just, Pattern=. i, Pattern=the, Pattern=movies, Pattern=it's
+	Constrained: Pattern=i
+Turn ID=9| B | Human 2 : ah , i can understand that . sometimes it's nice to have some alone time to just relax and enjoy a movie . what's your favorite
+	Free: Pattern=. what's your favorite, Pattern=a, Pattern=movie, Pattern=, i, Pattern=to, Pattern=i can, Pattern=it's, Pattern=just, Pattern=have
+	Constrained: Pattern=your, Pattern=i, Pattern=can
+Turn ID=10| A | Human 1 : exactly . exactly ! plus , i don't have to share the popcorn with anyone . what's your favorite movie ?
+	Free: Pattern=. what's your favorite, Pattern=favorite movie, Pattern=, i don't have, Pattern=the, Pattern=to, Pattern=with
+	Constrained: Pattern=have, Pattern=movie, Pattern=, i, Pattern=your, Pattern=i
+Turn ID=11| B | Human 2 : oh , i don't have a favorite movie . i just like watching movies in general . what about you ? <|im_end|
+	Free: Pattern=you, Pattern=just, Pattern=a, Pattern=favorite movie, Pattern=. i, Pattern=, i don't have, Pattern=like, Pattern=. what, Pattern=oh ,, Pattern=movies
+	Constrained: Pattern=have, Pattern=what, Pattern=movie, Pattern=i, Pattern=, i
+Turn ID=12| A | Human 1 : get out of town ! it's avatar too . what are the odds !?
+	Free: Pattern=of, Pattern=! it's, Pattern=. what are, Pattern=the, Pattern=avatar
+	Constrained: Pattern=what, Pattern=. what, Pattern=it's
+Turn ID=13| B | Human 2 : haha , nice ! yeah , avatar is definitely a great movie . have you seen it in 3d ? it's definitely worth the
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=movie, Pattern=it, Pattern=the, Pattern=avatar, Pattern=it's
+	Constrained: 
+Turn ID=14| A | Human 1 : yes . can't wait for the sequels .
+	Free: Pattern=the
+	Constrained: 

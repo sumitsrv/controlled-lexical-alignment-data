@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm_ doing _great_ . what [are you] up _to_ ? 
+B|3| Human 2: [i'm] just here [to] _help_ [you] with any questions or tasks _you might_ _have_ . _how_ can _i_ assist [you] today ? <|im_end| 
+A|4| Human 1: oh , [i'm] enjoying _a_ sip _of_ _coffee ,_ looking over _the_ ocean . what _book_ [are you] reading ? 
+B|5| Human 2: [i'm] just an ai , _i_ don't _have_ [the] ability [to] _read_ or enjoy [coffee ,] _as_ _i_ am [a] computer program designed [to] assist 
+A|6| Human 1: _that_ seems like _a good book_ . does it [have] _good_ _tips on how to sleep better_ ? 
+B|7| Human 2: [i'm] an ai [that] _is_ trained [on] [a] wide range [of] topics _and_ can provide information _and_ [tips on how to sleep better] _, but_ _i_ don 
+A|8| Human 1: [i] [read] lots [of] papers [, but] _do_ poorly [on] books 😞 [a] recent _book that_ [i] like [is] _zero to one_ by _peter_ thiel 
+B|9| Human 2: [zero to one] [is] [a] [great] [book that] provides valuable insights [on how to] start _and_ grow [a] successful business . [peter] thiel's ideas [on] [the] 
+A|10| Human 1: _it's about_ _startups_ , lots [of] _useful_ principles [and] philosophies _for_ _innovation_ , like _being_ [a] _contrarian_ 
+B|11| Human 2: [it's] [a good book] [for] [startups] [and] entrepreneurs [, but] [i] don't [have] personal experience with [coffee] 😃 [do] 
+A|12| Human 1: [i] [might] _in_ [the] future . [the] philosophy _in_ [the] [book] also [help] [for] other things [as] _well_ , e . g ., _in_ _research_ , [you might] also want [to] _be_ _contrarian_ 
+B|13| Human 2: [i] see , [well] [contrarian] thinking can [be] [useful] [in] various areas , including [research] [and] [innovation] . [it's about] [being] open-minded [and] 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=hi, Pattern=how
+	Constrained: Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=are you, Pattern=to, Pattern=i'm, Pattern=great
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : i'm just here to help you with any questions or tasks you might have . how can i assist you today ? <|im_end|
+	Free: Pattern=you, Pattern=have, Pattern=how, Pattern=you might, Pattern=i'm, Pattern=i, Pattern=to, Pattern=help
+	Constrained: Pattern=you, Pattern=might
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=i'm, Pattern=are you, Pattern=coffee ,, Pattern=the, Pattern=a, Pattern=book
+	Constrained: Pattern=you, Pattern=coffee
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have the ability to read or enjoy coffee , as i am a computer program designed to assist
+	Free: Pattern=a, Pattern=i'm, Pattern=i, Pattern=coffee ,, Pattern=the, Pattern=to, Pattern=read, Pattern=as, Pattern=have
+	Constrained: Pattern=coffee
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=good, Pattern=have, Pattern=a good book, Pattern=that, Pattern=tips on how to sleep better
+	Constrained: Pattern=how, Pattern=on, Pattern=to, Pattern=good, Pattern=on how to, Pattern=a, Pattern=book
+Turn ID=7| B | Human 2 : i'm an ai that is trained on a wide range of topics and can provide information and tips on how to sleep better , but i don
+	Free: Pattern=of, Pattern=, but, Pattern=a, Pattern=and, Pattern=i'm, Pattern=on, Pattern=that, Pattern=tips on how to sleep better, Pattern=is, Pattern=i
+	Constrained: Pattern=on how to, Pattern=to, Pattern=on, Pattern=how
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=of, Pattern=, but, Pattern=peter, Pattern=book that, Pattern=on, Pattern=read, Pattern=zero to one, Pattern=do, Pattern=a, Pattern=is, Pattern=i
+	Constrained: Pattern=book, Pattern=that, Pattern=to
+Turn ID=9| B | Human 2 : zero to one is a great book that provides valuable insights on how to start and grow a successful business . peter thiel's ideas on the
+	Free: Pattern=on how to, Pattern=great, Pattern=peter, Pattern=a, Pattern=and, Pattern=book that, Pattern=is, Pattern=zero to one, Pattern=on, Pattern=the
+	Constrained: Pattern=book, Pattern=how, Pattern=on, Pattern=to, Pattern=that
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=of, Pattern=it's about, Pattern=innovation, Pattern=a, Pattern=for, Pattern=and, Pattern=being, Pattern=startups, Pattern=contrarian, Pattern=useful
+	Constrained: Pattern=it's
+Turn ID=11| B | Human 2 : it's a good book for startups and entrepreneurs , but i don't have personal experience with coffee 😃 do
+	Free: Pattern=, but, Pattern=have, Pattern=do, Pattern=and, Pattern=startups, Pattern=i, Pattern=a good book, Pattern=it's, Pattern=coffee, Pattern=for
+	Constrained: Pattern=good, Pattern=book, Pattern=a
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=well, Pattern=as, Pattern=research, Pattern=book, Pattern=for, Pattern=you might, Pattern=in, Pattern=i, Pattern=contrarian, Pattern=be, Pattern=the, Pattern=to, Pattern=might, Pattern=help
+	Constrained: Pattern=you, Pattern=might
+Turn ID=13| B | Human 2 : i see , well contrarian thinking can be useful in various areas , including research and innovation . it's about being open-minded and
+	Free: Pattern=well, Pattern=innovation, Pattern=and, Pattern=being, Pattern=in, Pattern=i, Pattern=contrarian, Pattern=be, Pattern=useful, Pattern=research, Pattern=it's about
+	Constrained: Pattern=it's
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

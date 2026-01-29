@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how was _your_ weekend ? 
+A|2| Human 1: _pretty_ _good_ . _just_ went _to_ _church _and_ hangout with friends_ 
+B|3| Human 2: that sounds great ! [church and] [friends] , [good] company 
+A|4| Human 1: _did_ _you_ do _anything_ ? 
+B|5| Human 2: [just] [did] some work [and hangout with friends] 
+A|6| Human 1: _yum_ _yum_ _yum_ no only _good old oily frier_ 
+B|7| Human 2: 🤖 [anything] [you] want [to] talk about ? </s>0140 [yum] [good old oily frier] [friends] [and] [church] is 
+A|8| Human 1: do [you] _have one_ _at_ [your] _home or_ _were you at_ a [friends] _place_ ? 
+B|9| Human 2: [yum] [good old oily frier] [friends] [and] [church] [were you at] [home or] [your] [place] [have one] ? 
+A|10| Human 1: _i'm_ going [to] _impersonate_ a _pumpkin_ 
+B|11| Human 2: [pumpkin] [you] [were] [just] [impersonate] [friends] [and] [church] [place] [home] [have one] [yum] [good old oily frier] user [hangout with friends] 
+A|12| Human 1: _i'm pretty unique person_ 
+B|13| Human 2: [i'm pretty unique person] [impersonate] [pumpkin] [friends] [home] [yum] [good old oily frier] [place] [have one] [hangout with friends] 
+A|14| Human 1: _any_ other _hobbies besides_ _air frying_ everything ? 🙂 
+B|15| Human 2: [i'm] [just] an ai [and] i don't [have] [any] [hobbies besides] impersonating [pumpkin] [and] [air frying] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how was your weekend ?
+	Free: Pattern=hi !, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . just went to church and hangout with friends
+	Free: Pattern=good, Pattern=just, Pattern=church and, Pattern=to, Pattern=and hangout with friends, Pattern=pretty
+	Constrained: Pattern=friends, Pattern=church, Pattern=and, Pattern=hangout with friends
+Turn ID=3| B | Human 2 : that sounds great ! church and friends , good company
+	Free: Pattern=church and, Pattern=good, Pattern=friends
+	Constrained: Pattern=and, Pattern=church
+Turn ID=4| A | Human 1 : did you do anything ?
+	Free: Pattern=anything, Pattern=did, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : just did some work and hangout with friends
+	Free: Pattern=and hangout with friends, Pattern=did, Pattern=just
+	Constrained: Pattern=hangout with friends, Pattern=and, Pattern=friends
+Turn ID=6| A | Human 1 : yum yum yum no only good old oily frier
+	Free: Pattern=good old oily frier, Pattern=yum
+	Constrained: Pattern=good
+Turn ID=7| B | Human 2 : 🤖 anything you want to talk about ? </s>0140 yum good old oily frier friends and church is
+	Free: Pattern=you, Pattern=and, Pattern=church, Pattern=good old oily frier, Pattern=friends, Pattern=to, Pattern=anything, Pattern=yum
+	Constrained: Pattern=good
+Turn ID=8| A | Human 1 : do you have one at your home or were you at a friends place ?
+	Free: Pattern=you, Pattern=were you at, Pattern=have one, Pattern=at, Pattern=your, Pattern=friends, Pattern=place, Pattern=home or
+	Constrained: Pattern=you, Pattern=have, Pattern=at, Pattern=home, Pattern=were
+Turn ID=9| B | Human 2 : yum good old oily frier friends and church were you at home or your place have one ?
+	Free: Pattern=were you at, Pattern=and, Pattern=friends, Pattern=yum, Pattern=place, Pattern=home or, Pattern=have one, Pattern=church, Pattern=good old oily frier, Pattern=your
+	Constrained: Pattern=good, Pattern=you, Pattern=have, Pattern=at, Pattern=home, Pattern=were
+Turn ID=10| A | Human 1 : i'm going to impersonate a pumpkin
+	Free: Pattern=impersonate, Pattern=pumpkin, Pattern=i'm, Pattern=to
+	Constrained: 
+Turn ID=11| B | Human 2 : pumpkin you were just impersonate friends and church place home have one yum good old oily frier user hangout with friends
+	Free: Pattern=you, Pattern=just, Pattern=hangout with friends, Pattern=and, Pattern=good old oily frier, Pattern=friends, Pattern=yum, Pattern=place, Pattern=pumpkin, Pattern=have one, Pattern=church, Pattern=home, Pattern=were, Pattern=impersonate
+	Constrained: Pattern=have, Pattern=friends, Pattern=good
+Turn ID=12| A | Human 1 : i'm pretty unique person
+	Free: Pattern=i'm pretty unique person
+	Constrained: Pattern=pretty, Pattern=i'm
+Turn ID=13| B | Human 2 : i'm pretty unique person impersonate pumpkin friends home yum good old oily frier place have one hangout with friends
+	Free: Pattern=i'm pretty unique person, Pattern=hangout with friends, Pattern=have one, Pattern=good old oily frier, Pattern=friends, Pattern=yum, Pattern=place, Pattern=pumpkin, Pattern=home, Pattern=impersonate
+	Constrained: Pattern=good, Pattern=have, Pattern=i'm, Pattern=friends, Pattern=pretty
+Turn ID=14| A | Human 1 : any other hobbies besides air frying everything ? 🙂
+	Free: Pattern=air frying, Pattern=hobbies besides, Pattern=any
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm just an ai and i don't have any hobbies besides impersonating pumpkin and air frying
+	Free: Pattern=hobbies besides, Pattern=any, Pattern=and, Pattern=i'm, Pattern=pumpkin, Pattern=air frying, Pattern=just, Pattern=have
+	Constrained: 

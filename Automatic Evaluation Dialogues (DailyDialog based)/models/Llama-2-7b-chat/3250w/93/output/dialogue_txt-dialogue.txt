@@ -1,0 +1,59 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , what's up ! 
+A|2| Human 1: everything _is_ _good_ . there's so much _to_ be _thankful for_ - especially coming _out_ _of_ _thanksgiving_ holidays _. how_ _are you_ ? 
+B|3| Human 2: yes , _you're_ right ! [thanksgiving] [is] _a_ great _time_ [to] reflect _on_ _what_ we [are] [thankful for] [. how] can _i_ assistance today ? 
+A|4| Human 1: do _you_ _have_ interesting _plans_ ? 
+B|5| Human 2: i'm just an ai , _i don't_ [have] personal [plans] or feelings , but _i_ am here [to] help [you] _in_ _any_ way _i_ 
+A|6| Human 1: _nice_ _! what_ [for] ? _it's_ [a] _really_ _beautiful_ place . _really cold _this_ time of year_ though . 
+B|7| Human 2: [cold] [it's] [beautiful] [this time of year] _in_ maine [for] sure [! what] [are you] [thankful for] today ? 
+A|8| Human 1: _cool_ . which conference ? [i] saw [on] twitter _the_ _other_ day , _some_ _people_ saying they were denied visas [for] _some_ conference [in] canada . perhaps [it's] _the_ same one . [i] _really_ liked [this] place called _kingyo_ . _it_ has _good japanese food_ if [you're] into _that_ . 
+B|9| Human 2: [kingyo] ? [cool] , i'll [have] [to] check [it] [out] [! what] [are] [some] [other] [good japanese food] spots [you] recommend ? <| 
+A|10| Human 1: [i don't] recall . my _friend_ _was_ _hosting me_ _and_ did all _the_ leg _work_ . do _you know any_ _people_ _in the area_ ? 
+B|11| Human 2: [i don't] [have] [any] friends [in the area] , but [it] [was] [really] [nice] [of] [you] [and] your [friend] [to] [hosting me] ! [really cold this] 
+A|12| Human 1: [you] _attend these_ _often ?_ 
+B|13| Human 2: yeah , they're [really] [good] [for] [work] [and] networking . [you know any] [other] [people] [that] [attend these] conferences [often ?] <|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , what's up !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : everything is good . there's so much to be thankful for - especially coming out of thanksgiving holidays . how are you ?
+	Free: Pattern=good, Pattern=of, Pattern=out, Pattern=thankful for, Pattern=. how, Pattern=thanksgiving, Pattern=to, Pattern=are you, Pattern=is
+	Constrained: Pattern=you, Pattern=are, Pattern=for
+Turn ID=3| B | Human 2 : yes , you're right ! thanksgiving is a great time to reflect on what we are thankful for . how can i assistance today ?
+	Free: Pattern=time, Pattern=you're, Pattern=thankful for, Pattern=what, Pattern=a, Pattern=are, Pattern=. how, Pattern=thanksgiving, Pattern=on, Pattern=to, Pattern=is, Pattern=i
+	Constrained: Pattern=for
+Turn ID=4| A | Human 1 : do you have interesting plans ?
+	Free: Pattern=you, Pattern=plans, Pattern=have
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal plans or feelings , but i am here to help you in any way i
+	Free: Pattern=plans, Pattern=you, Pattern=any, Pattern=in, Pattern=i, Pattern=to, Pattern=i don't, Pattern=have
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : nice ! what for ? it's a really beautiful place . really cold this time of year though .
+	Free: Pattern=this time of year, Pattern=really cold this, Pattern=a, Pattern=really, Pattern=it's, Pattern=nice, Pattern=for, Pattern=! what, Pattern=beautiful
+	Constrained: Pattern=time, Pattern=of, Pattern=what, Pattern=cold, Pattern=really, Pattern=this
+Turn ID=7| B | Human 2 : cold it's beautiful this time of year in maine for sure ! what are you thankful for today ?
+	Free: Pattern=this time of year, Pattern=thankful for, Pattern=for, Pattern=cold, Pattern=in, Pattern=are you, Pattern=it's, Pattern=! what, Pattern=beautiful
+	Constrained: Pattern=time, Pattern=of, Pattern=you, Pattern=what, Pattern=for, Pattern=are, Pattern=this
+Turn ID=8| A | Human 1 : cool . which conference ? i saw on twitter the other day , some people saying they were denied visas for some conference in canada . perhaps it's the same one . i really liked this place called kingyo . it has good japanese food if you're into that .
+	Free: Pattern=you're, Pattern=kingyo, Pattern=people, Pattern=cool, Pattern=for, Pattern=it, Pattern=other, Pattern=some, Pattern=in, Pattern=i, Pattern=really, Pattern=this, Pattern=on, Pattern=the, Pattern=good japanese food, Pattern=that, Pattern=it's
+	Constrained: Pattern=good
+Turn ID=9| B | Human 2 : kingyo ? cool , i'll have to check it out ! what are some other good japanese food spots you recommend ? <|
+	Free: Pattern=have, Pattern=cool, Pattern=it, Pattern=are, Pattern=other, Pattern=some, Pattern=! what, Pattern=to, Pattern=good japanese food, Pattern=you, Pattern=kingyo, Pattern=out
+	Constrained: Pattern=good, Pattern=what
+Turn ID=10| A | Human 1 : i don't recall . my friend was hosting me and did all the leg work . do you know any people in the area ?
+	Free: Pattern=you know any, Pattern=and, Pattern=work, Pattern=in the area, Pattern=friend, Pattern=was, Pattern=people, Pattern=i don't, Pattern=hosting me, Pattern=the
+	Constrained: Pattern=you, Pattern=any, Pattern=in, Pattern=i, Pattern=the
+Turn ID=11| B | Human 2 : i don't have any friends in the area , but it was really nice of you and your friend to hosting me ! really cold this
+	Free: Pattern=of, Pattern=you, Pattern=really cold this, Pattern=really, Pattern=in the area, Pattern=hosting me, Pattern=friend, Pattern=to, Pattern=was, Pattern=i don't, Pattern=have, Pattern=nice, Pattern=any, Pattern=it, Pattern=and
+	Constrained: Pattern=cold, Pattern=in, Pattern=i, Pattern=really, Pattern=the, Pattern=this
+Turn ID=12| A | Human 1 : you attend these often ?
+	Free: Pattern=attend these, Pattern=often ?, Pattern=you
+	Constrained: 
+Turn ID=13| B | Human 2 : yeah , they're really good for work and networking . you know any other people that attend these conferences often ? <|im_end|
+	Free: Pattern=good, Pattern=often ?, Pattern=people, Pattern=and, Pattern=other, Pattern=work, Pattern=really, Pattern=attend these, Pattern=that, Pattern=for, Pattern=you know any
+	Constrained: Pattern=you, Pattern=any

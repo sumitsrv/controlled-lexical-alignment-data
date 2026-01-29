@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm doing great_ . what [are you] up _to_ ? 
+B|3| Human 2: [i'm doing great] , thank [you] _for_ asking ! [i'm] phi , an ai language model developed _by_ microsoft , here [to] assist [you] 
+A|4| Human 1: oh , _i'm enjoying_ _a_ sip _of_ coffee , _looking_ _over_ _the ocean_ . what _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm enjoying] [the ocean] [of] information _and_ [reading] [over] vast knowledge you've provided _, but_ _as_ an ai , _i_ don't _read_ 
+A|6| Human 1: _that seems_ _like_ _a_ good _book_ . _does_ it _have_ good _tips on_ _how to_ _sleep_ _better_ ? 
+B|7| Human 2: [i'm] phi , [the] ai . _i_ don't [have] [sleep] needs [like] [you] [does] . _but_ if [you] [are] [looking] _for_ [tips on] [better] 
+A|8| Human 1: [i] [read] lots [of] papers [, but] do poorly [on] books 😞 _a_ recent _book that_ [i] [like] _is_ _zero to one_ [by] _peter thiel_ 
+B|9| Human 2: [zero to one] [is] indeed [a] [great] [read] that's insightful _for_ [the] tech _and_ business world . [peter thiel] [does] explore [how to] innovate 
+A|10| Human 1: it's _about_ _startups_ , lots [of] _useful_ _principles_ [and] philosophies [for] _innovation_ , _like being_ [a] _contrarian_ 
+B|11| Human 2: [and] thiel's [principles] [have] inspired many innovation-driven [startups] . [one] [book [that] seems] [useful] [for] [you] [is] [about] [sleep] improvement strategies 
+A|12| Human 1: [i] _might_ in _the future_ . [the] philosophy in [the] [book] _also_ help [for] other things [as] well , e . g ., in _research_ , [you] _might also_ want [to] be _contrarian_ 
+B|13| Human 2: [i'm] phi [and] [the future] [research] [might also] require [innovation] [like being] [contrarian] [for] [better] results 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=hi, Pattern=how
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=i'm doing great, Pattern=are you, Pattern=to
+	Constrained: Pattern=are, Pattern=you, Pattern=great, Pattern=i'm
+Turn ID=3| B | Human 2 : i'm doing great , thank you for asking ! i'm phi , an ai language model developed by microsoft , here to assist you
+	Free: Pattern=you, Pattern=for, Pattern=i'm, Pattern=to, Pattern=by, Pattern=i'm doing great
+	Constrained: Pattern=great, Pattern=i'm
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=looking, Pattern=reading, Pattern=over, Pattern=are you, Pattern=the ocean, Pattern=i'm enjoying, Pattern=a, Pattern=book
+	Constrained: Pattern=are, Pattern=you, Pattern=i'm, Pattern=the
+Turn ID=5| B | Human 2 : i'm enjoying the ocean of information and reading over vast knowledge you've provided , but as an ai , i don't read
+	Free: Pattern=of, Pattern=, but, Pattern=as, Pattern=i'm enjoying, Pattern=and, Pattern=reading, Pattern=over, Pattern=i, Pattern=the ocean, Pattern=read
+	Constrained: Pattern=but, Pattern=i'm, Pattern=the
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=sleep, Pattern=have, Pattern=does, Pattern=how to, Pattern=like, Pattern=better, Pattern=tips on, Pattern=that seems, Pattern=a, Pattern=book
+	Constrained: Pattern=to, Pattern=on, Pattern=how
+Turn ID=7| B | Human 2 : i'm phi , the ai . i don't have sleep needs like you does . but if you are looking for tips on better
+	Free: Pattern=sleep, Pattern=you, Pattern=have, Pattern=are, Pattern=does, Pattern=i'm, Pattern=i, Pattern=like, Pattern=better, Pattern=the, Pattern=tips on, Pattern=but, Pattern=for, Pattern=looking
+	Constrained: Pattern=on
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=of, Pattern=, but, Pattern=a, Pattern=book that, Pattern=like, Pattern=on, Pattern=zero to one, Pattern=peter thiel, Pattern=is, Pattern=i, Pattern=read, Pattern=by
+	Constrained: Pattern=but, Pattern=book, Pattern=to, Pattern=one
+Turn ID=9| B | Human 2 : zero to one is indeed a great read that's insightful for the tech and business world . peter thiel does explore how to innovate
+	Free: Pattern=great, Pattern=a, Pattern=for, Pattern=and, Pattern=does, Pattern=how to, Pattern=is, Pattern=the, Pattern=read, Pattern=zero to one, Pattern=peter thiel
+	Constrained: Pattern=to, Pattern=how, Pattern=one
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=of, Pattern=principles, Pattern=innovation, Pattern=a, Pattern=for, Pattern=and, Pattern=about, Pattern=startups, Pattern=like being, Pattern=contrarian, Pattern=useful
+	Constrained: Pattern=like
+Turn ID=11| B | Human 2 : and thiel's principles have inspired many innovation-driven startups . one book that seems useful for you is about sleep improvement strategies
+	Free: Pattern=sleep, Pattern=have, Pattern=for, Pattern=and, Pattern=about, Pattern=startups, Pattern=is, Pattern=that seems, Pattern=useful, Pattern=you, Pattern=principles, Pattern=one, Pattern=book that
+	Constrained: Pattern=book
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=you, Pattern=as, Pattern=research, Pattern=book, Pattern=for, Pattern=i, Pattern=the, Pattern=might, Pattern=might also, Pattern=also, Pattern=contrarian, Pattern=the future, Pattern=to
+	Constrained: Pattern=might, Pattern=the, Pattern=also
+Turn ID=13| B | Human 2 : i'm phi and the future research might also require innovation like being contrarian for better results
+	Free: Pattern=research, Pattern=innovation, Pattern=for, Pattern=and, Pattern=i'm, Pattern=like being, Pattern=contrarian, Pattern=better, Pattern=the future, Pattern=might also
+	Constrained: Pattern=the, Pattern=also, Pattern=like, Pattern=might
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

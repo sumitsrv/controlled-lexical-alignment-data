@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: how's your day going ? 
+A|2| Human 1: pretty busy , lots of work _to finish_ _up_ . _you ?_ 
+B|3| Human 2: yeah _, i_ know _the_ feeling . 😅 how about [you ?] _any fun plans for the_ weekend ? <|im_end| 
+A|4| Human 1: a couple projects _that_ [i] am _trying to finish_ _up_ _before_ _thanksgiving_ 🙂 do [you] _have_ [any fun plans _for the] break ?_ 
+B|5| Human 2: oh that's _cool_ 😊 _i have_ [plans for] [thanksgiving] dinner with _my_ family . it's always [fun] [to] catch [up] 
+A|6| Human 1: _haha_ xd so what do _you like_ [to] do _for fun_ ? 
+B|7| Human 2: [haha] 🤖 [you like] [that] ? [thanksgiving] [fun plans] [have] [you] [any] [for the break ?] [haha] [trying to finish] [before] thanks 
+A|8| Human 1: [cool] ! _i've started_ [to] _run_ a bit as _well_ _not long_ distances _though_ , _just_ a couple _miles_ 
+B|9| Human 2: [haha] [cool] 😂 [well] [i've started] playing some guitar [for fun] . [trying to] learn [that] song [you like] the<|im 
+A|10| Human 1: [haha] 
+B|11| Human 2: [haha] 🎸 what's [that] [like] ? [i] used [to] play [the] guitar [before] but [just] [for fun] [not] [well] [though] [haha] and 
+A|12| Human 1: [i] [like] [to] do _long_ distances . [i have] _run_ a _few_ marathons . 
+B|13| Human 2: [haha] 🥱 [well] [i've started] [like] [you] know [for fun] [just] [few] [miles] [though] [not long] distances<|im_end| 
+A|14| Human 1: no . [not] _this_ _year_ . _this_ is [my] half-marathon _year_ . instead of _running_ marathons [, i] _run_ _one_ half-marathon _every month_ . 
+B|15| Human 2: 😅 [have] [fun] run-g [this] half marathon [every month] [haha] [cool] [i've started] [like] [few] [miles] [running] too [not long] 
+A|16| Human 1: two days ago . it _was_ a _tough_ _one_ . 
+B|17| Human 2: ‍ [this] [one] [was] [tough] [for] me because [i have] [not] [run] [that] [long] since [the] marathon last [year] , and [my] training [this] [month] [was] also 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : how's your day going ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty busy , lots of work to finish up . you ?
+	Free: Pattern=you ?, Pattern=to finish, Pattern=up
+	Constrained: Pattern=you, Pattern=to
+Turn ID=3| B | Human 2 : yeah , i know the feeling . 😅 how about you ? any fun plans for the weekend ? <|im_end|
+	Free: Pattern=any fun plans for the, Pattern=you ?, Pattern=, i, Pattern=the
+	Constrained: Pattern=fun, Pattern=you, Pattern=fun plans, Pattern=i, Pattern=the, Pattern=plans for, Pattern=for, Pattern=any
+Turn ID=4| A | Human 1 : a couple projects that i am trying to finish up before thanksgiving 🙂 do you have any fun plans for the break ?
+	Free: Pattern=for the break ?, Pattern=you, Pattern=have, Pattern=thanksgiving, Pattern=i, Pattern=trying to finish, Pattern=before, Pattern=up, Pattern=that, Pattern=any fun plans for the
+	Constrained: Pattern=fun, Pattern=fun plans, Pattern=trying to, Pattern=the, Pattern=to, Pattern=for, Pattern=any, Pattern=plans for, Pattern=to finish
+Turn ID=5| B | Human 2 : oh that's cool 😊 i have plans for thanksgiving dinner with my family . it's always fun to catch up
+	Free: Pattern=fun, Pattern=cool, Pattern=thanksgiving, Pattern=i have, Pattern=up, Pattern=to, Pattern=plans for, Pattern=my
+	Constrained: Pattern=have, Pattern=for, Pattern=i
+Turn ID=6| A | Human 1 : haha xd so what do you like to do for fun ?
+	Free: Pattern=you like, Pattern=for fun, Pattern=haha, Pattern=to
+	Constrained: Pattern=fun, Pattern=for, Pattern=you, Pattern=like
+Turn ID=7| B | Human 2 : haha 🤖 you like that ? thanksgiving fun plans have you any for the break ? haha trying to finish before thanks
+	Free: Pattern=for the break ?, Pattern=you, Pattern=have, Pattern=fun plans, Pattern=any, Pattern=thanksgiving, Pattern=haha, Pattern=you like, Pattern=before, Pattern=trying to finish, Pattern=that
+	Constrained: Pattern=fun, Pattern=you, Pattern=for, Pattern=like, Pattern=trying to, Pattern=the, Pattern=to, Pattern=to finish
+Turn ID=8| A | Human 1 : cool ! i've started to run a bit as well not long distances though , just a couple miles
+	Free: Pattern=miles, Pattern=well, Pattern=just, Pattern=though, Pattern=cool, Pattern=run, Pattern=not long, Pattern=to, Pattern=i've started
+	Constrained: Pattern=long, Pattern=not
+Turn ID=9| B | Human 2 : haha cool 😂 well i've started playing some guitar for fun . trying to learn that song you like the<|im
+	Free: Pattern=well, Pattern=for fun, Pattern=cool, Pattern=haha, Pattern=trying to, Pattern=you like, Pattern=that, Pattern=i've started
+	Constrained: Pattern=fun, Pattern=you, Pattern=for, Pattern=like, Pattern=to
+Turn ID=10| A | Human 1 : haha
+	Free: Pattern=haha
+	Constrained: 
+Turn ID=11| B | Human 2 : haha 🎸 what's that like ? i used to play the guitar before but just for fun not well though haha and
+	Free: Pattern=well, Pattern=just, Pattern=for fun, Pattern=though, Pattern=i, Pattern=the, Pattern=that, Pattern=not, Pattern=haha, Pattern=like, Pattern=before, Pattern=to
+	Constrained: Pattern=fun, Pattern=for
+Turn ID=12| A | Human 1 : i like to do long distances . i have run a few marathons .
+	Free: Pattern=long, Pattern=few, Pattern=run, Pattern=i, Pattern=like, Pattern=to, Pattern=i have
+	Constrained: Pattern=have, Pattern=i
+Turn ID=13| B | Human 2 : haha 🥱 well i've started like you know for fun just few miles though not long distances<|im_end|
+	Free: Pattern=miles, Pattern=well, Pattern=you, Pattern=just, Pattern=for fun, Pattern=though, Pattern=few, Pattern=i've started, Pattern=like, Pattern=not long, Pattern=haha
+	Constrained: Pattern=for, Pattern=long, Pattern=not, Pattern=fun
+Turn ID=14| A | Human 1 : no . not this year . this is my half-marathon year . instead of running marathons , i run one half-marathon every month .
+	Free: Pattern=run, Pattern=running, Pattern=year, Pattern=, i, Pattern=not, Pattern=one, Pattern=every month, Pattern=my, Pattern=this
+	Constrained: Pattern=i, Pattern=month
+Turn ID=15| B | Human 2 : 😅 have fun run-g this half marathon every month haha cool i've started like few miles running too not long
+	Free: Pattern=miles, Pattern=fun, Pattern=have, Pattern=every month, Pattern=running, Pattern=this, Pattern=i've started, Pattern=cool, Pattern=few, Pattern=like, Pattern=not long, Pattern=haha
+	Constrained: Pattern=long, Pattern=month, Pattern=not
+Turn ID=16| A | Human 1 : two days ago . it was a tough one .
+	Free: Pattern=tough, Pattern=one, Pattern=was
+	Constrained: 
+Turn ID=17| B | Human 2 : ‍ this one was tough for me because i have not run that long since the marathon last year , and my training this month was also
+	Free: Pattern=long, Pattern=for, Pattern=one, Pattern=run, Pattern=tough, Pattern=the, Pattern=was, Pattern=that, Pattern=year, Pattern=month, Pattern=my, Pattern=this, Pattern=not, Pattern=i have
+	Constrained: Pattern=have, Pattern=i

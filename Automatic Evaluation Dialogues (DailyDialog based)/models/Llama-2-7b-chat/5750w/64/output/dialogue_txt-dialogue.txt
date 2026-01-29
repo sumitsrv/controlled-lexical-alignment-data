@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm_ _doing_ _well_ . having many _meetings_ _today_ 🙂 
+B|3| Human 2: oh , [well] , [i'm] glad _to_ hear 🙂 [meetings] can _be_ tiring , but they're also an important part 
+A|4| Human 1: _what_ _are_ _you_ up [to] ? 
+B|5| Human 2: [i'm] just _a_ simple ai 🙂 [you] know [what] _i_ [are] [doing] [today] ? 
+A|6| Human 1: we're _gonna play_ board _games_ _and will be eating _lots_ of_ _food_ ! _what about you ?_ 
+B|7| Human 2: [i'm] just [and will be eating lots] [food] [what about you ?] 
+A|8| Human 1: we've _been doing games_ _of_ thrones lately . _the_ _game_ _takes_ [a] _very long time_ [to] finish _though_ ! 
+B|9| Human 2: you've [been doing games] [what] [takes] [very long time] [though] [game] finishes [the] [and] [are] we [gonna play] [lots of] [games] [today] ? <| 
+A|10| Human 1: [i] do . [i'm] [a] _super fan_ [of] it (not _the last season though_ haha) . _did you watch_ ? 
+B|11| Human 2: [i] [watch] [did] not [last season though] haha [super fan] [you] [are] [the] [and] [lots] [games] [today] [play] [will] we [doing] ? 
+A|12| Human 1: [i] _love survivor 🙂_ 
+B|13| Human 2: [did you watch] [the last season though] haha [super fan] [i'm] not 😂 [survivor] [love] [doing] [lots] [games] [today] [play] [will] 
+A|14| Human 1: _nice_ ! _i mostly_ _like_ _comedy shows like_ _the good place_ [and] _modern family_ 
+B|15| Human 2: [nice] [the good place] [modern family] [comedy shows like] [i mostly] [love survivor 🙂] [and] [lots] [games] [today] [play] [will] we [doing] ? < 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=well, Pattern=today, Pattern=doing, Pattern=i'm, Pattern=meetings
+	Constrained: 
+Turn ID=3| B | Human 2 : oh , well , i'm glad to hear 🙂 meetings can be tiring , but they're also an important part
+	Free: Pattern=well, Pattern=i'm, Pattern=meetings, Pattern=be, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=are, Pattern=you, Pattern=what, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just a simple ai 🙂 you know what i are doing today ?
+	Free: Pattern=you, Pattern=what, Pattern=doing, Pattern=are, Pattern=i'm, Pattern=i, Pattern=today, Pattern=a
+	Constrained: 
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=games, Pattern=gonna play, Pattern=lots of, Pattern=what about you ?, Pattern=and will be eating lots, Pattern=food
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=lots, Pattern=and, Pattern=will, Pattern=be, Pattern=play
+Turn ID=7| B | Human 2 : i'm just and will be eating lots food what about you ?
+	Free: Pattern=and will be eating lots, Pattern=what about you ?, Pattern=food, Pattern=i'm
+	Constrained: Pattern=you, Pattern=what, Pattern=lots, Pattern=and, Pattern=will, Pattern=be
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=though, Pattern=a, Pattern=game, Pattern=takes, Pattern=the, Pattern=to, Pattern=very long time, Pattern=of, Pattern=been doing games
+	Constrained: Pattern=doing, Pattern=games
+Turn ID=9| B | Human 2 : you've been doing games what takes very long time though game finishes the and are we gonna play lots of games today ? <|
+	Free: Pattern=been doing games, Pattern=games, Pattern=gonna play, Pattern=today, Pattern=game, Pattern=and, Pattern=are, Pattern=takes, Pattern=lots of, Pattern=the, Pattern=very long time, Pattern=though, Pattern=what
+	Constrained: Pattern=of, Pattern=games, Pattern=lots, Pattern=doing, Pattern=play
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=of, Pattern=a, Pattern=i'm, Pattern=i, Pattern=the last season though, Pattern=did you watch, Pattern=super fan
+	Constrained: Pattern=you, Pattern=though, Pattern=did, Pattern=the, Pattern=last season though, Pattern=watch
+Turn ID=11| B | Human 2 : i watch did not last season though haha super fan you are the and lots games today play will we doing ?
+	Free: Pattern=doing, Pattern=and, Pattern=are, Pattern=will, Pattern=i, Pattern=the, Pattern=last season though, Pattern=play, Pattern=you, Pattern=games, Pattern=did, Pattern=lots, Pattern=today, Pattern=watch, Pattern=super fan
+	Constrained: Pattern=though
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=love survivor 🙂, Pattern=i
+	Constrained: Pattern=survivor, Pattern=love
+Turn ID=13| B | Human 2 : did you watch the last season though haha super fan i'm not 😂 survivor love doing lots games today play will
+	Free: Pattern=games, Pattern=doing, Pattern=will, Pattern=love, Pattern=i'm, Pattern=the last season though, Pattern=did you watch, Pattern=super fan, Pattern=lots, Pattern=today, Pattern=play, Pattern=survivor
+	Constrained: Pattern=you, Pattern=though, Pattern=did, Pattern=the, Pattern=last season though, Pattern=watch
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=modern family, Pattern=and, Pattern=i mostly, Pattern=the good place, Pattern=nice, Pattern=like, Pattern=comedy shows like
+	Constrained: Pattern=i, Pattern=the, Pattern=like
+Turn ID=15| B | Human 2 : nice the good place modern family comedy shows like i mostly love survivor 🙂 and lots games today play will we doing ? <
+	Free: Pattern=doing, Pattern=and, Pattern=comedy shows like, Pattern=play, Pattern=i mostly, Pattern=games, Pattern=modern family, Pattern=lots, Pattern=today, Pattern=the good place, Pattern=nice, Pattern=will, Pattern=love survivor 🙂
+	Constrained: Pattern=love, Pattern=i, Pattern=like, Pattern=the, Pattern=survivor

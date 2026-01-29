@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted to know if _you and the_ _kids_ would want to join us _for disneyland trip around christmas_ ? 
+B|3| Human 2: i'm phi , _an_ ai [and] _do_ _not_ _have_ [the] physical form required [for disneyland] visits , nor _do_ _i_ _have_ [kids] . 
+A|4| Human 1: tentative _plan_ is to drive to la _on_ _23rd_ [and] then stay at [the] _disney_ resort [for] 2 nights . [i] heard _christmas eve_ they [have] loads _of_ fun _events_ . 
+B|5| Human 2: while [i] don't [have] [the] capability [for] [events] [and] travels _, i can_ help [plan] _your_ [disneyland trip] ! [23rd] [christmas] e 
+A|6| Human 1: _great idea_ ! [i] will probably [do] [the] same . surprise surprise .... _traffic_ _might_ be _a_ _little_ harsh . 
+B|7| Human 2: no worries _, i can_ [plan] [for] [the] [trip] [and] account [for] [the] potential [traffic] . here's _an_ outline [for disneyland trip around [christmas] eve] 
+A|8| Human 1: _good point_ . [i] am [not] sure _about_ _that_ . let me inquire _about_ _that_ . if [not] , then we [can] look [for] [an] airbnb closeby . does _that_ _work_ ? 
+B|9| Human 2: absolutely , [that] works [for] [the] [plan] . let's [work] [on] [the] details then: 
+A|10| Human 1: _but_ [i] would _think_ everything is closed [on] [christmas eve] 
+B|11| Human 2: [good point] ! let's [work] [that] [around] in [the] [plan] then: 
+A|12| Human 1: sure [, i can] take _a_ lead [on] [that] . what are [you] getting _for your_ <redacted_term> year old _this_ time ? 
+B|13| Human 2: [i] apologize [for] [the] confusion [but] it seems [that] [your] query [might] [have] been cut off . let's [think] [about] [this] in terms [of] planning [for] [disney] 
+A|14| Human 1: likewise . my son is crazy [about] _legos_ . 
+B|15| Human 2: [great idea] [for your] son's [christmas eve] [disney] [trip] ! here’s [a] [plan] [that] [can] [work] [for] [you and the] [little] [legos] enthusiast 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=for disneyland trip around christmas, Pattern=you and the, Pattern=kids
+	Constrained: Pattern=for disneyland, Pattern=you, Pattern=disneyland trip, Pattern=and, Pattern=trip, Pattern=around, Pattern=for, Pattern=christmas, Pattern=the
+Turn ID=3| B | Human 2 : i'm phi , an ai and do not have the physical form required for disneyland visits , nor do i have kids .
+	Free: Pattern=for disneyland, Pattern=have, Pattern=do, Pattern=an, Pattern=and, Pattern=kids, Pattern=i, Pattern=the, Pattern=not
+	Constrained: Pattern=for
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=of, Pattern=have, Pattern=23rd, Pattern=and, Pattern=i, Pattern=disney, Pattern=plan, Pattern=christmas eve, Pattern=for, Pattern=events, Pattern=on, Pattern=the
+	Constrained: Pattern=christmas
+Turn ID=5| B | Human 2 : while i don't have the capability for events and travels , i can help plan your disneyland trip ! 23rd christmas e
+	Free: Pattern=plan, Pattern=have, Pattern=23rd, Pattern=disneyland trip, Pattern=and, Pattern=, i can, Pattern=for, Pattern=events, Pattern=your, Pattern=i, Pattern=christmas, Pattern=the
+	Constrained: Pattern=trip, Pattern=i, Pattern=can
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=little, Pattern=i, Pattern=great idea, Pattern=the, Pattern=might, Pattern=traffic, Pattern=do, Pattern=a
+	Constrained: 
+Turn ID=7| B | Human 2 : no worries , i can plan for the trip and account for the potential traffic . here's an outline for disneyland trip around christmas eve
+	Free: Pattern=an, Pattern=for, Pattern=and, Pattern=, i can, Pattern=for disneyland trip around christmas, Pattern=trip, Pattern=the, Pattern=traffic, Pattern=plan, Pattern=christmas eve
+	Constrained: Pattern=for disneyland, Pattern=disneyland trip, Pattern=can, Pattern=i, Pattern=trip, Pattern=christmas, Pattern=around, Pattern=for
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=an, Pattern=for, Pattern=can, Pattern=about, Pattern=work, Pattern=that, Pattern=not, Pattern=good point, Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : absolutely , that works for the plan . let's work on the details then:
+	Free: Pattern=plan, Pattern=for, Pattern=work, Pattern=that, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=christmas eve, Pattern=think, Pattern=i, Pattern=on, Pattern=but
+	Constrained: Pattern=christmas
+Turn ID=11| B | Human 2 : good point ! let's work that around in the plan then:
+	Free: Pattern=plan, Pattern=around, Pattern=work, Pattern=good point, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=you, Pattern=a, Pattern=, i can, Pattern=for your, Pattern=on, Pattern=this, Pattern=that
+	Constrained: Pattern=for, Pattern=your, Pattern=i, Pattern=can
+Turn ID=13| B | Human 2 : i apologize for the confusion but it seems that your query might have been cut off . let's think about this in terms of planning for disney
+	Free: Pattern=of, Pattern=have, Pattern=for, Pattern=about, Pattern=think, Pattern=disney, Pattern=the, Pattern=might, Pattern=this, Pattern=your, Pattern=i, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: Pattern=legos, Pattern=about
+	Constrained: 
+Turn ID=15| B | Human 2 : great idea for your son's christmas eve disney trip ! here’s a plan that can work for you and the little legos enthusiast
+	Free: Pattern=legos, Pattern=little, Pattern=a, Pattern=for, Pattern=can, Pattern=work, Pattern=trip, Pattern=that, Pattern=you and the, Pattern=plan, Pattern=christmas eve, Pattern=great idea, Pattern=for your, Pattern=disney
+	Constrained: Pattern=you, Pattern=for, Pattern=and, Pattern=your, Pattern=christmas, Pattern=the

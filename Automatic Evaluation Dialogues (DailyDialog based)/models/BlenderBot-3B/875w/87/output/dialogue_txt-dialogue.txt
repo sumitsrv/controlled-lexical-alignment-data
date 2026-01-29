@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm doing great_ . _what_ [are you] up _to_ ? 
+B|3| Human 2: [i'm doing great] , just watching _a_ movie [you] know [what] its _like_ _to be_ single 
+A|4| Human 1: oh , [i'm] enjoying [a] sip _of_ coffee , looking over _the_ ocean . [what] _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm] [reading] _the book_ , [the] count [of] monte cristo _and_ [you] [are] [what] [doing] ? 
+A|6| Human 1: _that_ seems [like] [a] _good_ [book] . does _it_ _have_ _good_ tips on [how] [to] sleep _better_ ? 
+B|7| Human 2: [i'm doing] [good] , [how] [are you] [doing] ? ohh [that] [book] _is_ [the] best classic novel [like] [that] [have] [you] _read_ [it] before ? 
+A|8| Human 1: _i_ [read] _lots of_ _papers_ _, but_ do poorly on _books_ 😞 [a] _recent_ [book] [that] _i like_ [is] zero [to] one by _peter_ thiel 
+B|9| Human 2: [i like] [reading] [books] [that] [have] [lots of] characters [but] [are] very [good] too [you] [read] them often . 
+A|10| Human 1: it's _about_ startups , [lots of] useful principles [and] philosophies _for innovation_ , [like] being [a] _contrarian_ 
+B|11| Human 2: [i like] [that] [book] [and] [have] [read] [it] many times [but] _in_ [recent] years [the] movie [about] [peter] thiel's [papers] [are] [better] than [reading] _the book_ 
+A|12| Human 1: [i] might [in] [the] future . [the] _philosophy_ [in] [the book] _also_ help _for_ other things as well , e . g ., [in] research , [you] might _also_ want [to be] _contrarian_ 
+B|13| Human 2: [i] [have] [read] [it] [, but] [like] [you] [the book] [about] [contrarian] [philosophy] [and] [for innovation] [also] 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=how, Pattern=hi
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=i'm doing great, Pattern=are you, Pattern=to, Pattern=what
+	Constrained: Pattern=you, Pattern=doing, Pattern=are, Pattern=i'm, Pattern=i'm doing
+Turn ID=3| B | Human 2 : i'm doing great , just watching a movie you know what its like to be single
+	Free: Pattern=you, Pattern=what, Pattern=a, Pattern=like, Pattern=to be, Pattern=i'm doing great
+	Constrained: Pattern=to, Pattern=i'm, Pattern=doing, Pattern=i'm doing
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=what, Pattern=reading, Pattern=i'm, Pattern=are you, Pattern=the, Pattern=a, Pattern=book
+	Constrained: Pattern=you, Pattern=are
+Turn ID=5| B | Human 2 : i'm reading the book , the count of monte cristo and you are what doing ?
+	Free: Pattern=of, Pattern=the book, Pattern=you, Pattern=what, Pattern=doing, Pattern=and, Pattern=are, Pattern=reading, Pattern=i'm, Pattern=the
+	Constrained: Pattern=book, Pattern=the
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=good, Pattern=have, Pattern=how, Pattern=it, Pattern=like, Pattern=better, Pattern=to, Pattern=that, Pattern=a, Pattern=book
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm doing good , how are you doing ? ohh that book is the best classic novel like that have you read it before ?
+	Free: Pattern=good, Pattern=you, Pattern=have, Pattern=book, Pattern=it, Pattern=like, Pattern=the, Pattern=i'm doing, Pattern=read, Pattern=that, Pattern=how, Pattern=doing, Pattern=are you, Pattern=is
+	Constrained: Pattern=you, Pattern=doing, Pattern=i'm, Pattern=are
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=, but, Pattern=peter, Pattern=books, Pattern=read, Pattern=that, Pattern=i like, Pattern=a, Pattern=book, Pattern=recent, Pattern=is, Pattern=lots of, Pattern=i, Pattern=papers, Pattern=to
+	Constrained: Pattern=like, Pattern=but, Pattern=i, Pattern=of
+Turn ID=9| B | Human 2 : i like reading books that have lots of characters but are very good too you read them often .
+	Free: Pattern=good, Pattern=you, Pattern=have, Pattern=are, Pattern=reading, Pattern=lots of, Pattern=books, Pattern=read, Pattern=i like, Pattern=that, Pattern=but
+	Constrained: Pattern=like, Pattern=i, Pattern=of
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=for innovation, Pattern=a, Pattern=and, Pattern=about, Pattern=lots of, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=of, Pattern=for
+Turn ID=11| B | Human 2 : i like that book and have read it many times but in recent years the movie about peter thiel's papers are better than reading the book
+	Free: Pattern=the book, Pattern=have, Pattern=peter, Pattern=book, Pattern=are, Pattern=about, Pattern=reading, Pattern=in, Pattern=recent, Pattern=better, Pattern=the, Pattern=papers, Pattern=read, Pattern=i like, Pattern=it, Pattern=and, Pattern=that, Pattern=but
+	Constrained: Pattern=book, Pattern=like, Pattern=the, Pattern=i
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=the book, Pattern=you, Pattern=philosophy, Pattern=for, Pattern=in, Pattern=i, Pattern=the, Pattern=to be, Pattern=also, Pattern=contrarian
+	Constrained: Pattern=book, Pattern=to, Pattern=the
+Turn ID=13| B | Human 2 : i have read it , but like you the book about contrarian philosophy and for innovation also
+	Free: Pattern=the book, Pattern=have, Pattern=about, Pattern=i, Pattern=read, Pattern=you, Pattern=, but, Pattern=for innovation, Pattern=philosophy, Pattern=it, Pattern=and, Pattern=also, Pattern=contrarian, Pattern=like
+	Constrained: Pattern=for, Pattern=but, Pattern=book, Pattern=the
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

@@ -1,0 +1,59 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , what's up ! 
+A|2| Human 1: everything is _good_ . there's so _much_ _to_ be thankful _for_ - especially _coming out_ _of_ _thanksgiving holidays_ _. how_ _are you_ ? 
+B|3| Human 2: i'm [good] ! thanks [for] asking ! _it_ _was_ _a_ much-needed holiday [. how] can _i_ help [you] today ? <|im_ 
+A|4| Human 1: do _you have interesting plans_ ? 
+B|5| Human 2: as an ai , i'm always here [to] help [you] [out] ! [how] [much] [are] 3 [interesting plans] [for] [thanksgiving holidays] [coming] 
+A|6| Human 1: nice ! what [for] ? _it's_ [a] _really_ beautiful _place_ . _really cold this time of year though_ . 
+B|7| Human 2: [it's] [really cold this time of year though] [for] [thanksgiving holidays] [coming out] [good] [plans] [are [you] have interesting plans] [to] enjoy your 
+A|8| Human 1: cool . which _conference_ ? [i] saw on twitter _the_ _other_ day , _some_ _people_ saying _they_ were denied visas [for] _some_ _conference_ in canada . perhaps [it's] _the same_ _one_ . [i] [really] liked [this] _place_ called kingyo . _it has_ _good japanese food_ if you're into _that_ . 
+B|9| Human 2: kingyo's [good japanese food] [it has] [really] [interesting plans] [for] [the] [thanksgiving holidays] [coming out] [are [you] have] [some] [other] [place] [that] [they] 
+A|10| Human 1: [i] don't recall . my friend [was] _hosting_ me _and_ did all [the] leg work . do [you] know any _people_ in [the] area ? 
+B|11| Human 2: [people] [have] [the same] [conference] [and] [some] [other] [place] [that] they're [hosting] [this] [year] [it] [was] [really] [good] [food] [and] [interesting plans] [for] [thanksgiving] holid 
+A|12| Human 1: [you] _attend_ these _often_ ? 
+B|13| Human 2: [it's] [one] [conference] [i] [have] [attend] [often] [and] [it] [was] [really] [good] [plans] [for] [the] [thanksgiving holidays] [coming out] [are [you] have] [some] [other] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , what's up !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=2| A | Human 1 : everything is good . there's so much to be thankful for - especially coming out of thanksgiving holidays . how are you ?
+	Free: Pattern=good, Pattern=of, Pattern=thanksgiving holidays, Pattern=for, Pattern=. how, Pattern=coming out, Pattern=are you, Pattern=much, Pattern=to
+	Constrained: Pattern=coming, Pattern=how, Pattern=are, Pattern=thanksgiving, Pattern=you, Pattern=out
+Turn ID=3| B | Human 2 : i'm good ! thanks for asking ! it was a much-needed holiday . how can i help you today ? <|im_
+	Free: Pattern=good, Pattern=you, Pattern=a, Pattern=for, Pattern=it, Pattern=. how, Pattern=i, Pattern=was
+	Constrained: Pattern=how
+Turn ID=4| A | Human 1 : do you have interesting plans ?
+	Free: Pattern=you have interesting plans
+	Constrained: Pattern=plans, Pattern=you, Pattern=have, Pattern=you have, Pattern=interesting plans
+Turn ID=5| B | Human 2 : as an ai , i'm always here to help you out ! how much are 3 interesting plans for thanksgiving holidays coming
+	Free: Pattern=thanksgiving holidays, Pattern=coming, Pattern=how, Pattern=for, Pattern=are, Pattern=interesting plans, Pattern=much, Pattern=to, Pattern=you, Pattern=out
+	Constrained: Pattern=thanksgiving, Pattern=plans
+Turn ID=6| A | Human 1 : nice ! what for ? it's a really beautiful place . really cold this time of year though .
+	Free: Pattern=a, Pattern=for, Pattern=really, Pattern=really cold this time of year though, Pattern=place, Pattern=it's
+	Constrained: Pattern=this, Pattern=really, Pattern=of, Pattern=year
+Turn ID=7| B | Human 2 : it's really cold this time of year though for thanksgiving holidays coming out good plans are you have interesting plans to enjoy your
+	Free: Pattern=good, Pattern=for, Pattern=coming out, Pattern=are you, Pattern=really cold this time of year though, Pattern=to, Pattern=it's, Pattern=you have interesting plans, Pattern=plans, Pattern=thanksgiving holidays
+	Constrained: Pattern=of, Pattern=plans, Pattern=have, Pattern=coming, Pattern=are, Pattern=thanksgiving, Pattern=you have, Pattern=year, Pattern=this, Pattern=you, Pattern=out, Pattern=interesting plans, Pattern=really
+Turn ID=8| A | Human 1 : cool . which conference ? i saw on twitter the other day , some people saying they were denied visas for some conference in canada . perhaps it's the same one . i really liked this place called kingyo . it has good japanese food if you're into that .
+	Free: Pattern=people, Pattern=they, Pattern=one, Pattern=other, Pattern=some, Pattern=really, Pattern=the, Pattern=this, Pattern=for, Pattern=conference, Pattern=it has, Pattern=i, Pattern=the same, Pattern=place, Pattern=good japanese food, Pattern=that, Pattern=it's
+	Constrained: Pattern=good, Pattern=it, Pattern=food, Pattern=the
+Turn ID=9| B | Human 2 : kingyo's good japanese food it has really interesting plans for the thanksgiving holidays coming out are you have some other place that they
+	Free: Pattern=thanksgiving holidays, Pattern=they, Pattern=for, Pattern=other, Pattern=coming out, Pattern=the, Pattern=place, Pattern=some, Pattern=you have, Pattern=are you, Pattern=it has, Pattern=interesting plans, Pattern=really, Pattern=good japanese food, Pattern=that
+	Constrained: Pattern=good, Pattern=plans, Pattern=have, Pattern=coming, Pattern=it, Pattern=are, Pattern=thanksgiving, Pattern=food, Pattern=you, Pattern=out
+Turn ID=10| A | Human 1 : i don't recall . my friend was hosting me and did all the leg work . do you know any people in the area ?
+	Free: Pattern=you, Pattern=people, Pattern=and, Pattern=i, Pattern=hosting, Pattern=the, Pattern=was
+	Constrained: 
+Turn ID=11| B | Human 2 : people have the same conference and some other place that they're hosting this year it was really good food and interesting plans for thanksgiving holid
+	Free: Pattern=good, Pattern=other, Pattern=thanksgiving, Pattern=some, Pattern=hosting, Pattern=year, Pattern=this, Pattern=that, Pattern=people, Pattern=have, Pattern=for, Pattern=conference, Pattern=it, Pattern=and, Pattern=interesting plans, Pattern=food, Pattern=really, Pattern=the same, Pattern=was, Pattern=place
+	Constrained: Pattern=the, Pattern=plans
+Turn ID=12| A | Human 1 : you attend these often ?
+	Free: Pattern=attend, Pattern=you, Pattern=often
+	Constrained: 
+Turn ID=13| B | Human 2 : it's one conference i have attend often and it was really good plans for the thanksgiving holidays coming out are you have some other
+	Free: Pattern=good, Pattern=attend, Pattern=have, Pattern=one, Pattern=other, Pattern=coming out, Pattern=really, Pattern=often, Pattern=the, Pattern=was, Pattern=it's, Pattern=plans, Pattern=thanksgiving holidays, Pattern=for, Pattern=conference, Pattern=it, Pattern=and, Pattern=some, Pattern=you have, Pattern=are you, Pattern=i
+	Constrained: Pattern=have, Pattern=coming, Pattern=are, Pattern=thanksgiving, Pattern=you, Pattern=out

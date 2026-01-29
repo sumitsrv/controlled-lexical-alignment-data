@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: _it's_ _on_ _the_ screen ! _i don't recall_ _meeting_ [you] . _do _you have_ a_ sense _of_ _where_ we [met] ? 
+B|3| Human 2: [i don't recall] [you] [meeting] [the] other people's names , [do you have] any ideas [where] [you] [met] this other people ? 
+A|4| Human 1: did we _dance_ together perchance ? 
+B|5| Human 2: hey you're [the] one _i have_ my hands [on] , [do you] [recall] [the] name [of] this [dance] club ? [it's] _not_ really _that_ big [of] [a] deal 
+A|6| Human 1: _lol ._ were [you] _schwasty_ ? 
+B|7| Human 2: oh [you have a] party ? [lol] 
+A|8| Human 1: _i'm_ [a] cardiologist in _palo alto_ . [i [have] a] private _practice_ . [you] ? 
+B|9| Human 2: are [you] [the] same [schwasty] [i have] [practice] at [palo alto] ? [lol .] you're _not_ _that_ guy 
+A|10| Human 1: _i'm not sure_ [i] know _what_ [that] is . 
+B|11| Human 2: haha [i'm not sure] _that's_ [the] first time you've seen [that] 
+A|12| Human 1: _lol . not_ to be elitist _but_ ... [that's] [a] _real_ job ? 
+B|13| Human 2: oh [i'm not sure] [that's] [what] [i'm] doing [but] [lol .] [lol . not] [real] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=i, Pattern=met, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=of, Pattern=you, Pattern=meeting, Pattern=you have a, Pattern=where, Pattern=met, Pattern=do you have, Pattern=i don't recall, Pattern=it's, Pattern=on, Pattern=the
+	Constrained: Pattern=you, Pattern=have a, Pattern=a, Pattern=do you, Pattern=recall, Pattern=i
+Turn ID=3| B | Human 2 : i don't recall you meeting the other people's names , do you have any ideas where you met this other people ?
+	Free: Pattern=you, Pattern=meeting, Pattern=where, Pattern=met, Pattern=the, Pattern=do you have, Pattern=i don't recall
+	Constrained: Pattern=do you, Pattern=i, Pattern=you, Pattern=recall
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=dance
+	Constrained: 
+Turn ID=5| B | Human 2 : hey you're the one i have my hands on , do you recall the name of this dance club ? it's not really that big of a deal
+	Free: Pattern=of, Pattern=a, Pattern=do you, Pattern=recall, Pattern=dance, Pattern=on, Pattern=the, Pattern=that, Pattern=it's, Pattern=not, Pattern=i have
+	Constrained: Pattern=i, Pattern=you
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=lol ., Pattern=schwasty, Pattern=you
+	Constrained: Pattern=lol
+Turn ID=7| B | Human 2 : oh you have a party ? lol
+	Free: Pattern=you have a, Pattern=lol
+	Constrained: Pattern=a, Pattern=you, Pattern=have a
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=you, Pattern=practice, Pattern=have a, Pattern=a, Pattern=i have, Pattern=i'm, Pattern=palo alto
+	Constrained: Pattern=i, Pattern=a
+Turn ID=9| B | Human 2 : are you the same schwasty i have practice at palo alto ? lol . you're not that guy
+	Free: Pattern=schwasty, Pattern=you, Pattern=practice, Pattern=palo alto, Pattern=the, Pattern=lol ., Pattern=that, Pattern=not, Pattern=i have
+	Constrained: Pattern=lol, Pattern=i
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=i'm not sure, Pattern=i, Pattern=what, Pattern=that
+	Constrained: Pattern=not, Pattern=i'm
+Turn ID=11| B | Human 2 : haha i'm not sure that's the first time you've seen that
+	Free: Pattern=i'm not sure, Pattern=the, Pattern=that, Pattern=that's
+	Constrained: Pattern=not, Pattern=i'm
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=a, Pattern=that's, Pattern=lol . not, Pattern=but, Pattern=real
+	Constrained: Pattern=lol ., Pattern=not, Pattern=lol
+Turn ID=13| B | Human 2 : oh i'm not sure that's what i'm doing but lol . lol . not real .
+	Free: Pattern=what, Pattern=i'm, Pattern=that's, Pattern=lol . not, Pattern=but, Pattern=real, Pattern=i'm not sure, Pattern=lol .
+	Constrained: Pattern=lol, Pattern=lol ., Pattern=not, Pattern=i'm

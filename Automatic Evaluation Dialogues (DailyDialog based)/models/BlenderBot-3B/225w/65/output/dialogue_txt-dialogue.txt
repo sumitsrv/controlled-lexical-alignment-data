@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how's your day going ?_ 
+B|3| Human 2: [how's your day going ?] _i_ just got home from _work_ _and_ _my_ boss had _me_ do some prep _work_ , _i_ got _it_ done early _, but_ _i_ 
+A|4| Human 1: ehhh _so-so_ . [my] _moped_ broke down on _the_ way _to work_ this _morning_ [and] [i] am _in the_ shop _getting_ [it] fixed ... 
+B|5| Human 2: it's [going] [so-so] , [my] cat decided [it] was _time_ [to] poop [and] [the] litter box _is_ [getting] [moped] 
+A|6| Human 1: [the] mechanic [is] trying [to] figure _that_ _out_ now . apparently [i] wasn't supposed [to] _be_ using _diesel_ _lol ._ 
+B|7| Human 2: [lol] that's [the] worst . i'm so glad mopeds aren't very complicated _but_ they're not very reliable [in] general . [the] [diesel] [and] 
+A|8| Human 1: okay _sounds_ _good_ . would _you_ _be able to pick_ [me] _up_ by [the] way , if they don't finish _up_ here [in] [time] ? _did_ _you_ drive _to work_ today ? 
+B|9| Human 2: [my] [day] [is] [going] [good] [and] [that] [sounds] terrible [lol .] what [time] [work] was [the] repair ? 
+A|10| Human 1: [that] _should be_ fine _i think_ _. did_ _you_ catch [the] warriors game _last night_ btw ? 
+B|11| Human 2: [i] [should [be] able to pick] [you] [up] [in the] [morning] [. did] [your] [last night] [out] of town [work] [out] [good] ? 
+A|12| Human 1: haha [i] appreciate [your] faith [, but] their record thus far [is] _hard to_ refute ! 
+B|13| Human 2: [i think] we are [good] [but] [the] [last] guy [i] hired [is] a [hard [to] work] with , [you] are more trustworthy . [it] [is] a nice 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=how's your day going ?
+	Constrained: Pattern=your, Pattern=going, Pattern=day
+Turn ID=3| B | Human 2 : how's your day going ? i just got home from work and my boss had me do some prep work , i got it done early , but i
+	Free: Pattern=, but, Pattern=me, Pattern=i, Pattern=my, Pattern=it, Pattern=and, Pattern=how's your day going ?, Pattern=work
+	Constrained: Pattern=your, Pattern=but, Pattern=going, Pattern=day
+Turn ID=4| A | Human 1 : ehhh so-so . my moped broke down on the way to work this morning and i am in the shop getting it fixed ...
+	Free: Pattern=moped, Pattern=so-so, Pattern=i, Pattern=the, Pattern=to work, Pattern=my, Pattern=getting, Pattern=it, Pattern=and, Pattern=in the, Pattern=morning
+	Constrained: Pattern=to, Pattern=the, Pattern=in, Pattern=work
+Turn ID=5| B | Human 2 : it's going so-so , my cat decided it was time to poop and the litter box is getting moped
+	Free: Pattern=moped, Pattern=time, Pattern=going, Pattern=so-so, Pattern=is, Pattern=the, Pattern=to, Pattern=my, Pattern=getting, Pattern=it, Pattern=and
+	Constrained: 
+Turn ID=6| A | Human 1 : the mechanic is trying to figure that out now . apparently i wasn't supposed to be using diesel lol .
+	Free: Pattern=be, Pattern=the, Pattern=that, Pattern=out, Pattern=diesel, Pattern=is, Pattern=i, Pattern=lol ., Pattern=to
+	Constrained: Pattern=lol
+Turn ID=7| B | Human 2 : lol that's the worst . i'm so glad mopeds aren't very complicated but they're not very reliable in general . the diesel and
+	Free: Pattern=lol, Pattern=diesel, Pattern=and, Pattern=in, Pattern=the, Pattern=but
+	Constrained: 
+Turn ID=8| A | Human 1 : okay sounds good . would you be able to pick me up by the way , if they don't finish up here in time ? did you drive to work today ?
+	Free: Pattern=good, Pattern=time, Pattern=you, Pattern=me, Pattern=did, Pattern=in, Pattern=sounds, Pattern=the, Pattern=be able to pick, Pattern=to work, Pattern=up
+	Constrained: Pattern=work, Pattern=to, Pattern=be
+Turn ID=9| B | Human 2 : my day is going good and that sounds terrible lol . what time work was the repair ?
+	Free: Pattern=good, Pattern=time, Pattern=going, Pattern=and, Pattern=work, Pattern=sounds, Pattern=the, Pattern=lol ., Pattern=my, Pattern=that, Pattern=day, Pattern=is
+	Constrained: Pattern=lol
+Turn ID=10| A | Human 1 : that should be fine i think . did you catch the warriors game last night btw ?
+	Free: Pattern=last night, Pattern=you, Pattern=should be, Pattern=. did, Pattern=the, Pattern=that, Pattern=i think
+	Constrained: Pattern=last, Pattern=i, Pattern=did, Pattern=be
+Turn ID=11| B | Human 2 : i should be able to pick you up in the morning . did your last night out of town work out good ?
+	Free: Pattern=good, Pattern=last night, Pattern=should be, Pattern=be able to pick, Pattern=up, Pattern=you, Pattern=out, Pattern=in the, Pattern=morning, Pattern=. did, Pattern=work, Pattern=your, Pattern=i
+	Constrained: Pattern=did, Pattern=in, Pattern=last, Pattern=be, Pattern=the, Pattern=to
+Turn ID=12| A | Human 1 : haha i appreciate your faith , but their record thus far is hard to refute !
+	Free: Pattern=, but, Pattern=hard to, Pattern=is, Pattern=your, Pattern=i
+	Constrained: Pattern=but, Pattern=to
+Turn ID=13| B | Human 2 : i think we are good but the last guy i hired is a hard to work with , you are more trustworthy . it is a nice
+	Free: Pattern=good, Pattern=you, Pattern=it, Pattern=hard to, Pattern=last, Pattern=the, Pattern=to work, Pattern=but, Pattern=i think, Pattern=is, Pattern=i
+	Constrained: Pattern=to, Pattern=i, Pattern=work

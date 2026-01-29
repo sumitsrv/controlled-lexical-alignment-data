@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , how _are_ _you_ ? 
+A|2| Human 1: _i'm_ _great_ , thanks . _i_ _just_ ate _a_ _delicious_ _breakfast_ , which _always_ sets _the_ day _up_ right . 
+B|3| Human 2: _that's_ [great] _to_ hear ! [i] don't _eat_ [breakfast] myself , but _it_ sounds [delicious] ! _what_ did _you_ _have_ today ? <|end|><|assistant|> [i] 
+A|4| Human 1: _i had_ _eggs_ _and_ hash browns . way less healthier than _your_ apple , _i'm_ afraid ! 
+B|5| Human 2: [i'm] [just] [a] virtual assistant [and] don’t consume _food_ , but [your] [breakfast] choice sounds [delicious] [and] [eggs] _are_ indeed [great] for protein ! _if_ 
+A|6| Human 1: ha , [that's] true . [if] _you could_ _only_ [eat] one [food] forever _, what_ _would_ [it] _be_ ? 
+B|7| Human 2: [i'm] [just] [a] language model [and] [i] don't [eat] [food] , but _that_ _would be a_ fun hypothetical ! [if] [i had] _to_ choose 
+A|8| Human 1: yeah , _turning_ orange [would be a] drawback ! [that] turns my _mind_ [to] _nutrition_ _so_ [i] suddenly want [to] _say_ _soylent_ or one _of_ those other "complete foods" , which [i] _think_ defeats _the_ purpose _of_ _the_ question . [i'm] in [a] muddle ! 
+B|9| Human 2: [i'm] [the] digital [mind] behind [your] text [and] [would] [only] [think] hypothetically . [soylent] [could] actually complete [a] [nutrition] profile but [turning] 
+A|10| Human 1: brilliant . [i] _love_ [it] . 
+B|11| Human 2: [that's] [the] spirit—i [love] [a] good playful exchange [of] ideas _and the_ mind-bending possibilities [that] [only] [you could] [think] [up] ! [i] 
+A|12| Human 1: [that] depends . _what sort of food_ do [you] feel _like_ ? 
+B|13| Human 2: [i'm] [like] [a] buffet [of] information [and] imagination [you could] [say] , [always] available 24/7 ! [so] [, [what] sort of food] [would] 
+A|14| Human 1: oh , too easy ! try [the] green hut , they [have] franchises everywhere . all their [food] is green [and the] plates [are] green too . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , how are you ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i just ate a delicious breakfast , which always sets the day up right .
+	Free: Pattern=always, Pattern=great, Pattern=just, Pattern=a, Pattern=breakfast, Pattern=i'm, Pattern=i, Pattern=delicious, Pattern=the, Pattern=up
+	Constrained: 
+Turn ID=3| B | Human 2 : that's great to hear ! i don't eat breakfast myself , but it sounds delicious ! what did you have today ? <|end|><|assistant|> i
+	Free: Pattern=have, Pattern=eat, Pattern=what, Pattern=breakfast, Pattern=it, Pattern=i, Pattern=delicious, Pattern=that's, Pattern=to, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=4| A | Human 1 : i had eggs and hash browns . way less healthier than your apple , i'm afraid !
+	Free: Pattern=and, Pattern=i'm, Pattern=eggs, Pattern=i had, Pattern=your
+	Constrained: Pattern=i
+Turn ID=5| B | Human 2 : i'm just a virtual assistant and don’t consume food , but your breakfast choice sounds delicious and eggs are indeed great for protein ! if
+	Free: Pattern=great, Pattern=just, Pattern=a, Pattern=breakfast, Pattern=and, Pattern=i'm, Pattern=your, Pattern=eggs, Pattern=are, Pattern=if, Pattern=delicious, Pattern=food
+	Constrained: 
+Turn ID=6| A | Human 1 : ha , that's true . if you could only eat one food forever , what would it be ?
+	Free: Pattern=only, Pattern=eat, Pattern=, what, Pattern=it, Pattern=if, Pattern=you could, Pattern=food, Pattern=be, Pattern=that's, Pattern=would
+	Constrained: Pattern=could, Pattern=what, Pattern=you
+Turn ID=7| B | Human 2 : i'm just a language model and i don't eat food , but that would be a fun hypothetical ! if i had to choose
+	Free: Pattern=eat, Pattern=a, Pattern=and, Pattern=if, Pattern=i'm, Pattern=food, Pattern=to, Pattern=that, Pattern=would be a, Pattern=just, Pattern=i had, Pattern=i
+	Constrained: Pattern=would, Pattern=a, Pattern=i, Pattern=be
+Turn ID=8| A | Human 1 : yeah , turning orange would be a drawback ! that turns my mind to nutrition so i suddenly want to say soylent or one of those other "complete foods" , which i think defeats the purpose of the question . i'm in a muddle !
+	Free: Pattern=of, Pattern=mind, Pattern=would be a, Pattern=a, Pattern=think, Pattern=i, Pattern=nutrition, Pattern=the, Pattern=to, Pattern=that, Pattern=so, Pattern=turning, Pattern=say, Pattern=i'm, Pattern=soylent
+	Constrained: Pattern=a, Pattern=be, Pattern=would
+Turn ID=9| B | Human 2 : i'm the digital mind behind your text and would only think hypothetically . soylent could actually complete a nutrition profile but turning
+	Free: Pattern=mind, Pattern=only, Pattern=a, Pattern=and, Pattern=think, Pattern=your, Pattern=nutrition, Pattern=the, Pattern=would, Pattern=could, Pattern=turning, Pattern=i'm, Pattern=soylent
+	Constrained: 
+Turn ID=10| A | Human 1 : brilliant . i love it .
+	Free: Pattern=love, Pattern=it, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : that's the spirit—i love a good playful exchange of ideas and the mind-bending possibilities that only you could think up ! i
+	Free: Pattern=of, Pattern=only, Pattern=a, Pattern=and the, Pattern=you could, Pattern=i, Pattern=up, Pattern=that, Pattern=love, Pattern=think, Pattern=that's, Pattern=the
+	Constrained: Pattern=the, Pattern=could, Pattern=you, Pattern=and
+Turn ID=12| A | Human 1 : that depends . what sort of food do you feel like ?
+	Free: Pattern=what sort of food, Pattern=like, Pattern=that, Pattern=you
+	Constrained: Pattern=what, Pattern=food, Pattern=of
+Turn ID=13| B | Human 2 : i'm like a buffet of information and imagination you could say , always available 24/7 ! so , what sort of food would
+	Free: Pattern=of, Pattern=always, Pattern=a, Pattern=, what, Pattern=and, Pattern=like, Pattern=what sort of food, Pattern=would, Pattern=so, Pattern=say, Pattern=i'm, Pattern=you could
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=food, Pattern=could
+Turn ID=14| A | Human 1 : oh , too easy ! try the green hut , they have franchises everywhere . all their food is green and the plates are green too .
+	Free: Pattern=have, Pattern=and the, Pattern=are, Pattern=food, Pattern=the
+	Constrained: Pattern=the, Pattern=and

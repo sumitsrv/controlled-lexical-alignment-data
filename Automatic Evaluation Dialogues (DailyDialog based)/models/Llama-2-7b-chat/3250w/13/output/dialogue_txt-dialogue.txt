@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend i saw_ "the parasite . " ever heard _of it_ ? 
+B|3| Human 2: _oh_ , wow ! yes , [i saw] _that_ movie _too_ . _the_ social commentary _was_ very thought-provoking . _what did you_ _think_ [of it] 
+A|4| Human 1: my friend wanted _to_ see [it] . [it] _has_ _great_ reviews _on_ imdb _and_ rotten tomatoes _! _what did you_ do_ _last weekend_ ? 
+B|5| Human 2: actually , [last weekend i saw] _the_ [last] duel [on] hulu . [what did you do] ? 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: 👀 yes , [the mandalorian] [and] [the] [last] duel _are_ [great] shows [! what did you] _think_ [of] them ? <| 
+A|8| Human 1: lol [are] [you] _a_ _big_ _marvel_ fan ? 
+B|9| Human 2: 🤔 [what] [do] [you] _think the_ future [of] _marvel movies_ will hold ? 
+A|10| Human 1: i've only [seen] spiderman . honestly [it] [was] _a_ little [too] scary [and] so [i] _don't_ [think] [i] can bring myself _to_ watch [the] other [marvel movies] ! _haha_ 
+B|11| Human 2: _i think the_ future [of] [marvel movies] will _be_ amazing [and] bringt [big] changes [to] [the] industry's future . [the mandalorian] 
+A|12| Human 1: [oh] _really_ ? [to] [be] honest _i think the actor_ is _not_ [that] _good looking_ , so _not_ so surprising ! _haha_ 
+B|13| Human 2: [i think the actor] [did] [a] [great] job [and] [was] [really] [good looking] [too] [haha] ! what's [you] [don't] like about [the] show< 
+A|14| Human 1: who is loki ? i've never heard [that] _name_ _before_ 
+B|15| Human 2: loki's [the] [name] [of] [the actor] [and] [i think] he [did] [great] job [too] [haha] ! [the] [movies] [that] [has] [not] [seen] [before] � 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=seen, Pattern=movies, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=last weekend i saw, Pattern=of it
+	Constrained: Pattern=of, Pattern=it, Pattern=i, Pattern=last, Pattern=i saw, Pattern=last weekend
+Turn ID=3| B | Human 2 : oh , wow ! yes , i saw that movie too . the social commentary was very thought-provoking . what did you think of it
+	Free: Pattern=think, Pattern=was, Pattern=what did you, Pattern=that, Pattern=oh, Pattern=too, Pattern=i saw, Pattern=of it, Pattern=the
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=did, Pattern=it, Pattern=i
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=great, Pattern=on, Pattern=what did you do, Pattern=! what did you, Pattern=it, Pattern=and, Pattern=has, Pattern=last weekend, Pattern=to
+	Constrained: Pattern=you, Pattern=what, Pattern=last, Pattern=what did you, Pattern=do, Pattern=did
+Turn ID=5| B | Human 2 : actually , last weekend i saw the last duel on hulu . what did you do ?
+	Free: Pattern=last weekend i saw, Pattern=last, Pattern=what did you do, Pattern=on, Pattern=the
+	Constrained: Pattern=you, Pattern=what, Pattern=i, Pattern=last, Pattern=i saw, Pattern=last weekend, Pattern=what did you, Pattern=do, Pattern=did
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : 👀 yes , the mandalorian and the last duel are great shows ! what did you think of them ? <|
+	Free: Pattern=of, Pattern=great, Pattern=and, Pattern=are, Pattern=last, Pattern=the, Pattern=! what did you, Pattern=the mandalorian, Pattern=think
+	Constrained: Pattern=you, Pattern=what, Pattern=did, Pattern=the, Pattern=what did you
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=you, Pattern=a, Pattern=are, Pattern=marvel, Pattern=big
+	Constrained: 
+Turn ID=9| B | Human 2 : 🤔 what do you think the future of marvel movies will hold ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=do, Pattern=think the, Pattern=marvel movies
+	Constrained: Pattern=think, Pattern=the, Pattern=marvel, Pattern=movies
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=a, Pattern=think, Pattern=i, Pattern=haha, Pattern=the, Pattern=don't, Pattern=to, Pattern=was, Pattern=seen, Pattern=marvel movies, Pattern=it, Pattern=and, Pattern=too
+	Constrained: Pattern=marvel, Pattern=movies
+Turn ID=11| B | Human 2 : i think the future of marvel movies will be amazing and bringt big changes to the industry's future . the mandalorian
+	Free: Pattern=of, Pattern=and, Pattern=the mandalorian, Pattern=to, Pattern=marvel movies, Pattern=i think the, Pattern=be, Pattern=big, Pattern=the
+	Constrained: Pattern=think, Pattern=marvel, Pattern=the, Pattern=movies, Pattern=i think, Pattern=think the, Pattern=i
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=i think the actor, Pattern=be, Pattern=to, Pattern=that, Pattern=not, Pattern=oh, Pattern=good looking, Pattern=haha, Pattern=really
+	Constrained: Pattern=good, Pattern=think, Pattern=i think the, Pattern=the, Pattern=the actor, Pattern=i think, Pattern=think the, Pattern=i
+Turn ID=13| B | Human 2 : i think the actor did a great job and was really good looking too haha ! what's you don't like about the show<
+	Free: Pattern=i think the actor, Pattern=the, Pattern=don't, Pattern=was, Pattern=you, Pattern=great, Pattern=did, Pattern=a, Pattern=and, Pattern=good looking, Pattern=too, Pattern=haha, Pattern=really
+	Constrained: Pattern=good, Pattern=think, Pattern=i think the, Pattern=the, Pattern=the actor, Pattern=i think, Pattern=think the, Pattern=i
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=that, Pattern=before, Pattern=name
+	Constrained: 
+Turn ID=15| B | Human 2 : loki's the name of the actor and i think he did great job too haha ! the movies that has not seen before �
+	Free: Pattern=of, Pattern=great, Pattern=did, Pattern=name, Pattern=haha, Pattern=the, Pattern=before, Pattern=that, Pattern=i think, Pattern=not, Pattern=and, Pattern=has, Pattern=too, Pattern=movies, Pattern=seen, Pattern=the actor
+	Constrained: Pattern=think, Pattern=the, Pattern=i

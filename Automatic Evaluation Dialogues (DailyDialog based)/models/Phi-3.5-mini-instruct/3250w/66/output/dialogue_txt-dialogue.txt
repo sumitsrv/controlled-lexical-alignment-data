@@ -1,0 +1,67 @@
+A|0| Human 1: hi 
+B|1| Human 2: hello ! 
+A|2| Human 1: _any_ _improvements in_ your marathon _time_ ? 
+B|3| Human 2: i'm phi , _an_ ai language model , _so_ _i_ don't run _marathons_ or [any] physical activity . however , [improvements in] 
+A|4| Human 1: [i] see . are _you_ planning _to_ _do_ [any] _sporting events_ [in] _the_ coming _months_ ? 
+B|5| Human 2: as phi , [the] microsoft language model , [i] don't engage [in] [sporting events] or [any] physical activities . [i] am here [to] provide information 
+A|6| Human 1: [i] _like_ doing _spartan race_ . _it's_ [an] _obstacle_ _race_ _which_ is _challenging_ _but_ _not_ overtly [so] _like_ [marathons] _and_ triathlons 
+B|7| Human 2: [it's] interesting that [you] bring [spartan race] into [the] conversation . while [i] , phi , [do] [not] participate [in] [any] [events] [and] lack _a_ 
+A|8| Human 1: _it_ has abt 20 _obstacles like_ crossing high _walls_ , _monkey bars_ , etc . its fun 
+B|9| Human 2: indeed , [spartan race] [events] typically feature [challenging] [obstacles like] [walls] [and] [monkey bars] [which] require both physical strength [and] agility . 
+A|10| Human 1: wanna _sign up for_ next one ? its [in] february [in] monterey 
+B|11| Human 2: i'm phi , [an] ai [and] as such , [i] don't have [the] ability [to] [sign up for] [events] , [but] [i] _can_ help 
+A|12| Human 1: _1-2 months_ is [a] _good_ amount of _time_ , if [you] _workout_ regularly . [it's] [a] lot _about_ [the] technique , [which] _we can_ _practice_ [in] _training_ _sessions_ . 
+B|13| Human 2: that's correct ! [it] [can] take [about] [1-2 months] [for] [the] body [time] [to] get used [to] [and] efficiently handle [training] [workout] [sessions] [which] 
+A|14| Human 1: awesome ! there is _a training ground_ [in] san jose . will coordinate _with_ [you] next [time] _we_ go [for] _practice_ . 
+B|15| Human 2: [it's] [good] [practice] [for] [you] [to] have [a training ground] nearby . [we can] work [with] [the] [obstacle] layout [and] [time] trials specific [to] [spartan] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : any improvements in your marathon time ?
+	Free: Pattern=improvements in, Pattern=time, Pattern=any
+	Constrained: Pattern=in
+Turn ID=3| B | Human 2 : i'm phi , an ai language model , so i don't run marathons or any physical activity . however , improvements in
+	Free: Pattern=marathons, Pattern=an, Pattern=any, Pattern=improvements in, Pattern=i, Pattern=so
+	Constrained: Pattern=in
+Turn ID=4| A | Human 1 : i see . are you planning to do any sporting events in the coming months ?
+	Free: Pattern=you, Pattern=months, Pattern=do, Pattern=any, Pattern=in, Pattern=i, Pattern=the, Pattern=to, Pattern=sporting events
+	Constrained: Pattern=events
+Turn ID=5| B | Human 2 : as phi , the microsoft language model , i don't engage in sporting events or any physical activities . i am here to provide information
+	Free: Pattern=any, Pattern=in, Pattern=i, Pattern=the, Pattern=to, Pattern=sporting events
+	Constrained: Pattern=events
+Turn ID=6| A | Human 1 : i like doing spartan race . it's an obstacle race which is challenging but not overtly so like marathons and triathlons
+	Free: Pattern=marathons, Pattern=an, Pattern=and, Pattern=i, Pattern=like, Pattern=challenging, Pattern=spartan race, Pattern=which, Pattern=so, Pattern=not, Pattern=race, Pattern=obstacle, Pattern=it's, Pattern=but
+	Constrained: Pattern=spartan, Pattern=race
+Turn ID=7| B | Human 2 : it's interesting that you bring spartan race into the conversation . while i , phi , do not participate in any events and lack a
+	Free: Pattern=you, Pattern=and, Pattern=in, Pattern=i, Pattern=the, Pattern=spartan race, Pattern=it's, Pattern=not, Pattern=do, Pattern=a, Pattern=any, Pattern=events
+	Constrained: Pattern=spartan, Pattern=race
+Turn ID=8| A | Human 1 : it has abt 20 obstacles like crossing high walls , monkey bars , etc . its fun
+	Free: Pattern=monkey bars, Pattern=obstacles like, Pattern=walls, Pattern=it
+	Constrained: Pattern=like
+Turn ID=9| B | Human 2 : indeed , spartan race events typically feature challenging obstacles like walls and monkey bars which require both physical strength and agility .
+	Free: Pattern=obstacles like, Pattern=events, Pattern=and, Pattern=walls, Pattern=monkey bars, Pattern=challenging, Pattern=spartan race, Pattern=which
+	Constrained: Pattern=like, Pattern=spartan, Pattern=race
+Turn ID=10| A | Human 1 : wanna sign up for next one ? its in february in monterey
+	Free: Pattern=sign up for, Pattern=in
+	Constrained: Pattern=for
+Turn ID=11| B | Human 2 : i'm phi , an ai and as such , i don't have the ability to sign up for events , but i can help
+	Free: Pattern=sign up for, Pattern=an, Pattern=events, Pattern=and, Pattern=can, Pattern=i, Pattern=the, Pattern=to, Pattern=but
+	Constrained: Pattern=for
+Turn ID=12| A | Human 1 : 1-2 months is a good amount of time , if you workout regularly . it's a lot about the technique , which we can practice in training sessions .
+	Free: Pattern=good, Pattern=time, Pattern=you, Pattern=a, Pattern=about, Pattern=in, Pattern=the, Pattern=we can, Pattern=sessions, Pattern=workout, Pattern=1-2 months, Pattern=which, Pattern=it's, Pattern=training, Pattern=practice
+	Constrained: Pattern=months, Pattern=can, Pattern=we
+Turn ID=13| B | Human 2 : that's correct ! it can take about 1-2 months for the body time to get used to and efficiently handle training workout sessions which
+	Free: Pattern=time, Pattern=training, Pattern=for, Pattern=can, Pattern=about, Pattern=the, Pattern=sessions, Pattern=1-2 months, Pattern=which, Pattern=it, Pattern=and, Pattern=workout, Pattern=to
+	Constrained: Pattern=months
+Turn ID=14| A | Human 1 : awesome ! there is a training ground in san jose . will coordinate with you next time we go for practice .
+	Free: Pattern=time, Pattern=you, Pattern=practice, Pattern=for, Pattern=in, Pattern=a training ground, Pattern=we, Pattern=with
+	Constrained: Pattern=training, Pattern=a
+Turn ID=15| B | Human 2 : it's good practice for you to have a training ground nearby . we can work with the obstacle layout and time trials specific to spartan
+	Free: Pattern=good, Pattern=time, Pattern=you, Pattern=practice, Pattern=for, Pattern=and, Pattern=spartan, Pattern=the, Pattern=we can, Pattern=to, Pattern=a training ground, Pattern=obstacle, Pattern=with, Pattern=it's
+	Constrained: Pattern=a, Pattern=training, Pattern=we, Pattern=can

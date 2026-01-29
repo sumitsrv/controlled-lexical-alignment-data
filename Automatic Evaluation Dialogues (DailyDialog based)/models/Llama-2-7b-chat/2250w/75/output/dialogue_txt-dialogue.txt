@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: _it's_ on the screen ! _i don't_ recall meeting [you] . do _you have_ _a_ sense _of_ where we [met] ? 
+B|3| Human 2: ah , [i] see ! [it's] possible _that_ [you] [met] me _in_ [a] dream . dreams can _be_ very vivid and realistic , and it 
+A|4| Human 1: _did_ we _dance_ together perchance ? 
+B|5| Human 2: [it's] possible ! dreams can involve all sorts [of] activities , including dancing . [did] [you have] any particular [dance] _in_ mind ? <|im 
+A|6| Human 1: _lol_ . _were you schwasty ?_ 
+B|7| Human 2: [lol] ! [were you schwasty ?] 
+A|8| Human 1: _i'm_ [a] cardiologist [in] palo alto . [i] [have] [a] _private practice_ . [you] ? 
+B|9| Human 2: [i'm] just an ai , [don't] [have] [private practice] [lol] ! [were you schwasty ?] <|im_end 
+A|10| Human 1: _i'm not sure_ [i] know _what that_ is . 
+B|11| Human 2: [i'm not sure] [what that] means . [did] [you have] any particular [dance] [in] mind ? 
+A|12| Human 1: [lol] . [not] to [be] _elitist_ _but_ ... that's [a] real _job_ ? 
+B|13| Human 2: [i'm not] [elitist] , [but] [i don't] [have] [that] [job] . [lol] ! [were you schwasty ?] <|im 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=you, Pattern=i, Pattern=met
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=of, Pattern=you, Pattern=i don't, Pattern=a, Pattern=you have, Pattern=met, Pattern=it's
+	Constrained: Pattern=you, Pattern=i, Pattern=have, Pattern=don't
+Turn ID=3| B | Human 2 : ah , i see ! it's possible that you met me in a dream . dreams can be very vivid and realistic , and it
+	Free: Pattern=you, Pattern=a, Pattern=in, Pattern=be, Pattern=i, Pattern=met, Pattern=that, Pattern=it's
+	Constrained: 
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=did, Pattern=dance
+	Constrained: 
+Turn ID=5| B | Human 2 : it's possible ! dreams can involve all sorts of activities , including dancing . did you have any particular dance in mind ? <|im
+	Free: Pattern=of, Pattern=did, Pattern=you have, Pattern=in, Pattern=dance, Pattern=it's
+	Constrained: Pattern=you, Pattern=have
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=were you schwasty ?, Pattern=lol
+	Constrained: Pattern=you
+Turn ID=7| B | Human 2 : lol ! were you schwasty ?
+	Free: Pattern=were you schwasty ?, Pattern=lol
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=in, Pattern=i, Pattern=i'm, Pattern=private practice
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm just an ai , don't have private practice lol ! were you schwasty ? <|im_end
+	Free: Pattern=lol, Pattern=have, Pattern=were you schwasty ?, Pattern=don't, Pattern=i'm, Pattern=private practice
+	Constrained: Pattern=you
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=i'm not sure, Pattern=what that, Pattern=i
+	Constrained: Pattern=that, Pattern=i'm not, Pattern=not, Pattern=i'm
+Turn ID=11| B | Human 2 : i'm not sure what that means . did you have any particular dance in mind ?
+	Free: Pattern=what that, Pattern=did, Pattern=you have, Pattern=in, Pattern=dance, Pattern=i'm not sure
+	Constrained: Pattern=you, Pattern=have, Pattern=i'm not, Pattern=i'm, Pattern=that, Pattern=not
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=job, Pattern=lol, Pattern=a, Pattern=elitist, Pattern=be, Pattern=but, Pattern=not
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm not elitist , but i don't have that job . lol ! were you schwasty ? <|im
+	Free: Pattern=job, Pattern=lol, Pattern=were you schwasty ?, Pattern=i'm not, Pattern=elitist, Pattern=i don't, Pattern=have, Pattern=that, Pattern=but
+	Constrained: Pattern=you, Pattern=i'm, Pattern=i, Pattern=don't, Pattern=not

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: wow , hello . can't believe _we are_ finally talking ! 
+A|2| Human 1: _yeah ,_ sorry _for the_ long gap _! i_ heard _you_ took _a_ break _and_ were travelling _around the_ world _. how was the_ travel ? 
+B|3| Human 2: [yeah ,] [i] [was] traveling [for the] past 6 months [and] _it_ [was] an amazing experience [! i] got _to_ _visit_ so many new _places_ [and] 
+A|4| Human 1: _great !_ vietnam _is_ still in my todo bucket list _. _did you also_ visit_ _cambodia and_ _other neighboring places_ ? 
+B|5| Human 2: [yeah ,] [i] [also] visited [cambodia and] _it_ [was] breathtaking ! angkor wat [is] [a] must [visit] [for] anyone traveling [around the] region . 
+A|6| Human 1: _hehe_ ! _how_ long _was the stay_ ? 
+B|7| Human 2: [did you also visit] [the] [other neighboring places] _like_ malaysia [and] singapore ? [how [was the] stay] there ? <|im_end| 
+A|8| Human 1: _great ! good time to be back ._ [we are] still in _planning_ phase [and] haven't _fully_ aligned on [the] _projects_ [to] tackle _for next quarter ._ reat _! good time to be back ._ [we are] still in _planning_ phase [and] haven't _fully_ aligned on [the] _projects_ [to] tackle _for next quarter ._ 
+B|9| Human 2: [yeah] [for next quarter [.] how was the] traveling experience [and] [are] [you] [fully] rested ? [great ! good time to be back [.] did you also] 
+A|10| Human 1: _hehe_ , [yeah] ! [it] seems [like] [the] [quarter] [is] being pushed earlier _than_ from where [it] starts 🙂 [i] [like] these _planning sessions_ . [it] makes me feel _more confident_ about [the] _work_ [i] am _doing_ . 
+B|11| Human 2: [hehe] [yeah] [for next quarter .] [good time] [back] [yeah] [for the] traveling [and] [fully] rested [great] [planning sessions] [are] [more confident] [work] [than] [doing] [like] 
+A|12| Human 1: _true [!_ i] think [we] should set aside some [time to] discuss some project details ? _does tomorrow afternoon work for you ?_ 
+B|13| Human 2: [great] [planning sessions] [are] [more confident] [work] [than] [doing] [the] same [projects] [like] . [does tomorrow afternoon work for you ?] [true !] [hehe] [yeah] [next quarter] 
+A|14| Human 1: _okay . see tomorrow then_ . 
+B|15| Human 2: [okay . see tomorrow then] [hehe] [yeah] [for next quarter .] [does tomorrow afternoon work for you ?] [great] [planning sessions] [are] [more confident] [work] [than] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : wow , hello . can't believe we are finally talking !
+	Free: Pattern=we are
+	Constrained: Pattern=are, Pattern=we
+Turn ID=2| A | Human 1 : yeah , sorry for the long gap ! i heard you took a break and were travelling around the world . how was the travel ?
+	Free: Pattern=you, Pattern=for the, Pattern=yeah ,, Pattern=a, Pattern=. how was the, Pattern=around the, Pattern=and, Pattern=! i
+	Constrained: Pattern=how, Pattern=for, Pattern=yeah, Pattern=i, Pattern=how was the, Pattern=the, Pattern=was
+Turn ID=3| B | Human 2 : yeah , i was traveling for the past 6 months and it was an amazing experience ! i got to visit so many new places and
+	Free: Pattern=for the, Pattern=i, Pattern=to, Pattern=was, Pattern=visit, Pattern=places, Pattern=yeah ,, Pattern=it, Pattern=and, Pattern=! i
+	Constrained: Pattern=for, Pattern=yeah, Pattern=i, Pattern=the
+Turn ID=4| A | Human 1 : great ! vietnam is still in my todo bucket list . did you also visit cambodia and other neighboring places ?
+	Free: Pattern=other neighboring places, Pattern=. did you also, Pattern=cambodia and, Pattern=great !, Pattern=is, Pattern=did you also visit
+	Constrained: Pattern=places, Pattern=and, Pattern=also, Pattern=visit, Pattern=you, Pattern=great
+Turn ID=5| B | Human 2 : yeah , i also visited cambodia and it was breathtaking ! angkor wat is a must visit for anyone traveling around the region .
+	Free: Pattern=yeah ,, Pattern=a, Pattern=it, Pattern=around the, Pattern=also, Pattern=was, Pattern=visit, Pattern=cambodia and, Pattern=for, Pattern=is, Pattern=i
+	Constrained: Pattern=and, Pattern=yeah, Pattern=the
+Turn ID=6| A | Human 1 : hehe ! how long was the stay ?
+	Free: Pattern=was the stay, Pattern=how, Pattern=hehe
+	Constrained: Pattern=was, Pattern=the
+Turn ID=7| B | Human 2 : did you also visit the other neighboring places like malaysia and singapore ? how was the stay there ? <|im_end|
+	Free: Pattern=other neighboring places, Pattern=and, Pattern=like, Pattern=the, Pattern=did you also visit, Pattern=how was the, Pattern=was the stay
+	Constrained: Pattern=you, Pattern=places, Pattern=how, Pattern=also, Pattern=the, Pattern=was, Pattern=visit
+Turn ID=8| A | Human 1 : great ! good time to be back . we are still in planning phase and haven't fully aligned on the projects to tackle for next quarter . reat ! good time to be back . we are still in planning phase and haven't fully aligned on the projects to tackle for next quarter .
+	Free: Pattern=planning, Pattern=for next quarter ., Pattern=and, Pattern=projects, Pattern=! good time to be back ., Pattern=the, Pattern=to, Pattern=fully, Pattern=we are, Pattern=great ! good time to be back .
+	Constrained: Pattern=next quarter, Pattern=great, Pattern=time to, Pattern=for, Pattern=are, Pattern=great !, Pattern=! good time to be back ., Pattern=back, Pattern=we, Pattern=quarter, Pattern=to, Pattern=good time
+Turn ID=9| B | Human 2 : yeah for next quarter . how was the traveling experience and are you fully rested ? great ! good time to be back . did you also
+	Free: Pattern=for next quarter ., Pattern=great ! good time to be back ., Pattern=fully, Pattern=you, Pattern=. did you also, Pattern=yeah, Pattern=and, Pattern=are, Pattern=. how was the
+	Constrained: Pattern=next quarter, Pattern=time to, Pattern=how, Pattern=for, Pattern=great !, Pattern=! good time to be back ., Pattern=back, Pattern=also, Pattern=quarter, Pattern=how was the, Pattern=the, Pattern=to, Pattern=was, Pattern=good time, Pattern=you, Pattern=great
+Turn ID=10| A | Human 1 : hehe , yeah ! it seems like the quarter is being pushed earlier than from where it starts 🙂 i like these planning sessions . it makes me feel more confident about the work i am doing .
+	Free: Pattern=planning sessions, Pattern=hehe, Pattern=doing, Pattern=than, Pattern=work, Pattern=like, Pattern=quarter, Pattern=the, Pattern=more confident, Pattern=it, Pattern=yeah, Pattern=is, Pattern=i
+	Constrained: Pattern=planning
+Turn ID=11| B | Human 2 : hehe yeah for next quarter . good time back yeah for the traveling and fully rested great planning sessions are more confident work than doing like
+	Free: Pattern=planning sessions, Pattern=for the, Pattern=are, Pattern=than, Pattern=work, Pattern=back, Pattern=like, Pattern=fully, Pattern=good time, Pattern=great, Pattern=hehe, Pattern=for next quarter ., Pattern=doing, Pattern=yeah, Pattern=and, Pattern=more confident
+	Constrained: Pattern=next quarter, Pattern=planning, Pattern=for, Pattern=quarter, Pattern=the
+Turn ID=12| A | Human 1 : true ! i think we should set aside some time to discuss some project details ? does tomorrow afternoon work for you ?
+	Free: Pattern=does tomorrow afternoon work for you ?, Pattern=time to, Pattern=! i, Pattern=true !, Pattern=we
+	Constrained: Pattern=you, Pattern=for, Pattern=work, Pattern=i, Pattern=to
+Turn ID=13| B | Human 2 : great planning sessions are more confident work than doing the same projects like . does tomorrow afternoon work for you ? true ! hehe yeah next quarter
+	Free: Pattern=next quarter, Pattern=planning sessions, Pattern=does tomorrow afternoon work for you ?, Pattern=doing, Pattern=than, Pattern=work, Pattern=true !, Pattern=like, Pattern=the, Pattern=great, Pattern=hehe, Pattern=yeah, Pattern=more confident, Pattern=are, Pattern=projects
+	Constrained: Pattern=planning, Pattern=you, Pattern=for, Pattern=work, Pattern=quarter
+Turn ID=14| A | Human 1 : okay . see tomorrow then .
+	Free: Pattern=okay . see tomorrow then
+	Constrained: 
+Turn ID=15| B | Human 2 : okay . see tomorrow then hehe yeah for next quarter . does tomorrow afternoon work for you ? great planning sessions are more confident work than
+	Free: Pattern=planning sessions, Pattern=does tomorrow afternoon work for you ?, Pattern=for next quarter ., Pattern=are, Pattern=than, Pattern=work, Pattern=great, Pattern=hehe, Pattern=okay . see tomorrow then, Pattern=yeah, Pattern=more confident
+	Constrained: Pattern=next quarter, Pattern=planning, Pattern=you, Pattern=for, Pattern=work, Pattern=quarter

@@ -1,0 +1,63 @@
+A|0| Human 1: hello , _nice to_ meet _you_ 
+B|1| Human 2: if [you] could eat only _one_ _food_ for _the_ rest _of_ time , _what_ _would_ _it_ _be_ ? 
+A|2| Human 1: _hmm _..._ that's a tough_ [one] _. i think_ _i_ [would] _go_ asian [food] > chinese [food] > _stirfry_ _. what about you_ ? 
+B|3| Human 2: [that's] interesting ! [stirfry] _is_ [a] popular choice [. what about you] , [would] [you] choose _something_ spicy or mild ? <| 
+A|4| Human 1: _i_ love _ice cream_ too ! 
+B|5| Human 2: _haha_ , [ice cream] _is_ always [a] good choice ! _so_ , [would] [you] prefer [a] specific flavor or just [a] plain [one] ? <|< 
+A|6| Human 1: _i_ like vanilla _more than_ _chocolate_ [ice cream] _. i_ typically will _do_ _any_ variations on vanilla . _to_ pick from [the] top [of] my head _, i_ [would] say _cookies and cream_ , _mint chocolate chip_ , _and_ coffee . how [about you] ? 
+B|7| Human 2: oh , you're picking [more than] [one] flavor ! [cookies and cream] [and] [mint chocolate chip] are both del 
+A|8| Human 1: very _nice_ _. i_ love sorbet's [and] smoothies . changing topics , _do you_ _believe in an afterlife_ ? 
+B|9| Human 2: [hmm ...] [afterlife] [... that's a tough] question [. i think] _it_ [would] _be_ [nice to] [believe in an afterlife] , but [i] don 
+A|10| Human 1: [i think] [so] [. i] feel there must [be] _something more than_ [the] _physical_ world as we _understand_ [it] . 
+B|11| Human 2: [i] [understand] . [do you] [think] there's [any] possibility [of] [the] [afterlife] being [something more than] just [a] place where souls [go] after [physical] death ? 
+A|12| Human 1: [what] [is] [the] most _supernatural_ experience [you] _have_ ever had ? 
+B|13| Human 2: *sigh* i'm just [an] ai [, i] don't [have] personal experiences or [believe in] [supernatural] phenomena . however [, i] 
+A|14| Human 1: [haha] .. [that's a] cool experience [. i] went [to] [a] hindu retreat before , [a] number [of] buddhist temples , [and] hung out with christian mystics [in] santa cruz before . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hello , nice to meet you
+	Free: Pattern=nice to, Pattern=you
+	Constrained: Pattern=to, Pattern=nice
+Turn ID=1| B | Human 2 : if you could eat only one food for the rest of time , what would it be ?
+	Free: Pattern=of, Pattern=you, Pattern=what, Pattern=it, Pattern=one, Pattern=food, Pattern=be, Pattern=the, Pattern=would
+	Constrained: 
+Turn ID=2| A | Human 1 : hmm ... that's a tough one . i think i would go asian food > chinese food > stirfry . what about you ?
+	Free: Pattern=one, Pattern=. i think, Pattern=. what about you, Pattern=food, Pattern=stirfry, Pattern=would, Pattern=hmm ..., Pattern=go, Pattern=... that's a tough, Pattern=i
+	Constrained: Pattern=you, Pattern=what, Pattern=a, Pattern=about you, Pattern=. i, Pattern=think, Pattern=i, Pattern=that's a, Pattern=that's, Pattern=i think
+Turn ID=3| B | Human 2 : that's interesting ! stirfry is a popular choice . what about you , would you choose something spicy or mild ? <|
+	Free: Pattern=you, Pattern=a, Pattern=. what about you, Pattern=is, Pattern=would, Pattern=something, Pattern=that's, Pattern=stirfry
+	Constrained: Pattern=about you, Pattern=you, Pattern=what
+Turn ID=4| A | Human 1 : i love ice cream too !
+	Free: Pattern=ice cream, Pattern=i
+	Constrained: 
+Turn ID=5| B | Human 2 : haha , ice cream is always a good choice ! so , would you prefer a specific flavor or just a plain one ? <|<
+	Free: Pattern=you, Pattern=a, Pattern=one, Pattern=ice cream, Pattern=is, Pattern=haha, Pattern=would, Pattern=so
+	Constrained: 
+Turn ID=6| A | Human 1 : i like vanilla more than chocolate ice cream . i typically will do any variations on vanilla . to pick from the top of my head , i would say cookies and cream , mint chocolate chip , and coffee . how about you ?
+	Free: Pattern=of, Pattern=do, Pattern=any, Pattern=and, Pattern=. i, Pattern=i, Pattern=would, Pattern=to, Pattern=mint chocolate chip, Pattern=chocolate, Pattern=more than, Pattern=cookies and cream, Pattern=about you, Pattern=ice cream, Pattern=the, Pattern=, i
+	Constrained: Pattern=chocolate, Pattern=i, Pattern=you, Pattern=and
+Turn ID=7| B | Human 2 : oh , you're picking more than one flavor ! cookies and cream and mint chocolate chip are both del
+	Free: Pattern=and, Pattern=one, Pattern=mint chocolate chip, Pattern=more than, Pattern=cookies and cream
+	Constrained: Pattern=chocolate, Pattern=and
+Turn ID=8| A | Human 1 : very nice . i love sorbet's and smoothies . changing topics , do you believe in an afterlife ?
+	Free: Pattern=nice, Pattern=. i, Pattern=believe in an afterlife, Pattern=and, Pattern=do you
+	Constrained: Pattern=you, Pattern=do, Pattern=in, Pattern=i, Pattern=believe in, Pattern=an, Pattern=afterlife
+Turn ID=9| B | Human 2 : hmm ... afterlife ... that's a tough question . i think it would be nice to believe in an afterlife , but i don
+	Free: Pattern=hmm ..., Pattern=afterlife, Pattern=it, Pattern=. i think, Pattern=nice to, Pattern=be, Pattern=... that's a tough, Pattern=i, Pattern=would, Pattern=believe in an afterlife
+	Constrained: Pattern=a, Pattern=nice, Pattern=. i, Pattern=i, Pattern=that's a, Pattern=that's, Pattern=believe in, Pattern=to, Pattern=i think, Pattern=an, Pattern=afterlife, Pattern=think, Pattern=in
+Turn ID=10| A | Human 1 : i think so . i feel there must be something more than the physical world as we understand it .
+	Free: Pattern=it, Pattern=. i, Pattern=understand, Pattern=the, Pattern=something more than, Pattern=physical, Pattern=be, Pattern=so, Pattern=i think
+	Constrained: Pattern=i, Pattern=something, Pattern=think, Pattern=more than
+Turn ID=11| B | Human 2 : i understand . do you think there's any possibility of the afterlife being something more than just a place where souls go after physical death ?
+	Free: Pattern=of, Pattern=go, Pattern=a, Pattern=afterlife, Pattern=any, Pattern=do you, Pattern=think, Pattern=physical, Pattern=the, Pattern=something more than, Pattern=understand, Pattern=i
+	Constrained: Pattern=do, Pattern=you, Pattern=something, Pattern=more than
+Turn ID=12| A | Human 1 : what is the most supernatural experience you have ever had ?
+	Free: Pattern=you, Pattern=have, Pattern=what, Pattern=supernatural, Pattern=is, Pattern=the
+	Constrained: 
+Turn ID=13| B | Human 2 : *sigh* i'm just an ai , i don't have personal experiences or believe in supernatural phenomena . however , i
+	Free: Pattern=have, Pattern=an, Pattern=supernatural, Pattern=, i, Pattern=believe in
+	Constrained: Pattern=i, Pattern=in
+Turn ID=14| A | Human 1 : haha .. that's a cool experience . i went to a hindu retreat before , a number of buddhist temples , and hung out with christian mystics in santa cruz before .
+	Free: Pattern=of, Pattern=a, Pattern=and, Pattern=. i, Pattern=in, Pattern=haha, Pattern=that's a, Pattern=to
+	Constrained: Pattern=i, Pattern=a, Pattern=that's

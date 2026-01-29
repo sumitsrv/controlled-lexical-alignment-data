@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey ,_ _how_ are _you_ doing ? 
+A|2| Human 1: _i'm_ _great_ , _thanks_ . _i'm_ _getting ready for_ _a_ _skydiving_ lesson . 
+B|3| Human 2: oh , cool ! [i'm] sure _that_ will be [a] thrilling experience . what made _you_ decide _to_ try [skydiving] ? <|im 
+A|4| Human 1: right _near_ _my_ _home_ town: _seville_ , spain . 
+B|5| Human 2: [i'm] glad you're [getting ready for] [skydiving] [near] [home] . [seville] is [a] [great] town , i've heard . _how_ _do_ 
+A|6| Human 1: _yes_ . _i'm feeling_ [a] little _trepidatious_ _. have you done it before ?_ 
+B|7| Human 2: [yes] [i'm feeling] [trepidatious] [before] [for] [you done] [skydiving] [before] [. have you done it before ?] <|im_end 
+A|8| Human 1: _haha thanks ! have you tried any extreme sports_ ? 
+B|9| Human 2: [haha thanks ! have you tried any extreme sports] [before] [skydiving] ? [yes] [i'm feeling] [trepidatious] [for] [my] first time . 
+A|10| Human 1: _white water rafting_ , _definitely_ ! as [for] _skiing_ , [that] depends on [how] fast [you] go . [do] [you] ski [a] lot ? 
+B|11| Human 2: [haha thanks] [for] _the_ advice [i'm] [definitely] [feeling] [trepidatious] [before] [skydiving] [near] [home] [seville] . [white water rafting] 
+A|12| Human 1: _i_ [tried] _skiing_ once , _and_ by [the] end of [the] beginner class _i_ was able [to] make [it] down [a] baby-sized slope . _i_ was very proud of myself . 
+B|13| Human 2: [white water rafting] [and] [skiing] [i] see [! have you tried any extreme sports] [before] [skydiving] ? [yes] [i'm feeling] trepid 
+A|14| Human 1: [hey ,] so long as [you] get [to] [the] bottom , it's all good ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you doing ?
+	Free: Pattern=hey ,, Pattern=you, Pattern=how
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i'm getting ready for a skydiving lesson .
+	Free: Pattern=thanks, Pattern=getting ready for, Pattern=great, Pattern=a, Pattern=i'm, Pattern=skydiving
+	Constrained: Pattern=for
+Turn ID=3| B | Human 2 : oh , cool ! i'm sure that will be a thrilling experience . what made you decide to try skydiving ? <|im
+	Free: Pattern=you, Pattern=a, Pattern=i'm, Pattern=skydiving, Pattern=to, Pattern=that
+	Constrained: 
+Turn ID=4| A | Human 1 : right near my home town: seville , spain .
+	Free: Pattern=near, Pattern=home, Pattern=my, Pattern=seville
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm glad you're getting ready for skydiving near home . seville is a great town , i've heard . how do
+	Free: Pattern=getting ready for, Pattern=great, Pattern=how, Pattern=seville, Pattern=i'm, Pattern=skydiving, Pattern=near, Pattern=home, Pattern=do, Pattern=a
+	Constrained: Pattern=for
+Turn ID=6| A | Human 1 : yes . i'm feeling a little trepidatious . have you done it before ?
+	Free: Pattern=i'm feeling, Pattern=yes, Pattern=a, Pattern=trepidatious, Pattern=. have you done it before ?
+	Constrained: Pattern=you done, Pattern=feeling, Pattern=you, Pattern=it, Pattern=i'm, Pattern=before
+Turn ID=7| B | Human 2 : yes i'm feeling trepidatious before for you done skydiving before . have you done it before ? <|im_end
+	Free: Pattern=you done, Pattern=i'm feeling, Pattern=yes, Pattern=for, Pattern=skydiving, Pattern=before, Pattern=trepidatious, Pattern=. have you done it before ?
+	Constrained: Pattern=you done, Pattern=feeling, Pattern=you, Pattern=it, Pattern=i'm, Pattern=before
+Turn ID=8| A | Human 1 : haha thanks ! have you tried any extreme sports ?
+	Free: Pattern=haha thanks ! have you tried any extreme sports
+	Constrained: Pattern=thanks, Pattern=! have you tried any extreme sports, Pattern=you, Pattern=haha thanks, Pattern=tried
+Turn ID=9| B | Human 2 : haha thanks ! have you tried any extreme sports before skydiving ? yes i'm feeling trepidatious for my first time .
+	Free: Pattern=i'm feeling, Pattern=yes, Pattern=for, Pattern=trepidatious, Pattern=skydiving, Pattern=haha thanks ! have you tried any extreme sports, Pattern=before, Pattern=my
+	Constrained: Pattern=thanks, Pattern=you, Pattern=haha thanks, Pattern=i'm, Pattern=tried, Pattern=feeling, Pattern=! have you tried any extreme sports
+Turn ID=10| A | Human 1 : white water rafting , definitely ! as for skiing , that depends on how fast you go . do you ski a lot ?
+	Free: Pattern=you, Pattern=how, Pattern=for, Pattern=white water rafting, Pattern=that, Pattern=do, Pattern=a, Pattern=skiing, Pattern=definitely
+	Constrained: 
+Turn ID=11| B | Human 2 : haha thanks for the advice i'm definitely feeling trepidatious before skydiving near home seville . white water rafting
+	Free: Pattern=feeling, Pattern=haha thanks, Pattern=for, Pattern=trepidatious, Pattern=seville, Pattern=i'm, Pattern=definitely, Pattern=skydiving, Pattern=the, Pattern=white water rafting, Pattern=before, Pattern=near, Pattern=home
+	Constrained: Pattern=thanks
+Turn ID=12| A | Human 1 : i tried skiing once , and by the end of the beginner class i was able to make it down a baby-sized slope . i was very proud of myself .
+	Free: Pattern=a, Pattern=i, Pattern=the, Pattern=to, Pattern=it, Pattern=and, Pattern=skiing, Pattern=tried
+	Constrained: 
+Turn ID=13| B | Human 2 : white water rafting and skiing i see ! have you tried any extreme sports before skydiving ? yes i'm feeling trepid
+	Free: Pattern=! have you tried any extreme sports, Pattern=i'm feeling, Pattern=yes, Pattern=and, Pattern=i, Pattern=skiing, Pattern=skydiving, Pattern=white water rafting, Pattern=before
+	Constrained: Pattern=you, Pattern=tried, Pattern=i'm, Pattern=feeling
+Turn ID=14| A | Human 1 : hey , so long as you get to the bottom , it's all good !
+	Free: Pattern=hey ,, Pattern=to, Pattern=the, Pattern=you
+	Constrained: 

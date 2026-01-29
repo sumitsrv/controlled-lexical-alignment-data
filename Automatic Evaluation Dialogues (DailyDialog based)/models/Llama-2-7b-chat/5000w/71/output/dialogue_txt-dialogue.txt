@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how’s _your day_ _going ?_ 
+A|2| Human 1: bruhhhhhh !!!!! 
+B|3| Human 2: 😅 sorry , _i_ couldn't understand _what_ _you_ said . is there anything else you'd like _to_ talk about ? <| 
+A|4| Human 1: _i was_ screaming in agony upon recounting _my_ [day] . 
+B|5| Human 2: 😆 oh _no_ ! _what_ happened ? do _you_ want _to_ talk about it ? <| 
+A|6| Human 1: _a_ _project_ _i've been working on for some months got shelved_ . so _i'm_ _a_ _mix_ of _helpless_ , _sad_ , _and_ _angry_ . 
+B|7| Human 2: [i've been working on for some months got shelved] [and] [helpless] [sad] [angry] [mix] [project] [was] canceled . that's 
+A|8| Human 1: _lol_ . would [you] say _that_ [to] someone who _lost a loved one_ - or _some similar circumstance_ ? 
+B|9| Human 2: [i'm] [lol] 😅 [and] [sad] [that] [you] [lost a loved one] ! [my] apologies [for] using [that] term _. [i_ was] _trying_ 
+A|10| Human 1: [no] worries . _was pulling_ [your] _leg_ [. i] _forgot_ [to] _ask how_ [your _day] was [going_ ?] 
+B|11| Human 2: [i'm] [lol] [and] [sad] [that] [you] [lost] [your] [project] ! [was pulling] [leg] [forgot] [ask how] [day was going] [some similar] circumstance<|im 
+A|12| Human 1: [lol] . [what] are [your] choices ? [i'm] [trying] _out_ _keto_ ! it's _pretty tiring_ . 
+B|13| Human 2: [lol] [keto] 2022 [i'm] [out] [was] [pretty tiring] [some similar circumstance] [and] [lost] [loved one] [sad] [angry] [mix] [project] [was] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how’s your day going ?
+	Free: Pattern=going ?, Pattern=your day
+	Constrained: Pattern=day, Pattern=your
+Turn ID=2| A | Human 1 : bruhhhhhh !!!!!
+	Free: 
+	Constrained: 
+Turn ID=3| B | Human 2 : 😅 sorry , i couldn't understand what you said . is there anything else you'd like to talk about ? <|
+	Free: Pattern=you, Pattern=to, Pattern=i, Pattern=what
+	Constrained: 
+Turn ID=4| A | Human 1 : i was screaming in agony upon recounting my day .
+	Free: Pattern=i was, Pattern=day, Pattern=my
+	Constrained: Pattern=was, Pattern=i
+Turn ID=5| B | Human 2 : 😆 oh no ! what happened ? do you want to talk about it ? <|
+	Free: Pattern=you, Pattern=to, Pattern=no, Pattern=what
+	Constrained: 
+Turn ID=6| A | Human 1 : a project i've been working on for some months got shelved . so i'm a mix of helpless , sad , and angry .
+	Free: Pattern=mix, Pattern=sad, Pattern=a, Pattern=i've been working on for some months got shelved, Pattern=helpless, Pattern=i'm, Pattern=project, Pattern=and, Pattern=angry
+	Constrained: Pattern=for
+Turn ID=7| B | Human 2 : i've been working on for some months got shelved and helpless sad angry mix project was canceled . that's
+	Free: Pattern=mix, Pattern=sad, Pattern=i've been working on for some months got shelved, Pattern=helpless, Pattern=was, Pattern=project, Pattern=and, Pattern=angry
+	Constrained: Pattern=for
+Turn ID=8| A | Human 1 : lol . would you say that to someone who lost a loved one - or some similar circumstance ?
+	Free: Pattern=lol, Pattern=you, Pattern=some similar circumstance, Pattern=to, Pattern=that, Pattern=lost a loved one
+	Constrained: Pattern=a, Pattern=loved one, Pattern=some similar, Pattern=lost
+Turn ID=9| B | Human 2 : i'm lol 😅 and sad that you lost a loved one ! my apologies for using that term . i was trying
+	Free: Pattern=i was, Pattern=you, Pattern=for, Pattern=and, Pattern=. i, Pattern=i'm, Pattern=trying, Pattern=my, Pattern=that, Pattern=lost a loved one, Pattern=sad, Pattern=lol
+	Constrained: Pattern=lost, Pattern=a, Pattern=loved one, Pattern=i, Pattern=was
+Turn ID=10| A | Human 1 : no worries . was pulling your leg . i forgot to ask how your day was going ?
+	Free: Pattern=leg, Pattern=your day, Pattern=no, Pattern=. i, Pattern=ask how, Pattern=your, Pattern=day was going, Pattern=was pulling, Pattern=to, Pattern=going ?, Pattern=forgot
+	Constrained: Pattern=your, Pattern=i, Pattern=was, Pattern=day
+Turn ID=11| B | Human 2 : i'm lol and sad that you lost your project ! was pulling leg forgot ask how day was going some similar circumstance<|im
+	Free: Pattern=some similar, Pattern=and, Pattern=forgot, Pattern=your, Pattern=day was going, Pattern=was pulling, Pattern=sad, Pattern=lol, Pattern=you, Pattern=leg, Pattern=lost, Pattern=i'm, Pattern=ask how, Pattern=that, Pattern=project
+	Constrained: Pattern=was, Pattern=day
+Turn ID=12| A | Human 1 : lol . what are your choices ? i'm trying out keto ! it's pretty tiring .
+	Free: Pattern=lol, Pattern=out, Pattern=what, Pattern=i'm, Pattern=your, Pattern=trying, Pattern=pretty tiring, Pattern=keto
+	Constrained: 
+Turn ID=13| B | Human 2 : lol keto 2022 i'm out was pretty tiring some similar circumstance and lost loved one sad angry mix project was
+	Free: Pattern=mix, Pattern=loved one, Pattern=some similar circumstance, Pattern=i'm, Pattern=pretty tiring, Pattern=project, Pattern=sad, Pattern=lol, Pattern=out, Pattern=lost, Pattern=and, Pattern=angry, Pattern=was, Pattern=keto
+	Constrained: Pattern=some similar

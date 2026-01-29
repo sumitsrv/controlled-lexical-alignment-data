@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! 
+A|2| Human 1: _have you_ had _lunch_ yet ? 
+B|3| Human 2: _i'm_ just an ai , _i_ don't [have] [lunch] or any physical needs . 😊<|im_end 
+A|4| Human 1: cool . where _and_ _what_ _did_ _you_ _eat_ ? 
+B|5| Human 2: _i_ [did] not [eat] [lunch] , [and] _i_ don't [have] personal experiences or memories like [you] do _. i_ exist solely to assist [you] 
+A|6| Human 1: _a_ sandwich for [lunch] ? was _it_ filling _. i'm_ currently having some mix of shrimp , fish , chicken [and] pork _. i'm considering going vegetarian though . lol ._ 
+B|7| Human 2: [i'm] glad you're [considering] [vegetarian] options 🌱🥗 . _it's_ important to [eat] [a] balanced 
+A|8| Human 1: cause _the_ _environment_ [and] _humans_ suck _. i'm_ keeping my bets open for _space_ _though_ in case _the_ _environment dies [._ i] mixed up [a] couple of dishes . _it_ was [a] _buffet style place_ . 
+B|9| Human 2: [i'm] not sure [what] [the] [buffet style place] you're referring to 🤔 . [space] [environment dies .] [humans] [and] [eat] veget 
+A|10| Human 1: [i] love _them_ !!!! i've had [a] couple of different kinds . _they are all pretty expensive though _._ have you tried them ?_ 
+B|11| Human 2: [they are all pretty expensive though [.] i'm considering going vegetarian though . lol [.] have you tried them ?] <|im_end 
+A|12| Human 1: [i] love _it_ too _. but depending on how_ [it's] _prepared you can taste the peanut_ butter _. but_ if _prepared_ well [i] love _it_ . [what] kind of food would [you] [have] eaten if _it_ wasn't rainy ? 
+B|13| Human 2: [i'm considering going vegetarian though . lol] 😂 [. but depending on how] [it] [prepared you can taste the peanut] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : have you had lunch yet ?
+	Free: Pattern=have you, Pattern=lunch
+	Constrained: Pattern=you, Pattern=have
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have lunch or any physical needs . 😊<|im_end
+	Free: Pattern=i'm, Pattern=i, Pattern=have, Pattern=lunch
+	Constrained: 
+Turn ID=4| A | Human 1 : cool . where and what did you eat ?
+	Free: Pattern=you, Pattern=eat, Pattern=what, Pattern=did, Pattern=and
+	Constrained: 
+Turn ID=5| B | Human 2 : i did not eat lunch , and i don't have personal experiences or memories like you do . i exist solely to assist you
+	Free: Pattern=you, Pattern=have, Pattern=eat, Pattern=did, Pattern=and, Pattern=. i, Pattern=i, Pattern=lunch
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : a sandwich for lunch ? was it filling . i'm currently having some mix of shrimp , fish , chicken and pork . i'm considering going vegetarian though . lol .
+	Free: Pattern=. i'm considering going vegetarian though . lol ., Pattern=a, Pattern=. i'm, Pattern=lunch, Pattern=it, Pattern=and
+	Constrained: Pattern=though, Pattern=i'm considering going vegetarian though . lol, Pattern=. i'm, Pattern=vegetarian, Pattern=i'm, Pattern=considering
+Turn ID=7| B | Human 2 : i'm glad you're considering vegetarian options 🌱🥗 . it's important to eat a balanced
+	Free: Pattern=eat, Pattern=a, Pattern=vegetarian, Pattern=it's, Pattern=i'm, Pattern=considering
+	Constrained: 
+Turn ID=8| A | Human 1 : cause the environment and humans suck . i'm keeping my bets open for space though in case the environment dies . i mixed up a couple of dishes . it was a buffet style place .
+	Free: Pattern=though, Pattern=a, Pattern=the, Pattern=buffet style place, Pattern=. i'm, Pattern=humans, Pattern=it, Pattern=and, Pattern=environment dies ., Pattern=environment, Pattern=. i, Pattern=space
+	Constrained: Pattern=i, Pattern=environment, Pattern=i'm
+Turn ID=9| B | Human 2 : i'm not sure what the buffet style place you're referring to 🤔 . space environment dies . humans and eat veget
+	Free: Pattern=eat, Pattern=what, Pattern=humans, Pattern=and, Pattern=environment dies ., Pattern=space, Pattern=i'm, Pattern=the, Pattern=buffet style place
+	Constrained: Pattern=environment
+Turn ID=10| A | Human 1 : i love them !!!! i've had a couple of different kinds . they are all pretty expensive though . have you tried them ?
+	Free: Pattern=a, Pattern=i, Pattern=. have you tried them ?, Pattern=they are all pretty expensive though ., Pattern=them
+	Constrained: Pattern=you, Pattern=have, Pattern=though, Pattern=have you, Pattern=them
+Turn ID=11| B | Human 2 : they are all pretty expensive though . i'm considering going vegetarian though . lol . have you tried them ? <|im_end
+	Free: Pattern=. i'm considering going vegetarian though . lol ., Pattern=they are all pretty expensive though ., Pattern=. have you tried them ?
+	Constrained: Pattern=you, Pattern=have, Pattern=though, Pattern=i'm considering going vegetarian though . lol, Pattern=. i'm, Pattern=vegetarian, Pattern=have you, Pattern=them, Pattern=i'm, Pattern=considering
+Turn ID=12| A | Human 1 : i love it too . but depending on how it's prepared you can taste the peanut butter . but if prepared well i love it . what kind of food would you have eaten if it wasn't rainy ?
+	Free: Pattern=you, Pattern=have, Pattern=what, Pattern=it, Pattern=i, Pattern=prepared you can taste the peanut, Pattern=. but, Pattern=. but depending on how, Pattern=prepared, Pattern=it's
+	Constrained: Pattern=prepared, Pattern=you, Pattern=. but, Pattern=the
+Turn ID=13| B | Human 2 : i'm considering going vegetarian though . lol 😂 . but depending on how it prepared you can taste the peanut
+	Free: Pattern=i'm considering going vegetarian though . lol, Pattern=prepared you can taste the peanut, Pattern=. but depending on how, Pattern=it
+	Constrained: Pattern=you, Pattern=though, Pattern=vegetarian, Pattern=. but, Pattern=the, Pattern=prepared, Pattern=i'm, Pattern=considering

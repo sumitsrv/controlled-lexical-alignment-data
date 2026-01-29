@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello . how's your week coming along ? 
+A|2| Human 1: _it's great_ , _thanks_ . _i'm trying to learn how to make_ _croissants_ . 
+B|3| Human 2: [it's great] _and_ [i'm trying to learn how to make] hot dogs at home , my favorite food . 
+A|4| Human 1: i've done _them_ _once_ or twice _so_ far , _but_ _they_ haven't _been_ _flakey_ enough . [i'm trying to] figure _out_ why . what _kind of_ _cookies_ _have_ _you_ made ? 
+B|5| Human 2: _i_ am [trying to learn how to] cook [croissants] [but] [i'm] [kind of] [flakey] at _it_ also , [they] seem difficult [to make] [but] 
+A|6| Human 1: ah , _good_ thought , _thanks_ ! 
+B|7| Human 2: _i_ am [good] [thanks] [but] [croissants] are [so] difficult , they've [been] _a_ long process [to learn how to make] [them] right . 
+A|8| Human 1: now _that_ is _a good_ idea . i'll give [it] [a] try next _time_ . _would_ _you_ _say_ _you_ _have_ [a] _sweet tooth_ ? 
+B|9| Human 2: _i_ am more [flakey] then [you] . _i_ [have] [to make] [cookies] [once] in [a] while because _that's_ [how] _i_ spend my [time] [out] [of] _the_ 
+A|10| Human 1: some people don't ! [but] yeah , _me_ too , [i] think i'd _eat_ _pastries_ all [the] [time] if [i] could _get_ away _with_ _it ._ 
+B|11| Human 2: [i] [would] [say] [that] [i'm] [the] opposite . [i] [get] flaky [a] lot [with] [pastries] _and_ baked goods in general 
+A|12| Human 1: wow ! [the] last [time] [i] paid attention [to] [that] sort _of stuff_ _was_ when <redacted_term> _was_ _being_ marketed as [a] fat substitute , [and] caused all sorts [of] crazy stomach upsets . 
+B|13| Human 2: [i] [have] [the] [sweet tooth] for [that] [kind [of] stuff] [and] [with] [me] [being] diabetic its [a good] thing [i] [was] able [to] [eat] [it .] 
+A|14| Human 1: ah , maybe [that's] [the] solution [i] need [to] enjoy sweets [and] not feel guilty 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello . how's your week coming along ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : it's great , thanks . i'm trying to learn how to make croissants .
+	Free: Pattern=i'm trying to learn how to make, Pattern=it's great, Pattern=croissants, Pattern=thanks
+	Constrained: Pattern=to learn how to make, Pattern=how, Pattern=i'm trying to, Pattern=i'm, Pattern=to make, Pattern=to, Pattern=trying to learn how to
+Turn ID=3| B | Human 2 : it's great and i'm trying to learn how to make hot dogs at home , my favorite food .
+	Free: Pattern=i'm trying to learn how to make, Pattern=it's great, Pattern=and
+	Constrained: Pattern=to learn how to make, Pattern=how, Pattern=i'm trying to, Pattern=i'm, Pattern=to make, Pattern=to, Pattern=trying to learn how to
+Turn ID=4| A | Human 1 : i've done them once or twice so far , but they haven't been flakey enough . i'm trying to figure out why . what kind of cookies have you made ?
+	Free: Pattern=kind of, Pattern=have, Pattern=cookies, Pattern=flakey, Pattern=i'm trying to, Pattern=been, Pattern=so, Pattern=you, Pattern=out, Pattern=they, Pattern=once, Pattern=them, Pattern=but
+	Constrained: Pattern=to, Pattern=i'm, Pattern=of
+Turn ID=5| B | Human 2 : i am trying to learn how to cook croissants but i'm kind of flakey at it also , they seem difficult to make but
+	Free: Pattern=kind of, Pattern=they, Pattern=it, Pattern=flakey, Pattern=i'm, Pattern=i, Pattern=to make, Pattern=croissants, Pattern=trying to learn how to, Pattern=but
+	Constrained: Pattern=to, Pattern=how, Pattern=of
+Turn ID=6| A | Human 1 : ah , good thought , thanks !
+	Free: Pattern=thanks, Pattern=good
+	Constrained: 
+Turn ID=7| B | Human 2 : i am good thanks but croissants are so difficult , they've been a long process to learn how to make them right .
+	Free: Pattern=good, Pattern=thanks, Pattern=to learn how to make, Pattern=a, Pattern=i, Pattern=croissants, Pattern=been, Pattern=so, Pattern=them, Pattern=but
+	Constrained: Pattern=to, Pattern=how, Pattern=to make
+Turn ID=8| A | Human 1 : now that is a good idea . i'll give it a try next time . would you say you have a sweet tooth ?
+	Free: Pattern=time, Pattern=you, Pattern=have, Pattern=a, Pattern=a good, Pattern=it, Pattern=say, Pattern=would, Pattern=sweet tooth, Pattern=that
+	Constrained: Pattern=a, Pattern=good
+Turn ID=9| B | Human 2 : i am more flakey then you . i have to make cookies once in a while because that's how i spend my time out of the
+	Free: Pattern=time, Pattern=of, Pattern=have, Pattern=once, Pattern=a, Pattern=how, Pattern=cookies, Pattern=flakey, Pattern=i, Pattern=to make, Pattern=you, Pattern=out, Pattern=that's, Pattern=the
+	Constrained: Pattern=to
+Turn ID=10| A | Human 1 : some people don't ! but yeah , me too , i think i'd eat pastries all the time if i could get away with it .
+	Free: Pattern=time, Pattern=it ., Pattern=i, Pattern=pastries, Pattern=the, Pattern=get, Pattern=me, Pattern=eat, Pattern=with, Pattern=but
+	Constrained: Pattern=it
+Turn ID=11| B | Human 2 : i would say that i'm the opposite . i get flaky a lot with pastries and baked goods in general
+	Free: Pattern=a, Pattern=and, Pattern=i, Pattern=pastries, Pattern=the, Pattern=would, Pattern=get, Pattern=say, Pattern=i'm, Pattern=with, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : wow ! the last time i paid attention to that sort of stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts of crazy stomach upsets .
+	Free: Pattern=time, Pattern=of, Pattern=a, Pattern=and, Pattern=being, Pattern=i, Pattern=of stuff, Pattern=the, Pattern=to, Pattern=was, Pattern=that
+	Constrained: Pattern=of
+Turn ID=13| B | Human 2 : i have the sweet tooth for that kind of stuff and with me being diabetic its a good thing i was able to eat it .
+	Free: Pattern=kind of, Pattern=it ., Pattern=have, Pattern=a good, Pattern=and, Pattern=being, Pattern=i, Pattern=of stuff, Pattern=the, Pattern=was, Pattern=me, Pattern=eat, Pattern=sweet tooth, Pattern=to, Pattern=with, Pattern=that
+	Constrained: Pattern=good, Pattern=it, Pattern=a, Pattern=of
+Turn ID=14| A | Human 1 : ah , maybe that's the solution i need to enjoy sweets and not feel guilty 🙂
+	Free: Pattern=and, Pattern=i, Pattern=to, Pattern=that's, Pattern=the
+	Constrained: 

@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! 
+A|2| Human 1: how's _your_ _day_ _going_ ? 
+B|3| Human 2: great , thanks ! how can _i_ help you ? 
+A|4| Human 1: _i'm good_ ! just getting ready _to watch_ _a_ _basketball game_ . hope _your_ headache goes away ! 
+B|5| Human 2: [i'm good] , thank you ! 😊 [basketball game] ? how exciting ! do you have [a] favorite _team_ ? <|im 
+A|6| Human 1: hmm , try taking _some_ _<redacted_term>_ ! [i'm] _going to_ _see_ _the warriors_ vs . _the_ grizzlies . ever _see_ _them play_ ? 
+B|7| Human 2: [i'm] rooting for [the warriors] [<redacted_term>] [them play] last season . how [good] are they [going to] 
+A|8| Human 1: _haha ,_ _all_ [the] animal _names_ confuse me as well ! _who_ came _up_ _with_ these naming conventions ? _i'd_ _name_ my [team] something more original: [the] new york _chairs_ ! 
+B|9| Human 2: [haha ,] [i'd] [watch] [the] [chairs] [play] 😂 [who] knows ? maybe [some] [day] [all] [team] [names] will <redact 
+A|10| Human 1: oh _cool_ ! what _is_ "neurips" ? 
+B|11| Human 2: neurips 💡 [i'm] [the] [team] [name] [the] [<redacted_term>] [chairs] [with] [cool] [names] 
+A|12| Human 1: oh wow ! sounds fancy ! what _is_ _that about ?_ 
+B|13| Human 2: neurips [is] [a] conference [that] [<redacted_term>] [the] [i'm] [about] [to watch] [the] [chairs] [play] [some] 
+A|14| Human 1: oh , ml ? 
+B|15| Human 2: what's [that about ?] 
+A|16| Human 1: ahh ! [i] saw [a] scary _movie_ [about] [that] once . it _was about_ _this_ sentient _ai_ in [a] dystopian future - very very creepy . it _was_ _called_ _wall-e_ , ever heard of it ? 
+B|17| Human 2: [wall-e] [that] [movie] [was about] [the] [ai] waking [up] [i] [see] [this] [team] [is] [called] [the] [chairs] [with] [cool] [names] what's [your] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=day, Pattern=going, Pattern=your
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thanks ! how can i help you ?
+	Free: Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm good ! just getting ready to watch a basketball game . hope your headache goes away !
+	Free: Pattern=to watch, Pattern=a, Pattern=your, Pattern=i'm good, Pattern=basketball game
+	Constrained: Pattern=good, Pattern=watch, Pattern=i'm
+Turn ID=5| B | Human 2 : i'm good , thank you ! 😊 basketball game ? how exciting ! do you have a favorite team ? <|im
+	Free: Pattern=i'm good, Pattern=basketball game, Pattern=team, Pattern=a
+	Constrained: Pattern=good, Pattern=i'm
+Turn ID=6| A | Human 1 : hmm , try taking some <redacted_term> ! i'm going to see the warriors vs . the grizzlies . ever see them play ?
+	Free: Pattern=going to, Pattern=the warriors, Pattern=some, Pattern=i'm, Pattern=the, Pattern=see, Pattern=<redacted_term>, Pattern=them play
+	Constrained: Pattern=the, Pattern=going, Pattern=play
+Turn ID=7| B | Human 2 : i'm rooting for the warriors <redacted_term> them play last season . how good are they going to
+	Free: Pattern=the warriors, Pattern=i'm, Pattern=going to, Pattern=good, Pattern=<redacted_term>, Pattern=them play
+	Constrained: Pattern=the, Pattern=going, Pattern=play
+Turn ID=8| A | Human 1 : haha , all the animal names confuse me as well ! who came up with these naming conventions ? i'd name my team something more original: the new york chairs !
+	Free: Pattern=i'd, Pattern=name, Pattern=haha ,, Pattern=up, Pattern=team, Pattern=chairs, Pattern=who, Pattern=the, Pattern=all, Pattern=with, Pattern=names
+	Constrained: 
+Turn ID=9| B | Human 2 : haha , i'd watch the chairs play 😂 who knows ? maybe some day all team names will <redact
+	Free: Pattern=i'd, Pattern=some, Pattern=day, Pattern=haha ,, Pattern=play, Pattern=team, Pattern=names, Pattern=watch, Pattern=chairs, Pattern=who, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=10| A | Human 1 : oh cool ! what is "neurips" ?
+	Free: Pattern=is, Pattern=cool
+	Constrained: 
+Turn ID=11| B | Human 2 : neurips 💡 i'm the team name the <redacted_term> chairs with cool names
+	Free: Pattern=chairs, Pattern=cool, Pattern=name, Pattern=<redacted_term>, Pattern=i'm, Pattern=the, Pattern=team, Pattern=with, Pattern=names
+	Constrained: 
+Turn ID=12| A | Human 1 : oh wow ! sounds fancy ! what is that about ?
+	Free: Pattern=that about ?, Pattern=is
+	Constrained: Pattern=that, Pattern=about
+Turn ID=13| B | Human 2 : neurips is a conference that <redacted_term> the i'm about to watch the chairs play some
+	Free: Pattern=to watch, Pattern=<redacted_term>, Pattern=about, Pattern=some, Pattern=i'm, Pattern=is, Pattern=the, Pattern=play, Pattern=that, Pattern=chairs, Pattern=a
+	Constrained: Pattern=watch
+Turn ID=14| A | Human 1 : oh , ml ?
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : what's that about ?
+	Free: Pattern=that about ?
+	Constrained: Pattern=that, Pattern=about
+Turn ID=16| A | Human 1 : ahh ! i saw a scary movie about that once . it was about this sentient ai in a dystopian future - very very creepy . it was called wall-e , ever heard of it ?
+	Free: Pattern=called, Pattern=was about, Pattern=a, Pattern=movie, Pattern=about, Pattern=ai, Pattern=i, Pattern=was, Pattern=that, Pattern=wall-e, Pattern=this
+	Constrained: Pattern=about, Pattern=was
+Turn ID=17| B | Human 2 : wall-e that movie was about the ai waking up i see this team is called the chairs with cool names what's your
+	Free: Pattern=called, Pattern=was about, Pattern=chairs, Pattern=cool, Pattern=movie, Pattern=ai, Pattern=the, Pattern=see, Pattern=up, Pattern=is, Pattern=your, Pattern=i, Pattern=wall-e, Pattern=team, Pattern=this, Pattern=with, Pattern=that, Pattern=names
+	Constrained: Pattern=about, Pattern=was

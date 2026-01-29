@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , how is _it_ going ? 
+A|2| Human 1: pretty _great_ . _i_ _just_ _won_ _a pingpong _game_ . what_ _about_ _you_ ? 
+B|3| Human 2: [great] ! [pingpong] is [a] _fun_ [game . what] do [you] _think_ [about] artificial intelligence ? 
+A|4| Human 1: no , _very_ rarely . _it's_ _kind of_ amazing _that i won_ _, but_ _i'm_ still _taking credit for_ [it] . 
+B|5| Human 2: _i'm just_ an ai [, but] you're [taking credit for] beating [a pingpong game] [that i won] ? [it] seems [very] 
+A|6| Human 1: _haha_ thank [you] , [i] guess [i'm just] _a natural_ . what's _your_ favourite [game] ? 
+B|7| Human 2: [i'm just] an ai [, but] [you] [won] [that] [game] [it's] [very] [kind of] [you] thanking [your] [for] [taking credit for] something [you] 
+A|8| Human 1: what's _racquetball_ _like_ ? from context clues , [i'm] guessing [that] [it] _involves hitting a ball with a_ _racquet_ 
+B|9| Human 2: [haha] [i'm just] [like] [you] [but] [with [a] natural] [racquetball] [game] [that] [involves hitting a ball with a] [for] [credit] [it's] [great] 
+A|10| Human 1: _wow_ ! [a] _cage match_ ! _does_ [it] _get_ _physical_ ? 
+B|11| Human 2: [i'm just] [like] [you] [but] [with] [natural] [physical] [cage match] [that] [involves hitting a ball with] [racquet] [does] [get] [it's] [great] [wow] 
+A|12| Human 1: _that sounds fun_ . [i] [think] [of] tennis itself as being _really_ _athletic and tiring_ , so [i] don't [think] [it's] [a] _sport_ [for] me , though ! 
+B|13| Human 2: [i'm just] [like] [you] [but] [with] [natural] [athletic and tiring] [sport] [that] [involves hitting] [racquetball] [does] [get] [really] [great] [wow] [that sounds fun] 
+A|14| Human 1: [what] [a] good idea , i'd love to ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty great . i just won a pingpong game . what about you ?
+	Free: Pattern=won, Pattern=just, Pattern=about, Pattern=i, Pattern=game . what, Pattern=a pingpong game, Pattern=you, Pattern=great
+	Constrained: Pattern=what, Pattern=a, Pattern=pingpong, Pattern=game
+Turn ID=3| B | Human 2 : great ! pingpong is a fun game . what do you think about artificial intelligence ?
+	Free: Pattern=fun, Pattern=a, Pattern=about, Pattern=think, Pattern=pingpong, Pattern=game . what, Pattern=you, Pattern=great
+	Constrained: Pattern=what, Pattern=game
+Turn ID=4| A | Human 1 : no , very rarely . it's kind of amazing that i won , but i'm still taking credit for it .
+	Free: Pattern=kind of, Pattern=, but, Pattern=that i won, Pattern=taking credit for, Pattern=it, Pattern=i'm, Pattern=very, Pattern=it's
+	Constrained: Pattern=of, Pattern=for, Pattern=i, Pattern=won, Pattern=credit, Pattern=that, Pattern=but
+Turn ID=5| B | Human 2 : i'm just an ai , but you're taking credit for beating a pingpong game that i won ? it seems very
+	Free: Pattern=, but, Pattern=that i won, Pattern=taking credit for, Pattern=it, Pattern=i'm just, Pattern=very, Pattern=a pingpong game
+	Constrained: Pattern=just, Pattern=a, Pattern=game, Pattern=for, Pattern=i'm, Pattern=i, Pattern=pingpong, Pattern=won, Pattern=credit, Pattern=that, Pattern=but
+Turn ID=6| A | Human 1 : haha thank you , i guess i'm just a natural . what's your favourite game ?
+	Free: Pattern=you, Pattern=game, Pattern=i'm just, Pattern=haha, Pattern=a natural, Pattern=your, Pattern=i
+	Constrained: Pattern=a, Pattern=i'm, Pattern=just, Pattern=natural
+Turn ID=7| B | Human 2 : i'm just an ai , but you won that game it's very kind of you thanking your for taking credit for something you
+	Free: Pattern=taking credit for, Pattern=game, Pattern=for, Pattern=i'm just, Pattern=won, Pattern=kind of, Pattern=you, Pattern=, but, Pattern=very, Pattern=your, Pattern=that, Pattern=it's
+	Constrained: Pattern=of, Pattern=credit, Pattern=just, Pattern=for, Pattern=i'm, Pattern=but
+Turn ID=8| A | Human 1 : what's racquetball like ? from context clues , i'm guessing that it involves hitting a ball with a racquet
+	Free: Pattern=involves hitting a ball with a, Pattern=racquetball, Pattern=it, Pattern=racquet, Pattern=i'm, Pattern=like, Pattern=that
+	Constrained: Pattern=involves hitting, Pattern=with, Pattern=involves hitting a ball with, Pattern=with a, Pattern=a
+Turn ID=9| B | Human 2 : haha i'm just like you but with a natural racquetball game that involves hitting a ball with a for credit it's great
+	Free: Pattern=involves hitting a ball with a, Pattern=credit, Pattern=racquetball, Pattern=with a, Pattern=game, Pattern=for, Pattern=i'm just, Pattern=a natural, Pattern=you, Pattern=great, Pattern=haha, Pattern=like, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=involves hitting, Pattern=just, Pattern=natural, Pattern=i'm, Pattern=with, Pattern=involves hitting a ball with, Pattern=with a, Pattern=a
+Turn ID=10| A | Human 1 : wow ! a cage match ! does it get physical ?
+	Free: Pattern=a, Pattern=it, Pattern=wow, Pattern=does, Pattern=cage match, Pattern=physical, Pattern=get
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm just like you but with natural physical cage match that involves hitting a ball with racquet does get it's great wow
+	Free: Pattern=natural, Pattern=i'm just, Pattern=does, Pattern=like, Pattern=cage match, Pattern=physical, Pattern=get, Pattern=involves hitting a ball with, Pattern=you, Pattern=great, Pattern=racquet, Pattern=wow, Pattern=with, Pattern=that, Pattern=it's, Pattern=but
+	Constrained: Pattern=involves hitting, Pattern=just, Pattern=a, Pattern=i'm, Pattern=with
+Turn ID=12| A | Human 1 : that sounds fun . i think of tennis itself as being really athletic and tiring , so i don't think it's a sport for me , though !
+	Free: Pattern=athletic and tiring, Pattern=of, Pattern=a, Pattern=for, Pattern=think, Pattern=i, Pattern=really, Pattern=sport, Pattern=that sounds fun, Pattern=it's
+	Constrained: Pattern=that, Pattern=fun
+Turn ID=13| B | Human 2 : i'm just like you but with natural athletic and tiring sport that involves hitting racquetball does get really great wow that sounds fun
+	Free: Pattern=racquetball, Pattern=natural, Pattern=wow, Pattern=i'm just, Pattern=does, Pattern=sport, Pattern=that sounds fun, Pattern=get, Pattern=athletic and tiring, Pattern=involves hitting, Pattern=you, Pattern=great, Pattern=really, Pattern=like, Pattern=with, Pattern=that, Pattern=but
+	Constrained: Pattern=just, Pattern=that, Pattern=fun, Pattern=i'm
+Turn ID=14| A | Human 1 : what a good idea , i'd love to !
+	Free: Pattern=a, Pattern=what
+	Constrained: 

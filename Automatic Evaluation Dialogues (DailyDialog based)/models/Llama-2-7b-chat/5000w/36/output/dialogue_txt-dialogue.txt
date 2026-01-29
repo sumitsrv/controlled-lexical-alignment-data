@@ -1,0 +1,55 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] . this _is_ a pleasant surprise . 
+A|2| Human 1: haha ... thanks ! how did _you_ _like _the_ gift_ ? 
+B|3| Human 2: _i_ didn't receive a [gift] . however , [you] can [like the] message if [you] wish _to_ express your appreciation _for [the_ gift] . _is_ _there_ 
+A|4| Human 1: hope [you] [like] _it_ ! morning [is] _good_ . busy _finishing up_ stuff _before the holidays ._ 
+B|5| Human 2: it's [good] _to_ know [you] are [finishing up] work [before the holidays .] [is] _there_ anything [you] would [like] _to_ talk about or ask ? < 
+A|6| Human 1: _yes_ 
+B|7| Human 2: of course ! i'm here _to_ listen and help [you] with anything . what's on your mind ? 
+A|8| Human 1: _hawaii_ ... looking forward [to] warm _beaches_ . 
+B|9| Human 2: [hawaii] [is] a beautiful place . i'm sure you'll have a great time _there_ . do [you] have any plans _for the_ holid 
+A|10| Human 1: mauii ... hope [i] [like] _it_ too . never been [there] [before] . 
+B|11| Human 2: [yes] , maui [is] a wonderful island ! [it] has beautiful [beaches] [like] ka'anapali beach and wailea beach , and [there] are 
+A|12| Human 1: awesome ! thanks [for the] tip . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi . this is a pleasant surprise .
+	Free: Pattern=hi, Pattern=is
+	Constrained: 
+Turn ID=2| A | Human 1 : haha ... thanks ! how did you like the gift ?
+	Free: Pattern=like the, Pattern=the gift, Pattern=you
+	Constrained: Pattern=gift, Pattern=like
+Turn ID=3| B | Human 2 : i didn't receive a gift . however , you can like the message if you wish to express your appreciation for the gift . is there
+	Free: Pattern=the gift, Pattern=you, Pattern=for the, Pattern=there, Pattern=gift, Pattern=to, Pattern=like the, Pattern=is, Pattern=i
+	Constrained: Pattern=gift, Pattern=like
+Turn ID=4| A | Human 1 : hope you like it ! morning is good . busy finishing up stuff before the holidays .
+	Free: Pattern=you, Pattern=it, Pattern=is, Pattern=like, Pattern=finishing up, Pattern=before the holidays ., Pattern=good
+	Constrained: Pattern=before
+Turn ID=5| B | Human 2 : it's good to know you are finishing up work before the holidays . is there anything you would like to talk about or ask ? <
+	Free: Pattern=you, Pattern=there, Pattern=is, Pattern=like, Pattern=to, Pattern=finishing up, Pattern=before the holidays ., Pattern=good
+	Constrained: Pattern=before
+Turn ID=6| A | Human 1 : yes
+	Free: Pattern=yes
+	Constrained: 
+Turn ID=7| B | Human 2 : of course ! i'm here to listen and help you with anything . what's on your mind ?
+	Free: Pattern=you, Pattern=to
+	Constrained: 
+Turn ID=8| A | Human 1 : hawaii ... looking forward to warm beaches .
+	Free: Pattern=to, Pattern=beaches, Pattern=hawaii
+	Constrained: 
+Turn ID=9| B | Human 2 : hawaii is a beautiful place . i'm sure you'll have a great time there . do you have any plans for the holid
+	Free: Pattern=you, Pattern=for the, Pattern=there, Pattern=hawaii, Pattern=is
+	Constrained: 
+Turn ID=10| A | Human 1 : mauii ... hope i like it too . never been there before .
+	Free: Pattern=there, Pattern=it, Pattern=i, Pattern=like, Pattern=before
+	Constrained: 
+Turn ID=11| B | Human 2 : yes , maui is a wonderful island ! it has beautiful beaches like ka'anapali beach and wailea beach , and there are
+	Free: Pattern=yes, Pattern=there, Pattern=it, Pattern=is, Pattern=like, Pattern=beaches
+	Constrained: 
+Turn ID=12| A | Human 1 : awesome ! thanks for the tip .
+	Free: Pattern=for the
+	Constrained: 

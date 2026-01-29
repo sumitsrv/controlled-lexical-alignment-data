@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: _it's_ on _the_ screen ! _i don't_ recall meeting [you] . do _you have a_ sense of _where_ we [met] ? 
+B|3| Human 2: _i'm_ just an ai , [i don't] [have] personal experiences or memories , _but_ [i] can try _to_ help [you] figure out [where] [you] 
+A|4| Human 1: _did_ we dance _together_ perchance ? 
+B|5| Human 2: [it's] possible ! [did] [you have a] great time [together] ? 
+A|6| Human 1: _lol_ . were [you] schwasty ? 
+B|7| Human 2: 🤔 [did] [you have] too much _to_ drink ? [lol] 
+A|8| Human 1: [i'm] [a] cardiologist in palo alto . [i] [have _a] private practice_ . [you] ? 
+B|9| Human 2: [i'm] just llama [a] simple chatbot trained by meta ai , [i don't] [have] personal experiences or [a private practice] card 
+A|10| Human 1: _i'm not sure_ [i] know _what that is ._ 
+B|11| Human 2: [i'm not sure] [what that is .] [did] [you have a] good time at [the] party ? 
+A|12| Human 1: [lol] . [not] [to] be _elitist but_ ... that's [a] _real job_ ? 
+B|13| Human 2: [i'm not sure] [what that] means . </s>sorry ! [lol] 😂 . it [is] [elitist but] [real job] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=i, Pattern=met, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=you, Pattern=i don't, Pattern=you have a, Pattern=where, Pattern=met, Pattern=the, Pattern=it's
+	Constrained: Pattern=you, Pattern=have, Pattern=have a, Pattern=a, Pattern=you have, Pattern=i
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have personal experiences or memories , but i can try to help you figure out where you
+	Free: Pattern=you, Pattern=i, Pattern=to, Pattern=but, Pattern=i don't, Pattern=have, Pattern=where, Pattern=i'm
+	Constrained: Pattern=i
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=together, Pattern=did
+	Constrained: 
+Turn ID=5| B | Human 2 : it's possible ! did you have a great time together ?
+	Free: Pattern=you have a, Pattern=together, Pattern=did, Pattern=it's
+	Constrained: Pattern=you, Pattern=have, Pattern=have a, Pattern=a, Pattern=you have
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=lol, Pattern=you
+	Constrained: 
+Turn ID=7| B | Human 2 : 🤔 did you have too much to drink ? lol
+	Free: Pattern=you have, Pattern=to, Pattern=lol, Pattern=did
+	Constrained: Pattern=have, Pattern=you
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=you, Pattern=have a, Pattern=a, Pattern=i'm, Pattern=a private practice, Pattern=i
+	Constrained: Pattern=a, Pattern=have
+Turn ID=9| B | Human 2 : i'm just llama a simple chatbot trained by meta ai , i don't have personal experiences or a private practice card
+	Free: Pattern=a, Pattern=i'm, Pattern=a private practice, Pattern=i don't, Pattern=have
+	Constrained: Pattern=a, Pattern=i
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=what that is ., Pattern=i'm not sure, Pattern=i
+	Constrained: Pattern=is, Pattern=not, Pattern=i'm, Pattern=what that
+Turn ID=11| B | Human 2 : i'm not sure what that is . did you have a good time at the party ?
+	Free: Pattern=did, Pattern=you have a, Pattern=the, Pattern=i'm not sure, Pattern=what that is .
+	Constrained: Pattern=what that, Pattern=you, Pattern=have, Pattern=have a, Pattern=a, Pattern=you have, Pattern=i'm, Pattern=is, Pattern=not
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=a, Pattern=elitist but, Pattern=to, Pattern=not, Pattern=lol, Pattern=real job
+	Constrained: Pattern=but
+Turn ID=13| B | Human 2 : i'm not sure what that means . </s>sorry ! lol 😂 . it is elitist but real job
+	Free: Pattern=is, Pattern=elitist but, Pattern=i'm not sure, Pattern=what that, Pattern=lol, Pattern=real job
+	Constrained: Pattern=not, Pattern=i'm, Pattern=but

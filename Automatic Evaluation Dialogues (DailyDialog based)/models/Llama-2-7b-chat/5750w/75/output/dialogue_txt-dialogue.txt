@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: _it's_ on _the_ screen ! [i] don't recall meeting [you] . do _you have a_ sense of where we [met] ? 
+B|3| Human 2: ah , _i'm_ afraid [you have] [met] [the] ai 😊 [it's] nice _to_ "meet" [you] again ! _is_ 
+A|4| Human 1: _did_ we _dance together perchance ?_ 
+B|5| Human 2: [it's] possible ! 💃 _i'm_ glad you're enjoying [the] [dance] party ! _is_ there anything else [i] can help 
+A|6| Human 1: _lol_ . were [you] _schwasty_ ? 
+B|7| Human 2: [lol] you're [the] one who [schwasty] [dance together perchance ?] _that's a_ 
+A|8| Human 1: [i'm] [a] _cardiologist_ in palo alto . [i] _have a_ private _practice_ . [you] ? 
+B|9| Human 2: [i'm] just llama [a] simple chatbot trained by meta ai . my [cardiologist] [practice] _is_ online only . _what_ brings [you] 
+A|10| Human 1: _i'm not sure_ [i] _know _what_ that is_ . 
+B|11| Human 2: [i'm not sure] [what that is] either 😅 [did] [you have a] [dance] party _to_ celebrate something ? <|im_end 
+A|12| Human 1: [lol] . [not] [to] be _elitist_ but ... [that's _a] real job_ ? 
+B|13| Human 2: [it's] [not] [elitist] [to] [have [a] real job] 😅 [i'm] [sure] [you] [cardiologist] llama [know what] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=i, Pattern=you, Pattern=met
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=you, Pattern=you have a, Pattern=the, Pattern=it's, Pattern=i, Pattern=met
+	Constrained: Pattern=a, Pattern=you, Pattern=you have, Pattern=have a
+Turn ID=3| B | Human 2 : ah , i'm afraid you have met the ai 😊 it's nice to "meet" you again ! is
+	Free: Pattern=you, Pattern=you have, Pattern=i'm, Pattern=the, Pattern=to, Pattern=it's, Pattern=is, Pattern=met
+	Constrained: Pattern=you
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=dance together perchance ?, Pattern=did
+	Constrained: Pattern=dance
+Turn ID=5| B | Human 2 : it's possible ! 💃 i'm glad you're enjoying the dance party ! is there anything else i can help
+	Free: Pattern=i'm, Pattern=the, Pattern=it's, Pattern=is, Pattern=dance, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=schwasty, Pattern=you, Pattern=lol
+	Constrained: 
+Turn ID=7| B | Human 2 : lol you're the one who schwasty dance together perchance ? that's a
+	Free: Pattern=schwasty, Pattern=lol, Pattern=dance together perchance ?, Pattern=that's a, Pattern=the
+	Constrained: Pattern=a, Pattern=dance
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=you, Pattern=practice, Pattern=have a, Pattern=a, Pattern=i'm, Pattern=i, Pattern=cardiologist
+	Constrained: Pattern=a
+Turn ID=9| B | Human 2 : i'm just llama a simple chatbot trained by meta ai . my cardiologist practice is online only . what brings you
+	Free: Pattern=you, Pattern=practice, Pattern=what, Pattern=a, Pattern=i'm, Pattern=is, Pattern=cardiologist
+	Constrained: 
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=what that is, Pattern=i'm not sure, Pattern=know what, Pattern=i
+	Constrained: Pattern=what, Pattern=i'm, Pattern=is, Pattern=sure, Pattern=not
+Turn ID=11| B | Human 2 : i'm not sure what that is either 😅 did you have a dance party to celebrate something ? <|im_end
+	Free: Pattern=did, Pattern=you have a, Pattern=what that is, Pattern=dance, Pattern=i'm not sure, Pattern=to
+	Constrained: Pattern=you, Pattern=a, Pattern=you have, Pattern=i'm, Pattern=is, Pattern=sure, Pattern=not, Pattern=what, Pattern=have a
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=lol, Pattern=elitist, Pattern=to, Pattern=not, Pattern=a real job, Pattern=that's a
+	Constrained: Pattern=a
+Turn ID=13| B | Human 2 : it's not elitist to have a real job 😅 i'm sure you cardiologist llama know what
+	Free: Pattern=you, Pattern=have a, Pattern=elitist, Pattern=a real job, Pattern=to, Pattern=it's, Pattern=not, Pattern=i'm, Pattern=know what, Pattern=cardiologist, Pattern=sure
+	Constrained: Pattern=what, Pattern=a

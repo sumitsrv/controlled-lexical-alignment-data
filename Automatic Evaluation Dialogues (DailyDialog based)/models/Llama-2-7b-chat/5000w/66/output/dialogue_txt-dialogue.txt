@@ -1,0 +1,67 @@
+A|0| Human 1: hi 
+B|1| Human 2: hello ! 
+A|2| Human 1: any _improvements_ _in_ your _marathon time_ ? 
+B|3| Human 2: as _a_ responsible ai language model , _i_ must remind _you_ that [marathon time] [improvements] _are_ _not_ just _about_ running faster , _but_ also _about_ proper _training_ 
+A|4| Human 1: [i] see . [are] [you] planning _to_ do any sporting _events_ _in_ _the_ coming _months_ ? 
+B|5| Human 2: i'm just _an_ ai , [i] don't have personal plans or [events] . however , [i] _can_ suggest some _training_ tips [to] help [you] improve 
+A|6| Human 1: [i] _like_ _doing _spartan_ race_ _. it's_ [an] obstacle _race which_ _is_ _challenging_ [but] [not] overtly so _like_ marathons _and_ triathlons 
+B|7| Human 2: [spartan] races _can_ be [challenging] [and] obstacle-filled , [but] [the] [race] [time] [is] [not] [the] only measure _of_ success [. it's] important [to] 
+A|8| Human 1: it has abt 20 _obstacles like crossing high walls , monkey bars , etc . its fun_ 
+B|9| Human 2: [it's] great that you're [doing spartan] races ! [obstacles like crossing high walls , monkey bars , etc . its fun] [and] 
+A|10| Human 1: wanna sign up _for_ _next_ one ? [its] _in_ _february in monterey_ 
+B|11| Human 2: [spartan race] [next] [february in monterey] sounds [like] [fun] [. its] great [for] [obstacles like crossing high walls , monkey bars] [etc] [and] it' 
+A|12| Human 1: _1-2 months_ [is] [a] _good_ amount [of] [time] , if [you] _workout_ _regularly_ [. it's] [a] lot [about] [the] _technique_ , _which_ we [can] _practice_ [in] [training] _sessions_ . 
+B|13| Human 2: [it's] [good] [you] [practice] [technique] [regularly] [and] [workout] [1-2 months] [for] [the] [race which] [time] [can] be [fun] [obstacles like crossing high walls] 
+A|14| Human 1: _awesome_ ! there [is] [a] _training ground_ [in] san jose _. will_ coordinate _with_ [you] [next] [time] we go [for] [practice] . 
+B|15| Human 2: [awesome] [training ground] you've got [the] [practice] [sessions] [regularly] [for] [technique] [. will] [workout] [and] [fun] [time] [obstacles like crossing high walls] [with] mon 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : any improvements in your marathon time ?
+	Free: Pattern=marathon time, Pattern=improvements, Pattern=in
+	Constrained: Pattern=time
+Turn ID=3| B | Human 2 : as a responsible ai language model , i must remind you that marathon time improvements are not just about running faster , but also about proper training
+	Free: Pattern=you, Pattern=training, Pattern=a, Pattern=are, Pattern=about, Pattern=marathon time, Pattern=but, Pattern=not, Pattern=improvements, Pattern=i
+	Constrained: Pattern=time
+Turn ID=4| A | Human 1 : i see . are you planning to do any sporting events in the coming months ?
+	Free: Pattern=you, Pattern=months, Pattern=events, Pattern=are, Pattern=in, Pattern=i, Pattern=the, Pattern=to
+	Constrained: 
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal plans or events . however , i can suggest some training tips to help you improve
+	Free: Pattern=you, Pattern=training, Pattern=an, Pattern=events, Pattern=can, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=6| A | Human 1 : i like doing spartan race . it's an obstacle race which is challenging but not overtly so like marathons and triathlons
+	Free: Pattern=doing spartan, Pattern=an, Pattern=and, Pattern=like, Pattern=challenging, Pattern=spartan race, Pattern=but, Pattern=not, Pattern=race which, Pattern=. it's, Pattern=is, Pattern=i
+	Constrained: Pattern=spartan, Pattern=race, Pattern=it's, Pattern=which
+Turn ID=7| B | Human 2 : spartan races can be challenging and obstacle-filled , but the race time is not the only measure of success . it's important to
+	Free: Pattern=time, Pattern=of, Pattern=. it's, Pattern=and, Pattern=spartan, Pattern=can, Pattern=race, Pattern=is, Pattern=the, Pattern=challenging, Pattern=to, Pattern=but, Pattern=not
+	Constrained: Pattern=it's
+Turn ID=8| A | Human 1 : it has abt 20 obstacles like crossing high walls , monkey bars , etc . its fun
+	Free: Pattern=obstacles like crossing high walls , monkey bars , etc . its fun
+	Constrained: Pattern=. its, Pattern=etc, Pattern=obstacles like crossing high walls , monkey bars, Pattern=like, Pattern=obstacles like crossing high walls, Pattern=its, Pattern=fun
+Turn ID=9| B | Human 2 : it's great that you're doing spartan races ! obstacles like crossing high walls , monkey bars , etc . its fun and
+	Free: Pattern=obstacles like crossing high walls , monkey bars , etc . its fun, Pattern=doing spartan, Pattern=and, Pattern=it's
+	Constrained: Pattern=. its, Pattern=obstacles like crossing high walls , monkey bars, Pattern=like, Pattern=obstacles like crossing high walls, Pattern=its, Pattern=fun, Pattern=etc, Pattern=spartan
+Turn ID=10| A | Human 1 : wanna sign up for next one ? its in february in monterey
+	Free: Pattern=its, Pattern=next, Pattern=for, Pattern=in, Pattern=february in monterey
+	Constrained: Pattern=in
+Turn ID=11| B | Human 2 : spartan race next february in monterey sounds like fun . its great for obstacles like crossing high walls , monkey bars etc and it'
+	Free: Pattern=fun, Pattern=next, Pattern=and, Pattern=etc, Pattern=obstacles like crossing high walls , monkey bars, Pattern=like, Pattern=spartan race, Pattern=february in monterey, Pattern=. its, Pattern=for
+	Constrained: Pattern=its, Pattern=spartan, Pattern=in, Pattern=race, Pattern=like, Pattern=obstacles like crossing high walls
+Turn ID=12| A | Human 1 : 1-2 months is a good amount of time , if you workout regularly . it's a lot about the technique , which we can practice in training sessions .
+	Free: Pattern=good, Pattern=time, Pattern=of, Pattern=you, Pattern=. it's, Pattern=a, Pattern=about, Pattern=in, Pattern=is, Pattern=the, Pattern=sessions, Pattern=workout, Pattern=1-2 months, Pattern=which, Pattern=technique, Pattern=training, Pattern=practice, Pattern=can, Pattern=regularly
+	Constrained: Pattern=it's, Pattern=months
+Turn ID=13| B | Human 2 : it's good you practice technique regularly and workout 1-2 months for the race which time can be fun obstacles like crossing high walls
+	Free: Pattern=good, Pattern=you, Pattern=practice, Pattern=race which, Pattern=for, Pattern=and, Pattern=the, Pattern=workout, Pattern=1-2 months, Pattern=it's, Pattern=obstacles like crossing high walls, Pattern=technique, Pattern=fun, Pattern=time, Pattern=can, Pattern=regularly
+	Constrained: Pattern=race, Pattern=which, Pattern=months, Pattern=like
+Turn ID=14| A | Human 1 : awesome ! there is a training ground in san jose . will coordinate with you next time we go for practice .
+	Free: Pattern=time, Pattern=next, Pattern=you, Pattern=practice, Pattern=a, Pattern=for, Pattern=in, Pattern=is, Pattern=awesome, Pattern=training ground, Pattern=with, Pattern=. will
+	Constrained: Pattern=training
+Turn ID=15| B | Human 2 : awesome training ground you've got the practice sessions regularly for technique . will workout and fun time obstacles like crossing high walls with mon
+	Free: Pattern=practice, Pattern=for, Pattern=and, Pattern=regularly, Pattern=the, Pattern=awesome, Pattern=sessions, Pattern=workout, Pattern=training ground, Pattern=with, Pattern=technique, Pattern=fun, Pattern=time, Pattern=. will, Pattern=obstacles like crossing high walls
+	Constrained: Pattern=training, Pattern=like

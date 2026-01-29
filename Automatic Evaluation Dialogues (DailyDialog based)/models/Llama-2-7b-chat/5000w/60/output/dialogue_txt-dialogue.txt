@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: _it's _good_ ! how_ is your day ? 
+B|3| Human 2: [it's] _going_ [good ! how] _can_ _i_ help _you_ today ? </s>00:00:00 | 📝 | 
+A|4| Human 1: yes , _the_ darkness _can be a_ bit depressing . this weekend [i] went _rock climbing_ ! [it] was _great_ [! _how] about_ yourself ? 
+B|5| Human 2: 😍 [how] cool ! [rock climbing] [can be a] [great] workout _and_ [a] _fun_ challenge . did _you_ climb anything particularly difficult ? 
+A|6| Human 1: oh _nice_ ! _what_ _movie_ ? 
+B|7| Human 2: 🤔 [what] [can] [i] help _you_ with ? [how about] [movie] suggestions ? i'm [good] _at_ _that_ ! 😃< 
+A|8| Human 1: _hahah_ yes , they _all_ look _the_ _same_ ! [i] saw [that] _very_ _same_ [movie] _over thanksgiving break_ . lots of twists [and] turns ! 
+B|9| Human 2: [hahah] [same] 😂 what's [the] twist ? [how about] [movie] night [over thanksgiving break] ? did _you_ [all] watch 
+A|10| Human 1: _hmm_ [good] question . evening runs [can be] [fun] , _but_ [it] [can be a] _little_ scary _when it's dark_ out ! 
+B|11| Human 2: 😅 [hmm] that's [good] _to_ know ! [thanksgiving break] [movie] [fun] [can be] [the] [little] outing [when it's dark] 
+A|12| Human 1: yes ! i've been [to] australia . [it] was _very_ nice; [i] regret not [going] [to] _see_ [the] _southern lights_ . me personally , [i] like _winter_ . _but_ i'd _prefer_ [it] [to] [be] more _brief_ _than_ [it] actually is _here_ ... where _are_ [you] from originally ? 
+B|13| Human 2: [i] [see] 😂 [winter] [can be] [nice] [but] [it's good] [you] [prefer] [the] [brief] version [here] [than] [the] [very] long [and] [dark] winters 
+A|14| Human 1: ahh me _too_ ! [you] should _definitely_ try [to] visit australia [at] least once ! 
+B|15| Human 2: australia's [southern lights] [are] [definitely] on [the] bucket list 😅 [winter] [can] last [too] long [here] in [the] northern hemisphere [you] [see] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=good ! how, Pattern=it's good
+	Constrained: Pattern=! how, Pattern=it's, Pattern=good, Pattern=how
+Turn ID=3| B | Human 2 : it's going good ! how can i help you today ? </s>00:00:00 | 📝 |
+	Free: Pattern=you, Pattern=going, Pattern=can, Pattern=i, Pattern=good ! how, Pattern=it's
+	Constrained: Pattern=! how, Pattern=good, Pattern=how
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=great, Pattern=it, Pattern=the, Pattern=rock climbing, Pattern=can be a, Pattern=how about, Pattern=! how, Pattern=i
+	Constrained: Pattern=a, Pattern=can, Pattern=be, Pattern=how, Pattern=can be
+Turn ID=5| B | Human 2 : 😍 how cool ! rock climbing can be a great workout and a fun challenge . did you climb anything particularly difficult ?
+	Free: Pattern=fun, Pattern=a, Pattern=how, Pattern=and, Pattern=rock climbing, Pattern=can be a, Pattern=you, Pattern=great
+	Constrained: Pattern=a, Pattern=can be, Pattern=can, Pattern=be
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=nice, Pattern=movie, Pattern=what
+	Constrained: 
+Turn ID=7| B | Human 2 : 🤔 what can i help you with ? how about movie suggestions ? i'm good at that ! 😃<
+	Free: Pattern=good, Pattern=you, Pattern=what, Pattern=movie, Pattern=that, Pattern=can, Pattern=at, Pattern=how about, Pattern=i
+	Constrained: Pattern=how
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=movie, Pattern=over thanksgiving break, Pattern=same, Pattern=that, Pattern=and, Pattern=hahah, Pattern=very, Pattern=i, Pattern=the, Pattern=all
+	Constrained: Pattern=thanksgiving break
+Turn ID=9| B | Human 2 : hahah same 😂 what's the twist ? how about movie night over thanksgiving break ? did you all watch
+	Free: Pattern=you, Pattern=movie, Pattern=hahah, Pattern=how about, Pattern=over thanksgiving break, Pattern=same, Pattern=the, Pattern=all
+	Constrained: Pattern=thanksgiving break, Pattern=how
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=good, Pattern=fun, Pattern=little, Pattern=can be, Pattern=it, Pattern=hmm, Pattern=when it's dark, Pattern=but, Pattern=can be a
+	Constrained: Pattern=dark, Pattern=a, Pattern=can be, Pattern=can, Pattern=be, Pattern=it's
+Turn ID=11| B | Human 2 : 😅 hmm that's good to know ! thanksgiving break movie fun can be the little outing when it's dark
+	Free: Pattern=good, Pattern=fun, Pattern=little, Pattern=can be, Pattern=movie, Pattern=thanksgiving break, Pattern=hmm, Pattern=the, Pattern=to, Pattern=when it's dark
+	Constrained: Pattern=it's, Pattern=dark, Pattern=can, Pattern=be
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=you, Pattern=going, Pattern=here, Pattern=southern lights, Pattern=it, Pattern=are, Pattern=winter, Pattern=than, Pattern=brief, Pattern=be, Pattern=the, Pattern=see, Pattern=to, Pattern=but, Pattern=very, Pattern=prefer, Pattern=i
+	Constrained: 
+Turn ID=13| B | Human 2 : i see 😂 winter can be nice but it's good you prefer the brief version here than the very long and dark winters
+	Free: Pattern=here, Pattern=can be, Pattern=nice, Pattern=and, Pattern=winter, Pattern=than, Pattern=brief, Pattern=the, Pattern=see, Pattern=it's good, Pattern=but, Pattern=you, Pattern=dark, Pattern=very, Pattern=prefer, Pattern=i
+	Constrained: Pattern=it's, Pattern=good, Pattern=be, Pattern=can
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=you, Pattern=too, Pattern=at, Pattern=definitely, Pattern=to
+	Constrained: 
+Turn ID=15| B | Human 2 : australia's southern lights are definitely on the bucket list 😅 winter can last too long here in the northern hemisphere you see
+	Free: Pattern=you, Pattern=here, Pattern=southern lights, Pattern=too, Pattern=are, Pattern=can, Pattern=winter, Pattern=definitely, Pattern=the, Pattern=see
+	Constrained: 

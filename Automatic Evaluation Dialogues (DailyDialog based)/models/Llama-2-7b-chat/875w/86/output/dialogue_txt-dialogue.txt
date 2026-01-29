@@ -1,0 +1,71 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: morning ! _how_ are _you_ ? 
+A|2| Human 1: _i_ am doing well . do _you have_ any _plans_ _for_ _the_ _holidays_ ? 
+B|3| Human 2: i'm _just_ an ai _, _i_ don't have_ personal [plans] or [holidays] . however , i'm here _to_ help [you] _with_ 
+A|4| Human 1: [i don't have] any special [plans] . [i] _will_ [just] stay _at_ home [with] my _family . how_ come _you have_ [to] _work_ on christmas ? 
+B|5| Human 2: i'm [just] an ai _, [i_ don't have] [holidays] or [work] _, but_ [you] [will] always be [with] [family . how] is [the] 
+A|6| Human 1: [i] see . where _did you_ go ? 
+B|7| Human 2: [with] [you] [family .] [did [you] have] _a_ nice _time_ ? 
+A|8| Human 1: [i] [have] not . [i] [have] only _been_ [to] _uganda_ _in_ africa . 
+B|9| Human 2: sorry [to] hear that . [uganda] is _a_ beautiful country [with] _a_ rich culture . what [did you] enjoy most about your trip ? <|im_ 
+A|10| Human 1: _i _was_ working_ on [a] _volunteer_ project [to] build [a] school _and_ [i] traveled _around_ [a] bit by myself after . _it_ _was_ _more than 10 years ago , so it must have changed a lot ._ 
+B|11| Human 2: [was working] [and] [have] [been] [around] [for] [more than 10 years ago , so it must have changed a lot [.] how] [was] your experience volunteering 
+A|12| Human 1: no , [it] [was] using [a] non-profit organization . _they_ do _these kinds of_ _volunteer projects all over the world_ . 
+B|13| Human 2: [volunteer projects all over the world] [they] [did] [these kinds of] [projects] [more than 10 years ago ,] [and] [have] [been] [working] [with] various non- 
+A|14| Human 1: [it] [was] called ijgd . it's [a] german organization [, but] _they have local partners all over the world_ . _i was living in germany at the time_ . 
+B|15| Human 2: [i was living in germany at the time] [they have local partners all over the world] [and] [they] [work] [with] [these] [partners] [to] find [projects] that volunteers can 
+A|16| Human 1: yes [, i] grew up [in germany] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : morning ! how are you ?
+	Free: Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i am doing well . do you have any plans for the holidays ?
+	Free: Pattern=holidays, Pattern=plans, Pattern=for, Pattern=you have, Pattern=i, Pattern=the
+	Constrained: Pattern=have, Pattern=you
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have personal plans or holidays . however , i'm here to help you with
+	Free: Pattern=holidays, Pattern=plans, Pattern=you, Pattern=just, Pattern=, i, Pattern=to, Pattern=i don't have, Pattern=with
+	Constrained: Pattern=have, Pattern=i
+Turn ID=4| A | Human 1 : i don't have any special plans . i will just stay at home with my family . how come you have to work on christmas ?
+	Free: Pattern=plans, Pattern=just, Pattern=at, Pattern=work, Pattern=i, Pattern=to, Pattern=family . how, Pattern=will, Pattern=you have, Pattern=i don't have, Pattern=with
+	Constrained: Pattern=you, Pattern=have, Pattern=how, Pattern=. how, Pattern=i, Pattern=family .
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have holidays or work , but you will always be with family . how is the
+	Free: Pattern=holidays, Pattern=just, Pattern=will, Pattern=work, Pattern=family . how, Pattern=you, Pattern=, but, Pattern=the, Pattern=, i, Pattern=i don't have, Pattern=with
+	Constrained: Pattern=have, Pattern=how, Pattern=. how, Pattern=i, Pattern=family .
+Turn ID=6| A | Human 1 : i see . where did you go ?
+	Free: Pattern=did you, Pattern=i
+	Constrained: Pattern=you, Pattern=did
+Turn ID=7| B | Human 2 : with you family . did you have a nice time ?
+	Free: Pattern=time, Pattern=you, Pattern=did you, Pattern=a, Pattern=you have, Pattern=family ., Pattern=with
+	Constrained: Pattern=have, Pattern=you, Pattern=did
+Turn ID=8| A | Human 1 : i have not . i have only been to uganda in africa .
+	Free: Pattern=have, Pattern=uganda, Pattern=in, Pattern=i, Pattern=to, Pattern=been
+	Constrained: 
+Turn ID=9| B | Human 2 : sorry to hear that . uganda is a beautiful country with a rich culture . what did you enjoy most about your trip ? <|im_
+	Free: Pattern=did you, Pattern=a, Pattern=uganda, Pattern=to, Pattern=with
+	Constrained: Pattern=you, Pattern=did
+Turn ID=10| A | Human 1 : i was working on a volunteer project to build a school and i traveled around a bit by myself after . it was more than 10 years ago , so it must have changed a lot .
+	Free: Pattern=i was, Pattern=a, Pattern=around, Pattern=i, Pattern=was working, Pattern=more than 10 years ago , so it must have changed a lot ., Pattern=to, Pattern=was, Pattern=it, Pattern=and, Pattern=volunteer
+	Constrained: Pattern=have, Pattern=a, Pattern=working, Pattern=i, Pattern=was, Pattern=it, Pattern=more than 10 years ago ,
+Turn ID=11| B | Human 2 : was working and have been around for more than 10 years ago , so it must have changed a lot . how was your experience volunteering
+	Free: Pattern=have, Pattern=and, Pattern=. how, Pattern=was working, Pattern=more than 10 years ago , so it must have changed a lot ., Pattern=around, Pattern=for, Pattern=been, Pattern=was
+	Constrained: Pattern=have, Pattern=a, Pattern=how, Pattern=working, Pattern=was, Pattern=it, Pattern=more than 10 years ago ,
+Turn ID=12| A | Human 1 : no , it was using a non-profit organization . they do these kinds of volunteer projects all over the world .
+	Free: Pattern=volunteer projects all over the world, Pattern=they, Pattern=a, Pattern=it, Pattern=was, Pattern=these kinds of
+	Constrained: Pattern=these, Pattern=projects, Pattern=volunteer, Pattern=the
+Turn ID=13| B | Human 2 : volunteer projects all over the world they did these kinds of projects more than 10 years ago , and have been working with various non-
+	Free: Pattern=volunteer projects all over the world, Pattern=have, Pattern=they, Pattern=did, Pattern=projects, Pattern=working, Pattern=been, Pattern=with, Pattern=these kinds of, Pattern=and, Pattern=more than 10 years ago ,
+	Constrained: Pattern=these, Pattern=projects, Pattern=volunteer, Pattern=the
+Turn ID=14| A | Human 1 : it was called ijgd . it's a german organization , but they have local partners all over the world . i was living in germany at the time .
+	Free: Pattern=i was living in germany at the time, Pattern=, but, Pattern=a, Pattern=it, Pattern=they have local partners all over the world, Pattern=was
+	Constrained: Pattern=in germany, Pattern=have, Pattern=they, Pattern=in, Pattern=i, Pattern=the, Pattern=was, Pattern=time, Pattern=i was, Pattern=at, Pattern=partners
+Turn ID=15| B | Human 2 : i was living in germany at the time they have local partners all over the world and they work with these partners to find projects that volunteers can
+	Free: Pattern=i was living in germany at the time, Pattern=they, Pattern=and, Pattern=projects, Pattern=work, Pattern=they have local partners all over the world, Pattern=to, Pattern=with, Pattern=partners, Pattern=these
+	Constrained: Pattern=in germany, Pattern=have, Pattern=they, Pattern=in, Pattern=i, Pattern=the, Pattern=was, Pattern=time, Pattern=i was, Pattern=at, Pattern=partners
+Turn ID=16| A | Human 1 : yes , i grew up in germany .
+	Free: Pattern=in germany, Pattern=, i
+	Constrained: Pattern=in, Pattern=i

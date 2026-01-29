@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how're _you_ _doing_ ? _busy_ _with_ _your_ work ? 
+A|2| Human 1: _yes , actually_ it _was_ _a_ _very_ [busy] day ! how's [your] day so far ? 
+B|3| Human 2: _it's_ going good _! i_ [was] [actually] _just_ answering [your] message 😁 how can _i_ assist _you_ today ? <|im_end 
+A|4| Human 1: hope [you] are _having fun_ [doing] _that_ _🙂 any plans for the _weekend_ ?_ 
+B|5| Human 2: [yes , actually] 😊 i'm [having fun] working on [a] new project [that] i'm [very] excited about ! how about [you] ? 
+A|6| Human 1: europe _sounds _fun_ [!_ i] _will_ [just] stay home _and_ watch _the_ game . where in europe do [you] plan _to_ visit ? 
+B|7| Human 2: [sounds fun] [🙂 any plans for the weekend] [that] you'd like [to] share ? 
+A|8| Human 1: _sounds great [!_ i] recommend spain . _it's perfect for road trips_ . 
+B|9| Human 2: [sounds great !] [it's perfect for road trips] [and] [the] food is delicious ! how [was] [your] [weekend ?] [any plans for the] 
+A|10| Human 1: yep , [i] tried _learning_ spanish too , but couldn't _make_ _much_ progress . but [i] should do decent [with] my _german_ . 
+B|11| Human 2: that's [great !] [learning] [german] [will] definitely [make] [your] [road trips] [much] easier [and] [fun !] [any plans for the weekend] [that] you' 
+A|12| Human 1: thanks ! let me try [to] [make] all [the] arrangement as soon as possible . hope [you] also enjoy [your] weekday [and] [weekend] as well 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how're you doing ? busy with your work ?
+	Free: Pattern=you, Pattern=busy, Pattern=doing, Pattern=your, Pattern=with
+	Constrained: 
+Turn ID=2| A | Human 1 : yes , actually it was a very busy day ! how's your day so far ?
+	Free: Pattern=yes , actually, Pattern=was, Pattern=busy, Pattern=a, Pattern=very, Pattern=your
+	Constrained: Pattern=actually
+Turn ID=3| B | Human 2 : it's going good ! i was actually just answering your message 😁 how can i assist you today ? <|im_end
+	Free: Pattern=you, Pattern=just, Pattern=actually, Pattern=! i, Pattern=was, Pattern=it's, Pattern=your, Pattern=i
+	Constrained: Pattern=i
+Turn ID=4| A | Human 1 : hope you are having fun doing that 🙂 any plans for the weekend ?
+	Free: Pattern=you, Pattern=doing, Pattern=🙂 any plans for the weekend, Pattern=having fun, Pattern=weekend ?, Pattern=that
+	Constrained: Pattern=any plans for the, Pattern=any plans for the weekend, Pattern=weekend, Pattern=the
+Turn ID=5| B | Human 2 : yes , actually 😊 i'm having fun working on a new project that i'm very excited about ! how about you ?
+	Free: Pattern=you, Pattern=yes , actually, Pattern=a, Pattern=having fun, Pattern=very, Pattern=that
+	Constrained: Pattern=actually
+Turn ID=6| A | Human 1 : europe sounds fun ! i will just stay home and watch the game . where in europe do you plan to visit ?
+	Free: Pattern=you, Pattern=just, Pattern=sounds fun, Pattern=will, Pattern=the, Pattern=to, Pattern=fun !, Pattern=and, Pattern=! i
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : sounds fun 🙂 any plans for the weekend that you'd like to share ?
+	Free: Pattern=🙂 any plans for the weekend, Pattern=sounds fun, Pattern=that, Pattern=to
+	Constrained: Pattern=any plans for the, Pattern=any plans for the weekend, Pattern=weekend, Pattern=the
+Turn ID=8| A | Human 1 : sounds great ! i recommend spain . it's perfect for road trips .
+	Free: Pattern=it's perfect for road trips, Pattern=sounds great !, Pattern=! i
+	Constrained: Pattern=i, Pattern=great !, Pattern=it's, Pattern=road trips
+Turn ID=9| B | Human 2 : sounds great ! it's perfect for road trips and the food is delicious ! how was your weekend ? any plans for the
+	Free: Pattern=and, Pattern=it's perfect for road trips, Pattern=your, Pattern=sounds great !, Pattern=the, Pattern=weekend ?, Pattern=was, Pattern=any plans for the
+	Constrained: Pattern=weekend, Pattern=great !, Pattern=the, Pattern=road trips, Pattern=it's
+Turn ID=10| A | Human 1 : yep , i tried learning spanish too , but couldn't make much progress . but i should do decent with my german .
+	Free: Pattern=learning, Pattern=german, Pattern=much, Pattern=with, Pattern=make, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : that's great ! learning german will definitely make your road trips much easier and fun ! any plans for the weekend that you'
+	Free: Pattern=learning, Pattern=and, Pattern=will, Pattern=great !, Pattern=german, Pattern=much, Pattern=road trips, Pattern=fun !, Pattern=that, Pattern=any plans for the weekend, Pattern=your, Pattern=make
+	Constrained: Pattern=any plans for the, Pattern=weekend, Pattern=the
+Turn ID=12| A | Human 1 : thanks ! let me try to make all the arrangement as soon as possible . hope you also enjoy your weekday and weekend as well
+	Free: Pattern=you, Pattern=and, Pattern=weekend, Pattern=the, Pattern=to, Pattern=your, Pattern=make
+	Constrained: 

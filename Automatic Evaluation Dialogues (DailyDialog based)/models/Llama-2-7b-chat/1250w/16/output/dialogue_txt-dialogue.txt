@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: how's it _going_ ? 
+B|3| Human 2: great , thank _you_ ! how _can_ _i_ help _you_ today ? 
+A|4| Human 1: _i'm_ _going_ _to_ _the bahamas_ . can't wait !!! 
+B|5| Human 2: wow , _that_ sounds amazing ! _can_ _i_ help _you_ book _your_ trip or recommend any activities [to] do while you're there ? <|im 
+A|6| Human 1: oh where _are you_ _now_ ? 
+B|7| Human 2: [i'm] [now] _in_ [the bahamas] , enjoying [the] sun and sea ! how _are you doing_ ? 
+A|8| Human 1: oh no . [i] never seen this [in] person . is it scary ? 
+B|9| Human 2: [i'm] sorry [to] hear _that_ you're feeling scared . _can_ [you] tell me more about what's [going] _on_ and how [i] _can_ help 
+A|10| Human 1: [that] does sound nice . so what [are you doing] these _holidays_ ? 
+B|11| Human 2: that's great ! [i'm] glad you're enjoying _your_ [holidays] . do [you] have any questions about [the bahamas] 
+A|12| Human 1: nice nice . [i'm] gonna go snorkeling yey 
+B|13| Human 2: [that] sounds like a lot of fun ! [i'm] sure you'll see some beautiful coral and sea life . just be sure [to] _stay_ safe 
+A|14| Human 1: [you] [can] [stay] [on] [the] shallow side [i] think . well _hope you enjoy_ _time with_ [your] extended _family_ ! 
+B|15| Human 2: [hope you enjoy] [your] [time with] [family] . just [stay] safe and have fun 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's it going ?
+	Free: Pattern=going
+	Constrained: 
+Turn ID=3| B | Human 2 : great , thank you ! how can i help you today ?
+	Free: Pattern=i, Pattern=you, Pattern=can
+	Constrained: 
+Turn ID=4| A | Human 1 : i'm going to the bahamas . can't wait !!!
+	Free: Pattern=the bahamas, Pattern=to, Pattern=going, Pattern=i'm
+	Constrained: Pattern=the
+Turn ID=5| B | Human 2 : wow , that sounds amazing ! can i help you book your trip or recommend any activities to do while you're there ? <|im
+	Free: Pattern=you, Pattern=can, Pattern=to, Pattern=that, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=6| A | Human 1 : oh where are you now ?
+	Free: Pattern=are you, Pattern=now
+	Constrained: Pattern=you
+Turn ID=7| B | Human 2 : i'm now in the bahamas , enjoying the sun and sea ! how are you doing ?
+	Free: Pattern=the bahamas, Pattern=are you doing, Pattern=in, Pattern=i'm, Pattern=the, Pattern=now
+	Constrained: Pattern=are you, Pattern=the, Pattern=you
+Turn ID=8| A | Human 1 : oh no . i never seen this in person . is it scary ?
+	Free: Pattern=in, Pattern=i
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm sorry to hear that you're feeling scared . can you tell me more about what's going on and how i can help
+	Free: Pattern=you, Pattern=going, Pattern=can, Pattern=i'm, Pattern=i, Pattern=on, Pattern=to, Pattern=that
+	Constrained: 
+Turn ID=10| A | Human 1 : that does sound nice . so what are you doing these holidays ?
+	Free: Pattern=are you doing, Pattern=holidays, Pattern=that
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=11| B | Human 2 : that's great ! i'm glad you're enjoying your holidays . do you have any questions about the bahamas
+	Free: Pattern=you, Pattern=i'm, Pattern=your, Pattern=the bahamas, Pattern=holidays
+	Constrained: Pattern=the
+Turn ID=12| A | Human 1 : nice nice . i'm gonna go snorkeling yey
+	Free: Pattern=i'm
+	Constrained: 
+Turn ID=13| B | Human 2 : that sounds like a lot of fun ! i'm sure you'll see some beautiful coral and sea life . just be sure to stay safe
+	Free: Pattern=that, Pattern=to, Pattern=stay, Pattern=i'm
+	Constrained: 
+Turn ID=14| A | Human 1 : you can stay on the shallow side i think . well hope you enjoy time with your extended family !
+	Free: Pattern=stay, Pattern=you, Pattern=can, Pattern=family, Pattern=time with, Pattern=hope you enjoy, Pattern=your, Pattern=i, Pattern=on, Pattern=the
+	Constrained: Pattern=you
+Turn ID=15| B | Human 2 : hope you enjoy your time with family . just stay safe and have fun
+	Free: Pattern=stay, Pattern=family, Pattern=time with, Pattern=your, Pattern=hope you enjoy
+	Constrained: Pattern=you

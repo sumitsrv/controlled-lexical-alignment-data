@@ -1,0 +1,59 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] sorry _for_ _the_ late response . how _are_ _you_ doing ? 
+A|2| Human 1: _i'm_ _great , thanks_ ! _i'm_ meeting _some friends_ [for] _a_ _soccer_ _game_ soon _. what about you ?_ 
+B|3| Human 2: [i'm] doing [great , thanks] [for] asking . how [about you ?] [what] [game] ? 
+A|4| Human 1: yes , _but i'm_ terrible at _it_ _. _it's_ fun_ _to_ _play_ anything _with friends_ , _i_ think . _would you_ _prefer to_ exercise _with_ _a_ group , or _by_ _yourself_ , _do you_ think ? 
+B|5| Human 2: [i] [play] [soccer] [but] [prefer to] _just_ be [by] myself [with] [some friends] and family _for fun [._ what about you ?] 
+A|6| Human 1: [i'm] _thinking about_ getting _a_ _switch_ , _would you_ recommend _it_ ? 
+B|7| Human 2: [i] am [great] [thanks] [for] asking [yourself] [about] [soccer] [would you] have [a] preference on [game] [i] am [thinking about] playing basketball myself 
+A|8| Human 1: _i'm not_ _much_ of [a] gamer [but] _it's_ _something_ i'd _like_ _to get_ _into_ . 
+B|9| Human 2: [i] love my [switch] so [much] ! [it's fun] [with friends] . [do you] [like] sports games ? 
+A|10| Human 1: _i like_ [to] _read_ [for fun .] [i] [just] finished [a] book called temeraire _. it's_ an adventure story set in [the] napoleonic navy , [like] patrick o'brien , _except_ there [are] dragons _too_ . 
+B|11| Human 2: [i like] [the] [game] [too] [but [i'm] not] really [into] sports [except] [for] [soccer] [. it's] [just] [something] [about] [it] that really makes [you] want [to get] 
+A|12| Human 1: what's [the] most recent _good_ thing _you read ?_ 
+B|13| Human 2: [i like] [soccer] [but] [the] [game] [just] doesn't have [good] support [for] [it's] community [. what] [do [you] read ?] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! sorry for the late response . how are you doing ?
+	Free: Pattern=you, Pattern=for, Pattern=are, Pattern=hi !, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks ! i'm meeting some friends for a soccer game soon . what about you ?
+	Free: Pattern=soccer, Pattern=a, Pattern=game, Pattern=for, Pattern=some friends, Pattern=i'm, Pattern=great , thanks, Pattern=. what about you ?
+	Constrained: Pattern=thanks, Pattern=what, Pattern=about, Pattern=about you ?, Pattern=. what, Pattern=you, Pattern=great
+Turn ID=3| B | Human 2 : i'm doing great , thanks for asking . how about you ? what game ?
+	Free: Pattern=what, Pattern=game, Pattern=for, Pattern=i'm, Pattern=great , thanks, Pattern=about you ?
+	Constrained: Pattern=thanks, Pattern=you, Pattern=about, Pattern=great
+Turn ID=4| A | Human 1 : yes , but i'm terrible at it . it's fun to play anything with friends , i think . would you prefer to exercise with a group , or by yourself , do you think ?
+	Free: Pattern=with friends, Pattern=. it's, Pattern=a, Pattern=but i'm, Pattern=would you, Pattern=i, Pattern=it's fun, Pattern=to, Pattern=yourself, Pattern=prefer to, Pattern=with, Pattern=it, Pattern=do you, Pattern=play, Pattern=by
+	Constrained: Pattern=you, Pattern=i'm, Pattern=to, Pattern=with, Pattern=it's, Pattern=but
+Turn ID=5| B | Human 2 : i play soccer but prefer to just be by myself with some friends and family for fun . what about you ?
+	Free: Pattern=soccer, Pattern=just, Pattern=for fun ., Pattern=some friends, Pattern=i, Pattern=prefer to, Pattern=. what about you ?, Pattern=play, Pattern=by, Pattern=with, Pattern=but
+	Constrained: Pattern=you, Pattern=what, Pattern=for, Pattern=about, Pattern=about you ?, Pattern=to, Pattern=. what
+Turn ID=6| A | Human 1 : i'm thinking about getting a switch , would you recommend it ?
+	Free: Pattern=a, Pattern=switch, Pattern=it, Pattern=would you, Pattern=i'm, Pattern=thinking about
+	Constrained: Pattern=you, Pattern=about
+Turn ID=7| B | Human 2 : i am great thanks for asking yourself about soccer would you have a preference on game i am thinking about playing basketball myself
+	Free: Pattern=thanks, Pattern=soccer, Pattern=great, Pattern=a, Pattern=game, Pattern=for, Pattern=about, Pattern=would you, Pattern=i, Pattern=thinking about, Pattern=yourself
+	Constrained: Pattern=you, Pattern=about
+Turn ID=8| A | Human 1 : i'm not much of a gamer but it's something i'd like to get into .
+	Free: Pattern=into, Pattern=a, Pattern=like, Pattern=much, Pattern=something, Pattern=to get, Pattern=i'm not, Pattern=it's, Pattern=but
+	Constrained: Pattern=to, Pattern=i'm
+Turn ID=9| B | Human 2 : i love my switch so much ! it's fun with friends . do you like sports games ?
+	Free: Pattern=with friends, Pattern=switch, Pattern=do you, Pattern=i, Pattern=like, Pattern=much, Pattern=it's fun
+	Constrained: Pattern=it's, Pattern=you, Pattern=with
+Turn ID=10| A | Human 1 : i like to read for fun . i just finished a book called temeraire . it's an adventure story set in the napoleonic navy , like patrick o'brien , except there are dragons too .
+	Free: Pattern=just, Pattern=. it's, Pattern=too, Pattern=are, Pattern=except, Pattern=i, Pattern=like, Pattern=the, Pattern=to, Pattern=read, Pattern=i like, Pattern=for fun ., Pattern=a
+	Constrained: Pattern=i, Pattern=like, Pattern=it's, Pattern=for
+Turn ID=11| B | Human 2 : i like the game too but i'm not really into sports except for soccer . it's just something about it that really makes you want to get
+	Free: Pattern=soccer, Pattern=you, Pattern=just, Pattern=game, Pattern=for, Pattern=but i'm, Pattern=about, Pattern=except, Pattern=the, Pattern=i like, Pattern=something, Pattern=into, Pattern=. it's, Pattern=it, Pattern=to get, Pattern=i'm not, Pattern=too
+	Constrained: Pattern=i'm, Pattern=i, Pattern=like, Pattern=to, Pattern=it's, Pattern=but
+Turn ID=12| A | Human 1 : what's the most recent good thing you read ?
+	Free: Pattern=you read ?, Pattern=the, Pattern=good
+	Constrained: Pattern=you, Pattern=read
+Turn ID=13| B | Human 2 : i like soccer but the game just doesn't have good support for it's community . what do you read ?
+	Free: Pattern=good, Pattern=soccer, Pattern=just, Pattern=game, Pattern=for, Pattern=the, Pattern=. what, Pattern=i like, Pattern=do you, Pattern=you read ?, Pattern=it's, Pattern=but
+	Constrained: Pattern=you, Pattern=what, Pattern=i, Pattern=like, Pattern=read

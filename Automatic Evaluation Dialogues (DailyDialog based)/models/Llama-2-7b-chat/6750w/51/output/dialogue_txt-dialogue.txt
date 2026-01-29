@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's_ good ! _i_ spent most _of_ it watching _horse racing_ _. how _about_ yourself ?_ 
+B|3| Human 2: that's _cool_ ! [horse racing] _is_ definitely a fascinating sport [. how _about] you_ tell me a bit more [about yourself ?] it' 
+A|4| Human 1: _i_ _actually_ _like to_ put down _some_ _money_ _, but_ _i_ wouldn't call it _my_ favorite _part_ , since _i_ usually lose it ... haha . catching _up with_ _friends_ [is] _great_ ! [how] long had it [been ?] 
+B|5| Human 2: ha ha , losing [money] can be [part] _of the_ _fun_ [of] gambling ! [it's] [great] _that_ _you_ _have_ [friends] [to] catch [up with] _though_ 
+A|6| Human 1: _i'm_ _thinking_ [of] _going_ _deep sea_ fishing . ever tried [that] before ? 
+B|7| Human 2: [i'm] _just_ _an_ ai a simple chatbot trained by meta ai _, i_ don't _have_ personal experiences [like] [that] [, but] [deep sea] 
+A|8| Human 1: [just] once ! [i] got _super_ [sea] sick .. haha [have] _any fun_ _weekend_ plans [yourself ?] 
+B|9| Human 2: [i'm] [actually] [going] [to] a music festival this [weekend] . [have] _you_ [been] [to] [any fun] concerts or festivals lately ? <|im 
+A|10| Human 1: oh _very_ [cool] . [i] hear _its_ _nice_ over _there_ . do [you] go often ? 
+B|11| Human 2: [i'm] [actually] [thinking] [about] [going] [but] [its] [super] _far_ from me 
+A|12| Human 1: new york [is] [the] _top_ [of] _my list_ _because_ _my_ family lives _there_ ! as [far] as _the city_ _itself_ [though] ... _i think_ _i'd_ prefer someplace _outside_ [of the] us , [like] _tokyo_ . what [about you] ? 
+B|13| Human 2: [i'd] [like to] travel [the] world [some] day [because] [its] [top] [my list] [though] [tokyo] [is] [nice] [city] [but] [there] are other [cool] citys [outside] [think] 
+A|14| Human 1: oh i've never [been] ! it [is] such [an] _iconic_ _place_ [, i] [have] [to] make [the] time [to] _get there_ soon . 
+B|15| Human 2: [i think] you'd [like] [the city] [very] much if [you] [get there] [because] [its] [top] [list] [place] [with] [some] [cool] [iconic] buildings [though] [tokyo] [itself] [is] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=of, Pattern=about yourself ?, Pattern=. how about, Pattern=i, Pattern=horse racing, Pattern=it's
+	Constrained: Pattern=how, Pattern=about, Pattern=yourself ?
+Turn ID=3| B | Human 2 : that's cool ! horse racing is definitely a fascinating sport . how about you tell me a bit more about yourself ? it'
+	Free: Pattern=about yourself ?, Pattern=cool, Pattern=about you, Pattern=. how about, Pattern=is, Pattern=horse racing
+	Constrained: Pattern=you, Pattern=how, Pattern=about, Pattern=yourself ?
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=money, Pattern=actually, Pattern=how, Pattern=friends, Pattern=up with, Pattern=my, Pattern=great, Pattern=, but, Pattern=been ?, Pattern=some, Pattern=is, Pattern=i, Pattern=part, Pattern=like to
+	Constrained: Pattern=like, Pattern=to, Pattern=been, Pattern=with, Pattern=but
+Turn ID=5| B | Human 2 : ha ha , losing money can be part of the fun of gambling ! it's great that you have friends to catch up with though
+	Free: Pattern=fun, Pattern=have, Pattern=though, Pattern=friends, Pattern=part, Pattern=up with, Pattern=to, Pattern=of, Pattern=money, Pattern=you, Pattern=great, Pattern=of the, Pattern=that, Pattern=it's
+	Constrained: Pattern=the, Pattern=of, Pattern=with
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=of, Pattern=deep sea, Pattern=going, Pattern=thinking, Pattern=i'm, Pattern=that
+	Constrained: Pattern=sea
+Turn ID=7| B | Human 2 : i'm just an ai a simple chatbot trained by meta ai , i don't have personal experiences like that , but deep sea
+	Free: Pattern=deep sea, Pattern=, but, Pattern=an, Pattern=i'm, Pattern=like, Pattern=, i, Pattern=that, Pattern=just, Pattern=have
+	Constrained: Pattern=sea, Pattern=but, Pattern=i
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=weekend, Pattern=yourself ?, Pattern=sea, Pattern=i, Pattern=just, Pattern=have, Pattern=super, Pattern=any fun
+	Constrained: Pattern=fun
+Turn ID=9| B | Human 2 : i'm actually going to a music festival this weekend . have you been to any fun concerts or festivals lately ? <|im
+	Free: Pattern=you, Pattern=actually, Pattern=weekend, Pattern=i'm, Pattern=to, Pattern=been, Pattern=any fun, Pattern=going, Pattern=have
+	Constrained: Pattern=fun
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=its, Pattern=you, Pattern=there, Pattern=cool, Pattern=nice, Pattern=very, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm actually thinking about going but its super far from me
+	Free: Pattern=its, Pattern=far, Pattern=going, Pattern=about, Pattern=i'm, Pattern=thinking, Pattern=actually, Pattern=super, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=i'd, Pattern=because, Pattern=about you, Pattern=the, Pattern=itself, Pattern=the city, Pattern=my, Pattern=of the, Pattern=i think, Pattern=far, Pattern=of, Pattern=though, Pattern=there, Pattern=top, Pattern=is, Pattern=outside, Pattern=tokyo, Pattern=my list, Pattern=like
+	Constrained: Pattern=city, Pattern=of, Pattern=you, Pattern=about, Pattern=think, Pattern=i, Pattern=the, Pattern=list, Pattern=my
+Turn ID=13| B | Human 2 : i'd like to travel the world some day because its top my list though tokyo is nice city but there are other cool citys outside think
+	Free: Pattern=city, Pattern=its, Pattern=i'd, Pattern=because, Pattern=cool, Pattern=nice, Pattern=some, Pattern=think, Pattern=but, Pattern=though, Pattern=there, Pattern=top, Pattern=is, Pattern=outside, Pattern=tokyo, Pattern=my list, Pattern=like to, Pattern=the
+	Constrained: Pattern=like, Pattern=to, Pattern=list, Pattern=my
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=have, Pattern=iconic, Pattern=is, Pattern=to, Pattern=an, Pattern=get there, Pattern=the, Pattern=, i, Pattern=been, Pattern=place
+	Constrained: Pattern=i, Pattern=there
+Turn ID=15| B | Human 2 : i think you'd like the city very much if you get there because its top list place with some cool iconic buildings though tokyo itself is
+	Free: Pattern=its, Pattern=you, Pattern=though, Pattern=because, Pattern=iconic, Pattern=some, Pattern=place, Pattern=the city, Pattern=with, Pattern=i think, Pattern=cool, Pattern=get there, Pattern=top, Pattern=very, Pattern=is, Pattern=tokyo, Pattern=like, Pattern=itself, Pattern=list
+	Constrained: Pattern=city, Pattern=there, Pattern=think, Pattern=i, Pattern=the

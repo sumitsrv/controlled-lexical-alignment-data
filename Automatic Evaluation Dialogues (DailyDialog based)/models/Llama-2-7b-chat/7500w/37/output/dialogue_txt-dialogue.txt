@@ -1,0 +1,59 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] sorry _for_ _the_ late response . how _are_ _you_ doing ? 
+A|2| Human 1: _i'm_ _great_ , thanks ! _i'm_ meeting _some_ _friends_ [for] a _soccer game_ soon . _what_ about [you] ? 
+B|3| Human 2: [i'm] _just_ _an_ ai _, i_ don't have [friends] _or_ [soccer game] 😊 [what] can _i_ help [you] _with_ ? 
+A|4| Human 1: yes , _but_ [i'm] terrible at _it_ . _it's fun_ to play anything _with friends_ [, i] _think_ . _would_ [you] prefer to _exercise_ [with] a group , [or] by yourself , do _you think ?_ 
+B|5| Human 2: [i'm] _just_ _an_ ai [, i] don't have preferences [for] [exercise] 😊 [it's] [great] that you're 
+A|6| Human 1: [i'm] thinking about getting a _switch_ , _would_ [you] _recommend it_ ? 
+B|7| Human 2: [i'm] _just_ _an_ ai , [switch] [recommend] 😊 [it's fun] [game] [with friends] [you think ?] <|im_end 
+A|8| Human 1: [i'm] not much of a _gamer_ _but_ [it's] _something_ i'd _like_ to get into . 
+B|9| Human 2: [i] [would] [recommend it] 😊 [it's] [great] [for] gaming [with friends] [or] _just_ relaxing [with] [some] [fun] games [like] mario kart 
+A|10| Human 1: [i] [like] to _read_ _for fun_ . [i] [just] finished a _book_ called temeraire . [it's] [an] _adventure story set in_ [the] napoleonic navy , [like] patrick o'brien , _except _there_ are dragons too_ . 
+B|11| Human 2: [i'm] [just] [an] ai [but] [it] sounds [like] [something] [fun] [book] _you read_ [there are dragons too] ! [it] [would] [recommend] [the] [gamer] [for] 
+A|12| Human 1: what's _the most recent good thing you read_ ? 
+B|13| Human 2: [i'm] [just] [an] ai [but] [the most recent good thing you read] [it] [for fun] [like] [adventure story set in] [dragons too] [except there] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! sorry for the late response . how are you doing ?
+	Free: Pattern=you, Pattern=for, Pattern=are, Pattern=hi !, Pattern=the
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks ! i'm meeting some friends for a soccer game soon . what about you ?
+	Free: Pattern=soccer game, Pattern=what, Pattern=for, Pattern=some, Pattern=i'm, Pattern=friends, Pattern=you, Pattern=great
+	Constrained: Pattern=game
+Turn ID=3| B | Human 2 : i'm just an ai , i don't have friends or soccer game 😊 what can i help you with ?
+	Free: Pattern=you, Pattern=just, Pattern=soccer game, Pattern=what, Pattern=an, Pattern=i'm, Pattern=i, Pattern=friends, Pattern=or, Pattern=, i, Pattern=with
+	Constrained: Pattern=game, Pattern=i
+Turn ID=4| A | Human 1 : yes , but i'm terrible at it . it's fun to play anything with friends , i think . would you prefer to exercise with a group , or by yourself , do you think ?
+	Free: Pattern=with friends, Pattern=you, Pattern=exercise, Pattern=you think ?, Pattern=it, Pattern=think, Pattern=i'm, Pattern=or, Pattern=, i, Pattern=would, Pattern=it's fun, Pattern=with, Pattern=but
+	Constrained: Pattern=fun, Pattern=you, Pattern=think, Pattern=i, Pattern=friends, Pattern=with, Pattern=it's
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have preferences for exercise 😊 it's great that you're
+	Free: Pattern=great, Pattern=an, Pattern=for, Pattern=i'm, Pattern=, i, Pattern=it's, Pattern=exercise, Pattern=just
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : i'm thinking about getting a switch , would you recommend it ?
+	Free: Pattern=switch, Pattern=i'm, Pattern=would, Pattern=you, Pattern=recommend it
+	Constrained: Pattern=recommend, Pattern=it
+Turn ID=7| B | Human 2 : i'm just an ai , switch recommend 😊 it's fun game with friends you think ? <|im_end
+	Free: Pattern=with friends, Pattern=just, Pattern=you think ?, Pattern=it's fun, Pattern=an, Pattern=switch, Pattern=game, Pattern=recommend, Pattern=i'm
+	Constrained: Pattern=fun, Pattern=you, Pattern=think, Pattern=friends, Pattern=with, Pattern=it's
+Turn ID=8| A | Human 1 : i'm not much of a gamer but it's something i'd like to get into .
+	Free: Pattern=i'm, Pattern=like, Pattern=gamer, Pattern=something, Pattern=it's, Pattern=but
+	Constrained: 
+Turn ID=9| B | Human 2 : i would recommend it 😊 it's great for gaming with friends or just relaxing with some fun games like mario kart
+	Free: Pattern=just, Pattern=for, Pattern=some, Pattern=i, Pattern=like, Pattern=or, Pattern=would, Pattern=fun, Pattern=with friends, Pattern=great, Pattern=recommend it, Pattern=with, Pattern=it's
+	Constrained: Pattern=recommend, Pattern=with, Pattern=it, Pattern=friends
+Turn ID=10| A | Human 1 : i like to read for fun . i just finished a book called temeraire . it's an adventure story set in the napoleonic navy , like patrick o'brien , except there are dragons too .
+	Free: Pattern=adventure story set in, Pattern=just, Pattern=book, Pattern=an, Pattern=i, Pattern=like, Pattern=the, Pattern=read, Pattern=it's, Pattern=there are dragons too, Pattern=except there, Pattern=for fun
+	Constrained: Pattern=for, Pattern=dragons too, Pattern=fun, Pattern=are
+Turn ID=11| B | Human 2 : i'm just an ai but it sounds like something fun book you read there are dragons too ! it would recommend the gamer for
+	Free: Pattern=fun, Pattern=just, Pattern=book, Pattern=an, Pattern=for, Pattern=it, Pattern=like, Pattern=the, Pattern=would, Pattern=gamer, Pattern=but, Pattern=you read, Pattern=recommend, Pattern=i'm, Pattern=there are dragons too, Pattern=something
+	Constrained: Pattern=read, Pattern=you, Pattern=dragons too, Pattern=are
+Turn ID=12| A | Human 1 : what's the most recent good thing you read ?
+	Free: Pattern=the most recent good thing you read
+	Constrained: Pattern=read, Pattern=you, Pattern=you read, Pattern=the
+Turn ID=13| B | Human 2 : i'm just an ai but the most recent good thing you read it for fun like adventure story set in dragons too except there
+	Free: Pattern=dragons too, Pattern=adventure story set in, Pattern=an, Pattern=it, Pattern=i'm, Pattern=like, Pattern=but, Pattern=the most recent good thing you read, Pattern=just, Pattern=except there, Pattern=for fun
+	Constrained: Pattern=fun, Pattern=you, Pattern=for, Pattern=the, Pattern=read, Pattern=you read

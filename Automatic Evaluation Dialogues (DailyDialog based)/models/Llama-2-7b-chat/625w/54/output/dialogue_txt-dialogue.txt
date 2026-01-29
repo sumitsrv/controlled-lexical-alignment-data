@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , how is _it_ going ? 
+A|2| Human 1: pretty _great_ . _i_ _just_ won _a_ _pingpong_ _game _. what_ about you ?_ 
+B|3| Human 2: that's [great] _to_ hear ! 🎉 [pingpong] is [a] _fun_ [game . what] do [you] _think_ [about] ai art ? 
+A|4| Human 1: no , very rarely . _it's_ kind of amazing _that_ _i_ won _, but_ _i'm_ still _taking credit for_ [it] . 
+B|5| Human 2: 😂 [i'm] glad you're [taking credit for] _your_ win ! [it's] always [great] _to_ celebrate our accomplishments . 
+A|6| Human 1: haha thank [you] _, i_ guess _i'm just_ [a] natural . what's [your] favourite [game] ? 
+B|7| Human 2: [i'm just] an ai [, _i] don't_ have personal preferences or emotions [, but] [i] can play various games _with_ [you] if 
+A|8| Human 1: what's racquetball _like_ ? from context clues , [i'm] guessing _that_ [it] involves _hitting a ball with a racquet_ 
+B|9| Human 2: [i] see ! [i'm just] an ai [, _i] don't_ have _physical_ abilities [like] [hitting a ball with a racquet] [, but] [i] 
+A|10| Human 1: wow ! [a] _cage_ match ! does [it] _get physical_ ? 
+B|11| Human 2: [i'm just] an ai [, _i] don't_ [get physical] or engage in violent activities [like] [cage] matches<|im_end| 
+A|12| Human 1: _that_ sounds [fun] . [i] [think] of tennis itself as being really athletic _and_ tiring , so [i don't] [think] [it's] [a] sport [for] me , though ! 
+B|13| Human 2: that's okay ! there are many different sports [and] activities [that] people enjoy [for] their own reasons [. what about you ?] do [you] have any [physical] ab 
+A|14| Human 1: [what] [a] good idea , i'd love [to] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty great . i just won a pingpong game . what about you ?
+	Free: Pattern=great, Pattern=just, Pattern=a, Pattern=i, Pattern=pingpong, Pattern=game . what, Pattern=. what about you ?
+	Constrained: Pattern=what, Pattern=you, Pattern=about, Pattern=game
+Turn ID=3| B | Human 2 : that's great to hear ! 🎉 pingpong is a fun game . what do you think about ai art ?
+	Free: Pattern=fun, Pattern=a, Pattern=about, Pattern=think, Pattern=pingpong, Pattern=game . what, Pattern=to, Pattern=you, Pattern=great
+	Constrained: Pattern=what, Pattern=game
+Turn ID=4| A | Human 1 : no , very rarely . it's kind of amazing that i won , but i'm still taking credit for it .
+	Free: Pattern=, but, Pattern=taking credit for, Pattern=it, Pattern=i'm, Pattern=i, Pattern=that, Pattern=it's
+	Constrained: Pattern=for
+Turn ID=5| B | Human 2 : 😂 i'm glad you're taking credit for your win ! it's always great to celebrate our accomplishments .
+	Free: Pattern=great, Pattern=taking credit for, Pattern=i'm, Pattern=your, Pattern=to, Pattern=it's
+	Constrained: Pattern=for
+Turn ID=6| A | Human 1 : haha thank you , i guess i'm just a natural . what's your favourite game ?
+	Free: Pattern=you, Pattern=a, Pattern=game, Pattern=i'm just, Pattern=your, Pattern=, i
+	Constrained: Pattern=i'm, Pattern=just, Pattern=i
+Turn ID=7| B | Human 2 : i'm just an ai , i don't have personal preferences or emotions , but i can play various games with you if
+	Free: Pattern=i don't, Pattern=i'm just, Pattern=i, Pattern=, i, Pattern=with, Pattern=you, Pattern=, but
+	Constrained: Pattern=just, Pattern=i'm, Pattern=i
+Turn ID=8| A | Human 1 : what's racquetball like ? from context clues , i'm guessing that it involves hitting a ball with a racquet
+	Free: Pattern=hitting a ball with a racquet, Pattern=it, Pattern=i'm, Pattern=like, Pattern=that
+	Constrained: Pattern=a, Pattern=with
+Turn ID=9| B | Human 2 : i see ! i'm just an ai , i don't have physical abilities like hitting a ball with a racquet , but i
+	Free: Pattern=hitting a ball with a racquet, Pattern=, but, Pattern=i don't, Pattern=i'm just, Pattern=i, Pattern=like, Pattern=physical, Pattern=, i
+	Constrained: Pattern=just, Pattern=a, Pattern=i'm, Pattern=i, Pattern=with
+Turn ID=10| A | Human 1 : wow ! a cage match ! does it get physical ?
+	Free: Pattern=get physical, Pattern=a, Pattern=it, Pattern=cage
+	Constrained: Pattern=physical
+Turn ID=11| B | Human 2 : i'm just an ai , i don't get physical or engage in violent activities like cage matches<|im_end|
+	Free: Pattern=i don't, Pattern=cage, Pattern=get physical, Pattern=i'm just, Pattern=like, Pattern=, i
+	Constrained: Pattern=just, Pattern=i'm, Pattern=physical, Pattern=i
+Turn ID=12| A | Human 1 : that sounds fun . i think of tennis itself as being really athletic and tiring , so i don't think it's a sport for me , though !
+	Free: Pattern=fun, Pattern=i don't, Pattern=a, Pattern=for, Pattern=and, Pattern=think, Pattern=i, Pattern=that, Pattern=it's
+	Constrained: Pattern=i
+Turn ID=13| B | Human 2 : that's okay ! there are many different sports and activities that people enjoy for their own reasons . what about you ? do you have any physical ab
+	Free: Pattern=you, Pattern=for, Pattern=and, Pattern=physical, Pattern=that, Pattern=. what about you ?
+	Constrained: Pattern=what, Pattern=you, Pattern=about
+Turn ID=14| A | Human 1 : what a good idea , i'd love to !
+	Free: Pattern=to, Pattern=what, Pattern=a
+	Constrained: 

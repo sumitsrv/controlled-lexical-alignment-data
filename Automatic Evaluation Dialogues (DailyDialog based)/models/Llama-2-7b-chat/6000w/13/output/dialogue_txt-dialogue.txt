@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: have _you_ _seen_ any _good_ _movies_ lately ? 
+A|2| Human 1: _last weekend_ _i saw_ "the parasite . " ever heard _of_ _it_ ? 
+B|3| Human 2: _i _think_ [i_ saw] [it] _a_ week ago . 🤔 _it was a_ very interesting movie . _the_ plot _was_ unique _and_ thought-provoking 
+A|4| Human 1: my _friend_ _wanted to_ _see_ [it] . [it] _has_ _great_ reviews on imdb [and] rotten tomatoes ! _what did you_ do _last weekend_ ? 
+B|5| Human 2: [last weekend] _was_ [great] 😊 [i saw] _a_ [friend] [and] [did] some shopping . [what] about [you] ? <|im_end| 
+A|6| Human 1: oooo _the mandalorian_ ?!?! 
+B|7| Human 2: 😅 [did you] [see] [the] [last] episode ? [what] _was_ your reaction ? [i] [wanted _to] watch_ [it] [and] oooh ! [the] mandal 
+A|8| Human 1: _lol_ _are_ [you] [a] big _marvel fan_ ? 
+B|9| Human 2: [marvel fan] 😅 [you] [are] [the] first [friend] _i've_ talking [to] about [mandalorian] [lol] [what did you] like about [it] 
+A|10| Human 1: [i've] only [seen] spiderman . _honestly_ [it was a] little _too _scary_ and_ so [i] _don't_ [think i] can bring myself [to watch] [the] other [marvel] [movies] ! _haha_ 
+B|11| Human 2: _i think [the_ mandalorian] [has] tooooo much [scary and] violence [lol] [haha] [don't] [watch] [it] if [you] can' 
+A|12| Human 1: oh _really_ ? [to] be honest _i think the actor_ _is not_ _that_ _good looking_ , so _not_ so surprising ! [haha] 
+B|13| Human 2: [really] 😅 [i think the actor] [that] plays [the mandalorian] [is] pretty [good looking] [haha] [what did you] [not] like about sp 
+A|14| Human 1: who [is] _loki_ ? [i've] never heard [that] _name_ before 
+B|15| Human 2: [loki] [is] [the] [name] [of] [actor] [that] [i think] [is not] [good looking] [lol] [haha] [and] [honestly] [mandalorian] [is] [too scary] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : have you seen any good movies lately ?
+	Free: Pattern=good, Pattern=seen, Pattern=you, Pattern=movies
+	Constrained: 
+Turn ID=2| A | Human 1 : last weekend i saw "the parasite . " ever heard of it ?
+	Free: Pattern=last weekend, Pattern=i saw, Pattern=it, Pattern=of
+	Constrained: Pattern=i, Pattern=last
+Turn ID=3| B | Human 2 : i think i saw it a week ago . 🤔 it was a very interesting movie . the plot was unique and thought-provoking
+	Free: Pattern=a, Pattern=think i, Pattern=it was a, Pattern=was, Pattern=i think, Pattern=it, Pattern=and, Pattern=i saw, Pattern=the
+	Constrained: Pattern=a, Pattern=i, Pattern=was, Pattern=it
+Turn ID=4| A | Human 1 : my friend wanted to see it . it has great reviews on imdb and rotten tomatoes ! what did you do last weekend ?
+	Free: Pattern=great, Pattern=wanted to, Pattern=last weekend, Pattern=what did you, Pattern=it, Pattern=and, Pattern=has, Pattern=see, Pattern=friend
+	Constrained: Pattern=you, Pattern=did you, Pattern=what, Pattern=did, Pattern=last, Pattern=to
+Turn ID=5| B | Human 2 : last weekend was great 😊 i saw a friend and did some shopping . what about you ? <|im_end|
+	Free: Pattern=what, Pattern=and, Pattern=i saw, Pattern=friend, Pattern=last weekend, Pattern=was, Pattern=you, Pattern=great, Pattern=did, Pattern=a
+	Constrained: Pattern=i, Pattern=last
+Turn ID=6| A | Human 1 : oooo the mandalorian ?!?!
+	Free: Pattern=the mandalorian
+	Constrained: Pattern=the, Pattern=mandalorian
+Turn ID=7| B | Human 2 : 😅 did you see the last episode ? what was your reaction ? i wanted to watch it and oooh ! the mandal
+	Free: Pattern=did you, Pattern=wanted to, Pattern=i, Pattern=last, Pattern=the, Pattern=see, Pattern=was, Pattern=to watch, Pattern=what, Pattern=it, Pattern=and
+	Constrained: Pattern=did, Pattern=to, Pattern=watch, Pattern=you
+Turn ID=8| A | Human 1 : lol are you a big marvel fan ?
+	Free: Pattern=marvel fan, Pattern=lol, Pattern=you, Pattern=a, Pattern=are
+	Constrained: Pattern=marvel
+Turn ID=9| B | Human 2 : marvel fan 😅 you are the first friend i've talking to about mandalorian lol what did you like about it
+	Free: Pattern=marvel fan, Pattern=lol, Pattern=you, Pattern=it, Pattern=the, Pattern=friend, Pattern=to, Pattern=mandalorian, Pattern=what did you, Pattern=are, Pattern=i've
+	Constrained: Pattern=you, Pattern=did you, Pattern=what, Pattern=did, Pattern=marvel
+Turn ID=10| A | Human 1 : i've only seen spiderman . honestly it was a little too scary and so i don't think i can bring myself to watch the other marvel movies ! haha
+	Free: Pattern=to watch, Pattern=i've, Pattern=marvel, Pattern=i, Pattern=haha, Pattern=think i, Pattern=the, Pattern=honestly, Pattern=too scary, Pattern=scary and, Pattern=it was a, Pattern=don't, Pattern=seen, Pattern=movies
+	Constrained: Pattern=a, Pattern=i, Pattern=to, Pattern=was, Pattern=watch, Pattern=it, Pattern=and
+Turn ID=11| B | Human 2 : i think the mandalorian has tooooo much scary and violence lol haha don't watch it if you can'
+	Free: Pattern=lol, Pattern=the mandalorian, Pattern=haha, Pattern=i think the, Pattern=don't, Pattern=watch, Pattern=you, Pattern=scary and, Pattern=it, Pattern=has
+	Constrained: Pattern=and, Pattern=i, Pattern=the, Pattern=mandalorian, Pattern=i think
+Turn ID=12| A | Human 1 : oh really ? to be honest i think the actor is not that good looking , so not so surprising ! haha
+	Free: Pattern=is not, Pattern=i think the actor, Pattern=good looking, Pattern=to, Pattern=that, Pattern=not, Pattern=haha, Pattern=really
+	Constrained: Pattern=good, Pattern=i think the, Pattern=the, Pattern=not, Pattern=is, Pattern=i, Pattern=i think, Pattern=actor
+Turn ID=13| B | Human 2 : really 😅 i think the actor that plays the mandalorian is pretty good looking haha what did you not like about sp
+	Free: Pattern=i think the actor, Pattern=good looking, Pattern=the mandalorian, Pattern=is, Pattern=what did you, Pattern=that, Pattern=not, Pattern=haha, Pattern=really
+	Constrained: Pattern=good, Pattern=you, Pattern=did you, Pattern=what, Pattern=did, Pattern=i, Pattern=i think the, Pattern=the, Pattern=mandalorian, Pattern=i think, Pattern=actor
+Turn ID=14| A | Human 1 : who is loki ? i've never heard that name before
+	Free: Pattern=name, Pattern=i've, Pattern=is, Pattern=that, Pattern=loki
+	Constrained: 
+Turn ID=15| B | Human 2 : loki is the name of actor that i think is not good looking lol haha and honestly mandalorian is too scary
+	Free: Pattern=name, Pattern=is, Pattern=haha, Pattern=the, Pattern=honestly, Pattern=mandalorian, Pattern=that, Pattern=of, Pattern=lol, Pattern=too scary, Pattern=is not, Pattern=and, Pattern=good looking, Pattern=i think, Pattern=actor, Pattern=loki
+	Constrained: Pattern=is, Pattern=good, Pattern=i, Pattern=not

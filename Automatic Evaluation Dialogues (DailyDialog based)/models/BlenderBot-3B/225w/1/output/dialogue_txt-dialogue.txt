@@ -1,0 +1,59 @@
+A|0| Human 1: hi 
+B|1| Human 2: any plans _for_ _the_ _weekend_ ? 
+A|2| Human 1: _my friends are_ gonna visit _me_ _this weekend ._ we _might_ go _hiking_ ! 
+B|3| Human 2: not really , _i_ [might] _take_ _a_ _day_ off and just relax . what [are] _your_ plans ? 
+A|4| Human 1: should _be_ very sunny ! _you_ ? 
+B|5| Human 2: hey , _that_ is nice [you] [are] _going_ [hiking] . _i am_ planning _to_ stay home [this weekend .] 
+A|6| Human 1: 😐 _hope you_ get [your] _work_ done very soon ! [a] bug free _weekend !_ 
+B|7| Human 2: _i_ [hope you] enjoy [your] [weekend !] _i_ [work] [this weekend .] _but_ , [my friends are] coming _to_ stay with [me] _for_ [a] [weekend] , so that's nice 
+A|8| Human 1: _i am going_ [to] diablo ! 
+B|9| Human 2: [i] love [hiking] , [i am going] on [a] nice nature walk [this weekend .] what [are] [you] doing [this weekend] ? 
+A|10| Human 1: hours drive from here . still _in_ _bay area_ 
+B|11| Human 2: [hiking] [in] _the_ [bay area] would [be] [a] great [weekend] activity _for_ [you] ! 
+A|12| Human 1: actually no idea , [but] _it will take_ [the] _entire day_ [for] [that] . 
+B|13| Human 2: [it will take] [you] [that] [entire day] [but] i'm sure you'll have [a] blast . [i] love being outdoors 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : any plans for the weekend ?
+	Free: Pattern=the, Pattern=weekend, Pattern=for
+	Constrained: 
+Turn ID=2| A | Human 1 : my friends are gonna visit me this weekend . we might go hiking !
+	Free: Pattern=me, Pattern=this weekend ., Pattern=my friends are, Pattern=hiking, Pattern=might
+	Constrained: Pattern=are, Pattern=weekend, Pattern=this weekend
+Turn ID=3| B | Human 2 : not really , i might take a day off and just relax . what are your plans ?
+	Free: Pattern=a, Pattern=are, Pattern=take, Pattern=might, Pattern=day, Pattern=your, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : should be very sunny ! you ?
+	Free: Pattern=be, Pattern=you
+	Constrained: 
+Turn ID=5| B | Human 2 : hey , that is nice you are going hiking . i am planning to stay home this weekend .
+	Free: Pattern=you, Pattern=going, Pattern=are, Pattern=this weekend ., Pattern=i am, Pattern=hiking, Pattern=to, Pattern=that
+	Constrained: Pattern=i, Pattern=this weekend, Pattern=weekend
+Turn ID=6| A | Human 1 : 😐 hope you get your work done very soon ! a bug free weekend !
+	Free: Pattern=a, Pattern=hope you, Pattern=work, Pattern=your, Pattern=weekend !
+	Constrained: Pattern=weekend, Pattern=you
+Turn ID=7| B | Human 2 : i hope you enjoy your weekend ! i work this weekend . but , my friends are coming to stay with me for a weekend , so that's nice
+	Free: Pattern=me, Pattern=a, Pattern=for, Pattern=weekend, Pattern=this weekend ., Pattern=hope you, Pattern=work, Pattern=my friends are, Pattern=but, Pattern=your, Pattern=i, Pattern=weekend !, Pattern=to
+	Constrained: Pattern=are, Pattern=weekend, Pattern=you, Pattern=this weekend
+Turn ID=8| A | Human 1 : i am going to diablo !
+	Free: Pattern=i am going, Pattern=to
+	Constrained: Pattern=going, Pattern=i am, Pattern=i
+Turn ID=9| B | Human 2 : i love hiking , i am going on a nice nature walk this weekend . what are you doing this weekend ?
+	Free: Pattern=a, Pattern=are, Pattern=this weekend ., Pattern=i am going, Pattern=i, Pattern=hiking, Pattern=this weekend, Pattern=you
+	Constrained: Pattern=this weekend, Pattern=going, Pattern=weekend, Pattern=i am, Pattern=i
+Turn ID=10| A | Human 1 : hours drive from here . still in bay area
+	Free: Pattern=bay area, Pattern=in
+	Constrained: 
+Turn ID=11| B | Human 2 : hiking in the bay area would be a great weekend activity for you !
+	Free: Pattern=a, Pattern=for, Pattern=weekend, Pattern=in, Pattern=be, Pattern=the, Pattern=hiking, Pattern=you, Pattern=bay area
+	Constrained: 
+Turn ID=12| A | Human 1 : actually no idea , but it will take the entire day for that .
+	Free: Pattern=entire day, Pattern=it will take, Pattern=for, Pattern=the, Pattern=that, Pattern=but
+	Constrained: Pattern=take, Pattern=day
+Turn ID=13| B | Human 2 : it will take you that entire day but i'm sure you'll have a blast . i love being outdoors
+	Free: Pattern=entire day, Pattern=you, Pattern=i, Pattern=it will take, Pattern=a, Pattern=that, Pattern=but
+	Constrained: Pattern=take, Pattern=day

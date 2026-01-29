@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello , _i_ feel like i've _met_ _you_ before , can _you_ remind me your name ? 
+A|2| Human 1: _it's_ on _the_ screen _! _i_ don't recall meeting you_ . _do_ _you have a_ sense of where we [met] ? 
+B|3| Human 2: [it's] [a] good memory [you have] [the] name sarah _. [i_ don't recall meeting you] before ? 
+A|4| Human 1: _did_ we _dance_ together perchance ? 
+B|5| Human 2: hey , _that's_ right [! i] [met] [you] [the] day [i] was _in_ [a] [dance] studio with your mother , she asked me why [i] wanted _to_ [do] 
+A|6| Human 1: _lol_ _. were you_ _schwasty_ ? 
+B|7| Human 2: [lol] , [you] [met] [schwasty] [the] italian plumber ? he lives _in_ [a] mansion right ? [were you] there when he 
+A|8| Human 1: _i'm_ [a] cardiologist [in] palo alto _. i have a private practice_ _. you_ ? 
+B|9| Human 2: _i'm not sure_ [. you] probably [don't] _know_ him [. i have a private practice] either . [it's] [in] los altos 
+A|10| Human 1: [i'm not sure] _i know_ _what_ _that_ is . 
+B|11| Human 2: [i know] [you have] [the] best [practice] [in] [that] area [. were you] [not sure] [what] [i] [did] there though ? 
+A|12| Human 1: [lol] . [not] [to] be elitist _but_ ... [that's] [a] real _job_ ? 
+B|13| Human 2: [i'm not sure] [what] [you] [did] [but] [that's] cool [that] [you have a] [job] [that's] [private] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello , i feel like i've met you before , can you remind me your name ?
+	Free: Pattern=met, Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : it's on the screen ! i don't recall meeting you . do you have a sense of where we met ?
+	Free: Pattern=do, Pattern=i don't recall meeting you, Pattern=! i, Pattern=you have a, Pattern=met, Pattern=the, Pattern=it's
+	Constrained: Pattern=you, Pattern=a, Pattern=you have, Pattern=i, Pattern=don't
+Turn ID=3| B | Human 2 : it's a good memory you have the name sarah . i don't recall meeting you before ?
+	Free: Pattern=a, Pattern=i don't recall meeting you, Pattern=. i, Pattern=you have, Pattern=the, Pattern=it's
+	Constrained: Pattern=you, Pattern=don't, Pattern=i
+Turn ID=4| A | Human 1 : did we dance together perchance ?
+	Free: Pattern=dance, Pattern=did
+	Constrained: 
+Turn ID=5| B | Human 2 : hey , that's right ! i met you the day i was in a dance studio with your mother , she asked me why i wanted to do
+	Free: Pattern=you, Pattern=! i, Pattern=in, Pattern=to, Pattern=do, Pattern=a, Pattern=dance, Pattern=i, Pattern=met, Pattern=that's, Pattern=the
+	Constrained: Pattern=i
+Turn ID=6| A | Human 1 : lol . were you schwasty ?
+	Free: Pattern=. were you, Pattern=lol, Pattern=schwasty
+	Constrained: Pattern=were you, Pattern=you
+Turn ID=7| B | Human 2 : lol , you met schwasty the italian plumber ? he lives in a mansion right ? were you there when he
+	Free: Pattern=schwasty, Pattern=lol, Pattern=you, Pattern=a, Pattern=met, Pattern=the, Pattern=were you, Pattern=in
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : i'm a cardiologist in palo alto . i have a private practice . you ?
+	Free: Pattern=. i have a private practice, Pattern=a, Pattern=in, Pattern=. you, Pattern=i'm
+	Constrained: Pattern=you, Pattern=practice, Pattern=a, Pattern=private, Pattern=. i, Pattern=i
+Turn ID=9| B | Human 2 : i'm not sure . you probably don't know him . i have a private practice either . it's in los altos
+	Free: Pattern=. i have a private practice, Pattern=in, Pattern=don't, Pattern=i'm not sure, Pattern=it's, Pattern=know, Pattern=. you
+	Constrained: Pattern=you, Pattern=practice, Pattern=a, Pattern=private, Pattern=. i, Pattern=i, Pattern=not, Pattern=i'm, Pattern=not sure
+Turn ID=10| A | Human 1 : i'm not sure i know what that is .
+	Free: Pattern=i'm not sure, Pattern=i know, Pattern=what, Pattern=that
+	Constrained: Pattern=i, Pattern=not, Pattern=know, Pattern=i'm, Pattern=not sure
+Turn ID=11| B | Human 2 : i know you have the best practice in that area . were you not sure what i did there though ?
+	Free: Pattern=what, Pattern=did, Pattern=you have, Pattern=in, Pattern=not sure, Pattern=i, Pattern=the, Pattern=practice, Pattern=i know, Pattern=that, Pattern=. were you
+	Constrained: Pattern=you, Pattern=were you, Pattern=know, Pattern=i, Pattern=not
+Turn ID=12| A | Human 1 : lol . not to be elitist but ... that's a real job ?
+	Free: Pattern=job, Pattern=lol, Pattern=a, Pattern=that's, Pattern=to, Pattern=but, Pattern=not
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm not sure what you did but that's cool that you have a job that's private .
+	Free: Pattern=job, Pattern=you, Pattern=what, Pattern=did, Pattern=private, Pattern=you have a, Pattern=that's, Pattern=i'm not sure, Pattern=that, Pattern=but
+	Constrained: Pattern=you, Pattern=a, Pattern=you have, Pattern=not, Pattern=i'm, Pattern=not sure

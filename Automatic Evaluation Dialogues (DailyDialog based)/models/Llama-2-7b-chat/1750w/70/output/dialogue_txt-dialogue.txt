@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: _how_ _is_ _the_ _youtube video creation_ _going_ ? 
+B|3| Human 2: [the] [video creation] [is] [going] _well_ , [how] _can_ _i_ assist _you_ ? 
+A|4| Human 1: whoa ! _looking_ forward to listening to it _. what_ _softewares_ [you] use _for_ it ? 
+B|5| Human 2: [softewares] [for] [youtube video creation] _are_ numerous [. what] specific requirements _do you_ have ? let _me_ _know_ so _i_ _can_ provide [the] best options 
+A|6| Human 1: oh cool _! _what sort of_ music do you compose_ ? 
+B|7| Human 2: [what sort of music] [you compose] [for] [youtube video creation] ? _are_ [you] [looking] [for] any specific genre or mood ? <|im_end| 
+A|8| Human 1: _nice_ .... _you are a rockstar ! 😉_ 
+B|9| Human 2: [nice] ... [you are a rockstar ! 😉] [what sort of music do you compose] [for] [youtube video creation] ? [are] [you] [looking] 
+A|10| Human 1: _yeah_ .... [i] _play_ bit _of guitar_ . just got my first monitor this week 
+B|11| Human 2: [nice] [! what sort [of] guitar] [do you] [play] ? 
+A|12| Human 1: yes , [the] bar _chords_ [are] [the] worst . it took [me] several months to [play] them [well] . [i] still _can't_ [play] them [for] [a] long time though 
+B|13| Human 2: [yeah] , [well] [you] [can't] really [play] [chords] if [the] [guitar] [is] not _in_ tune . 😅<|im_end 
+A|14| Human 1: _that's true_ . it's like [the] alphabets [in] [a] language _. once you know_ them _, you can pretty much_ write word 
+B|15| Human 2: [that's true] [for] [guitar] [chords] too [. once you know] [the] [chords] [well] [, you can pretty much] [play] any song<|im_end 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how is the youtube video creation going ?
+	Free: Pattern=going, Pattern=how, Pattern=is, Pattern=the, Pattern=youtube video creation
+	Constrained: Pattern=video creation
+Turn ID=3| B | Human 2 : the video creation is going well , how can i assist you ?
+	Free: Pattern=well, Pattern=you, Pattern=going, Pattern=how, Pattern=video creation, Pattern=can, Pattern=the, Pattern=is, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : whoa ! looking forward to listening to it . what softewares you use for it ?
+	Free: Pattern=you, Pattern=softewares, Pattern=. what, Pattern=for, Pattern=looking
+	Constrained: 
+Turn ID=5| B | Human 2 : softewares for youtube video creation are numerous . what specific requirements do you have ? let me know so i can provide the best options
+	Free: Pattern=me, Pattern=for, Pattern=do you, Pattern=can, Pattern=know, Pattern=i, Pattern=the, Pattern=. what, Pattern=youtube video creation, Pattern=are, Pattern=softewares
+	Constrained: Pattern=video creation, Pattern=you
+Turn ID=6| A | Human 1 : oh cool ! what sort of music do you compose ?
+	Free: Pattern=what sort of music do you compose, Pattern=! what sort of
+	Constrained: Pattern=you, Pattern=what sort of music, Pattern=you compose, Pattern=do you
+Turn ID=7| B | Human 2 : what sort of music you compose for youtube video creation ? are you looking for any specific genre or mood ? <|im_end|
+	Free: Pattern=you, Pattern=are, Pattern=what sort of music, Pattern=you compose, Pattern=youtube video creation, Pattern=for, Pattern=looking
+	Constrained: Pattern=you, Pattern=video creation
+Turn ID=8| A | Human 1 : nice .... you are a rockstar ! 😉
+	Free: Pattern=you are a rockstar ! 😉, Pattern=nice
+	Constrained: Pattern=are, Pattern=you, Pattern=a
+Turn ID=9| B | Human 2 : nice ... you are a rockstar ! 😉 what sort of music do you compose for youtube video creation ? are you looking
+	Free: Pattern=you, Pattern=are, Pattern=you are a rockstar ! 😉, Pattern=what sort of music do you compose, Pattern=youtube video creation, Pattern=nice, Pattern=for, Pattern=looking
+	Constrained: Pattern=you, Pattern=a, Pattern=video creation, Pattern=do you, Pattern=are, Pattern=what sort of music, Pattern=you compose
+Turn ID=10| A | Human 1 : yeah .... i play bit of guitar . just got my first monitor this week
+	Free: Pattern=of guitar, Pattern=i, Pattern=play, Pattern=yeah
+	Constrained: Pattern=guitar
+Turn ID=11| B | Human 2 : nice ! what sort of guitar do you play ?
+	Free: Pattern=nice, Pattern=do you, Pattern=of guitar, Pattern=! what sort of, Pattern=play
+	Constrained: Pattern=you, Pattern=guitar
+Turn ID=12| A | Human 1 : yes , the bar chords are the worst . it took me several months to play them well . i still can't play them for a long time though
+	Free: Pattern=well, Pattern=chords, Pattern=me, Pattern=a, Pattern=for, Pattern=are, Pattern=i, Pattern=can't, Pattern=the, Pattern=play
+	Constrained: 
+Turn ID=13| B | Human 2 : yeah , well you can't really play chords if the guitar is not in tune . 😅<|im_end
+	Free: Pattern=well, Pattern=yeah, Pattern=in, Pattern=is, Pattern=can't, Pattern=the, Pattern=guitar, Pattern=play, Pattern=you, Pattern=chords
+	Constrained: 
+Turn ID=14| A | Human 1 : that's true . it's like the alphabets in a language . once you know them , you can pretty much write word
+	Free: Pattern=. once you know, Pattern=that's true, Pattern=in, Pattern=the, Pattern=, you can pretty much, Pattern=a
+	Constrained: Pattern=can, Pattern=you, Pattern=know
+Turn ID=15| B | Human 2 : that's true for guitar chords too . once you know the chords well , you can pretty much play any song<|im_end
+	Free: Pattern=well, Pattern=chords, Pattern=. once you know, Pattern=, you can pretty much, Pattern=for, Pattern=that's true, Pattern=the, Pattern=guitar, Pattern=play
+	Constrained: Pattern=can, Pattern=you, Pattern=know

@@ -1,0 +1,79 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , how _are you_ _doing_ ! 
+A|2| Human 1: _i'm_ [doing] well _. what_ [are you] up _to_ ? 
+B|3| Human 2: [i'm] just here [to] help [you] with any questions or tasks [you] might have . how can _i_ assist [you] today ? <|im_end| 
+A|4| Human 1: wow , _that's_ impressive . [i] already gave up on cleaning _emails_ long ago 
+B|5| Human 2: [i] understand . let me help [you] with _that_ [. _what] do you_ need help with specifically ? organizing [emails] , creating filters , or something else ? < 
+A|6| Human 1: _yea ,_ _a_ little bit _, but_ _it's okay_ 🙂 [what do you] _enjoy_ [doing] _outside work ?_ 
+B|7| Human 2: [that's] great ! [outside work _?] i_ [enjoy] reading books , watching _movies_ , and playing video games . how about [you] ? [do you] have any 
+A|8| Human 1: ah cool . _so_ _you like action movies_ ? 
+B|9| Human 2: [yea ,] [i'm] [a] fan _of_ [movies] [like] _that_ . what's your favorite movie genre ? 
+A|10| Human 1: [what] happened _there_ [? i] watched bits [of] terminators [movies] _but_ never [a] full one 
+B|11| Human 2: _no_ worries , [it's okay] . terminator 2 is [a] classic [action] movie . if [you like action movies] , [you] might [enjoy] 
+A|12| Human 1: _haha_ _sure_ . by _the_ time , [i] get [to] it; [i] will forget _the_ details , only knowing [that] [it's] touching at _the_ end 
+B|13| Human 2: [haha] [that's] [okay] ! [there] [are] [so] many great [movies] out [there] , _it_ can be hard [to] keep track [of] them all<|im 
+A|14| Human 1: oh [no] , [so] _it's not_ _happy_ ending ? 
+B|15| Human 2: ha [it's not] [that] [i] don't [like] [happy] endings [, but] sometimes [the] sadder [movies] can be more impactful and thought- 
+A|16| Human 1: then [i] _want to watch_ [it] ! [you] didn't spoil much 🙂 
+B|17| Human 2: 🤖 [sure] ! what's [the] movie [you] [want to watch] ? 
+A|18| Human 1: thanks ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you doing !
+	Free: Pattern=are you, Pattern=hi, Pattern=doing
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm doing well . what are you up to ?
+	Free: Pattern=doing, Pattern=i'm, Pattern=are you, Pattern=to, Pattern=. what
+	Constrained: Pattern=you, Pattern=what, Pattern=are
+Turn ID=3| B | Human 2 : i'm just here to help you with any questions or tasks you might have . how can i assist you today ? <|im_end|
+	Free: Pattern=you, Pattern=to, Pattern=i'm, Pattern=i
+	Constrained: 
+Turn ID=4| A | Human 1 : wow , that's impressive . i already gave up on cleaning emails long ago
+	Free: Pattern=i, Pattern=emails, Pattern=that's
+	Constrained: 
+Turn ID=5| B | Human 2 : i understand . let me help you with that . what do you need help with specifically ? organizing emails , creating filters , or something else ? <
+	Free: Pattern=you, Pattern=i, Pattern=. what, Pattern=that, Pattern=what do you, Pattern=emails
+	Constrained: Pattern=do you, Pattern=you, Pattern=what
+Turn ID=6| A | Human 1 : yea , a little bit , but it's okay 🙂 what do you enjoy doing outside work ?
+	Free: Pattern=, but, Pattern=a, Pattern=yea ,, Pattern=enjoy, Pattern=what do you, Pattern=outside work ?, Pattern=it's okay, Pattern=doing
+	Constrained: Pattern=you, Pattern=what, Pattern=do you, Pattern=okay, Pattern=it's, Pattern=but
+Turn ID=7| B | Human 2 : that's great ! outside work ? i enjoy reading books , watching movies , and playing video games . how about you ? do you have any
+	Free: Pattern=? i, Pattern=you, Pattern=do you, Pattern=enjoy, Pattern=that's, Pattern=movies, Pattern=outside work ?
+	Constrained: Pattern=you, Pattern=i
+Turn ID=8| A | Human 1 : ah cool . so you like action movies ?
+	Free: Pattern=you like action movies, Pattern=so
+	Constrained: Pattern=you, Pattern=movies, Pattern=action, Pattern=like
+Turn ID=9| B | Human 2 : yea , i'm a fan of movies like that . what's your favorite movie genre ?
+	Free: Pattern=of, Pattern=a, Pattern=yea ,, Pattern=i'm, Pattern=like, Pattern=movies, Pattern=that
+	Constrained: 
+Turn ID=10| A | Human 1 : what happened there ? i watched bits of terminators movies but never a full one
+	Free: Pattern=? i, Pattern=of, Pattern=a, Pattern=movies, Pattern=but, Pattern=what, Pattern=there
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : no worries , it's okay . terminator 2 is a classic action movie . if you like action movies , you might enjoy
+	Free: Pattern=you like action movies, Pattern=you, Pattern=a, Pattern=it's okay, Pattern=enjoy, Pattern=action, Pattern=no
+	Constrained: Pattern=you, Pattern=action, Pattern=like, Pattern=movies, Pattern=it's, Pattern=okay
+Turn ID=12| A | Human 1 : haha sure . by the time , i get to it; i will forget the details , only knowing that it's touching at the end
+	Free: Pattern=i, Pattern=haha, Pattern=sure, Pattern=the, Pattern=to, Pattern=that, Pattern=it's
+	Constrained: 
+Turn ID=13| B | Human 2 : haha that's okay ! there are so many great movies out there , it can be hard to keep track of them all<|im
+	Free: Pattern=of, Pattern=there, Pattern=it, Pattern=are, Pattern=haha, Pattern=that's, Pattern=to, Pattern=movies, Pattern=so, Pattern=okay
+	Constrained: 
+Turn ID=14| A | Human 1 : oh no , so it's not happy ending ?
+	Free: Pattern=it's not, Pattern=happy, Pattern=so, Pattern=no
+	Constrained: Pattern=it's
+Turn ID=15| B | Human 2 : ha it's not that i don't like happy endings , but sometimes the sadder movies can be more impactful and thought-
+	Free: Pattern=, but, Pattern=happy, Pattern=i, Pattern=like, Pattern=the, Pattern=that, Pattern=it's not, Pattern=movies
+	Constrained: Pattern=but, Pattern=it's
+Turn ID=16| A | Human 1 : then i want to watch it ! you didn't spoil much 🙂
+	Free: Pattern=want to watch, Pattern=you, Pattern=i, Pattern=it
+	Constrained: Pattern=to
+Turn ID=17| B | Human 2 : 🤖 sure ! what's the movie you want to watch ?
+	Free: Pattern=want to watch, Pattern=you, Pattern=the, Pattern=sure
+	Constrained: Pattern=to
+Turn ID=18| A | Human 1 : thanks !
+	Free: 
+	Constrained: 

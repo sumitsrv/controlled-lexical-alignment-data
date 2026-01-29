@@ -1,0 +1,67 @@
+A|0| Human 1: hi 
+B|1| Human 2: hello ! 
+A|2| Human 1: any improvements _in_ your _marathon_ _time_ ? 
+B|3| Human 2: _i_ _do_ _. it's a_ [marathon] , _not_ _a_ sprint . 
+A|4| Human 1: [i] see . _are you_ planning _to_ [do] any sporting _events_ _in_ _the_ coming _months_ ? 
+B|5| Human 2: i've already started _training_ _for_ [events] this year ... i've only just begun [the] summer _for_ my summer [marathon] , _but_ [i] can't wait ! 
+A|6| Human 1: [i] _like doing_ spartan _race_ [. it's] an _obstacle_ _race_ _which_ is challenging [but] [not] overtly so _like_ marathons _and_ triathlons 
+B|7| Human 2: what [race] [are you] [doing] [and] _for_ [which] reason ? 
+A|8| Human 1: it has abt 20 obstacles _like_ crossing high walls , monkey bars , etc . its _fun_ 
+B|9| Human 2: [do] [you] [like doing] [obstacle] races _for_ [fun] ? how long 
+A|10| Human 1: wanna sign up [for] _next one_ ? its _in_ february _in_ monterey 
+B|11| Human 2: i'm [in] california [next] year . 
+A|12| Human 1: 1-2 _months_ is [a] good amount of _time_ , if [you] workout regularly [. it's a] lot about [the] technique , [which] we can practice [in] [training] sessions . 
+B|13| Human 2: 2 [months] [for] me ! [it's] great [time] [for] [a] new game [to] come out . 
+A|14| Human 1: awesome ! there is [a] [training] ground [in] san jose . will coordinate with [you] [next] [time] we go [for] practice . 
+B|15| Human 2: i'm [in] socal [for] [the] [next one] . i'm on [a] mission trip . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : any improvements in your marathon time ?
+	Free: Pattern=marathon, Pattern=time, Pattern=in
+	Constrained: 
+Turn ID=3| B | Human 2 : i do . it's a marathon , not a sprint .
+	Free: Pattern=marathon, Pattern=i, Pattern=. it's a, Pattern=not, Pattern=do, Pattern=a
+	Constrained: Pattern=. it's, Pattern=it's, Pattern=a
+Turn ID=4| A | Human 1 : i see . are you planning to do any sporting events in the coming months ?
+	Free: Pattern=months, Pattern=do, Pattern=events, Pattern=in, Pattern=the, Pattern=to, Pattern=are you, Pattern=i
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : i've already started training for events this year ... i've only just begun the summer for my summer marathon , but i can't wait !
+	Free: Pattern=training, Pattern=i, Pattern=the, Pattern=but, Pattern=marathon, Pattern=for, Pattern=events
+	Constrained: 
+Turn ID=6| A | Human 1 : i like doing spartan race . it's an obstacle race which is challenging but not overtly so like marathons and triathlons
+	Free: Pattern=. it's, Pattern=and, Pattern=i, Pattern=like, Pattern=like doing, Pattern=which, Pattern=but, Pattern=not, Pattern=race, Pattern=obstacle
+	Constrained: Pattern=doing, Pattern=it's, Pattern=like
+Turn ID=7| B | Human 2 : what race are you doing and for which reason ?
+	Free: Pattern=doing, Pattern=for, Pattern=and, Pattern=race, Pattern=are you, Pattern=which
+	Constrained: Pattern=you
+Turn ID=8| A | Human 1 : it has abt 20 obstacles like crossing high walls , monkey bars , etc . its fun
+	Free: Pattern=like, Pattern=fun
+	Constrained: 
+Turn ID=9| B | Human 2 : do you like doing obstacle races for fun ? how long
+	Free: Pattern=fun, Pattern=you, Pattern=do, Pattern=for, Pattern=obstacle, Pattern=like doing
+	Constrained: Pattern=doing, Pattern=like
+Turn ID=10| A | Human 1 : wanna sign up for next one ? its in february in monterey
+	Free: Pattern=next one, Pattern=for, Pattern=in
+	Constrained: Pattern=next
+Turn ID=11| B | Human 2 : i'm in california next year .
+	Free: Pattern=next, Pattern=in
+	Constrained: 
+Turn ID=12| A | Human 1 : 1-2 months is a good amount of time , if you workout regularly . it's a lot about the technique , which we can practice in training sessions .
+	Free: Pattern=time, Pattern=you, Pattern=training, Pattern=months, Pattern=a, Pattern=in, Pattern=. it's a, Pattern=the, Pattern=which
+	Constrained: Pattern=. it's, Pattern=it's, Pattern=a
+Turn ID=13| B | Human 2 : 2 months for me ! it's great time for a new game to come out .
+	Free: Pattern=time, Pattern=months, Pattern=a, Pattern=for, Pattern=to, Pattern=it's
+	Constrained: 
+Turn ID=14| A | Human 1 : awesome ! there is a training ground in san jose . will coordinate with you next time we go for practice .
+	Free: Pattern=time, Pattern=next, Pattern=you, Pattern=training, Pattern=a, Pattern=for, Pattern=in
+	Constrained: 
+Turn ID=15| B | Human 2 : i'm in socal for the next one . i'm on a mission trip .
+	Free: Pattern=a, Pattern=for, Pattern=next one, Pattern=in, Pattern=the
+	Constrained: Pattern=next

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey there ! 
+A|2| Human 1: _how's_ _life_ ? 
+B|3| Human 2: great [life] _is_ great , but _the_ weather _is_ crazy ! [how's] _your_ day so far ? 
+A|4| Human 1: _lol_ _which_ _cafe_ ? let me _guess_ . <redacted_term> ? 
+B|5| Human 2: hey ! _my_ life's great right now . how _about you ?_ yes _i_ was drinking tea and [cafe] latte . 
+A|6| Human 1: _what_ [is] [your] favoriate _cuisine ?_ [my] _favorite_ _food is_ _chinese_ _. what about you ?_ 
+B|7| Human 2: hello ! _i_ [guess] [you] already guessed right [about] _the_ [cafe] [lol] . [chinese] [food is] great , i'm a huge fan _of_ thai [food] 
+A|8| Human 1: hmm _you like spicy food_ . nice 
+B|9| Human 2: _i_ love [chinese] [food] and [spicy food] ! [what about you] [what] [your] [favorite] [cuisine ?] 
+A|10| Human 1: [i] would recommend _hunan impression_ _which_ _has very good_ _hunan_ _cruisine ._ _not_ sure if _you have_ _tried_ it or _not_ 
+B|11| Human 2: [i] [like spicy food] as well [you have] [good] taste . [hunan impression] [has very good] [cruisine [.] what about you ?] 
+A|12| Human 1: yeah [of] course [the] fun _fact_ [is] _that_ [the] owner [of] <redacted_term> used to run <redacted_term> 
+B|13| Human 2: [i] [have] [not] [tried] [that] , but [the] [fact] [that] [you like spicy food] [which] [i] love also makes [you] [good] in [my] book [. what] [has] [your] [favorite] 
+A|14| Human 1: same former owner ?? 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there !
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how's life ?
+	Free: Pattern=life, Pattern=how's
+	Constrained: 
+Turn ID=3| B | Human 2 : great life is great , but the weather is crazy ! how's your day so far ?
+	Free: Pattern=how's, Pattern=the, Pattern=life, Pattern=is, Pattern=your
+	Constrained: 
+Turn ID=4| A | Human 1 : lol which cafe ? let me guess . <redacted_term> ?
+	Free: Pattern=which, Pattern=lol, Pattern=guess, Pattern=cafe
+	Constrained: 
+Turn ID=5| B | Human 2 : hey ! my life's great right now . how about you ? yes i was drinking tea and cafe latte .
+	Free: Pattern=about you ?, Pattern=my, Pattern=i, Pattern=cafe
+	Constrained: Pattern=about, Pattern=you
+Turn ID=6| A | Human 1 : what is your favoriate cuisine ? my favorite food is chinese . what about you ?
+	Free: Pattern=cuisine ?, Pattern=what, Pattern=favorite, Pattern=chinese, Pattern=food is, Pattern=my, Pattern=. what about you ?, Pattern=is, Pattern=your
+	Constrained: Pattern=you, Pattern=what, Pattern=about, Pattern=is, Pattern=food, Pattern=about you ?, Pattern=what about you, Pattern=. what
+Turn ID=7| B | Human 2 : hello ! i guess you already guessed right about the cafe lol . chinese food is great , i'm a huge fan of thai food
+	Free: Pattern=cafe, Pattern=you, Pattern=about, Pattern=chinese, Pattern=i, Pattern=food, Pattern=the, Pattern=guess, Pattern=food is, Pattern=of, Pattern=lol
+	Constrained: Pattern=food, Pattern=is
+Turn ID=8| A | Human 1 : hmm you like spicy food . nice
+	Free: Pattern=you like spicy food
+	Constrained: Pattern=like spicy food, Pattern=spicy food, Pattern=food, Pattern=you
+Turn ID=9| B | Human 2 : i love chinese food and spicy food ! what about you what your favorite cuisine ?
+	Free: Pattern=cuisine ?, Pattern=what, Pattern=favorite, Pattern=chinese, Pattern=food, Pattern=what about you, Pattern=spicy food, Pattern=your, Pattern=i
+	Constrained: Pattern=what, Pattern=you, Pattern=food, Pattern=about
+Turn ID=10| A | Human 1 : i would recommend hunan impression which has very good hunan cruisine . not sure if you have tried it or not
+	Free: Pattern=you have, Pattern=i, Pattern=hunan, Pattern=tried, Pattern=hunan impression, Pattern=which, Pattern=not, Pattern=has very good, Pattern=cruisine .
+	Constrained: Pattern=good, Pattern=you, Pattern=have, Pattern=has, Pattern=hunan
+Turn ID=11| B | Human 2 : i like spicy food as well you have good taste . hunan impression has very good cruisine . what about you ?
+	Free: Pattern=good, Pattern=you have, Pattern=i, Pattern=hunan impression, Pattern=like spicy food, Pattern=. what about you ?, Pattern=has very good, Pattern=cruisine .
+	Constrained: Pattern=good, Pattern=you, Pattern=have, Pattern=what, Pattern=has, Pattern=about, Pattern=about you ?, Pattern=what about you, Pattern=. what, Pattern=spicy food, Pattern=hunan, Pattern=food
+Turn ID=12| A | Human 1 : yeah of course the fun fact is that the owner of <redacted_term> used to run <redacted_term>
+	Free: Pattern=of, Pattern=fact, Pattern=is, Pattern=the, Pattern=that
+	Constrained: 
+Turn ID=13| B | Human 2 : i have not tried that , but the fact that you like spicy food which i love also makes you good in my book . what has your favorite
+	Free: Pattern=good, Pattern=you, Pattern=have, Pattern=fact, Pattern=has, Pattern=favorite, Pattern=tried, Pattern=the, Pattern=. what, Pattern=that, Pattern=not, Pattern=you like spicy food, Pattern=your, Pattern=i, Pattern=which, Pattern=my
+	Constrained: Pattern=you, Pattern=what, Pattern=food, Pattern=like spicy food, Pattern=spicy food
+Turn ID=14| A | Human 1 : same former owner ?? 🙂
+	Free: 
+	Constrained: 

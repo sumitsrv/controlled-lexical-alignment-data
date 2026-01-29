@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm_ _mark_ . _i_ _work_ in _accounting_ 
+B|3| Human 2: that's great [mark] ! [accounting] can be _a_ tricky field . _do you_ [work] with quickbooks ? 
+A|4| Human 1: _what_ _does_ [a] _fish groomer_ _do ?_ 
+B|5| Human 2: [i'm] just an ai , [i] don't [work] with [fish] grooming . [what] _about_ [accounting] software ? [does] your _company_ use quick 
+A|6| Human 1: interesting . what's _type of_ [fish] [do you] _take care of_ ? 
+B|7| Human 2: [i'm] just an ai _and_ [fish groomer] [does] [take care of] fishs . [what] [type of] [accounting] [work] [you] [do ?] <| 
+A|8| Human 1: [i] balance _the_ _books_ [and] [do] _financial_ analysis _for_ [a] medium sized [company] 
+B|9| Human 2: [i'm] just an ai [and] [fish groomer] [does] [take care] [for] [the] [company] s [financial] [books] 
+A|10| Human 1: well [i] actually _think about_ _pursuing photography_ , _but_ _it's_ _really_ _hard_ 
+B|11| Human 2: [it's] [hard] [for] me [pursuing photography] too [but] [i] [really] [think about] [fish groomer] [does] [take care] [the] [company] s [financial] [books] [for] [you] 
+A|12| Human 1: thank [you] tom !! _i'm starting_ by trying to _sell_ my _pictures_ _online_ 
+B|13| Human 2: [really] ? [i'm starting] [online] [pictures] [for] [you] [sell] [fish groomer] [does] [take care] [the] [company] s [financial] [books] 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=accounting, Pattern=mark, Pattern=i, Pattern=i'm, Pattern=work
+	Constrained: 
+Turn ID=3| B | Human 2 : that's great mark ! accounting can be a tricky field . do you work with quickbooks ?
+	Free: Pattern=a, Pattern=do you, Pattern=accounting, Pattern=mark, Pattern=work
+	Constrained: Pattern=do, Pattern=you
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=fish groomer, Pattern=what, Pattern=a, Pattern=does, Pattern=do ?
+	Constrained: Pattern=do, Pattern=fish
+Turn ID=5| B | Human 2 : i'm just an ai , i don't work with fish grooming . what about accounting software ? does your company use quick
+	Free: Pattern=company, Pattern=what, Pattern=accounting, Pattern=about, Pattern=does, Pattern=i, Pattern=fish, Pattern=i'm, Pattern=work
+	Constrained: 
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=take care of, Pattern=type of, Pattern=do you, Pattern=fish
+	Constrained: Pattern=do, Pattern=you, Pattern=take care
+Turn ID=7| B | Human 2 : i'm just an ai and fish groomer does take care of fishs . what type of accounting work you do ? <|
+	Free: Pattern=you, Pattern=fish groomer, Pattern=and, Pattern=accounting, Pattern=does, Pattern=take care of, Pattern=do ?, Pattern=type of, Pattern=what, Pattern=i'm, Pattern=work
+	Constrained: Pattern=do, Pattern=fish, Pattern=take care
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=company, Pattern=financial, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=books, Pattern=do, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : i'm just an ai and fish groomer does take care for the company s financial books
+	Free: Pattern=company, Pattern=financial, Pattern=fish groomer, Pattern=for, Pattern=and, Pattern=does, Pattern=i'm, Pattern=take care, Pattern=the, Pattern=books
+	Constrained: Pattern=fish
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=think about, Pattern=i, Pattern=really, Pattern=hard, Pattern=pursuing photography, Pattern=it's, Pattern=but
+	Constrained: Pattern=about
+Turn ID=11| B | Human 2 : it's hard for me pursuing photography too but i really think about fish groomer does take care the company s financial books for you
+	Free: Pattern=company, Pattern=financial, Pattern=you, Pattern=think about, Pattern=fish groomer, Pattern=for, Pattern=does, Pattern=i, Pattern=really, Pattern=take care, Pattern=the, Pattern=books, Pattern=hard, Pattern=pursuing photography, Pattern=it's, Pattern=but
+	Constrained: Pattern=fish, Pattern=about
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=i'm starting, Pattern=you, Pattern=pictures, Pattern=online, Pattern=sell
+	Constrained: Pattern=i'm
+Turn ID=13| B | Human 2 : really ? i'm starting online pictures for you sell fish groomer does take care the company s financial books
+	Free: Pattern=financial, Pattern=you, Pattern=fish groomer, Pattern=for, Pattern=pictures, Pattern=does, Pattern=online, Pattern=really, Pattern=take care, Pattern=sell, Pattern=the, Pattern=books, Pattern=i'm starting, Pattern=company
+	Constrained: Pattern=fish, Pattern=i'm
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

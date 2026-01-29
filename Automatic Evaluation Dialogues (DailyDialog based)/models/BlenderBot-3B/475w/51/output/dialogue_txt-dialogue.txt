@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how's your day _been ?_ 
+A|2| Human 1: _it's good_ ! _i_ spent _most_ of _it_ _watching_ _horse racing_ _. how_ _about_ yourself ? 
+B|3| Human 2: [it's good] . _i'm_ [about] _to_ take _the_ [horse] _to_ _the_ veterinary today . 
+A|4| Human 1: _i_ actually _like_ _to put_ _down some money_ , but _i_ wouldn't call _it_ my favorite part , _since i_ _usually_ lose _it_ ... haha . _catching up with friends_ is _great_ ! _how long had it been ?_ 
+B|5| Human 2: [it's] [been] a [great] [long] while [since i] [had] [horse racing] ! [catching up with friends] [usually] means [watching] [some] [good] old sports [like] football and so 
+A|6| Human 1: [i'm] thinking of _going_ _deep sea fishing_ . ever tried _that_ _before_ ? 
+B|7| Human 2: [it's] [been] [great] [i'm] [going] [to put] [that] [down some money] [to] _go_ [fishing] [with friends] [. [how] long had it been ?] 
+A|8| Human 1: _just_ _once_ ! [i] _got_ super _sea_ sick .. haha _have any_ _fun_ weekend plans yourself ? 
+B|9| Human 2: [deep sea fishing] sounds [like] [fun] . [i'm] [going] [that] [with] [some] [friends] [once] in a while . [just] [got] our boat in may . [have any] 
+A|10| Human 1: oh very cool . [i] hear _its_ nice over _there_ . do _you_ [go] often ? 
+B|11| Human 2: [i'm] [going] [down] [there] [with] [some] [friends] [that] [have] [been] [before] . [it] really excites me [. [how] long] [you] [been] [down] [deep sea fishing] ? 
+A|12| Human 1: new york is [the] top of my list _because_ my family lives [there] ! as far as [the] city itself though ... [i] think i'd prefer someplace outside of [the] us , [like] tokyo . what [about] [you] ? 
+B|13| Human 2: [i] [like] [the] [sea] [because] [its] [deep] and [there] are fish [you] can't see in [most] lakes or ponds . [about] 10 years 
+A|14| Human 1: oh _i've_ never [been] ! [it] is such an iconic place , [i] [have] [to] make [the] time [to] get [there] soon . 
+B|15| Human 2: [i've] [been] [there] [about] 3 years . what's [the] [deep sea] [have] [you] [been] [down] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how's your day been ?
+	Free: Pattern=been ?
+	Constrained: Pattern=been
+Turn ID=2| A | Human 1 : it's good ! i spent most of it watching horse racing . how about yourself ?
+	Free: Pattern=watching, Pattern=it, Pattern=. how, Pattern=about, Pattern=i, Pattern=it's good, Pattern=most, Pattern=horse racing
+	Constrained: Pattern=it's, Pattern=good, Pattern=horse
+Turn ID=3| B | Human 2 : it's good . i'm about to take the horse to the veterinary today .
+	Free: Pattern=horse, Pattern=about, Pattern=i'm, Pattern=the, Pattern=it's good, Pattern=to
+	Constrained: Pattern=it's, Pattern=good
+Turn ID=4| A | Human 1 : i actually like to put down some money , but i wouldn't call it my favorite part , since i usually lose it ... haha . catching up with friends is great ! how long had it been ?
+	Free: Pattern=how long had it been ?, Pattern=usually, Pattern=great, Pattern=it, Pattern=down some money, Pattern=to put, Pattern=i, Pattern=catching up with friends, Pattern=like, Pattern=since i
+	Constrained: Pattern=with friends, Pattern=long, Pattern=how long, Pattern=down, Pattern=it, Pattern=i, Pattern=friends, Pattern=had, Pattern=to, Pattern=been, Pattern=with, Pattern=been ?, Pattern=some
+Turn ID=5| B | Human 2 : it's been a great long while since i had horse racing ! catching up with friends usually means watching some good old sports like football and so
+	Free: Pattern=good, Pattern=usually, Pattern=great, Pattern=watching, Pattern=long, Pattern=some, Pattern=had, Pattern=horse racing, Pattern=catching up with friends, Pattern=been, Pattern=it's, Pattern=like, Pattern=since i
+	Constrained: Pattern=with friends, Pattern=horse, Pattern=i, Pattern=friends, Pattern=with
+Turn ID=6| A | Human 1 : i'm thinking of going deep sea fishing . ever tried that before ?
+	Free: Pattern=going, Pattern=deep sea fishing, Pattern=i'm, Pattern=before, Pattern=that
+	Constrained: Pattern=sea, Pattern=fishing, Pattern=deep, Pattern=deep sea
+Turn ID=7| B | Human 2 : it's been great i'm going to put that down some money to go fishing with friends . how long had it been ?
+	Free: Pattern=great, Pattern=going, Pattern=go, Pattern=fishing, Pattern=down some money, Pattern=. how, Pattern=to, Pattern=been, Pattern=how long had it been ?, Pattern=with friends, Pattern=to put, Pattern=i'm, Pattern=that, Pattern=it's
+	Constrained: Pattern=long, Pattern=how long, Pattern=down, Pattern=it, Pattern=friends, Pattern=had, Pattern=to, Pattern=been, Pattern=with, Pattern=been ?, Pattern=some
+Turn ID=8| A | Human 1 : just once ! i got super sea sick .. haha have any fun weekend plans yourself ?
+	Free: Pattern=fun, Pattern=just, Pattern=once, Pattern=have any, Pattern=sea, Pattern=i, Pattern=got
+	Constrained: Pattern=have
+Turn ID=9| B | Human 2 : deep sea fishing sounds like fun . i'm going that with some friends once in a while . just got our boat in may . have any
+	Free: Pattern=fun, Pattern=once, Pattern=some, Pattern=i'm, Pattern=got, Pattern=going, Pattern=just, Pattern=have any, Pattern=deep sea fishing, Pattern=friends, Pattern=like, Pattern=with, Pattern=that
+	Constrained: Pattern=deep sea, Pattern=have, Pattern=sea, Pattern=fishing, Pattern=deep
+Turn ID=10| A | Human 1 : oh very cool . i hear its nice over there . do you go often ?
+	Free: Pattern=its, Pattern=you, Pattern=go, Pattern=there, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm going down there with some friends that have been before . it really excites me . how long you been down deep sea fishing ?
+	Free: Pattern=you, Pattern=there, Pattern=how long, Pattern=down, Pattern=it, Pattern=deep sea fishing, Pattern=. how, Pattern=some, Pattern=i'm, Pattern=friends, Pattern=before, Pattern=been, Pattern=going, Pattern=have, Pattern=with, Pattern=that
+	Constrained: Pattern=deep sea, Pattern=long, Pattern=sea, Pattern=fishing, Pattern=deep
+Turn ID=12| A | Human 1 : new york is the top of my list because my family lives there ! as far as the city itself though ... i think i'd prefer someplace outside of the us , like tokyo . what about you ?
+	Free: Pattern=you, Pattern=there, Pattern=because, Pattern=about, Pattern=i, Pattern=like, Pattern=the
+	Constrained: 
+Turn ID=13| B | Human 2 : i like the sea because its deep and there are fish you can't see in most lakes or ponds . about 10 years
+	Free: Pattern=its, Pattern=you, Pattern=there, Pattern=because, Pattern=deep, Pattern=about, Pattern=sea, Pattern=i, Pattern=like, Pattern=most, Pattern=the
+	Constrained: 
+Turn ID=14| A | Human 1 : oh i've never been ! it is such an iconic place , i have to make the time to get there soon .
+	Free: Pattern=have, Pattern=there, Pattern=it, Pattern=i've, Pattern=i, Pattern=the, Pattern=to, Pattern=been
+	Constrained: 
+Turn ID=15| B | Human 2 : i've been there about 3 years . what's the deep sea have you been down ?
+	Free: Pattern=deep sea, Pattern=you, Pattern=have, Pattern=there, Pattern=down, Pattern=i've, Pattern=about, Pattern=the, Pattern=been
+	Constrained: Pattern=sea, Pattern=deep

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello ! how _are you_ doing 🙂 
+A|2| Human 1: _i'm_ _great_ ! how's _your_ _day_ going ? 
+B|3| Human 2: [i'm] doing [great] 😊 how can _i_ assist _you_ today ? 
+A|4| Human 1: oh _that_ is _cool_ ! _what_ class _? are you_ working _part time_ ? 
+B|5| Human 2: ah 🤔 [i'm] just an ai , _i_ don't have personal experiences or [part time] jobs 😅 
+A|6| Human 1: oh _that_ is _awesome_ ! for some reason [i] assumed it was a college class , but a sewing class sounds way better ! [i] work _full time_ , but [i] take _pottery_ classes from [time] _to_ [time] ! 
+B|7| Human 2: 🎨👍 what's _your favorite_ [pottery] piece you've made _so_ far ? <|im_end| 
+A|8| Human 1: [i] feel [you] on _that_ _! it's_ important _to_ balance _all_ _the_ _different_ parts _of_ [your] brain . [i] _like_ [pottery] because [i] also drink a lot _of tea_ , [so] [i] _get_ _to_ _make_ some _tea ware_ . 
+B|9| Human 2: how [cool] [you] [get] [the] [make] [tea ware] that's [awesome] 
+A|10| Human 1: [i] would love _to_ build _one_ , once [i] acquire [the] skills _to_ ! _what kind of tea_ is [your favorite] ? 
+B|11| Human 2: 🤖 [i'm] [the] [one] drinking [tea] [all] [day] long [! it's] [part] [of] my [full time] job , [you] know 
+A|12| Human 1: _ahh_ , those [are] _mostly_ from japan , no ? [i] _like_ white _teas_ , _like silver needle_ . 
+B|13| Human 2: [ahh] [i] see 🌟 [what kind of [tea] ware] [are you] [mostly] drawn [to] [? are you] [the] [one] [pottery] [like] [your favorite] 
+A|14| Human 1: [i] actually found a youtube channel called <redacted_term> _that_ [i] [like] a lot . [you] should check it out ! _the host talks about all kinds of different teas_ . 
+B|15| Human 2: redacted_term [the host talks about all kinds of different teas] [like silver needle] [that] [you] [are] <|im_ 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello ! how are you doing 🙂
+	Free: Pattern=are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm great ! how's your day going ?
+	Free: Pattern=day, Pattern=i'm, Pattern=your, Pattern=great
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm doing great 😊 how can i assist you today ?
+	Free: Pattern=i'm, Pattern=great, Pattern=i, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : oh that is cool ! what class ? are you working part time ?
+	Free: Pattern=what, Pattern=part time, Pattern=that, Pattern=cool, Pattern=? are you
+	Constrained: Pattern=time, Pattern=you, Pattern=are, Pattern=are you, Pattern=part
+Turn ID=5| B | Human 2 : ah 🤔 i'm just an ai , i don't have personal experiences or part time jobs 😅
+	Free: Pattern=part time, Pattern=i'm, Pattern=i
+	Constrained: Pattern=time, Pattern=part
+Turn ID=6| A | Human 1 : oh that is awesome ! for some reason i assumed it was a college class , but a sewing class sounds way better ! i work full time , but i take pottery classes from time to time !
+	Free: Pattern=time, Pattern=full time, Pattern=i, Pattern=pottery, Pattern=awesome, Pattern=to, Pattern=that
+	Constrained: Pattern=time
+Turn ID=7| B | Human 2 : 🎨👍 what's your favorite pottery piece you've made so far ? <|im_end|
+	Free: Pattern=your favorite, Pattern=pottery, Pattern=so
+	Constrained: Pattern=your
+Turn ID=8| A | Human 1 : i feel you on that ! it's important to balance all the different parts of your brain . i like pottery because i also drink a lot of tea , so i get to make some tea ware .
+	Free: Pattern=different, Pattern=of, Pattern=you, Pattern=! it's, Pattern=tea ware, Pattern=to, Pattern=get, Pattern=that, Pattern=so, Pattern=your, Pattern=make, Pattern=i, Pattern=pottery, Pattern=like, Pattern=of tea, Pattern=the, Pattern=all
+	Constrained: Pattern=tea, Pattern=of
+Turn ID=9| B | Human 2 : how cool you get the make tea ware that's awesome
+	Free: Pattern=you, Pattern=cool, Pattern=tea ware, Pattern=make, Pattern=the, Pattern=awesome, Pattern=get
+	Constrained: Pattern=tea
+Turn ID=10| A | Human 1 : i would love to build one , once i acquire the skills to ! what kind of tea is your favorite ?
+	Free: Pattern=what kind of tea, Pattern=i, Pattern=the, Pattern=to, Pattern=your favorite, Pattern=one
+	Constrained: Pattern=of, Pattern=what, Pattern=tea, Pattern=your, Pattern=of tea
+Turn ID=11| B | Human 2 : 🤖 i'm the one drinking tea all day long ! it's part of my full time job , you know
+	Free: Pattern=you, Pattern=! it's, Pattern=tea, Pattern=one, Pattern=i'm, Pattern=day, Pattern=full time, Pattern=of, Pattern=part, Pattern=the, Pattern=all
+	Constrained: Pattern=time
+Turn ID=12| A | Human 1 : ahh , those are mostly from japan , no ? i like white teas , like silver needle .
+	Free: Pattern=like silver needle, Pattern=are, Pattern=i, Pattern=like, Pattern=mostly, Pattern=teas, Pattern=ahh
+	Constrained: Pattern=like
+Turn ID=13| B | Human 2 : ahh i see 🌟 what kind of tea ware are you mostly drawn to ? are you the one pottery like your favorite
+	Free: Pattern=tea ware, Pattern=mostly, Pattern=the, Pattern=to, Pattern=ahh, Pattern=? are you, Pattern=what kind of tea, Pattern=your favorite, Pattern=one, Pattern=are you, Pattern=i, Pattern=pottery, Pattern=like
+	Constrained: Pattern=of, Pattern=you, Pattern=what, Pattern=tea, Pattern=are, Pattern=of tea, Pattern=are you, Pattern=your
+Turn ID=14| A | Human 1 : i actually found a youtube channel called <redacted_term> that i like a lot . you should check it out ! the host talks about all kinds of different teas .
+	Free: Pattern=you, Pattern=the host talks about all kinds of different teas, Pattern=i, Pattern=like, Pattern=that
+	Constrained: Pattern=different, Pattern=of, Pattern=teas, Pattern=the, Pattern=all
+Turn ID=15| B | Human 2 : redacted_term the host talks about all kinds of different teas like silver needle that you are <|im_
+	Free: Pattern=you, Pattern=the host talks about all kinds of different teas, Pattern=like silver needle, Pattern=are, Pattern=that
+	Constrained: Pattern=different, Pattern=of, Pattern=like, Pattern=teas, Pattern=the, Pattern=all

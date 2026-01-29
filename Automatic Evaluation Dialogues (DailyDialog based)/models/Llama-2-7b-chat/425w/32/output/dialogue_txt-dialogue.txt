@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello 
+A|2| Human 1: nice _to_ meet _you_ ! _is_ this your first time doing _something_ _like_ this ? 
+B|3| Human 2: great ! i&apos;m here [to] help [you] _with_ any questions [you] may _have_ . [is] there [something] specific [you] would [like] [to] learn or 
+A|4| Human 1: i [have] been _with the_ _company_ _for_ over _3 years_ . stick _with the same team_ what about [you] ? 
+B|5| Human 2: wow , [3 years] [is] _a_ great milestone ! sticking [with the same team] [for] _that_ long shows _a_ lot of dedication and commit 
+A|6| Human 1: _that sounds like a perfect plan !_ 
+B|7| Human 2: [that sounds like a perfect plan !] it&apos;s _always_ great [to] [have] someone [with] experience as [a] mentor . [is] there anything [you] would 
+A|8| Human 1: _let's_ try [something] different . what about _<redacted_term>_ ? do [you] [always] prefer lunch sync over regular meeting syncs ? 
+B|9| Human 2: that's [a] great question ! [<redacted_term>] [is] actually [something] [that] _we_ are exploring as [a] [company] [to] help 
+A|10| Human 1: [we] _can_ _check the menu_ _then_ _decide_ :) 
+B|11| Human 2: [that sounds like a] [plan !] [let's] [check the menu] and [decide] [then] . [<redacted_term>] [can] be [a] great way 
+A|12| Human 1: sure . see [you] [then] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : nice to meet you ! is this your first time doing something like this ?
+	Free: Pattern=you, Pattern=is, Pattern=like, Pattern=to, Pattern=something
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! i&apos;m here to help you with any questions you may have . is there something specific you would like to learn or
+	Free: Pattern=you, Pattern=have, Pattern=is, Pattern=like, Pattern=to, Pattern=with, Pattern=something
+	Constrained: 
+Turn ID=4| A | Human 1 : i have been with the company for over 3 years . stick with the same team what about you ?
+	Free: Pattern=company, Pattern=you, Pattern=with the same team, Pattern=for, Pattern=3 years, Pattern=with the, Pattern=have
+	Constrained: Pattern=with the, Pattern=with
+Turn ID=5| B | Human 2 : wow , 3 years is a great milestone ! sticking with the same team for that long shows a lot of dedication and commit
+	Free: Pattern=with the same team, Pattern=a, Pattern=for, Pattern=is, Pattern=3 years, Pattern=that
+	Constrained: Pattern=with the, Pattern=with
+Turn ID=6| A | Human 1 : that sounds like a perfect plan !
+	Free: Pattern=that sounds like a perfect plan !
+	Constrained: Pattern=a, Pattern=that sounds like a, Pattern=plan !, Pattern=like, Pattern=that
+Turn ID=7| B | Human 2 : that sounds like a perfect plan ! it&apos;s always great to have someone with experience as a mentor . is there anything you would
+	Free: Pattern=always, Pattern=you, Pattern=have, Pattern=a, Pattern=to, Pattern=with, Pattern=is, Pattern=that sounds like a perfect plan !
+	Constrained: Pattern=a, Pattern=that sounds like a, Pattern=plan !, Pattern=like, Pattern=that
+Turn ID=8| A | Human 1 : let's try something different . what about <redacted_term> ? do you always prefer lunch sync over regular meeting syncs ?
+	Free: Pattern=always, Pattern=you, Pattern=<redacted_term>, Pattern=let's, Pattern=something
+	Constrained: 
+Turn ID=9| B | Human 2 : that's a great question ! <redacted_term> is actually something that we are exploring as a company to help
+	Free: Pattern=company, Pattern=a, Pattern=<redacted_term>, Pattern=is, Pattern=we, Pattern=to, Pattern=that, Pattern=something
+	Constrained: 
+Turn ID=10| A | Human 1 : we can check the menu then decide :)
+	Free: Pattern=check the menu, Pattern=decide, Pattern=then, Pattern=can, Pattern=we
+	Constrained: 
+Turn ID=11| B | Human 2 : that sounds like a plan ! let's check the menu and decide then . <redacted_term> can be a great way
+	Free: Pattern=check the menu, Pattern=decide, Pattern=that sounds like a, Pattern=plan !, Pattern=let's, Pattern=then, Pattern=a, Pattern=<redacted_term>, Pattern=can
+	Constrained: Pattern=a, Pattern=that, Pattern=like
+Turn ID=12| A | Human 1 : sure . see you then !
+	Free: Pattern=then, Pattern=you
+	Constrained: 

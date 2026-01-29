@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i_ am _good_ . [how are you] ? ：） 
+B|3| Human 2: goodbye [good] friend 
+A|4| Human 1: _i_ am _busy_ . _a_ lot _of_ _work_ . what [are you] _working on_ ? 
+B|5| Human 2: goodbye [good] friend . now _you are_ [busy] [working] ? 
+A|6| Human 1: _i_ am _working on a new classifier_ . 
+B|7| Human 2: [i] [work] in an unclaimed country but _you are_ [working on a new classifier] ? 
+A|8| Human 1: [a new classifier] _for hate speech_ . which _research_ topic catches _your_ eyes _most_ ? 
+B|9| Human 2: [i] [work] [for hate speech] [research] and [working] [most] [of] the day 
+A|10| Human 1: nice ! _do_ [you] refer to [work] or anything else ? 
+B|11| Human 2: [i] [work] [for hate speech] [research] and [working] [most] [of] the day . [i] [do] [your] [research] _you are_ [a] [good] guy ! 
+A|12| Human 1: [you are] very cool too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=good, Pattern=i
+	Constrained: Pattern=are you, Pattern=you
+Turn ID=3| B | Human 2 : goodbye good friend
+	Free: Pattern=good
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=of, Pattern=working on, Pattern=work, Pattern=busy, Pattern=a, Pattern=are you, Pattern=i
+	Constrained: Pattern=you, Pattern=working
+Turn ID=5| B | Human 2 : goodbye good friend . now you are busy working ?
+	Free: Pattern=you are, Pattern=busy, Pattern=good, Pattern=working
+	Constrained: Pattern=you
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=working on a new classifier, Pattern=i
+	Constrained: Pattern=a, Pattern=working on, Pattern=a new classifier, Pattern=working
+Turn ID=7| B | Human 2 : i work in an unclaimed country but you are working on a new classifier ?
+	Free: Pattern=working on a new classifier, Pattern=you are, Pattern=i, Pattern=work
+	Constrained: Pattern=you, Pattern=a, Pattern=working on, Pattern=working, Pattern=a new classifier
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=your, Pattern=most, Pattern=a new classifier, Pattern=research, Pattern=for hate speech
+	Constrained: Pattern=a
+Turn ID=9| B | Human 2 : i work for hate speech research and working most of the day
+	Free: Pattern=of, Pattern=working, Pattern=work, Pattern=i, Pattern=most, Pattern=research, Pattern=for hate speech
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=you, Pattern=do, Pattern=work
+	Constrained: 
+Turn ID=11| B | Human 2 : i work for hate speech research and working most of the day . i do your research you are a good guy !
+	Free: Pattern=good, Pattern=of, Pattern=working, Pattern=you are, Pattern=work, Pattern=most, Pattern=research, Pattern=for hate speech, Pattern=do, Pattern=a, Pattern=your, Pattern=i
+	Constrained: Pattern=you
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=you are
+	Constrained: Pattern=you

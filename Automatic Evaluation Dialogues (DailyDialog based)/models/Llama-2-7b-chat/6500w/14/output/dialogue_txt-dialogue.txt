@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: just chillin' . _how_ are _you_ ? 
+B|3| Human 2: _i'm_ doing well , thanks for asking ! [how] can _i_ assist [you] _today ?_ 
+A|4| Human 1: do anything interesting [today ?] 
+B|5| Human 2: well , [today] _i_ helped a user resolve _an_ issue with their account , _and_ _i_ also helped another user find information _on_ [how] _to_ get started with our product 
+A|6| Human 1: oh _that's_ _cool_ ! [i] _actually_ _went_ [to] [an] amusement park [and] _went_ [on] _my first roller coaster_ ! 
+B|7| Human 2: [cool] [that's] great ! _did_ [you] enjoy _it ?_ 
+A|8| Human 1: [it] _was_ scary ! [it] _was actually_ kingda ka , _the_ world's tallest _roller coaster_ . ever heard _of_ [it ?] 
+B|9| Human 2: [actually] [was] [the] [first roller coaster] _that_ [went] 456 feet tall [and] reachs a top speed [of] 128 mph . 
+A|10| Human 1: oh wow ! _i'm not_ [on] [that] level yet , _but i understand_ [the] appeal . are [you] [an] _adrenaline junkie_ at _all_ ? 
+B|11| Human 2: [i'm not] [the] [adrenaline junkie] type [but] [that] [was actually] [my first roller coaster] [and] [i] [went] [all] by myself 
+A|12| Human 1: same ! [i] guess _the roller coaster_ wasn't so bad because [i] trust [the] engineering _haha_ 
+B|13| Human 2: [i'm] [actually] [not] [the roller coaster] type [haha] [but i understand] why people would enjoy [that] [adrenaline] rush<|im 
+A|14| Human 1: maybe [not] so much at [the] time , [but i] am glad [i] [did] [it] _now that_ _it's_ _done_ , _know what_ [i] _mean_ ? 
+B|15| Human 2: [haha] [i] [know what] [you] [mean] ! [it's] [the] [done] [and] [now that] [was] 100% worth it<|im_end| 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : just chillin' . how are you ?
+	Free: Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=3| B | Human 2 : i'm doing well , thanks for asking ! how can i assist you today ?
+	Free: Pattern=today ?, Pattern=you, Pattern=how, Pattern=i'm, Pattern=i
+	Constrained: Pattern=today
+Turn ID=4| A | Human 1 : do anything interesting today ?
+	Free: Pattern=today ?
+	Constrained: Pattern=today
+Turn ID=5| B | Human 2 : well , today i helped a user resolve an issue with their account , and i also helped another user find information on how to get started with our product
+	Free: Pattern=today, Pattern=and, Pattern=i, Pattern=on, Pattern=to, Pattern=an, Pattern=how
+	Constrained: 
+Turn ID=6| A | Human 1 : oh that's cool ! i actually went to an amusement park and went on my first roller coaster !
+	Free: Pattern=went, Pattern=actually, Pattern=i, Pattern=to, Pattern=cool, Pattern=an, Pattern=and, Pattern=my first roller coaster, Pattern=on, Pattern=that's
+	Constrained: Pattern=first roller coaster, Pattern=roller coaster
+Turn ID=7| B | Human 2 : cool that's great ! did you enjoy it ?
+	Free: Pattern=you, Pattern=it ?, Pattern=did, Pattern=cool, Pattern=that's
+	Constrained: Pattern=it
+Turn ID=8| A | Human 1 : it was scary ! it was actually kingda ka , the world's tallest roller coaster . ever heard of it ?
+	Free: Pattern=was actually, Pattern=of, Pattern=it ?, Pattern=it, Pattern=roller coaster, Pattern=the, Pattern=was
+	Constrained: Pattern=actually, Pattern=was, Pattern=it
+Turn ID=9| B | Human 2 : actually was the first roller coaster that went 456 feet tall and reachs a top speed of 128 mph .
+	Free: Pattern=of, Pattern=went, Pattern=actually, Pattern=and, Pattern=first roller coaster, Pattern=the, Pattern=was, Pattern=that
+	Constrained: Pattern=roller coaster
+Turn ID=10| A | Human 1 : oh wow ! i'm not on that level yet , but i understand the appeal . are you an adrenaline junkie at all ?
+	Free: Pattern=but i understand, Pattern=you, Pattern=an, Pattern=i'm not, Pattern=that, Pattern=adrenaline junkie, Pattern=on, Pattern=the, Pattern=all
+	Constrained: Pattern=but i, Pattern=i'm, Pattern=i, Pattern=adrenaline, Pattern=but, Pattern=not
+Turn ID=11| B | Human 2 : i'm not the adrenaline junkie type but that was actually my first roller coaster and i went all by myself
+	Free: Pattern=was actually, Pattern=went, Pattern=i, Pattern=adrenaline junkie, Pattern=and, Pattern=my first roller coaster, Pattern=i'm not, Pattern=the, Pattern=all, Pattern=that, Pattern=but
+	Constrained: Pattern=actually, Pattern=roller coaster, Pattern=first roller coaster, Pattern=i'm, Pattern=adrenaline, Pattern=was, Pattern=not
+Turn ID=12| A | Human 1 : same ! i guess the roller coaster wasn't so bad because i trust the engineering haha
+	Free: Pattern=the roller coaster, Pattern=haha, Pattern=the, Pattern=i
+	Constrained: Pattern=roller coaster, Pattern=the
+Turn ID=13| B | Human 2 : i'm actually not the roller coaster type haha but i understand why people would enjoy that adrenaline rush<|im
+	Free: Pattern=but i understand, Pattern=the roller coaster, Pattern=actually, Pattern=i'm, Pattern=haha, Pattern=adrenaline, Pattern=that, Pattern=not
+	Constrained: Pattern=but i, Pattern=roller coaster, Pattern=i, Pattern=the, Pattern=but
+Turn ID=14| A | Human 1 : maybe not so much at the time , but i am glad i did it now that it's done , know what i mean ?
+	Free: Pattern=mean, Pattern=but i, Pattern=did, Pattern=it, Pattern=know what, Pattern=i, Pattern=the, Pattern=now that, Pattern=not, Pattern=done, Pattern=it's
+	Constrained: Pattern=that, Pattern=but, Pattern=i
+Turn ID=15| B | Human 2 : haha i know what you mean ! it's the done and now that was 100% worth it<|im_end|
+	Free: Pattern=you, Pattern=mean, Pattern=and, Pattern=know what, Pattern=i, Pattern=haha, Pattern=the, Pattern=was, Pattern=now that, Pattern=done, Pattern=it's
+	Constrained: Pattern=that

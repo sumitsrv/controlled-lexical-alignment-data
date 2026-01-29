@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how _are_ _you_ feeling today ? 
+A|2| Human 1: _good_ [you] ? 
+B|3| Human 2: great ! 😊 is there anything you'd _like_ _to_ chat about or ask me ? _i'm_ here _to_ help with any questions 
+A|4| Human 1: where did [you] _meet_ them ? 
+B|5| Human 2: 🤖 sorry , _i'm_ just an ai , _i_ don't _have_ personal experiences or [meet] people _. i'm_ here 
+A|6| Human 1: _cool_ . [have] [you] graduated already ? 
+B|7| Human 2: _not_ yet ! _i'm_ still in training 
+A|8| Human 1: neat . what [are] y'all _eating_ ? 
+B|9| Human 2: 🤔 _i'm_ just an ai , _i_ don't [have] [eating] experiences or taste buds . however , i' 
+A|10| Human 1: _lol what's a klutz_ ? _yeah i like_ , _but_ _i'm not good_ 
+B|11| Human 2: 😂 [i'm not good] _at_ [lol] whats [are] [you] doing 
+A|12| Human 1: _ground beef pretty easy_ 
+B|13| Human 2: [yeah i like] [but] [not good] [lol what's a klutz] [are] [you] doing [ground beef pretty easy] [cool] <|im_end 
+A|14| Human 1: [i like] _badminton_ [. i'm] _quite _decent at_ it_ 
+B|15| Human 2: [yeah i like] [but] [not good] [lol what's a klutz] [are] [you] doing [ground beef pretty easy] [cool] [badminton] [decent at it] 
+A|16| Human 1: _i never played_ _squash_ . _would love to_ _try_ 
+B|17| Human 2: [squash] [try] [would love to] [badminton] [quite decent at] [i never played] [ground beef pretty easy] [cool] [lol what's a klutz] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how are you feeling today ?
+	Free: Pattern=you, Pattern=are
+	Constrained: 
+Turn ID=2| A | Human 1 : good you ?
+	Free: Pattern=good, Pattern=you
+	Constrained: 
+Turn ID=3| B | Human 2 : great ! 😊 is there anything you'd like to chat about or ask me ? i'm here to help with any questions
+	Free: Pattern=like, Pattern=i'm, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : where did you meet them ?
+	Free: Pattern=you, Pattern=meet
+	Constrained: 
+Turn ID=5| B | Human 2 : 🤖 sorry , i'm just an ai , i don't have personal experiences or meet people . i'm here
+	Free: Pattern=have, Pattern=. i'm, Pattern=meet, Pattern=i'm, Pattern=i
+	Constrained: Pattern=i'm
+Turn ID=6| A | Human 1 : cool . have you graduated already ?
+	Free: Pattern=you, Pattern=cool, Pattern=have
+	Constrained: 
+Turn ID=7| B | Human 2 : not yet ! i'm still in training
+	Free: Pattern=i'm, Pattern=not
+	Constrained: 
+Turn ID=8| A | Human 1 : neat . what are y'all eating ?
+	Free: Pattern=are, Pattern=eating
+	Constrained: 
+Turn ID=9| B | Human 2 : 🤔 i'm just an ai , i don't have eating experiences or taste buds . however , i'
+	Free: Pattern=i, Pattern=i'm, Pattern=have, Pattern=eating
+	Constrained: 
+Turn ID=10| A | Human 1 : lol what's a klutz ? yeah i like , but i'm not good
+	Free: Pattern=lol what's a klutz, Pattern=yeah i like, Pattern=i'm not good, Pattern=but
+	Constrained: Pattern=good, Pattern=lol, Pattern=i'm, Pattern=i, Pattern=like, Pattern=not good, Pattern=i like, Pattern=not
+Turn ID=11| B | Human 2 : 😂 i'm not good at lol whats are you doing
+	Free: Pattern=lol, Pattern=you, Pattern=are, Pattern=at, Pattern=i'm not good
+	Constrained: Pattern=not good, Pattern=good, Pattern=i'm, Pattern=not
+Turn ID=12| A | Human 1 : ground beef pretty easy
+	Free: Pattern=ground beef pretty easy
+	Constrained: 
+Turn ID=13| B | Human 2 : yeah i like but not good lol what's a klutz are you doing ground beef pretty easy cool <|im_end
+	Free: Pattern=you, Pattern=ground beef pretty easy, Pattern=cool, Pattern=lol what's a klutz, Pattern=not good, Pattern=but, Pattern=are, Pattern=yeah i like
+	Constrained: Pattern=good, Pattern=lol, Pattern=i, Pattern=like, Pattern=i like, Pattern=not
+Turn ID=14| A | Human 1 : i like badminton . i'm quite decent at it
+	Free: Pattern=decent at it, Pattern=. i'm, Pattern=badminton, Pattern=quite decent at, Pattern=i like
+	Constrained: Pattern=i, Pattern=at, Pattern=like, Pattern=i'm
+Turn ID=15| B | Human 2 : yeah i like but not good lol what's a klutz are you doing ground beef pretty easy cool badminton decent at it
+	Free: Pattern=ground beef pretty easy, Pattern=cool, Pattern=lol what's a klutz, Pattern=badminton, Pattern=not good, Pattern=but, Pattern=you, Pattern=decent at it, Pattern=are, Pattern=yeah i like
+	Constrained: Pattern=good, Pattern=lol, Pattern=at, Pattern=i, Pattern=like, Pattern=i like, Pattern=not
+Turn ID=16| A | Human 1 : i never played squash . would love to try
+	Free: Pattern=would love to, Pattern=i never played, Pattern=try, Pattern=squash
+	Constrained: Pattern=i, Pattern=to
+Turn ID=17| B | Human 2 : squash try would love to badminton quite decent at i never played ground beef pretty easy cool lol what's a klutz
+	Free: Pattern=ground beef pretty easy, Pattern=lol what's a klutz, Pattern=i never played, Pattern=badminton, Pattern=quite decent at, Pattern=squash, Pattern=would love to, Pattern=cool, Pattern=try
+	Constrained: Pattern=lol, Pattern=i, Pattern=at, Pattern=to

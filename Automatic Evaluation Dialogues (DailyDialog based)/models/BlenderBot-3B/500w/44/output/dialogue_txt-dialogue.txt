@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey ! how _are_ _you_ feeling today ? 
+A|2| Human 1: _good_ _you ?_ 
+B|3| Human 2: [good] , _i_ just came back from _a_ trip _to_ the store and now _i_ am _eating_ my favorite snack , some tart peanuts . 
+A|4| Human 1: _where _did_ you_ _meet them_ ? 
+B|5| Human 2: [good] , [you ?] _i_ met [them] on _a_ meetup app and we were talking about [where did] we went _to_ college . 
+A|6| Human 1: cool . _have_ [you] _graduated_ already ? 
+B|7| Human 2: _i_ [have] _but_ _i_ [did] _not_ [graduated] early . _i_ want _to_ [meet them] before _i_ turn 40 . 
+A|8| Human 1: neat _. _what_ are_ y'all [eating] ? 
+B|9| Human 2: we [are] [eating] thai food [. what] [did you] [have] _at_ the store 
+A|10| Human 1: _lol_ what's _a klutz_ ? yeah _i like_ , [but] _i'm_ [not] [good] 
+B|11| Human 2: [i'm] [a klutz] [but] [not] [like] the other kids [lol] [what are] [good] food places _to_ hang out _at_ ? 
+A|12| Human 1: _ground_ _beef_ _pretty_ _easy_ 
+B|13| Human 2: [i] was [eating] [pretty] [good] [beef] [klutz] with [ground] pork . 
+A|14| Human 1: _i like_ _badminton_ . [i'm] _quite_ decent [at] _it_ 
+B|15| Human 2: [i like] [pretty] much all food ! [lol] [a klutz] is someone [like] [a] clumsy person , [badminton] is tough [but] fun 
+A|16| Human 1: [i] never _played_ squash . would love [to] _try_ 
+B|17| Human 2: [i] [played] [badminton] when [i] was [like] 11 or so , it's very [easy] [but] it's [quite] fun . [you] should [try] [it] ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey ! how are you feeling today ?
+	Free: Pattern=are, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : good you ?
+	Free: Pattern=you ?, Pattern=good
+	Constrained: Pattern=you
+Turn ID=3| B | Human 2 : good , i just came back from a trip to the store and now i am eating my favorite snack , some tart peanuts .
+	Free: Pattern=good, Pattern=eating, Pattern=a, Pattern=i, Pattern=to
+	Constrained: 
+Turn ID=4| A | Human 1 : where did you meet them ?
+	Free: Pattern=meet them, Pattern=did you, Pattern=where did
+	Constrained: Pattern=did, Pattern=you, Pattern=them
+Turn ID=5| B | Human 2 : good , you ? i met them on a meetup app and we were talking about where did we went to college .
+	Free: Pattern=good, Pattern=a, Pattern=where did, Pattern=i, Pattern=you ?, Pattern=to, Pattern=them
+	Constrained: Pattern=did, Pattern=you
+Turn ID=6| A | Human 1 : cool . have you graduated already ?
+	Free: Pattern=graduated, Pattern=you, Pattern=have
+	Constrained: 
+Turn ID=7| B | Human 2 : i have but i did not graduated early . i want to meet them before i turn 40 .
+	Free: Pattern=have, Pattern=did, Pattern=graduated, Pattern=meet them, Pattern=i, Pattern=to, Pattern=but, Pattern=not
+	Constrained: Pattern=them
+Turn ID=8| A | Human 1 : neat . what are y'all eating ?
+	Free: Pattern=what are, Pattern=. what, Pattern=eating
+	Constrained: Pattern=are
+Turn ID=9| B | Human 2 : we are eating thai food . what did you have at the store
+	Free: Pattern=eating, Pattern=are, Pattern=at, Pattern=. what, Pattern=have, Pattern=did you
+	Constrained: Pattern=did, Pattern=you
+Turn ID=10| A | Human 1 : lol what's a klutz ? yeah i like , but i'm not good
+	Free: Pattern=good, Pattern=lol, Pattern=but, Pattern=i like, Pattern=not, Pattern=i'm, Pattern=a klutz
+	Constrained: Pattern=klutz, Pattern=like, Pattern=a, Pattern=i
+Turn ID=11| B | Human 2 : i'm a klutz but not like the other kids lol what are good food places to hang out at ?
+	Free: Pattern=good, Pattern=lol, Pattern=at, Pattern=to, Pattern=but, Pattern=not, Pattern=i'm, Pattern=a klutz, Pattern=what are, Pattern=like
+	Constrained: Pattern=klutz, Pattern=are, Pattern=a
+Turn ID=12| A | Human 1 : ground beef pretty easy
+	Free: Pattern=beef, Pattern=easy, Pattern=ground, Pattern=pretty
+	Constrained: 
+Turn ID=13| B | Human 2 : i was eating pretty good beef klutz with ground pork .
+	Free: Pattern=good, Pattern=eating, Pattern=ground, Pattern=i, Pattern=pretty, Pattern=beef, Pattern=klutz
+	Constrained: 
+Turn ID=14| A | Human 1 : i like badminton . i'm quite decent at it
+	Free: Pattern=it, Pattern=at, Pattern=i'm, Pattern=quite, Pattern=badminton, Pattern=i like
+	Constrained: Pattern=like, Pattern=i
+Turn ID=15| B | Human 2 : i like pretty much all food ! lol a klutz is someone like a clumsy person , badminton is tough but fun
+	Free: Pattern=lol, Pattern=a, Pattern=a klutz, Pattern=like, Pattern=pretty, Pattern=badminton, Pattern=but, Pattern=i like
+	Constrained: Pattern=klutz, Pattern=like, Pattern=a, Pattern=i
+Turn ID=16| A | Human 1 : i never played squash . would love to try
+	Free: Pattern=to, Pattern=i, Pattern=try, Pattern=played
+	Constrained: 
+Turn ID=17| B | Human 2 : i played badminton when i was like 11 or so , it's very easy but it's quite fun . you should try it !
+	Free: Pattern=easy, Pattern=you, Pattern=try, Pattern=it, Pattern=i, Pattern=like, Pattern=quite, Pattern=badminton, Pattern=played, Pattern=but
+	Constrained: 

@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , _how_ is _it_ going ? 
+A|2| Human 1: all _good_ . planning _to_ head home _soon _._ how about you ?_ 
+B|3| Human 2: i'm [good] _as well_ , thanks for asking ! _it's_ always _a_ pleasure [to] assist [you] [. how] can _i_ help [you] today ? <| 
+A|4| Human 1: _oh_ ... sorry [to] hear _that_ _. but_ _after_ _that_ [it] will _be_ [a] hard earned _vacation_ 
+B|5| Human 2: _i_ understand . [it] can [be] challenging [to] balance work _and_ [vacation] time [. but] _it's_ great [that] you're able [to] take _some_ time 
+A|6| Human 1: [i] _have_ [some] tentative _plans_ , [but] if [that] doesn't pan _out_ , will _just_ chill at home . 
+B|7| Human 2: got [it] ! sometimes [just] taking [some] time for yourself can [be] really rejuvenating . do [you] [have] any [plans] for [after] [vacation] ? <| 
+A|8| Human 1: where are [you] _based out of_ _these_ _days_ ? 
+B|9| Human 2: i'm [just] an ai [based out of] _san francisco_ bay area [. how about you ?] 
+A|10| Human 1: [san francisco] _. it's been_ raining cats [and] dogs _here_ since last 2-3 weeks 
+B|11| Human 2: [oh] no ! hope [it] stops [soon [.] it's been] nice [and] sunny [here] _in_ [san francisco] [these] past few [days] [. but] i'm 
+A|12| Human 1: _the flu_ has [been] hitting hard [as well] . [i] had several folks [in] _the_ house down at one point . 
+B|13| Human 2: yeah , [the flu] can [be] really tough [to] deal with [. it's] important [to] take care [of] yourself [and] make sure you're feeling better 
+A|14| Human 1: yes , everyone recovered now 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , how is it going ?
+	Free: Pattern=how, Pattern=it
+	Constrained: 
+Turn ID=2| A | Human 1 : all good . planning to head home soon . how about you ?
+	Free: Pattern=. how about you ?, Pattern=soon ., Pattern=to, Pattern=good
+	Constrained: Pattern=you, Pattern=. how, Pattern=how
+Turn ID=3| B | Human 2 : i'm good as well , thanks for asking ! it's always a pleasure to assist you . how can i help you today ? <|
+	Free: Pattern=good, Pattern=you, Pattern=a, Pattern=. how, Pattern=i, Pattern=it's, Pattern=as well, Pattern=to
+	Constrained: Pattern=how
+Turn ID=4| A | Human 1 : oh ... sorry to hear that . but after that it will be a hard earned vacation
+	Free: Pattern=a, Pattern=vacation, Pattern=after, Pattern=to, Pattern=that, Pattern=it, Pattern=oh, Pattern=. but, Pattern=be
+	Constrained: Pattern=but
+Turn ID=5| B | Human 2 : i understand . it can be challenging to balance work and vacation time . but it's great that you're able to take some time
+	Free: Pattern=vacation, Pattern=some, Pattern=i, Pattern=to, Pattern=it, Pattern=and, Pattern=. but, Pattern=be, Pattern=that, Pattern=it's
+	Constrained: Pattern=but
+Turn ID=6| A | Human 1 : i have some tentative plans , but if that doesn't pan out , will just chill at home .
+	Free: Pattern=plans, Pattern=out, Pattern=some, Pattern=i, Pattern=just, Pattern=have, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=7| B | Human 2 : got it ! sometimes just taking some time for yourself can be really rejuvenating . do you have any plans for after vacation ? <|
+	Free: Pattern=plans, Pattern=you, Pattern=vacation, Pattern=it, Pattern=after, Pattern=some, Pattern=be, Pattern=just, Pattern=have
+	Constrained: 
+Turn ID=8| A | Human 1 : where are you based out of these days ?
+	Free: Pattern=based out of, Pattern=days, Pattern=you, Pattern=these
+	Constrained: Pattern=of, Pattern=out
+Turn ID=9| B | Human 2 : i'm just an ai based out of san francisco bay area . how about you ?
+	Free: Pattern=. how about you ?, Pattern=based out of, Pattern=san francisco, Pattern=just
+	Constrained: Pattern=of, Pattern=how, Pattern=. how, Pattern=you, Pattern=out
+Turn ID=10| A | Human 1 : san francisco . it's been raining cats and dogs here since last 2-3 weeks
+	Free: Pattern=. it's been, Pattern=san francisco, Pattern=and, Pattern=here
+	Constrained: Pattern=it's, Pattern=. it's, Pattern=been
+Turn ID=11| B | Human 2 : oh no ! hope it stops soon . it's been nice and sunny here in san francisco these past few days . but i'm
+	Free: Pattern=here, Pattern=these, Pattern=in, Pattern=san francisco, Pattern=days, Pattern=soon ., Pattern=it, Pattern=and, Pattern=oh, Pattern=. but, Pattern=. it's been
+	Constrained: Pattern=it's, Pattern=but, Pattern=. it's, Pattern=been
+Turn ID=12| A | Human 1 : the flu has been hitting hard as well . i had several folks in the house down at one point .
+	Free: Pattern=the flu, Pattern=in, Pattern=i, Pattern=the, Pattern=as well, Pattern=been
+	Constrained: Pattern=the
+Turn ID=13| B | Human 2 : yeah , the flu can be really tough to deal with . it's important to take care of yourself and make sure you're feeling better
+	Free: Pattern=of, Pattern=the flu, Pattern=. it's, Pattern=and, Pattern=be, Pattern=to
+	Constrained: Pattern=the, Pattern=it's
+Turn ID=14| A | Human 1 : yes , everyone recovered now
+	Free: 
+	Constrained: 

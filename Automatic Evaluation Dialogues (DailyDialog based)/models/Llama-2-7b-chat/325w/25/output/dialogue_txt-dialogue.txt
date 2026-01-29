@@ -1,0 +1,55 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ 🙂 
+A|2| Human 1: _i am_ _good_ . [how are you] ? ：） 
+B|3| Human 2: great , that's [good] _to_ hear 😊 
+A|4| Human 1: _i am_ busy . _a_ lot of _work_ . _what are you working on ?_ 
+B|5| Human 2: oh , _cool_ 😊 [what are you working on ?] </|im_end|>user [i am] 
+A|6| Human 1: [i am] [working on] _a new_ classifier . 
+B|7| Human 2: it's [a] machine learning model that can classify objects into different categories . 🤖 
+A|8| Human 1: _a new_ classifier for hate speech . which _research_ topic catches your eyes _most_ ? 
+B|9| Human 2: 🔍 [i am] [most] excited about [research] [on] conversational ai . it's still [a new] and rapidly evolving field , and 
+A|10| Human 1: nice ! do [you] _refer to work_ or anything else ? 
+B|11| Human 2: 🤔 yes , [i] [refer to work] in various industries , including healthcare , finance , and education . our goal is [to] 
+A|12| Human 1: [you] [are] very [cool] too !! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you 🙂
+	Free: Pattern=how are you
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i am good . how are you ? ：）
+	Free: Pattern=how are you, Pattern=i am, Pattern=good
+	Constrained: Pattern=are, Pattern=i, Pattern=you
+Turn ID=3| B | Human 2 : great , that's good to hear 😊
+	Free: Pattern=to, Pattern=good
+	Constrained: 
+Turn ID=4| A | Human 1 : i am busy . a lot of work . what are you working on ?
+	Free: Pattern=what are you working on ?, Pattern=i am, Pattern=a, Pattern=work
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=i, Pattern=on
+Turn ID=5| B | Human 2 : oh , cool 😊 what are you working on ? </|im_end|>user i am
+	Free: Pattern=what are you working on ?, Pattern=i am, Pattern=cool
+	Constrained: Pattern=you, Pattern=working on, Pattern=are, Pattern=i, Pattern=on
+Turn ID=6| A | Human 1 : i am working on a new classifier .
+	Free: Pattern=a new, Pattern=working on, Pattern=i am
+	Constrained: Pattern=a, Pattern=i, Pattern=on
+Turn ID=7| B | Human 2 : it's a machine learning model that can classify objects into different categories . 🤖
+	Free: Pattern=a
+	Constrained: 
+Turn ID=8| A | Human 1 : a new classifier for hate speech . which research topic catches your eyes most ?
+	Free: Pattern=a new, Pattern=research, Pattern=most
+	Constrained: Pattern=a
+Turn ID=9| B | Human 2 : 🔍 i am most excited about research on conversational ai . it's still a new and rapidly evolving field , and
+	Free: Pattern=a new, Pattern=research, Pattern=i am, Pattern=most, Pattern=on
+	Constrained: Pattern=a, Pattern=i
+Turn ID=10| A | Human 1 : nice ! do you refer to work or anything else ?
+	Free: Pattern=refer to work, Pattern=you
+	Constrained: Pattern=to, Pattern=work
+Turn ID=11| B | Human 2 : 🤔 yes , i refer to work in various industries , including healthcare , finance , and education . our goal is to
+	Free: Pattern=refer to work, Pattern=to, Pattern=i
+	Constrained: Pattern=to, Pattern=work
+Turn ID=12| A | Human 1 : you are very cool too !!
+	Free: Pattern=are, Pattern=cool, Pattern=you
+	Constrained: 

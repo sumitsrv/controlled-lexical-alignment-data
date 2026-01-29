@@ -1,0 +1,75 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey sup 
+A|2| Human 1: _not much_ . any plans this weekend ? 
+B|3| Human 2: [not much] , just studying for exams . how about _you_ ? 
+A|4| Human 1: _ziplining ?_ 
+B|5| Human 2: that sounds like fun ! _have_ _you_ done _it_ before ? 
+A|6| Human 1: _i_ _have a_ couple years ago . _it's quite_ _a_ unique _experience_ 
+B|7| Human 2: [have] _you_ ever gone [ziplining ?] [it's quite] an [experience] 
+A|8| Human 1: _i_ forgot where _it was_ , [it] wasn't local _i_ _don't_ _think_ _though_ 
+B|9| Human 2: [it was] in costa rica actually . [quite] an [experience] [though] 
+A|10| Human 1: that's _a hard_ question _and_ _i'm_ _tired_ so _i'm going to go_ . _see you_ 
+B|11| Human 2: [i'm going to go] now [and] [see _you] later_ 
+A|12| Human 1: no , _i'm going to get a massage first_ 
+B|13| Human 2: [i] [think] you're [going to] [have [a] hard] time [massage] therapists [don't] [get] [tired] 
+A|14| Human 1: _traditional kind_ 
+B|15| Human 2: [traditional kind] [i'm going to get a massage first] [and] then [see you] 
+A|16| Human 1: [you] should ! [it's] _relaxing after_ [a] _long day_ . talk [to] _you later !_ 
+B|17| Human 2: [see [you] later !] [relaxing after] [long day] [i'm going to go] [and] [get] [massage first] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey sup
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : not much . any plans this weekend ?
+	Free: Pattern=not much
+	Constrained: 
+Turn ID=3| B | Human 2 : not much , just studying for exams . how about you ?
+	Free: Pattern=not much, Pattern=you
+	Constrained: 
+Turn ID=4| A | Human 1 : ziplining ?
+	Free: Pattern=ziplining ?
+	Constrained: 
+Turn ID=5| B | Human 2 : that sounds like fun ! have you done it before ?
+	Free: Pattern=have, Pattern=you, Pattern=it
+	Constrained: 
+Turn ID=6| A | Human 1 : i have a couple years ago . it's quite a unique experience
+	Free: Pattern=have a, Pattern=a, Pattern=experience, Pattern=i, Pattern=it's quite
+	Constrained: Pattern=a, Pattern=have, Pattern=it's, Pattern=quite
+Turn ID=7| B | Human 2 : have you ever gone ziplining ? it's quite an experience
+	Free: Pattern=you, Pattern=have, Pattern=ziplining ?, Pattern=experience, Pattern=it's quite
+	Constrained: Pattern=it's, Pattern=quite
+Turn ID=8| A | Human 1 : i forgot where it was , it wasn't local i don't think though
+	Free: Pattern=it was, Pattern=though, Pattern=it, Pattern=think, Pattern=i, Pattern=don't
+	Constrained: Pattern=it
+Turn ID=9| B | Human 2 : it was in costa rica actually . quite an experience though
+	Free: Pattern=it was, Pattern=though, Pattern=experience, Pattern=quite
+	Constrained: Pattern=it
+Turn ID=10| A | Human 1 : that's a hard question and i'm tired so i'm going to go . see you
+	Free: Pattern=i'm going to go, Pattern=see you, Pattern=tired, Pattern=and, Pattern=i'm, Pattern=a hard
+	Constrained: Pattern=going to, Pattern=you, Pattern=a, Pattern=i'm, Pattern=to
+Turn ID=11| B | Human 2 : i'm going to go now and see you later
+	Free: Pattern=i'm going to go, Pattern=you later, Pattern=see you, Pattern=and
+	Constrained: Pattern=going to, Pattern=to, Pattern=you, Pattern=i'm
+Turn ID=12| A | Human 1 : no , i'm going to get a massage first
+	Free: Pattern=i'm going to get a massage first
+	Constrained: Pattern=going to, Pattern=massage, Pattern=a, Pattern=massage first, Pattern=i'm, Pattern=to, Pattern=get
+Turn ID=13| B | Human 2 : i think you're going to have a hard time massage therapists don't get tired
+	Free: Pattern=going to, Pattern=massage, Pattern=have a, Pattern=tired, Pattern=think, Pattern=i, Pattern=don't, Pattern=a hard, Pattern=get
+	Constrained: Pattern=a, Pattern=have, Pattern=to
+Turn ID=14| A | Human 1 : traditional kind
+	Free: Pattern=traditional kind
+	Constrained: 
+Turn ID=15| B | Human 2 : traditional kind i'm going to get a massage first and then see you
+	Free: Pattern=i'm going to get a massage first, Pattern=see you, Pattern=traditional kind, Pattern=and
+	Constrained: Pattern=going to, Pattern=massage, Pattern=you, Pattern=a, Pattern=massage first, Pattern=i'm, Pattern=to, Pattern=get
+Turn ID=16| A | Human 1 : you should ! it's relaxing after a long day . talk to you later !
+	Free: Pattern=long day, Pattern=you, Pattern=a, Pattern=you later !, Pattern=to, Pattern=it's, Pattern=relaxing after
+	Constrained: Pattern=you, Pattern=you later
+Turn ID=17| B | Human 2 : see you later ! relaxing after long day i'm going to go and get massage first
+	Free: Pattern=long day, Pattern=i'm going to go, Pattern=see you, Pattern=and, Pattern=massage first, Pattern=you later !, Pattern=get, Pattern=relaxing after
+	Constrained: Pattern=going to, Pattern=massage, Pattern=you, Pattern=i'm, Pattern=you later, Pattern=to

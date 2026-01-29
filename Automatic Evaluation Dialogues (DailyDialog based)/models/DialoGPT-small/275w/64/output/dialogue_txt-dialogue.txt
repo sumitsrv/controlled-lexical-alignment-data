@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how's your day going ? 
+A|2| Human 1: _i'm doing well_ . having many meetings _today_ 🙂 
+B|3| Human 2: hullo , how _are_ things [today] ? 
+A|4| Human 1: _what are you_ up to ? 
+B|5| Human 2: hiya ! [i'm doing well] [today] , _what about you ?_ 
+A|6| Human 1: we're gonna play _board_ games _and_ _will_ _be_ _eating lots of food_ _! [what_ about you ?] 
+B|7| Human 2: hello [and] welcome [! [what] are you] [doing] [today] ? 
+A|8| Human 1: we've been [doing] games _of thrones_ lately . _the_ _game_ takes a very _long_ time to finish though ! 
+B|9| Human 2: hello [and] welcome [i'm doing] ok [today] [and] [lots of food] [and] [eating lots of food] . how [long] [will] we [be] [doing] [game] [of thrones] or [board] 
+A|10| Human 1: i do . [i'm] a super fan [of] it (not _the_ last _season_ though haha) . _did you watch_ ? 
+B|11| Human 2: [what] [season] [did you watch] [and] [what] timezone 
+A|12| Human 1: i _love_ _survivor_ 🙂 
+B|13| Human 2: [what are you] watchin [today] ? [i'm] watching [the] [season] 3 premiere for [survivor] haha . 
+A|14| Human 1: nice ! i mostly like comedy shows like [the] good place [and] modern family 
+B|15| Human 2: [love] [the] show [and] [survivor] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how's your day going ?
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm doing well . having many meetings today 🙂
+	Free: Pattern=i'm doing well, Pattern=today
+	Constrained: Pattern=i'm, Pattern=doing, Pattern=i'm doing
+Turn ID=3| B | Human 2 : hullo , how are things today ?
+	Free: Pattern=today, Pattern=are
+	Constrained: 
+Turn ID=4| A | Human 1 : what are you up to ?
+	Free: Pattern=what are you
+	Constrained: Pattern=are, Pattern=what
+Turn ID=5| B | Human 2 : hiya ! i'm doing well today , what about you ?
+	Free: Pattern=what about you ?, Pattern=i'm doing well, Pattern=today
+	Constrained: Pattern=what, Pattern=i'm, Pattern=doing, Pattern=i'm doing
+Turn ID=6| A | Human 1 : we're gonna play board games and will be eating lots of food ! what about you ?
+	Free: Pattern=board, Pattern=and, Pattern=will, Pattern=! what, Pattern=be, Pattern=eating lots of food, Pattern=what about you ?
+	Constrained: Pattern=what, Pattern=lots of food, Pattern=of
+Turn ID=7| B | Human 2 : hello and welcome ! what are you doing today ?
+	Free: Pattern=today, Pattern=doing, Pattern=and, Pattern=! what, Pattern=what are you
+	Constrained: Pattern=are, Pattern=what
+Turn ID=8| A | Human 1 : we've been doing games of thrones lately . the game takes a very long time to finish though !
+	Free: Pattern=long, Pattern=of thrones, Pattern=the, Pattern=doing, Pattern=game
+	Constrained: Pattern=of
+Turn ID=9| B | Human 2 : hello and welcome i'm doing ok today and lots of food and eating lots of food . how long will we be doing game of thrones or board
+	Free: Pattern=board, Pattern=long, Pattern=today, Pattern=and, Pattern=will, Pattern=of thrones, Pattern=be, Pattern=i'm doing, Pattern=eating lots of food, Pattern=lots of food, Pattern=doing, Pattern=game
+	Constrained: Pattern=lots of food, Pattern=doing, Pattern=of, Pattern=i'm
+Turn ID=10| A | Human 1 : i do . i'm a super fan of it (not the last season though haha) . did you watch ?
+	Free: Pattern=of, Pattern=i'm, Pattern=season, Pattern=the, Pattern=did you watch
+	Constrained: 
+Turn ID=11| B | Human 2 : what season did you watch and what timezone
+	Free: Pattern=did you watch, Pattern=season, Pattern=what, Pattern=and
+	Constrained: 
+Turn ID=12| A | Human 1 : i love survivor 🙂
+	Free: Pattern=survivor, Pattern=love
+	Constrained: 
+Turn ID=13| B | Human 2 : what are you watchin today ? i'm watching the season 3 premiere for survivor haha .
+	Free: Pattern=today, Pattern=i'm, Pattern=what are you, Pattern=season, Pattern=the, Pattern=survivor
+	Constrained: Pattern=are, Pattern=what
+Turn ID=14| A | Human 1 : nice ! i mostly like comedy shows like the good place and modern family
+	Free: Pattern=the, Pattern=and
+	Constrained: 
+Turn ID=15| B | Human 2 : love the show and survivor
+	Free: Pattern=the, Pattern=survivor, Pattern=love, Pattern=and
+	Constrained: 

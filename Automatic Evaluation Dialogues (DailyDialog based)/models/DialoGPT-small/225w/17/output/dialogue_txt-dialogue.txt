@@ -1,0 +1,67 @@
+A|0| Human 1: _hi !_ 
+B|1| Human 2: [hi !] how was _your_ weekend ? 
+A|2| Human 1: _pretty_ _good_ . _just_ went to church _and_ _hangout with friends_ 
+B|3| Human 2: how [good] is the new pope ? how is everyone [just] chilling [with friends] ? 
+A|4| Human 1: _did you_ do anything ? 
+B|5| Human 2: how [good] are [you] ? [did you] [just] [hangout with friends] [and] relax ? 
+A|6| Human 1: yum yum yum _no only good old oily frier_ 
+B|7| Human 2: [no only good old oily frier] [you] mean right ? 
+A|8| Human 1: do _you have_ _one at_ [your] _home_ or were [you] _at_ a [friends] place ? 
+B|9| Human 2: i [have] [only] [one at] my [home] . [you] ? 
+A|10| Human 1: _i'm_ going to impersonate a _pumpkin_ 
+B|11| Human 2: [you have] [your] own i want [pumpkin] [you] want [pumpkin] . that's how it's pronounced in english . 
+A|12| Human 1: _i'm pretty unique person_ 
+B|13| Human 2: that's how it's pronounced in english . [i'm pretty unique person] 
+A|14| Human 1: any _other hobbies_ besides air frying everything ? 🙂 
+B|15| Human 2: what [other hobbies] ? [i'm pretty unique person] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi !
+	Constrained: 
+Turn ID=1| B | Human 2 : hi ! how was your weekend ?
+	Free: Pattern=hi !, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : pretty good . just went to church and hangout with friends
+	Free: Pattern=good, Pattern=just, Pattern=hangout with friends, Pattern=and, Pattern=pretty
+	Constrained: Pattern=with friends, Pattern=friends
+Turn ID=3| B | Human 2 : how good is the new pope ? how is everyone just chilling with friends ?
+	Free: Pattern=with friends, Pattern=good, Pattern=just
+	Constrained: Pattern=friends
+Turn ID=4| A | Human 1 : did you do anything ?
+	Free: Pattern=did you
+	Constrained: Pattern=you
+Turn ID=5| B | Human 2 : how good are you ? did you just hangout with friends and relax ?
+	Free: Pattern=good, Pattern=you, Pattern=hangout with friends, Pattern=and, Pattern=just, Pattern=did you
+	Constrained: Pattern=with friends, Pattern=friends, Pattern=you
+Turn ID=6| A | Human 1 : yum yum yum no only good old oily frier
+	Free: Pattern=no only good old oily frier
+	Constrained: Pattern=good, Pattern=only
+Turn ID=7| B | Human 2 : no only good old oily frier you mean right ?
+	Free: Pattern=no only good old oily frier, Pattern=you
+	Constrained: Pattern=good, Pattern=only
+Turn ID=8| A | Human 1 : do you have one at your home or were you at a friends place ?
+	Free: Pattern=you, Pattern=one at, Pattern=at, Pattern=you have, Pattern=your, Pattern=friends, Pattern=home
+	Constrained: Pattern=have, Pattern=at, Pattern=you
+Turn ID=9| B | Human 2 : i have only one at my home . you ?
+	Free: Pattern=you, Pattern=one at, Pattern=home, Pattern=only, Pattern=have
+	Constrained: Pattern=at
+Turn ID=10| A | Human 1 : i'm going to impersonate a pumpkin
+	Free: Pattern=i'm, Pattern=pumpkin
+	Constrained: 
+Turn ID=11| B | Human 2 : you have your own i want pumpkin you want pumpkin . that's how it's pronounced in english .
+	Free: Pattern=you have, Pattern=your, Pattern=you, Pattern=pumpkin
+	Constrained: Pattern=have, Pattern=you
+Turn ID=12| A | Human 1 : i'm pretty unique person
+	Free: Pattern=i'm pretty unique person
+	Constrained: Pattern=pretty, Pattern=i'm
+Turn ID=13| B | Human 2 : that's how it's pronounced in english . i'm pretty unique person
+	Free: Pattern=i'm pretty unique person
+	Constrained: Pattern=pretty, Pattern=i'm
+Turn ID=14| A | Human 1 : any other hobbies besides air frying everything ? 🙂
+	Free: Pattern=other hobbies
+	Constrained: 
+Turn ID=15| B | Human 2 : what other hobbies ? i'm pretty unique person
+	Free: Pattern=i'm pretty unique person, Pattern=other hobbies
+	Constrained: Pattern=pretty, Pattern=i'm

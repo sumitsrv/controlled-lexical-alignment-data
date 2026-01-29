@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello . how's your week coming along ? 
+A|2| Human 1: _it's great_ , thanks . _i'm_ _trying to learn how to make_ _croissants ._ 
+B|3| Human 2: _ah ,_ [croissants] are _a_ [great] choice ! they're _a_ classic french pastry _that_ can be _a_ bit tricky [to make] _, but_ _with_ practice 
+A|4| Human 1: i've done _them_ once _or_ twice _so_ far [, but] they haven't _been_ flakey enough . _i'm_ _trying to_ figure _out_ _why_ _. what kind of_ _cookies_ _have_ _you_ _made_ ? 
+B|5| Human 2: [i'm] just an ai _, i_ _don't_ [have] personal experiences [or] [make] [cookies] [, but] _i_ can certainly help [you] troubleshoot [why] your 
+A|6| Human 1: [ah ,] _good_ thought , thanks ! 
+B|7| Human 2: [i'm] glad _you have_ _some_ experience making [croissants .] [it's great] _that_ you're [trying] [out] new recipes _and_ techniques [. what] 
+A|8| Human 1: now [that] is [a] _good_ idea . i'll give it [a] try _next time_ . would [you] say [you have] [a] _sweet_ tooth ? 
+B|9| Human 2: [i'm] just [trying to learn how to make] [them] _, and_ [you have] [made] _some_ [good] suggestions [. what kind of] [sweet] treat do [you] recommend [next time] 
+A|10| Human 1: [some] people [don't] ! [but] yeah , me too [, i] _think_ i'd eat _pastries_ all _the_ [time] if [i] _could_ get away [with] it . 
+B|11| Human 2: [i'm] sure [you] [could] [make] [some] delicious [pastries] [with] [the] croissant recipe [you have] . just experiment [with] different toppings _and_ fill 
+A|12| Human 1: wow _! the_ last [time] [i] paid attention [to] [that] sort [of] stuff was when _<redacted_term>_ was being marketed as [a] fat substitute [, and] caused all sorts [of] crazy stomach upsets . 
+B|13| Human 2: [i'm] glad [you] [think] [so] [! the] [croissants] [have] [been] [the] most [<redacted_term>] [to make] [, and] 
+A|14| Human 1: [ah ,] maybe that's [the] solution [i] need [to] enjoy sweets [and] not feel guilty 🙂 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello . how's your week coming along ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : it's great , thanks . i'm trying to learn how to make croissants .
+	Free: Pattern=trying to learn how to make, Pattern=it's great, Pattern=croissants ., Pattern=i'm
+	Constrained: Pattern=great, Pattern=make, Pattern=croissants, Pattern=trying, Pattern=to, Pattern=trying to, Pattern=to make
+Turn ID=3| B | Human 2 : ah , croissants are a great choice ! they're a classic french pastry that can be a bit tricky to make , but with practice
+	Free: Pattern=to make, Pattern=croissants, Pattern=great, Pattern=, but, Pattern=ah ,, Pattern=a, Pattern=with, Pattern=that
+	Constrained: Pattern=to, Pattern=make, Pattern=but
+Turn ID=4| A | Human 1 : i've done them once or twice so far , but they haven't been flakey enough . i'm trying to figure out why . what kind of cookies have you made ?
+	Free: Pattern=have, Pattern=made, Pattern=cookies, Pattern=i'm, Pattern=why, Pattern=them, Pattern=so, Pattern=you, Pattern=out, Pattern=, but, Pattern=or, Pattern=trying to, Pattern=. what kind of, Pattern=been
+	Constrained: Pattern=of, Pattern=trying, Pattern=to, Pattern=. what, Pattern=but
+Turn ID=5| B | Human 2 : i'm just an ai , i don't have personal experiences or make cookies , but i can certainly help you troubleshoot why your
+	Free: Pattern=have, Pattern=cookies, Pattern=i'm, Pattern=or, Pattern=, i, Pattern=don't, Pattern=why, Pattern=you, Pattern=, but, Pattern=make, Pattern=i
+	Constrained: Pattern=i, Pattern=but
+Turn ID=6| A | Human 1 : ah , good thought , thanks !
+	Free: Pattern=ah ,, Pattern=good
+	Constrained: 
+Turn ID=7| B | Human 2 : i'm glad you have some experience making croissants . it's great that you're trying out new recipes and techniques . what
+	Free: Pattern=out, Pattern=croissants ., Pattern=and, Pattern=i'm, Pattern=it's great, Pattern=trying, Pattern=. what, Pattern=that, Pattern=some, Pattern=you have
+	Constrained: Pattern=have, Pattern=you, Pattern=croissants, Pattern=great
+Turn ID=8| A | Human 1 : now that is a good idea . i'll give it a try next time . would you say you have a sweet tooth ?
+	Free: Pattern=good, Pattern=a, Pattern=you have, Pattern=sweet, Pattern=that, Pattern=you, Pattern=next time
+	Constrained: Pattern=have, Pattern=time, Pattern=you
+Turn ID=9| B | Human 2 : i'm just trying to learn how to make them , and you have made some good suggestions . what kind of sweet treat do you recommend next time
+	Free: Pattern=good, Pattern=made, Pattern=, and, Pattern=. what kind of, Pattern=them, Pattern=you, Pattern=next time, Pattern=trying to learn how to make, Pattern=some, Pattern=you have, Pattern=sweet, Pattern=i'm
+	Constrained: Pattern=time, Pattern=of, Pattern=you, Pattern=have, Pattern=and, Pattern=make, Pattern=trying, Pattern=to, Pattern=. what, Pattern=trying to, Pattern=to make
+Turn ID=10| A | Human 1 : some people don't ! but yeah , me too , i think i'd eat pastries all the time if i could get away with it .
+	Free: Pattern=time, Pattern=some, Pattern=think, Pattern=i, Pattern=pastries, Pattern=don't, Pattern=could, Pattern=the, Pattern=, i, Pattern=with, Pattern=but
+	Constrained: Pattern=i
+Turn ID=11| B | Human 2 : i'm sure you could make some delicious pastries with the croissant recipe you have . just experiment with different toppings and fill
+	Free: Pattern=you, Pattern=and, Pattern=i'm, Pattern=make, Pattern=pastries, Pattern=the, Pattern=could, Pattern=with, Pattern=some, Pattern=you have
+	Constrained: Pattern=have, Pattern=you
+Turn ID=12| A | Human 1 : wow ! the last time i paid attention to that sort of stuff was when <redacted_term> was being marketed as a fat substitute , and caused all sorts of crazy stomach upsets .
+	Free: Pattern=time, Pattern=of, Pattern=! the, Pattern=a, Pattern=<redacted_term>, Pattern=i, Pattern=that, Pattern=, and, Pattern=to
+	Constrained: Pattern=the, Pattern=and
+Turn ID=13| B | Human 2 : i'm glad you think so ! the croissants have been the most <redacted_term> to make , and
+	Free: Pattern=you, Pattern=<redacted_term>, Pattern=think, Pattern=i'm, Pattern=to make, Pattern=, and, Pattern=been, Pattern=so, Pattern=! the, Pattern=have, Pattern=croissants, Pattern=the
+	Constrained: Pattern=to, Pattern=the, Pattern=make, Pattern=and
+Turn ID=14| A | Human 1 : ah , maybe that's the solution i need to enjoy sweets and not feel guilty 🙂
+	Free: Pattern=ah ,, Pattern=and, Pattern=i, Pattern=the, Pattern=to
+	Constrained: 

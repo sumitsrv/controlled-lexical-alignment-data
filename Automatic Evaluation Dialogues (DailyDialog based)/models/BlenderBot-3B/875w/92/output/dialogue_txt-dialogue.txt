@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ _good ! just_ _went to the_ park _to_ _enjoy the_ _sun_ _. you_ ? 
+B|3| Human 2: [it's] been [good ! just] hanging out with [the] pups _at_ home ! 
+A|4| Human 1: _haha ,_ _beach_ season _is_ coming ! _you_ need _to_ look tan ! _what_ _did_ _you_ do indoors _all day_ ? 
+B|5| Human 2: [it's] going [good] , _i_ [went _to the] beach_ with [all] my best friends , [sun] tanning [is] [what] we [did] [all day] , so [enjoy] 
+A|6| Human 1: hahahaha , _that's_ _pretty_ _funny_ . ever _thought of_ bringing _your work_ things [to the beach] ?? 
+B|7| Human 2: [haha] [that's] [funny] [you] [thought of] [the beach] , because [all day] _i_ [did] [enjoy [the] beach] _and_ [went] tanning _and_ got burnt [pretty] 
+A|8| Human 1: hmm [i] _see_ . it _sounds like_ [you] _work near the_ water already , no ? _are_ [you] _some_ kind [of] fish researcher ? 
+B|9| Human 2: [haha] [beach] [sounds like] fun [. you] [see] [the beach] [all day] in [your work] _that_ [you] [went to] ? 
+A|10| Human 1: woah ! this [is] _very_ interesting ! [i] _have_ honestly _never_ heard [of] such kind [of] [work] . [is] it _dangerous_ [at] [all] ? 
+B|11| Human 2: [haha ,] [you] [have] [good] friends . [i] [work near [the] beach] [all day] _, but_ [never] [thought] [to] use tanning products . [are] [some] [dangerous] ? 
+A|12| Human 1: hmmm , _yes_ [i] [have] heard [that] . apparently most _mountain_ climbers _fall_ _not_ on [the] most [dangerous] _routes_ [, but] on [the] easier _routes_ , _when_ their guard [is] down ! [sounds like] [the] same psychological phenomenon . 
+B|13| Human 2: [yes] [but] [not] [dangerous] [when] [you] [have] [all] [the] protections [like] a harness _and_ a guardrail _and_ [fall] protection [that] [i] [work] hard [to] maintain _and_ 
+A|14| Human 1: _i'm_ [pretty] amateur ! [i] [like] [to] climb [at] indoor climbing gyms _and have_ [never] gone outside on [dangerous] _routes_ actually . ever tried it yourself ? 
+B|15| Human 2: [i'm] [not] [very] afraid [and have] climbed many [mountain] [routes] [that] [are] [dangerous] [but] [the beach] [is] [pretty] gnarly [haha] . 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=good ! just, Pattern=enjoy the, Pattern=. you, Pattern=went to the, Pattern=to, Pattern=it's, Pattern=sun
+	Constrained: Pattern=good, Pattern=you, Pattern=went, Pattern=enjoy, Pattern=went to, Pattern=the, Pattern=to
+Turn ID=3| B | Human 2 : it's been good ! just hanging out with the pups at home !
+	Free: Pattern=good ! just, Pattern=at, Pattern=the, Pattern=it's
+	Constrained: Pattern=good
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=you, Pattern=what, Pattern=did, Pattern=beach, Pattern=all day, Pattern=is, Pattern=haha ,, Pattern=to
+	Constrained: Pattern=all, Pattern=day, Pattern=haha
+Turn ID=5| B | Human 2 : it's going good , i went to the beach with all my best friends , sun tanning is what we did all day , so enjoy
+	Free: Pattern=good, Pattern=what, Pattern=did, Pattern=all day, Pattern=enjoy, Pattern=all, Pattern=to the beach, Pattern=it's, Pattern=sun, Pattern=went to the, Pattern=is, Pattern=i
+	Constrained: Pattern=went, Pattern=beach, Pattern=day, Pattern=to, Pattern=the beach, Pattern=went to, Pattern=the, Pattern=all
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=thought of, Pattern=pretty, Pattern=that's, Pattern=your work, Pattern=to the beach, Pattern=funny
+	Constrained: Pattern=of, Pattern=beach, Pattern=the beach, Pattern=work, Pattern=your, Pattern=the, Pattern=thought, Pattern=to
+Turn ID=7| B | Human 2 : haha that's funny you thought of the beach , because all day i did enjoy the beach and went tanning and got burnt pretty
+	Free: Pattern=you, Pattern=went, Pattern=did, Pattern=all day, Pattern=enjoy the, Pattern=the beach, Pattern=i, Pattern=haha, Pattern=pretty, Pattern=that's, Pattern=funny, Pattern=and, Pattern=thought of
+	Constrained: Pattern=of, Pattern=beach, Pattern=enjoy, Pattern=day, Pattern=thought, Pattern=the, Pattern=all
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=work near the, Pattern=of, Pattern=you, Pattern=sounds like, Pattern=are, Pattern=some, Pattern=i, Pattern=see
+	Constrained: Pattern=the, Pattern=work, Pattern=like
+Turn ID=9| B | Human 2 : haha beach sounds like fun . you see the beach all day in your work that you went to ?
+	Free: Pattern=you, Pattern=beach, Pattern=. you, Pattern=haha, Pattern=see, Pattern=your work, Pattern=that, Pattern=sounds like, Pattern=all day, Pattern=the beach, Pattern=went to
+	Constrained: Pattern=you, Pattern=went, Pattern=beach, Pattern=work, Pattern=like, Pattern=to, Pattern=day, Pattern=your, Pattern=the, Pattern=all
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=of, Pattern=have, Pattern=work, Pattern=all, Pattern=dangerous, Pattern=at, Pattern=very, Pattern=is, Pattern=never, Pattern=i
+	Constrained: 
+Turn ID=11| B | Human 2 : haha , you have good friends . i work near the beach all day , but never thought to use tanning products . are some dangerous ?
+	Free: Pattern=good, Pattern=work near the, Pattern=have, Pattern=all day, Pattern=are, Pattern=dangerous, Pattern=haha ,, Pattern=you, Pattern=, but, Pattern=the beach, Pattern=some, Pattern=never, Pattern=i, Pattern=thought, Pattern=to
+	Constrained: Pattern=beach, Pattern=work, Pattern=day, Pattern=haha, Pattern=but, Pattern=the, Pattern=all
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=have, Pattern=routes, Pattern=sounds like, Pattern=fall, Pattern=the, Pattern=when, Pattern=that, Pattern=not, Pattern=, but, Pattern=yes, Pattern=dangerous, Pattern=mountain, Pattern=is, Pattern=i
+	Constrained: Pattern=but, Pattern=like
+Turn ID=13| B | Human 2 : yes but not dangerous when you have all the protections like a harness and a guardrail and fall protection that i work hard to maintain and
+	Free: Pattern=have, Pattern=and, Pattern=fall, Pattern=dangerous, Pattern=work, Pattern=i, Pattern=like, Pattern=when, Pattern=to, Pattern=not, Pattern=you, Pattern=yes, Pattern=the, Pattern=all, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=routes, Pattern=like, Pattern=pretty, Pattern=to, Pattern=dangerous, Pattern=at, Pattern=i'm, Pattern=and have, Pattern=never, Pattern=i
+	Constrained: Pattern=have, Pattern=and
+Turn ID=15| B | Human 2 : i'm not very afraid and have climbed many mountain routes that are dangerous but the beach is pretty gnarly haha .
+	Free: Pattern=routes, Pattern=are, Pattern=the beach, Pattern=haha, Pattern=pretty, Pattern=not, Pattern=dangerous, Pattern=mountain, Pattern=i'm, Pattern=and have, Pattern=very, Pattern=is, Pattern=that, Pattern=but
+	Constrained: Pattern=the, Pattern=beach, Pattern=have, Pattern=and

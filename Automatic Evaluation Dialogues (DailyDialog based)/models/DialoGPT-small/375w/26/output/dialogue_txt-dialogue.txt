@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there ! who are _you_ ? 
+A|2| Human 1: _i'm mark . _i_ work_ _in_ accounting 
+B|3| Human 2: [i'm mark . i] make _a_ mean pizza ! 
+A|4| Human 1: _what_ does _a fish groomer_ _do_ ? 
+B|5| Human 2: [i work] [a fish groomer] . [i'm] so excited _to_ show everyone who [i] am 
+A|6| Human 1: interesting . _what's_ _type _of_ fish_ _do you_ _take care of_ ? 
+B|7| Human 2: [fish groomer] [i'm] [in] new zealand , [take care [of] fish] . 
+A|8| Human 1: [i] balance _the_ books _and_ _do_ _financial analysis_ _for_ [a] medium sized _company_ 
+B|9| Human 2: how [you] doing [for] [the] last 4 months [and] [what] [type of] [company] are [you] [in] , [financial analysis] or [fish] career ? 
+A|10| Human 1: well [i] actually _think_ about pursuing _photography_ , _but it's_ _really_ _hard_ 
+B|11| Human 2: [what's] [you] guys [work] [type of] [photography] [and] [what] [do you] [do] [for] [the] most part ? 
+A|12| Human 1: thank [you] tom !! [i'm] starting by _trying to_ _sell_ my _pictures_ _online_ 
+B|13| Human 2: yeah [i] [really] [think] [you] should get [pictures] [for] [the] [company] [and] [sell] them [but it's] [hard] [trying to] get [work] done [online] . great ! 
+A|14| Human 1: thanks ! bye 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there ! who are you ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm mark . i work in accounting
+	Free: Pattern=i'm mark . i, Pattern=i work, Pattern=in
+	Constrained: Pattern=i'm, Pattern=i, Pattern=work
+Turn ID=3| B | Human 2 : i'm mark . i make a mean pizza !
+	Free: Pattern=i'm mark . i, Pattern=a
+	Constrained: Pattern=i'm, Pattern=i
+Turn ID=4| A | Human 1 : what does a fish groomer do ?
+	Free: Pattern=a fish groomer, Pattern=do, Pattern=what
+	Constrained: Pattern=fish groomer, Pattern=fish, Pattern=a
+Turn ID=5| B | Human 2 : i work a fish groomer . i'm so excited to show everyone who i am
+	Free: Pattern=i work, Pattern=i'm, Pattern=i, Pattern=a fish groomer, Pattern=to
+	Constrained: Pattern=fish groomer, Pattern=a, Pattern=work, Pattern=i, Pattern=fish
+Turn ID=6| A | Human 1 : interesting . what's type of fish do you take care of ?
+	Free: Pattern=type of, Pattern=do you, Pattern=of fish, Pattern=take care of, Pattern=what's
+	Constrained: Pattern=do, Pattern=you, Pattern=fish
+Turn ID=7| B | Human 2 : fish groomer i'm in new zealand , take care of fish .
+	Free: Pattern=fish groomer, Pattern=of fish, Pattern=in, Pattern=i'm, Pattern=take care of
+	Constrained: Pattern=fish
+Turn ID=8| A | Human 1 : i balance the books and do financial analysis for a medium sized company
+	Free: Pattern=company, Pattern=financial analysis, Pattern=for, Pattern=and, Pattern=i, Pattern=the, Pattern=do, Pattern=a
+	Constrained: 
+Turn ID=9| B | Human 2 : how you doing for the last 4 months and what type of company are you in , financial analysis or fish career ?
+	Free: Pattern=company, Pattern=you, Pattern=for, Pattern=and, Pattern=in, Pattern=fish, Pattern=the, Pattern=type of, Pattern=what, Pattern=financial analysis
+	Constrained: 
+Turn ID=10| A | Human 1 : well i actually think about pursuing photography , but it's really hard
+	Free: Pattern=photography, Pattern=but it's, Pattern=think, Pattern=i, Pattern=really, Pattern=hard
+	Constrained: 
+Turn ID=11| B | Human 2 : what's you guys work type of photography and what do you do for the most part ?
+	Free: Pattern=photography, Pattern=you, Pattern=do, Pattern=for, Pattern=work, Pattern=what's, Pattern=the, Pattern=type of, Pattern=what, Pattern=and, Pattern=do you
+	Constrained: Pattern=do, Pattern=you
+Turn ID=12| A | Human 1 : thank you tom !! i'm starting by trying to sell my pictures online
+	Free: Pattern=you, Pattern=pictures, Pattern=i'm, Pattern=online, Pattern=trying to, Pattern=sell
+	Constrained: Pattern=to
+Turn ID=13| B | Human 2 : yeah i really think you should get pictures for the company and sell them but it's hard trying to get work done online . great !
+	Free: Pattern=company, Pattern=you, Pattern=but it's, Pattern=for, Pattern=and, Pattern=pictures, Pattern=think, Pattern=work, Pattern=really, Pattern=trying to, Pattern=sell, Pattern=the, Pattern=hard, Pattern=online, Pattern=i
+	Constrained: Pattern=to
+Turn ID=14| A | Human 1 : thanks ! bye
+	Free: 
+	Constrained: 

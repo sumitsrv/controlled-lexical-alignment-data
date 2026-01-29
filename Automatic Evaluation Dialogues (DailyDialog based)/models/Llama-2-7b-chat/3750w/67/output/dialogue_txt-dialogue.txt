@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey ,_ _how_ are _you_ doing ? 
+A|2| Human 1: _i'm_ great , _thanks_ . _i'm_ _getting_ _ready for_ _a_ _skydiving_ _lesson_ . 
+B|3| Human 2: wow , that's exciting ! are _you_ [ready for] your [lesson] ? 
+A|4| Human 1: right near my home town: _seville_ , _spain_ . 
+B|5| Human 2: ah , [seville] is [a] beautiful city . did _you_ know [skydiving] is [getting] increasingly popular in [spain] ? 
+A|6| Human 1: _yes_ . _i'm feeling a little trepidatious_ _. have you done_ it _before_ ? 
+B|7| Human 2: [yes] , [i'm feeling a little trepidatious] [before] [you] [. have you done] [skydiving] [for] less </s> 
+A|8| Human 1: _haha thanks ! have you tried any extreme sports ?_ 
+B|9| Human 2: [haha thanks ! have you tried any extreme sports ?] [i'm] 75% confident _that_ [skydiving] is safe [for] first-time jump 
+A|10| Human 1: white _water_ rafting , definitely ! as [for] skiing , [that] depends on [how] fast [you] go . do [you] ski [a] lot ? 
+B|11| Human 2: [i'm] 75% confident [that] [skydiving] is safe [for] first-time jumpers [. [have you] tried any] [water] [sports ?] <| 
+A|12| Human 1: i [tried] skiing once , and by the end of the beginner class i was able to make it down [a] baby-sized slope . i was very proud of myself . 
+B|13| Human 2: [i'm] 75% confident [that] [skydiving] is safe [for] first-time jumpers [. [have you] tried any] [water] [sports ?] <| 
+A|14| Human 1: [hey ,] so long as [you] get to the bottom , it's all good ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you doing ?
+	Free: Pattern=hey ,, Pattern=how, Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : i'm great , thanks . i'm getting ready for a skydiving lesson .
+	Free: Pattern=thanks, Pattern=a, Pattern=i'm, Pattern=lesson, Pattern=skydiving, Pattern=ready for, Pattern=getting
+	Constrained: Pattern=for
+Turn ID=3| B | Human 2 : wow , that's exciting ! are you ready for your lesson ?
+	Free: Pattern=ready for, Pattern=you, Pattern=lesson
+	Constrained: Pattern=for
+Turn ID=4| A | Human 1 : right near my home town: seville , spain .
+	Free: Pattern=spain, Pattern=seville
+	Constrained: 
+Turn ID=5| B | Human 2 : ah , seville is a beautiful city . did you know skydiving is getting increasingly popular in spain ?
+	Free: Pattern=spain, Pattern=you, Pattern=a, Pattern=seville, Pattern=skydiving, Pattern=getting
+	Constrained: 
+Turn ID=6| A | Human 1 : yes . i'm feeling a little trepidatious . have you done it before ?
+	Free: Pattern=i'm feeling a little trepidatious, Pattern=. have you done, Pattern=before, Pattern=yes
+	Constrained: Pattern=a, Pattern=you, Pattern=i'm, Pattern=. have you
+Turn ID=7| B | Human 2 : yes , i'm feeling a little trepidatious before you . have you done skydiving for less </s>
+	Free: Pattern=. have you done, Pattern=for, Pattern=i'm feeling a little trepidatious, Pattern=skydiving, Pattern=before, Pattern=you, Pattern=yes
+	Constrained: Pattern=a, Pattern=you, Pattern=i'm, Pattern=. have you
+Turn ID=8| A | Human 1 : haha thanks ! have you tried any extreme sports ?
+	Free: Pattern=haha thanks ! have you tried any extreme sports ?
+	Constrained: Pattern=thanks, Pattern=have you tried any, Pattern=you, Pattern=sports ?, Pattern=tried
+Turn ID=9| B | Human 2 : haha thanks ! have you tried any extreme sports ? i'm 75% confident that skydiving is safe for first-time jump
+	Free: Pattern=for, Pattern=haha thanks ! have you tried any extreme sports ?, Pattern=i'm, Pattern=skydiving, Pattern=that
+	Constrained: Pattern=thanks, Pattern=have you tried any, Pattern=you, Pattern=sports ?, Pattern=tried
+Turn ID=10| A | Human 1 : white water rafting , definitely ! as for skiing , that depends on how fast you go . do you ski a lot ?
+	Free: Pattern=you, Pattern=a, Pattern=how, Pattern=for, Pattern=water, Pattern=that
+	Constrained: 
+Turn ID=11| B | Human 2 : i'm 75% confident that skydiving is safe for first-time jumpers . have you tried any water sports ? <|
+	Free: Pattern=have you tried any, Pattern=sports ?, Pattern=. have you, Pattern=for, Pattern=i'm, Pattern=water, Pattern=skydiving, Pattern=that
+	Constrained: Pattern=you, Pattern=tried
+Turn ID=12| A | Human 1 : i tried skiing once , and by the end of the beginner class i was able to make it down a baby-sized slope . i was very proud of myself .
+	Free: Pattern=a, Pattern=tried
+	Constrained: 
+Turn ID=13| B | Human 2 : i'm 75% confident that skydiving is safe for first-time jumpers . have you tried any water sports ? <|
+	Free: Pattern=have you tried any, Pattern=sports ?, Pattern=. have you, Pattern=for, Pattern=i'm, Pattern=water, Pattern=skydiving, Pattern=that
+	Constrained: Pattern=you, Pattern=tried
+Turn ID=14| A | Human 1 : hey , so long as you get to the bottom , it's all good !
+	Free: Pattern=hey ,, Pattern=you
+	Constrained: 

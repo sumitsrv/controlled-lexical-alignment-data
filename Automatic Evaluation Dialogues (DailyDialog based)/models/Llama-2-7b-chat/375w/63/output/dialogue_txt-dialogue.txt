@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted _to_ know if [you] _and_ _the_ _kids_ _would_ want _to_ join _us_ _for_ _disneyland_ _trip_ around _christmas_ ? 
+B|3| Human 2: thank [you] [for] [the] invitation ! i'm just _an_ ai [and] don't _have_ [kids] , _but _i_ can_ certainly help [you] _plan_ _a_ 
+A|4| Human 1: tentative [plan] is _to_ drive _to_ la _on_ 23rd [and] then _stay_ _at_ [the] disney resort [for] 2 nights _. i_ heard _christmas eve_ _they_ [have] loads of _fun_ events . 
+B|5| Human 2: _that_ sounds like _a_ [fun] [plan] ! [disneyland] [at] [christmas] must _be a_ magical experience . i'm just _an_ ai _, i_ don't 
+A|6| Human 1: _great_ idea ! _i will_ probably _do_ [the] same . surprise surprise .... _traffic might be a_ little harsh . 
+B|7| Human 2: ah _, i_ see . [traffic might be a] challenge , _but_ it's always worth it [for] [a] [fun] [trip] like _this_ . [have] [you] planned anything 
+A|8| Human 1: _good point . i_ am not _sure_ about [that] _. let_ me inquire about [that] . if not , then _we can look for_ [an] _airbnb_ closeby . does [that] _work_ ? 
+B|9| Human 2: [great] , [that] [would] [work] perfectly ! [airbnb] [can] [be a] [great] option [for] finding [a] cozy [and] affordable place [to] [stay] close [to] [disneyland] 
+A|10| Human 1: [but i] [would] _think_ everything is closed _on christmas eve_ 
+B|11| Human 2: ah , [good point . [i] will] double-check [the] [airbnb] availability [and] make [sure] [they] [can] accommodate [us] [on christmas eve] [. let] 
+A|12| Human 1: [sure] [, [i] can] take [a] lead [on] [that] _. what_ are [you] getting [for] your _<redacted_term> year old_ [this] time ? 
+B|13| Human 2: oh , wow ! 2500$ , that's quite [a] lot [for] [a] [<redacted_term> year old] 
+A|14| Human 1: likewise . my son is crazy about legos . 
+B|15| Human 2: haha , that's [great] ! maybe [we can look for] some [fun] lego-themed [airbnb] experiences [. what] [do] [you] [think] ? 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=you, Pattern=for, Pattern=and, Pattern=kids, Pattern=us, Pattern=trip, Pattern=would, Pattern=to, Pattern=disneyland, Pattern=christmas, Pattern=the
+	Constrained: 
+Turn ID=3| B | Human 2 : thank you for the invitation ! i'm just an ai and don't have kids , but i can certainly help you plan a
+	Free: Pattern=have, Pattern=but i, Pattern=a, Pattern=an, Pattern=for, Pattern=and, Pattern=kids, Pattern=the, Pattern=i can, Pattern=you, Pattern=plan
+	Constrained: Pattern=but, Pattern=can
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=fun, Pattern=stay, Pattern=have, Pattern=they, Pattern=for, Pattern=and, Pattern=at, Pattern=. i, Pattern=to, Pattern=plan, Pattern=christmas eve, Pattern=on, Pattern=the
+	Constrained: Pattern=christmas
+Turn ID=5| B | Human 2 : that sounds like a fun plan ! disneyland at christmas must be a magical experience . i'm just an ai , i don't
+	Free: Pattern=fun, Pattern=plan, Pattern=a, Pattern=an, Pattern=at, Pattern=be a, Pattern=that, Pattern=disneyland, Pattern=christmas, Pattern=, i
+	Constrained: Pattern=a
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=great, Pattern=do, Pattern=traffic might be a, Pattern=the, Pattern=i will
+	Constrained: Pattern=a, Pattern=be a
+Turn ID=7| B | Human 2 : ah , i see . traffic might be a challenge , but it's always worth it for a fun trip like this . have you planned anything
+	Free: Pattern=fun, Pattern=you, Pattern=have, Pattern=a, Pattern=for, Pattern=traffic might be a, Pattern=trip, Pattern=, i, Pattern=this, Pattern=but
+	Constrained: Pattern=be a, Pattern=a
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=we can look for, Pattern=good point . i, Pattern=an, Pattern=work, Pattern=sure, Pattern=that, Pattern=airbnb, Pattern=. let
+	Constrained: Pattern=for, Pattern=. i, Pattern=can
+Turn ID=9| B | Human 2 : great , that would work perfectly ! airbnb can be a great option for finding a cozy and affordable place to stay close to disneyland
+	Free: Pattern=stay, Pattern=great, Pattern=a, Pattern=for, Pattern=and, Pattern=can, Pattern=would, Pattern=airbnb, Pattern=to, Pattern=that, Pattern=disneyland, Pattern=be a, Pattern=work
+	Constrained: Pattern=a
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=on christmas eve, Pattern=but i, Pattern=would, Pattern=think
+	Constrained: Pattern=christmas eve, Pattern=but, Pattern=christmas, Pattern=on
+Turn ID=11| B | Human 2 : ah , good point . i will double-check the airbnb availability and make sure they can accommodate us on christmas eve . let
+	Free: Pattern=good point . i, Pattern=and, Pattern=sure, Pattern=the, Pattern=i will, Pattern=on christmas eve, Pattern=they, Pattern=can, Pattern=us, Pattern=airbnb, Pattern=. let
+	Constrained: Pattern=christmas eve, Pattern=christmas, Pattern=. i, Pattern=on
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=you, Pattern=a, Pattern=for, Pattern=sure, Pattern=. what, Pattern=i can, Pattern=this, Pattern=that, Pattern=on, Pattern=<redacted_term> year old, Pattern=, i
+	Constrained: Pattern=can
+Turn ID=13| B | Human 2 : oh , wow ! 2500$ , that's quite a lot for a <redacted_term> year old
+	Free: Pattern=<redacted_term> year old, Pattern=for, Pattern=a
+	Constrained: 
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: 
+	Constrained: 
+Turn ID=15| B | Human 2 : haha , that's great ! maybe we can look for some fun lego-themed airbnb experiences . what do you think ?
+	Free: Pattern=do, Pattern=think, Pattern=airbnb, Pattern=. what, Pattern=fun, Pattern=we can look for, Pattern=you, Pattern=great
+	Constrained: Pattern=for, Pattern=can

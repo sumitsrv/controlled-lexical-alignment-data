@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , how's _it_ _going_ ? 
+A|2| Human 1: _it's_ _good_ _! how_ is _your_ day ? 
+B|3| Human 2: [it's] _going_ well , thanks for asking [! how] _can_ _i_ help _you_ today ? 
+A|4| Human 1: _yes , the darkness can be a bit depressing_ . this weekend [i] went _rock climbing_ ! [it] _was_ _great [!_ how] _about_ _yourself_ ? 
+B|5| Human 2: that's [great !] [rock climbing] [can be a] [great] way _to_ challenge [yourself] _and_ get some exercise . [how] [was] [your] experience ? <|im_ 
+A|6| Human 1: oh _nice _!_ what_ _movie ?_ 
+B|7| Human 2: [yes , the darkness can be a bit depressing] sometimes . what's [your] favorite [movie ?] 
+A|8| Human 1: _hahah_ [yes ,] they _all_ look [the] _same_ ! [i] saw _that_ _very_ _same_ [movie] over _thanksgiving break_ . _lots of_ _twists and turns_ ! 
+B|9| Human 2: hahaha [nice !] [it's] [great] [that] _you_ [and] [your] friends could [all] relate _to_ [the] [movie] . [what] [was] [your] favorite part ? <|im 
+A|10| Human 1: hmm _good_ question . evening runs [can be] _fun_ , _but_ [it] [can be a] _little_ scary _when it's_ dark out ! 
+B|11| Human 2: [lots of] [fun] [little] [twists and turns] [that] made [it] [very] entertaining . [thanksgiving break] [was] [good] . [hahah] [same] [but] darker 
+A|12| Human 1: [yes] ! i've been [to] australia . [it] [was] [very] nice; [i] regret _not_ [going] [to] see [the] southern lights . me personally , [i] _like winter_ _. but_ i'd _prefer_ [it] [to] [be] _more_ brief _than_ [it] _actually_ is _here_ ... where are [you] _from_ originally ? 
+B|13| Human 2: [but] you'd [like winter] [more] [than] [i] would , [from] [the] sound [of] [it] [! what] do [you] [prefer] [about] [it] ? <|im_end| 
+A|14| Human 1: ahh me _too_ ! [you] should _definitely_ try [to] visit australia at least _once_ ! 
+B|15| Human 2: australia's [definitely] [not] [too] far [from] [here] [actually] [i] [was] [like] [you] [once] [. but] [winter] [can be] [very] [nice] [when it's] done right< 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how's it going ?
+	Free: Pattern=it, Pattern=going
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! how is your day ?
+	Free: Pattern=! how, Pattern=good, Pattern=your, Pattern=it's
+	Constrained: Pattern=how
+Turn ID=3| B | Human 2 : it's going well , thanks for asking ! how can i help you today ?
+	Free: Pattern=you, Pattern=going, Pattern=can, Pattern=it's, Pattern=! how, Pattern=i
+	Constrained: Pattern=how
+Turn ID=4| A | Human 1 : yes , the darkness can be a bit depressing . this weekend i went rock climbing ! it was great ! how about yourself ?
+	Free: Pattern=about, Pattern=great !, Pattern=was, Pattern=it, Pattern=yes , the darkness can be a bit depressing, Pattern=! how, Pattern=i, Pattern=rock climbing, Pattern=yourself
+	Constrained: Pattern=can, Pattern=be, Pattern=the, Pattern=can be a, Pattern=great, Pattern=yes, Pattern=yes ,, Pattern=how, Pattern=can be
+Turn ID=5| B | Human 2 : that's great ! rock climbing can be a great way to challenge yourself and get some exercise . how was your experience ? <|im_
+	Free: Pattern=great, Pattern=how, Pattern=and, Pattern=great !, Pattern=your, Pattern=to, Pattern=was, Pattern=can be a, Pattern=rock climbing, Pattern=yourself
+	Constrained: Pattern=can be, Pattern=can, Pattern=be, Pattern=great
+Turn ID=6| A | Human 1 : oh nice ! what movie ?
+	Free: Pattern=nice !, Pattern=movie ?, Pattern=! what
+	Constrained: Pattern=what, Pattern=movie, Pattern=nice
+Turn ID=7| B | Human 2 : yes , the darkness can be a bit depressing sometimes . what's your favorite movie ?
+	Free: Pattern=yes , the darkness can be a bit depressing, Pattern=movie ?, Pattern=your
+	Constrained: Pattern=can be, Pattern=movie, Pattern=can, Pattern=be, Pattern=the, Pattern=can be a, Pattern=yes, Pattern=yes ,
+Turn ID=8| A | Human 1 : hahah yes , they all look the same ! i saw that very same movie over thanksgiving break . lots of twists and turns !
+	Free: Pattern=yes ,, Pattern=movie, Pattern=hahah, Pattern=thanksgiving break, Pattern=same, Pattern=twists and turns, Pattern=that, Pattern=very, Pattern=lots of, Pattern=i, Pattern=the, Pattern=all
+	Constrained: Pattern=yes, Pattern=of, Pattern=and
+Turn ID=9| B | Human 2 : hahaha nice ! it's great that you and your friends could all relate to the movie . what was your favorite part ? <|im
+	Free: Pattern=what, Pattern=movie, Pattern=and, Pattern=your, Pattern=to, Pattern=was, Pattern=nice !, Pattern=you, Pattern=great, Pattern=the, Pattern=all, Pattern=that, Pattern=it's
+	Constrained: Pattern=nice
+Turn ID=10| A | Human 1 : hmm good question . evening runs can be fun , but it can be a little scary when it's dark out !
+	Free: Pattern=good, Pattern=fun, Pattern=can be, Pattern=it, Pattern=when it's, Pattern=little, Pattern=but, Pattern=can be a
+	Constrained: Pattern=it's, Pattern=can be, Pattern=can, Pattern=be
+Turn ID=11| B | Human 2 : lots of fun little twists and turns that made it very entertaining . thanksgiving break was good . hahah same but darker
+	Free: Pattern=good, Pattern=fun, Pattern=little, Pattern=thanksgiving break, Pattern=same, Pattern=was, Pattern=twists and turns, Pattern=it, Pattern=hahah, Pattern=very, Pattern=lots of, Pattern=that, Pattern=but
+	Constrained: Pattern=of, Pattern=and
+Turn ID=12| A | Human 1 : yes ! i've been to australia . it was very nice; i regret not going to see the southern lights . me personally , i like winter . but i'd prefer it to be more brief than it actually is here ... where are you from originally ?
+	Free: Pattern=more, Pattern=going, Pattern=here, Pattern=actually, Pattern=it, Pattern=from, Pattern=like winter, Pattern=than, Pattern=the, Pattern=to, Pattern=was, Pattern=not, Pattern=you, Pattern=yes, Pattern=very, Pattern=prefer, Pattern=i, Pattern=. but, Pattern=be
+	Constrained: Pattern=but, Pattern=like, Pattern=winter
+Turn ID=13| B | Human 2 : but you'd like winter more than i would , from the sound of it ! what do you prefer about it ? <|im_end|
+	Free: Pattern=you, Pattern=it, Pattern=from, Pattern=than, Pattern=! what, Pattern=the, Pattern=but, Pattern=of, Pattern=more, Pattern=about, Pattern=like winter, Pattern=prefer, Pattern=i
+	Constrained: Pattern=what, Pattern=like, Pattern=winter
+Turn ID=14| A | Human 1 : ahh me too ! you should definitely try to visit australia at least once !
+	Free: Pattern=you, Pattern=once, Pattern=too, Pattern=definitely, Pattern=to
+	Constrained: 
+Turn ID=15| B | Human 2 : australia's definitely not too far from here actually i was like you once . but winter can be very nice when it's done right<
+	Free: Pattern=you, Pattern=actually, Pattern=can be, Pattern=nice, Pattern=too, Pattern=from, Pattern=winter, Pattern=like, Pattern=definitely, Pattern=. but, Pattern=was, Pattern=not, Pattern=here, Pattern=when it's, Pattern=once, Pattern=very, Pattern=i
+	Constrained: Pattern=but, Pattern=be, Pattern=it's, Pattern=can

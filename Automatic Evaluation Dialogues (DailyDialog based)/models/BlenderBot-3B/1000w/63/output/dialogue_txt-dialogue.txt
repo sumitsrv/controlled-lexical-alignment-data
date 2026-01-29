@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello there , nice seeing _you_ 
+A|2| Human 1: likewise .... wanted _to_ _know_ if [you] _and_ _the kids_ _would_ _want to_ join _us_ _for_ _disneyland_ trip around _christmas_ ? 
+B|3| Human 2: [you] [know] it ! [and] [for] [the kids] birthday _of_ course ! how _old_ _are_ _they_ ? 
+A|4| Human 1: tentative _plan_ is _to_ _drive_ _to_ la _on_ _23rd_ _and then stay_ at [the] disney resort [for] 2 nights . _i_ heard _christmas eve they have_ loads [of] _fun_ _events_ . 
+B|5| Human 2: [christmas eve they have] [the] [christmas] parade [and then stay] [for] [the] [christmas] [events] 
+A|6| Human 1: great _idea_ _! i _will_ probably_ do [the] same . surprise surprise .... traffic _might_ _be_ _a_ little harsh . 
+B|7| Human 2: _we_ [will probably] [drive] , [the] only thing [would] [be] [they] [might] [want to] [stay] [for] [the] [christmas] [events] [and then] come back down [the] [23rd] [to] [have] their 
+A|8| Human 1: _good_ point . _i_ am _not_ _sure_ _about_ _that_ . let me inquire _about_ _that_ . if _not_ , [then] [we] _can_ look [for] an airbnb closeby . does _that_ _work_ ? 
+B|9| Human 2: [good] [idea] [that] [might] [work] [for] [the kids] [and] [they] [can] [have] [fun] in [disneyland] too 
+A|10| Human 1: _but_ _i_ [would] _think_ everything is closed _on_ [christmas eve] 
+B|11| Human 2: [that] [would] [work] [for] [sure] [and] [can] [they] go [to] [the] [christmas] [events] in nb [but] [not] [stay] [the] whole holiday ? just [eve] [then] 
+A|12| Human 1: [sure] , _i_ [can] _take a lead_ _on_ [that] _. what_ [are] [you] getting [for] _your_ <redacted_term> year [old] _this time_ ? 
+B|13| Human 2: [sure] [that] [would] [work] [for] [us] [this time] [. what] [your] [plan] [on] doing [the] [23rd] ? 
+A|14| Human 1: likewise . my son is _crazy_ _about legos_ . 
+B|15| Human 2: well [i] can't [think] [about legos] [but] [you] [are] [crazy] [for] [that] [! i will] [take a lead] [and] say [a] [christmas] sweater [that] [would] [have] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there , nice seeing you
+	Free: Pattern=you
+	Constrained: 
+Turn ID=2| A | Human 1 : likewise .... wanted to know if you and the kids would want to join us for disneyland trip around christmas ?
+	Free: Pattern=you, Pattern=for, Pattern=and, Pattern=us, Pattern=want to, Pattern=know, Pattern=christmas, Pattern=to, Pattern=disneyland, Pattern=the kids, Pattern=would
+	Constrained: Pattern=to, Pattern=the
+Turn ID=3| B | Human 2 : you know it ! and for the kids birthday of course ! how old are they ?
+	Free: Pattern=of, Pattern=you, Pattern=they, Pattern=for, Pattern=and, Pattern=are, Pattern=know, Pattern=the kids, Pattern=old
+	Constrained: Pattern=the
+Turn ID=4| A | Human 1 : tentative plan is to drive to la on 23rd and then stay at the disney resort for 2 nights . i heard christmas eve they have loads of fun events .
+	Free: Pattern=of, Pattern=plan, Pattern=23rd, Pattern=and then stay, Pattern=i, Pattern=to, Pattern=fun, Pattern=drive, Pattern=for, Pattern=christmas eve they have, Pattern=events, Pattern=on, Pattern=the
+	Constrained: Pattern=stay, Pattern=christmas eve, Pattern=have, Pattern=they, Pattern=then, Pattern=and, Pattern=and then, Pattern=eve, Pattern=christmas
+Turn ID=5| B | Human 2 : christmas eve they have the christmas parade and then stay for the christmas events
+	Free: Pattern=and then stay, Pattern=for, Pattern=christmas eve they have, Pattern=events, Pattern=christmas, Pattern=the
+	Constrained: Pattern=stay, Pattern=christmas eve, Pattern=have, Pattern=they, Pattern=then, Pattern=and, Pattern=and then, Pattern=eve, Pattern=christmas
+Turn ID=6| A | Human 1 : great idea ! i will probably do the same . surprise surprise .... traffic might be a little harsh .
+	Free: Pattern=idea, Pattern=a, Pattern=will probably, Pattern=be, Pattern=might, Pattern=! i will, Pattern=the
+	Constrained: Pattern=i
+Turn ID=7| B | Human 2 : we will probably drive , the only thing would be they might want to stay for the christmas events and then come back down the 23rd to have their
+	Free: Pattern=drive, Pattern=stay, Pattern=have, Pattern=and then, Pattern=want to, Pattern=we, Pattern=will probably, Pattern=be, Pattern=would, Pattern=to, Pattern=might, Pattern=23rd, Pattern=they, Pattern=for, Pattern=events, Pattern=christmas, Pattern=the
+	Constrained: Pattern=then, Pattern=and, Pattern=to
+Turn ID=8| A | Human 1 : good point . i am not sure about that . let me inquire about that . if not , then we can look for an airbnb closeby . does that work ?
+	Free: Pattern=good, Pattern=then, Pattern=for, Pattern=can, Pattern=about, Pattern=work, Pattern=i, Pattern=we, Pattern=sure, Pattern=that, Pattern=not
+	Constrained: 
+Turn ID=9| B | Human 2 : good idea that might work for the kids and they can have fun in disneyland too
+	Free: Pattern=good, Pattern=fun, Pattern=idea, Pattern=have, Pattern=they, Pattern=for, Pattern=and, Pattern=can, Pattern=work, Pattern=the kids, Pattern=might, Pattern=that, Pattern=disneyland
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : but i would think everything is closed on christmas eve
+	Free: Pattern=christmas eve, Pattern=think, Pattern=i, Pattern=on, Pattern=would, Pattern=but
+	Constrained: Pattern=christmas, Pattern=eve
+Turn ID=11| B | Human 2 : that would work for sure and can they go to the christmas events in nb but not stay the whole holiday ? just eve then
+	Free: Pattern=stay, Pattern=they, Pattern=then, Pattern=and, Pattern=can, Pattern=work, Pattern=eve, Pattern=sure, Pattern=would, Pattern=to, Pattern=not, Pattern=for, Pattern=events, Pattern=christmas, Pattern=the, Pattern=that, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : sure , i can take a lead on that . what are you getting for your <redacted_term> year old this time ?
+	Free: Pattern=this time, Pattern=you, Pattern=for, Pattern=are, Pattern=can, Pattern=take a lead, Pattern=sure, Pattern=on, Pattern=. what, Pattern=old, Pattern=that, Pattern=your, Pattern=i
+	Constrained: Pattern=a
+Turn ID=13| B | Human 2 : sure that would work for us this time . what your plan on doing the 23rd ?
+	Free: Pattern=this time, Pattern=plan, Pattern=23rd, Pattern=for, Pattern=us, Pattern=work, Pattern=your, Pattern=sure, Pattern=would, Pattern=. what, Pattern=that, Pattern=on, Pattern=the
+	Constrained: 
+Turn ID=14| A | Human 1 : likewise . my son is crazy about legos .
+	Free: Pattern=about legos, Pattern=crazy
+	Constrained: Pattern=about
+Turn ID=15| B | Human 2 : well i can't think about legos but you are crazy for that ! i will take a lead and say a christmas sweater that would have
+	Free: Pattern=you, Pattern=have, Pattern=a, Pattern=for, Pattern=are, Pattern=think, Pattern=take a lead, Pattern=i, Pattern=would, Pattern=and, Pattern=crazy, Pattern=! i will, Pattern=christmas, Pattern=that, Pattern=but, Pattern=about legos
+	Constrained: Pattern=a, Pattern=i, Pattern=about

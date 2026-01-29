@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , _how are you_ ? 
+A|2| Human 1: _i'm good _. how_ are you_ _doing_ _today ?_ 
+B|3| Human 2: [i'm] [doing] [good] [today] , just finished up a [good] work out [. how are you] ? 
+A|4| Human 1: _i was_ flying my kite [today] in _the_ sunshine _! what did you have for lunch_ ? 
+B|5| Human 2: [i'm good . how] [did you have] [lunch] [today ?] [i was] just [doing] [the] dishes , but [for] some reason [i] thought [i] should eat [lunch] . 
+A|6| Human 1: oh _that_ is _great_ ! _i love seafood_ - especially shellfish ! 
+B|7| Human 2: [i was] very [good] [today] , [lunch] [for] [the] both _of_ us [was] [great] [you have] [that] going to happen [today ?] [what did you] eat [today ?] 
+A|8| Human 1: oh nice ! is _it_ _hard_ ? 
+B|9| Human 2: [i was] [good .] [i love seafood] too [! what did you have for lunch] [today ?] 
+A|10| Human 1: oh wow _, you_ sound _like_ _an_ expert ! [have] [you] done this before ? 
+B|11| Human 2: [i] [have] a [seafood] allergy so [that] [was] [hard] [today] , but [good] [for] [you] [that] [you] got through [it] okay . [i] had [like] a sal 
+A|12| Human 1: _haha_ _, you_ really [have] done _your_ research [i] suppose ! _ever_ done _any other kind of_ fishing or hunting ? 
+B|13| Human 2: [haha] [you] [like] [seafood] [, [you] have] [any other kind of] allergies ? [i'm good] , but [i] [did] get [the] food poisoning [for] 
+A|14| Human 1: _ahh ,_ would [you] consider yourself _an_ outdoorsy type [of] person ? 
+B|15| Human 2: [ahh [,] [you] have] [the] [seafood] allergy and [your] [other] [are] [for] [the] fishy [kind] ? [have] [i] [ever] heard [of] [an] outdoors 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , how are you ?
+	Free: Pattern=how are you
+	Constrained: Pattern=you, Pattern=are
+Turn ID=2| A | Human 1 : i'm good . how are you doing today ?
+	Free: Pattern=i'm good . how, Pattern=. how are you, Pattern=today ?, Pattern=doing
+	Constrained: Pattern=good, Pattern=you, Pattern=are, Pattern=good ., Pattern=i'm, Pattern=i'm good, Pattern=how are you, Pattern=today
+Turn ID=3| B | Human 2 : i'm doing good today , just finished up a good work out . how are you ?
+	Free: Pattern=good, Pattern=today, Pattern=doing, Pattern=i'm, Pattern=. how are you
+	Constrained: Pattern=are, Pattern=you, Pattern=how are you
+Turn ID=4| A | Human 1 : i was flying my kite today in the sunshine ! what did you have for lunch ?
+	Free: Pattern=! what did you have for lunch, Pattern=i was, Pattern=the, Pattern=today
+	Constrained: Pattern=you, Pattern=have, Pattern=did, Pattern=for, Pattern=you have, Pattern=did you have, Pattern=i, Pattern=lunch, Pattern=was, Pattern=what did you
+Turn ID=5| B | Human 2 : i'm good . how did you have lunch today ? i was just doing the dishes , but for some reason i thought i should eat lunch .
+	Free: Pattern=today ?, Pattern=i was, Pattern=doing, Pattern=for, Pattern=did you have, Pattern=i, Pattern=lunch, Pattern=the, Pattern=i'm good . how
+	Constrained: Pattern=good, Pattern=you, Pattern=have, Pattern=i'm, Pattern=i, Pattern=i'm good, Pattern=was, Pattern=did, Pattern=today, Pattern=good ., Pattern=you have
+Turn ID=6| A | Human 1 : oh that is great ! i love seafood - especially shellfish !
+	Free: Pattern=i love seafood, Pattern=that, Pattern=great
+	Constrained: Pattern=i, Pattern=seafood
+Turn ID=7| B | Human 2 : i was very good today , lunch for the both of us was great you have that going to happen today ? what did you eat today ?
+	Free: Pattern=i was, Pattern=of, Pattern=great, Pattern=today, Pattern=for, Pattern=you have, Pattern=lunch, Pattern=the, Pattern=was, Pattern=what did you, Pattern=that, Pattern=today ?, Pattern=good
+	Constrained: Pattern=you, Pattern=have, Pattern=i, Pattern=was, Pattern=did, Pattern=today
+Turn ID=8| A | Human 1 : oh nice ! is it hard ?
+	Free: Pattern=hard, Pattern=it
+	Constrained: 
+Turn ID=9| B | Human 2 : i was good . i love seafood too ! what did you have for lunch today ?
+	Free: Pattern=today ?, Pattern=i was, Pattern=i love seafood, Pattern=! what did you have for lunch, Pattern=good .
+	Constrained: Pattern=good, Pattern=you, Pattern=have, Pattern=for, Pattern=you have, Pattern=did you have, Pattern=i, Pattern=lunch, Pattern=seafood, Pattern=was, Pattern=what did you, Pattern=did, Pattern=today
+Turn ID=10| A | Human 1 : oh wow , you sound like an expert ! have you done this before ?
+	Free: Pattern=you, Pattern=have, Pattern=an, Pattern=, you, Pattern=like
+	Constrained: Pattern=you
+Turn ID=11| B | Human 2 : i have a seafood allergy so that was hard today , but good for you that you got through it okay . i had like a sal
+	Free: Pattern=good, Pattern=you, Pattern=have, Pattern=today, Pattern=for, Pattern=it, Pattern=i, Pattern=like, Pattern=seafood, Pattern=hard, Pattern=was, Pattern=that
+	Constrained: 
+Turn ID=12| A | Human 1 : haha , you really have done your research i suppose ! ever done any other kind of fishing or hunting ?
+	Free: Pattern=any other kind of, Pattern=have, Pattern=, you, Pattern=haha, Pattern=ever, Pattern=your, Pattern=i
+	Constrained: Pattern=kind, Pattern=you, Pattern=other, Pattern=of
+Turn ID=13| B | Human 2 : haha you like seafood , you have any other kind of allergies ? i'm good , but i did get the food poisoning for
+	Free: Pattern=any other kind of, Pattern=you, Pattern=did, Pattern=for, Pattern=you have, Pattern=, you, Pattern=i, Pattern=seafood, Pattern=the, Pattern=haha, Pattern=like, Pattern=i'm good
+	Constrained: Pattern=good, Pattern=kind, Pattern=of, Pattern=you, Pattern=have, Pattern=other, Pattern=i'm
+Turn ID=14| A | Human 1 : ahh , would you consider yourself an outdoorsy type of person ?
+	Free: Pattern=ahh ,, Pattern=an, Pattern=you, Pattern=of
+	Constrained: 
+Turn ID=15| B | Human 2 : ahh , you have the seafood allergy and your other are for the fishy kind ? have i ever heard of an outdoors
+	Free: Pattern=kind, Pattern=of, Pattern=have, Pattern=an, Pattern=are, Pattern=other, Pattern=you have, Pattern=, you, Pattern=the, Pattern=ahh ,, Pattern=for, Pattern=your, Pattern=i, Pattern=ever, Pattern=seafood
+	Constrained: Pattern=you, Pattern=have

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: oh hey . how's _your_ _day_ been ? 
+A|2| Human 1: _it's_ good ! just went _to the_ park _to enjoy _the_ sun_ . _you_ ? 
+B|3| Human 2: nice ! 🌞 [it's] great [to enjoy the] sunshine . i've been busy helping users _like you_ with _their_ queries 
+A|4| Human 1: _haha ,_ _beach_ season _is_ coming ! [you] need [to] look tan ! what did [you] _do_ _indoors all day ?_ 
+B|5| Human 2: [haha ,] [indoors all day ?] 😅 i've been working _on_ improving my language models _and_ algorithms [to] better assist 
+A|6| Human 1: hahahaha _, that's_ pretty _funny_ . ever _thought_ of bringing [your] _work_ _things_ _to the_ _beach_ ?? 
+B|7| Human 2: 😂 [haha [,] that's] a [funny] idea _! i_ think i'll stick [to the] [indoors] workspace for 
+A|8| Human 1: _hmm_ [i] see . it sounds [like you] _work_ near [the] _water_ already , no ? are [you] some kind of fish researcher ? 
+B|9| Human 2: 🤔 [hmm] ... [that's] a [funny] [thought] . [i] [work] with [the sun] , [water] , _and_ [beach] in my chatbot [work] 
+A|10| Human 1: woah ! this _is_ _very interesting ! i have_ honestly _never_ heard of such kind of [work] . _is_ it _dangerous_ at [all] ? 
+B|11| Human 2: 😅 [haha ,] [the] [work] [is] [interesting] _but_ _not_ [dangerous] ! [it's] [all] about creating [funny] _and_ helpful conversations with users 
+A|12| Human 1: hmmm , yes _i have_ heard _that_ . apparently most _mountain_ climbers fall [not] [on] [the] most [dangerous] routes _, but_ [on] [the] easier routes , when [their] guard [is] down ! sounds [like] [the] same psychological phenomenon . 
+B|13| Human 2: [that's] [very interesting ! i _have] never_ climbed a [mountain] before [, but] _i'm_ always eager [to] learn new [things] 😊 
+A|14| Human 1: [i'm] pretty amateur [! i] [like] [to] climb at indoor _climbing_ gyms [and] [have never] gone outside [on] [dangerous] routes _actually_ . ever tried it yourself ? 
+B|15| Human 2: [i'm] [actually] [not] [very] athletic [, but] [i] [do] [enjoy the] mental [and] emotional challenges [that] [climbing] provides 🤔< 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : oh hey . how's your day been ?
+	Free: Pattern=day, Pattern=your
+	Constrained: 
+Turn ID=2| A | Human 1 : it's good ! just went to the park to enjoy the sun . you ?
+	Free: Pattern=you, Pattern=to enjoy the, Pattern=to the, Pattern=the sun, Pattern=it's
+	Constrained: Pattern=enjoy the, Pattern=to, Pattern=the
+Turn ID=3| B | Human 2 : nice ! 🌞 it's great to enjoy the sunshine . i've been busy helping users like you with their queries
+	Free: Pattern=to enjoy the, Pattern=like you, Pattern=it's, Pattern=their
+	Constrained: Pattern=you, Pattern=enjoy the, Pattern=like, Pattern=the, Pattern=to
+Turn ID=4| A | Human 1 : haha , beach season is coming ! you need to look tan ! what did you do indoors all day ?
+	Free: Pattern=do, Pattern=beach, Pattern=is, Pattern=haha ,, Pattern=to, Pattern=you, Pattern=indoors all day ?
+	Constrained: Pattern=all, Pattern=indoors, Pattern=day
+Turn ID=5| B | Human 2 : haha , indoors all day ? 😅 i've been working on improving my language models and algorithms to better assist
+	Free: Pattern=indoors all day ?, Pattern=and, Pattern=haha ,, Pattern=on, Pattern=to
+	Constrained: Pattern=all, Pattern=indoors, Pattern=day
+Turn ID=6| A | Human 1 : hahahaha , that's pretty funny . ever thought of bringing your work things to the beach ??
+	Free: Pattern=beach, Pattern=to the, Pattern=things, Pattern=work, Pattern=your, Pattern=, that's, Pattern=thought, Pattern=funny
+	Constrained: Pattern=to, Pattern=the, Pattern=that's
+Turn ID=7| B | Human 2 : 😂 haha , that's a funny idea ! i think i'll stick to the indoors workspace for
+	Free: Pattern=to the, Pattern=! i, Pattern=indoors, Pattern=haha ,, Pattern=, that's, Pattern=funny
+	Constrained: Pattern=to, Pattern=the, Pattern=i, Pattern=that's
+Turn ID=8| A | Human 1 : hmm i see . it sounds like you work near the water already , no ? are you some kind of fish researcher ?
+	Free: Pattern=you, Pattern=work, Pattern=i, Pattern=the, Pattern=like you, Pattern=water, Pattern=hmm
+	Constrained: Pattern=you, Pattern=like
+Turn ID=9| B | Human 2 : 🤔 hmm ... that's a funny thought . i work with the sun , water , and beach in my chatbot work
+	Free: Pattern=beach, Pattern=and, Pattern=work, Pattern=that's, Pattern=thought, Pattern=funny, Pattern=the sun, Pattern=i, Pattern=water, Pattern=hmm
+	Constrained: Pattern=the
+Turn ID=10| A | Human 1 : woah ! this is very interesting ! i have honestly never heard of such kind of work . is it dangerous at all ?
+	Free: Pattern=very interesting ! i have, Pattern=dangerous, Pattern=work, Pattern=all, Pattern=is, Pattern=never
+	Constrained: Pattern=! i, Pattern=interesting, Pattern=i have, Pattern=very, Pattern=i
+Turn ID=11| B | Human 2 : 😅 haha , the work is interesting but not dangerous ! it's all about creating funny and helpful conversations with users
+	Free: Pattern=and, Pattern=dangerous, Pattern=work, Pattern=is, Pattern=haha ,, Pattern=interesting, Pattern=funny, Pattern=not, Pattern=the, Pattern=all, Pattern=it's, Pattern=but
+	Constrained: 
+Turn ID=12| A | Human 1 : hmmm , yes i have heard that . apparently most mountain climbers fall not on the most dangerous routes , but on the easier routes , when their guard is down ! sounds like the same psychological phenomenon .
+	Free: Pattern=their, Pattern=, but, Pattern=is, Pattern=like, Pattern=that, Pattern=dangerous, Pattern=mountain, Pattern=on, Pattern=the, Pattern=not, Pattern=i have
+	Constrained: Pattern=but, Pattern=i
+Turn ID=13| B | Human 2 : that's very interesting ! i have never climbed a mountain before , but i'm always eager to learn new things 😊
+	Free: Pattern=, but, Pattern=very interesting ! i have, Pattern=mountain, Pattern=things, Pattern=i'm, Pattern=have never, Pattern=that's, Pattern=to
+	Constrained: Pattern=! i, Pattern=interesting, Pattern=but, Pattern=i have, Pattern=very, Pattern=never, Pattern=i
+Turn ID=14| A | Human 1 : i'm pretty amateur ! i like to climb at indoor climbing gyms and have never gone outside on dangerous routes actually . ever tried it yourself ?
+	Free: Pattern=actually, Pattern=dangerous, Pattern=i'm, Pattern=have never, Pattern=like, Pattern=on, Pattern=to, Pattern=climbing, Pattern=and, Pattern=! i
+	Constrained: Pattern=i, Pattern=never
+Turn ID=15| B | Human 2 : i'm actually not very athletic , but i do enjoy the mental and emotional challenges that climbing provides 🤔<
+	Free: Pattern=, but, Pattern=and, Pattern=enjoy the, Pattern=i'm, Pattern=that, Pattern=do, Pattern=actually, Pattern=very, Pattern=i, Pattern=not, Pattern=climbing
+	Constrained: Pattern=but, Pattern=the

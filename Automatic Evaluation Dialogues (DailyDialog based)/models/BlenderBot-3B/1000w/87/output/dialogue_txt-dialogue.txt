@@ -1,0 +1,63 @@
+A|0| Human 1: _hi_ ! 
+B|1| Human 2: [hi] , _how_ _are you_ ? 
+A|2| Human 1: _i'm_ _doing_ _great_ . _what_ [are you] up _to_ ? 
+B|3| Human 2: [i'm] [great] , [doing] my morning routine _of_ going [to] _the_ gym . _do_ [you] workout regularly ? 
+A|4| Human 1: oh , [i'm] enjoying _a_ sip [of] coffee , _looking over the ocean_ . _what_ _book_ [are you] _reading_ ? 
+B|5| Human 2: [i'm] [reading] _the book_ "the southern [are you] [looking over] ocean" 
+A|6| Human 1: _that _seems_ like_ _a_ _good_ [book] . _does_ _it_ _have _good_ tips_ on [how] [to] sleep _better_ ? 
+B|7| Human 2: [i'm] [reading] _the book_ _, like_ [how] [are you] [doing] [have] fun [looking over the ocean] [that seems] [great] [what] _about_ [you] ? 
+A|8| Human 1: _i_ _read_ _lots of_ papers , _but_ [do] poorly on _books_ 😞 _a_ recent [book] [that] _i like_ is zero [to] one by peter thiel 
+B|9| Human 2: [i like] [books] [that] [are] more fiction [but] [have] [lots of] [good tips] , [how] [does] _the book_ [read] [to] [you] ? 
+A|10| Human 1: _it's about startups_ , [lots of] useful principles _and_ philosophies _for_ innovation [, like] _being a contrarian_ 
+B|11| Human 2: [i like] [that] [book] [and] [it's about startups] _in_ silicon valley [but] [for] some reason [the] title reads [better] [to] me _as_ z 
+A|12| Human 1: [i] might [in] [the] future . [the] philosophy [in] [the book] _also_ help [for] other things [as] _well_ , e . g ., [in] research , [you] might _also_ want [to] be _contrarian_ 
+B|13| Human 2: [the book] [read] [well] [and] [it] [seems like] [you] [have good] taste [in] [books] . that's [for] [reading] [but] [also] [being a contrarian] 
+A|14| Human 1: yup ! 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: Pattern=hi
+	Constrained: 
+Turn ID=1| B | Human 2 : hi , how are you ?
+	Free: Pattern=are you, Pattern=how, Pattern=hi
+	Constrained: Pattern=are, Pattern=you
+Turn ID=2| A | Human 1 : i'm doing great . what are you up to ?
+	Free: Pattern=great, Pattern=what, Pattern=doing, Pattern=i'm, Pattern=are you, Pattern=to
+	Constrained: Pattern=are, Pattern=you
+Turn ID=3| B | Human 2 : i'm great , doing my morning routine of going to the gym . do you workout regularly ?
+	Free: Pattern=of, Pattern=do, Pattern=doing, Pattern=i'm, Pattern=the, Pattern=to, Pattern=you, Pattern=great
+	Constrained: 
+Turn ID=4| A | Human 1 : oh , i'm enjoying a sip of coffee , looking over the ocean . what book are you reading ?
+	Free: Pattern=of, Pattern=reading, Pattern=i'm, Pattern=are you, Pattern=looking over the ocean, Pattern=what, Pattern=a, Pattern=book
+	Constrained: Pattern=are, Pattern=looking over, Pattern=you, Pattern=the
+Turn ID=5| B | Human 2 : i'm reading the book "the southern are you looking over ocean"
+	Free: Pattern=the book, Pattern=looking over, Pattern=reading, Pattern=i'm, Pattern=are you
+	Constrained: Pattern=are, Pattern=book, Pattern=you, Pattern=the
+Turn ID=6| A | Human 1 : that seems like a good book . does it have good tips on how to sleep better ?
+	Free: Pattern=good, Pattern=how, Pattern=it, Pattern=does, Pattern=have good, Pattern=better, Pattern=that seems, Pattern=seems like, Pattern=a, Pattern=book, Pattern=good tips, Pattern=to
+	Constrained: Pattern=have, Pattern=good, Pattern=that
+Turn ID=7| B | Human 2 : i'm reading the book , like how are you doing have fun looking over the ocean that seems great what about you ?
+	Free: Pattern=the book, Pattern=have, Pattern=, like, Pattern=about, Pattern=reading, Pattern=i'm, Pattern=are you, Pattern=that seems, Pattern=you, Pattern=great, Pattern=looking over the ocean, Pattern=what, Pattern=how, Pattern=doing
+	Constrained: Pattern=you, Pattern=book, Pattern=are, Pattern=looking over, Pattern=the, Pattern=that
+Turn ID=8| A | Human 1 : i read lots of papers , but do poorly on books 😞 a recent book that i like is zero to one by peter thiel
+	Free: Pattern=books, Pattern=to, Pattern=read, Pattern=i like, Pattern=do, Pattern=a, Pattern=book, Pattern=lots of, Pattern=i, Pattern=that, Pattern=but
+	Constrained: Pattern=i, Pattern=of
+Turn ID=9| B | Human 2 : i like books that are more fiction but have lots of good tips , how does the book read to you ?
+	Free: Pattern=the book, Pattern=you, Pattern=have, Pattern=how, Pattern=are, Pattern=does, Pattern=lots of, Pattern=books, Pattern=read, Pattern=i like, Pattern=good tips, Pattern=to, Pattern=that, Pattern=but
+	Constrained: Pattern=good, Pattern=of, Pattern=book, Pattern=i, Pattern=the
+Turn ID=10| A | Human 1 : it's about startups , lots of useful principles and philosophies for innovation , like being a contrarian
+	Free: Pattern=being a contrarian, Pattern=for, Pattern=and, Pattern=, like, Pattern=lots of, Pattern=it's about startups
+	Constrained: Pattern=about, Pattern=contrarian, Pattern=a, Pattern=of
+Turn ID=11| B | Human 2 : i like that book and it's about startups in silicon valley but for some reason the title reads better to me as z
+	Free: Pattern=as, Pattern=book, Pattern=for, Pattern=and, Pattern=in, Pattern=better, Pattern=the, Pattern=to, Pattern=it's about startups, Pattern=i like, Pattern=that, Pattern=but
+	Constrained: Pattern=i, Pattern=about
+Turn ID=12| A | Human 1 : i might in the future . the philosophy in the book also help for other things as well , e . g ., in research , you might also want to be contrarian
+	Free: Pattern=you, Pattern=as, Pattern=for, Pattern=in, Pattern=i, Pattern=the, Pattern=to, Pattern=well, Pattern=the book, Pattern=also, Pattern=contrarian
+	Constrained: Pattern=the, Pattern=book
+Turn ID=13| B | Human 2 : the book read well and it seems like you have good taste in books . that's for reading but also being a contrarian
+	Free: Pattern=being a contrarian, Pattern=you, Pattern=seems like, Pattern=for, Pattern=reading, Pattern=in, Pattern=books, Pattern=read, Pattern=but, Pattern=well, Pattern=the book, Pattern=it, Pattern=and, Pattern=have good, Pattern=also
+	Constrained: Pattern=good, Pattern=have, Pattern=contrarian, Pattern=the, Pattern=a, Pattern=book
+Turn ID=14| A | Human 1 : yup !
+	Free: 
+	Constrained: 

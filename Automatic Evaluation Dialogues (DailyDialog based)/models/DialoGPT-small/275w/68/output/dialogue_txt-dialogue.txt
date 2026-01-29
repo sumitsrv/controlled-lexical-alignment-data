@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , whats _up_ ? 
+A|2| Human 1: _i was not able to attend_ _the _lectures_ last week_ . can _you_ _help_ _me_ understand some concepts ? 
+B|3| Human 2: _no_ [i was not able to attend] [lectures last week] either 
+A|4| Human 1: [i was not able to] figure out _the_ [last] few slides _. _i_ think_ its best [to] discuss _this_ in person . do _you have_ _time_ _right now_ ? 
+B|5| Human 2: yes [the lectures] [was not] [this] [week] , and [i think] [this] is _a_ big [help] [right now] . 
+A|6| Human 1: [no] _problem_ ! sure . we still _have_ plenty of _time for_ [the] test . anyways , how's your preparation going ? 
+B|7| Human 2: yea , [you have] [the] [time for] _it_ [now] , [right] . thanks . 
+A|8| Human 1: same feeling here ! but _i think the_ syllabus may [not] that tough _. you_ may be [able to] cover [it] [up] over [the] weekend . 
+B|9| Human 2: [i think the] [problem] . thanks . thanks . 
+A|10| Human 1: true ! [this] will be [a] very hectic november ! [i] do like _the course_ content _though ._ its very much [up] [to] date with latest research findings . 
+B|11| Human 2: yes [this] is [the course] . please [. you] . thanks [. i] . [this] . [me] ! 
+A|12| Human 1: thats pretty cool ! [i] hope [you] do well _next week_ . 
+B|13| Human 2: yes [next week] [though [.] i] . need . [to] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , whats up ?
+	Free: Pattern=up
+	Constrained: 
+Turn ID=2| A | Human 1 : i was not able to attend the lectures last week . can you help me understand some concepts ?
+	Free: Pattern=me, Pattern=lectures last week, Pattern=the lectures, Pattern=help, Pattern=you, Pattern=i was not able to attend
+	Constrained: Pattern=week, Pattern=i was not able to, Pattern=i, Pattern=last, Pattern=the, Pattern=to, Pattern=not, Pattern=was not, Pattern=able to
+Turn ID=3| B | Human 2 : no i was not able to attend lectures last week either
+	Free: Pattern=i was not able to attend, Pattern=lectures last week, Pattern=no
+	Constrained: Pattern=week, Pattern=i was not able to, Pattern=i, Pattern=last, Pattern=to, Pattern=not, Pattern=was not, Pattern=able to
+Turn ID=4| A | Human 1 : i was not able to figure out the last few slides . i think its best to discuss this in person . do you have time right now ?
+	Free: Pattern=time, Pattern=i was not able to, Pattern=. i, Pattern=you have, Pattern=last, Pattern=the, Pattern=to, Pattern=right now, Pattern=this, Pattern=i think
+	Constrained: Pattern=right, Pattern=you, Pattern=have, Pattern=i, Pattern=to, Pattern=now, Pattern=not, Pattern=was not, Pattern=able to
+Turn ID=5| B | Human 2 : yes the lectures was not this week , and i think this is a big help right now .
+	Free: Pattern=week, Pattern=the lectures, Pattern=right now, Pattern=this, Pattern=help, Pattern=i think, Pattern=was not, Pattern=a
+	Constrained: Pattern=right, Pattern=i, Pattern=the, Pattern=now, Pattern=not
+Turn ID=6| A | Human 1 : no problem ! sure . we still have plenty of time for the test . anyways , how's your preparation going ?
+	Free: Pattern=problem, Pattern=have, Pattern=no, Pattern=time for, Pattern=the
+	Constrained: Pattern=time
+Turn ID=7| B | Human 2 : yea , you have the time for it now , right . thanks .
+	Free: Pattern=right, Pattern=time for, Pattern=it, Pattern=you have, Pattern=the, Pattern=now
+	Constrained: Pattern=time, Pattern=you, Pattern=have
+Turn ID=8| A | Human 1 : same feeling here ! but i think the syllabus may not that tough . you may be able to cover it up over the weekend .
+	Free: Pattern=able to, Pattern=it, Pattern=. you, Pattern=i think the, Pattern=the, Pattern=up, Pattern=not
+	Constrained: Pattern=you, Pattern=i, Pattern=the, Pattern=to, Pattern=i think
+Turn ID=9| B | Human 2 : i think the problem . thanks . thanks .
+	Free: Pattern=i think the, Pattern=problem
+	Constrained: Pattern=i, Pattern=i think, Pattern=the
+Turn ID=10| A | Human 1 : true ! this will be a very hectic november ! i do like the course content though . its very much up to date with latest research findings .
+	Free: Pattern=a, Pattern=though ., Pattern=this, Pattern=the course, Pattern=i, Pattern=up, Pattern=to
+	Constrained: Pattern=the
+Turn ID=11| B | Human 2 : yes this is the course . please . you . thanks . i . this . me !
+	Free: Pattern=me, Pattern=. i, Pattern=. you, Pattern=the course, Pattern=this
+	Constrained: Pattern=you, Pattern=the, Pattern=i
+Turn ID=12| A | Human 1 : thats pretty cool ! i hope you do well next week .
+	Free: Pattern=next week, Pattern=you, Pattern=i
+	Constrained: Pattern=week
+Turn ID=13| B | Human 2 : yes next week though . i . need . to
+	Free: Pattern=. i, Pattern=next week, Pattern=though ., Pattern=to
+	Constrained: Pattern=week, Pattern=i

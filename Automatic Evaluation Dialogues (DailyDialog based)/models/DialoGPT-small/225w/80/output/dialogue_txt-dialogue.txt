@@ -1,0 +1,59 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hey , what's up ? 
+A|2| Human 1: how _was_ _the_ _trip_ _last weekend_ ? 
+B|3| Human 2: i've been going here _for the_ [last] year _for a_ [trip] _to_ canada _and_ it's been awesome _for_ me ! 
+A|4| Human 1: nice , what _all_ places _did_ _you_ cover ? 
+B|5| Human 2: went [all] [the] way _to_ calgary canada . just went _to_ [the] place _i_ [was] going _for_ my [last] visit there . it [was] awesome [you] [did] . 
+A|6| Human 1: [i] am actually attending _cooking_ classes _over the_ weekends . 
+B|7| Human 2: awesome _, i_ [did] [the] [cooking] [last weekend] 
+A|8| Human 1: true ! they started with _some_ basic zucchini based dish . _we_ _may_ _try_ [cooking] _some_ italian dish later _this_ _week_ . 
+B|9| Human 2: cool ! can [you] give [some] details about [the] [cooking] ? 
+A|10| Human 1: nice ! [i] hope [to] volunteer [to] _cook [for_ the] _team_ in _our next team_ offsite :) 
+B|11| Human 2: [we] _have_ [some] cookbooks that [we] are reading [for] [our next team] [trip] . 
+A|12| Human 1: sure [, _i] will_ love [to] invite [you] [and] your family [for a] meal _over the holidays_ . [have] [you] guys made any other plans ? 
+B|13| Human 2: [i will] [try] [and] [cook for] [you] [next] [week] but [this] [may] be [over the holidays] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey , what's up ?
+	Free: 
+	Constrained: 
+Turn ID=2| A | Human 1 : how was the trip last weekend ?
+	Free: Pattern=last weekend, Pattern=the, Pattern=trip, Pattern=was
+	Constrained: Pattern=last
+Turn ID=3| B | Human 2 : i've been going here for the last year for a trip to canada and it's been awesome for me !
+	Free: Pattern=for the, Pattern=for, Pattern=and, Pattern=to, Pattern=for a, Pattern=last, Pattern=trip
+	Constrained: Pattern=the, Pattern=for
+Turn ID=4| A | Human 1 : nice , what all places did you cover ?
+	Free: Pattern=you, Pattern=all, Pattern=did
+	Constrained: 
+Turn ID=5| B | Human 2 : went all the way to calgary canada . just went to the place i was going for my last visit there . it was awesome you did .
+	Free: Pattern=you, Pattern=did, Pattern=for, Pattern=i, Pattern=last, Pattern=to, Pattern=was, Pattern=the, Pattern=all
+	Constrained: 
+Turn ID=6| A | Human 1 : i am actually attending cooking classes over the weekends .
+	Free: Pattern=over the, Pattern=cooking, Pattern=i
+	Constrained: Pattern=the
+Turn ID=7| B | Human 2 : awesome , i did the cooking last weekend
+	Free: Pattern=did, Pattern=cooking, Pattern=last weekend, Pattern=the, Pattern=, i
+	Constrained: Pattern=last, Pattern=i
+Turn ID=8| A | Human 1 : true ! they started with some basic zucchini based dish . we may try cooking some italian dish later this week .
+	Free: Pattern=week, Pattern=try, Pattern=cooking, Pattern=some, Pattern=we, Pattern=may, Pattern=this
+	Constrained: 
+Turn ID=9| B | Human 2 : cool ! can you give some details about the cooking ?
+	Free: Pattern=some, Pattern=you, Pattern=the, Pattern=cooking
+	Constrained: 
+Turn ID=10| A | Human 1 : nice ! i hope to volunteer to cook for the team in our next team offsite :)
+	Free: Pattern=for the, Pattern=i, Pattern=to, Pattern=team, Pattern=cook for, Pattern=our next team
+	Constrained: Pattern=for, Pattern=the, Pattern=team, Pattern=next
+Turn ID=11| B | Human 2 : we have some cookbooks that we are reading for our next team trip .
+	Free: Pattern=have, Pattern=some, Pattern=we, Pattern=trip, Pattern=our next team, Pattern=for
+	Constrained: Pattern=next, Pattern=team
+Turn ID=12| A | Human 1 : sure , i will love to invite you and your family for a meal over the holidays . have you guys made any other plans ?
+	Free: Pattern=you, Pattern=have, Pattern=and, Pattern=over the holidays, Pattern=, i, Pattern=to, Pattern=for a, Pattern=i will
+	Constrained: Pattern=for, Pattern=i, Pattern=over the, Pattern=the
+Turn ID=13| B | Human 2 : i will try and cook for you next week but this may be over the holidays
+	Free: Pattern=next, Pattern=you, Pattern=week, Pattern=try, Pattern=cook for, Pattern=and, Pattern=over the holidays, Pattern=may, Pattern=i will, Pattern=this
+	Constrained: Pattern=for, Pattern=i, Pattern=over the, Pattern=the

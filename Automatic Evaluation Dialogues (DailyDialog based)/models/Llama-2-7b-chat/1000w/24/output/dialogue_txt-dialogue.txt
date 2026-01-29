@@ -1,0 +1,63 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: _hey_ there 
+A|2| Human 1: [hey] anything new ? 
+B|3| Human 2: not much , just busy with work 
+A|4| Human 1: _any_ plans ? 
+B|5| Human 2: well , _i'm_ _planning_ to take _a_ trip soon 
+A|6| Human 1: _that's_ awesome ! _i_ never been ! 
+B|7| Human 2: anywhere in particular that _you_ wanna go ? 
+A|8| Human 1: are [you] _a food person ,_ [a] sightseeing _person_ _or_ neither ? 
+B|9| Human 2: [that's] [a] great question ! _i'm_ actually more of [a food person ,] so if [you] have [any] recommendations for restaurants [or] local [food] 
+A|10| Human 1: [i'm] [a food person] _i_ think _. any specific_ foods _you're_ _planning on trying_ ? 
+B|11| Human 2: [i'm] [planning on trying] some local specialties , like sushi in japan [or] pasta in italy [. any specific] recommendations [you] have ? 
+A|12| Human 1: yeah my favorite _is_ _taco fish_ 
+B|13| Human 2: oh , [taco fish] [is] [a] great choice ! if [you're] in japan , [i] recommend [trying] sushi at the tsukiji [fish] 
+A|14| Human 1: no . only eat them 😀 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hey there
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=2| A | Human 1 : hey anything new ?
+	Free: Pattern=hey
+	Constrained: 
+Turn ID=3| B | Human 2 : not much , just busy with work
+	Free: 
+	Constrained: 
+Turn ID=4| A | Human 1 : any plans ?
+	Free: Pattern=any
+	Constrained: 
+Turn ID=5| B | Human 2 : well , i'm planning to take a trip soon
+	Free: Pattern=i'm, Pattern=planning, Pattern=a
+	Constrained: 
+Turn ID=6| A | Human 1 : that's awesome ! i never been !
+	Free: Pattern=i, Pattern=that's
+	Constrained: 
+Turn ID=7| B | Human 2 : anywhere in particular that you wanna go ?
+	Free: Pattern=you
+	Constrained: 
+Turn ID=8| A | Human 1 : are you a food person , a sightseeing person or neither ?
+	Free: Pattern=you, Pattern=a, Pattern=person, Pattern=a food person ,, Pattern=or
+	Constrained: Pattern=a, Pattern=food, Pattern=person, Pattern=a food person
+Turn ID=9| B | Human 2 : that's a great question ! i'm actually more of a food person , so if you have any recommendations for restaurants or local food
+	Free: Pattern=you, Pattern=a, Pattern=any, Pattern=i'm, Pattern=or, Pattern=that's, Pattern=a food person ,, Pattern=food
+	Constrained: Pattern=a, Pattern=food, Pattern=person, Pattern=a food person
+Turn ID=10| A | Human 1 : i'm a food person i think . any specific foods you're planning on trying ?
+	Free: Pattern=i'm, Pattern=a food person, Pattern=you're, Pattern=planning on trying, Pattern=. any specific, Pattern=i
+	Constrained: Pattern=planning, Pattern=a, Pattern=any, Pattern=person, Pattern=food, Pattern=trying
+Turn ID=11| B | Human 2 : i'm planning on trying some local specialties , like sushi in japan or pasta in italy . any specific recommendations you have ?
+	Free: Pattern=planning on trying, Pattern=you, Pattern=i'm, Pattern=. any specific, Pattern=or
+	Constrained: Pattern=any, Pattern=trying, Pattern=planning
+Turn ID=12| A | Human 1 : yeah my favorite is taco fish
+	Free: Pattern=taco fish, Pattern=is
+	Constrained: Pattern=fish
+Turn ID=13| B | Human 2 : oh , taco fish is a great choice ! if you're in japan , i recommend trying sushi at the tsukiji fish
+	Free: Pattern=you're, Pattern=a, Pattern=taco fish, Pattern=fish, Pattern=trying, Pattern=is, Pattern=i
+	Constrained: Pattern=fish
+Turn ID=14| A | Human 1 : no . only eat them 😀
+	Free: 
+	Constrained: 

@@ -1,0 +1,67 @@
+A|0| Human 1: hi ! 
+B|1| Human 2: hello _there_ ! 
+A|2| Human 1: how's _your day_ _going_ ? 
+B|3| Human 2: _good_ [day] so far , _going to_ go _to_ _a_ restaurant after work _. how_ _is_ [your day] ? 
+A|4| Human 1: _i'm _good_ _i'm_ _good_ _._ what's_ _getting_ _you_ _down_ ? 
+B|5| Human 2: [i'm good] ! [what's] [your] meal _going to_ be ? _i_ _just_ ate some fish _and_ chips _. i_ feel like you'd be [getting] [down] too if 
+A|6| Human 1: [i'm] thinking _of_ _going to visit_ _my family_ [. how] _about_ _you_ ? 
+B|7| Human 2: [i'm good] , [about] [to] go [to] work myself [. what's] [your] [family] like ? 
+A|8| Human 1: _they're_ in new york [. how] [about] yours ? 
+B|9| Human 2: [they're] [good i'm] [going to visit] [family] too but _i_ have [to] work 
+A|10| Human 1: ahh what _city_ ? _i've visited india before_ . 
+B|11| Human 2: [i've visited india before] too ! [they're] [good .] _a_ lot [of] culture _and_ history _for_ [you] _to see_ 
+A|12| Human 1: hyderabad ! [and] bangalore ! great food in both cities ! [is] it still _hot_ _this time_ [of] _year_ ? 
+B|13| Human 2: [i'm] visiting [my family] [and] [my] [city] [this time] _actually_ . [i've] _been_ [before] [and] [they're] [hot] as always ! 
+A|14| Human 1: _yes_ [. _i] was actually_ [just] [there] [a] few weeks ago [for] thanksgiving [and] _got_ [to see] _the first_ snow [of] _the_ season ! ever [been] [to] new york ? 
+B|15| Human 2: [i was actually] [the first] [time] [this] [year] [and] [for] [about] [a] week [the] temperature [got] up [to] 100 degrees [there] , [just] [hot] [and] miserable . [yes] 
+
+
+TURN DETAILS:
+Turn ID=0| A | Human 1 : hi !
+	Free: 
+	Constrained: 
+Turn ID=1| B | Human 2 : hello there !
+	Free: Pattern=there
+	Constrained: 
+Turn ID=2| A | Human 1 : how's your day going ?
+	Free: Pattern=your day, Pattern=going
+	Constrained: Pattern=day, Pattern=your
+Turn ID=3| B | Human 2 : good day so far , going to go to a restaurant after work . how is your day ?
+	Free: Pattern=your day, Pattern=a, Pattern=. how, Pattern=to, Pattern=going to, Pattern=good, Pattern=day, Pattern=is
+	Constrained: Pattern=your, Pattern=going, Pattern=to, Pattern=day
+Turn ID=4| A | Human 1 : i'm good i'm good . what's getting you down ?
+	Free: Pattern=good i'm, Pattern=you, Pattern=down, Pattern=. what's, Pattern=good ., Pattern=i'm good, Pattern=getting
+	Constrained: Pattern=i'm, Pattern=good, Pattern=what's
+Turn ID=5| B | Human 2 : i'm good ! what's your meal going to be ? i just ate some fish and chips . i feel like you'd be getting down too if
+	Free: Pattern=going to, Pattern=just, Pattern=down, Pattern=and, Pattern=. i, Pattern=getting, Pattern=your, Pattern=i, Pattern=what's, Pattern=i'm good
+	Constrained: Pattern=good, Pattern=going, Pattern=i'm, Pattern=i, Pattern=to
+Turn ID=6| A | Human 1 : i'm thinking of going to visit my family . how about you ?
+	Free: Pattern=of, Pattern=you, Pattern=. how, Pattern=about, Pattern=going to visit, Pattern=i'm, Pattern=my family
+	Constrained: Pattern=going to, Pattern=going, Pattern=family, Pattern=to, Pattern=my
+Turn ID=7| B | Human 2 : i'm good , about to go to work myself . what's your family like ?
+	Free: Pattern=. what's, Pattern=your, Pattern=i'm good, Pattern=to, Pattern=about, Pattern=family
+	Constrained: Pattern=i'm, Pattern=good, Pattern=what's
+Turn ID=8| A | Human 1 : they're in new york . how about yours ?
+	Free: Pattern=. how, Pattern=about, Pattern=they're
+	Constrained: 
+Turn ID=9| B | Human 2 : they're good i'm going to visit family too but i have to work
+	Free: Pattern=good i'm, Pattern=i, Pattern=to, Pattern=going to visit, Pattern=family, Pattern=they're
+	Constrained: Pattern=going, Pattern=i'm, Pattern=to, Pattern=going to, Pattern=good
+Turn ID=10| A | Human 1 : ahh what city ? i've visited india before .
+	Free: Pattern=i've visited india before, Pattern=city
+	Constrained: Pattern=before, Pattern=i've
+Turn ID=11| B | Human 2 : i've visited india before too ! they're good . a lot of culture and history for you to see
+	Free: Pattern=of, Pattern=to see, Pattern=you, Pattern=a, Pattern=for, Pattern=and, Pattern=they're, Pattern=good ., Pattern=i've visited india before
+	Constrained: Pattern=good, Pattern=before, Pattern=i've, Pattern=to
+Turn ID=12| A | Human 1 : hyderabad ! and bangalore ! great food in both cities ! is it still hot this time of year ?
+	Free: Pattern=this time, Pattern=of, Pattern=and, Pattern=hot, Pattern=is, Pattern=year
+	Constrained: Pattern=time, Pattern=this
+Turn ID=13| B | Human 2 : i'm visiting my family and my city this time actually . i've been before and they're hot as always !
+	Free: Pattern=city, Pattern=this time, Pattern=actually, Pattern=and, Pattern=i've, Pattern=before, Pattern=been, Pattern=my, Pattern=hot, Pattern=they're, Pattern=i'm, Pattern=my family
+	Constrained: Pattern=time, Pattern=family, Pattern=my, Pattern=this
+Turn ID=14| A | Human 1 : yes . i was actually just there a few weeks ago for thanksgiving and got to see the first snow of the season ! ever been to new york ?
+	Free: Pattern=of, Pattern=to see, Pattern=yes, Pattern=there, Pattern=a, Pattern=for, Pattern=and, Pattern=. i, Pattern=the, Pattern=got, Pattern=been, Pattern=just, Pattern=the first, Pattern=i was actually, Pattern=to
+	Constrained: Pattern=to, Pattern=actually, Pattern=the, Pattern=i
+Turn ID=15| B | Human 2 : i was actually the first time this year and for about a week the temperature got up to 100 degrees there , just hot and miserable . yes
+	Free: Pattern=time, Pattern=yes, Pattern=there, Pattern=a, Pattern=for, Pattern=and, Pattern=year, Pattern=the, Pattern=got, Pattern=this, Pattern=just, Pattern=the first, Pattern=about, Pattern=hot, Pattern=i was actually, Pattern=to
+	Constrained: Pattern=actually, Pattern=the, Pattern=i
