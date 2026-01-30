@@ -12,6 +12,7 @@ Supplementary data for the research paper.
 ├── Human Evaluation Dialogues/
 │   ├── {Model}/{Topic}/                 # Dialogue pairs per model and topic
 │   └── README.md
+├── figures/                             # High-resolution figures from the paper
 ├── inter_model_evaluation_results.tsv   # Inter-model comparison evaluations
 ├── intra_model_evaluation_results.tsv   # Intra-model weight comparison evaluations
 └── bradley_terry_rankings.json          # Bradley-Terry model rankings
@@ -39,6 +40,19 @@ Supplementary data for the research paper.
 | `inter_model_evaluation_results.tsv` | LLM-as-judge rankings comparing dialogues across different generator models |
 | `intra_model_evaluation_results.tsv` | LLM-as-judge rankings comparing weight configurations within the same model |
 | `bradley_terry_rankings.json` | Aggregated Bradley-Terry rankings from pairwise comparisons of intra model dialogues |
+
+## Figures
+
+High-resolution versions of figures from the paper (in `figures/`):
+
+| File | Description |
+|------|-------------|
+| `alignment_scores_low_weights.png` | Alignment scores for weights ≤1000 |
+| `alignment_scores_high_weights.png` | Alignment scores for weights >1000 |
+| `perplexity_low_weights.png` | Perplexity for weights ≤1000 |
+| `perplexity_high_weights.png` | Perplexity for weights >1000 |
+| `inter_model_win_rates.png` | Inter-model comparison win rates |
+| `intra_model_bradley_terry_rankings.png` | Intra-model Bradley-Terry rankings |
 
 ### File Formats
 
