@@ -49,3 +49,7 @@ Key columns: `EV` (Expression Variety), `ER` (Expression Repetition), `Voc. Over
 ## Generation Parameters
 - **History length**: 6 turns
 - **Top-k sampling**: k=20
+
+## Automatic Evaluation Setup
+
+See the [main README](../README.md#automatic-evaluation-llm-as-judge) for the full evaluation prompt, evaluator models, and inter-rater agreement statistics.

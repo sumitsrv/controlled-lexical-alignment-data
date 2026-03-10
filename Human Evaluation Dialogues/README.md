@@ -4,7 +4,26 @@
 
 ## Study Design
 
-Paired comparison: participants evaluated baseline vs. alignment-weighted dialogues.
+Pairwise comparison: 50 participants (recruited via Prolific) evaluated baseline vs. alignment-weighted dialogues, ranking each pair from best (1) to worst (2).
+
+### Participant Instructions
+
+> Rank the following dialogues from the best (1) to the worst (2) based on the relevance and coherence of the responses by S2.
+>
+> **Relevance:** The appropriateness of responses to immediate conversational context, i.e., the previous utterance of Speaker 1 (S1).
+>
+> **Coherence:** The maintenance of thematic consistency and logical progression with respect to the full dialogue.
+
+### Inter-Rater Agreement
+
+| Statistic | Value |
+|-----------|-------|
+| Participants | 50 |
+| Dialogue pairs | 6 |
+| Average percentage agreement | **58.3%** |
+| Average normalized entropy | 0.849 |
+
+> **Note:** Traditional IRR metrics such as Fleiss' κ are not well-suited for this single-item pairwise design. Percentage agreement and normalized entropy are reported as more appropriate measures.
 
 ## Dialogue Pairs
 
