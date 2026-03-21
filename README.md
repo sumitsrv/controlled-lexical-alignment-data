@@ -161,16 +161,16 @@ Pairwise comparison design: 50 participants (recruited via Prolific) evaluated 6
 
 ## Generation Performance Benchmark
 
-Per-turn generation latency measured on an NVIDIA H100 PCIe GPU with weighted decoding (w=5), top-k=50, 10 candidate samples, and max 30 tokens per turn. 10 dialogues (80 generated turns per model) after 1 warm-up dialogue.
+Per-turn generation latency measured on an NVIDIA H100 PCIe GPU with weighted decoding (w=5), top-k=20, 10 candidate samples, and max 30 tokens per turn. 10 dialogues (80 generated turns per model) after 1 warm-up dialogue.
 
 | Model | Median (s) | Mean (s) | Std (s) | Min (s) | Max (s) | p95 (s) |
 |-------|-----------|---------|--------|--------|--------|--------|
-| BlenderBot-3B | 0.7881 | 0.7913 | 0.0997 | 0.5843 | 1.0089 | 0.9604 |
-| Llama-2-7b-chat | 1.1177 | 1.1179 | 0.1711 | 0.7546 | 1.4297 | 1.4091 |
-| Phi-3.5-mini-instruct | 0.8285 | 0.8669 | 0.1455 | 0.6469 | 1.2434 | 1.1792 |
-| DialoGPT-small | 0.4100 | 0.4092 | 0.0558 | 0.2852 | 0.5368 | 0.4956 |
+| BlenderBot-3B | 0.8712 | 0.8923 | 0.1169 | 0.6725 | 1.1659 | 1.1208 |
+| Llama-2-7b-chat | 1.0795 | 1.0899 | 0.1549 | 0.7549 | 1.5620 | 1.3642 |
+| Phi-3.5-mini-instruct | 0.9144 | 0.9294 | 0.1349 | 0.6803 | 1.2783 | 1.2210 |
+| DialoGPT-small | 0.4290 | 0.4346 | 0.0621 | 0.3102 | 0.5999 | 0.5437 |
 
-**Model Load Times:** DialoGPT-small 1.1s, Phi-3.5-mini-instruct 2.2s, Llama-2-7b-chat 2.8s, BlenderBot-3B 4.4s
+**Model Load Times:** DialoGPT-small 5.1s, Phi-3.5-mini-instruct 14.0s, Llama-2-7b-chat 23.7s, BlenderBot-3B 4.8s
 
 **benchmark_results.json**
 
