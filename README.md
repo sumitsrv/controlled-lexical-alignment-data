@@ -13,6 +13,7 @@ Supplementary data for the research paper.
 │   ├── {Model}/{Topic}/                 # Dialogue pairs per model and topic
 │   └── README.md
 ├── figures/                             # High-resolution figures from the paper
+├── benchmark_results.json               # Generation latency benchmark
 ├── inter_model_evaluation_results.tsv   # Inter-model comparison evaluations
 ├── intra_model_evaluation_results.tsv   # Intra-model weight comparison evaluations
 └── bradley_terry_rankings.json          # Bradley-Terry model rankings
@@ -40,6 +41,7 @@ Supplementary data for the research paper.
 | `inter_model_evaluation_results.tsv` | LLM-as-judge rankings comparing dialogues across different generator models |
 | `intra_model_evaluation_results.tsv` | LLM-as-judge rankings comparing weight configurations within the same model |
 | `bradley_terry_rankings.json` | Aggregated Bradley-Terry rankings from pairwise comparisons of intra model dialogues |
+| `benchmark_results.json` | Per-turn generation latency and wall time benchmarks for all generator models |
 
 ## Automatic Evaluation (LLM-as-Judge)
 
@@ -156,6 +158,29 @@ Pairwise comparison design: 50 participants (recruited via Prolific) evaluated 6
 | Average normalized entropy | 0.849 |
 
 > **Note:** Traditional IRR metrics such as Fleiss' κ are not well-suited for this single-item pairwise design. Percentage agreement and normalized entropy are reported as more appropriate measures.
+
+## Generation Performance Benchmark
+
+Per-turn generation latency measured on an NVIDIA H100 PCIe GPU with weighted decoding (w=5), top-k=50, 10 candidate samples, and max 30 tokens per turn. 10 dialogues (80 generated turns per model) after 1 warm-up dialogue.
+
+| Model | Median (s) | Mean (s) | Std (s) | Min (s) | Max (s) | p95 (s) |
+|-------|-----------|---------|--------|--------|--------|--------|
+| BlenderBot-3B | 0.7881 | 0.7913 | 0.0997 | 0.5843 | 1.0089 | 0.9604 |
+| Llama-2-7b-chat | 1.1177 | 1.1179 | 0.1711 | 0.7546 | 1.4297 | 1.4091 |
+| Phi-3.5-mini-instruct | 0.8285 | 0.8669 | 0.1455 | 0.6469 | 1.2434 | 1.1792 |
+| DialoGPT-small | 0.4100 | 0.4092 | 0.0558 | 0.2852 | 0.5368 | 0.4956 |
+
+**Model Load Times:** DialoGPT-small 1.1s, Phi-3.5-mini-instruct 2.2s, Llama-2-7b-chat 2.8s, BlenderBot-3B 4.4s
+
+**benchmark_results.json**
+
+Full per-turn latencies and per-dialogue wall times for all models. Key fields:
+```
+timestamp, device, gpu_name, weight, num_samples, max_gen_length, top_k,
+repetition_penalty, seed, num_dialogues, warmup_dialogues,
+models[].{model_name, load_time_s, total_generated_turns,
+          per_turn_latency_stats, per_dialogue_wall_times, all_turn_latencies}
+```
 
 ## Figures
 
