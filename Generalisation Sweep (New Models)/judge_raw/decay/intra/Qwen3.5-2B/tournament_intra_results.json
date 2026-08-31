@@ -1,0 +1,177 @@
+{
+  "method": "tournament",
+  "config_labels": [
+    "geometric_0.5",
+    "geometric_0.97"
+  ],
+  "n_comparisons": 10,
+  "group_size": 4,
+  "window_size": 3,
+  "n_windows": 1,
+  "judges_used": [
+    "deepseek-v3.1",
+    "minimax-m3",
+    "ernie-4.5"
+  ],
+  "failed_judges": {},
+  "inter_judge_agreement": {
+    "n_judges": 3,
+    "n_comparisons": 10,
+    "pairwise_cohens_kappa": {
+      "deepseek-v3.1_vs_minimax-m3": 0.5,
+      "deepseek-v3.1_vs_ernie-4.5": 0.75,
+      "minimax-m3_vs_ernie-4.5": 0.7
+    },
+    "pairwise_kendall_tau": {
+      "deepseek-v3.1_vs_minimax-m3": 0.3333,
+      "deepseek-v3.1_vs_ernie-4.5": 0.6667,
+      "minimax-m3_vs_ernie-4.5": 0.6
+    },
+    "avg_cohens_kappa": 0.65,
+    "avg_kendall_tau": 0.5333,
+    "fleiss_kappa": 0.5
+  },
+  "win_rates": {
+    "geometric_0.5": 0.1538,
+    "geometric_0.97": 0.8462
+  },
+  "win_rate_matrix": {
+    "geometric_0.5": {
+      "geometric_0.97": 15.4
+    },
+    "geometric_0.97": {
+      "geometric_0.5": 84.6
+    }
+  },
+  "overall_win_rate": {
+    "geometric_0.5": 15.4,
+    "geometric_0.97": 84.6
+  },
+  "bradley_terry": {
+    "scores": {
+      "geometric_0.5": 0.160377,
+      "geometric_0.97": 0.839623
+    },
+    "rank": {
+      "geometric_0.97": 1,
+      "geometric_0.5": 2
+    }
+  },
+  "total_valid_judgments": 26,
+  "per_dialogue_rankings": {
+    "deepseek-v3.1": {
+      "0": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "1": [],
+      "2": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "3": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "4": [],
+      "5": [],
+      "6": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "7": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "8": [],
+      "9": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ]
+    },
+    "minimax-m3": {
+      "0": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "1": [
+        "geometric_0.5",
+        "geometric_0.97"
+      ],
+      "2": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "3": [
+        "geometric_0.5",
+        "geometric_0.97"
+      ],
+      "4": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "5": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "6": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "7": [
+        "geometric_0.5",
+        "geometric_0.97"
+      ],
+      "8": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "9": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ]
+    },
+    "ernie-4.5": {
+      "0": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "1": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "2": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "3": [
+        "geometric_0.5",
+        "geometric_0.97"
+      ],
+      "4": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "5": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "6": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "7": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "8": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "9": [
+        "geometric_0.97",
+        "geometric_0.5"
+      ]
+    }
+  }
+}

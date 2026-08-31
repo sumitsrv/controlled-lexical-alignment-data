@@ -1,0 +1,316 @@
+{
+  "method": "tournament",
+  "config_labels": [
+    "top_k=5",
+    "top_k=10",
+    "top_k=20",
+    "top_k=50",
+    "top_k=100"
+  ],
+  "n_comparisons": 20,
+  "group_size": 4,
+  "window_size": 3,
+  "n_windows": 2,
+  "judges_used": [
+    "deepseek-v3.1",
+    "minimax-m3",
+    "ernie-4.5"
+  ],
+  "failed_judges": {},
+  "inter_judge_agreement": {
+    "n_judges": 3,
+    "n_comparisons": 20,
+    "pairwise_cohens_kappa": {
+      "deepseek-v3.1_vs_minimax-m3": 0.3158,
+      "deepseek-v3.1_vs_ernie-4.5": 0.5,
+      "minimax-m3_vs_ernie-4.5": 0.6316
+    },
+    "pairwise_kendall_tau": {
+      "deepseek-v3.1_vs_minimax-m3": 0.0877,
+      "deepseek-v3.1_vs_ernie-4.5": 0.3333,
+      "minimax-m3_vs_ernie-4.5": 0.5088
+    },
+    "avg_cohens_kappa": 0.4825,
+    "avg_kendall_tau": 0.3099,
+    "fleiss_kappa": 0.0633
+  },
+  "win_rates": {
+    "top_k=5": 0.2,
+    "top_k=10": 0.0667,
+    "top_k=20": 0.1,
+    "top_k=50": 0.0667,
+    "top_k=100": 0.5667
+  },
+  "win_rate_matrix": {
+    "top_k=5": {
+      "top_k=10": 46.4,
+      "top_k=20": 44.8,
+      "top_k=50": 34.5,
+      "top_k=100": 41.4
+    },
+    "top_k=10": {
+      "top_k=5": 53.6,
+      "top_k=20": 31.0,
+      "top_k=50": 20.7,
+      "top_k=100": 13.8
+    },
+    "top_k=20": {
+      "top_k=5": 55.2,
+      "top_k=10": 69.0,
+      "top_k=50": 40.0,
+      "top_k=100": 16.7
+    },
+    "top_k=50": {
+      "top_k=5": 65.5,
+      "top_k=10": 79.3,
+      "top_k=20": 60.0,
+      "top_k=100": 26.7
+    },
+    "top_k=100": {
+      "top_k=5": 58.6,
+      "top_k=10": 86.2,
+      "top_k=20": 83.3,
+      "top_k=50": 73.3
+    }
+  },
+  "overall_win_rate": {
+    "top_k=5": 41.7,
+    "top_k=10": 29.6,
+    "top_k=20": 44.9,
+    "top_k=50": 57.6,
+    "top_k=100": 75.4
+  },
+  "bradley_terry": {
+    "scores": {
+      "top_k=5": 0.128949,
+      "top_k=10": 0.083546,
+      "top_k=20": 0.143925,
+      "top_k=50": 0.221134,
+      "top_k=100": 0.422447
+    },
+    "rank": {
+      "top_k=100": 1,
+      "top_k=50": 2,
+      "top_k=20": 3,
+      "top_k=5": 4,
+      "top_k=10": 5
+    }
+  },
+  "total_valid_judgments": 30,
+  "per_dialogue_rankings": {
+    "deepseek-v3.1": {
+      "0": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "1": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "2": [
+        "top_k=10",
+        "top_k=5",
+        "top_k=100",
+        "top_k=20",
+        "top_k=50"
+      ],
+      "3": [
+        "top_k=5",
+        "top_k=100",
+        "top_k=20",
+        "top_k=50",
+        "top_k=10"
+      ],
+      "4": [
+        "top_k=5",
+        "top_k=50",
+        "top_k=100",
+        "top_k=10",
+        "top_k=20"
+      ],
+      "5": [
+        "top_k=20",
+        "top_k=100",
+        "top_k=50",
+        "top_k=10"
+      ],
+      "6": [
+        "top_k=10",
+        "top_k=50",
+        "top_k=20",
+        "top_k=5",
+        "top_k=100"
+      ],
+      "7": [
+        "top_k=20",
+        "top_k=5",
+        "top_k=50",
+        "top_k=100"
+      ],
+      "8": [
+        "top_k=50",
+        "top_k=5",
+        "top_k=100",
+        "top_k=10",
+        "top_k=20"
+      ],
+      "9": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=10",
+        "top_k=5",
+        "top_k=20"
+      ]
+    },
+    "minimax-m3": {
+      "0": [
+        "top_k=100",
+        "top_k=20",
+        "top_k=10",
+        "top_k=50",
+        "top_k=5"
+      ],
+      "1": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=5",
+        "top_k=10"
+      ],
+      "2": [
+        "top_k=100",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5",
+        "top_k=50"
+      ],
+      "3": [
+        "top_k=20",
+        "top_k=5",
+        "top_k=50",
+        "top_k=100",
+        "top_k=10"
+      ],
+      "4": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=5",
+        "top_k=20",
+        "top_k=10"
+      ],
+      "5": [
+        "top_k=100",
+        "top_k=20",
+        "top_k=50",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "6": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=10",
+        "top_k=20",
+        "top_k=5"
+      ],
+      "7": [
+        "top_k=100",
+        "top_k=20",
+        "top_k=50",
+        "top_k=5",
+        "top_k=10"
+      ],
+      "8": [
+        "top_k=50",
+        "top_k=5",
+        "top_k=10",
+        "top_k=100",
+        "top_k=20"
+      ],
+      "9": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=5",
+        "top_k=20",
+        "top_k=10"
+      ]
+    },
+    "ernie-4.5": {
+      "0": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "1": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "2": [
+        "top_k=5",
+        "top_k=100",
+        "top_k=20",
+        "top_k=10",
+        "top_k=50"
+      ],
+      "3": [
+        "top_k=5",
+        "top_k=20",
+        "top_k=50",
+        "top_k=100",
+        "top_k=10"
+      ],
+      "4": [
+        "top_k=5",
+        "top_k=10",
+        "top_k=100",
+        "top_k=50",
+        "top_k=20"
+      ],
+      "5": [
+        "top_k=100",
+        "top_k=20",
+        "top_k=50",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "6": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5"
+      ],
+      "7": [
+        "top_k=5",
+        "top_k=50",
+        "top_k=100",
+        "top_k=20",
+        "top_k=10"
+      ],
+      "8": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=10",
+        "top_k=5",
+        "top_k=20"
+      ],
+      "9": [
+        "top_k=100",
+        "top_k=50",
+        "top_k=20",
+        "top_k=10",
+        "top_k=5"
+      ]
+    }
+  }
+}
