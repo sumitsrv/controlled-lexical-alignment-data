@@ -1,0 +1,230 @@
+{
+  "method": "tournament",
+  "config_labels": [
+    "geometric_0.5",
+    "geometric_0.97",
+    "powerlaw_beta"
+  ],
+  "n_comparisons": 10,
+  "group_size": 4,
+  "window_size": 3,
+  "n_windows": 1,
+  "judges_used": [
+    "deepseek-v3.1",
+    "minimax-m3",
+    "ernie-4.5"
+  ],
+  "failed_judges": {},
+  "inter_judge_agreement": {
+    "n_judges": 3,
+    "n_comparisons": 10,
+    "pairwise_cohens_kappa": {
+      "deepseek-v3.1_vs_minimax-m3": 0.5,
+      "deepseek-v3.1_vs_ernie-4.5": 0.15,
+      "minimax-m3_vs_ernie-4.5": 0.15
+    },
+    "pairwise_kendall_tau": {
+      "deepseek-v3.1_vs_minimax-m3": 0.3333,
+      "deepseek-v3.1_vs_ernie-4.5": -0.1333,
+      "minimax-m3_vs_ernie-4.5": -0.1333
+    },
+    "avg_cohens_kappa": 0.2667,
+    "avg_kendall_tau": 0.0222,
+    "fleiss_kappa": -0.1261
+  },
+  "win_rates": {
+    "geometric_0.5": 0.0333,
+    "geometric_0.97": 0.5,
+    "powerlaw_beta": 0.4667
+  },
+  "win_rate_matrix": {
+    "geometric_0.5": {
+      "geometric_0.97": 13.3,
+      "powerlaw_beta": 36.7
+    },
+    "geometric_0.97": {
+      "geometric_0.5": 86.7,
+      "powerlaw_beta": 50.0
+    },
+    "powerlaw_beta": {
+      "geometric_0.5": 63.3,
+      "geometric_0.97": 50.0
+    }
+  },
+  "overall_win_rate": {
+    "geometric_0.5": 25.0,
+    "geometric_0.97": 68.3,
+    "powerlaw_beta": 56.7
+  },
+  "bradley_terry": {
+    "scores": {
+      "geometric_0.5": 0.142957,
+      "geometric_0.97": 0.499734,
+      "powerlaw_beta": 0.357309
+    },
+    "rank": {
+      "geometric_0.97": 1,
+      "powerlaw_beta": 2,
+      "geometric_0.5": 3
+    }
+  },
+  "total_valid_judgments": 30,
+  "per_dialogue_rankings": {
+    "deepseek-v3.1": {
+      "0": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "1": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "2": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "3": [
+        "powerlaw_beta",
+        "geometric_0.5",
+        "geometric_0.97"
+      ],
+      "4": [
+        "geometric_0.97",
+        "powerlaw_beta",
+        "geometric_0.5"
+      ],
+      "5": [
+        "geometric_0.97",
+        "powerlaw_beta",
+        "geometric_0.5"
+      ],
+      "6": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "7": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "8": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "9": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ]
+    },
+    "minimax-m3": {
+      "0": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "1": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "2": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "3": [
+        "powerlaw_beta",
+        "geometric_0.5",
+        "geometric_0.97"
+      ],
+      "4": [
+        "geometric_0.97",
+        "powerlaw_beta",
+        "geometric_0.5"
+      ],
+      "5": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "6": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "7": [
+        "geometric_0.97",
+        "powerlaw_beta",
+        "geometric_0.5"
+      ],
+      "8": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "9": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ]
+    },
+    "ernie-4.5": {
+      "0": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "1": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "2": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "3": [
+        "geometric_0.5",
+        "powerlaw_beta",
+        "geometric_0.97"
+      ],
+      "4": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "5": [
+        "geometric_0.97",
+        "geometric_0.5",
+        "powerlaw_beta"
+      ],
+      "6": [
+        "geometric_0.97",
+        "powerlaw_beta",
+        "geometric_0.5"
+      ],
+      "7": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "8": [
+        "powerlaw_beta",
+        "geometric_0.97",
+        "geometric_0.5"
+      ],
+      "9": [
+        "powerlaw_beta",
+        "geometric_0.5",
+        "geometric_0.97"
+      ]
+    }
+  }
+}

@@ -2,6 +2,31 @@
 
 Supplementary data for the research paper.
 
+## Two studies
+
+This repository documents two studies that together make up the paper's evidence:
+
+1. **Main study** — four models (BlenderBot-3B, DialoGPT-small, Llama-2-7b-chat,
+   Phi-3.5-mini-instruct), one weight sweep, 10,545 dialogues generated from 96 DailyDialog
+   dialogues on an NVIDIA H100, judged by a 4-model commercial-API panel plus a small human
+   evaluation. This is the paper's primary result and lives in `Automatic Evaluation Dialogues
+   (DailyDialog based)/` and `Human Evaluation Dialogues/`.
+2. **Generalisation sweep** (paper Appendices F–H) — a follow-up check that the method holds up on
+   five newer models, on a single consumer GPU, across four hyperparameters (weight, top-k, beam/K,
+   decay schedule) instead of just one, judged by a separate 3-model open-LLM panel. This is
+   supplementary evidence, not a replacement for the main study, and lives in
+   `Generalisation Sweep (New Models)/`.
+
+| | Main study | Generalisation sweep |
+|---|---|---|
+| Models | 4 (BlenderBot-3B, DialoGPT-small, Llama-2-7b-chat, Phi-3.5-mini-instruct) | 5 (Qwen3.5-2B, BlenderBot-3B, Llama-3.2-1B, Gemma-4-E2B-it ×2 variants) + DialoGPT-medium for decay only |
+| Hardware | NVIDIA H100 PCIe | NVIDIA RTX 4060 (8GB VRAM) |
+| Swept dimension(s) | weight only | weight, top-k, beam/K, decay schedule |
+| Source dialogues | 96 (DailyDialog) | 10 per configuration (DailyDialog) |
+| Generated dialogues | 10,545 (automatic) + 12 (human eval) | 890 (weight+topk+beam; decay dialogues not retained, see its README) |
+| Judge panel | GPT-4.1-mini, GPT-4o-mini, Mistral-Large, Claude-3-5-Haiku | DeepSeek-V3.1, MiniMax-M3, ERNIE-4.5 |
+| Human evaluation | yes, 50 Prolific participants | no |
+
 ## Contents
 
 ```
@@ -12,11 +37,17 @@ Supplementary data for the research paper.
 ├── Human Evaluation Dialogues/
 │   ├── {Model}/{Topic}/                 # Dialogue pairs per model and topic
 │   └── README.md
-├── figures/                             # High-resolution figures from the paper
-├── benchmark_results.json               # Generation latency benchmark
-├── inter_model_evaluation_results.tsv   # Inter-model comparison evaluations
-├── intra_model_evaluation_results.tsv   # Intra-model weight comparison evaluations
-└── bradley_terry_rankings.json          # Bradley-Terry model rankings
+├── Generalisation Sweep (New Models)/
+│   ├── dialogues/                       # Generated dialogues + raw checkpoints, weight/topk/beam sweeps
+│   ├── judge_raw/                       # Raw per-judge rankings and free-text reasoning
+│   ├── results/                         # Aggregated BT scores, win rates, figures
+│   ├── decay_curve_fitting/             # DailyDialog/TopicalChat decay-rate calibration
+│   └── README.md
+├── figures/                             # High-resolution figures from the paper (main study)
+├── benchmark_results.json               # Generation latency benchmark (main study)
+├── inter_model_evaluation_results.tsv   # Inter-model comparison evaluations (main study)
+├── intra_model_evaluation_results.tsv   # Intra-model weight comparison evaluations (main study)
+└── bradley_terry_rankings.json          # Bradley-Terry model rankings (main study)
 ```
 
 ## Datasets
