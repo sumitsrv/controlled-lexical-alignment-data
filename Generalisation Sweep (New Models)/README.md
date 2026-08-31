@@ -53,6 +53,8 @@ config has both raw checkpoint JSON and a rendered `.txt` per dialogue.
 │   ├── weight_metrics.csv      # median perplexity + ER (alignment) vs weight, new models
 │   ├── inter_model_table.csv   # cross-model BT ranking (weight sweep only)
 │   ├── agreement_table.csv     # inter-judge agreement (Cohen's κ, Fleiss' κ, Kendall's τ)
+│   ├── timing_analysis_output.csv     # per-turn generation latency (RTX 4060), one row per sweep×model×config
+│   ├── generate_timing_analysis.py    # script that produced it, kept for provenance
 │   └── figures/                # rendered PNGs of the above
 └── decay_curve_fitting/        # DailyDialog/TopicalChat empirical decay-rate fits used to justify
                                   # the decay=geometric(0.5) design choice — NOT the decay sweep above
@@ -85,6 +87,30 @@ the configs compared for that dialogue — the primary unit the Bradley-Terry sc
 `raw` is a list of individual judge calls: `{judge, bucket, idx, models, response}`, where `response`
 is the judge's full free-text reasoning per comparison (not just a ranking) before it was parsed into
 the win-rate matrices under `result.buckets`.
+
+## Generation performance benchmark
+
+Unlike the main study (single NVIDIA H100 PCIe, `../benchmark_results.json`), this sweep ran on a
+**single consumer GPU (NVIDIA RTX 4060, 8GB VRAM)** — reported separately since the two are not
+comparable. `results/timing_analysis_output.csv` gives median + IQR per-turn latency and ms/generated-word
+for every (sweep, model, parameter value) combination — 92 rows, one per row of `results/quality_table.csv`
+plus decay — computed from the per-turn `latency_s` fields inside the raw generation checkpoints by
+`results/generate_timing_analysis.py` (copied here for provenance; drops each config's first dialogue as
+a cold-start guard). Baseline (unweighted, λ=0) per-turn latency per model:
+
+| Model | Median (s) | IQR (s) |
+|-------|-----------|---------|
+| BlenderBot-3B | 1.409 | 1.361–1.437 |
+| Gemma-4-E2B-it (prompted) | 11.117 | 9.196–13.623 |
+| Gemma-4-E2B-it | 17.065 | 16.205–18.929 |
+| Llama-3.2-1B | 22.928 | 20.007–24.687 |
+| Qwen3.5-2B | 23.073 | 21.560–25.115 |
+
+Latency generally rises with weight/top-k/K away from these baselines (see `results/timing_analysis_output.csv`
+for the full grid); Table G.3 in the paper reports the beam(K)-vs-latency slice of this same data.
+Per-config wall time is also embedded directly in each `dialogues/raw_checkpoints/{sweep}/*.json` file
+under its `timing` key. **Gap:** unlike the main study's `benchmark_results.json`, per-model load times
+were printed during generation but never persisted to disk for this hardware, so they aren't reproduced here.
 
 ## Judges
 
