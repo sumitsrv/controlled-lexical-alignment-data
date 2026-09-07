@@ -25,11 +25,19 @@ primary results still come from the original four models on datacenter hardware.
 |-------|--------|-----------------|------------------------------|
 | `weight` | model-specific λ grids (7–9 points, incl. one negative value for bidirectional control) | all 5 | 10 |
 | `topk` | 5, 10, 20, 50, 100 | all 5 | 10 |
-| `beam` (K, candidate count) | 1, 3, 5, 10 | Qwen3.5-2B, blenderbot-3b, llama-3.2-1b, gemma_prompted (plain gemma-4-E2B-it was generated but never judged — see `dialogues/raw_checkpoints/beam/` for its untouched checkpoints if that's ever revisited) | 10 |
+| `beam` (K, candidate count) | 1, 3, 5, 10 | all 5 | 10 |
 | `decay` | geometric (rate 0.5), geometric (rate 0.97), power-law | Qwen3.5-2B, blenderbot-3b, dialogpt-medium only | 10 |
 
-Row counts in `results/quality_table.csv` per sweep: weight 43, topk 25, beam 16, decay 8 —
+Row counts in `results/quality_table.csv` per sweep: weight 43, topk 25, beam 20, decay 8 —
 matches the model coverage above (row = one model × one parameter value).
+
+**Update (2026-09-01):** plain gemma-4-E2B-it was originally missing from the beam sweep's judged
+results, not by design — `sweep_20260716_110338.json`'s `beam.gemma-4-E2B-it` entry had been clobbered
+by a stray `{"error": "Cannot send a request, as the client has been closed."}` during assembly, even
+though its 4 raw generation checkpoints (`dialogues/raw_checkpoints/beam/beam__gemma-4-E2B-it__*.json`)
+were intact throughout. Rebuilt the entry from those checkpoints and re-ran the judge tournament; all
+5 models are now judged for this sweep. BT scores for gemma-4-E2B-it: 0.017/0.052/0.158/0.773 at
+K=1/3/5/10.
 
 **Known gap:** the decay sweep's raw generated dialogue text was never saved to this machine — only
 the aggregated judge rankings (`judge_raw/decay/`) and quality metrics (`results/quality_table.csv`)
@@ -130,5 +138,6 @@ sweeps isolate one hyperparameter at a time.
 ## Relation to the paper
 
 Maps to paper appendices: **F** (weight sweep, cross-model comparison), **G** (topk/beam/decay
-hyperparameter sensitivity), **H** (inter-judge agreement, Table H.2 — the source of the per-sweep
-model coverage table above).
+hyperparameter sensitivity), **H** (inter-judge agreement, Table H.2). Table H.2 as published still
+shows the beam sweep's pre-fix 4-model coverage (see the beam-sweep update note above); this repo's
+`results/` and `judge_raw/` reflect the corrected 5-model data and are ahead of the published table.
