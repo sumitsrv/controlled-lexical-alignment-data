@@ -257,4 +257,10 @@ Citation details will be added upon publication.
 
 ## License
 
-For research purposes. See DailyDialog license for base dialogue data terms.
+We license the data in this repository under the Creative Commons Attribution 4.0 International licence (CC BY 4.0), see `LICENSE`. You may reuse the data, provided that you cite the paper.
+
+The following folders contain turns from DailyDialog (Li et al., 2017), which uses the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0). These folders keep that licence, see `LICENSE-CC-BY-NC-SA-4.0`.
+
+- `Automatic Evaluation Dialogues (DailyDialog based)/`
+- `Generalisation Sweep (New Models)/dialogues/`
+- `Generalisation Sweep (New Models)/judge_raw/`
